@@ -1,0 +1,2875 @@
+* Big Picture: a.k.a. Important not due soon
+- Automatically transcribe the Yaounde Answers
+- Automatically transcribe the Central Accord Speech Data
+- Automatically transcribe the sri_gabon data.
+- Use transcriptions as semi-supervision
+- Do bottle neck models on African Accented Speech corpus
+- Do automatic lexicon expansion for French
+- Learn the latest ASR adaptation techniques.
+- Move from Statistical MT to Neural MT
+- Move from hmm to dnn ASR.
+* Goals for Last Week:
+- TODO Observe how deep models are built by running the babel recipes on the
+Cantonese corpus.
+I only got as far as the tri5 and sgmm5 models. This is the stage where the
+dnn model builds start.
+
+- TODO Decide which dnn recipe is a priority: karel's, nnet, nnet2, nnet3,
+chain models?
+
+I'm not there yet. It might be a while before I get to this point, since I'm
+incorporating the sri_gabon data.
+
+- TODO Apply deep learning recipe to African Accented Speech corpus.
+Not yet.
+- TODO Write tr
+Nothing this week.
+- TODO Investigate French lexicon expansion ( phoneme to syllable conversion
+is needed).
+- DONE Try to finish hmm recipes for all 3 data set configurations.
+I followed the babel recipe for the yaounde + gp data set configuration.
+
+- TODO Try using output transcripts for Answers as labels for training with
+Answers.
+
+WAR:
+John Morgan incorporated a new data set into his project to adapt 
+French Automatic Speech Recognition (ASR) models to African accented
+speakers. 
+The new data set consists of 7417 recorded utterances from 125 informants. 
+It was collected by SRI on the same mission on which Steve laRocca collected
+his corpus of speech. 
+5851 of the recordings are of recited prompts, however, the recordings and
+the prompts are not directly associated with each other. 
+Morgan believes he can use the ASR models he has developed so far to label
+the recited recordings with their text prompts to a high degree of accuracy.
+
+The remaining 1566 recordings are of conversational speech. 
+He also believes he can associate labels to these recordings albeit to a
+lower degree of accuracy.
+Incorporating the data set into the kaldi toolkit framework for building ASR
+systems required several days of data preparation work.
+
+
+I've spent several days now preparing the sri_gabon data for processing in
+kaldi.
+It got complicated, because I had to rewrite my gp scripts to avoid naming
+conflicts.
+
+
+* Goals for Next Week:
++- TODO Write acomplishments
+- TODO Use models to transcribe answers and sri_gabon data.
+- TODO Use transcriptions as semi-supervision in rebuild of models.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, September 09, 2016 5:03 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: Team Weekly Activities Report for Friday September 9 2016
+
+* Big Picture: a.k.a. Important not due soon
+- Automatically transcribe the Yaounde Answers
+- Automatically transcribe the Central Accord Speech Data
+- Do bottle neck models on African Accented Speech corpus
+- Do automatic lexicon expansion for French
+- Learn the latest ASR adaptation techniques.
+- Move from Statistical MT to Neural MT
+- Move from hmm to dnn ASR.
+
+* Goals for Last week:
+- TODO Work through chain models.
+This was a failure.
+The training crashes around 8 or 9 iterations. I'm not sure why.
+
+- TODO Write more on tr.
+Only writing results of runs.
+- TODO Start work on incorporating bottle neck features into recipe.
+Not yet.
+- TODO Show Steve Answers transcriptions for eyeballing.
+- TODO Try using output transcripts for Answers as labels for training with
+Answers.
+Not yet.
+- DONE reorder the commands in the yaounde and yaounde + gp scripts. Put the
+sgmm model builds before the chain model builds. I already did this for the
+gp script.
+
+
+WAR:
+Mr. John Morgan continued to apply recipes from the kaldi Automatic Speech
+Recognition toolkit to a corpus of African Accented French. 
+Last week he reported breaking the 30% word error rate (WER) with a score of
+29.53%. 
+This week he improved to a score of 25.98% WER. 
+This score was achieved by discrimitive training of subspace gaussian
+mmixture models with a maximum mutual information criterium on lattices of
+many possible decodings of the test data. 
+The lattices were produced by the Maximum Likelihood Linear Regression
+adaptation technique that was applied in the steps taken to produce last
+week's results. 
+
+
+* Goals for Next Week:
+- TODO Observe how deep models are built by running the babel recipes on the
+Cantonese corpus.
+- TODO Decide which dnn recipe is a priority: karel's, nnet, nnet2, nnet3,
+chain models?
+- TODO Apply deep learning recipe to African Accented Speech corpus.
+- TODO Write tr
+- TODO Investigate French lexicon expansion ( phoneme to syllable conversion
+is needed).
+- TODO Try to finish hmm recipes for all 3 data set configurations.
+- TODO Try using output transcripts for Answers as labels for training with
+Answers.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, September 02, 2016 4:24 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: Team WAR for Friday September 2 2016
+
+* Big Picture: a.k.a. Important not due soon
+- Transcribe the Yaounde Answers
+- Transcribe the Central Accord Speech Data
+- Do bottle neck models in kaldi
+- Learn the latest ASR adaptation techniques.
+- Move from Statistical MT to Neural MT
+
+* Goals for Last Week:
+- TODO Finish the kaldi mono to nnet3 recipe on the 3 data sets.
+
+I'm running the builds from 1 recipe run.sh script. 
+I'm very happy that I got the tri3b models to decode the Answers data. 
+I'm not exactly sure what was missing, but I went back and repeated every
+step that I had run for the dev and test builds.
+There may be problems remaining since the dev and test sets had transcripts
+and the quality of the decoding might depend on this. It really should not,
+since that would be cheating.
+
+- DONE Write  sections in tr.
+- TODO Get qualitative impressions on Answers transcriptions from Steve
+- DONE Mandatory Training
+
+
+WAR:
+Mr. John Morgan continued working on building Speech Recognition systems for
+African accented Speech with the kaldi toolkit. 
+This week he broke the 30 percent word error rate barrier with a system
+trained on both Continental and African accented speech. 
+The training recipe consisted of a cocktail of methods including LDA and
+MLLT acoustic feature transformation, speaker adaptation with MLLR and
+maximum mutual information training.
+* Goals for Next week:
+- TODO Work through chain models.
+- TODO Write more on tr.
+- TODO Start work on incorporating bottle neck features into recipe.
+- TODO Show Steve Answers transcriptions for eyeballing.
+- TODO Try using output transcripts for Answers as labels for training with
+Answers.
+- TODO reorder the commands in the yaounde and yaounde + gp scripts. Put the
+sgmm model builds before the chain model builds. I already did this for the
+gp script.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, August 29, 2016 1:17 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: Team WAR for Monday August 29 2016
+
+* Big Picture: a.k.a. Important not due soon
+- Transcribe the Yaounde Answers
+- Learn the latest ASR adaptation techniques.
+- Move from Statistical MT to Neural MT
+
+* Goals for Last Week:
+- DONE Compare ASR monophone models on Yaounde Answers. 
+Steve has been eyeballing the transcripts produced by the kaldi recipes.
+I'm pretty excited about this.
+- DONE Get an improved LM.
+I'm using the subs corpus restricted to between 6 and 25 tokens per segment.
+- DONE Mandatory Training
+I finished the constitution mandatory training.
+
+* Goals for Next Week:
+- TODO Finish the kaldi mono to nnet3 recipe on the 3 data sets.
+- TODO Write  sections in tr.
+- TODO Get qualitative impressions on Answers transcriptions from Steve
+- TODO Mandatory Training
+
+WAR:
+John Morgan continued working on his project to semi-automatically
+transcribe a corpus of African accented French. 
+The corpus consists of Answers to questions that would typically be given by
+speakers using a speech to speech device in an Army operations setting.
+So far, he has obtained transcriptions using monophone and triphone model
+sets and the quality looks better with each new model set.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, August 12, 2016 4:03 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: Team WAR for Friday August 12 2016
+
+* Big Picture: a.k.a. Important not due soon
+- Learn the latest ASR adaptation techniques.
+- Move from Statistical MT to Neural MT
+
+* Goals for Last Week:
+- DONE Run kaldi recipes with dev  set for adaptation.
+I set up the folds as follows:
+training: GlobalPhone
+Dev: Yaounde Read prompts
+Test: Central Accord 
+
+
+I followed the recipe in the timit directory.
+The best results were given by the sgmm2 models using maximum mutual
+information 
+discriminative training.
+
+- DONE Run kaldi nnet recipe.
+The nnet scripts were written by Karel Vesely.
+They perform frame classification by pretraining with a Deep Belief Neural
+Network.
+They also train a hybrid triphone dnn system.
+The results so far are disappointing.
+
+- TODO Mandatory training.
+
+WAR:
+Mr. John Morgan applied a recipe for building a hybrid neural network
+automatic speech recognizer from the kaldi toolkit to a corpus of French
+speech.
+More specifically, he used Karel Vesely's nnet recipe which builds a Deep
+Neural Network (DNN) acoustic model from alignments given by subspace
+gaussian mixture (SGMM) triphone models.
+The DNN is pretrained with a Deep Belief Network or stack of Restricted
+Boltzman Machines and then trained with a sequential minimum bayes risk
+criterium.
+The DNN SGMM hybrid system did not outperform the SGMM system when run by
+itself.
+
+of subspace gaussian mixture triphone and Deep Neural Network  acoustic
+models. 
+
+
+* Goals for Next Week:
+- TODO Implement Dan Povey's nnet2 scripts on our data.
+- TODO Implement nnet3 scripts on our data.
+- TODO Decode the Yaounde Answers with a kaldi-built system.
+- TODO Mandatory Training
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, August 05, 2016 3:45 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR for Friday August 5 2016
+
+* Big Picture: a.k.a. Important not due soon
+- ASR adaptation 
+- learn nnet, nnet2 and nnet3 in kaldi
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- Learn nematus/theano
+* Goals for Last Week:
+- TODO Make a better lm for gp+yaounde system
+Steve is working on this task.
+
+- DONE  Experiment with gp+yaounde system
+Experiments gave goofy results.
+WERs went up when we move from gp to gp+yaounde .
+This is strange, because the test data is from the CA which is similar to
+yaounde.
+The best overall result however was from the yaounde trained sgmm models, so
+at least the best results were not too crazy. 
+We can explain this result by saying that the models trained on the data
+most similar to the test data performed best.
+If we add data that is not similar, the WER goes up.
+Unfortunately, this only held for the sgmm models.
+- TODO Move on to nnet recipe for gp+younde
+I made some good progress here using the gp data.
+
+- TODO Mandatory Training
+
+WAR:
+Mr. John Morgan continued working on automatic speech recognition (ASR) for
+African accented speech. 
+This week he explored more of the recipes available in the kaldi toolkit for
+developing ASR systems. 
+Preliminary results he is obtaining indicate that training on a
+concatenation of a large European French corpus and a small African accented
+corpus does not improve the word error rate over a system trained only on
+the European corpus. 
+Additionally, the best results so far were given by subspace gaussian
+mixture models trained only on the smaller African corpus.
+Morgan believes that this points to the need to employ more sophisticated
+methods of adaptation in order to get adequate performance from an ASR
+system on African accented French.
+
+* Goals for Next Week:
+- TODO Run kaldi recipes with dev  set for adaptation.
+- TODO Run kaldi nnet recipe.
+- TODO Mandatory training.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 29, 2016 4:21 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: Team WAR July 29 2016
+
+* Big Picture: a.k.a. Important not due soon
+- ASR adaptation 
+- learn nnet, nnet2 and nnet3 in kaldi
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- Learn nematus/theano
+
+* Goals for Last Week:
+- DONE Finish build of iban recipes for gp
+Found problems with basic data prep.
+Suspect LM will become important.
+- TODO Extend to neural network methods using a different recipe
+Not yet, but this is a major goal.
+- DONE Move to Gabon test set provided by Steve
+- TODO Mandatory training
+
+WAR:
+John Morgan continued building automatic speech recognition (ASR) systems
+with the Kaldi toolkit and speech corpora collected by branch colleague
+Stephen LaRocca. He used 2 corpora -- one containing European French and the
+other containing African French -- as training data and another also
+containing African French as test data. He ran experiments with systems
+built with only European French and with both European and African French.
+He corrected problems witht data preparation and he found that the quality
+and quantity of text data included in the training of the N-gram language
+model heavily influenced the word error rate results.
+
+
+* Goals for Next Week:
+- TODO Make a better lm for gp+yaounde system
+- TODO Experiment with gp+yaounde system
+- TODO Move on to nnet recipe for gp+younde
+- TODO Mandatory Training
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 22, 2016 2:52 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+
+* Big Picture: a.k.a. Important not due soon
+- ASR adaptation 
+- learn kaldi and eesen
+- Move from Statistical MT to Neural MT
+- move from hmm to end2end rnn asr 
+- Learn tensorflow
+- Learn nematus/theano
+
+* Goals for Last Week:
+- DONE Fix the Yaounde + GP fold split, rebuild and test
+After fixing the fold problem I went through all the steps in the iban
+recipe.
+Here are the results:
+Model & WER
+Mono & 27.71
+Tri1 & 24.74
+Tri2a & 24.92
+Tri2b (lda mllt) & 24.32
+Tri3b (sat) & 24.37
+Sgmm2_5b2 & 1412
+
+I got 2 results for the gp system 
+Monophone:
+WER: 41.80
+Tri1 29.08
+Tri2a 29.01
+
+- TODO Build triphone systems with kaldi on the Yaounde + GP data
+I made one pass at this for monophones.
+- TODO Mandatory Training
+
+WAR:
+John Morgan spent the week building automatic speech recognition (ASR)
+systems with the kaldi toolkit. He is doing this as part of an effort to
+investigate methods of ASR adaptation to speaker subpopulations. The US Army
+is interested in improving the performance of ASR systems for subpopulations
+of French speakers in Africa. 
+This week he succeeded at building several systems using different types of
+models and adaptation techniques on a corpus of speech collected from
+citizens of Cameroon. 
+He observed an improvement in word error rate (WER) scores as models and
+adaptation methods increased in sophistication. The WER scores ranged from
+27% for monophone models without adaptation to 14% WER for triphone models
+with subspace gaussian mixture model adaptation. 
+
+Stephen Tratz suggested turning off hyperthreading, so I asked Justin to do
+this.
+
+* Goals for Next Week:
+- TODO Finish build of iban recipes for gp
+- TODO Extend to neural network methods using a different recipe
+- TODO Move to Gabon test set provided by Steve
+- TODO Mandatory training
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 15, 2016 5:45 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+
+* Big Picture: a.k.a. Important not due soon
+- ASR adaptation 
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- move from hmm to end2end rnn asr 
+- Learn tensorflow
+- Learn nematus/theano
+- learn kaldi and eesen
+
+* Goals for Last Week:
+- DONE  Data Preparation for basic kaldi monophone asr
+- DONE Train and Test basic kaldi monophone asr system
+- DONE Use Steve's pronouncing dictionary and lexicons in basic kaldi
+monophone asr system
+
+ 
+Steve's dictionary improved the Yaounde system from 92 to 87 WER.
+I built 3 kinds of systems:
+1 trained on yaounde alone
+WER: 87%  on yaounde test set
+2. Trained on gp alone
+WER: 44% on gp test set
+WER: 92% on Yaounde test set
+WER: 55.21 on yaounde + gp test set
+
+3. Trained on Yaounde concatenated with GP .
+
+I realized late today that the system I built for Yaounde + GP is a no go.
+I need to use the same train/test split for Yaounde + GP as for the separate
+Yaounde and GP systems, otherwise, I end up testing on training data.
+
+
+
+- TODO Debug Tensorflow segmentation faults
+- TODO Mandatory Training
+
+* Goals for Next Week:
+- TODO Fix the Yaounde + GP fold split, rebuild and test
+- TODO Build triphone systems with kaldi on the Yaounde + GP data
+- TODO Mandatory Training
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 08, 2016 3:35 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- move from hmm to end2end rnn asr 
+- Learn tensorflow
+- Learn nematus/theano
+- learn kaldi and eesen
+- ASR adaptation 
+
+* Goals for Last Week:
+- TODO Restart the eesen implementations on WSJ, GP, and Yaounde.
+I am most of the way through data preparation for the basic monophone kaldi
+recipe for Yaounde.
+- TODO Reinstall tensorflow with Justin's help
+Justin reinstalled TF, but I still get segmentation faults.
+- TODO Find better hyperparameters for both tensorflow and nematus
+Spanish/English nmt runs.
+No progress on this since I completely shifted over to ASR for this week.
+- TODO setup nmt experiments for tensorflow and nematus on English Dari
+- TODO Mandatory Training
+
+
+* Goals for Next Week:
+- TODO Data Preparation for basic kaldi monophone asr
+- TODO Train and Test basic kaldi monophone asr system
+- TODO Use Steve's pronouncing dictionary and lexicons in basic kaldi
+monophone asr system
+- TODO Debug Tensorflow segmentation faults
+- TODO Mandatory Training
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 01, 2016 3:48 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- Learn nematus/theano
+- ASR adaptation 
+
+* Goals for Last Week:
+- TODO Run Nematus on English Dari.
+Decided to start with Spanish English  first
+I'm finally getting non-zero BLEU scores.
+I really had to cutdown on vocab size batch size and dimensions to get
+nematus to run.
+I'm not sure which parameter made the difference
+- TODO Implement Rico Sennrich's methods to take advantage of monolingual
+data. 
+- TODO Search for best tensorflow hyperparameter settings for Dari English.
+Tensorflow is currently broken.
+I got greedy and wanted to use 2 GPUs.
+Installing and uninstalling the GPUs seems to have broken tensorflow.
+Justin is having trouble downloading the update for tensorflow, it looks
+like ARL is blocking a google site that stores tensorflow.
+
+- DONE  Give Justin time to install second gpu.
+This was a total failure and it broke my install of tensorflow :(
+Not Justin's fault of course.
+The 2 GPUs are not compatible.
+
+
+- TODO Work with Hazrat on English Dari corpus problems.
+- TODO Mandatory training.
+
+- Extra Curricular
+Phil David and I successfully completed the Garrett County Diabolical Double
+Gran Fondo cycling event. We finished the 16800 feet of climbing in around
+13 hours.
+We achieved    a top speed of 59 mph.
+* Goals for Next Week:
+- TODO Restart the eesen implementations on WSJ, GP, and Yaounde.
+- TODO Reinstall tensorflow with Justin's help
+- TODO Find better hyperparameters for both tensorflow and nematus
+Spanish/English nmt runs.
+- TODO setup nmt experiments for tensorflow and nematus on English Dari
+- TODO Mandatory Training
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, June 17, 2016 3:06 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- ASR adaptation of GP to Younde
+
+* Goals For Last Week:
+- DONE  Run another Spanish English experiment with tensorflow using a
+higher
+dimension and lower batch size.
+
+I used 512 for the dimension and 8 for the batch size.
+The corresponding numbers in the previous experiment were 300 and 128.
+All other settings were the same as  the previous experiment.
+There was a huge drop in BLEU scores: from 29.0 to 12.45.
+
+- DONE Continue trying to get something useful out of tensorflow on our
+English to Dari corpus. perhaps use the transtac corpus?
+
+I made some progress.
+
+Dimension BLEU
+32 1.13
+64 1.43
+100 2.41
+128 2.18
+
+I'm trying to get nematus to run on our English Dari corpus.
+What is nematus?
+Nematus is apparently the name Rico Sennrich has given to his NMT system
+that got the highest 
+score at WMT 2016.
+Nematus is built on top of theano and Cho's dl4mt tutorial.
+Justin got me set up with a working version of Theano.
+The default settings yielded out of memory errors on the gpu.
+After lowering some settings I got nematus training to work.
+Nematus and dl4mt have many parameter settings that I can play with.
+There is a parameter for the word embedding dimension (the first layer of
+the lstm)
+ and a parameter for the number of cells in the lstm.
+Rico Sennrich has a method to take advantage of monolingual data. 
+I think he first translates it somehow with models built on a parallel
+corpus, then he uses the resulting bitext as training data.
+I'm hoping we can use this for Dari monolingual.
+
+- TODO Continue cleaning the English Dari corpus.
+- TODO Give Justin time to install the other GPU.
+- DONE Run joshua on English Dari as a sanity check and to compare with
+tensorflow.
+
+BLEU: 9.98
+
+- DONE Mandatory Training.
+I knocked out 2 this week: Substance Abuse and No fear.
+- TODO Read papers.
+I started reading Rico Sennrich's papers for wmt 2016.
+
+
+* Goals for Next Week:
+- TODO Run Nematus on English Dari.
+- TODO Implement Rico Sennrich's methods to take advantage of monolingual
+data. 
+- TODO Search for best tensorflow hyperparameter settings for Dari English.
+- TODO Give Justin time to install second gpu.
+- TODO Work with Hazrat on English Dari corpus problems.
+- TODO Mandatory training.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, June 10, 2016 3:24 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- ASR adaptation of GP to Younde
+
+* Goals For Last Week:
+- TODO Incrementally build Dari to English NMT with tensorflow.
+I'm working on this - have not obtained good results yet. 
+I don't think we'll get anything useful out of tensorflow on our English
+Dari corpus -- it's too small.
+I hope I'm wrong, but it doesn't look good right now.
+
+- DONE Build  NMT system with UN Spanish English corpus
+I feel pretty good about this accomplishment. 
+Below are the parameters for the run.
+Experiment 1 Parameters: 
+Dimension of representation space: 300 
+Number of layers in the LSTM: 2 
+Batch size: 128 
+Number of steps per checkpoint: 100
+
+Spanish vocabulary (types) size: 883431 
+English vocabulary (types) size: 883799
+
+Number of training bisegments: 15337051 
+Number of English training words (tokens): 245177685 
+Number of Spanish training words (tokens): 277355099
+
+Number of tuning bisegments: 2502 
+Number of English tuning words (tokens): 44819 
+Number of Spanish tuning words (tokens): 51202
+
+Number of test bisegments: 2511 
+Number of English test words (tokens): 44630 
+Number of Spanish test words (tokens): 51351
+
+Stopped at global step: 19900
+Average perplexity: 4.30
+Bucket 0 perplexity: 2.19
+Bucket 1 perplexity: 2.23
+Bucket 2 perplexity: 4.25
+Bucket 3 perplexity: 6.00
+Stopped at epoch: 60
+BLEU = 29.00, 60.1/35.0/22.5/15.3 (BP=0.995, ratio=0.995, hyp_len=44402,
+ref_len=44630)
+
+Comments: The output in English looks pretty good. However, I am noticing
+that the decoder produces repetitions. I wonder if this is artificially
+inflating the BLEU score?
+There seems to be a tradeoff between the batch size and the dimension of the
+representation space.
+In this first experiment I was able to get the  GPU to work with the pair
+(300, 128) (dimension,batchsize). I have later got the English Dari system
+to work with the pair (512, 16). 
+ 
+
+- DONE Mandatory face to face SHARP training (I think it's Tuesday but check
+again for schedule)
+It was Wednesday.
+- TODO Read papers on NMT
+There is a paper on arxiv by Holger Schwenk that proposes using
+convolutional neural networks for MT. Also a paper by Cho on  Simtrans.
+
+I spent a lot of time fixing the English Dari corpus with Hazrat's help.
+It still needs work.
+I think the Sada-e-Azadi corpus  is mostly replicated twice. I guess there
+were small differences between the publications in different parts of the
+country.
+
+My laptop seems to have burned  out 2  power adaptors. Michelle got me one
+of the smaller ones and it is working currently.
+
+* Goals For Next Week:
+- TODO Run another Spanish English experiment with tensorflow using a higher
+dimension and lower batch size.
+- TODO Continue trying to get something useful out of tensorflow on our
+English to Dari corpus. perhaps use the transtac corpus?
+- TODO Continue cleaning the English Dari corpus.
+- TODO Give Justin time to install the other GPU.
+- TODO Run joshua on English Dari as a sanity check and to compare with
+tensorflow.
+- TODO Mandatory Training.
+- TODO Read papers.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, June 03, 2016 3:46 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- ASR adaptation of GP to Younde
+
+* Goals for Last Week:
+- TODO Find good settings for Dari2English Tensorflow NMT
+This is turning out to be much harder than I thought 
+I'm finding problems with my version of our English/Dari corpus.
+I'm starting from a tiny corpus and incrementally adding more data.
+Currently I'm only using alep civil which is about 4k segments.
+My best run so far uses 32 dimensional vectors and 1 layer.
+
+- TODO Apply Tensorflow NMT to our other corpora.
+- TODO  Revisit French ASR
+- TODO Mandatory Training
+I signed up for SHARP next Tuesday at 9:30.
+- TODO Read 2 papers on NMT
+* Goals For Next Week:
+- TODO Incrementally build Dari to English NMT with tensorflow.
+- TODO Build  NMT system with UN Spanish English corpus
+- TODO Mandatory face to face SHARP training (I think it's Tuesday but check
+again for schedule)
+- TODO Read papers on NMT
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, May 27, 2016 2:15 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- ASR adaptation of GP to Younde
+- First author on a paper
+
+* Goals for Next Week:
+- TODO Tensorflow Seq2Seq NMT on our English Tagalog corpus.
+I did not get any useful output from  tensorflow systems built on either our
+English/Tagalog or English/Pashto corpora. However, I did achieve 2 BLEU
+points on the Dari to English corpus. 
+The Dari/English corpus has approximately 110k bisegments and vocabulary
+sizes of approximately 57k and 38k respectively.
+The Pashto/English corpus has approximately 85k bisegments with vocabulary
+sizes of 48k and 32k.
+I'm currently trying to find  good settings for the Dari to English system.
+So far I only get good results for: 
+layers=2, embedding dimension=256
+I get garbage for: 
+layers=3, embedding dimension=512 
+layers=2, embedding dimension=512
+
+- TODO Install Moses and run baselines 
+The old moses install seems to be busted
+- TODO Mandatory Training
+- TODO Read NMT papers
+I read the tensorflow white paper
+
+* Goals for Next Week:
+- TODO Find good settings for Dari2English Tensorflow NMT
+- TODO Apply Tensorflow NMT to our other corpora.
+- TODO  Revisit French ASR
+- TODO Mandatory Training
+- TODO Read 2 papers on NMT
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, May 20, 2016 3:41 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Join the Deep Learning Revolution
+- Move from Statistical MT to Neural MT
+- Learn tensorflow
+- ASR adaptation of GP to Younde
+- First author on a paper
+- Make a habit of writing (maybe one day a week)
+
+* Goals For Last Week:
+- DONE Take home final for DBMS
+- TODO Rewrite proposal plans
+- TODO Reproduce dclm results
+DCLM does not use the gpu, so I'm not impressed by the code.
+- TODO Mandatory training
+I tried several, none are accessible. Shame on the developers of these
+programs!
+
+* Unexpected Accomplishments
+- DONE Justin got tensorflow updated and running on the GPU machine. I'm
+currently running the Sequence to Sequence tensorflow example  on English to
+French.
+My goal was to reproduce the results for NMT on this huge dataset, but it
+looks like that will take weeks to run on our setup. 
+I'm pretty sure the training and decoding is working correctly. 
+You can run the decoder interactively while the system is being trained. I
+verified that this works. Checkpoints are saved during training and you can
+decode using these checkpoints.
+I'm also running tensorflow seq2seq on our English Tagalog corpus on my
+laptop.
+I want to compare it to joshua.
+Joshua en-tl gives 6 bleu points. tl-en gives 9 bleu points
+
+I'll probably kill the process on the GPU machine on Monday and start with a
+smaller dataset -- probably our English Tagalog corpus.
+I think I'm going to commit to using tensorflow as a programming
+environment. 
+I know this sounds like I'm going to the dark side, but google has put
+together the best team money can buy and they're being really good about
+making everything open source.
+they use python, bazel, protocol buffers and tensorflow and it's all open
+source.
+Their sequence to sequence NMT demo  works almost out of the box.
+Their documentation is.  excellent
+SyntaxNet (also open source) was built on top of tensorflow.
+The only problem I forsee right now is that training NMT systems take an
+annoying amount of time.
+I tried installing moses and it's failing. This is annoying since a while
+back this worked really well.
+I'd like to compare tensorflow, joshua and moses.
+* Goals for Next Week:
+- TODO Tensorflow Seq2Seq NMT on our English Tagalog corpus.
+- TODO Install Moses and run baselines 
+- TODO Mandatory Training
+- TODO Read NMT papers
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, May 13, 2016 5:19 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Write a proposal plan for next year
+- Apply lessons learned from database management systems to our projects.
+- ASR adaptation of GP to Younde
+- First author on a paper
+- Understand Deep Learning
+- Learn toolkits for deep learning
+- Make a habit of writing (maybe one day a week)
+
+* Goals for Last Week:
+** DBMS
+- DONE Read 2 papers for Monday
+Querying Heterogeneous Information Sources Using Source Descriptions; Levy
+et al.; VLDB 1996 
+WebTables: exploring the power of tables on the web; Cafarella et al.; VLDB
+2008 
+- TODO Write up project report
+** Joshua
+- DONE Get a running joshua build for  en-tl on the gpu machine
+
+I also setup a script to run joshua on Korean English, but bleu scores are
+so bad that I think something is wrong with the data.
+
+* DONE Installed (with Justin's help)  code to build Discourse Context
+Language Models
+This required installing cnn which is a package for building neural
+networks. I think this is work by Yoav Goldberg. (Chris Dyer?)
+cnn might end up being more useful than dclm. cnn uses the gpu. apparently
+dclm does not.
+https://github.com/clab/cnn.git
+https://github.com/jiyfeng/dclm.git
+
+* Proposal Plans
+- TODO Rewrite the plan to agree with Hal's suggestions
+* DONE Papers Read
+Why Should I Trust You? Explaining the Predictions of Any Classifier by
+Samir Sing, Carlos Gustrin and Marco Tulio Ribero
+I wonder if a translator using  Computer Assisted MT could benefit from this
+work? The paper comes with python code. The program is called lime.
+https://github.com/marcotcr/lime-experiments
+The DCLM paper 
+* Goals For Next Week:
+- TODO Take home final for DBMS
+- TODO Rewrite proposal plans
+- TODO Reproduce dclm results
+- TODO Mandatory training
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, May 06, 2016 5:42 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+* Big Picture: a.k.a. Important not due soon
+- Write a proposal plan for next year
+- Apply lessons learned from database management systems to our projects.
+- ASR adaptation of GP to Younde
+- First author on a paper
+- Understand Deep Learning
+- Learn toolkits for deep learning
+- Make a habit of writing (maybe one day a week)
+* GOALS for Last Week
+** DBMS
+- DONE Turn in homework set 2 (today).
+- DONE Read and comment on 2 papers for Monday
+N. Malviya, et al., Rethinking Main Memory OLTP Recovery, in ICDE, 2014 
+C. Mohan, Donald J. Haderle, Bruce G. Lindsay, Hamid Pirahesh, Peter M.
+Schwarz. ARIES: A Transaction Recovery Method Supporting Fine-Granularity
+Locking and Partial Rollbacks Using Write-Ahead Logging. ACM Trans. Database
+Syst., 17(1), 1992, 94-162. 
+- DONE Read and comment on 2 papers for Wednesday
+DataHub: Collaborative Data Science and Dataset Version Management at Scale;
+CIDR 2015. 
+Kepler: an extensible system for design and execution of scientific
+workflows; SSDBM 2004. 
+- TODO Search for Hadoop code in Thrax and Replace with Spark. TODO
+Mandatory Training
+** TODO Sign up for Fall classes
+** DONE Write a detailed plan for proposing next year
+* DONE Get a minimal example for Joshua working on the GPU Machine
+
+* Goals for Next Week:
+** DBMS
+- TODO Read 2 papers for Monday
+Querying Heterogeneous Information Sources Using Source Descriptions; Levy
+et al.; VLDB 1996 
+WebTables: exploring the power of tables on the web; Cafarella et al.; VLDB
+2008 
+- TODO Write up project report
+* Joshua
+- TODO Get a running joshua build for  en-tl on the gpu machine
+* Proposal Plans
+- TODO Rewrite the plan to agree with Hal's suggestions
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, April 29, 2016 3:20 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Write a proposal plan for next year
+* Apply lessons learned from database management systems to our projects.
+* ASR adaptation of GP to Younde
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+* TODO Make a habit of writing (maybe one day a week)
+
+# Goals for Last Week:
+* DBMS
+** DONE Write critique on transaction paper Monday night/(Tuesday)
+** DONE comment on 2 papers for Monday
+Philip L. Lehman, S. Bing Yao: Efficient Locking for Concurrent Operations
+on B-Trees. ACM Trans. Database Syst. 6(4): 650-670(1981) 
+Shore-MT: a scalable storage manager for the multicore era; Johnson et al.;
+EDBT 2009 
+** TODO Comment on other paper for Wednesday
+Dynamo: Amazon's Highly Available Key-Value Store; SOSP 2007 
+I did not do this.
+** TODO Search thrax code for hadoop and replace with spark
+Very little work on this
+** TODO Homework set (Friday)
+Working on it.
+* TODO Sign up for Fall classes
+No, not yet.
+* TODO Mandatory Training
+None this week.
+* TODO ASR global phone adapted to Yaounde
+Not this week.
+
+# GOALS for Next Week
+* DBMS
+** TODO Turn in homework set 2 (today).
+** TODO Read and comment on 2 papers for Monday
+N. Malviya, et al., Rethinking Main Memory OLTP Recovery, in ICDE, 2014 
+C. Mohan, Donald J. Haderle, Bruce G. Lindsay, Hamid Pirahesh, Peter M.
+Schwarz. ARIES: A Transaction Recovery Method Supporting Fine-Granularity
+Locking and Partial Rollbacks Using Write-Ahead Logging. ACM Trans. Database
+Syst., 17(1), 1992, 94-162. 
+
+** TODO Read and comment on 2 papers for Wednesday
+DataHub: Collaborative Data Science and Dataset Version Management at Scale;
+CIDR 2015. 
+Kepler: an extensible system for design and execution of scientific
+workflows; SSDBM 2004. 
+* TODO Search for Hadoop code in Thrax and Replace with Spark.
+
+* TODO Mandatory Training
+* TODO Sign up for Fall classes
+* TODO Write a detailed plan for proposing next year
+* TODO Get a minimal example for Joshua working on the GPU Machine
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, April 22, 2016 5:02 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our projects.
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+* TODO Make a habit of writing (maybe one day a week)
+
+# Goals for Last Week:
+* DBMS
+** DONE Send project plan and slides to Amol (today)
+** DONE Present project (Monday)
+The presentation went well, but Amol realized (he asked a question) that
+there is no iteration in this application of spark. Spark's advantages are
+realized in iterative algorithms.
+** TODO Thrax hadoop to spark coding
+I have thrax running very well on hadoop.
+Justin installed a hadoop binary and joshua with thrax on the GPU machine
+under /home/tools.
+.
+A thrax on hadoop baseline should be very easy to produce now.I wrote a
+short script that runs a thrax extraction example
+** TODO  Critique paper:
+C. Mohan, Bruce G. Lindsay, Ron Obermarck. Transaction Management in the R*
+Distributed Database Management System. ACM Trans. Database Syst.,
+11(4), 1986, 378-396.
+* TODO Mandatory Training
+* TODO Sign up for Fall classes
+** TODO Eesen ASR
+# Goals for Next Week:
+* DBMS
+** TODO Write critique on transaction paper Monday night/(Tuesday)
+** todo comment on 2 papers for Monday
+Philip L. Lehman, S. Bing Yao: Efficient Locking for Concurrent Operations
+on B-Trees. ACM Trans. Database Syst. 6(4): 650-670(1981) 
+Shore-MT: a scalable storage manager for the multicore era; Johnson et al.;
+EDBT 2009 
+** TODO Comment on other paper for Wednesday
+Dynamo: Amazon's Highly Available Key-Value Store; SOSP 2007 
+** TODO Search thrax code for hadoop and replace with spark
+** TODO Homework set (Friday)
+
+* TODO Sign up for Fall classes
+* TODO Mandatory Training
+* TODO ASR global phone adapted to Yaounde
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, April 15, 2016 3:00 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our projects.
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+* TODO Make a habit of writing (maybe one day a week)
+# Goals for Last Week:
+* DBMS
+** DONE Critique on CONTROL paper (Saturday)
+** TODO Read and comment on BlinkDB paper (Monday)
+BlinkDB; EuroSys 2013 
+** DONE Read and Comment on 2 papers for Wednesday
+Concurrency Control and Recovery; Mike Franklin, 1997 
+H. T. Kung, John T. Robinson. On Optimistic Methods for Concurrency Control.
+Proc. VLDB, 1979, 
+** TODO Project lit review
+I changed plans. Now I am going to run thrax on spark. It currently runs on
+Hadoop.
+** DONE Project presentation slides
+** TODO Project coding
+Joshua is now an apache incubator project:
+https://git-wip-us.apache.org/repos/asf?p=incubator-joshua.git
+* TODO Sign up for Fall classes
+No
+* TODO Eesen ASR
+No
+* Linux/Google CromeVox interface
+** TODO learn commands to navigate
+I sent a message to the emacspeak mailing list. It turns out that I'm not
+the only one having ChromeVox frustrations.
+** TODO install vm for emacs
+** TODO Figure out how to disable screen locking (get help from Justin)
+* TODO Mandatory Training
+* TODO Sign up for Fall classes
+
+# Goals for Next Week:
+* DBMS
+** TODO Send project plan and slides to Amol (today)
+** TODO Present project (Monday)
+** TODO Thrax hadoop to spark coding
+** TODO  Critique paper:
+C. Mohan, Bruce G. Lindsay, Ron Obermarck. Transaction Management in the R*
+Distributed Database Management System. ACM Trans. Database Syst.,
+11(4), 1986, 378-396.
+* TODO Mandatory Training
+* TODO Sign up for Fall classes
+** TODO Eesen ASR
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, April 08, 2016 5:05 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our projects.
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+# Goals for Last Week:
+* DBMS
+** DONE  Read and Comment on 2 papers for Monday
+RDF-3X: a RISC-style Engine for RDF; VLDB 2008
+Relational Databases for Querying XML Documents: Limitations and
+Opportunities; Jayavel Shanmugasundaram et al.; VLDB 1999 
+** DONE Read and Comment on 2 papers for Wednesday
+Implementing data cubes efficiently; Harinarayanan et al.; SIGMOD 1996
+Dremel: Interactive Analysis of Web-Scale Datasets; VLDB 2010
+** TODO Lit Review for project
+I  put the list of papers in a latex document, but I have not finished a
+review.
+** TODO Write slides for project presentation
+Not finished
+** TODO Write code for project
+I debugged some unit tests for a minimal simtrans.
+** TODO Critique paper for next week
+I feel pretty good about the work I did on this and I'm pretty much done.
+The paper was on the CONTROL project for interactive query processing.
+I read a couple of background papers for this:
+RippleJoinsforOnlineAggregation  by Hass and Hellerstein
+Online Dynamic Reordering for Interactive Data Processing by Raman and
+Hellerstein
+* DONE Mandatory Training
+I went to the SHARP training in the auditorium.
+* TODO Eesen phone-based  gp French
+Nothing this week
+* TODO Eesen phone-based Yaounde
+Nothing
+* TODO Write technotes on this work.
+Nothing
+
+# Goals for Next Week:
+* DBMS
+** TODO Critique on CONTROL paper (Saturday)
+** TODO Read and comment on BlinkDB paper (Monday)
+BlinkDB; EuroSys 2013 
+** TODO Read and Comment on 2 papers for Wednesday
+Concurrency Control and Recovery; Mike Franklin, 1997 
+H. T. Kung, John T. Robinson. On Optimistic Methods for Concurrency Control.
+Proc. VLDB, 1979, 
+** TODO Project lit review
+** TODO Project presentation slides
+** TODO Project coding
+* TODO Sign up for Fall classes
+* TODO Eesen ASR
+* Linux/Google CromeVox interface
+** TODO learn commands to navigate
+** TODO install vm for emacs
+** TODO Figure out how to disable screen locking (get help from Justin)
+* TODO Mandatory Training
+* TODO Sign up for Fall classes
+* TODO Meet Andrew Wilkinson on Tuesday
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, April 01, 2016 4:19 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our projects.
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+# Goals for Last Week:
+* DBMS
+** DONE Read and comment on 2 papers for Monday
+SQLGraph: An Efficient Relational-Based Property Graph Store
+GraphX: Graph Processing in a Distributed Dataflow Framework Joseph E.
+Gonzalez,
+** TODO Write lit review for project (Wednesday)
+I'm finally making progress on this, but not done yet.
+* DONE Mandatory training
+I got my AUB signed.
+* TODO Eesen on Yaounde corpus
+Nothing this week.
+* TODO Write tech note on eesen builds.
+* TODO Sign up for Fall classes
+* DONE Papers Read
+MLlib: Machine Learning in Apache Spark
+
+# Goals for Next Week:
+* DBMS
+** TODO Read and Comment on 2 papers for Monday
+RDF-3X: a RISC-style Engine for RDF; VLDB 2008
+Relational Databases for Querying XML Documents: Limitations and
+Opportunities; Jayavel Shanmugasundaram et al.; VLDB 1999 
+** TODO Read and Comment on 2 papers for Wednesday
+Implementing data cubes efficiently; Harinarayanan et al.; SIGMOD 1996
+Dremel: Interactive Analysis of Web-Scale Datasets; VLDB 2010
+
+** TODO Lit Review for project
+** TODO Write slides for project presentation
+** TODO Write code for project
+** TODO Critique paper for next week
+
+* TODO Mandatory Training
+* TODO Eesen phone-based  gp French
+* TODO Eesen phone-based Yaounde
+* TODO Write technotes on this work.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, March 25, 2016 2:33 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+
+# Goals for Last Week:
+* DBMS
+** DONE  READ and Comment on 4 papers:
+*** DONE For Monday
+The MADlib analytics library: or MAD skills, the SQL; Hellerstein et al.;
+VLDB 
+2012
+Towards a unified architecture for in-RDBMS analytics; Feng et al.; SIGMOD 
+2012
+*** DONE For Wednesday
+Distributed GraphLab: a framework for machine learning and data mining in
+the 
+cloud; VLDB 2012
+Scaling Distributed Machine Learning with the Parameter Server; OSDI 2014
+** DONE Finish project proposal
+Waiting for feedback from Amol. I get the feeling he will not approve and
+I'll have to redo the proposal.
+* TODO Write a technote on EESEN Character-based ASR applied to GP French
+* TODO Setup phone-based EESEN applied to GP French
+* TODO Ditto for Yaounde corpus
+I made some progress on getting the Eesen build for the Yaounde corpus.
+I'm not sure why this turned out to be non-trivial.
+* TODO Mandatory Training
+
+
+# Goals for Next Week:
+* DBMS
+** TODO Read and comment on 2 papers for Monday
+SQLGraph: An Efficient Relational-Based Property Graph Store
+GraphX: Graph Processing in a Distributed Dataflow Framework Joseph E.
+Gonzalez,
+** TODO Write lit review for project (Wednesday)
+
+* TODO Mandatory training
+* TODO Eesen on Yaounde corpus
+* TODO Write tech note on eesen builds.
+* TODO Sign up for Fall classes
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, March 18, 2016 8:36 AM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Papers Read:
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+# Goals for Last Week:
+* DBMS
+** DONE Finish assignment 3 on spark (in the next 2 hours)
+Did not finish problem on page rank
+** DONE  Project outline
+Probably needs refinement and feedback.
+** DONE Sign up for next paper critique
+
+* DONE eesen end2end run on French GP
+Finally got WER results.
+* TODO ditto for Yaounde
+* DONE Mandatory Training
+I passed the PII training
+Problems getting Constitution and AMC Record Keeping
+
+# Goals for Next Week:
+* DBMS
+** TODO READ and Comment on 4 papers:
+*** TODO For Monday
+The MADlib analytics library: or MAD skills, the SQL; Hellerstein et al.;
+VLDB 
+2012
+Towards a unified architecture for in-RDBMS analytics; Feng et al.; SIGMOD 
+2012
+*** TODO For Wednesday
+Distributed GraphLab: a framework for machine learning and data mining in
+the 
+cloud; VLDB 2012
+Scaling Distributed Machine Learning with the Parameter Server; OSDI 2014
+** TODO Finish project proposal
+* TODO Write a technote on EESEN Character-based ASR applied to GP French
+* TODO Setup phone-based EESEN applied to GP French
+* TODO Ditto for Yaounde corpus
+* TODO Mandatory Training
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, March 11, 2016 2:15 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US) 
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Papers Read:
+None this week
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+
+# Goals for Last Week:
+* DBMS
+** DONE Turn in critique of Naiad paper (Sunday)
+it was actually due Saturday,  luckily I had it already done
+** TODO Programming assignment on spark (Friday)
+I'm working on problem 5 of 5 today.
+** TODO Decide on project topic
+My current idea is to apply spark to simtrans
+* TODO Eesen en2end on GP French
+The training is running right now on epoch 16 of 25.
+* TODO Ditto on Yaounde corpus
+* DONE Mandatory Training
+I passed the Human Trafficking training.
+* DONE Lead probmod reading group discussion  on Online Sequence to Sequence
+paper (Monday)
+it went ok I guess , but the consensus was that the paper sucked.
+
+* I attended the CLIP Coloquium presented by Kevin Duh.
+This was very interesting. I met with kevin for half an hour before his
+presentation. He explained his slides to me before his presentation.
+He gave a summary of the work done at the Gelinek workshop last summer.
+They are incorporating SMT knowledge into the continuous space model for MT.
+They use the term continuous space model instead of deep learning. SMT
+doesn't really use deep models (only a couple of layers).
+He gave an example of how they incorporate fertility into the RNN matrix.
+
+
+# Goals for Next Week:
+* DBMS
+** TODO Finish assignment 3 on spark (in the next 2 hours)
+** TODO Project outline
+** TODO Sign up for next paper critique
+
+* TODO eesen end2end run on French GP
+* TODO ditto for Yaounde
+* TODO Mandatory Training
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, March 04, 2016 12:32 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: 'Judith L Klavans' <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Papers Read:
+Discretized streams: fault-tolerant streaming computation at scale; SOSP
+2013
+Naiad: a timely dataflow system; SOSP 2013
+
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+
+# Goals for Last Week:
+* DBMS
+** DONE  2 paper critiques for The spark and DryadLinq papers (Monday)
+** DONE 2 paper critiques for the stream and borealis papers (Wednesday)
+The Borealis paper was not the correct paper to read.
+** TODO Start lit review for project
+I'm considering doing something with timely-dataflow in rust
+** TODO Write Critique for Naiad paper
+This is due Sunday, but I feel pretty good since I've already written  a lot
+of the critique.
+* TODO Eesen end2end for GP French
+More problems. I found a bug I introduced in a python script that converted
+the word level transcripts into sequences of indices. After squashing that
+bug, I now have cuda problems.
+* TODO Ditto for Yaounde
+* TODO Try to  replicate Attention NMT on WSJ
+https://github.com/rizar/attention-lvcsr
+* TODO Prepare to lead Probmod reading group on OS2S ASR paper
+http://arxiv.org/abs/1511.04868
+
+# Goals for Next Week:
+* DBMS
+** TODO Turn in critique of Naiad paper (Sunday)
+** TODO Programming assignment on spark (Friday)
+** TODO Decide on project topic
+
+* TODO Eesen en2end on GP French
+* TODO Ditto on Yaounde corpus
+* TODO Mandatory Training
+
+* TODO Lead probmod reading group discussion  on Online Sequence to Sequence
+paper (Monday)
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, February 26, 2016 1:51 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Cc: Judith L Klavans <jklavans@umd.edu>
+Subject: RE: Team WAR
+
+# Papers Read Last Week:
+
+MapReduce: A Flexible Data Processing Tool; Jeffrey Dean and Sanjay
+Ghemawat; CACM 2010
+MapReduce and Parallel DBMSs: Friends or Foes? Stonebraker et al.; CACM 2010
+
+# Papers Read for Next Week:
+Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory
+Cluster Computing; Zaharia et al.; NSDI 2012
+Yuan Yu, Michael Isard, Dennis Fetterly, Mihai Budiu. DryadLINQ: A System
+for General-Purpose Distributed Data-Parallel Computing Using a High-Level
+Language. OSDI, 2008.
+Continuous queries over data streams; Babu, Widom; SIGMOD Record 2001
+The Design of the Borealis Stream Processing Engine; Abadi et al.; CIDR 2005
+
+
+
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+# Goals for Last Week:
+* DBMS
+** DONE Programming homework (Tuesday)
+** DONE 2 paper Critiques (Wednesday)
+** TODO Decide on project paper
+Tentatively, I've chosen the paper on quegel.:
+Quegel: A General-Purpose Query-Centric Framework for Querying Big Graphs;
+** TODO Prepare for  my critique of Naiad paper
+Naiad: a timely dataflow system; SOSP 2013
+* TODO Prepare for online s2s paper presentation in probmod reading group
+* DONE Prepare for our reading group paper discussion on AMR
+Michelle and I read the paper very carefully.
+http://arxiv.org/abs/1510.07586
+* TODO  EESEN end2end on GP, fix problems found last week
+I am still finding problems.
+* TODO ditto for yaounde eesen build
+
+* TODO Mandatory Training , do trafficking
+
+# Goals for Next Week:
+* DBMS
+** TODO  2 paper critiques for The spark and DryadLinq papers (Monday)
+** TODO 2 paper critiques for the stream and borealis papers (Wednesday)
+** TODO Start lit review for project
+** TODO Write Critique for Naiad paper
+
+* TODO Eesen end2end for GP French
+* TODO Ditto for Yaounde
+* TODO Try to  replicate Attention NMT on WSJ
+https://github.com/rizar/attention-lvcsr
+* TODO Prepare to lead Probmod reading group on OS2S ASR paper
+http://arxiv.org/abs/1511.04868
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, February 19, 2016 3:03 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+# Goals for Last Week:
+* DONE  Readings and critique of 4 DBMS papers (Monday and Wednesday)
+Monday's class was cancelled so we only read 2 papers
+* DONE DBMS programming homework (Tuesday)
+Did not finish the whole thing, but I'm happy with what I did finish.
+* DONE DBMS written homework (Friday)
+I completed this.
+* TODO EESEN end 2 end on GP corpus
+I found problems. I can't remember exactly what they were, I think they had
+to do with the vocabulary. There were extraneous characters (quotes mostly)
+that of course get modeled in the character model.
+It turns out that the yaounde system that I had gone end2end on has the same
+problems.
+# Goald for Next Week:
+* DBMS
+** TODO Programming homework (Tuesday)
+** TODO 2 paper Critiques (Wednesday)
+** TODO Decide on project paper
+** TODO Prepare for  my critique of Naiad paper
+
+* TODO Prepare for online s2s paper presentation in probmod reading group
+* TODO Prepare for our reading froup paper discussion on AMR
+
+* TODO  EESEN end2end on GP, fix problems found last week
+* TODO ditto for yaounde eesen build
+
+* TODO Mandatory Training , do trafficking
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, February 05, 2016 2:48 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+# Goals for Last Week:
+* DONE  DBMS readings (Monday)
+* TODO Start on DBMS programming assignment 1
+I started on the sql programming exercises and the written homework. I have
+not yet touched the java programming.
+* TODO Eessen end to end on GP corpus
+The DBMS class is taking up most of my time, I did not have time to
+concentrate on this. I separated out a data prep and a training script. The
+data prep seems to be good. The training is still getting stuck on sending
+jobs to the GPU.
+* TODO Tensorflow demo
+No.
+* TODO Tensorflow on toy corpus
+No.
+* TODO Tensorflow for verb prediction
+No.
+* TODO Tensorflow on our corpora
+Nope.
+# Goals for Next Week:
+* TODO Readings and critique of 4 DBMS papers (Monday and Wednesday)
+* TODO DBMS programming homework (Tuesday)
+* TODO DBMS written homework (Friday)
+* TODO EESEN end 2 end on GP corpus
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, January 29, 2016 4:54 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+* Apply lessons learned from database management systems to our corpora
+* ASR adaptation of GP to Younde
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+
+
+# Goals for Last Week:
+* TODO Finish eesen character based run on GP corpus.
+Not yet.
+I've been doing a lot of tedious script reading and writing work on this.
+Problems include:
+Training programs require input files that map utterance IDs to speaker IDs.
+2 sources of recipe scripts: 1 from globalphone in kaldi and 1 from eesen.
+Eesen has deep learning  kaldi does not.
+Eesen requires running on a gpu kaldi does not.
+Adapting the recipe scripts to the Yaounde corpus was easier because I only
+used the eesen recipe.
+
+* DONE Read deep reinforcement learning papers
+I listened to several of Dave Silver's lectures.
+
+I can of course do a lot more reading in this area.
+* TODO Run tensorflow NMT demo on GPU.
+I have not gone end to end yet on the fr-en demo.
+I got through the data downloading and data prep.
+This takes a while.
+For some reason the demo bdies when it is ready to start training.
+* DONE Tuition funnding paperwork
+Thanks to Chanel
+* DONE Go to classes and decide which one to take.
+I am going to take Database Management Systems.
+It looks like a lot of work, but I think I'lllearn a lot.
+* TODO Verb prediction with tensorflow
+Made a little progress, but I want to get the demo working first.
+
+* TODO Read Bengio and Goodfellow's deep learning book ( I now have latex
+transcriptions of chapters 6 and 10).
+I've read most of Chapter 10. I'm getting Chapter 8 transcribed.
+
+# Goals for Next Week:
+* TODO DBMS readings (Monday)
+* TODO Start on DBMS programming assignment 1
+* TODO Eessen end to end on GP corpus
+* TODO Tensorflow demo
+* TODO Tensorflow on toy corpus
+* TODO Tensorflow for verb prediction
+* TODO Tensorflow on our corpora
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, January 22, 2016 9:35 AM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+# Goals for Last Week:
+* TODO Training/tuition funding paperwork (Friday)
+Chanel is working on this. The problem is I'm not sure what classes I'll end
+up taking.
+* DONE Tensorflow tutorials
+I stepped through some of them.
+* DONE Finish tensorflow nmt
+I got the demo running on my laptop cpu. This really needs to be run on a
+gpu.
+* TODO Verb prediction with tensorflow
+I started working on this, but did not really make progress.
+* TODO Incorporate tensorflow into simtrans framework
+Started on this , but I got discouraged, it's hard.
+* DONE Get tensorflow working with gpu
+Justin got tensorflow installed and I can load it into python now. We had to
+downgrade to cuda7.0 from cuda7.5.
+* DONE Finish eesen run on Yaounde data
+Yes. Later I'll have to look closer at data input , but for now I'm happy
+that we can go end to end on the Yaounde corpus. So far I've only run the
+character based system. No phone based system yet.
+* TODO Run eesen on globalphone data
+I'm almost done with this. I'm pretty happy with where we're at with this,
+but I've put a lot of time into it.
+* TODO Scientific Computing Final
+I took an incomplete. Judith Klavens help me get the latex version to
+Professor Pat O'Leary's textbook.
+* TODO Read Professor O'Leary's book.
+
+# Goals for Next Week:
+* TODO Finish eesen character based run on GP corpus.
+* TODO Read deep reinforcement learning papers
+* TODO Run tensorflow NMT demo on GPU.
+* TODO Tuition funnding paperwork
+* TODO Go to classes and decide which one to take.
+* TODO Verb prediction with tensorflow
+* TODO Read Bengio and Goodfellow's deep learning book ( I now have latex
+transcriptions of chapters 6 and 10).
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Thursday, January 14, 2016 5:26 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn toolkits for deep learning
+# Goals for Last Week:
+* DONE Upgrade to latest Ubuntu on my laptop (Monday with Justin)
+* DONE Essen on Yaounde
+Training succeeded. There is a problem in decoding that I think I have
+solved. The lm was not getting converted into an fst.
+* TODO Eesen on GlobalPhone
+* TODO Keras for simtrans
+I have temporarily given up on keras. I think they broke things when they
+made the major version upgrade. I'm moving over to tensorflow. The good news
+here is that I got tensorflow to train an rnnlm with German data that I
+eventually want to use for verb prediction. I also have neural machine
+translation training currently with German/English using tensorflow. I had
+never gotten this far with blocks.
+* TODO Read papers on reinforcement learning
+http://arxiv.org/pdf/1511.06732v3.pdf
+I did not get to this.
+
+# Goals for Next Week:
+* TODO Training/tuition funding paperwork (Friday)
+* TODO Tensorflow tutorials
+* TODO Finish tensorflow nmt
+* TODO Verb prediction with tensorflow
+* TODO Incorporate tensorflow into simtrans framework
+* TODO Get tensorflow working with gpu
+* TODO Finish eesen run on Yaounde data
+* TODO Run eesen on globalphone data
+* TODO Scientific Computing Final
+I took an incomplete. Judith Klavens help me get the latex version to
+Professor Pat O'Leary's textbook.
+* TODO Read Professor O'Leary's book.
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, December 18, 2015 4:09 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Understand Deep Learning
+* TODO Learn theano
+* TODO Learn kearas
+* TODO Learn blocks
+# Goals for Last Week:
+* TODO Scientific Computing take home Final
+I did not turn it in.
+* DONE Recover from laptop meltdown
+Justin got me up and running again.
+* TODO Write NAACL paper draft for clinic (Thursday)
+No. I did not have enough to write about.
+
+
+This was a bad week
+# Goals for Next Week:
+* TODO Upgrade to latest Ubuntu on my laptop (Monday with Justin)
+* TODO Essen on Yaounde
+* TODO Eesen on GlobalPhone
+* TODO Keras for simtrans
+* TODO Read papers on reinforcement learning
+http://arxiv.org/pdf/1511.06732v3.pdf
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Monday, December 07, 2015 3:51 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Do well in Scientific Computing
+* TODO Understand Deep Learning
+* TODO Learn theano
+* TODO Learn kearas
+* TODO Learn blocks
+# Goals for Last Week:# Goals for Last Week:
+* Deep Simtrans Research
+** DONE  Evaluate Verb Prediction  LM
+Learning is happening, but it looks like I have to scale up much more.
+The results are around 14% accuracy and 6% is the most frequent baseline.
+
+** DONE  Evaluate Nextword LM
+The numbers are very very small. I basically do not have this working yet.
+The problem is that the output space is huge.
+The output is a probability distribution over the words in the vocabulary.
+This involves a space with dimension size the number of words in the
+vocabulary.
+I haven't figured out how this is done in practice.
+That's why I downloaded the RNN tutorial. That tutorial has a method for
+doing this.
+In the verb prediction case the probability distribution is over the verb
+types, which is much smaller.
+** TODO Run policy training with RNN LMs
+** TODO Execute simtrans policies with RNN LMs
+** TODO Evaluate simtrans end to end executions
+** TODO Write another draft of a paper for NAACL
+** TODO Read background papers for NAACL paper
+
+* Scientific Computing Course
+** TODO Problems set 12 (Wednesday after Thanksgiving)
+** TODO Readings on symplectic method
+
+I met Dan Jurafsky this week at the CLIP colloquium.
+His talk was about tracing word meaning change through time with embeddings.
+I messed up my laptop speech interface.
+Justin is trying to fix it for me.
+I installed an RNN tutorial which in turn installed the nvidia and cuda
+packages.
+After this my keras scripts were broken. I later found out that theano was
+broken.
+It looked to me like the nvidia and cuda programs were interfering with
+theano. They don't work on my laptop anyway, so I tried to uninstall them.
+This did not work, so I tried to delete them by hand. I ended up deleting
+more than just nvidia and cuda files.
+
+
+# Goals for Next Week:
+* TODO Scientific Computing take home Final
+* TODO Recover from laptop meltdown
+* TODO Write NAACL paper draft for clinic (Thursday)
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Monday, November 23, 2015 4:09 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Do well in Scientific Computing
+* TODO Understand Deep Learning
+# Goals for Last Week:
+* Deep Simtrans Research
+** DONE Reimplement Nextword RNNLM without incremental training data.
+** TODO Get results and prepare them for presentation to Jordan and the
+group ( they don't believe the 66% accuracy)
+No. I totally got sidetracked by implementing the embedding initialization
+with word2vec pretrained vectors. This took me a whole week to do. The 66%
+was so high because I was using the catchall category and the data is
+balanced towards the catchall category. The results wlook more like 22%.
+** TODO Get RNNLMs working in the Simtrans framework
+Not working on this yet.
+** TODO Read background papers for paper
+** TODO Write another draft
+* Scientific Computing Coursework
+** TODO Problem set 11 (Friday)
+** TODO Readings
+
+# Goals for Next Week:
+* Deep Simtrans Research
+** TODO Evaluate Verb Prediction  LM
+** TODO Evaluate Nextword LM
+** TODO Run policy training with RNN LMs
+** TODO Execute simtrans policies with RNN LMs
+** TODO Evaluate simtrans end to end executions
+** TODO Write another dradft of a paper for NAACL
+** TODO Read background papers for NAACL paper
+
+* Scientific Computing Course
+** TODO Problems set 12 (Wednesday after Thanksgiving)
+** TODO Readings on symplectic method
+
+
+
+
+-----Original Message-----
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Friday, November 13, 2015 2:14 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+One WAR item for Doug's list.
+John Morgan is implementing two Recurrent Neural Network Language Models
+(RNNLM). The RNNLMs will be used to run experiments in a Simultaneous
+Translation system. One will be used to predict  the verb in a German
+language sentence given a prefix of the sentence. The other RNNLM will be
+used to predict the next word in a German sentence. Verb prediction is a
+problem which is specifically important in translation from a language with
+Subject Object Verb order into a Subject Verb Object order language. He has
+RNNLMs working currently, but he needs to improve the way they are trained.
+
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Do well in Scientific Computing
+* TODO Understand Deep Learning
+# Goals for Last Week:
+* Scientific Computing Coursework:
+** TODO Problem Set 10 (Wednesday)
+No. Unfortunately I could not solve any of the problems on this problem set.
+** TODO Readings
+Found a pdf copy of the Hairer book.
+* Deep Simtrans Research
+** TODO Fix problems with moses + RNNLM implementation in keras
+Got some feedback from Mohit on RNNLM.
+I was using the training data incorrectly.
+Jordan and Mohit both told me not to train on incremental segments of the
+sentences.
+This biases the models to the beginning of the sentence. (not sure I
+understand this)
+The TimeDistributedDense layer in kearas does the incrementality
+automatically.
+I'm already doing something similar for verb prediction, I only have 1
+training example per sentence.
+I have to reimplement the nextword model so that it does not use incremental
+sentence segments.
+Mohit tells me to use a vector of labels for each sentence.
+For verb prediction there is only one label , namely the verb.
+For Nextword prediction, there is a vector of labels.
+So, I think this is what he means:
+Let the current sentence be given by:
+X_1, x_2, \ldots, x_n
+Where each x_i is a word token
+The training input vector will be
+X_1, x_2, \ldots, x_{n-1}
+We don't want to make a prediction for the last word.
+Although maybe we want to predict the "end of sentence"?
+The label vector will be given by
+X_2, x_3, \ldots, x_n
+I have to  set up the tensors that represent these vectors so I can run the
+training with keras.
+** TODO Draft introduction and related work sections for a paper
+I did some writing
+
+# Goals for Next Week:
+* Deep Simtrans Research
+** TODO Reimplement Nextword RNNLM without incremental training data.
+** TODO Get results and prepare them for presentation to Jordan and the
+group ( they don't believe the 66% accuracy)
+** TODO Get RNNLMs working in the Simtrans framework
+** TODO Read background papers for paper
+** TODO Write another draft
+* Scientific Computing Coursework
+** TODO Problem set 11 (Friday)
+** TODO Readings
+
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent: Monday, November 09, 2015 4:37 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
+<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
+<michelle.t.vanni.civ@mail.mil>
+Subject: RE: Team WAR
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Do well in Scientific Computing
+* Understand Deep Learning
+# Goals for Last Week:
+# Deep Simtrans Research
+* TODO Prediction/Policy interface (Tonight)
+No, I have not done this yet :(
+* DONE Get moses training working on umiacs cluster
+Yes! This is totally done.
+* TODO Get blocks NMT example running
+No. I'm backing off of this for now. I'm going back to moses + RNNLMS for
+verb prediction and nextword prediction.
+* TODO Get Cho's NMT example running
+No. I ran into a problem that I can't remember now. This looks kind of
+promising though. I got farther than I expected.
+His stuff runs at a more elementary (not easier) level. Theano instead of
+keras or blocks.
+* TODO Do some basic tutorials  on theano to get some intuition
+I'm doing this a little bit at a time. Auto differentiation is a big topic.
+# Scientific Computing Coursework
+* DONE Problem set 9 (Wednesday)
+* DONE Readings on Conjugate Gradient and ODEs
+I've been reading a lot for this course.
+# Spring 2016 classes
+* DONE Sign up for  classes (Thursday morning)
+
+# Goals for Next Week:
+* Scientific Computing Coursework:
+** TODO Problem Set 10 (Wednesday)
+** TODO Readings
+
+* Deep Simtrans Research
+** TODO Fix problems with moses + RNNLM implementation in keras
+** TODO Draft introduction and related work sections for a paper
+
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Do well in Scientific Computing
+* Understand Deep Learning
+# Goals for Last Week:
+## Deep Simtrans Research
+* TODO Get the nmt example from blocks  running (important due pretty soon)
+I fixed a problem with the data that was choking the data prep. That got the
+training to run through 1 epoch.
+* TODO Incorporate blocks nmt code into simtrans framework (important not
+due soon)
+No progress here
+* TODO Get current code running on clip cluster
+I spent a lot of time on this. The good news: moses can be compiled on the
+cluster. The umiacs staff installed some required libraries. Bad news:
+Training has not yet succeeded. There's a problem with the ttable binarizer.
+
+* TODO Fix interface between predictions and policy trainer
+No.
+## Scientific Computing Course
+* TODO Pull out of tail spin
+* DONE Problem set 8 (Wednesday)
+I did what I could, but this is not going well :(
+* DONE Readings
+I read the chapter on trust region methods
+# Objectives
+* DONE Write objectives (Friday)
+
+# Goals for Next Week:
+# Deep Simtrans Research
+* TODO Prediction/Policy interface (Tonight)
+* TODO Get moses training working on umiacs cluster
+* TODO Get blocks NMT example running
+* TODO Get Cho's NMT example running
+* TODO Do some basic tutorials  on theano to get some intuition
+
+# Scientific Computing Coursework
+* TODO Problem set 9 (Wednesday)
+* TODO Readings on Conjugate Gradient and ODEs
+
+# Spring 2016 classes
+* TODO Sign up for  classes (Thursday morning)
+
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Do well in Scientific Computing
+
+# Goals for Last Week:
+## Scientific Computing Coursework
+* DONE Problem set 7 (Wednesday)
+Did not do well  on this. I have forgotten or never knew how to do vector
+calculus operations like gradient, Jacobian, and Hessian computations.
+
+* DONE Readings from Nocedal and Wright
+Did a lot of reading.
+## Deep Simtrans Research
+
+* TODO Go back and polish the kbest output  predictions.
+* DONE Get the verb final and nextword GRU models working in a toy simtrans
+end to end system.
+Very happy about this!
+Don't forget to look at interface between GRU outputs (vectors) and input to
+policy (onebest? Vector?)
+
+
+* DONE  Disability Awareness panel (Thursday)
+
+# Goals for Next Week:
+## Deep Simtrans Research
+* TODO Get the nmt example from blocks  running (important due pretty soon)
+* TODO Incorporate blocks nmt code into simtrans framework (important not
+due soon)
+* TODO Get current code running on clip cluster
+* TODO Fix interface between predictions and policy trainer
+
+## Scientific Computing Course
+* TODO Pull out of tail spin
+* TODO Problem set 8 (Wednesday)
+* TODO Readings
+
+# Objectives
+* TODO Write objectives (Friday)
+
+
+
+# Big Picture: a.k.a. Important not due soon
+*TODO  Propose a research question for deep learning in simtrans
+* TODO First author on a paper
+* TODO Do well in Scientific Computing
+
+# Goals for Last  Week
+##Scientific Computing Corsework: Important Due Soon
+* DONE Problem set 6 (Wednesday)
+Did not finish last 2 problems. I tried to convert the code from matlab into
+python.
+* DONE Readings from Nocedal and Wright's Book on Numerical Optimization
+* TODO Get text transcribed
+One transcriber is working well, the other dropped  out without any contact.
+It's a shame, he was really good. He'll have to learn a lesson at some point
+in his life.
+# Deep Simtrans Research
+* DONE Scale up train test and evaluation of GRU LM to real data set on GPU
+Justin fixed a problem with cuda and the GPU. I think it actually runs
+faster now.
+
+# Goals for Next Week:
+## Scientific Computing Coursework
+* TODO Problem set 7 (Wednesday)
+* TODO Readings from Nocedal and Wright
+
+## Deep Simtrans Research
+Last week I came a little closer to understanding what is going on with the
+network output.
+I thought I needed to extract the one best prediction from the huge amount
+of data that is spewed out at prediction time.
+It turns out that the reason Hal and Jordan wanted the kbest output is that
+it gets used directly as features in the examples that are used to train the
+searn classifier.
+So I need to change my goal. The one best prediction is not really important
+and right now I don't really know if there is a way to evaluate the kbest
+predictions.
+
+I also implemented a nextword predictor. It mostly is a clone of the final
+verb predictor. Instead of 1 example consisting of an n word prefix and 1
+final verb, I have n examples consisting of I word prefixes and a next word
+for 1 <= I <=n.
+So instead of the single example  (to the store he ) (went)
+I have the 3 examples:
+(to) (the)
+(to the) (store)
+(to the store) (he)
+
+* TODO Go back and polish the kbest output  predictions.
+* TODO Get the verb final and nextword GRU models working in a toy simtrans
+end to end system.
+
+
+* TODO Disability Awareness panel (Thursday)
+
+
+# Big Picture a.k.a Important not due soon:
+* Use deep learning to improve Simtrans
+* First author on a paper
+
+# Goals for Next Week:
+## Scientific Computing  Coursework Important Due Soon
+*  DONE Homework set 5 (Wednesday)
+Did not finish last problem on hybrid methods for root finding?
+* DONE Readings Benchmark optimization and root-finding methods
+
+## Simtrans Deep Learning Research
+* DONE kbest prediction output (Important due soon)
+I think I've finally figured this out. The k here refers to the number of
+verbs that are possible in the output.. At each time step (1 for each word
+in the prefix) the network outputs a verb with its probability. The verb
+with the highest probability is the output for that time step. The final
+output of the network is the verb output at the last time step. I have
+scripts that train test and evaluate a GRU LM. I have it working on a small
+data set.
+* DONE Test and Evaluate results
+Done on a small data set. Need to scale up.
+
+# Goals for Next Week
+##Scientific Computing Corsework: Important Due Soon
+* TODO Problem set 6 (Wednesday)
+* TODO Readings from Nocedal and Wright's Book on Numerical Optimization
+* TODO Get text transcribed
+# Deep Simtrans Research
+* TODO Scale up train test and evaluation of GRU LM to real data set on GPU
+
+
+* Important Not Due Soon
+Simtrans Deep Learning research
+Incorporate neurl sequence to sequence MT into Simtrans
+Do well in Scientific Computing
+First author on a paper
+* Goals for Last  Week:
+** Not Important due soon
+*** DONE Mandatory training
+I might actually be done, but I need to check just in case. At most I still
+have to do an IT security training.
+
+Only had to due suicide prevention, which I did and I now believe I had
+already done it.
+** Important due soon
+*** Scientific Computing coursework
+*****  DONE Readings: chapter 5 of Goodman and Bindel matrix factorizations
+**** DONE  Problem set 4 (Wednesday)
+*** Deep Simtrans Research
+***** TODO  Get k-best predictions at each timestep
+This is apparently important to Hal, so I probably should do it and I think
+I can knock it out soon.
+
+I'm working hard on this. It is not as easy as I thought. The prediction
+output is a 3-linear tensor ... well, maybe it's not actually a tensor, but
+it is an aray with 3 components. The first component is the samples, the
+second is the prediction (one for each sample), and the third is the
+prediction probability for each verb type.
+I'm having trouble dealing with this massive load of data. I want to display
+the kbest predictions.
+**** TODO use more verbs and report on coverage
+Again, important to Hal and should not be too hard to accomplish.
+I'm running a model training on the gpu machine, it's pretty big and is
+going to take around 4 days to train.
+I won't be able to evaluate the model until I figure out how to deal with
+the prediction tensor.
+****  DONE "none of the above" verb
+I'll probably have to ask for clarification and help on this task, but it
+seems important and should probably be done before moving on.
+
+This was easier than I thought, although my code is pretty brittle. I have a
+long sequence of conditionals testing for a verb in final, penultimate, or
+ante-penultimate position.
+**** TODO  look at verbs other than the final one
+This is important and I'm going to work on a stupid version of this where I
+do not consider the problem of
+Verbs in relative clauses of objects when the main clause verb hasn't yet
+been seen
+This latter issue is very important and not due soon.
+I'll simply split the examples where the first verb occurs.
+
+Jordan told me to stand down on this goal until I figure out the easier
+problem of a single final verb. Probably good advice.
+** Important not due soon
+*** Deep Learning Research
+**** TODO Readings Bengio's book, Bengio's video, research papers
+
+I read a little of Bengio's book. I'm pleased that what I'm learning in
+Scientific computing is helping me read this book. I'm having the text for
+chapter 10 transcribed into LaTeX and the diagrams described.
+
+***** TODO visualize in some reasonable way as DE words are being revealed
+
+Nope
+**** TODO explore other model types, eg LSTM
+In some cases like LSTM models, I might be able to accomplish this without a
+lot of effort.
+
+I have a script that should  build a LSTM model.
+
+*** TODO encode verbs from previous sentences as
+input to the predictor
+
+Nope
+
+* Goals for Next Week:
+
+** Scientific Computing  Coursework Important Due Soon
+*** TODO Homework set 5 (Wednesday)
+*** TODO Readings Benchmark optimization and root-finding methods
+
+** Simtrans Deep Learning Research
+*** TODO kbest prediction output (Important due soon)
+*** TODO Test and Evaluate results
+
+* Big Picture Important not due soon
+Deep Learning Research
+First Author on a Paper
+
+* Goals for Last  Week:
+** DONE  Write Accomplishments (Friday)
+** Scientific Computing
+*** DONE  Work on problem set 3 before class on Friday
+This was really hard, but relevant. Eigen values, eigen vectors, singular
+values ...
+I don't have a background in differential equations :(
+*** DONE Readings
+*** TODO Finish problem set 3 (Wednesday)
+Did my best, but did not get it finished.
+
+** Deep Simtrans Research
+*** TODO  Get k-best predictions at each timestep
+Not important to me not due soon
+*** TODO visualize in some reasonable way as DE words are being revealed
+Important not due soon
+*** DONE  Look at position at which model first
+becomes correct
+
+I did this for the data set I'm currently working on.
+Answer: 62% of the way into the sentence.
+This was done on a dataset where the longest prefix was 39 words. Average
+position where the first occurrence of the correct verb occurred was
+position 24.
+This was done on training data. Jordan and Hal say I should stick to the
+training set until I overfit.
+98% of the time the correct verb was chosen by the end of the time steps.
+The correct verb was chosen in 58% of the time steps.
+These numbers seem very high to me, so I think I'm overfitting and it's time
+to work with  a test set.
+
+** TODO use more data
+Not important not due soon and I'm sort of doing this anyway.
+
+*** TODO use more verbs (maybe 80% or 90% coverage of tokens)
+I'm basically doing this, but I'm not sure about the exact coverage.
+
+***  TODO have a "none of the above" verb
+I don't know how to do this yet.
+
+*** TODO  look at verbs other than the final one (this
+requires more thought because of verbs in relative clauses of objects when
+the main clause verb hasn't yet been seen)
+
+I started on this task. I'm trying to make 2 training examples out of 1. I'm
+Splitting the training example where a medial verb occurs. The first example
+will have the prefix from the beginning of the sentence to the first verb.
+The second example wil be the same as the original example. The hard part is
+to deal with multiple word verbs. I need a greedy algorithm to suck up all
+the words in a verb.
+
+*** TODO explore other model types, eg LSTM
+Important  not due soon
+
+*** TODO perhaps encode verbs from previous sentences as
+input to the predictor (in some way)
+Very important not due soon
+
+*** TODO next next - censor training data based on actual
+interpretation time by humans
+
+Might be important not due soon
+
+** TODO Hals concern about training paths
+Important not due soon and I'm not sure I understand the issue.
+
+* Goals for Next Week:
+** Not Important due soon
+*** TODO Mandatory training
+I might actually be done, but I need to check just in case. At most I still
+have to do an IT security training.
+** Important due soon
+*** Scientific Computing coursework
+****  TODO Readings: chapter 5 of Goodman and Bindel matrix factorizations
+**** TODO Problem set 4 (Wednesday)
+
+*** Deep Simtrans Research
+**** TODO  Get k-best predictions at each timestep
+This is apparently important to Hal, so I probably should do it and I think
+I can knock it out soon.
+**** TODO use more verbs and report on coverage
+Again, important to Hal and should not be too hard to accomplish.
+****  TODO "none of the above" verb
+I'll probably have to ask for clarification and help on this task, but it
+seems important and should probably be done before moving on.
+**** TODO  look at verbs other than the final one
+This is important and I'm going to work on a stupid version of this where I
+do not consider the problem of
+Verbs in relative clauses of objects when the main clause verb hasn't yet
+been seen
+This latter issue is very important and not due soon.
+I'll simply split the examples where the first verb occurs.
+
+** Important not due soon
+*** Deep Learning Research
+**** TODO Readings Bengio's book, Bengio's video, research papers
+***** TODO visualize in some reasonable way as DE words are being revealed
+**** TODO explore other model types, eg LSTM
+In some cases like LSTM models, I might be able to accomplish this without a
+lot of effort.
+*** TODO encode verbs from previous sentences as
+input to the predictor
+
+
+*  Big Picture
+Deep Simtrans
+Do well in Scientific Computing Course
+First author on paper
+* goals for Next Week:
+
+** Deep Simtrans Research
+*** DONE  Make sure output is sequence of the same verb
+T-many times (for input of length T)
+I think this was a misunderstanding. I'm pretty sure I was doing this
+anyway. The training examples consist of a sentence prefix and a final verb.
+The keras gru model training does the right thing (I hope).
+It steps through each prefix in the prefix and  associates it with the same
+final verb. This won't happen at test time.
+*** TODO  Get k-best predictions at each timestep, and
+I'm almost done with this task.
+In my current implementation I'm working with 1611 final verbs. I end up
+with a probability distribution ov this set of verbs. The problem is that at
+each time step you get a probability distribution, so there's a  lot of
+data. Where should I make the cutoff? K=10, k=100, k=1000?
+I've already got the onebest output working.
+
+*** TODO visualize in some reasonable way as DE words are being revealed
+I have not got to this yet., but I'm outputting the data to a csv file which
+should make it easier to visualize later.
+
+
+*** TODO Look at position at which model first
+becomes correct
+Not there yet
+** TODO use more data
+No. Need to get the system working on small data sets.
+*** TODO use more verbs (maybe 80% or 90% coverage of tokens)
+I haven't measured this yet, but I'm using 1611 verbs currently. This may be
+too many. I'm only looking at sentences of length 8. When I scale up, the
+number of verbs might cause memory problems.
+
+***  TODO have a "none of the above" verb
+Did not get to this yet
+
+*** TODO
+look at verbs other than the final one (this
+requires more thought because of verbs in relative clauses of objects when
+the main clause verb hasn't yet been seen)
+Nope, not yet.
+
+*** TODO
+explore other model types, eg LSTM
+Nope not yet, although I don't think this should be hard in keras.
+
+*** TODO
+perhaps encode verbs from previous sentences as
+input to the predictor (in some way)
+No. This is a long term goal.
+*** TODO
+next next - censor training data based on actual
+interpretation time by humans
+[3:41:05 PM] Hal Daume III: next next - worry about hal's concern about "off
+
+No, another long term goal.
+
+*** TODO path" training problem
+
+** TODO Mmandatory Training (Friday)
+I still don't' see anything on TED. I think I'm finished.
+
+** TODO Write accomplishments (Friday)
+Barely started.
+
+
+** Scientific Computing Course
+*** DONE Problem set 2 (Wednesday)
+*** DONE Readings
+
+** DONE Sign up for LSD at UMD
+I don't think I can make this.
+
+* Goals for Next Week:
+** TODO Write Accomplishments (Friday)
+** Scientific Computing
+*** TODO Work on problem set 3 before clas on Friday
+*** TODO Readings
+*** TODO Finish problem set 3 (Wednesday)
+
+** Deep Simtrans Research
+*** TODO  Get k-best predictions at each timestep
+*** TODO visualize in some reasonable way as DE words are being revealed
+*** TODO Look at position at which model first
+becomes correct
+** TODO use more data
+*** TODO use more verbs (maybe 80% or 90% coverage of tokens)
+***  TODO have a "none of the above" verb
+*** TODO  look at verbs other than the final one (this
+requires more thought because of verbs in relative clauses of objects when
+the main clause verb hasn't yet been seen)
+*** TODO explore other model types, eg LSTM
+*** TODO perhaps encode verbs from previous sentences as
+input to the predictor (in some way)
+*** TODO next next - censor training data based on actual
+interpretation time by humans
+** TODO Hals concern about training paths
+
+* Big Picture
+** Deep Simtrans  Research
+** Learn Deep Learning
+** First author on a paper
+
+
+* Goals for Last  Week
+
+** Deep Simtrans Research
+*** DONE Run verb predicting training GRU on large corpus
+Well ... the corpus is not huge, but training finished on the gpu machine.
+This is cool, but I don't think I'm ready to move from the toy to the real
+thing yet.
+
+*** TODO Run verb predicting GRU on test data
+No, this failed on the gpu machine after training.  With a memory error.
+I'll leave this for now and get back to it later.
+
+*** DONE Meet with Hal Jordan and Marine (Wednesday) get plan prepared
+This went very well. 1 student with 4 advisors. Hal seemed very happy with
+my work. I think he must not be busy. Jordan was pretty happy too.
+They gave me some tasks (se below)
+** Scientific Computing Course
+*** DONE Problem set 1
+I was not really happy with my work, but at least I got it turned in which
+is more than some of the other students achieved.
+
+*** TODO Readings
+Could have done more.
+*** TODO Contact transcribers for next readings
+Don't have any specific transcriber tasks right now.
+
+
+** TODO Write Accomplishments
+Nope.
+
+
+* goals for Next Week:
+
+** Deep Simtrans Research
+** TODO
+[3:37:23 PM] Hal Daume III: Make sure output is sequence of the same verb
+T-many times (for input of length T)
+*** TODO
+[3:37:44 PM] Hal Daume III: Get k-best predictions at each timestep, and
+visualize in some reasonable way as DE words are being revealed
+*** TODO [3:37:56 PM] Hal Daume III: Look at position at which model first
+becomes correct
+[3:38:10 PM] Hal Daume III: use more data
+*** TODO [3:38:22 PM] Hal Daume III: use more verbs (maybe 80% or 90%
+coverage of tokens)
+[3:38:28 PM] Hal Daume III: have a "none of the above" verb
+*** TODO
+[3:38:53 PM] Hal Daume III: look at verbs other than the final one (this
+requires more thought because of verbs in relative clauses of objects when
+the main clause verb hasn't yet been seen)
+*** TODO
+[3:39:04 PM] Hal Daume III: explore other model types, eg LSTM
+*** TODO
+[3:39:26 PM] Hal Daume III: perhaps encode verbs from previous sentences as
+input to the predictor (in some way)
+*** TODO
+[3:40:46 PM] Hal Daume III: next next - censor training data based on actual
+interpretation time by humans
+[3:41:05 PM] Hal Daume III: next next - worry about hal's concern about "off
+path" training
+
+** TODO Mmandatory Training (Friday)
+** TODO Write accomplishments (Friday)
+
+** Scientific Computing Course
+*** TODO Problem set 2 (Wednesday)
+*** TODO Readings
+
+** TODO Sign up for LSD at UMD
+
+I'm going to make an update to my goals since I've achieved some things.
+
+* Big Picture
+** Deep Simtrans research
+** First author paper
+** Do well in Scientific Computing Course
+
+* Goals for Last  Week:
+** Deep Simtrans Research
+*** DONE Implement toy GRUverb predicting lm in keras
+Thanks to Mohit
+*** DONE Get above code running on gpu machine
+Thanks to Justin
+
+** Scientific Computing Course
+*** TODO Homework set 1 (Wednesday)
+*** TODO Readings
+
+** TODO WriteAcomplishments
+
+** DONE Mandatory Training
+I did the EEO harassment  training
+
+* Goals for Next Week
+
+** Deep Simtrans Research
+*** TODO Run verb predicting training GRU on large corpus
+*** TODO Run verb predicting GRU on test data
+*** TODO Meet with Hal Jordan and Marine (Wednesday) get plan prepared
+
+** Scientific Computing Course
+*** TODO Problem set 1
+*** TODO Readings
+*** TODO Contact transcribers for next readings
+
+** TODO Write Accomplishments
+
+* Big Picture:
+** Research work in Deep Simtrans
+** First author  on paper
+** Do well in Scientific Computing Course
+
+* Goals for Last  Week
+** Research on Verb Prediction
+*** DONE Read Mohit's ACL paper on DAN (deep averaging network)
+*** DONE Get DAN code.
+*** DONE Install DAN code.
+*** TODO Run DAN code on an easy task (not sure what this would be yet)
+*** DONE Contact Mohit to discuss DAN.
+Mohit suggested I not use his code. He suggested I implement his code in
+keras instead. His code is good but elementary.
+I installed keras (Justin installed it on the GPU machine).
+Mohit is helping me implement a toy version of his GRU model for language
+modeling.
+A GRU is probably better for language modeling and verb prediction  than his
+DAN model.
+I think the difference is that a GRU can handle a sentence as a single
+training instance to predict a final verb.
+In a DAN, if a verb final sentence has n words, it will require n training
+instances.
+For now I've dropped working  with blocks and torch.
+
+** School
+*** Scientific Computing
+**** DONE Go to class (MWF)
+**** DONE Contact DSS office about latex transcription of text book.
+It turns out the latex source code for the first text book we will be using
+is available on the author's webpage.
+
+
+** Neural Machine Translation (nmt)
+*** TODO Get blocks demos running on gpu  with titan card
+Nope. I'm dropping blocks for now and concentrating on working in keras.
+*** TODO Fix data preparation problems (missing segment aleels)
+Nope, but might get back to this when I actually do sequence to sequence mt.
+I might do s2s mt in blocks.
+
+** Deep Learning for Verb Prediction
+*** TODO How could this be done in theano or blocks?
+Moving to keras for now. Mohit is helping me do it with a GRU (gated
+recurrent units I  think?).
+*** TODO Read more of Bengio's dl book
+
+** TODO Mandatory Training
+Still could not find anything on my TED page ...
+
+** TODO Write up accomplishments
+
+* Goals for Next Week:
+** Deep Simtrans Research
+*** TODO Implement toy GRUverb predicting lm in keras
+*** TODO Get above code running on gpu machine
+
+** Scientific Computing Course
+*** TODO Homework set 1 (Wednesday)
+*** TODO Readings
+
+** TODO WriteAcomplishments
+
+** TODO Mandatory Training
+
+
+* Big Picture
+** Deep Simtrans
+** Do well  in Scientific Computing course
+
+* Goalls for Last Week
+**   blocks
+*** TODO Run cs-en demo
+I made a lot of progress on this goal. I got the nmt training process
+running on the gpu. We swapped out the Tesla for the Titan Gpu and the
+training process does not seem to be using the gpu now. I know the gpu is
+working, because I have the eesen character ASR system recipe using it.
+Preprocessing issues have also come up. The preprocessing scripts
+distributed with blocks are letting bisegments with one of the segments
+missing pass through.
+
+*** TODO Run demo with de-en corpus
+The de-en corpus runs into the same issues as above.
+
+*** TODO Setup system to run on our English Dari and Pashto corpora
+Not yet. This will happen after I get the demo running.
+** theano
+*** DONE  Get theano and blocks  running on gpu machine
+The theano demo runs on both the tesla and titan cards. The blocks demo is
+not running yet on the titan.
+
+*** DONE Read more tutorials
+
+** Deep Learning book
+*** TODO Read chapter 10 on RNNs
+?Started. Chapter 10 is huge and there are a lot of equations that I cannot
+read. Parameter sharing is important. I draw on how this was done for HMMs
+with htk. It turns out this is key in deep learning.
+
+** Accomplishments
+*** TODO Write accomplishments
+Nope.
+** Bilingual NeuralLMs
+
+*** TODO Get blm working for English Dari and Pashto parallel corpora.
+I'm pretty sure I had done this, but I cannot replicate it. I might be
+fooling myself. Anyway, I am getting the NaNs returned from the blm during
+tuning.
+** TODO Mandatory Training
+No. The trainings are not showing up on my TED.
+
+* Unexpected Events
+** MorphoChain
+I spent a day getting MorphoChain installed and setup to run on our Dari
+corpus.
+I have scripts that process the Dari data for use in word2vec.
+I installed the java MorphoChain code and ran it on the Dari corpus.
+My guess is that we need a large Dari corpus. This might not be that hard to
+get. We're used to working with pparallel corpra. This is much easier, we
+just need lots of Dari raw text.
+
+* Goals for Next Week
+** Research on Verb Prediction
+*** TODO Read Mohit's ACL paper on DAN (deep averaging network)
+*** TODO Get DAN code.
+*** TODO Install DAN code.
+*** TODO Run DAN code on an easy task (not sure what this would be yet)
+*** TODO Contact Mohit to discuss DAN.
+
+** School
+*** Scientific Computing
+** TODO Go to class (MWF)
+** TODO Contact DSS office about latex transcription of text book.
+
+** Neural Machine Translation (nmt)
+*** TODO Get blocks demos running on gpu  with titan card
+*** TODO Fix data preparation problems (missing segment aleels)
+
+** Deep Learning for Verb Prediction
+*** TODO How could this be done in theano or blocks?
+*** TODO Read more of Bengio's dl book
+
+** Mandatory Training
+
+** Write up accomplishments
+
+
