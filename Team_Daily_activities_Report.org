@@ -71,9 +71,65 @@ appropriately respond to any instances of sexual harassment or sexual
 assault; encourage others to do the same.
 
 
+** Top 6 accomplishments
+Name: John Morgan
+
+Office:
+
+Team Leader (No):
+Grade: 
+Series:
+# of refereed papers published (Form1) 0
+Single or first author0
+Co-author0
+# of non-refereed papers, reports, published (Form 1)0
+Single or first author0
+Co-author0
+# Presentations – at conferences or significant briefings0
+# Field Tests0
+Did you complete your IDP ?  No
+Recognition (awards, letters of appreciation, etc.)
+
+ List significant projects you are working on & your specific responsibilities:
+
+Project: Adaptation of Automatic Speech Recognition models from the well-resourced world language French to accents in regions of Africa. 
+Responsabilities:
+Preparation of data including acoustic recordings of speech  and text transcriptions.
+Conducting experiments to determine best performing models.
+Investigation of adaptation of mathematical models to be adapted including Hidden Markov Models, Subspace Gaussian Mixture Models and Deep Neural Networks.
+
+Project: Application of Deep Learning methods to Machine Translation for language pairs of interest to the US Army.
+Responsabilities: 
+Bitext data preparation.
+Setting up of computing environment with GPU 
+Compare DL methods with existing Statistical MT benchmarks.
+Conduct experiments to find methods that work best with low resourced language pairs like Dari and Pashto.
 
 
-I'm running the alignment script that uses the first sgmms to align the data.
+
+6 Most significant Actions / Impacts
+1. 
+Action: 1. 
+Impact: 
+2. 
+Action: 1. 
+Impact: 
+3. 
+Action: 1. 
+Impact: 
+4. 
+Action: 1. 
+Impact: 
+5. 
+Action: 1. 
+Impact: 
+6. 
+Action: 1. 
+Impact:  
+Other Comments:
+FOR OFFICIAL USE ONLY
+
+-I'm running the alignment script that uses the first sgmms to align the data.
 I'm also running the script to make the decoding graph for the first sgmms.
 I decoded the test set with the sgmm5 models.
 WER: 23.97
