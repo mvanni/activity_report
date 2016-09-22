@@ -2,9 +2,139 @@
 - TODO run scripts to build sgmms.
 - TODO Write accomplishments.
 
+Technical Competency:
+Apply methods, theories, techniques, and skills learned in Computer Science
+Ph.D. corsework and research at UMD to projects of interest to ARL and the
+ARMY.
+
+In this past year I took and passed 2 graduate courses, 1 in Scientific Computing and 1 in Database Management Systems.
+The course in Scientific Computing covered the fundamental theory of optimization, which is  relevant to the computational solutions of many if not most problems in NLP and virtually all problems in Deep Learning.
+Our branch has several of its own speech and text corpora that have not yet been curated. The DBMS course I took will help our branch utilize and share our data for the benefit of the Army.
+
+As part of a research team at UMD, I developed software that uses Deep and Reinforcement Learning techniques to predict 
+language behaviors of a simultaneous translator. 
+
+Develop machine translation software using the theories and methods emerging
+from the field of Deep Learning.
+
+I became familiar with several toolkits for developing neural networks including google's open source Tensorflow, theano and keras. I used recurrent neural networks with long short term memory and gated recurrent units to perform Machine Translation. 
+
+Use python programming skills to develop software in ARL projects.
+
+Both the Tensorflow and Theano toolkits are implemented in python. I used my python programming skills to apply the tools in those toolkits to develop the MT systems I worked with.
+
+Support the team project to implement an Automatic Speech Recognition system
+adapted to  speech as spoken in African countries. 
+
+I made good progress on this objective. 
+I dedicated a lot of hard work to preparing our inhouse speech corpora  for processing by ASR system development tools. 
+
+I can now build subspace gaussian mixture model based ASR systems with the kaldi toolkit. 
+The recipes I have developed to prepare and process the African accented speech can be applied to our other holdings.
+
+Cooperation:
+
+Serve as a bridge between the multilingual computing branch and the academic
+community
+at UMD. 
+
+Communication:
+
+Publish a journal paper as first author on research on simultaneous
+translation.
+
+
+Customer Relations:
+
+Respond to requests from team customers for advice and technical support on
+issues concerning machine translation and machine learning.
+
+Technology Transition:
+
+Transition simultaneous translation code developed for research into branch
+projects.
+
+
+Diversity:
+Support ARL's diversity initiatives by participating in locally sponsored
+training, outreach and/or special emphasis programs to increase personal
+awareness and understanding of the various cultures that exist among
+laboratory employees.
+
+
+SHARP:
+Support leadership's efforts to address and prevent sexual harassment and
+sexual assault and ensure a respectful work environment for all.
+Demonstrate support for the SHARP program by actively participating in
+required training and other educational programs.  Intervene and
+appropriately respond to any instances of sexual harassment or sexual
+assault; encourage others to do the same.
+
+
+
 
 I'm running the alignment script that uses the first sgmms to align the data.
 I'm also running the script to make the decoding graph for the first sgmms.
+I decoded the test set with the sgmm5 models.
+WER: 23.97
+
+- SRI Gabon:
+I plan to do the same for the sri_gabon data set that I did for the Answers.
+At this point, if for no other reason than to got the steps of processing the data.   
+I just realized that I have not been decoding the sri_gabon data as I've been taking the semi supervised stepsp.
+
+* Goals for Wednesday set Tuesday:
+- TODO Write more on accomplishments.
+- TODO Run steps to build models from the Answers semi supervision .
+
+The fst build for tri1 semi supervised had finished. I fired up decoding.
+Tri1 semi supervised WER: 43.18
+The previous fully supervised WER was 45.33. So we're still doing better.
+I've moved on to training tri2 semi supervised models, which are the same as tri1 only that they use the tri1 alignments.
+
+- TODO Investigate question: Is the new LM being used?
+- TODO If unigram fst making continues, consider building a different kind
+of dnn (nnet2, nnet3, chain models)
+
+It stopped, but I don't think it finished successfully. Maybe it ran out of memory?
+
+- Answers:
+I am using the transcriptions from the best sgmm model system output as labels for training. I could also use them to get a better estimate of the WER after decoding.
+I guess I don't want to do this because I don't want to overwrite the files I have there now that are working.
+I've spent the day running the scripts to build the models 
+. As I'm getting ready to leave the script that trains the first sgmm model is running.
+
+This script takes a while.
+I'll wait until tomorrow to run the script for the next step.
+I've been running the scripts that make the decoding fst for the different models.
+
+Here are the results I got today for the semi supervised yaounde + gp system:
+model & WER
+mono & 59.39
+tri 1 & 43.18
+tri2 & 39.05
+tri3 & 43.78
+tri4 & 41.49
+tri5 & 32.62
+tri5 ci & 49.67
+
+
+The tri5 score of 32.62 is the best score I've gotten so far for 
+triphone models without using sgmm or dnn techniques, so I'm still hopeful that I'll beat previous bests as I move to sgmms tomorrow.
+however, the tri5 ci score of 49.67 is worrisome. It is quite a bit worse than its score of 44.02 for a previous run.
+Why did this score come out so bad?
+I'm also a little disappointed with the score I get for the answers  when I use the automatic transcripts as the reference.
+tri3 & 88.64
+
+I can't remember at which model I started using the automatic transcripts as refernces, but I'm pretty sure I did it for tri3.
+I would have guessed this WER would be lower. I'm kind of testing on the training data. In fact, this is really disappointing.
+
+- Dari
+I got excited about working with Hazrat on automatically transcribing the data from the Afghan Military Academy. However, this data was already transcribed by transtac, so I'm standing down on that project.
+
+** Goals for Thursday:
+- TODO Write more accomplishments.
+- TODO Run scripts to build semi supervised sgmm models.
 * Goals for Tuesday set Monday: <2016-09-22 Thu>
 - TODO Write accomplishments
 - TODO Try to continue dnn training where we left off.
