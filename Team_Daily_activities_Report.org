@@ -138,6 +138,17 @@ WER: 23.97
 I plan to do the same for the sri_gabon data set that I did for the Answers.
 At this point, if for no other reason than to got the steps of processing the data.   
 I just realized that I have not been decoding the sri_gabon data as I've been taking the semi supervised stepsp.
+I fired up a scrip to decode the sri_gabon data with monophones and triphones.
+I don't really have to do this yet.
+I only need to do it when I know which model set performed best.
+
+As I'm getting ready to leave, the script that makes the denominator lattices is still running. I need them to do discriminative training. 
+** Goals for Friday:
+- TODO Write scripts to run semi supervised training with sri_gabon data in addition to the answers data.
+- TODO Write accomplishments
+- TODO Write top 6 accomplishments document.
+- TODO Write more on tr.
+- TODO Run scripts to train sgmms discriminatively with mmi.
 
 * Goals for Wednesday set Tuesday:
 - TODO Write more on accomplishments.
