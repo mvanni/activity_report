@@ -14,7 +14,6 @@
 Cantonese corpus.
 I only got as far as the tri5 and sgmm5 models. This is the stage where the
 dnn model builds start.
-
 - TODO Decide which dnn recipe is a priority: karel's, nnet, nnet2, nnet3,
 chain models?
 
@@ -33,7 +32,7 @@ I followed the babel recipe for the yaounde + gp data set configuration.
 - TODO Try using output transcripts for Answers as labels for training with
 Answers.
 
-WAR:
+** WAR:
 John Morgan incorporated a new data set into his project to adapt 
 French Automatic Speech Recognition (ASR) models to African accented
 speakers. 
@@ -77,7 +76,6 @@ conflicts.
 - TODO Work through chain models.
 This was a failure.
 The training crashes around 8 or 9 iterations. I'm not sure why.
-
 - TODO Write more on tr.
 Only writing results of runs.
 - TODO Start work on incorporating bottle neck features into recipe.
@@ -91,7 +89,7 @@ sgmm model builds before the chain model builds. I already did this for the
 gp script.
 
 
-WAR:
+** WAR:
 Mr. John Morgan continued to apply recipes from the kaldi Automatic Speech
 Recognition toolkit to a corpus of African Accented French. 
 Last week he reported breaking the 30% word error rate (WER) with a score of
