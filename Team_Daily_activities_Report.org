@@ -1,5 +1,59 @@
-From:	Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent:	Monday, September 19, 2016 5:35 PM
+* Goals for Tuesday set Monday: <2016-09-22 Thu>
+- TODO Write accomplishments
+- TODO Try to continue dnn training where we left off.
+
+I started the mkgraph script yesterday evening. It is still running this morning. Top says it's running at 99% of a cpu.
+Is something wrong?
+
+- TODO Start over with Steve's new lm.
+- TODO Write scripts to use the answers as semi supervision.
+
+- Semi-supervision
+I created a new directory data/train_semi_supervision
+I concatenate and sort the 3 files spk2utt, utt2spk and wav.scp under the data/train directory with the same files under data/answers and write them to data/train_supervision.
+I concatenate and sort the data/train/text file and the decoder output from the sgmm model run on the answers data and write this file to data/train_semi_supervision/text.
+
+Then I run the plp pitch extractor script on the train_semi_suprevision directory.
+I trained monophones using the data from the data/train_semi_supervision directory.
+I'm going to try to decode the test set with this new mono_semi_supervision model set.
+I'm going to use the same lm. 
+I'll start using Steve's new lm soon.
+I'm making the decoding graph (fst).
+If the monophones don't do well, I don't think I'll continue with the supervision idea.
+I decoded the test set with the new semi-supervised monophones.
+WER: 59.39 versus 62.10 previously with only full supervision.
+I think this means it's worth continuing down this road.
+Aligning with semi-supervised monophones.
+Naming the directories so that I don't hoze previous runs is getting harder.
+I trained and formated the new lm.
+Unfortunately, I overwrote the old lm and its fst.
+I tried to avoid this, but I failed.
+This is going to screw up my results if I don't go back to the old lm.
+I'm not sure what to do at this point.
+If I get better results, I might just go forward and redo all the steps with the new lm.
+If the results are words, then I've got a problem.
+I'll have to go back.
+
+I've spent a couple of hours this afternoon writing the scripts to do the semi supervised build from monophones to sgmms.
+This was mostly copying the supervised scripts and adding some words to directory names.
+The mkgraph scripts take forever.
+
+top reports numbers like 0.461t for virt and res and 82% for mem for the process that is making the fst graph for the dnn.
+I am finished writing scripts to build the semi supervised sgmms.
+I've written scripts to run decoding at each step.
+
+I'd like to start the next step, but the scripts to run the graph making are still chugging away.
+
+** Goals for Wednesday:
+- TODO Write more on accomplishments.
+- TODO Run steps to build models from the Answers semi supervision .
+- TODO Investigate question: Is the new LM being used?
+- TODO If unigram fst making continues, consider building a different kind of dnn (nnet2, nnet3, chain models).
+
+
+
+
+* Monday, September 19, 2016 5:35 PM
 To:	Larocca, Stephen A CIV USARMY RDECOM ARL (US); Vanni, Michelle T CIV 
 USARMY RDECOM ARL (US); Hernandez, Luis CIV USARMY RDECOM ARL (US)
 Subject:	Daily activities Report for Monday September 16 2016
@@ -7,7 +61,7 @@ Signed By:	john.j.morgan50.civ@mail.mil
 
 
 
-* Goals for Monday set Friday:
+** Goals for Monday set Friday:
 - TODO Attempt to resume dnn training.
 - TODO If that fails rebuild models?
 - TODO Alternatively, transcribe answers with current sgmm models 
@@ -94,7 +148,7 @@ I'm trying to restart the dnn training where I had left off.
 I'm making a decoding graph.
 I think this is the step that required the unigram fst.
 
-* Goals for Tuesday:
+** Goals for Tuesday:
 - TODO Write accomplishments
 - TODO Try to continue dnn training where we left off.
 - TODO Start over with Steve's new lm.
@@ -102,14 +156,14 @@ I think this is the step that required the unigram fst.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, September 16, 2016 6:26 PM
+* Friday, September 16, 2016 6:26 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Friday September 15 2016
 
-* Goals for Friday:
+** Goals for Friday:
 - TODO Finish fixing problems with sri and gp data preparation.
 - TODO Do top six accomplishments 
 - TODO Try to recover dnn nnet training recipe 
@@ -140,7 +194,7 @@ I had a problem getting the plp pitch extractioon to run.
 It looks like I had to delete a previously created file.
 cmvn
 
-* Goals for Monday:
+** Goals for Monday:
 - TODO Attempt to resume dnn training.
 - TODO If that fails rebuild models?
 - TODO Alternatively, transcribe answers with current sgmm models 
@@ -150,14 +204,14 @@ transcriptions.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, September 15, 2016 6:21 PM
+* Thursday, September 15, 2016 6:21 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Friday September 15 2016
 
-* Goals for Thursday:
+** Goals for Thursday:
 - TODO Write script to prepare sri_gabon data.
 - DONE Assuming denominator lattice generation is finished, move on to
 fdiscriminative training on the laptop so I can do the semisupervised
@@ -222,7 +276,7 @@ There are some scripts that append lines to already existing files.
 So these files are getting larger and larger each time I run the script.
 I need to delete these files that get appended to.
 
-* Goals for Friday:
+** Goals for Friday:
 - TODO Finish fixing problems with sri and gp data preparation.
 - TODO Do top six accomplishments 
 - TODO Try to recover dnn nnet training recipe 
@@ -230,7 +284,7 @@ I need to delete these files that get appended to.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, September 14, 2016 6:31 PM
+* Wednesday, September 14, 2016 6:31 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -238,7 +292,7 @@ To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 Subject: Daily activities Report for Wednesday September 14 2016
 
 
-* Goals for Wednesday set Tuesday:
+** Goals for Wednesday set Tuesday:
 - TODO Figure out how babel does dnn systems differently. How do they do the
 semi-supervision?
 - TODO Read references.
@@ -280,7 +334,7 @@ The denominator lattice generation is still running on my laptop for the
 sgmm discriminative training.
 It should finish soo, but I need to leave.
 
-* Goals for Thursday:
+** Goals for Thursday:
 - TODO Write script to prepare sri_gabon data.
 - TODO Assuming denominator lattice generation is finished, move on to
 fdiscriminative training on the laptop so I can do the semisupervised
@@ -291,14 +345,14 @@ training.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, September 13, 2016 4:45 PM
+* Tuesday, September 13, 2016 4:45 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Tuesday September 13 2016
 
-* Goals for Tuesday set Monday:
+** Goals for Tuesday set Monday:
 - DONE Assuming denominator lattice generation finishes successfully,
 continue with the mmi discriminative training of the yaounde + gp system.
 - TODO Setup the scripts to use the automatic transcriptions of the Answers
@@ -364,7 +418,7 @@ Right now I'm generating denominator lattices on the laptop for the sgmm
 discriminative training.
 
 
-* Goals for Wednesday:
+** Goals for Wednesday:
 - TODO Figure out how babel does dnn systems differently. How do they do the
 semi-supervision?
 - TODO Read references.
@@ -374,7 +428,7 @@ laptop (let the gpu do the dnn build that I started today)
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, September 12, 2016 4:44 PM
+* Monday, September 12, 2016 4:44 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -382,7 +436,7 @@ To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 Subject: Daily activities Report for Monday September 12 2016
 
 
-* Goals for Monday set Friday:
+** Goals for Monday set Friday:
 - TODO Investigate how babel Cantonese builds deep neural network models
 including bottle neck filters. How can I apply these methods to our yaounde
 and other corpora?
@@ -453,7 +507,7 @@ Actually, I got mixed up. The denominator lattices are being generated for
 the yaounde + gp system. The Cantonese system is doing the discriminative
 training.
 
-* Goals for Tuesday:
+** Goals for Tuesday:
 - TODO Assuming denominator lattice generation finishes successfully,
 continue with the mmi discriminative training of the yaounde + gp system.
 - TODO Setup the scripts to use the automatic transcriptions of the Answers
@@ -465,7 +519,7 @@ data as training data.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, September 09, 2016 5:09 PM
+* Friday, September 09, 2016 5:09 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -473,7 +527,7 @@ To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 Subject: Daily activities Report for Friday September 9 2016
 
 
-* Goals for Friday set Thursday:
+** Goals for Friday set Thursday:
 - DONE Copy the data from the Babel Cantonese dvd to the gpu machine ( I
 can't believe how long this takes.)
 - TODO Setup and run the Babel Cantonese recipe.
@@ -553,7 +607,7 @@ After that it will move on to sgmm modeling.
 So this won't finish until some time this week-end.
 
 
-* Goals for Monday:
+** Goals for Monday:
 - TODO Investigate how babel Cantonese builds deep neural network models
 including bottle neck filters. How can I apply these methods to our yaounde
 and other corpora?
@@ -566,14 +620,14 @@ Answers.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, September 08, 2016 6:15 PM
+* Thursday, September 08, 2016 6:15 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Thursday September 8 2016
 
-* Goals for Thursday set Wednesday:
+** Goals for Thursday set Wednesday:
 - DONE Check if the yaounde+gp run crashed.
 It had crashed before I left. It was a chain models recipe. I think the
 chain models recipe need a lot of work before they're ready for prime time. 
@@ -615,7 +669,7 @@ I spent most of today getting the yaounde and gp builds to the point where I
 can fill out the results table.
 There are still sections I'd like to fill out.
 
-* Goals for Friday:
+** Goals for Friday:
 - DONE Copy the data from the Babel Cantonese dvd to the gpu machine ( I
 can't believe how long this takes.)
 - TODO Setup and run the Babel Cantonese recipe.
@@ -630,7 +684,7 @@ recipe that I've run on the gp and am running on the yaounde corpus build.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, September 07, 2016 5:31 PM
+* Wednesday, September 07, 2016 5:31 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -639,7 +693,7 @@ Subject: Daily activities Report for Wednesday September 7 2016
 
 
 
-* Goals for Wednesday set Tuesday:
+** Goals for Wednesday set Tuesday:
 - DONE Check on processes on gpu.
 They were all in different states of chrash.
 I did get one good result from the yaounde + gp build. We broke the 26
@@ -680,20 +734,20 @@ This makes me think that there are problems with my parameter settings.
 
 I started the dnn hybrid script. I think this is Karels recipe.
 
-* Goals for tomorrow:
+** Goals for tomorrow:
 - TODO Check if the yaounde+gp run crashed.
 - TODO Incorporate dnn recipes into my recipe.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, September 06, 2016 5:03 PM
+* Tuesday, September 06, 2016 5:03 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Tuesday September 6 2016
 
-* Goals for Tuesday set Friday:
+** Goals for Tuesday set Friday:
 - DONE What happened to the 3 runs?
 I came in over the week-end to make tweeks and restart crashed runs.
 I reordered the sgmm building before the nnet chain model building.
@@ -708,7 +762,7 @@ Only the yaounde build is getting there this morning.
 This will take some more work.
 
 
-* Goal for today
+** Goal for today
 - TODO Make the recipe scripts consistent for the 3 data sets.
 
 The yaounde build is ahead of the other 2 builds because it is much smaller.
@@ -729,7 +783,7 @@ htk.
 I cannot log on to the gpu machine.
 I guess it's bogged down with processes.
 
-* Goals for Wednesday:
+** Goals for Wednesday:
 - TODO Check on processes on gpu.
 - TODO Get Justin to reboot gpu machine.
 - TODO Run chain model recipes.
@@ -740,14 +794,14 @@ not be happening. It does not happen for the other 2 builds.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, September 02, 2016 4:22 PM
+* Friday, September 02, 2016 4:22 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Friday September 2 2016
 
-* Goalls for Friday set Thursday:
+** Goalls for Friday set Thursday:
 - TODO Check on the 3 recipe runs that I started this afternoon.
 Specifically, did they crash on the answers? 
 
@@ -822,7 +876,7 @@ something like that.
 I'll have to have all 3 scripts consistent on this point. 
 116 processes are running on the gpu machine.
 
-* Goals for Tuesday:
+** Goals for Tuesday:
 - TODO What happened to the 3 runs?
 - TODO Did tri3b decoding on Answers succeed for the 3 runs?
 - TODO Did the runs reach the chain model step?
@@ -832,14 +886,14 @@ I'll have to have all 3 scripts consistent on this point.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, September 01, 2016 4:20 PM
+* Thursday, September 01, 2016 4:20 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Thursday September 1 2016
 
-* Goals for tomorrow Thursday set Wednesday:
+** Goals for tomorrow Thursday set Wednesday:
 - TODO Figure out why tri3b decoding is not working for answers but is
 working for tri3b dev and test.
 - TODO  Check on chain models for yaounde+gp.
@@ -874,7 +928,7 @@ scripts do not crash now when I decode the answers. The WER results are not
 valid since the reference transcriptions wers are only dummy sentences (the
 questions not the answers).
 
-* Goalls for Friday:
+** Goalls for Friday:
 - TODO Check on the 3 recipe runs that I started this afternoon.
 Specifically, did they crash on the answers? Are there dummy reference
 transcriptions that are missing. I would be surprised if there were none.
@@ -886,14 +940,14 @@ transcriptions that are missing. I would be surprised if there were none.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, August 31, 2016 5:44 PM
+* Wednesday, August 31, 2016 5:44 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Wednesday August 31 2016
 
-* Goals for Wednesday set Tuesday:
+** Goals for Wednesday set Tuesday:
 - TODO Check how far my recipe scripts reached. As I'm preparing to leave
 the gp and yaound+gp data set builds are doing the cleanup run. The Yaounde
 data set build is training tri2b models.
@@ -925,14 +979,14 @@ http://kaldi-asr.org/doc/chain.html
 
 
 
-* Goals for tomorrow Thursday:
+** Goals for tomorrow Thursday:
 - TODO Figure out why tri3b decoding is not working for answers but is
 working for tri3b dev and test.
 - TODO  Check on chain models for yaounde+gp.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, August 30, 2016 5:07 PM
+* Tuesday, August 30, 2016 5:07 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -941,7 +995,7 @@ Subject: Daily activities Report for Tuesday August 30 2016
 
 
 
-* Goals for Tuesday set Monday:
+** Goals for Tuesday set Monday:
 - TODO Check on status of run.sh recipe scripts ( they will probably have
 failed).
 
@@ -1064,7 +1118,7 @@ Table 1: WER scores for models and training sets.
 2
 
 
-* Goals for Tomorrow Wednesday:
+** Goals for Tomorrow Wednesday:
 - TODO Check how far my recipe scripts reached. As I'm preparing to leave
 the gp and yaound+gp data set builds are doing the cleanup run. The Yaounde
 data set build is training tri2b models.
@@ -1073,7 +1127,7 @@ data set build is training tri2b models.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, August 29, 2016 5:27 PM
+* Monday, August 29, 2016 5:27 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1086,7 +1140,7 @@ This meant I could not log on to my enterprise machine (JAWS license?).
 The network seems to be working fine today.
 
 
-* Goals for tomorrow Friday August 26 2016 set Thursday:
+** Goals for tomorrow Friday August 26 2016 set Thursday:
 - TODO Check if processes have finished.
 - TODO Do another sanity check.
 - TODO Write more for tr
@@ -1117,7 +1171,7 @@ everything in the run.sh script.
 I wrote run.sh recipe scripts for each of the 3 data sets.
 I launched them on the gpu machine.
 
-* Goals for tomorrow:
+** Goals for tomorrow:
 - TODO Check on status of run.sh recipe scripts ( they will probably have
 failed).
 - TODO Incorporate sgmm training into recipes.
@@ -1126,7 +1180,7 @@ failed).
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, August 25, 2016 6:00 PM
+* Thursday, August 25, 2016 6:00 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1135,7 +1189,7 @@ Subject: Daily activities Report for Thursday August 25 2016
 
 
 
-* Goals for tomorrow Thursday set Wednesday:
+** Goals for tomorrow Thursday set Wednesday:
 - DONE Check that the yaounde graph making script finished.
 - DONE Check that the scripts for the other 2 data sets finished. Some of
 the decoding seems to be stuck.
@@ -1221,7 +1275,7 @@ I'm not sure what is going on with the tri3 models.
 I finished reading all 137 pages of the 508 version of the Constitution Day
 training.
 
-* Goals for tomorrow Friday August 26 2016
+** Goals for tomorrow Friday August 26 2016
 - TODO Check if processes have finished.
 - TODO Do another sanity check.
 - TODO Write more for tr
@@ -1229,14 +1283,14 @@ training.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, August 24, 2016 5:07 PM
+* Wednesday, August 24, 2016 5:07 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Wednesday August 24 2016
 
-* Goals for Tomorrow Wednesday set yesterday:
+** Goals for Tomorrow Wednesday set yesterday:
 - DONE Check if the fst graph maker scripts finished successfully.
 The 3 of them finished successfully.
 - TODO Decode test and answers with resulting FSTs.
@@ -1280,7 +1334,7 @@ There are 134 pages to read in hthis training.
 This will take me several days to complete.
 I'm at page 37 of 134.
 
-* Goals for tomorrow Thursday:
+** Goals for tomorrow Thursday:
 - TODO Check that the yaounde graph making script finished.
 - TODO Check that the scripts for the other 2 data sets finished. Some of
 the decoding seems to be stuck.
@@ -1291,14 +1345,14 @@ unsynchronized.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, August 23, 2016 5:12 PM
+* Tuesday, August 23, 2016 5:12 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Tuesday August 23 2016
 
-* Goals for Tuesday: 
+** Goals for Tuesday: 
 - DONE Check if lm finished training
 The file with the training data ended up with  13.3 million segments and 143
 million tokens.
@@ -1335,7 +1389,7 @@ I ran alignment and training today for the 3 training data sets.
 As I'm getting ready to leave, I now have the triphone graph making script
 running for the 3 data sets.
 
-* Goals for Tomorrow Wednesday:
+** Goals for Tomorrow Wednesday:
 - TODO Check if the fst graph maker scripts finished successfully.
 - TODO Decode test and answers with resulting FSTs.
 - TODO Get Steve  to eyeball the yaounde ansers output.
@@ -1345,14 +1399,14 @@ running for the 3 data sets.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, August 22, 2016 5:19 PM
+* Monday, August 22, 2016 5:19 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Monday August 22 2016
 
-* Goals for Monday set on Friday:
+** Goals for Monday set on Friday:
 - TODO Compare the wer for triphones
 - TODO Build a better lm.
 - TODO Test the new lm with mono system.
@@ -1415,21 +1469,21 @@ Lowercase, Normalize, tokenize, and restrict to sentences with between 6 and
 
 - Mandatory Training:
 I completed the AMC records management basic training.
-* Goals for tomorrow:
+** Goals for tomorrow:
 - TODO Check if lm finished training
 - TODO run monophone systems with new lm.
 - TODO Investigate tri2 models and why they do not improve the WER scores.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, August 19, 2016 6:36 PM
+* Friday, August 19, 2016 6:36 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: Daily activities Report for Friday August 19 2016
 
-* Goals from Yesterday:
+** Goals from Yesterday:
 - DONE Check if processes have finished  for building the gp yaounde ca
 models .
 This is running the sgmm2 training which takes a long time, but it's worth
@@ -1509,7 +1563,7 @@ under:
 /home/data/scratch/answers_decode_output_y_gp_y+gp.tsv
 
 
-* Goals for Monday:
+** Goals for Monday:
 - TODO Compare the wer for triphones
 - TODO Build a better lm.
 - TODO Test the new lm with mono system.
@@ -1517,7 +1571,7 @@ under:
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, August 18, 2016 5:09 PM
+* Thursday, August 18, 2016 5:09 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1599,7 +1653,7 @@ performed.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, August 17, 2016 4:47 PM
+* Wednesday, August 17, 2016 4:47 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1645,7 +1699,7 @@ Continue processing the yaounde answers data.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, August 16, 2016 6:04 PM
+* Tuesday, August 16, 2016 6:04 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1713,7 +1767,7 @@ alignment problem too.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, August 15, 2016 4:50 PM
+* Monday, August 15, 2016 4:50 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1799,7 +1853,7 @@ script numbered 55.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, August 12, 2016 4:13 PM
+* Friday, August 12, 2016 4:13 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1866,7 +1920,7 @@ Otherwise continue with the other scripts in the local/nnet2 directory.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, August 11, 2016 5:43 PM
+* Thursday, August 11, 2016 5:43 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -1983,7 +2037,7 @@ The system is a network of states?
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, August 10, 2016 5:44 PM
+* Wednesday, August 10, 2016 5:44 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2073,7 +2127,7 @@ yaounde answers.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, August 09, 2016 5:40 PM
+* Tuesday, August 09, 2016 5:40 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2151,7 +2205,7 @@ Read papers on  ASR, mmi, dnn hybrid model etc
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, August 08, 2016 5:22 PM
+* Monday, August 08, 2016 5:22 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2225,7 +2279,7 @@ I wish I could have started these scripts today.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, August 05, 2016 3:53 PM
+* Friday, August 05, 2016 3:53 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2288,7 +2342,7 @@ models and the graphs produced by the decoding in step 18.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, August 04, 2016 6:19 PM
+* Thursday, August 04, 2016 6:19 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2348,7 +2402,7 @@ Otherwise continue building triphone models.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, August 03, 2016 5:40 PM
+* Wednesday, August 03, 2016 5:40 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2448,7 +2502,7 @@ Resume at step 5: monophone training.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, August 02, 2016 6:04 PM
+* Tuesday, August 02, 2016 6:04 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2501,7 +2555,7 @@ we get training data we're happy with.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, August 01, 2016 5:39 PM
+* Monday, August 01, 2016 5:39 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2539,7 +2593,7 @@ We added data, that is similar to the test data  and the WER went up from
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, July 29, 2016 4:33 PM
+* Friday, July 29, 2016 4:33 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2589,7 +2643,7 @@ The sample subs lm got us about 1/5 of the way to the oracle.
 - Decode CA test set with tri1a models and subs lm no cheating:
 WER: 61.08
 
-* Goals for Monday morning:
+** Goals for Monday morning:
 - TODO Finish current experiment  with subs lm step 14 tri2a
 - TODO Write script to prepare better lm
 - TODO investigate recipes that use nnet
@@ -2612,7 +2666,7 @@ Sgmm2 & 21.67 & 12.40
 lm:
 WER: 12.40
 
-* First Goal for Today:
+** First Goal for Today:
 - TODO Repeat model building without including ca in lm training.
 It's not just a matter of training the lm without ca and testing all the
 models.
@@ -2693,7 +2747,7 @@ So s'il was mapped to s il
 Now s'ill gets mapped to s' il .
 I believe this is the correct way to work.
 
-* Goal for Tomorrow:
+** Goal for Tomorrow:
 - TODO Finish data conditioning
 - TODO experiment with medium size LM (possibly from subs)
 - TODO Focus on getting a good monophone  model set  with training and test
@@ -2703,7 +2757,7 @@ data disjoint.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, July 28, 2016 6:08 PM
+* Thursday, July 28, 2016 6:08 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2724,7 +2778,7 @@ Sgmm2 & 21.67 & 12.40
 lm:
 WER: 12.40
 
-* First Goal for Today:
+** First Goal for Today:
 - TODO Repeat model building without including ca in lm training.
 It's not just a matter of training the lm without ca and testing all the
 models.
@@ -2805,7 +2859,7 @@ So s'il was mapped to s il
 Now s'ill gets mapped to s' il .
 I believe this is the correct way to work.
 
-* Goal for Tomorrow:
+** Goal for Tomorrow:
 - TODO Finish data conditioning
 - TODO experiment with medium size LM (possibly from subs)
 - TODO Focus on getting a good monophone  model set  with training and test
@@ -2814,7 +2868,7 @@ data disjoint.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, July 27, 2016 5:54 PM
+* Wednesday, July 27, 2016 5:54 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -2826,7 +2880,7 @@ WER: 87.04
 The Yaounde prompts were not included in the lm. Apparently this makes a big
 difference.
 
-* Goals for Today:
+** Goals for Today:
 - TODO Finish Gp system testing on CA
 - TODO Finish GP+Yaounde system testing on CA
 
@@ -2915,13 +2969,13 @@ Michelle got me the questions for the Yaounde corpus.
 - Incorporate these questions into the lm and decode the Yaounde answers.
 Hopefully, this will help transcribing the data.
 
-* Tomorrow:
+** Tomorrow:
 - TODO Continue gp+yaounde at step 28
 - TODO gp and gp+younde without ca prompts in lm
 - TODO Finish renaming yaounde Ansers
 - TODO Incorporate Scotia's transcripts into lm
 
-* Longer term goals:
+** Longer term goals:
 - TODO Decode Yaounde Answers (with or without younde read in training?)
 - TODO Incorporate nnet, nnet2, and nnet3 into recipes
 - TODO Build appropriate lm
@@ -2930,7 +2984,7 @@ Hopefully, this will help transcribing the data.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, July 26, 2016 6:07 PM
+* Tuesday, July 26, 2016 6:07 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3064,18 +3118,18 @@ I'm running step 5 that trains the monophones.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, July 25, 2016 6:12 PM
+* Monday, July 25, 2016 6:12 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
 (US) <luis.hernandez2.civ@mail.mil>
 Subject: RE: DailyActivities Report for Friday July 222016
 
-* Goals for today:
+** Goals for today:
 - TODO Finish the last step for the GP system.
 - TODO Incorporate the Gabon test set into the gp system
 
-* Longer term goals
+** Longer term goals
 - TODO Incorporate kaldi's nnet, nnet2, and nnet3 programs into our recipe.
 
 My laptop disk has no more space on it.
@@ -3136,7 +3190,7 @@ Local/get_utt2spk_test.sh
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, July 22, 2016 6:42 PM
+* Friday, July 22, 2016 6:42 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3177,7 +3231,7 @@ Start over using Gabon as test set.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, July 22, 2016 3:00 PM
+* Friday, July 22, 2016 3:00 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3240,7 +3294,7 @@ make the tri2b graph.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, July 21, 2016 5:35 PM
+* Thursday, July 21, 2016 5:35 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3411,7 +3465,7 @@ The babel recipe would probably be the best.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, July 20, 2016 3:15 PM
+* Wednesday, July 20, 2016 3:15 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3471,7 +3525,7 @@ I'll pick up tomorrow with decoding of the tri1 system.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, July 19, 2016 6:23 PM
+* Tuesday, July 19, 2016 6:23 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3529,7 +3583,7 @@ language models.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, July 18, 2016 5:30 PM
+* Monday, July 18, 2016 5:30 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3605,7 +3659,7 @@ Start by lower casing the gp prompts.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Friday, July 15, 2016 6:10 PM
+* Friday, July 15, 2016 6:10 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3696,7 +3750,7 @@ Yes.gp on y gives 92.54, really bad.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Thursday, July 14, 2016 5:37 PM
+* Thursday, July 14, 2016 5:37 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3725,7 +3779,7 @@ Wer: 44%
 The test data here are from the GP corpus.
 I guess what we want now is to test The GP system on Yaounde data.
 
-* TODO Test GP on Yaounde
+** TODO Test GP on Yaounde
 
 I have to downsample the Yaounde data from 22050 to 16k.
 Done.
@@ -3772,7 +3826,7 @@ Next steps include lexicon preparation and lm prep.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Wednesday, July 13, 2016 5:19 PM
+* Wednesday, July 13, 2016 5:19 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3783,7 +3837,7 @@ Writing the perl command line in a separate perl script seems to have solved
 the problem I was having yesterday with the script that prepares the lm
 training data.
 Currently I'm only using the prompts to train the lm.
-* TODO Decide on what to use for lm training data
+** TODO Decide on what to use for lm training data
 
 - Working on extracting MFCCs.
 GP data sampled at 16k
@@ -3824,7 +3878,7 @@ If it succeeds, I need to next run the script that creates the graph.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Tuesday, July 12, 2016 4:57 PM
+* Tuesday, July 12, 2016 4:57 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
@@ -3845,7 +3899,7 @@ The WER was 92%, so only 8% of the words were correctly recognized.
 Hoepfully, this will be the lowest score we get :)
 
 
-* TODO Rebuild previous system with Steve's dictionary
+** TODO Rebuild previous system with Steve's dictionary
 
 EU is not a phone in Steve's dictionary.
 Eu is a rounded phone as in deux
@@ -3879,7 +3933,7 @@ I'm going to write the perl script in a separate file.
 
 -----Original Message-----
 From: Morgan, John J CIV USARMY RDECOM ARL (US) 
-Sent: Monday, July 11, 2016 3:42 PM
+* >Monday, July 11, 2016 3:42 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
 (US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
