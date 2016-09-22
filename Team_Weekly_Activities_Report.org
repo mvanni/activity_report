@@ -593,13 +593,6 @@ data.
 - TODO Mandatory training.
 
 * Friday, June 10, 2016 3:24 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Cc: 'Judith L Klavans' <jklavans@umd.edu>
-Subject: RE: Team WAR
-
 ** Big Picture: a.k.a. Important not due soon
 - Join the Deep Learning Revolution
 - Move from Statistical MT to Neural MT
@@ -685,7 +678,6 @@ tensorflow.
 - TODO Mandatory Training.
 - TODO Read papers.
 
-
 * Friday, June 03, 2016 3:46 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
@@ -721,13 +713,6 @@ again for schedule)
 - TODO Read papers on NMT
 
 * Friday, May 27, 2016 2:15 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Cc: 'Judith L Klavans' <jklavans@umd.edu>
-Subject: RE: Team WAR
-
 ** Big Picture: a.k.a. Important not due soon
 - Join the Deep Learning Revolution
 - Move from Statistical MT to Neural MT
@@ -763,7 +748,6 @@ I read the tensorflow white paper
 - TODO  Revisit French ASR
 - TODO Mandatory Training
 - TODO Read 2 papers on NMT
-
 
 * Friday, May 20, 2016 3:41 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
@@ -1160,22 +1144,15 @@ Proc. VLDB, 1979,
 - TODO Meet Andrew Wilkinson on Tuesday
 
 * Friday, April 01, 2016 4:19 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Cc: 'Judith L Klavans' <jklavans@umd.edu>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
+** Big Picture: a.k.a. Important not due soon
 - Apply lessons learned from database management systems to our projects.
 - ASR adaptation of GP to Younde
-*TODO  Propose a research question for deep learning in simtrans
+-TODO  Propose a research question for deep learning in simtrans
 - TODO First author on a paper
 - TODO Understand Deep Learning
 - TODO Learn toolkits for deep learning
 
-# Goals for Last Week:
+** Goals for Last Week:
 ** DBMS
 ** DONE Read and comment on 2 papers for Monday
 SQLGraph: An Efficient Relational-Based Property Graph Store
@@ -1192,7 +1169,7 @@ Nothing this week.
 - DONE Papers Read
 MLlib: Machine Learning in Apache Spark
 
-# Goals for Next Week:
+** Goals for Next Week:
 ** DBMS
 - TODO Read and Comment on 2 papers for Monday
 RDF-3X: a RISC-style Engine for RDF; VLDB 2008
@@ -1213,14 +1190,7 @@ Dremel: Interactive Analysis of Web-Scale Datasets; VLDB 2010
 - TODO Write technotes on this work.
 
 * Friday, March 25, 2016 2:33 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Cc: 'Judith L Klavans' <jklavans@umd.edu>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
+** Big Picture: a.k.a. Important not due soon
 - Apply lessons learned from database management systems to our corpora
 - ASR adaptation of GP to Younde
 *TODO  Propose a research question for deep learning in simtrans
@@ -1229,7 +1199,7 @@ Subject: RE: Team WAR
 - TODO Learn toolkits for deep learning
 
 
-# Goals for Last Week:
+** Goals for Last Week:
 *** DBMS
 - DONE  READ and Comment on 4 papers:
 *** DONE For Monday
@@ -1254,54 +1224,44 @@ I'm not sure why this turned out to be non-trivial.
 - TODO Mandatory Training
 
 
-# Goals for Next Week:
+** Goals for Next Week:
 ** DBMS
-** TODO Read and comment on 2 papers for Monday
+- TODO Read and comment on 2 papers for Monday
 SQLGraph: An Efficient Relational-Based Property Graph Store
 GraphX: Graph Processing in a Distributed Dataflow Framework Joseph E.
 Gonzalez,
 ** TODO Write lit review for project (Wednesday)
 
-* TODO Mandatory training
-* TODO Eesen on Yaounde corpus
-* TODO Write tech note on eesen builds.
-* TODO Sign up for Fall classes
+- TODO Mandatory training
+- TODO Eesen on Yaounde corpus
+- TODO Write tech note on eesen builds.
+- TODO Sign up for Fall classes
 
 * Friday, March 18, 2016 8:36 AM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Cc: 'Judith L Klavans' <jklavans@umd.edu>
-Subject: RE: Team WAR
-
-# Papers Read:
-# Big Picture: a.k.a. Important not due soon
-* Apply lessons learned from database management systems to our corpora
-* ASR adaptation of GP to Younde
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
-
-# Goals for Last Week:
-* DBMS
-** DONE Finish assignment 3 on spark (in the next 2 hours)
+** Papers Read:
+** Big Picture: a.k.a. Important not due soon
+- Apply lessons learned from database management systems to our corpora
+- ASR adaptation of GP to Younde
+-TODO  Propose a research question for deep learning in simtrans
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
+** Goals for Last Week:
+*** DBMS
+- DONE Finish assignment 3 on spark (in the next 2 hours)
 Did not finish problem on page rank
-** DONE  Project outline
+- DONE  Project outline
 Probably needs refinement and feedback.
-** DONE Sign up for next paper critique
-
-* DONE eesen end2end run on French GP
+- DONE Sign up for next paper critique
+- DONE eesen end2end run on French GP
 Finally got WER results.
-* TODO ditto for Yaounde
-* DONE Mandatory Training
+- TODO ditto for Yaounde
+- DONE Mandatory Training
 I passed the PII training
 Problems getting Constitution and AMC Record Keeping
-
-# Goals for Next Week:
-* DBMS
-** TODO READ and Comment on 4 papers:
+** Goals for Next Week:
+*** DBMS
+- TODO READ and Comment on 4 papers:
 *** TODO For Monday
 The MADlib analytics library: or MAD skills, the SQL; Hellerstein et al.;
 VLDB 
@@ -1313,53 +1273,40 @@ Distributed GraphLab: a framework for machine learning and data mining in
 the 
 cloud; VLDB 2012
 Scaling Distributed Machine Learning with the Parameter Server; OSDI 2014
-** TODO Finish project proposal
-* TODO Write a technote on EESEN Character-based ASR applied to GP French
-* TODO Setup phone-based EESEN applied to GP French
-* TODO Ditto for Yaounde corpus
-* TODO Mandatory Training
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, March 11, 2016 2:15 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US) 
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-
-<michelle.t.vanni.civ@mail.mil>
-Cc: 'Judith L Klavans' <jklavans@umd.edu>
-Subject: RE: Team WAR
-
-# Papers Read:
+- TODO Finish project proposal
+- TODO Write a technote on EESEN Character-based ASR applied to GP French
+- TODO Setup phone-based EESEN applied to GP French
+- TODO Ditto for Yaounde corpus
+- TODO Mandatory Training
+* Friday, March 11, 2016 2:15 PM
+** Papers Read:
 None this week
-# Big Picture: a.k.a. Important not due soon
-* Apply lessons learned from database management systems to our corpora
-* ASR adaptation of GP to Younde
+** Big Picture: a.k.a. Important not due soon
+- Apply lessons learned from database management systems to our corpora
+_ ASR adaptation of GP to Younde
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
 
-
-# Goals for Last Week:
-* DBMS
-** DONE Turn in critique of Naiad paper (Sunday)
+** Goals for Last Week:
+*** DBMS
+- DONE Turn in critique of Naiad paper (Sunday)
 it was actually due Saturday,  luckily I had it already done
-** TODO Programming assignment on spark (Friday)
+- TODO Programming assignment on spark (Friday)
 I'm working on problem 5 of 5 today.
-** TODO Decide on project topic
+- TODO Decide on project topic
 My current idea is to apply spark to simtrans
-* TODO Eesen en2end on GP French
+- TODO Eesen en2end on GP French
 The training is running right now on epoch 16 of 25.
-* TODO Ditto on Yaounde corpus
-* DONE Mandatory Training
+- TODO Ditto on Yaounde corpus
+- DONE Mandatory Training
 I passed the Human Trafficking training.
-* DONE Lead probmod reading group discussion  on Online Sequence to Sequence
+- DONE Lead probmod reading group discussion  on Online Sequence to Sequence
 paper (Monday)
 it went ok I guess , but the consensus was that the paper sucked.
 
-* I attended the CLIP Coloquium presented by Kevin Duh.
+- I attended the CLIP Coloquium presented by Kevin Duh.
 This was very interesting. I met with kevin for half an hour before his
 presentation. He explained his slides to me before his presentation.
 He gave a summary of the work done at the Gelinek workshop last summer.
@@ -1368,44 +1315,33 @@ They use the term continuous space model instead of deep learning. SMT
 doesn't really use deep models (only a couple of layers).
 He gave an example of how they incorporate fertility into the RNN matrix.
 
+** Goals for Next Week:
+*** DBMS
+- TODO Finish assignment 3 on spark (in the next 2 hours)
+- TODO Project outline
+- TODO Sign up for next paper critique
 
-# Goals for Next Week:
-* DBMS
-** TODO Finish assignment 3 on spark (in the next 2 hours)
-** TODO Project outline
-** TODO Sign up for next paper critique
-
-* TODO eesen end2end run on French GP
-* TODO ditto for Yaounde
-* TODO Mandatory Training
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, March 04, 2016 12:32 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Cc: 'Judith L Klavans' <jklavans@umd.edu>
-Subject: RE: Team WAR
-
-# Papers Read:
+- TODO eesen end2end run on French GP
+- TODO ditto for Yaounde
+- TODO Mandatory Training
+* Friday, March 04, 2016 12:32 PM
+** Papers Read:
 Discretized streams: fault-tolerant streaming computation at scale; SOSP
 2013
 Naiad: a timely dataflow system; SOSP 2013
 
 
-# Big Picture: a.k.a. Important not due soon
-* Apply lessons learned from database management systems to our corpora
-* ASR adaptation of GP to Younde
+** Big Picture: a.k.a. Important not due soon
+- Apply lessons learned from database management systems to our corpora
+- ASR adaptation of GP to Younde
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
 
 
-# Goals for Last Week:
-* DBMS
+** Goals for Last Week:
+*** DBMS
 ** DONE  2 paper critiques for The spark and DryadLinq papers (Monday)
 ** DONE 2 paper critiques for the stream and borealis papers (Wednesday)
 The Borealis paper was not the correct paper to read.
@@ -1414,33 +1350,29 @@ I'm considering doing something with timely-dataflow in rust
 ** TODO Write Critique for Naiad paper
 This is due Sunday, but I feel pretty good since I've already written  a lot
 of the critique.
-* TODO Eesen end2end for GP French
+- TODO Eesen end2end for GP French
 More problems. I found a bug I introduced in a python script that converted
 the word level transcripts into sequences of indices. After squashing that
 bug, I now have cuda problems.
-* TODO Ditto for Yaounde
-* TODO Try to  replicate Attention NMT on WSJ
+- TODO Ditto for Yaounde
+- TODO Try to  replicate Attention NMT on WSJ
 https://github.com/rizar/attention-lvcsr
-* TODO Prepare to lead Probmod reading group on OS2S ASR paper
+- TODO Prepare to lead Probmod reading group on OS2S ASR paper
 http://arxiv.org/abs/1511.04868
 
-# Goals for Next Week:
-* DBMS
+** Goals for Next Week:
+*** DBMS
 ** TODO Turn in critique of Naiad paper (Sunday)
 ** TODO Programming assignment on spark (Friday)
 ** TODO Decide on project topic
 
-* TODO Eesen en2end on GP French
-* TODO Ditto on Yaounde corpus
-* TODO Mandatory Training
+- TODO Eesen en2end on GP French
+- TODO Ditto on Yaounde corpus
+- TODO Mandatory Training
 
-* TODO Lead probmod reading group discussion  on Online Sequence to Sequence
+- TODO Lead probmod reading group discussion  on Online Sequence to Sequence
 paper (Monday)
-
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, February 26, 2016 1:51 PM
+* Friday, February 26, 2016 1:51 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
 <luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
@@ -1448,13 +1380,13 @@ To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 Cc: Judith L Klavans <jklavans@umd.edu>
 Subject: RE: Team WAR
 
-# Papers Read Last Week:
+** Papers Read Last Week:
 
 MapReduce: A Flexible Data Processing Tool; Jeffrey Dean and Sanjay
 Ghemawat; CACM 2010
 MapReduce and Parallel DBMSs: Friends or Foes? Stonebraker et al.; CACM 2010
 
-# Papers Read for Next Week:
+** Papers Read for Next Week:
 Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory
 Cluster Computing; Zaharia et al.; NSDI 2012
 Yuan Yu, Michael Isard, Dennis Fetterly, Mihai Budiu. DryadLINQ: A System
@@ -1466,16 +1398,16 @@ The Design of the Borealis Stream Processing Engine; Abadi et al.; CIDR 2005
 
 
 
-# Big Picture: a.k.a. Important not due soon
-* Apply lessons learned from database management systems to our corpora
-* ASR adaptation of GP to Younde
+** Big Picture: a.k.a. Important not due soon
+- Apply lessons learned from database management systems to our corpora
+- ASR adaptation of GP to Younde
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
 
-# Goals for Last Week:
-* DBMS
+** Goals for Last Week:
+*** DBMS
 ** DONE Programming homework (Tuesday)
 ** DONE 2 paper Critiques (Wednesday)
 ** TODO Decide on project paper
@@ -1483,135 +1415,116 @@ Tentatively, I've chosen the paper on quegel.:
 Quegel: A General-Purpose Query-Centric Framework for Querying Big Graphs;
 ** TODO Prepare for  my critique of Naiad paper
 Naiad: a timely dataflow system; SOSP 2013
-* TODO Prepare for online s2s paper presentation in probmod reading group
-* DONE Prepare for our reading group paper discussion on AMR
+- TODO Prepare for online s2s paper presentation in probmod reading group
+- DONE Prepare for our reading group paper discussion on AMR
 Michelle and I read the paper very carefully.
 http://arxiv.org/abs/1510.07586
-* TODO  EESEN end2end on GP, fix problems found last week
+- TODO  EESEN end2end on GP, fix problems found last week
 I am still finding problems.
-* TODO ditto for yaounde eesen build
+- TODO ditto for yaounde eesen build
 
-* TODO Mandatory Training , do trafficking
+- TODO Mandatory Training , do trafficking
 
-# Goals for Next Week:
-* DBMS
+** Goals for Next Week:
+*** DBMS
 ** TODO  2 paper critiques for The spark and DryadLinq papers (Monday)
 ** TODO 2 paper critiques for the stream and borealis papers (Wednesday)
 ** TODO Start lit review for project
 ** TODO Write Critique for Naiad paper
 
-* TODO Eesen end2end for GP French
-* TODO Ditto for Yaounde
-* TODO Try to  replicate Attention NMT on WSJ
+- TODO Eesen end2end for GP French
+- TODO Ditto for Yaounde
+- TODO Try to  replicate Attention NMT on WSJ
 https://github.com/rizar/attention-lvcsr
-* TODO Prepare to lead Probmod reading group on OS2S ASR paper
+- TODO Prepare to lead Probmod reading group on OS2S ASR paper
 http://arxiv.org/abs/1511.04868
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, February 19, 2016 3:03 PM
+* Friday, February 19, 2016 3:03 PM
 To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
 <stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
 <luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
 <michelle.t.vanni.civ@mail.mil>
 Subject: RE: Team WAR
 
-# Big Picture: a.k.a. Important not due soon
-* Apply lessons learned from database management systems to our corpora
-* ASR adaptation of GP to Younde
+** Big Picture: a.k.a. Important not due soon
+- Apply lessons learned from database management systems to our corpora
+- ASR adaptation of GP to Younde
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
 
-# Goals for Last Week:
-* DONE  Readings and critique of 4 DBMS papers (Monday and Wednesday)
+** Goals for Last Week:
+- DONE  Readings and critique of 4 DBMS papers (Monday and Wednesday)
 Monday's class was cancelled so we only read 2 papers
-* DONE DBMS programming homework (Tuesday)
+- DONE DBMS programming homework (Tuesday)
 Did not finish the whole thing, but I'm happy with what I did finish.
-* DONE DBMS written homework (Friday)
+- DONE DBMS written homework (Friday)
 I completed this.
-* TODO EESEN end 2 end on GP corpus
+- TODO EESEN end 2 end on GP corpus
 I found problems. I can't remember exactly what they were, I think they had
 to do with the vocabulary. There were extraneous characters (quotes mostly)
 that of course get modeled in the character model.
 It turns out that the yaounde system that I had gone end2end on has the same
 problems.
-# Goald for Next Week:
-* DBMS
+** Goald for Next Week:
+*** DBMS
 ** TODO Programming homework (Tuesday)
 ** TODO 2 paper Critiques (Wednesday)
 ** TODO Decide on project paper
 ** TODO Prepare for  my critique of Naiad paper
 
-* TODO Prepare for online s2s paper presentation in probmod reading group
-* TODO Prepare for our reading froup paper discussion on AMR
+- TODO Prepare for online s2s paper presentation in probmod reading group
+- TODO Prepare for our reading froup paper discussion on AMR
 
-* TODO  EESEN end2end on GP, fix problems found last week
-* TODO ditto for yaounde eesen build
+- TODO  EESEN end2end on GP, fix problems found last week
+- TODO ditto for yaounde eesen build
 
-* TODO Mandatory Training , do trafficking
+- TODO Mandatory Training , do trafficking
 
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, February 05, 2016 2:48 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
-* Apply lessons learned from database management systems to our corpora
-* ASR adaptation of GP to Younde
+* Friday, February 05, 2016 2:48 PM
+** Big Picture: a.k.a. Important not due soon
+- Apply lessons learned from database management systems to our corpora
+- ASR adaptation of GP to Younde
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
 
-# Goals for Last Week:
-* DONE  DBMS readings (Monday)
-* TODO Start on DBMS programming assignment 1
+** Goals for Last Week:
+- DONE  DBMS readings (Monday)
+- TODO Start on DBMS programming assignment 1
 I started on the sql programming exercises and the written homework. I have
 not yet touched the java programming.
-* TODO Eessen end to end on GP corpus
+- TODO Eessen end to end on GP corpus
 The DBMS class is taking up most of my time, I did not have time to
 concentrate on this. I separated out a data prep and a training script. The
 data prep seems to be good. The training is still getting stuck on sending
 jobs to the GPU.
-* TODO Tensorflow demo
+- TODO Tensorflow demo
 No.
-* TODO Tensorflow on toy corpus
+- TODO Tensorflow on toy corpus
 No.
-* TODO Tensorflow for verb prediction
+- TODO Tensorflow for verb prediction
 No.
-* TODO Tensorflow on our corpora
+- TODO Tensorflow on our corpora
 Nope.
-# Goals for Next Week:
-* TODO Readings and critique of 4 DBMS papers (Monday and Wednesday)
-* TODO DBMS programming homework (Tuesday)
-* TODO DBMS written homework (Friday)
-* TODO EESEN end 2 end on GP corpus
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, January 29, 2016 4:54 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
-* Apply lessons learned from database management systems to our corpora
-* ASR adaptation of GP to Younde
+** Goals for Next Week:
+- TODO Readings and critique of 4 DBMS papers (Monday and Wednesday)
+- TODO DBMS programming homework (Tuesday)
+- TODO DBMS written homework (Friday)
+- TODO EESEN end 2 end on GP corpus
+* Friday, January 29, 2016 4:54 PM
+** Big Picture: a.k.a. Important not due soon
+- Apply lessons learned from database management systems to our corpora
+- ASR adaptation of GP to Younde
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
 
 
-# Goals for Last Week:
-* TODO Finish eesen character based run on GP corpus.
+** Goals for Last Week:
+- TODO Finish eesen character based run on GP corpus.
 Not yet.
 I've been doing a lot of tedious script reading and writing work on this.
 Problems include:
@@ -1622,197 +1535,151 @@ Eesen requires running on a gpu kaldi does not.
 Adapting the recipe scripts to the Yaounde corpus was easier because I only
 used the eesen recipe.
 
-* DONE Read deep reinforcement learning papers
+- DONE Read deep reinforcement learning papers
 I listened to several of Dave Silver's lectures.
 
 I can of course do a lot more reading in this area.
-* TODO Run tensorflow NMT demo on GPU.
+- TODO Run tensorflow NMT demo on GPU.
 I have not gone end to end yet on the fr-en demo.
 I got through the data downloading and data prep.
 This takes a while.
 For some reason the demo bdies when it is ready to start training.
-* DONE Tuition funnding paperwork
+- DONE Tuition funnding paperwork
 Thanks to Chanel
-* DONE Go to classes and decide which one to take.
+- DONE Go to classes and decide which one to take.
 I am going to take Database Management Systems.
 It looks like a lot of work, but I think I'lllearn a lot.
-* TODO Verb prediction with tensorflow
+- TODO Verb prediction with tensorflow
 Made a little progress, but I want to get the demo working first.
-
-* TODO Read Bengio and Goodfellow's deep learning book ( I now have latex
+- TODO Read Bengio and Goodfellow's deep learning book ( I now have latex
 transcriptions of chapters 6 and 10).
 I've read most of Chapter 10. I'm getting Chapter 8 transcribed.
-
-# Goals for Next Week:
-* TODO DBMS readings (Monday)
-* TODO Start on DBMS programming assignment 1
-* TODO Eessen end to end on GP corpus
-* TODO Tensorflow demo
-* TODO Tensorflow on toy corpus
-* TODO Tensorflow for verb prediction
-* TODO Tensorflow on our corpora
-
-
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, January 22, 2016 9:35 AM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
+** Goals for Next Week:
+- TODO DBMS readings (Monday)
+- TODO Start on DBMS programming assignment 1
+- TODO Eessen end to end on GP corpus
+- TODO Tensorflow demo
+- TODO Tensorflow on toy corpus
+- TODO Tensorflow for verb prediction
+- TODO Tensorflow on our corpora
+* Friday, January 22, 2016 9:35 AM
+** Big Picture: a.k.a. Important not due soon
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
 # Goals for Last Week:
-* TODO Training/tuition funding paperwork (Friday)
+- TODO Training/tuition funding paperwork (Friday)
 Chanel is working on this. The problem is I'm not sure what classes I'll end
 up taking.
-* DONE Tensorflow tutorials
+- DONE Tensorflow tutorials
 I stepped through some of them.
-* DONE Finish tensorflow nmt
+- DONE Finish tensorflow nmt
 I got the demo running on my laptop cpu. This really needs to be run on a
 gpu.
-* TODO Verb prediction with tensorflow
+- TODO Verb prediction with tensorflow
 I started working on this, but did not really make progress.
-* TODO Incorporate tensorflow into simtrans framework
+- TODO Incorporate tensorflow into simtrans framework
 Started on this , but I got discouraged, it's hard.
-* DONE Get tensorflow working with gpu
+- DONE Get tensorflow working with gpu
 Justin got tensorflow installed and I can load it into python now. We had to
 downgrade to cuda7.0 from cuda7.5.
-* DONE Finish eesen run on Yaounde data
+- DONE Finish eesen run on Yaounde data
 Yes. Later I'll have to look closer at data input , but for now I'm happy
 that we can go end to end on the Yaounde corpus. So far I've only run the
 character based system. No phone based system yet.
-* TODO Run eesen on globalphone data
+- TODO Run eesen on globalphone data
 I'm almost done with this. I'm pretty happy with where we're at with this,
 but I've put a lot of time into it.
-* TODO Scientific Computing Final
+- TODO Scientific Computing Final
 I took an incomplete. Judith Klavens help me get the latex version to
 Professor Pat O'Leary's textbook.
-* TODO Read Professor O'Leary's book.
+- TODO Read Professor O'Leary's book.
 
-# Goals for Next Week:
-* TODO Finish eesen character based run on GP corpus.
-* TODO Read deep reinforcement learning papers
-* TODO Run tensorflow NMT demo on GPU.
-* TODO Tuition funnding paperwork
-* TODO Go to classes and decide which one to take.
-* TODO Verb prediction with tensorflow
-* TODO Read Bengio and Goodfellow's deep learning book ( I now have latex
+** Goals for Next Week:
+- TODO Finish eesen character based run on GP corpus.
+- TODO Read deep reinforcement learning papers
+- TODO Run tensorflow NMT demo on GPU.
+- TODO Tuition funnding paperwork
+- TODO Go to classes and decide which one to take.
+- TODO Verb prediction with tensorflow
+- TODO Read Bengio and Goodfellow's deep learning book ( I now have latex
 transcriptions of chapters 6 and 10).
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Thursday, January 14, 2016 5:26 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-
-# Big Picture: a.k.a. Important not due soon
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn toolkits for deep learning
-# Goals for Last Week:
-* DONE Upgrade to latest Ubuntu on my laptop (Monday with Justin)
-* DONE Essen on Yaounde
+* Thursday, January 14, 2016 5:26 PM
+**  Big Picture: a.k.a. Important not due soon
+-TODO  Propose a research question for deep learning in simtrans
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn toolkits for deep learning
+** Goals for Last Week:
+- DONE Upgrade to latest Ubuntu on my laptop (Monday with Justin)
+- DONE Essen on Yaounde
 Training succeeded. There is a problem in decoding that I think I have
 solved. The lm was not getting converted into an fst.
-* TODO Eesen on GlobalPhone
-* TODO Keras for simtrans
+- TODO Eesen on GlobalPhone
+- TODO Keras for simtrans
 I have temporarily given up on keras. I think they broke things when they
 made the major version upgrade. I'm moving over to tensorflow. The good news
 here is that I got tensorflow to train an rnnlm with German data that I
 eventually want to use for verb prediction. I also have neural machine
 translation training currently with German/English using tensorflow. I had
 never gotten this far with blocks.
-* TODO Read papers on reinforcement learning
+- TODO Read papers on reinforcement learning
 http://arxiv.org/pdf/1511.06732v3.pdf
 I did not get to this.
 
 # Goals for Next Week:
-* TODO Training/tuition funding paperwork (Friday)
-* TODO Tensorflow tutorials
-* TODO Finish tensorflow nmt
-* TODO Verb prediction with tensorflow
-* TODO Incorporate tensorflow into simtrans framework
-* TODO Get tensorflow working with gpu
-* TODO Finish eesen run on Yaounde data
-* TODO Run eesen on globalphone data
-* TODO Scientific Computing Final
+- TODO Training/tuition funding paperwork (Friday)
+- TODO Tensorflow tutorials
+- TODO Finish tensorflow nmt
+- TODO Verb prediction with tensorflow
+- TODO Incorporate tensorflow into simtrans framework
+- TODO Get tensorflow working with gpu
+- TODO Finish eesen run on Yaounde data
+- TODO Run eesen on globalphone data
+- TODO Scientific Computing Final
 I took an incomplete. Judith Klavens help me get the latex version to
 Professor Pat O'Leary's textbook.
-* TODO Read Professor O'Leary's book.
-
-
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, December 18, 2015 4:09 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Understand Deep Learning
-* TODO Learn theano
-* TODO Learn kearas
-* TODO Learn blocks
-# Goals for Last Week:
-* TODO Scientific Computing take home Final
+- TODO Read Professor O'Leary's book.
+* Friday, December 18, 2015 4:09 PM
+** Big Picture: a.k.a. Important not due soon
+-TODO  Propose a research question for deep learning in simtrans
+- TODO First author on a paper
+- TODO Understand Deep Learning
+- TODO Learn theano
+- TODO Learn kearas
+- TODO Learn blocks
+**  Goals for Last Week:
+- TODO Scientific Computing take home Final
 I did not turn it in.
-* DONE Recover from laptop meltdown
+- DONE Recover from laptop meltdown
 Justin got me up and running again.
-* TODO Write NAACL paper draft for clinic (Thursday)
+- TODO Write NAACL paper draft for clinic (Thursday)
 No. I did not have enough to write about.
-
-
 This was a bad week
-# Goals for Next Week:
-* TODO Upgrade to latest Ubuntu on my laptop (Monday with Justin)
-* TODO Essen on Yaounde
-* TODO Eesen on GlobalPhone
-* TODO Keras for simtrans
-* TODO Read papers on reinforcement learning
+**  Goals for Next Week:
+- TODO Upgrade to latest Ubuntu on my laptop (Monday with Justin)
+- TODO Essen on Yaounde
+- TODO Eesen on GlobalPhone
+- TODO Keras for simtrans
+- TODO Read papers on reinforcement learning
 http://arxiv.org/pdf/1511.06732v3.pdf
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Monday, December 07, 2015 3:51 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-
-# Big Picture: a.k.a. Important not due soon
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Do well in Scientific Computing
-* TODO Understand Deep Learning
-* TODO Learn theano
-* TODO Learn kearas
-* TODO Learn blocks
-# Goals for Last Week:# Goals for Last Week:
-* Deep Simtrans Research
-** DONE  Evaluate Verb Prediction  LM
+* Monday, December 07, 2015 3:51 PM
+**  Big Picture: a.k.a. Important not due soon
+-TODO  Propose a research question for deep learning in simtrans
+- TODO First author on a paper
+- TODO Do well in Scientific Computing
+- TODO Understand Deep Learning
+- TODO Learn theano
+- TODO Learn kearas
+- TODO Learn blocks
+**  Goals for Last Week:# Goals for Last Week:
+*** Deep Simtrans Research
+- DONE  Evaluate Verb Prediction  LM
 Learning is happening, but it looks like I have to scale up much more.
 The results are around 14% accuracy and 6% is the most frequent baseline.
 
-** DONE  Evaluate Nextword LM
+- DONE  Evaluate Nextword LM
 The numbers are very very small. I basically do not have this working yet.
 The problem is that the output space is huge.
 The output is a probability distribution over the words in the vocabulary.
@@ -1823,15 +1690,15 @@ That's why I downloaded the RNN tutorial. That tutorial has a method for
 doing this.
 In the verb prediction case the probability distribution is over the verb
 types, which is much smaller.
-** TODO Run policy training with RNN LMs
-** TODO Execute simtrans policies with RNN LMs
-** TODO Evaluate simtrans end to end executions
-** TODO Write another draft of a paper for NAACL
-** TODO Read background papers for NAACL paper
+- TODO Run policy training with RNN LMs
+- TODO Execute simtrans policies with RNN LMs
+- TODO Evaluate simtrans end to end executions
+- TODO Write another draft of a paper for NAACL
+- TODO Read background papers for NAACL paper
 
-* Scientific Computing Course
-** TODO Problems set 12 (Wednesday after Thanksgiving)
-** TODO Readings on symplectic method
+*** Scientific Computing Course
+- TODO Problems set 12 (Wednesday after Thanksgiving)
+- TODO Readings on symplectic method
 
 I met Dan Jurafsky this week at the CLIP colloquium.
 His talk was about tracing word meaning change through time with embeddings.
@@ -1848,26 +1715,17 @@ more than just nvidia and cuda files.
 
 
 # Goals for Next Week:
-* TODO Scientific Computing take home Final
-* TODO Recover from laptop meltdown
-* TODO Write NAACL paper draft for clinic (Thursday)
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Monday, November 23, 2015 4:09 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Do well in Scientific Computing
-* TODO Understand Deep Learning
+- TODO Scientific Computing take home Final
+- TODO Recover from laptop meltdown
+- TODO Write NAACL paper draft for clinic (Thursday)
+* Monday, November 23, 2015 4:09 PM
+** Big Picture: a.k.a. Important not due soon
+-TODO  Propose a research question for deep learning in simtrans
+- TODO First author on a paper
+- TODO Do well in Scientific Computing
+- TODO Understand Deep Learning
 # Goals for Last Week:
-* Deep Simtrans Research
+** Deep Simtrans Research
 ** DONE Reimplement Nextword RNNLM without incremental training data.
 ** TODO Get results and prepare them for presentation to Jordan and the
 group ( they don't believe the 66% accuracy)
@@ -1879,13 +1737,13 @@ balanced towards the catchall category. The results wlook more like 22%.
 Not working on this yet.
 ** TODO Read background papers for paper
 ** TODO Write another draft
-* Scientific Computing Coursework
+** Scientific Computing Coursework
 ** TODO Problem set 11 (Friday)
 ** TODO Readings
 
 # Goals for Next Week:
-* Deep Simtrans Research
-** TODO Evaluate Verb Prediction  LM
+** Deep Simtrans Research
+- TODO Evaluate Verb Prediction  LM
 ** TODO Evaluate Nextword LM
 ** TODO Run policy training with RNN LMs
 ** TODO Execute simtrans policies with RNN LMs
@@ -1893,24 +1751,11 @@ Not working on this yet.
 ** TODO Write another dradft of a paper for NAACL
 ** TODO Read background papers for NAACL paper
 
-* Scientific Computing Course
-** TODO Problems set 12 (Wednesday after Thanksgiving)
-** TODO Readings on symplectic method
-
-
-
-
------Original Message-----
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Friday, November 13, 2015 2:14 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-One WAR item for Doug's list.
+** Scientific Computing Course
+- TODO Problems set 12 (Wednesday after Thanksgiving)
+- TODO Readings on symplectic method
+* Friday, November 13, 2015 2:14 PM
+** One WAR item for Doug's list.
 John Morgan is implementing two Recurrent Neural Network Language Models
 (RNNLM). The RNNLMs will be used to run experiments in a Simultaneous
 Translation system. One will be used to predict  the verb in a German
@@ -1920,19 +1765,18 @@ problem which is specifically important in translation from a language with
 Subject Object Verb order into a Subject Verb Object order language. He has
 RNNLMs working currently, but he needs to improve the way they are trained.
 
-
-# Big Picture: a.k.a. Important not due soon
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Do well in Scientific Computing
-* TODO Understand Deep Learning
+** Big Picture: a.k.a. Important not due soon
+-TODO  Propose a research question for deep learning in simtrans
+d-* TODO First author on a paper
+- TODO Do well in Scientific Computing
+- TODO Understand Deep Learning
 # Goals for Last Week:
-* Scientific Computing Coursework:
+- Scientific Computing Coursework:
 ** TODO Problem Set 10 (Wednesday)
 No. Unfortunately I could not solve any of the problems on this problem set.
 ** TODO Readings
 Found a pdf copy of the Hairer book.
-* Deep Simtrans Research
+- Deep Simtrans Research
 ** TODO Fix problems with moses + RNNLM implementation in keras
 Got some feedback from Mohit on RNNLM.
 I was using the training data incorrectly.
@@ -1965,179 +1809,187 @@ training with keras.
 I did some writing
 
 # Goals for Next Week:
-* Deep Simtrans Research
-** TODO Reimplement Nextword RNNLM without incremental training data.
-** TODO Get results and prepare them for presentation to Jordan and the
+** Deep Simtrans Research
+- TODO Reimplement Nextword RNNLM without incremental training data.
+- TODO Get results and prepare them for presentation to Jordan and the
 group ( they don't believe the 66% accuracy)
-** TODO Get RNNLMs working in the Simtrans framework
-** TODO Read background papers for paper
-** TODO Write another draft
-* Scientific Computing Coursework
-** TODO Problem set 11 (Friday)
-** TODO Readings
-
-
-
-
------Original Message-----
-From: Morgan, John J CIV USARMY RDECOM ARL (US)
-Sent: Monday, November 09, 2015 4:37 PM
-To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
-<stephen.a.larocca.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL (US)
-<luis.hernandez2.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL (US)
-<michelle.t.vanni.civ@mail.mil>
-Subject: RE: Team WAR
-
-# Big Picture: a.k.a. Important not due soon
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Do well in Scientific Computing
-* Understand Deep Learning
-# Goals for Last Week:
-# Deep Simtrans Research
-* TODO Prediction/Policy interface (Tonight)
+- TODO Get RNNLMs working in the Simtrans framework
+- TODO Read background papers for paper
+- TODO Write another draft
+** Scientific Computing Coursework
+- TODO Problem set 11 (Friday)
+- TODO Readings
+* Monday, November 09, 2015 4:37 PM
+- Big Picture: a.k.a. Important not due soon
+-TODO  Propose a research question for deep learning in simtrans
+- TODO First author on a paper
+- TODO Do well in Scientific Computing
+- Understand Deep Learning
+** Goals for Last Week:
+*** Deep Simtrans Research
+- TODO Prediction/Policy interface (Tonight)
 No, I have not done this yet :(
-* DONE Get moses training working on umiacs cluster
+- DONE Get moses training working on umiacs cluster
 Yes! This is totally done.
-* TODO Get blocks NMT example running
+- TODO Get blocks NMT example running
 No. I'm backing off of this for now. I'm going back to moses + RNNLMS for
 verb prediction and nextword prediction.
-* TODO Get Cho's NMT example running
+- TODO Get Cho's NMT example running
 No. I ran into a problem that I can't remember now. This looks kind of
 promising though. I got farther than I expected.
 His stuff runs at a more elementary (not easier) level. Theano instead of
 keras or blocks.
-* TODO Do some basic tutorials  on theano to get some intuition
+- TODO Do some basic tutorials  on theano to get some intuition
 I'm doing this a little bit at a time. Auto differentiation is a big topic.
-# Scientific Computing Coursework
-* DONE Problem set 9 (Wednesday)
-* DONE Readings on Conjugate Gradient and ODEs
+*** Scientific Computing Coursework
+- DONE Problem set 9 (Wednesday)
+- DONE Readings on Conjugate Gradient and ODEs
 I've been reading a lot for this course.
-# Spring 2016 classes
-* DONE Sign up for  classes (Thursday morning)
+*** Spring 2016 classes
+- DONE Sign up for  classes (Thursday morning)
 
-# Goals for Next Week:
-* Scientific Computing Coursework:
-** TODO Problem Set 10 (Wednesday)
-** TODO Readings
+** Goals for Next Week:
+*** Scientific Computing Coursework:
+- TODO Problem Set 10 (Wednesday)
+*** TODO Readings
 
-* Deep Simtrans Research
-** TODO Fix problems with moses + RNNLM implementation in keras
-** TODO Draft introduction and related work sections for a paper
-
-
-# Big Picture: a.k.a. Important not due soon
-*TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Do well in Scientific Computing
-* Understand Deep Learning
-# Goals for Last Week:
-## Deep Simtrans Research
-* TODO Get the nmt example from blocks  running (important due pretty soon)
+*** Deep Simtrans Research
+- TODO Fix problems with moses + RNNLM implementation in keras
+- TODO Draft introduction and related work sections for a paper
+* Friday, November 06, 2015 2:14 PM
+** Big Picture: a.k.a. Important not due soon
+-TODO  Propose a research question for deep learning in simtrans
+- TODO First author on a paper
+- TODO Do well in Scientific Computing
+- Understand Deep Learning
+** Goals for Last Week:
+*** Deep Simtrans Research
+- TODO Get the nmt example from blocks  running (important due pretty soon)
 I fixed a problem with the data that was choking the data prep. That got the
 training to run through 1 epoch.
-* TODO Incorporate blocks nmt code into simtrans framework (important not
+- TODO Incorporate blocks nmt code into simtrans framework (important not
 due soon)
 No progress here
-* TODO Get current code running on clip cluster
+- TODO Get current code running on clip cluster
 I spent a lot of time on this. The good news: moses can be compiled on the
 cluster. The umiacs staff installed some required libraries. Bad news:
 Training has not yet succeeded. There's a problem with the ttable binarizer.
-
-* TODO Fix interface between predictions and policy trainer
+- TODO Fix interface between predictions and policy trainer
 No.
-## Scientific Computing Course
-* TODO Pull out of tail spin
-* DONE Problem set 8 (Wednesday)
+*** Scientific Computing Course
+- TODO Pull out of tail spin
+- DONE Problem set 8 (Wednesday)
 I did what I could, but this is not going well :(
-* DONE Readings
+- DONE Readings
 I read the chapter on trust region methods
-# Objectives
-* DONE Write objectives (Friday)
+*** Objectives
+- DONE Write objectives (Friday)
+** Goals for Next Week:
+*** Deep Simtrans Research
+- TODO Prediction/Policy interface (Tonight)
+- TODO Get moses training working on umiacs cluster
+- TODO Get blocks NMT example running
+- TODO Get Cho's NMT example running
+- TODO Do some basic tutorials  on theano to get some intuition
+*** Scientific Computing Coursework
+- TODO Problem set 9 (Wednesday)
+- TODO Readings on Conjugate Gradient and ODEs
+*** Spring 2016 classes
+- TODO Sign up for  classes (Thursday morning)
+* Wednesday, October 28, 2015 4:40 PM
+** Big Picture
+- TODO Propose a research question in Deep Simtrans
+- TODO First author on a paper
+- TODO Do well in Scientific Computing
+- Understand Deep Learning
+** Goals for Last Week:
+*** Deep Simtrans Research
+- TODO Get the NMT example from blocks running.
+I fixed a problem with the data that was choking the data prep. That got the training to run through 1 epoch.
+- TODO Incorporate blocks nmt code into simtrans.
+No progress here.
+- TODO Get current code running on CLIP cluster.
+I spent a lot of time on this. 
+The good news: Moses can be compiled cluster. The UMIACS staff installed some required libraries. 
+Bad news: Training has not yet succeeded.  There 's a problem with the table binarizer.
+- TODO Fix interface between predictions and policy trainer.
+No.
 
-# Goals for Next Week:
-# Deep Simtrans Research
-* TODO Prediction/Policy interface (Tonight)
-* TODO Get moses training working on umiacs cluster
-* TODO Get blocks NMT example running
-* TODO Get Cho's NMT example running
-* TODO Do some basic tutorials  on theano to get some intuition
+*** Scientific Computing Course:
+- TODO Pull out of tail spin.
+- DONE Problem set 8 (Wednesday).
+- DONE Readings.
+I read the chapter on Trust Region Methods.
+*** Objectives
+- DONE Write objectives. (Friday)
+** Goals for Next Week:
+*** Deep Simtrans Research
 
-# Scientific Computing Coursework
-* TODO Problem set 9 (Wednesday)
-* TODO Readings on Conjugate Gradient and ODEs
-
-# Spring 2016 classes
-* TODO Sign up for  classes (Thursday morning)
-
-
-# Big Picture: a.k.a. Important not due soon
+* Thursday, October 22, 2015, 5:26 PM
+** Big Picture: a.k.a. Important not due soon
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Do well in Scientific Computing
+- TODO First author on a paper
+- TODO Do well in Scientific Computing
 
 # Goals for Last Week:
 ## Scientific Computing Coursework
-* DONE Problem set 7 (Wednesday)
+- DONE Problem set 7 (Wednesday)
 Did not do well  on this. I have forgotten or never knew how to do vector
 calculus operations like gradient, Jacobian, and Hessian computations.
 
-* DONE Readings from Nocedal and Wright
+- DONE Readings from Nocedal and Wright
 Did a lot of reading.
 ## Deep Simtrans Research
 
-* TODO Go back and polish the kbest output  predictions.
-* DONE Get the verb final and nextword GRU models working in a toy simtrans
+- TODO Go back and polish the kbest output  predictions.
+- DONE Get the verb final and nextword GRU models working in a toy simtrans
 end to end system.
 Very happy about this!
 Don't forget to look at interface between GRU outputs (vectors) and input to
 policy (onebest? Vector?)
 
-
-* DONE  Disability Awareness panel (Thursday)
+- DONE  Disability Awareness panel (Thursday)
 
 # Goals for Next Week:
 ## Deep Simtrans Research
-* TODO Get the nmt example from blocks  running (important due pretty soon)
-* TODO Incorporate blocks nmt code into simtrans framework (important not
+- TODO Get the nmt example from blocks  running (important due pretty soon)
+- TODO Incorporate blocks nmt code into simtrans framework (important not
 due soon)
-* TODO Get current code running on clip cluster
-* TODO Fix interface between predictions and policy trainer
+- TODO Get current code running on clip cluster
+- TODO Fix interface between predictions and policy trainer
 
 ## Scientific Computing Course
-* TODO Pull out of tail spin
-* TODO Problem set 8 (Wednesday)
-* TODO Readings
+- TODO Pull out of tail spin
+- TODO Problem set 8 (Wednesday)
+- TODO Readings
 
 # Objectives
-* TODO Write objectives (Friday)
-
-
-
-# Big Picture: a.k.a. Important not due soon
+- TODO Write objectives (Friday)
+* Wednesday, October 14, 2015 3:23 PM
+** Big Picture: a.k.a. Important not due soon
 *TODO  Propose a research question for deep learning in simtrans
-* TODO First author on a paper
-* TODO Do well in Scientific Computing
+- TODO First author on a paper
+- TODO Do well in Scientific Computing
 
 # Goals for Last  Week
 ##Scientific Computing Corsework: Important Due Soon
-* DONE Problem set 6 (Wednesday)
+- DONE Problem set 6 (Wednesday)
 Did not finish last 2 problems. I tried to convert the code from matlab into
 python.
-* DONE Readings from Nocedal and Wright's Book on Numerical Optimization
-* TODO Get text transcribed
+- DONE Readings from Nocedal and Wright's Book on Numerical Optimization
+- TODO Get text transcribed
 One transcriber is working well, the other dropped  out without any contact.
 It's a shame, he was really good. He'll have to learn a lesson at some point
 in his life.
 # Deep Simtrans Research
-* DONE Scale up train test and evaluation of GRU LM to real data set on GPU
+- DONE Scale up train test and evaluation of GRU LM to real data set on GPU
 Justin fixed a problem with cuda and the GPU. I think it actually runs
 faster now.
 
 # Goals for Next Week:
 ## Scientific Computing Coursework
-* TODO Problem set 7 (Wednesday)
-* TODO Readings from Nocedal and Wright
+- TODO Problem set 7 (Wednesday)
+- TODO Readings from Nocedal and Wright
 
 ## Deep Simtrans Research
 Last week I came a little closer to understanding what is going on with the
@@ -2161,26 +2013,24 @@ I have the 3 examples:
 (to the) (store)
 (to the store) (he)
 
-* TODO Go back and polish the kbest output  predictions.
-* TODO Get the verb final and nextword GRU models working in a toy simtrans
+- TODO Go back and polish the kbest output  predictions.
+- TODO Get the verb final and nextword GRU models working in a toy simtrans
 end to end system.
 
-
-* TODO Disability Awareness panel (Thursday)
-
-
-# Big Picture a.k.a Important not due soon:
-* Use deep learning to improve Simtrans
-* First author on a paper
+- TODO Disability Awareness panel (Thursday)
+* Thursday, October 8, 2015 7:25 AM
+** Big Picture a.k.a Important not due soon:
+- Use deep learning to improve Simtrans
+- First author on a paper
 
 # Goals for Next Week:
 ## Scientific Computing  Coursework Important Due Soon
-*  DONE Homework set 5 (Wednesday)
+-  DONE Homework set 5 (Wednesday)
 Did not finish last problem on hybrid methods for root finding?
-* DONE Readings Benchmark optimization and root-finding methods
+- DONE Readings Benchmark optimization and root-finding methods
 
 ## Simtrans Deep Learning Research
-* DONE kbest prediction output (Important due soon)
+- DONE kbest prediction output (Important due soon)
 I think I've finally figured this out. The k here refers to the number of
 verbs that are possible in the output.. At each time step (1 for each word
 in the prefix) the network outputs a verb with its probability. The verb
@@ -2188,24 +2038,24 @@ with the highest probability is the output for that time step. The final
 output of the network is the verb output at the last time step. I have
 scripts that train test and evaluate a GRU LM. I have it working on a small
 data set.
-* DONE Test and Evaluate results
+- DONE Test and Evaluate results
 Done on a small data set. Need to scale up.
 
 # Goals for Next Week
 ##Scientific Computing Corsework: Important Due Soon
-* TODO Problem set 6 (Wednesday)
-* TODO Readings from Nocedal and Wright's Book on Numerical Optimization
-* TODO Get text transcribed
+- TODO Problem set 6 (Wednesday)
+- TODO Readings from Nocedal and Wright's Book on Numerical Optimization
+- TODO Get text transcribed
 # Deep Simtrans Research
-* TODO Scale up train test and evaluation of GRU LM to real data set on GPU
+- TODO Scale up train test and evaluation of GRU LM to real data set on GPU
 
-
-* Important Not Due Soon
+* Thursday, October 1, 2015 7:16 AM
+** Important Not Due Soon
 Simtrans Deep Learning research
 Incorporate neurl sequence to sequence MT into Simtrans
 Do well in Scientific Computing
 First author on a paper
-* Goals for Last  Week:
+** Goals for Last  Week:
 ** Not Important due soon
 *** DONE Mandatory training
 I might actually be done, but I need to check just in case. At most I still
@@ -2274,8 +2124,7 @@ input to the predictor
 
 Nope
 
-* Goals for Next Week:
-
+** Goals for Next Week:
 ** Scientific Computing  Coursework Important Due Soon
 *** TODO Homework set 5 (Wednesday)
 *** TODO Readings Benchmark optimization and root-finding methods
@@ -2283,13 +2132,13 @@ Nope
 ** Simtrans Deep Learning Research
 *** TODO kbest prediction output (Important due soon)
 *** TODO Test and Evaluate results
-
-* Big Picture Important not due soon
+* Wednesday, September 23, 2015 3:41 PM
+** Big Picture Important not due soon
 Deep Learning Research
 First Author on a Paper
 
-* Goals for Last  Week:
-** DONE  Write Accomplishments (Friday)
+** Goals for Last  Week:
+- DONE  Write Accomplishments (Friday)
 ** Scientific Computing
 *** DONE  Work on problem set 3 before class on Friday
 This was really hard, but relevant. Eigen values, eigen vectors, singular
@@ -2354,7 +2203,7 @@ Might be important not due soon
 ** TODO Hals concern about training paths
 Important not due soon and I'm not sure I understand the issue.
 
-* Goals for Next Week:
+** Goals for Next Week:
 ** Not Important due soon
 *** TODO Mandatory training
 I might actually be done, but I need to check just in case. At most I still
@@ -2391,14 +2240,13 @@ lot of effort.
 *** TODO encode verbs from previous sentences as
 input to the predictor
 
-
-*  Big Picture
+* Wednesday, September 16, 2015 3:43 PM
+**  Big Picture
 Deep Simtrans
 Do well in Scientific Computing Course
 First author on paper
-* goals for Next Week:
-
-** Deep Simtrans Research
+** goals for Next Week:
+*** Deep Simtrans Research
 *** DONE  Make sure output is sequence of the same verb
 T-many times (for input of length T)
 I think this was a misunderstanding. I'm pretty sure I was doing this
@@ -2469,8 +2317,8 @@ Barely started.
 ** DONE Sign up for LSD at UMD
 I don't think I can make this.
 
-* Goals for Next Week:
-** TODO Write Accomplishments (Friday)
+** Goals for Next Week:
+*** TODO Write Accomplishments (Friday)
 ** Scientific Computing
 *** TODO Work on problem set 3 before clas on Friday
 *** TODO Readings
@@ -2494,13 +2342,13 @@ input to the predictor (in some way)
 interpretation time by humans
 ** TODO Hals concern about training paths
 
-* Big Picture
+* Thursday, September 10, 2015 5:32 PM
+** Big Picture
 ** Deep Simtrans  Research
 ** Learn Deep Learning
 ** First author on a paper
 
-
-* Goals for Last  Week
+** Goals for Last  Week
 
 ** Deep Simtrans Research
 *** DONE Run verb predicting training GRU on large corpus
@@ -2530,8 +2378,7 @@ Don't have any specific transcriber tasks right now.
 ** TODO Write Accomplishments
 Nope.
 
-
-* goals for Next Week:
+** goals for Next Week:
 
 ** Deep Simtrans Research
 ** TODO
@@ -2569,15 +2416,15 @@ path" training
 *** TODO Readings
 
 ** TODO Sign up for LSD at UMD
-
+* Friday, September 04, 2015 5:33 PM
 I'm going to make an update to my goals since I've achieved some things.
 
-* Big Picture
-** Deep Simtrans research
+** Big Picture
+*** Deep Simtrans research
 ** First author paper
 ** Do well in Scientific Computing Course
 
-* Goals for Last  Week:
+** Goals for Last  Week:
 ** Deep Simtrans Research
 *** DONE Implement toy GRUverb predicting lm in keras
 Thanks to Mohit
@@ -2593,7 +2440,7 @@ Thanks to Justin
 ** DONE Mandatory Training
 I did the EEO harassment  training
 
-* Goals for Next Week
+** Goals for Next Week
 
 ** Deep Simtrans Research
 *** TODO Run verb predicting training GRU on large corpus
@@ -2607,12 +2454,13 @@ I did the EEO harassment  training
 
 ** TODO Write Accomplishments
 
-* Big Picture:
+* Thursday, September 03, 2015 7:52 AM
+** Big Picture:
 ** Research work in Deep Simtrans
 ** First author  on paper
 ** Do well in Scientific Computing Course
 
-* Goals for Last  Week
+** Goals for Last  Week
 ** Research on Verb Prediction
 *** DONE Read Mohit's ACL paper on DAN (deep averaging network)
 *** DONE Get DAN code.
@@ -2658,7 +2506,7 @@ Still could not find anything on my TED page ...
 
 ** TODO Write up accomplishments
 
-* Goals for Next Week:
+** Goals for Next Week:
 ** Deep Simtrans Research
 *** TODO Implement toy GRUverb predicting lm in keras
 *** TODO Get above code running on gpu machine
@@ -2670,15 +2518,14 @@ Still could not find anything on my TED page ...
 ** TODO WriteAcomplishments
 
 ** TODO Mandatory Training
+* Wednesday, August 26, 2015 3:58 PM
+** Big Picture
+- Deep Simtrans
+- Do well  in Scientific Computing course
 
-
-* Big Picture
-** Deep Simtrans
-** Do well  in Scientific Computing course
-
-* Goalls for Last Week
-**   blocks
-*** TODO Run cs-en demo
+** Goalls for Last Week
+***   blocks
+- TODO Run cs-en demo
 I made a lot of progress on this goal. I got the nmt training process
 running on the gpu. We swapped out the Tesla for the Titan Gpu and the
 training process does not seem to be using the gpu now. I know the gpu is
@@ -2687,38 +2534,35 @@ Preprocessing issues have also come up. The preprocessing scripts
 distributed with blocks are letting bisegments with one of the segments
 missing pass through.
 
-*** TODO Run demo with de-en corpus
+- TODO Run demo with de-en corpus
 The de-en corpus runs into the same issues as above.
-
-*** TODO Setup system to run on our English Dari and Pashto corpora
+- TODO Setup system to run on our English Dari and Pashto corpora
 Not yet. This will happen after I get the demo running.
-** theano
-*** DONE  Get theano and blocks  running on gpu machine
+*** theano
+- DONE  Get theano and blocks  running on gpu machine
 The theano demo runs on both the tesla and titan cards. The blocks demo is
 not running yet on the titan.
 
-*** DONE Read more tutorials
-
-** Deep Learning book
-*** TODO Read chapter 10 on RNNs
+- DONE Read more tutorials
+*** Deep Learning book
+- TODO Read chapter 10 on RNNs
 ?Started. Chapter 10 is huge and there are a lot of equations that I cannot
 read. Parameter sharing is important. I draw on how this was done for HMMs
 with htk. It turns out this is key in deep learning.
 
-** Accomplishments
-*** TODO Write accomplishments
+*** Accomplishments
+- TODO Write accomplishments
 Nope.
-** Bilingual NeuralLMs
-
-*** TODO Get blm working for English Dari and Pashto parallel corpora.
+*** Bilingual NeuralLMs
+- TODO Get blm working for English Dari and Pashto parallel corpora.
 I'm pretty sure I had done this, but I cannot replicate it. I might be
 fooling myself. Anyway, I am getting the NaNs returned from the blm during
 tuning.
-** TODO Mandatory Training
+*** TODO Mandatory Training
 No. The trainings are not showing up on my TED.
 
-* Unexpected Events
-** MorphoChain
+** Unexpected Events
+- MorphoChain
 I spent a day getting MorphoChain installed and setup to run on our Dari
 corpus.
 I have scripts that process the Dari data for use in word2vec.
@@ -2726,30 +2570,25 @@ I installed the java MorphoChain code and ran it on the Dari corpus.
 My guess is that we need a large Dari corpus. This might not be that hard to
 get. We're used to working with pparallel corpra. This is much easier, we
 just need lots of Dari raw text.
+** Goals for Next Week
+*** Research on Verb Prediction
+- TODO Read Mohit's ACL paper on DAN (deep averaging network)
+- TODO Get DAN code.
+- TODO Install DAN code.
+- TODO Run DAN code on an easy task (not sure what this would be yet)
+- TODO Contact Mohit to discuss DAN.
 
-* Goals for Next Week
-** Research on Verb Prediction
-*** TODO Read Mohit's ACL paper on DAN (deep averaging network)
-*** TODO Get DAN code.
-*** TODO Install DAN code.
-*** TODO Run DAN code on an easy task (not sure what this would be yet)
-*** TODO Contact Mohit to discuss DAN.
+*** School
+**** Scientific Computing
+- TODO Go to class (MWF)
+- TODO Contact DSS office about latex transcription of text book.
+*** Neural Machine Translation (nmt)
+- TODO Get blocks demos running on gpu  with titan card
+- TODO Fix data preparation problems (missing segment aleels)
 
-** School
-*** Scientific Computing
-** TODO Go to class (MWF)
-** TODO Contact DSS office about latex transcription of text book.
-
-** Neural Machine Translation (nmt)
-*** TODO Get blocks demos running on gpu  with titan card
-*** TODO Fix data preparation problems (missing segment aleels)
-
-** Deep Learning for Verb Prediction
-*** TODO How could this be done in theano or blocks?
-*** TODO Read more of Bengio's dl book
-
-** Mandatory Training
-
-** Write up accomplishments
-
-
+*** Deep Learning for Verb Prediction
+- TODO How could this be done in theano or blocks?
+- TODO Read more of Bengio's dl book
+*** Work
+- Mandatory Training
+- Write up accomplishments
