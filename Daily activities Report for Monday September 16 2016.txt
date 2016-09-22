@@ -1,0 +1,3906 @@
+From:	Morgan, John J CIV USARMY RDECOM ARL (US)
+Sent:	Monday, September 19, 2016 5:35 PM
+To:	Larocca, Stephen A CIV USARMY RDECOM ARL (US); Vanni, Michelle T CIV 
+USARMY RDECOM ARL (US); Hernandez, Luis CIV USARMY RDECOM ARL (US)
+Subject:	Daily activities Report for Monday September 16 2016
+Signed By:	john.j.morgan50.civ@mail.mil
+
+
+
+* Goals for Monday set Friday:
+- TODO Attempt to resume dnn training.
+- TODO If that fails rebuild models?
+- TODO Alternatively, transcribe answers with current sgmm models 
+- TODO Do semisupervised training with answers (maybe sri_gabon too)
+transcriptions.
+- TODO Write accomplishments
+
+
+When I left Friday evening, I tried to fire up monophone training after
+rerunning the plp pitch extraction script. The monophone training script
+gave me an error about feature dimension. The solution ended up being that I
+had to delete the directories having to do with the training data. In the
+monophone training I script I stole from the babel recipe, they split the
+training data into sub corpora to do different kinds of training.
+I think those sub corpora were linked to specific numbers associated with
+the plp extraction. When I reran the plp extraction, those numbers got
+changed. Right now, this is only a guess. But deleting all the directories
+associated with plp and pitch extraction and training data subsetting seems
+to have fixed the problem.
+
+- Attempt to restart the dnn training.
+The next step requires a unigram language model.
+There are problems building this model and converting it into an fst.
+The gp corpus still needs conditioning in order to get this to work.
+I'm finding some problems with the gp corpus conditioning that might make me
+want to restart the training from the beginning.
+The s' was not separated from the rest of the word.
+I thought this had already been done for the gp transcripts that come with
+the corpus.
+Apparently not.
+This is bad. The tokenization is not consistent in the original corpus. Some
+of the l' have been separated from the rest of the word. Bad Bad Bad.
+I found 69 cases.
+Do I have to do this by hand?
+I wrote a script to reattach the apostrophes.
+Problem coeur does not appear in the lexicon with the oe ligature spelling. 
+Somehow the oe ligature spelling got into my transcripts.
+Maybe when I converted from dos to unix and then to utf8?
+I'm just going to stick with the oe spelling.
+- Lexicon problems:
+Since the d' are now separated, i'm finding words that start with d' that do
+not have pronunciations in the lexicon.
+I'm copying the d' entries to entries with the d' deleted and the initial dd
+in the pronunciation removed.
+Steve. I think I need your help here.
+Now I'm getting problems with words that are lower cased.
+I might be doing something wrong.
+
+I'm finding problems in the lexicon.
+The words pronounced au need to be fixed.
+etat is in my transcriptions, but not in the lexicon.
+I checked this.
+One of the prompts is:
+Jamais par le bras d'autrui, Grands Etat n'ont e"te" conquis.
+Etat does not appear in the lexicon.
+Is this a  mis spelling?
+habituation was missing a space.
+
+- roll back, revert, reset what ever it's called. I messed up the dictionary
+and I wanted to get the version of the dictionary before I started changing
+it.
+I ran:
+git checkout "REVISION_HASH~1" local/src/lexicon.txt
+I wasn't sure this worked, so I got the old dictionary from the gp
+directory.
+I was still getting errors.
+They were the errors that could be fixed with dos2unix.
+So I'm back to a previous dictionary.
+
+- I spent most of the day working on getting pronunciations for words in our
+corpora.
+Finally I got the fst to compile.
+I hope I did not do anything stupid.
+The script I'm running computes the cost of something ...
+Then it creates FSTs.
+It puts these under data/lang
+Sorts the arcs.
+Checks if it's stochastic.
+Determinizes the FSTs.
+.
+
+
+I'm trying to restart the dnn training where I had left off.
+I'm making a decoding graph.
+I think this is the step that required the unigram fst.
+
+* Goals for Tuesday:
+- TODO Write accomplishments
+- TODO Try to continue dnn training where we left off.
+- TODO Start over with Steve's new lm.
+- TODO Write scripts to use the answers as semi supervision.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, September 16, 2016 6:26 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Friday September 15 2016
+
+* Goals for Friday:
+- TODO Finish fixing problems with sri and gp data preparation.
+- TODO Do top six accomplishments 
+- TODO Try to recover dnn nnet training recipe 
+
+
+I'm writing the scripts to prepare the sri_gabon data.
+I have to avoid the conflict with the gp data.
+
+OK it took me most of the day, but I think I finished data preparation  for
+the sri_gabon corpus.
+I still have to do the lm work and maybe dictionary work? Well ... I guess
+I'm not finished yet.
+I found more problems with the gp data prep scripts.
+I'm training the lm with Steve's new selected corpus.
+The data prep never ends.
+I put the gp data in directories like gp_001.
+Under each one of these directories the gp data has names like
+fr001_001.wav.
+kaldi does not like this.
+It wants something like:
+gp_001_FR001_001.wav
+in the directory gp_001
+
+
+I spent all day on data prep for sri_gabon and gp.
+
+I had a problem getting the plp pitch extractioon to run.
+It looks like I had to delete a previously created file.
+cmvn
+
+* Goals for Monday:
+- TODO Attempt to resume dnn training.
+- TODO If that fails rebuild models?
+- TODO Alternatively, transcribe answers with current sgmm models 
+- TODO Do semisupervised training with answers (maybe sri_gabon too)
+transcriptions.
+- TODO Write accomplishments
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, September 15, 2016 6:21 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Friday September 15 2016
+
+* Goals for Thursday:
+- TODO Write script to prepare sri_gabon data.
+- DONE Assuming denominator lattice generation is finished, move on to
+fdiscriminative training on the laptop so I can do the semisupervised
+training with the answers.
+- DONE If the dnn nnet pretraining finishes, move to dnn nnet cross entropy
+training.
+- TODO Incorporate Steve's sri_gabon prompt list into the lm.
+
+The dnn nnet pretraining had finished, so I fired up the next step of cross
+entropy training.
+The denominator lattice generation for sgmm discriminative training has
+finished, so I fired up the discriminative training script that uses mmi on
+my laptop.
+
+mmi training finished. I started the graph generation for decoding with the
+mmi trained models on my laptop.
+
+- sri_gabon data prep:
+Steve gave me 3 files with potential prompts.
+I've converted the 3 files to utf8.
+I ran dos2unix to get rid of the cr.lf
+I then ran iconv -f ISO_8859-1 -t UTF8 INFILE > OUTFILE
+to put the file in utf8.
+
+
+The script that runs the graph maker for the mmi trained sgmm decoding died.
+It looks like it runs out of memory on my laptop.
+I'm trying it again after rebooting.
+It happened again:
+The error message is:
+std::bad_aloc
+
+The dnn nnet training with cross entropy finished.
+Decoding the test set:
+WER: 29.22
+
+Problem:
+In trying to get the new sri_gabon data incorporated into my recipe I messed
+up the old training data.
+What should I do now.
+I am going to stop the dnn nnet training until I finish preparing the
+sri_gabon data.
+The problem was with apostrophes.
+Somehow, I was not conditioning completely the sri_gabon data.
+Apostrophes were not being tokenized correctly.
+So I was not able to make the unigram graph that is for some reason required
+to do the next step in dnn nnet training.
+When I was working on the sri_gabon scripts, I found some conflicts with the
+gp corpus.
+I made some modifications to the gp data preparation scripts and I did not
+test them.
+There were problems created.
+I need to fix these problems.
+To distinguish the gp from the sri_gabon data, I prepended a sri_gabon
+prefix to directory names.
+I haven't done this everywhere yet.
+I really should do the same for the gp data.
+Problem:
+I am not deleting the data directory, because I was accidentally deleting
+all my work.
+There are some scripts that append lines to already existing files.
+So these files are getting larger and larger each time I run the script.
+I need to delete these files that get appended to.
+
+* Goals for Friday:
+- TODO Finish fixing problems with sri and gp data preparation.
+- TODO Do top six accomplishments 
+- TODO Try to recover dnn nnet training recipe 
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, September 14, 2016 6:31 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Wednesday September 14 2016
+
+
+* Goals for Wednesday set Tuesday:
+- TODO Figure out how babel does dnn systems differently. How do they do the
+semi-supervision?
+- TODO Read references.
+- TODO Run script to  do semi-supervision with sgmm5 transcripts on the
+laptop (let the gpu do the dnn build that I started today)
+The dnn recipe run looks like it died. There seems to be no activity
+registered since I left yesterday. Top reports that it is indeed running. I
+don't understand what is going on. 
+I think it could be an issue with the gpu.
+The gpu is registering no activity.
+Actually, I did find some activity in the log files.
+Is it running on the cpu?
+It turns out that it was running on the small gpu.
+I deleted the process.
+Justin reset the gpu.
+I restarted the process.
+It now reports to be running on the tesla gpu.
+
+- sri_gabon corpus:
+I should run our best system on the sri_gabon corpus.
+
+I'm working through the scripts to prepare the sri_gabon data.
+There are 5851 read speech files in the sri_gabon corpus.
+
+There's a conflict between the gp and sri_gabon speaker directory names.
+They both just number them.
+I'll have to copy the files from /mnt/corpora  and rename them I do this for
+gp already.
+Steve will give me prompts for the sri_gabon data. They are not directly
+associated with the file names. 
+My plan is to randomly select sentences from Steve's list as transcriptions
+for the sri_gabon data.
+I really don't have to do this, but it might save time later.
+I do want to include Steve's list in my language model.
+
+This is going to take some dedicated work to get right.
+
+The denominator lattice generation is still running on my laptop for the
+sgmm discriminative training.
+It should finish soo, but I need to leave.
+
+* Goals for Thursday:
+- TODO Write script to prepare sri_gabon data.
+- TODO Assuming denominator lattice generation is finished, move on to
+fdiscriminative training on the laptop so I can do the semisupervised
+training with the answers.
+- TODO If the dnn nnet pretraining finishes, move to dnn nnet cross entropy
+training.
+- TODO Incorporate Steve's sri_gabon prompt list into the lm.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, September 13, 2016 4:45 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Tuesday September 13 2016
+
+* Goals for Tuesday set Monday:
+- DONE Assuming denominator lattice generation finishes successfully,
+continue with the mmi discriminative training of the yaounde + gp system.
+- TODO Setup the scripts to use the automatic transcriptions of the Answers
+data as training data.
+
+- TODO Read reference papers for the babel system.
+
+
+Yesterday before leaving and after I wrote my report I ran a decoding with
+the yaounde + gp tri5 models.
+The WER was 34.75.
+I thought this was not good news. However, I looked again at the results
+from my previous runs and the score for tri3b models was exactly the same
+34.75.
+The speaker independent version that alsow gets run at the same time gave a
+WER of 4402 which is actually better than the previous run that gave 46.80.
+I'm still anxious about the results for the sgmm5 models.
+The sgmm5 WER came in at 27.72.
+It looks like this is slightly worse than my previous results which were
+27.47.
+I'm not going to worry about such a small difference.
+No. I'm actually slightly better at this point.
+The previous WER was 28.38.
+I'm still waiting for the results for decoding with fmllr.
+
+I started working on a script to use the automatic answers transcriptions as
+supervision for training with the answers data.
+
+Discriminative training finished on the gpu machine.
+When I run the mkgraph script it doesn't seem to work.
+
+Maybe it was already done?
+Yes. I think I already ran the script that makes the FSTs.
+
+I need to write a script to decode the final sgmm5 models that were trained
+discriminatively.
+If I get good results, I'll be ready to move on.
+The fmllr results are in, WER was 27.41, slightly better than before which
+was 27.47.
+
+OK, the decoding is done.
+The results are slightly better.
+The best wer is 25.85 which is down from the previous best of 25.98.
+
+Time to move on.
+
+I have to wait for the answers to get transcribed.
+
+Change of plans:
+I'm going to run the dnn recipe that I ran for the gp and yaounde builds.
+I think it's the nnet recipe. I'm not sure if it's karel's recipe or Dan's
+recipe. My best guess is that it's Karel's.
+I'm running this because I had already run it for the other 2 builds and it
+looks like I got improvements for those systems.
+However, the babel recipes do things differently.
+
+I'm going to run different recipes on the laptop and gpu machine.
+On my laptop I'm going to run the semi-supervised training with the
+transcripts produced by the sgmm5 system.
+I won't have the sgmm5 complete on my laptop until some time tomorrow or
+maybe even later.
+Right now I'm generating denominator lattices on the laptop for the sgmm
+discriminative training.
+
+
+* Goals for Wednesday:
+- TODO Figure out how babel does dnn systems differently. How do they do the
+semi-supervision?
+- TODO Read references.
+- TODO Run script to  do semi-supervision with sgmm5 transcripts on the
+laptop (let the gpu do the dnn build that I started today)
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, September 12, 2016 4:44 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Monday September 12 2016
+
+
+* Goals for Monday set Friday:
+- TODO Investigate how babel Cantonese builds deep neural network models
+including bottle neck filters. How can I apply these methods to our yaounde
+and other corpora?
+
+I've decided to follow the babel naming conventions for my yaounde+gp build.
+In babel (and other places) dnn recipes build off the tri5 models.
+Babel calls it tri5, the previous recipie I was following (I think it was
+rm) called it tri3b.
+tri5 means there are 5 steps of triphone enhancements.. I could list them
+...
+tri1 builds off the monophone alignments.
+tri2 adds delta features.
+tri3 builds off the alignments from tri2.
+tri4 uses lda and mllt
+tri5 uses speaker adapted training with mllr.
+In babel they don't even worrry about decoding test sets at all these lower
+levels.
+I wanted to read the paper on mllt, but I could not access it.
+Apparently, mllt has to do with the covariance matrix. It's a way to use a
+full covariance matrix instead of just a diagonal one.
+
+After tri5 alignments are obtained recipes split off into sgmm training and
+dnn hmm hybrid training.
+ 
+- TODO Wrap up hmm builds for all 3 data set configurations.
+I'm rerunning the yaounde+gp build through sgmm discriminative training
+which is the only build yet to be completed.
+I'm going to skip fmmi for now.
+
+- TODO Ask Justin to put the babel Cantonese corpus under /mnt/corpora
+I'm going to wait until the sgmm training I'm running now on the Cantonese
+corpus to finish, otherwise I'm ready to move this corpus to /mnt/corpra.
+
+- TODO Try using output transcripts for Answers as labels for training with
+Answers.
+
+- DONE symlink utils and steps directories.
+
+The focus today is on finishing the pre dnn models for the yaounde+gp. This
+means getting the sgmm models. Then training them discriminatively. I have
+the basic sgmm models and the discriminative training is happening right
+now. This is very slow, so it might not finish today.
+I want to decode with the sgmm basic models.
+When I look back at my previous recipe, I see that I used transforms from
+the tri3b=tri5 models when decoding with the sgmm models.
+I guess I have to do this again.
+Yes, and to get those transforms I have to also run the mkgraph script for
+the tri5 models.
+
+I've been trying to  read the references in the  babel  summary, but the
+journals make it way to hard to access their papers.
+
+As I'm getting ready to leave I have a couple of processes running that I
+should leave alone and come back tomorrow to check on.
+I've got 1 process running on my laptop and several on the gpu machine.
+On my laptop I'm running the basic training of the sgmm models.
+On the gpu machine I have the script that runs the recipe for the Cantonese
+babel recipe.
+This is the first of many scripts.
+It builds the tri5 and sgmm5 models, including the discriminatively trained
+sgmm models.
+Right now the script is making the denominator lattices for the
+discriminative training.
+I'm also running 2 processes for the yaounde + gp system.
+I'm decoding with the sgmm5 models (not the discriminatively trained ones
+yet).
+Actually, I got mixed up. The denominator lattices are being generated for
+the yaounde + gp system. The Cantonese system is doing the discriminative
+training.
+
+* Goals for Tuesday:
+- TODO Assuming denominator lattice generation finishes successfully,
+continue with the mmi discriminative training of the yaounde + gp system.
+- TODO Setup the scripts to use the automatic transcriptions of the Answers
+data as training data.
+- TODO Read reference papers for the babel system.
+
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, September 09, 2016 5:09 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Friday September 9 2016
+
+
+* Goals for Friday set Thursday:
+- DONE Copy the data from the Babel Cantonese dvd to the gpu machine ( I
+can't believe how long this takes.)
+- TODO Setup and run the Babel Cantonese recipe.
+- TODO Finish the pre dnn part of the recipes for the 3 builds yaounde gp
+and yaounde+gp.
+The yaounde recipe run is still running. It is just getting to the fmmi
+parts.
+
+The gp recipe run had crashed this morning on the denominator lattices
+creation for the sgmm2x_4a models.
+There were some old graphs/FSTs hanging around. I deleted them and that
+still did not fix the problem. There was an extra option setting the number
+of jobs to split into. I removed this option and it seems to be running now.
+
+The yaounde + gp build is still chugging away.
+
+
+- TODO Read reference papers for kaldi and the techniques used in their
+recipes.
+- TODO Check on runs of yaounde dnn and yaounde+gp build from scratch.
+
+- TODO Clarify the difference between karel's dnn recipe and the dnn hybrid
+recipe that I've run on the gp and am running on the yaounde corpus build.
+
+
+
+- Setting up babel Cantonese.
+Modify the conf/lang -> lang.conf file for cantonese, this is going to
+require several passes.
+Lesson: The steps and utils directories are symlinked to the wsj versions of
+these directories.
+If babel can do this, I should do this too.
+I  thought it was too good to be true when I was setting up my recipes.
+From now on I'm going to symlink the steps and utils directories to our
+installation of kaldi.
+Specifically:
+/home/tools/kaldi/egs/wsj/s5/{steps|utils}
+This is going to save me a lot of space and effort copying scripts from thos
+directories.
+All the new scripts go under the local directory
+- I was missing configuration files.
+I went to the clisp cluster.
+I found the place where the bable development was happening.
+All the configuration files seem to be there and the paths coincide with the
+ones in the configuration file.
+I copied the config files to the gpu machine.
+The first run script is running after some tweeks. 
+I had to touch a dummy glm file.
+The recipe seems to be using plp features with pitch instead of MFCCs.
+
+Monophone training is happening now.
+
+- yaounde:
+The run is not finished yet as I'm getting ready to leave. However, it has
+already done the decoding with sgmm 4a mmi b02 models. These were the best
+models for the yaounde + gp data set build. They are not the best for the
+yaounde data set build. They come in at 37.84. The sgmm with fmllr comes in
+at 36.42, which is the best so far for yaounde.
+The script still has to run the fmmi modeling. I don't think this will beat
+the best, but who knows?
+
+- gp:
+The script I'm running for the gp data set configuration is doing lattice
+generation. It will use these lattices to do discriminative training of sgmm
+models.
+Those are the sgmm mmi 4a b0 2 models that gave the best results on the
+yaounde + gp data set configuration.
+I'm actually running a dnn script on this data set configuration too.
+I don't understand why I'm not seeing any activity on the gpu. I was seeing
+a lot yesterday.
+
+- yaounde + gp:
+The script running on this data set configuration is at the stage where it
+has built the tri3b models and generated lattices and discriminatively
+trained with mmi and is now decoding.
+After that it will move on to sgmm modeling.
+So this won't finish until some time this week-end.
+
+
+* Goals for Monday:
+- TODO Investigate how babel Cantonese builds deep neural network models
+including bottle neck filters. How can I apply these methods to our yaounde
+and other corpora?
+- TODO Wrap up hmm builds for all 3 data set configurations.
+- TODO Ask Justin to put the babel Cantonese corpus under /mnt/corpora
+- TODO Try using output transcripts for Answers as labels for training with
+Answers.
+- TODO symlink utils and steps directories.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, September 08, 2016 6:15 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Thursday September 8 2016
+
+* Goals for Thursday set Wednesday:
+- DONE Check if the yaounde+gp run crashed.
+It had crashed before I left. It was a chain models recipe. I think the
+chain models recipe need a lot of work before they're ready for prime time. 
+yBefore I left yesterday I started the gp build with Karel's dnn hybrid
+recipe.
+This recipe finished without errors
+This morning I've started decoding the test set with the dnn hybrid models. 
+The decoding of the test finished very quickly. 
+wer 41.47. 
+This  is the best so far for the gp builds.
+
+
+
+- TODO Incorporate dnn recipes into my recipe.
+
+
+
+I tried to incorporate Karel's dnn hmm hybrid models into my yaounde + gp
+recipe. 
+for some reason it started the whole recipe from the beginning. 
+I'm not sure why this happened.
+I'm starting from scratch with the yaounde + gp system.
+There was a confusion. I'm running 2 different dnn builds. One is karel's
+and the other is a dnn hybrid model.
+
+I'm setting up the dnn recipe for the yaounde build.
+
+I got the Cantonese babel corpus from Steve.
+I'm putting it on the gpu machine.
+Justin can put it on /mnt/corpora on Monday.
+My plan is to run through the Cantonese babel recipe for dnn, bottle neck
+features and if possible chain models.
+My hope is that by observing a working example, I'll be able to replicate it
+on my recipe for accented french.
+It's taking for ever to retrieve the data from the Cantonese dvd.
+OK, the copying finished. The second dvd did not take as long as the first.
+
+I spent most of today getting the yaounde and gp builds to the point where I
+can fill out the results table.
+There are still sections I'd like to fill out.
+
+* Goals for Friday:
+- DONE Copy the data from the Babel Cantonese dvd to the gpu machine ( I
+can't believe how long this takes.)
+- TODO Setup and run the Babel Cantonese recipe.
+- TODO Finish the pre dnn part of the recipes for the 3 builds yaounde gp
+and yaounde+gp.
+- TODO Read reference papers for kaldi and the techniques used in their
+recipes.
+- TODO Check on runs of yaounde dnn and yaounde+gp build from scratch.
+- TODO Clarify the difference between karel's dnn recipe and the dnn hybrid
+recipe that I've run on the gp and am running on the yaounde corpus build.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, September 07, 2016 5:31 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Wednesday September 7 2016
+
+
+
+* Goals for Wednesday set Tuesday:
+- DONE Check on processes on gpu.
+They were all in different states of chrash.
+I did get one good result from the yaounde + gp build. We broke the 26
+percent WER barrier. We're at  25.98 with the sgmm2x_4a_mmi_b0.2 iteration
+2.
+
+- DONE  Get Justin to reboot gpu machine.
+- DONE Run chain model recipes.
+I started the chain model training run on the yaounde build. It is behaving
+strangely. It seemed to be using the gpu at the beginning. Now it does not
+seem to be using the gpu.
+The script claims it fails then it continues. Something is not right.
+
+- TODO Investigate bottle neck feature training.
+- TODO Consider how to train on automatically transcribed Answers.
+- TODO Figure out why the GP build is crashing on the Answers. This should
+not be happening. It does not happen for the other 2 builds.
+
+Justin is recompiling a new fresh version of kaldi for me. So I'm doing
+clean up of directories and git repos.
+
+The recompile is done.
+
+I started the runs for the yaound+gp and gp builds.
+
+I am going to stop running more than one build at a time.
+I'm going to concentrate on the yaounde+gp for a while.
+I killed the gp build.
+
+The chain model yaounde+gp  build crashed
+
+. There's a problem. Maybe it has to do with the parameters.
+There are a lot of parameters and who knows what they should be set to.
+The mini batch size for example.
+I'm seeing problems with inverting matrices on the gpu. It  falls back to
+processing on the cpu. This is strange.
+This makes me think that there are problems with my parameter settings.
+
+I started the dnn hybrid script. I think this is Karels recipe.
+
+* Goals for tomorrow:
+- TODO Check if the yaounde+gp run crashed.
+- TODO Incorporate dnn recipes into my recipe.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, September 06, 2016 5:03 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Tuesday September 6 2016
+
+* Goals for Tuesday set Friday:
+- DONE What happened to the 3 runs?
+I came in over the week-end to make tweeks and restart crashed runs.
+I reordered the sgmm building before the nnet chain model building.
+The fMMI recipe is not done yet.
+- DONE Did tri3b decoding on Answers succeed for the 3 runs?
+Yes. It looks like I can get transcripts for answers where ever I get
+transcripts for test.
+- TODO Did the runs reach the chain model step?
+Only the yaounde build is getting there this morning.
+- TODO Write on tr.
+- TODO Get bottle neck model recipe from babel.
+This will take some more work.
+
+
+* Goal for today
+- TODO Make the recipe scripts consistent for the 3 data sets.
+
+The yaounde build is ahead of the other 2 builds because it is much smaller.
+I've added the FMMI dubm parts to the yaounde recipe. I need to add these to
+the 2 other scripts.
+
+The chain part of the yaounde build is now at the point where it depends on
+having the gpu available.
+
+Something is wrong with the gp build. It keeps crashing on answers.
+
+
+I've been looking into the automatic lexicon expansion described in babel.
+The babel data came with syllable boundary marks. 
+I found references to syllable taggers. One called EasyAlign uses praat and
+htk.
+
+I cannot log on to the gpu machine.
+I guess it's bogged down with processes.
+
+* Goals for Wednesday:
+- TODO Check on processes on gpu.
+- TODO Get Justin to reboot gpu machine.
+- TODO Run chain model recipes.
+- TODO Investigate bottle neck feature training.
+- TODO Consider how to train on automatically transcribed Answers.
+- TODO Figure out why the GP build is crashing on the Answers. This should
+not be happening. It does not happen for the other 2 builds.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, September 02, 2016 4:22 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Friday September 2 2016
+
+* Goalls for Friday set Thursday:
+- TODO Check on the 3 recipe runs that I started this afternoon.
+Specifically, did they crash on the answers? 
+
+It looks like the answers are not crashing the run.sh recipe script now. The
+WER is infinity.
+
+Are there dummy reference transcriptions that are missing. I would be
+surprised if there were none.
+
+I don't know how to check this yet.
+
+This was only working for the gp build this morning.
+
+- TODO Did tri3b fmllr decoding work for the Answers? (important)
+
+Bad news. The gpu machine is really bogged down with all the processes I'm
+running. There were 96 processes running when I checked this morning. This
+makes everythink slow.
+
+The yaounde+gp is training the tri3b models this morning.
+
+- TODO Mandatory Training
+- TODO Write more on TR.
+- TODO Finish the pass on the yaounde recipe run.sh script.
+- TODO Read papers on kaldi.
+
+
+I'm making a pass on the run.sh recipe script for the yaounde build.
+The chain model  training command line has 28 options, including many
+options for the jesus layer.
+There are a lot of decodings happening in the sgmm model builds in the
+recipe. 
+I'm trying to do both the test and answers decoding for each kind of
+decoding.
+I'm not sure this is worth all the work.
+I'd rather spend time on bottle neck feature (filter?) models.
+
+- Good news:
+it looks like the problem with decoding the Answers with tri3b models is
+solved.
+I think I had to go through the process of doing exactly what I had done for
+the dev and test sets.
+That was for the yaounde build.
+The yaounde + gp is not ready yet.
+Actually, it was the gp build that had the answers and questions correct.
+I now updated the yaounde and yaounde+gp builds to include the answers
+fixes.
+I had made a modification to the script that puts the prompts in one file. I
+assumed the numbers in the file names were separated by a dash. The names
+for the answers files are separated by underscores.
+That is fixed now.
+This makes me feel  a lot better about letting these scripts run over the
+week-end.
+Weird: I guess it wasn't the gp build that had the answers fixed. Anyway, I
+updated it too. Maybe I only had it running on my laptop?
+As I'm getting ready to leave for the long week-end, I have all 3  builds
+running from a fresh start.
+I rewrote the order of the commands in the gp script. I do the sgmm before
+the chain models. This makes more sense.
+I'll rewrite the other scripts next week to put them in this order.
+Unfortunately, they'll crash when they get to the chain models before they
+get to the sgmm models, but I don't have the time today to fix this.
+
+
+
+The output from the decoding should be labeled with the fold. Right now the
+gp build on the tri3b mmi step labels the output of the test fold only as
+decode. I really want this to be labeled decode_test. The answers fold
+labeled as decode_answers and the dev fold labeled as decode_dev.
+This is important because the output  later gets used for mllr transforms or
+something like that.
+I'll have to have all 3 scripts consistent on this point. 
+116 processes are running on the gpu machine.
+
+* Goals for Tuesday:
+- TODO What happened to the 3 runs?
+- TODO Did tri3b decoding on Answers succeed for the 3 runs?
+- TODO Did the runs reach the chain model step?
+- TODO Write on tr.
+- TODO Get bottle neck model recipe from babel.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, September 01, 2016 4:20 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Thursday September 1 2016
+
+* Goals for tomorrow Thursday set Wednesday:
+- TODO Figure out why tri3b decoding is not working for answers but is
+working for tri3b dev and test.
+- TODO  Check on chain models for yaounde+gp.
+
+
+I checked the chain model build for the yaounde + gp data set.It died at the
+first iteration of neural network training. The gpu was not detected.
+This will be a show stopper until the machine gets rebooted.
+In the meantime, I'll have to work on the other 2 scripts to get them to
+this point. I'll also work on the issue of transcribing the Answers data
+with the tri3b models.
+
+I was surprised to find out that the chain models are dnn hmm hybrid models.
+
+I'm going back to the data prep step to get the answers aligned with the
+test and dev sets.
+Instead of using transcriptions for each file as in the case for dev and
+test, I'm going to use the questions that was asked to get the answer that
+was spoken.
+
+Decoding without mmlr works for answers.
+
+I'm starting from the beginning with the gp data set build.
+I'm hoping that having the (dummy) transcripts for the Answers will enable
+fmllr decoding (tri3b) for the Answers.
+
+
+I've done another pass on the gp and younde+gp run.sh recipe scripts.
+I've started on the yaounde recipe script.
+I've incorporated the questions to the answers in the scripts. The decode
+scripts do not crash now when I decode the answers. The WER results are not
+valid since the reference transcriptions wers are only dummy sentences (the
+questions not the answers).
+
+* Goalls for Friday:
+- TODO Check on the 3 recipe runs that I started this afternoon.
+Specifically, did they crash on the answers? Are there dummy reference
+transcriptions that are missing. I would be surprised if there were none.
+- TODO Did tri3b fmllr decoding work for the Answers? (important)
+- TODO Mandatory Training
+- TODO Write more on TR.
+- TODO Finish the pass on the yaounde recipe run.sh script.
+- TODO Read papers on kaldi.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, August 31, 2016 5:44 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Wednesday August 31 2016
+
+* Goals for Wednesday set Tuesday:
+- TODO Check how far my recipe scripts reached. As I'm preparing to leave
+the gp and yaound+gp data set builds are doing the cleanup run. The Yaounde
+data set build is training tri2b models.
+
+I've spent the morning concentrating on the yaounde+gp run. I got some
+really good news this morning. We broke the 30 WER barrier. The bad news is
+that I haven't been able to apply these models to the Answers data. The test
+results are worthless if I cannot apply the models to the Answers data.
+
+
+- TODO write more of the tr.
+
+The answers are not being transcribed with the tri3b models.
+The test set gets transcribed. It seems to be using fmmlr transforms.
+Somehow I have to get mllr transforms for the answers data.
+What is the cleanup?
+I guess it is a way to get feedback on the quality of the recordings?
+
+I'm pushing forward on the yaounde + gp data set build.
+I'm leaving the issue of decoding the answers for later. It'll take a lot of
+concentration.
+
+I'm working on the chain part of the recipe now.
+
+python scripts are getting used now.
+ There is a lot of information on chain models at the url below:
+
+http://kaldi-asr.org/doc/chain.html
+
+
+
+* Goals for tomorrow Thursday:
+- TODO Figure out why tri3b decoding is not working for answers but is
+working for tri3b dev and test.
+- TODO  Check on chain models for yaounde+gp.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, August 30, 2016 5:07 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Tuesday August 30 2016
+
+
+
+* Goals for Tuesday set Monday:
+- TODO Check on status of run.sh recipe scripts ( they will probably have
+failed).
+
+I checked the yaounde + gp run. One thing I noticed is that the ansers
+decoding fails, I knew this, but it has become an issue because it makes the
+whole run.sh script fail when I have a || exit 1 phrase at the end of the
+command.
+I noticed that it fails because it does not find the data/answers/text file.
+I need to incorporate a dummy file here so that the command does not fail.
+My work around now is to remove the || exit 1 phrase.
+
+Actually, now that I look at this closer, I think this is an important 
+ file to have. The questions that were asked to the speakers. For each
+answer, we should have the question.
+I have a list of the scenarios and questions, but I do not have a list of
+the question that was asked for each specific answer.
+
+I had not included the options parsing script in the yaounde run.sh script.
+This made the build start from the beginning each time I ran it even if I
+specified the --stage  option. The --stage option does not get parsed unless
+the options parsing script is invoked in the run.sh script.
+
+- TODO Incorporate sgmm training into recipes.
+- Todo Write more for tr
+- TODO Do another mandatory training
+
+- Questions to Answers:
+I wrote a list of 300 questions for the Answers. I'm not sure they align
+with the answers.
+
+I'm incorporating the chains recipe into my recipe for the gp data set. I'll
+do this for the other 2 recipes later.
+There are references to jesus in this recipe.
+I have no idea what this is about.
+
+I'm incorporating a script to find bad utterances into my run.sh recipe
+scripts.
+
+Here's what I've written so far for the tr:
+Bootstrapping A Question Answering Speech
+Recognizer With Read Speech
+John Morgan
+August 30, 2016
+Abstract
+1 Introduction
+Speech to speech (S2S) devices convert speech input by a speaker in one
+language
+into speech in a different language. The automatic speech recognition (ASR)
+system is a key component of a speech to speech device. ASR systemss for S2S
+devices are ideally trained on speech that is similar to the task for which
+the
+device will be used. S2S devices are intended to be used to enable dialogues
+between speakers of different languages. Collecting this ideal kind of
+dialogue
+data is expensive. In order for the data to be used as training data for an
+ASR
+system it must be transcribed at the word-level. This transcription task is
+a
+major part of the reason why the data collection is expensive. A way to cut
+back
+on this cost is to obtain an automatically generated rough draft of the
+dialogue
+type of speech collected. If the data being collected comes from a language
+that
+lacks a corpus of speech data or if the data comes from a highly accented
+flavor
+of a well-resourced language, automatic transcriptions of the data will not
+be
+possible. One way to solve this problem is to collect a small corpus of
+recitations
+by each speaker in the data collection. We will refer to this as the read
+part of
+the corpus. The other part will be refered to as the conversational part. An
+ASR system built with the small read corpus will not serve as a training set
+for an S2S device. However, it can be used to obtain rough draft
+transcriptions
+of the conversational speech part. one reason this is possible is because
+the
+speakers in the read part are the same speakers that are in the
+conversational
+part. For scientific evaluation, for any ASR task, the speakers in the test
+set and
+training set are kept disjoint. The taskk becomes much easier when the
+speakers
+in the training and test sets are the same. The cost of building an ASR
+system
+with read speech is much lower than building one with conversational speech.
+A pronouncing dictionary is the most expensive component of a phone-based
+ASR system. For a system built with read speech there is no cost involved
+with
+transcribing the data. The transcriptions are given by the prompts.
+1
+
+2 Methods
+Three corpora were used in this project.
+The Yaounde corpus: collected in Yaounde ,the capital city of Cameroon. It
+consists of two
+parts: the read part which consists of recitations fof prompts and the
+conversational part which consists of answers to questions.
+nch part of the Globalphone corpus:
+The Central Accord Corpus: Collected in Gabon from speakers from four
+Central African countries. A
+small part of the read part of this corpus was used as test data.
+All the experiments performed in this project used the kaldi toolkit. Most
+of the standard kaldi recipes were used. Three training sets were compared.
+Yaounde Consisting of only the prompts from the Yaounde corpus.
+GP Consisting of the Globalphone prompts.
+Yaounde + GP Consisting of both the Yaounde and Globalphone prompts.
+3 Results
+model Yaounde GP Yaounde+ GP
+monophone 64.03 69.06 62.10
+tri1 59.57 56.07 45.33
+tri2a 60.83 55.04 44.99
+tri2b 64.57 57.26 43.46
+tri3b 47.17 34.75
+tri3b si 61.74 56.85 46.80
+tri 4 48.58
+tri4 si 63.31
+Table 1: WER scores for models and training sets.
+2
+
+
+* Goals for Tomorrow Wednesday:
+- TODO Check how far my recipe scripts reached. As I'm preparing to leave
+the gp and yaound+gp data set builds are doing the cleanup run. The Yaounde
+data set build is training tri2b models.
+- TODO write more of the tr.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, August 29, 2016 5:27 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Monday August 29 2016
+
+There was a problem with the network on Friday August 26 2016.
+The network was not available for the entire day.
+This meant I could not log on to my enterprise machine (JAWS license?).
+The network seems to be working fine today.
+
+
+* Goals for tomorrow Friday August 26 2016 set Thursday:
+- TODO Check if processes have finished.
+- TODO Do another sanity check.
+- TODO Write more for tr
+- TODO Investigate triphone training steps (maybe Dan Povey's paper?)
+
+
+I looked closer at the kaldi recipes and I decided to take yet another step
+back.
+Everything is good up through tri1 model training and decoding.
+Then there is a branch off to tri2a models.
+These models use another step of deltas on the features.
+Apparently this is a dead end. 
+
+Model building continues on another branch.
+The first step on this branch builds tri2b models.
+These models use lda and mllt features.
+
+I had confused myself by ignoring the difference between tri2a and tri2b. I
+had renamed tri2a tri2 and tri2b  to tri3. This led to confusion. I thought
+one built on the other.
+
+I wrote a run.sh script that includes the tri2a step for the record, but
+continues building models on the tri2b branch.
+The kaldi recipes put all the steps in a run.sh script.
+I was putting the steps in separate files, but now I've moved to writing
+everything in the run.sh script.
+
+I wrote run.sh recipe scripts for each of the 3 data sets.
+I launched them on the gpu machine.
+
+* Goals for tomorrow:
+- TODO Check on status of run.sh recipe scripts ( they will probably have
+failed).
+- TODO Incorporate sgmm training into recipes.
+- Todo Write more for tr
+- TODO Do another mandatory training
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, August 25, 2016 6:00 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Thursday August 25 2016
+
+
+
+* Goals for tomorrow Thursday set Wednesday:
+- DONE Check that the yaounde graph making script finished.
+- DONE Check that the scripts for the other 2 data sets finished. Some of
+the decoding seems to be stuck.
+
+Everything seems to have finished, but I think I've gotten out of sync.
+- TODO Do a sanity check on the scripts. They seem to have become
+unsynchronized.
+- TODO Continue the Constitution training on page 37.
+- TODO Start writing the TR
+
+
+
+model & yaounde & gp & yaounde + gp
+mono & 65.42 & 69.06 & 62.47
+tri1 & 60.26 & 56.07 & 44.74
+tri2 & 61.38 & 57.26 & 45.24
+tri3 & 63.85 & 47.17 & 45.15
+
+
+- tri3 results: 
+Why did the gp models do so much better. Am I really comparing the same kind
+of models?
+
+- Sanity checking:
+It looks like I'm taking diffeerent steps for the different models.
+1. Monophones look consistent for the 3 training data sets.
+2. Tri1 ditto
+3. tri2: this may be where the steps go along different paths.
+Yes.
+Yaounde: 
+input alignments: tri1_ali
+output directory: tri2a
+step script: steps/train_deltas.sh
+
+gp:
+input alignments: tri1_ali
+output directory: tri2
+step script: steps/train_lda_mllt.sh
+
+yaounde + gp:
+input alignments: tri1_ali
+output directory: tri2a
+step script: steps/train_deltas.sh
+
+
+I think the extra step I'm taking for the yaounde and yaounde+gp training
+data sets is a waste of time.
+I'll go back and skip it and follow the steps I'm taking for the gp training
+data set.
+The yaounde+gp training step takes noticeably longer than the yaounde
+training set script.
+
+
+
+- tri2:
+I'm going to take a step or 2 back.
+The tri1 results are great.
+The tri2 results get worse.
+I'm going to try 1 more time to fix this.
+The alignment step after the tri1 models have been trained and used to
+decode can take an option to use graphs.
+I'm going to try this.
+
+
+
+model & yaounde & gp & yaounde + gp
+mono & 65.42 & 69.06 & 62.47
+tri1 & 60.26 & 56.07 & 44.74
+tri2 & 61.38 & 57.26 & 45.24
+tri2 use graph alignment & 64.57 & 57.26 & 43.93
+tri3 & 63.85 & 47.17 & 45.15
+tri3 using graph alignment & 64.91 & 56.85 & 44.65
+
+When I added the --use-graph option for alignment using tri1 models
+, the decoding using tri2 models had mixed results. It was worse for
+yaounde, the same for gp, and slightly better for yaounde+gp.
+
+I'm not sure what is going on with the tri3 models.
+
+
+
+- Mandatory Training:
+I finished reading all 137 pages of the 508 version of the Constitution Day
+training.
+
+* Goals for tomorrow Friday August 26 2016
+- TODO Check if processes have finished.
+- TODO Do another sanity check.
+- TODO Write more for tr
+- TODO Investigate triphone training steps (maybe Dan Povey's paper?)
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, August 24, 2016 5:07 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Wednesday August 24 2016
+
+* Goals for Tomorrow Wednesday set yesterday:
+- DONE Check if the fst graph maker scripts finished successfully.
+The 3 of them finished successfully.
+- TODO Decode test and answers with resulting FSTs.
+- TODO Get Steve  to eyeball the yaounde ansers output.
+- TODO Run through speech to text tutorial for PySpeech.
+
+- Triphone decoding:
+I found a paper on the internet by Dan Povey that says that in kaldi they do
+not use hand written questions for the decision tree clustering of
+triphones. They use a data driven approach.
+
+model & yaounde & gp & yaounde + gp
+mono & 65.42 & 69.06 & 62.47
+tri1 & 60.26 & 56.07 & 44.74
+tri2 & 61.38 & 57.26 & 45.24
+tri3 & 63.85 & & 
+
+The tri2 models produce worse results. 
+ I think they're only there to get alignments, but I'm not really sure.
+The tri3 models don't look good either.
+I think these triphone models are a waste of time.
+
+
+These results continue to look more  reasonable however.
+More data is better and adding relevant data is better.
+
+
+-PySpeech tutorial:
+I run the train_sid.sh script to get speaker id models as suggested in the
+decode.sh script.
+I think pyspeech assumes audio input is telephony quality, i.e. 8bit8k.
+It says this in the tutorial.
+It supports a couple of file formats, but all are telephony quality.
+Anyway ... I gues we can always downsample.
+Unfortunately, I don't think PySpeech is what we're looking for if we want
+to do demos.
+I hope I'm wrong.
+
+- Constitution Day mandatory training:
+There are 134 pages to read in hthis training.
+This will take me several days to complete.
+I'm at page 37 of 134.
+
+* Goals for tomorrow Thursday:
+- TODO Check that the yaounde graph making script finished.
+- TODO Check that the scripts for the other 2 data sets finished. Some of
+the decoding seems to be stuck.
+- TODO Do a sanity check on the scripts. They seem to have become
+unsynchronized.
+- TODO Continue the Constitution training on page 37.
+- TODO Start writing the TR
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, August 23, 2016 5:12 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Tuesday August 23 2016
+
+* Goals for Tuesday: 
+- DONE Check if lm finished training
+The file with the training data ended up with  13.3 million segments and 143
+million tokens.
+The lm is only 149 mb. This seems small.
+- TODO run monophone systems with new lm.
+- TODO Investigate tri2 models and why they do not improve the WER scores.
+
+
+- Monophone builds:
+Yaounde: The steps that involve the new lm take much longer.
+This is the drawback to using a large lm. 
+GP and Yaounde + GP: I'm skipping a step that creates a lexicon for the
+dictionary. I'm not sure this step is needed.
+
+
+
+
+model & yaounde & gp & yaounde + gp
+mono with small lm including CA test prompts & 39.23 & 43.96 & 38.59
+mono with large lm no CA test prompts & 65.42 & 69.06 & 62.47
+
+
+
+These numbers look really bad, but the transcriptions of the yaounde answers
+obtained with these models are looking pretty good.
+
+- PySpeech:
+Justin set me up with an account on a sentos machine where he has installed
+PySpeech.
+I was able to run the tutorial script for extracting ivectors.
+
+- Triphone builds:
+I ran alignment and training today for the 3 training data sets.
+As I'm getting ready to leave, I now have the triphone graph making script
+running for the 3 data sets.
+
+* Goals for Tomorrow Wednesday:
+- TODO Check if the fst graph maker scripts finished successfully.
+- TODO Decode test and answers with resulting FSTs.
+- TODO Get Steve  to eyeball the yaounde ansers output.
+- TODO Run through speech to text tutorial for PySpeech.
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, August 22, 2016 5:19 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Monday August 22 2016
+
+* Goals for Monday set on Friday:
+- TODO Compare the wer for triphones
+- TODO Build a better lm.
+- TODO Test the new lm with mono system.
+
+The processes I had started on Friday terminated and they (as far as I can
+tell so far) terminated with no errors. So I started the next round of graph
+making, alignment and training scripts for triphones.
+
+
+model & yaounde & gp & yaounde + gp
+mono & 39.23 & 43.96 & 38.59
+tri1 & 44.03 & 38.84 & 28.04
+
+This is a bit strange.
+We moved from monophone to triphone models. There are 3 training sets:
+1. Yaounde: WER went from 39.23 to 44.03
+2. Global phone (possibly used Yaounde as dev set): Wer went from 43.96 to
+38.84
+3. Globalphone and Yaounde: Wer went from 38.59 way down to 28.04.
+
+Why does the WER go up for The Yaounde-only trained models?
+Otherwise these results are looking a lot more reasonable.
+When we add relevant data, the WER goes down (and pretty substantially).
+
+I did not take my own advice to be patiaent and I continued to the next set
+of triphones:
+
+model & yaounde & gp & yaounde + gp
+mono & 39.23 & 43.96 & 38.59
+tri1 & 44.03 & 38.84 & 28.04
+tri2 & 47.22 & 41.80 & 29.97
+
+The tri2 models perform worse for the 3 training sets.
+
+I'm testing a guess that the problem is in the alignment step.
+The tri1 models are used to align the data before training the tri2 models.
+The script points to the directory data/lang_nosp_test_threegram.
+I'm trying to point to the directory data/lang_nosp instead.
+The alignment script finished without errors.
+The training script for the tri2 models also points to the
+data/lang_nosp_test_threegram.
+The make graph script also points to the data/lang_nosp_test_threegram, but
+this is probably correct. We need to make a graph for the test data.
+I got the exact same WER score 47.22 when I swapped the
+data/lang_nosp_test_threegram and data/lang_nosp directories.
+
+
+
+- lm
+I'm spending some time on the subs corpus for the lm.
+I retrieved the files from the dvd Steve gave me.
+Looking at the French English corpus.
+I'm not  sure what the .idx file is.
+There are 2 text files. I suppose these are the 2 sides of the parallel
+corpus.
+I'm repeating the steps Steve took.
+Lowercase, Normalize, tokenize, and restrict to sentences with between 6 and
+25 tokens.
+
+
+- Mandatory Training:
+I completed the AMC records management basic training.
+* Goals for tomorrow:
+- TODO Check if lm finished training
+- TODO run monophone systems with new lm.
+- TODO Investigate tri2 models and why they do not improve the WER scores.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, August 19, 2016 6:36 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Friday August 19 2016
+
+* Goals from Yesterday:
+- DONE Check if processes have finished  for building the gp yaounde ca
+models .
+This is running the sgmm2 training which takes a long time, but it's worth
+it.
+step 26.
+At the end of the day I've abandoned this for now. I'll get to it later.
+- DONE Check if the yaounde only model processes have finished.
+steps 16 and 17.
+I was decoding with yaounde only triphones. The scores get a lot worse.
+Something is wrong.
+Ditto, I've abandoned this for now and I'll get to it later.
+
+- DONE lm 
+check if the lm processing steps have finished.
+This might be creating a training file that is too big.
+Currently I'm running it on the gigafren corpus.
+
+There was a bug in the script. I'm restarting this. I'll probably have to
+come back later to use better data.
+- DONE Answers:
+Extract the text output from the log files to see how well the monophones
+performed.
+I wrote a script that does this.
+
+
+- Planning:
+The long term goal is to get transcriptions for the Yaounde Answers (YA).
+Outline:
+1. Produce an ASR system with our existing holdings: gp, yaounde read
+(centrral accord?)
+I guess we'll use ca for testing for now.
+2. Decode the Answers with the system in 1.
+3. Evaluate this method. Can this work for Central Accord?
+
+As part of 1. Figure out the best system for decoding the Answers.
+Concentrate first on monophones. Be patient.
+Step 1: Compare the performance of 3 systems:
+1. Yaounde  Read (YR)
+2. GlobalPhone (Gp)
+3. Yaounde Read + GlobalPhone (YRGP)
+
+
+Note that there are questions about what devset data to use.
+I think I'll ignore this question for  now while building the 3 mono
+systems.
+
+
+What about the LM?
+
+
+- Monophones:
+1. Train on YR test on CA. and decode YA
+2. Train on GP test on CA and decode YA.
+3. Train on YRGP test on CA and decode YA.
+
+model & yaounde YA & gp YA & gp YR & yaounde + gp YA
+mono & 39.23 & 43.96 & 30.60& 38.59
+
+In the first row yaound YA means train on Yaounde and test on YA.
+So the column labled gp YR  means trained on gp and tested on yaounde read.
+Again we see that gp (30.60) is better than Yaounde (39.23). But this is
+because the prompts for the test set (YR) are in the lm.
+Forget it, I think the gp yr column is confusing. I have it there because
+later on I'm going to use the YR as dev data.
+
+
+model & yaounde & gp & yaounde + gp
+mono & 39.23 & 43.96 & 38.59
+
+So the Yaounde + GP system is the best.
+I think this is better than what I was getting before. These results seem
+more reasonable.
+When we add the data from the 2 corpora, we get slightly better results.
+
+I put the results of decoding the answers with the mono system in a tsv file
+under:
+/home/data/scratch/answers_decode_output_y_gp_y+gp.tsv
+
+
+* Goals for Monday:
+- TODO Compare the wer for triphones
+- TODO Build a better lm.
+- TODO Test the new lm with mono system.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, August 18, 2016 5:09 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Thursday August 18 2016
+
+- Alignment:
+The script finished yesterday evening despite the power outage.
+
+- Decoding:
+Decoding of the test set finished.
+WER: 72.53 exactly the same as before. This is good news. We are getting
+consistent results.
+It looks like decoding of the dev set did not survive.
+I wonder if the power outage shutdown the gpu machine?
+It's up and running now.
+- ansers
+I wwrote a script that makes 3 files for the ansers data:
+wav.scp
+spk2utt
+utt2spk
+For mfcc extraction, I think only the wav.scp is required.
+I run the mfcc extraction script having it point to the ddirectory that
+contains the above 3 files.
+This extraction script succeeds.
+So now I have the mfccs for the ansers data, can I decode it?
+I'm trying to decode with the monophone system.
+Hey! it looks like it is decoding.
+I see text coming out of the log files.
+So ...
+This really should be done with the yaounde data alone.
+This is going to be my major project for the next couple of weeks.
+Plan?
+What models should I use?
+What LM should I use?
+Are the decoding results, i.e. the text output, available in an easier
+format than the log files?
+This is putting our money where our mouth is.
+Can we build a system that can decode data we have that is not transcribed.
+If this works, this could be a method for data collection.
+Collect read speech (maybe around 10 hours).
+Collect free range answers to questions or scenarios.
+Build a system with the read speech.
+Use that system to transcribe the answers.
+How well does this work?
+
+
+- Yaounde only models
+I'm going through the steps for building the yaounde only models.
+I should probably work on the lm first.
+
+- UN corpus
+Should I use the UN corpus of French?
+I am writing scripts to process this corpus to be used as data for an lm.
+
+- Mono decoding of the Answers:
+This finished.
+Of course the scoring failed since there are no reference transcriptions.
+I have not found a file containing a clean version of the output text.
+There are log files that contain the output text.
+I might have to use these files.
+
+
+- Tomorrow:
+Check if processes have finished  for building the gp yaounde ca models .
+This is running the sgmm2 training which takes a long time, but it's worth
+it.
+step 26.
+Check if the yaounde only model processes have finished.
+steps 16 and 17.
+
+- lm 
+check if the lm processing steps have finished.
+This might be creating a training file that is too big.
+Currently I'm running it on the gigafren corpus.
+- Answers:
+Extract the text output from the log files to see how well the monophones
+performed.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, August 17, 2016 4:47 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Wednesday August 17 2016
+
+- Decoding with the 5e ensemble script:
+The script is still running.
+It is at pass 143.
+I think it wil continue until pass 240, so it'll take another day.
+
+- pySpeech.
+Justin tried to install the rpm packages. 
+We need to request the ubuntu or debian packages instead.
+
+- Stupidity
+I killed the 5e ensemble training process that had been running for 2 days.
+
+I did this because I was rewriting the data setup script.
+I was rewriting the data setup script because I had time on my hands waiting
+for the 5e ensemble training script to finish :(
+
+Anyway ... I'm happy with the data setup rewriting.
+I separated the scripts by corpus.
+This is the style followed by the kaldi scripts.
+The scripts are under the local directory.
+The main data setup script calls  data setup scripts for each corpus:
+central accord, yaounde, and gp.
+
+- Decoding Mono:
+started the monophone decoding.
+
+- Answers
+I made a little progress on getting the yaounde answers data into a format
+for processing.
+
+- Tomorrow:
+Continue rebuilding the ASR models.
+Did decoding finish correctly?
+What about alignment?
+Continue processing the yaounde answers data.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, August 16, 2016 6:04 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Tuesday August 16 2016
+
+- Results from the decoding run on the dev set for the nnet2 5a p-norm
+script:
+
+
+
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+dnn huybrid (nnet2) & 51.86 & 56.06
+sgm2 mmi 1 & 50.05 & 58.57
+sgmm2 mmi 2 & 50.70 & 58.45
+sgmm2 mmi 3 & 50.55 & 58.51
+sgmm2 mmi 4 & 50.89 & 59.18
+dbn pretrained dnn & 60.35 & 72.33
+dbn pretrained dnn smbr & 58.76 & 69.93
+nnet2 p-norm & 50.55 & 59.65
+net2 5c & 51.33 & 57.23
+
+
+Notice that the sgmm2 scores are much better than the tri3 scores
+The speaker adaptation kicks in at some point, but I think it's at the next
+step.
+
+- Training with the 5c script:
+This training finished.
+
+- Training with the 5e (ensemble) :
+This script is still running.
+
+- Decoding the 5c system:
+See results above
+
+The results are mixed. 
+
+
+- Diving into nnet3
+There's a script called run_ivector_common.sh.
+The first thing it does is to perturb the data.
+The mfcc data are perturbed.
+Then it tries to do alignment.
+Alignment is failing again, just as it did before.
+I finally found the log file that shows where a problem is happening.
+There are errors in the make_mfcc log files.
+It says the wav files are much smaller than what is indicated by the header.
+The number of bytes that are actually read looks correct.
+The number in the header looks wrong.
+
+- Tomorrow:
+Check if the training run for the ensemble system finished.
+
+Fix the problem with the mfcc feature extraction. this should fix the
+alignment problem too.
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, August 15, 2016 4:50 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Monday August 15 2016
+
+- Monday:
+Did the run_5b_gpu.sh script finish successfully?
+No.
+Alignment is still failing.
+
+What now?
+I think the problem might be that there is something specific to the corpus
+that the script was intended for.
+
+
+-Chain
+This is the latest recipe being developed.
+- tdnn
+time delayed neural network
+
+I'm trying a script from another recipe, the librispeech recipe.
+It's named run_5a_clean_100.sh
+It seems to be working.
+At least it's doing neural network training.
+It uses a script called:
+steps/nnet2/train_pnorm_fast.sh
+I think it must be using the alignments from the tri3 run.
+The gpu is registering 99% usage.
+Looking at some files under the exp directory:
+lda_dim
+360
+ivector_dim
+0
+Does this mean I'm not using ivectors?
+feat_dim
+40
+
+It looks like this nnet2 script only requires the tri3 alignment step which
+I made in step 24.
+
+Training finished.
+- Decoding:
+
+
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+dnn huybrid (nnet2) & 51.86 & 56.06
+sgm2 mmi 1 & 50.05 & 58.57
+sgmm2 mmi 2 & 50.70 & 58.45
+sgmm2 mmi 3 & 50.55 & 58.51
+sgmm2 mmi 4 & 50.89 & 59.18
+dbn pretrained dnn & 60.35 & 72.33
+dbn pretrained dnn smbr & 58.76 & 69.93
+nnet2 p-norm & 50.55 &
+
+
+I started training with a script called 5c.
+I guess it uses the tanh activation functions.
+
+I'm also looking at 5e, ensemble training.
+
+I'm running the training scripts for both the ensemble and 5c methods
+together.
+I'm surprised this works. They don't make each other crash.
+
+I just remembered that I also have the decoding script running on the dev
+set data.
+
+- Tomorrow:
+Check how the 2 scripts finished.
+They are  numbered 56 and 58.
+Try to finish up with nnet2 and move on to nnet3.
+Don't forget about decoding the yaounde answers data.
+Also check the results of the decoding of the dev set. It is running the
+script numbered 55.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, August 12, 2016 4:13 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Friday August 12 2016
+
+- Yesterday I thought I had another step to go for the nnet build. I was
+wrong. The only thing missing was the results of the decoding on the dev
+set:
+
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+dnn huybrid (nnet2) & 51.86 & 56.06
+sgm2 mmi 1 & 50.05 & 58.57
+sgmm2 mmi 2 & 50.70 & 58.45
+sgmm2 mmi 3 & 50.55 & 58.51
+sgmm2 mmi 4 & 50.89 & 59.18
+dbn pretrained dnn & 60.35 & 72.33
+dbn pretrained dnn smbr & 58.76 & 69.93
+
+
+The best score remains an sgmm with mmi.
+
+- nnet2
+nnet was written by Karel Vesely.
+nnet2 was written by Dan Povey.
+
+Dan first does something with the input features.
+Several copies are made and they are perturbed.
+VTLN warping and time warping.
+vtln is vocal tract length normalization.
+He says this is a way to artificially expand the amount of data.
+There  is one command to perturb fbank features and one to perturb mfcc
+features.
+- Align
+Dan's script refers to tri4b, I don't have that , so I'm using tri3.
+tri4b seems specific to wsj.
+Alignment is failing.
+Why?
+The training graph compiling is finishing successfully.
+
+As I'm getting ready to leave, I am still stuck on the alignment step.
+I'm going back and trying to run a script directly (more directly) from the
+kaldi wsj recipe.
+The wsj script refers to a specific fold of the corpus.
+I replace that reference with the training fold in our corpus.
+The script I am running now is:
+local/nnet2/run_5b_gpu.sh
+I think the 5 refers to the fact that 5 copies of the data are perturbed.
+This script performs the feature extraction, laignment, training and
+decoding.
+I was separating out each of these steps into their own scripts.
+Now I'm trying to run them all from one script.
+
+- Monday:
+Did the run_5b_gpu.sh script finish successfully?
+If not, figure out what the problem is?
+Otherwise continue with the other scripts in the local/nnet2 directory.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, August 11, 2016 5:43 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Thursday August 11 2016
+
+- Deep Belief Network pretraining
+The script finished and apparently it finished successfully.
+There was a problem getting this script to run.
+The tail command probably had nothing to do with the problem.
+( tail --pid=$$ -F $LOG_FILE_NAME 2> /dev/null)
+This creates and opens the file in $LOG_FILE_NAME.
+On the next line we had a command: like
+$cuda_cmd $LOG_FILE_NAME SCRIPT_FILE_NAME arguments
+The 2 variables in front of the name of the script file to be run are
+variables that get assigned. 
+The problem is that I had commented out the line where the cuda_cmd variable
+gets assigned in my cmd.sh file.
+The lesson to learn is that when you run a bash command, you can assign
+environment variables on the commandline just before the name of the script
+file.
+ - Cross Entropy training:
+Training neural network
+
+The training stopped after 13 iterations.
+
+- Decoding with nnet models:
+
+
+
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+dnn huybrid (nnet2) & 51.86 & 56.06
+sgm2 mmi 1 & 50.05 & 58.57
+sgmm2 mmi 2 & 50.70 & 58.45
+sgmm2 mmi 3 & 50.55 & 58.51
+sgmm2 mmi 4 & 50.89 & 59.18
+dbn pretrained dnn & 60.35 & 72.33
+
+
+The dbn pretrained dnn models are a little disappointing.
+I did not do the make fst graph step.
+Is it done somewhere in the scripts?
+is it not required?
+The next step is to align.
+Then the denominator latttices are made.
+This involves FSTs.
+
+- smbr training
+What is smbr.
+I think it's sequential minimum bayes risk.
+Train using minimum phone error (mpe)
+Run 6 passes of this training.
+Then make priors.
+Is this smbr?
+- Decode :
+Decoding seems to be faster with these models.
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+dnn huybrid (nnet2) & 51.86 & 56.06
+sgm2 mmi 1 & 50.05 & 58.57
+sgmm2 mmi 2 & 50.70 & 58.45
+sgmm2 mmi 3 & 50.55 & 58.51
+sgmm2 mmi 4 & 50.89 & 59.18
+dbn pretrained dnn & 60.35 & 72.33
+dbn pretrained dnn smbr & 58.76 & 
+
+As I'm preparing to leave I am still waiting for the decoding of the dev
+data to finish.
+I also started the alignment using the current smbr models and I started the
+denominator lattice generator. 
+The denominator lattice generation indeed creates a decoding graph.
+
+- Tomorrow:
+Check if the decoding, denominator lattices generation and alignment have
+finished successfully.
+If so, continue with training and then decoding.
+this would be the last step for the nnet2 system build.
+Start the nnet3 build.
+
+
+
+
+- An overview of nnet in kaldi is at:
+
+http://kaldi-asr.org/doc/dnn.html
+
+It looks like I want to go to nnet3.
+Timit is not the recipe for nnet3.
+
+- What is the output of the neural network?
+This is an interesting question to keep in mind.
+The neural network performs classification.
+I think the input is a speech frame, i.e. an mfcc vector (maybe?)
+It looks like the input vectors are enhanced with I vectors (maybe?).
+Anyway ...
+The output  of the neural network  is an assignment to a class.
+What are the classes in the output?
+There is a class corresponding to each context dependent state in the ASR
+system.
+The system is a network of states?
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, August 10, 2016 5:44 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Wednesday August 10 2016
+
+- The script that makes denominator lattices for mmi training of sgm models
+finished successfully. It looks like I just had to use fewer subjobs. I set
+the number of subjobs to 1. Does this have something to do with
+hyperthreading?
+- Fired up the script that does mmi training of the sgmm2 models.
+- Decoding 
+There are 4 iterations of decoding in the timit recipe.
+I guess lattices are rescored after each decoding.
+
+iteration & test & dev & WER
+1 & 50.05 & 58.57
+2 & 50.70 & 58.45
+3 & 50.55 & 58.51
+4 & 50.89 & 59.18
+
+There was a  "job failed" error in the dev decoding.
+WER does not necessarily get better after rescoring.
+I think these methods are geared towards very large systems.
+
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+dnn huybrid (nnet2) & 51.86 & 56.06
+sgm2 mmi 1 & 50.05 & 58.57
+sgmm2 mmi 2 & 50.70 & 58.45
+sgmm2 mmi 3 & 50.55 & 58.51
+sgmm2 mmi 4 & 50.89 & 59.18
+
+
+
+There's one more method in the timit recipe that combines the  dnn and sgmm
+models. 
+The scripts for this method depend on specific characteristics of the timit
+corpus.
+I'm skipping it for now.
+
+- Karel's nnet build:
+My first attempt failed.
+I'm splitting his script into steps.
+I'm stuck on the dbm pretrain step.
+dbn stands for deep belief network.
+A dbn is a stack of restricted boltzmann machines.
+
+I'm talking to Justin about  getting this script to run.
+
+Hi Justin,
+The script I'm struggling with is at:
+/home/tools/kaldi/egs/timit/s5/local/nnet/run_dnn.sh
+The part I'm having trouble understanding and the place where it is failing
+is around line 53.
+The command on lines 56 and 57 apparently has 2 arguments in front of the
+filename for the script that gets run.
+The script steps/nnet/pretrain_dbm.sh gets invoked.
+
+Anyway, I'm struggling with this script under:
+/home/john/yaounde/kaldi-trunk/egs/gp_train_yaounde_dev_central_accord_test/
+44pretrain_dbm.sh
+
+When I invoke the command separately (not as a script) on the commandline it
+seems to be working.
+Actually, it runs in a script as long as I don't preceed the command with
+the tail line and the 2 variable assignment arguments .
+
+The dbn pretrain script command is still running and using the gpu as I'm
+getting ready to leave.
+	
+I've written the scripts for the next couple of steps that follow.
+
+- Tomorrow:
+Check if the dbn pretrain script finished successfully.
+If so, continue with step 45 to train nnet with cross entropy optimization.
+
+
+- Longer term goal:
+Use one of these systems (the best) to get a rough transcription of the
+yaounde answers.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, August 09, 2016 5:40 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Tuesday August 9 2016
+
+The mkgraph command finished successfully.
+- Started decoding with sgmm2
+- Started aligning with sgmm2
+
+
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+
+- mmi training
+What is mmi?
+mmi is maximum mutual information.
+Apparently it is an alternative to maximum likelihood 
+Discriminative models?
+Minimize error instead of maximize probability.
+I was having trouble with  the make_denlats_sgmm2.sh script.
+I set the number of sub jobs to 1 and it seems to be working now.
+the script makes denominator lattices for mmi training with sgmm2 models.
+minimum phone error is an alternative to mmi.
+
+
+
+
+- DNN hybrid system
+I'm trying to figure out the recipes for building nnet, nnet2 and nnet3
+systems.
+I'm not even sure about the terminology to use here.
+I think nnet, nnet2 and nnet3 are types of models in kaldi, analogous to
+mono, tri1 and sgmm2.
+The recipes refer to wsj, timit, voxforge etc, roughly to the corpora.
+So, I'm trying to make a recipe for our Central Africa corpus using nnet
+models.
+I'm trying to copy the nnet model build from the timit recipe.
+The script credits Karel Vesely.
+A comment says that you can use his script local/run_dnn.sh
+I should do this at some point, but right now I'm running a different code
+chunk from the timit recipe.
+There's a section called dnn hybrid.
+ I ran a script that does neural network training.
+Now I'm running another script that does decoding.
+It looks like the script I'm running now builds  nnet2 models.
+When I've finished this script, I want to go back to karels script, which
+seems to build the nnet models.
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+sgmm2 & 50.20 & 58.60
+dnn huybrid (nnet2) & 51.86 & 56.06
+
+It does not look like the dnn hybrid beat the sgmm2 for the test set, but it
+is best on the dev set.
+
+
+As I'm getting ready to leave I'm still waiting for the denominator lattices
+script to finish.
+
+- Tomorrow:
+Check if the make_denlats_sgm2.sh script finished successfully.
+If so, move on to  my step 32 in the train_mmi_sgm2.sh script.
+Read papers on  ASR, mmi, dnn hybrid model etc 
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, August 08, 2016 5:22 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Monday August 8 2016
+
+- Decoding dev set with tri2 models succeeded:
+Wer: 70.12
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+
+I'm not sure what to think of these results.
+
+- Next Step: Align
+Align what?
+The timit recipe has a comment that says:
+Align tri2 system with train data
+Yes, we want to align the training data, I get that.
+Align the tri2 system?
+Yes, that makes sense too.
+There is a slight difference.
+We use data/lang_nosp instead of data/lang_nosp_test_threegram
+these directories contain the FSTs for the dictionary, phone lists, etc.
+We use the more general FSTs instead of the test versions.
+Somehow this is going to enable speaker adaptation.
+
+
+
+- SAT training:
+Next we do speaker adaptive training.
+The script says that it estimates fmllr transforms.
+I guess those utterance to speaker files and speaker to utterance files get
+used here.
+I don't think I was doing speaker adaptation before, although the only
+difference seems to be the data/lang_nosp directory.
+
+- Decoding with tri3 SAT after the alignment
+
+Model & test & dev
+mono & 72.53 & 72.33
+tri1 & 65.38 & 71.85
+tri2 & 65.81 & 70.12
+tri3 & 62.57 & 70.56
+
+- Remember to return to this step to do dnn.
+
+- Train ubm and sgm2
+
+- Run Karel's dnn training:
+There's a script that computes the duration of all the wav files in the gp
+corpus.
+The mean duration is 9.2.
+The min is 0.5 and the max is 23.
+
+
+- I'm waiting for the sgmm2 training to finish
+- Attempted some mandatory training: hopeless
+I'll have to get help.
+
+- The sgm2 training finished, it took a while.
+Now the mkgraph command is taking forever.
+
+- Tomorrow:
+Check if the mkgraph script finished successfully.
+If so, decode using the sgm2 models in steps 28 and 29 and run alignment
+with the sgmm2 models. in step 30
+I wish I could have started these scripts today.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, August 05, 2016 3:53 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: RE: Daily activities Report for Friday August 5 2016
+
+Decoding with the monophones did not successfully complete.
+Actually, I'm not sure if the decoding succeeded, but the computation of the
+WER failed.
+The error message indicates that a hypothesis file is not found.
+The hypothesis file is cameroon_m_001_001.
+When I look at the log file for the decoding, I see a text string was
+produced.
+So I think decoding succeeded.
+The problem is with the scoring.
+OK, I found another missing script in a best_path log file.
+It was a script that maps the integers to symbols.
+I got the script and fired up the decoder again.
+
+- Decoding succeeded for monophones trained only on gp and tested on CA:
+WER: 72.53
+- Note that the yaounde data was held out for dev data.
+The lm was the same as before, namely: subs sample, yaounde scenarios and
+questions, yaounde prompts, and gp training prompts.
+
+Model & WER
+mono & 72.53
+tri1 & 65.38
+
+I trained the tri2 models. In this case the tri2 models are trained with lda
+and mllt.
+I'm now decoding the dev (yaounde) data with the tri2 models.
+My understanding is that this produces graphs (I think they're actually
+lattices).
+These graphs are then used in the next step to align the data again in
+preparation for the tri3 models.
+So the graphs depend on the dev (yaounde) data and hence the tri3 models are
+speaker dependent?
+The problem right now is that the dev data takes a long time to decode.
+So I probably won't get to the next step until Monday.
+
+Model & WER
+mono & 72.53
+tri1 & 65.38
+tri2 & 65.81
+
+
+
+I don't understand why the WER goes up.
+What is the difference between tri1 and tri2?
+Tri2 models use lda and mllt. It can cluster triphones with a decision tree.
+I don't really have a set of questions right now, so I don't think much is
+going on with tri2.
+
+- Monday:
+Check the results of decoding the tri2 models on the dev set.
+If decoding succeeded, move on to step 19 to align the data with the tri2
+models and the graphs produced by the decoding in step 18.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, August 04, 2016 6:19 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Thursday August 4 2016
+
+The monophone training I started yesterday evening finished successfully.
+- Continue building the gp yaounde ca system:
+I moved the steps around a bit:
+00 setup data prep
+01 prepare dictionary
+02  extract mfcc features
+03  compute cmvn stats
+04 train monophones
+05 prepare and train lm
+06 make fst decoding graph for monophone system
+07 decode dev set with monophones
+08 decode test set with monophones
+09  start building the tri1 system by aligning the data with the monophone
+models
+10 Train the triphone models
+11  make the fst graph for the triphone tri1 system 
+12 Decode the dev set with the  tri1 models
+13 Decode the test set with the tri1 models.
+
+Up to this point I mostly copied the scripts from the previous gp system
+build.
+I found something strange in the next step.
+14 Start building the tri2 system by aligning the data with the tri1 models.
+In the gp system I had the script pointing to the test dictionary.
+At least this is what I understand right now.
+The timit recipe has the script point to the general dictionary.
+15 Train the tri2 models 
+
+- Problems:
+The gp transcripts only need to be lowercased. I was normalizing and
+tokenizing them.
+I found the problem.
+I was using a script from the  yaounde build to remove punctuation.
+I should have been using the one from the yaounde+gp build.
+
+The monophone models were failing to decode the test set.
+I don't know why yet.
+The error mesage says that the hypothesis for  a given file was not found.
+
+I'll start over.
+
+as I'm leaving today, I'm back at the monophone decoding step and the first
+step in building the triphone models by aligning the data with the monophone
+models.
+
+- Tomorrow:
+Did decoding with the monophones succeed?
+If not, focus on this problem.
+Otherwise continue building triphone models.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, August 03, 2016 5:40 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Wednesday August 3 2016
+
+Result for Model trained only on Yaounde Read prompts and lm trained using
+subs:
+model & gp & gp + yaounde & yaounde
+mono & 71.54 & 72.80 & 74.62
+tri1 & 60.38 & 61.08 & 68.47
+tri2a & 60.62 & 62.11 & 67.74
+tri2b & 61.98 & 62.39 & 67.53
+tri3b si & 60.77 & 62.33 & 68.04
+tri 3b & 51.03 & 52.87 & 55.16
+sgmm2 & 47.19 & 49.14 & 44.90
+
+
+- The best performing system was the yaounde trained sgmm2
+That number is a surprise. It is out of place in the table.
+
+- nnet
+I want to incorporate nnet into our recipe.
+I'll start by incorporating it into the gp there than in the yaounde and
+yaounde + gp systems.system since I have the steps labeled better 
+Up till now I was following the recipe for iban.
+To incorporate nnet, I have to look at other recipes.
+The recipe for timit looks promissing.
+Where do I insert the steps to build a nnet system?
+From the timit recipe it looks like this is done after the alignment step
+for the sgmm step but before the train ubm step is taken.
+In my gp system step 21 uses the tri2b models for alignment.
+Step 22 trains the tri3b model with sat.
+Timit gets confusing here.
+Are they doing nnet or nnet2?
+I'll follow the timit recipe in any case for now.
+I'm trying to get this to run by using the minimum number of scripts.
+so I copy the command from the timit recipe.
+I run the command.
+I get a "missing script" error.
+I copy the missing script into directory and run the command again.
+the appropriate directory in my gp 
+I've got the neural network training running.
+It looks like the gpu is getting used.
+I'm afraid this is going to take a long time to train ...
+The nnet stuff seems to come later in the timit recipe.
+
+The nnet code in the timit recipe refers to the dev data.
+It is time to go back and restore a dev set.
+I had ignored the dev set in trying to get a kaldi system up and running.
+
+- Train on GP, Develop on Yaounde, and test on Central Accord.
+Writing all the scripts to use gp as training data, yaounde as dev and ca as
+test.
+Done with step 0 the data prep setup 
+done with step 1 dictionary prep
+- step 2: lm data prep
+I'm using the same script as before.
+data:
+subs sample, yaounde read prompts, yaounde scenarios and questions, gp
+training prompts.
+arpa 3gram
+- Step 3: Extract mfcc features from dev, test and train data.
+- step 4: compute cmvn stats.
+- Step 5: train monophones.
+I'm stuck here.
+I've run into the same problem before.
+It has to do with a program called feat-to-dim.
+Some utils scripts are missing in my new directory.
+They don't get traced when I use nohup.
+I'm running the steps/train_mono.sh script without options.
+It first initializes the monophone system.
+Then it compiles the training graphs.
+Then it aligns the data equally.
+This is all working when I run the script without options.
+The problem must be with one of the options.
+The number of jobs is an option. I have it set to 12.
+The default is 4.
+So this is definitely one problem.
+The number of jobs is limited.
+I'm rerunning with 10 jobs. It seems to be working.
+
+I'll stop here for today.
+I'm going to delay asking Justin to reboot until I get to the tnnet
+programs.
+
+I feel like I made good progress today.
+I got the nnet programs up and running. I thought that would be harder.
+I'm going to incorporate the dev set into my recipes.
+
+
+- Tomorrow:
+Resume at step 5: monophone training.
+
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, August 02, 2016 6:04 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily activities Report for Tuesday August 2 2016
+
+- Building gp system baselines with sample subs lm:
+
+
+model & gp & gp + yaounde
+mono & 71.54 & 72.80
+tri1 & 60.38 & 61.08
+tri2a & 60.62 & 62.11
+tri2b & 61.98 & 62.39
+tri3b si & 60.77 & 62.33
+tri 3b & 51.03 & 52.87
+sgmm2 & 47.19 & 49.14
+
+- Note that these results are very strange.
+When we remove data that is similar to the test data the WER goes down.
+
+
+- What about yaounde and the subs lm?
+model & gp & gp + yaounde & yaounde
+mono & 71.54 & 72.80 & 74.62
+tri1 & 60.38 & 61.08 & 68.47
+tri2a & 60.62 & 62.11 & 67.74
+tri2b & 61.98 & 62.39 & 67.53
+tri3b si & 60.77 & 62.33 & 68.04
+tri 3b & 51.03 & 52.87 & 55.16
+sgmm2 & 47.19 & 49.14 & 
+
+Again today I'm leaving with one more result left to filll in the table.
+The results in the table above are pretty consistent.
+The system trained only on gp does best. The system trained on both gp and
+yaounde does slightly worse. The system trained only on Yaounde is the
+worst.
+
+- Tomorrow:
+Finish this part of the project  by getting the sgmm2 results.
+Then move on to nnet.
+This might take a while to get setup.
+Try not to get distracted. It's important to get the nnet, nnet2 and nnet3
+models into our recipe.
+The sgmm2 training is currently running.
+Pick up tomorrow with the next step that makes the fst graph and then do
+decoding.
+The lm remains an issue, but I'm going to stick with the lm I have now until
+we get training data we're happy with.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, August 01, 2016 5:39 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: RE: Daily Activities Report for Friday July 29 2016
+
+- Finish current experiment that uses an LM trained on the small sample subs
+corpus an no test prompts.
+I had started tri2a training.
+Resume at step 15 by making fst graph for decoding with tri2a.
+
+model & WER
+mono & 72.80
+tri1 & 61.08
+tri2a & 62.11
+tri2b & 62.39
+tri3b si & 62.33
+tri 3b & 52.87
+sgmm2 & 49.14
+
+- Run same baselines for gp with same (subs) lm
+
+model & WER
+mono & 71.54
+
+This does not look right.
+We added data, that is similar to the test data  and the WER went up from
+71.54 to 72.80?
+
+- Tomorrow:
+- TODO Resume gp baselines at step 10 training tri1 models.
+- Longer term
+- TODO incorporate nnet into recipe
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 29, 2016 4:33 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Friday July 29 2016
+
+This morning I fixed the data normalization problems I was having yesterday.
+For each corpus I run the moses tokenizer tools:
+lowercase
+normalize
+tokenize
+deescape special characters
+
+The deescaper has to be run because the tokenizer replaces special
+characters with their xml tags. For example the apostrophe gets replaced
+with &apos;. This is  a problem since I want to delete punctuation like the
+semicolon.
+I am running an experiment by including 4 sources of text in the lm.
+1. The training prompts,
+2. The scenarios and questions from the Yaounde data collection,
+3. The words from the CA test prompts,
+4. The small sample of the subs corpus.
+
+- Decode using Monophones and CA word list:
+WER: 72.52
+
+- Decode same as above without CA word list:
+WER: 72.80
+
+- Decode with CA word list and no subs :
+WER: 82.17
+
+- Decode with Subs and CA test prompts and CA word list:
+WER: 41.65
+
+- decode with subs and ca test prompts:
+WER: 42.06
+
+- Decode with CA test prompts:
+WER: 33.63
+
+This is interesting.
+The list of words contributes very little.
+Including the test prompts in the lm (oracle) makes a huge difference.
+The sample subs lm got us about 1/5 of the way to the oracle.
+
+- Decode CA test set with tri1a models and subs lm no cheating:
+WER: 61.08
+
+* Goals for Monday morning:
+- TODO Finish current experiment  with subs lm step 14 tri2a
+- TODO Write script to prepare better lm
+- TODO investigate recipes that use nnet
+
+--- 
+Thursday July 28 2016
+
+
+
+Model & Gp & gp + yaounde 
+Mono & 33.46 & 32.50 
+Tri1 & 29.54 & 22.45
+Tri2a & 29.18 & 22.84
+Tri2b & 31.71 & 21.67
+Tri3b & 26.10& 16.72
+Tri3b si & 34.82 & 24.47
+Sgmm2 & 21.67 & 12.40
+
+- Decoded sgmm2 models trained on gp+younde tested on ca includeing ca in
+lm:
+WER: 12.40
+
+* First Goal for Today:
+- TODO Repeat model building without including ca in lm training.
+It's not just a matter of training the lm without ca and testing all the
+models.
+Why?
+Because the models are built incrementally.
+The tri1 models use the alignments from the mono models.
+But ...
+The alignments don't use the lm.
+So ... I was wrong, it is in fact just a matter of training the lm without
+ca and testing all the models.
+The lm gets used only for decoding.
+
+I trained an lm without the ca prompts -- call this the no cheating lm.
+Now I'm decoding the ca test set with each model using the no cheating lm.
+This is really easy to do in kaldi.
+No ... I forgot a step.
+The fst graph has to be built before decoding.
+Before building the fst graph an fst has to be built for the lm.
+The fst for the lm has to be run only once and each model can use it.
+The fst graph that incorporates all the components has to be run before each
+decoding run.
+I forgot to run the lm fst building step so I was getting the same results
+as before and I restarted from scratch.
+In the future if I want to experiment with different LMs, I only need to run
+the lm data prep, lm fst once, then the make fst graph for each model.
+I'm actually trying to do this in the gp directory.
+In order not to hoze the preexisting  work, I need to go back to the step
+where the FSTs for the dictionary and lexicon are made.
+This step also only needs to be done once.
+
+
+- First result:
+Monophone models trained on GP+Younde and tested on CA.
+Lm without CA test prompts : 83.28
+Recall that when tested with an lm that included the CA prompts the WER was:
+32.50
+
+-  Results for GP:
+Without CA prompts in LM: 41.31
+With CA prompts 33.46
+
+So something doesn't seem right.
+I did not start the GP build from scratch, so maybe there's contamination.
+
+
+I did indeed make a mistake.
+Instead of getting the data for the lm and excluding the CA prompts, I
+concatenated the new data to the old data.
+I reran the same setup an this time excluding the CA prompts and got the
+results:
+Monophone models trained on GP and tested  on CA: 
+excluding the CA prompts from the LM: WER: 85.15
+including the CA prompts: WER: 33.46
+So, we have a problem. 
+
+_ Data Prep
+Basic text normalization needs attention.
+I got bogged down all afternoon with this.
+But it has to be done before moving on.
+Problem:
+Apostrophes.
+There are several characters that are used for the apostrophe.
+We want only one!
+There are moses scripts that normalize and tokenize text.
+I think they do a pretty good job.
+Problem:
+They convert the apostrophe into an xml escape character: &apos;
+This is a problem since I want to remove semicolons (probably ampersands
+too).
+Also I don't think s&apos; is in our dictionary.
+Solution:
+Moses also has a script to deescape the xml tags for special characters.
+This script maps &apos; to '.
+That's where I'm at as I'm getting ready to leave.
+I'm surprised I was getting good results despite this apostrophe problem.
+I was removing all punctuation.
+So s'il was mapped to s il
+Now s'ill gets mapped to s' il .
+I believe this is the correct way to work.
+
+* Goal for Tomorrow:
+- TODO Finish data conditioning
+- TODO experiment with medium size LM (possibly from subs)
+- TODO Focus on getting a good monophone  model set  with training and test
+data disjoint.
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, July 28, 2016 6:08 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Thursday July 28 2016
+
+
+Model & Gp & gp + yaounde 
+Mono & 33.46 & 32.50 
+Tri1 & 29.54 & 22.45
+Tri2a & 29.18 & 22.84
+Tri2b & 31.71 & 21.67
+Tri3b & 26.10& 16.72
+Tri3b si & 34.82 & 24.47
+Sgmm2 & 21.67 & 12.40
+
+- Decoded sgmm2 models trained on gp+younde tested on ca includeing ca in
+lm:
+WER: 12.40
+
+* First Goal for Today:
+- TODO Repeat model building without including ca in lm training.
+It's not just a matter of training the lm without ca and testing all the
+models.
+Why?
+Because the models are built incrementally.
+The tri1 models use the alignments from the mono models.
+But ...
+The alignments don't use the lm.
+So ... I was wrong, it is in fact just a matter of training the lm without
+ca and testing all the models.
+The lm gets used only for decoding.
+
+I trained an lm without the ca prompts -- call this the no cheating lm.
+Now I'm decoding the ca test set with each model using the no cheating lm.
+This is really easy to do in kaldi.
+No ... I forgot a step.
+The fst graph has to be built before decoding.
+Before building the fst graph an fst has to be built for the lm.
+The fst for the lm has to be run only once and each model can use it.
+The fst graph that incorporates all the components has to be run before each
+decoding run.
+I forgot to run the lm fst building step so I was getting the same results
+as before and I restarted from scratch.
+In the future if I want to experiment with different LMs, I only need to run
+the lm data prep, lm fst once, then the make fst graph for each model.
+I'm actually trying to do this in the gp directory.
+In order not to hoze the preexisting  work, I need to go back to the step
+where the FSTs for the dictionary and lexicon are made.
+This step also only needs to be done once.
+
+
+- First result:
+Monophone models trained on GP+Younde and tested on CA.
+Lm without CA test prompts : 83.28
+Recall that when tested with an lm that included the CA prompts the WER was:
+32.50
+
+-  Results for GP:
+Without CA prompts in LM: 41.31
+With CA prompts 33.46
+
+So something doesn't seem right.
+I did not start the GP build from scratch, so maybe there's contamination.
+
+
+I did indeed make a mistake.
+Instead of getting the data for the lm and excluding the CA prompts, I
+concatenated the new data to the old data.
+I reran the same setup an this time excluding the CA prompts and got the
+results:
+Monophone models trained on GP and tested  on CA: 
+excluding the CA prompts from the LM: WER: 85.15
+including the CA prompts: WER: 33.46
+So, we have a problem. 
+
+_ Data Prep
+Basic text normalization needs attention.
+I got bogged down all afternoon with this.
+But it has to be done before moving on.
+Problem:
+Apostrophes.
+There are several characters that are used for the apostrophe.
+We want only one!
+There are moses scripts that normalize and tokenize text.
+I think they do a pretty good job.
+Problem:
+They convert the apostrophe into an xml escape character: &apos;
+This is a problem since I want to remove semicolons (probably ampersands
+too).
+Also I don't think s&apos; is in our dictionary.
+Solution:
+Moses also has a script to deescape the xml tags for special characters.
+This script maps &apos; to '.
+That's where I'm at as I'm getting ready to leave.
+I'm surprised I was getting good results despite this apostrophe problem.
+I was removing all punctuation.
+So s'il was mapped to s il
+Now s'ill gets mapped to s' il .
+I believe this is the correct way to work.
+
+* Goal for Tomorrow:
+- TODO Finish data conditioning
+- TODO experiment with medium size LM (possibly from subs)
+- TODO Focus on getting a good monophone  model set  with training and test
+data disjoint.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, July 27, 2016 5:54 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Wednesday July 27 2016
+
+- Results for GP training on Yaounde corpus as test:
+WER: 87.04
+The Yaounde prompts were not included in the lm. Apparently this makes a big
+difference.
+
+* Goals for Today:
+- TODO Finish Gp system testing on CA
+- TODO Finish GP+Yaounde system testing on CA
+
+
+- Decode GP tri1 on CA:
+WER: 29.54
+
+Model & WER
+Mono & 33.46
+Tri1 & 29.54
+
+- Problem at steps to build tri2a models.
+It looks like  I skipped a number in the steps.
+Step 14 uses the tri1 models to align.
+Step 15 should train the tri2a models.
+Step 16 should make the fst graph that includes the trained models from step
+15.
+So I need to swap my scripts for steps 15 and 16. I had them in the wrong
+order.
+
+- Decoded using gp tri2a models on CA data:
+WER 29.18
+
+Model & WER
+Mono & 33.46
+Tri1 & 29.54
+Tri2a & 29.18
+
+- decode gp tri2b models on CA:
+WER: 31.71
+
+- Decode gp tri3b models on CA:
+WER: 26.10
+
+Model & WER
+Mono & 33.46
+Tri1 & 29.54
+Tri2a & 29.18
+Tri2b & 31.71
+Tri3b & 26.10
+Tri3b si & 34.82
+Sgmm2 & 21.67
+
+
+- Build gp+yaounde system
+-Decode  with monophones  on CA
+WER: 32.50
+
+The corresponding WER for the GP alone system was 33.46
+
+- decode with gp+yaounde tri1 on CA
+WER: 22.45
+
+Model & Gp & gp + yaounde 
+Mono & 33.46 & 32.50 
+Tri1 & 29.54 & 22.45
+Tri2a & 29.18 & 22.84
+Tri2b & 31.71 & 21.67
+Tri3b & 26.10& 16.72
+Tri3b si & 34.82 & 24.47
+Sgmm2 & 21.67 & 
+
+- Suspicious:
+The score for gp+yaounde tri3b and gp sgmm2 are the same: 21.67
+
+I won't have the final sgmm2 score for gp+yaounde until tomorrow,but the
+gp+yaounde results look like what we would expect.
+
+- I'm finished with testing the mono, tri1, tri2a, tri2b, tri3b, tri3b si,
+and sgmm2 models on the central accord test set after training on global
+phone and including the central accord prompts in the lm.
+I feel pretty good about the results posted above.
+
+There's only 1 result left to compute for the same models as above but
+trained on gp and younde.
+- Yaounde Answers:
+I spent a lot of time this afternoon trying to rename the files.
+It looks like I finally succeeded.
+I still have one step to go in renaming the Answers.
+For the read data I made the speaker numbers unique.
+Right now the speakers from machine ctell 2 start over at 1.
+
+
+Michelle got me the questions for the Yaounde corpus.
+- Plan:
+- Incorporate these questions into the lm and decode the Yaounde answers.
+Hopefully, this will help transcribing the data.
+
+* Tomorrow:
+- TODO Continue gp+yaounde at step 28
+- TODO gp and gp+younde without ca prompts in lm
+- TODO Finish renaming yaounde Ansers
+- TODO Incorporate Scotia's transcripts into lm
+
+* Longer term goals:
+- TODO Decode Yaounde Answers (with or without younde read in training?)
+- TODO Incorporate nnet, nnet2, and nnet3 into recipes
+- TODO Build appropriate lm
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, July 26, 2016 6:07 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Tuesday July 26 2016
+
+- Directory renaiming
+The structure only has 2 levels now.
+COUNTRY_GENDER_SPEAKERNUMBER/COUNTRY_GENDER_SPEAKER_NUMBER_UTTERENCENUMBER.w
+av
+For example:
+Cameroon_m_001/Cameroon_m_001_001.wav
+This might cause trouble down the road, since I think the files need to be
+ordered by speaker number.
+
+There's a problem with the script that writes the test utt2spk file.
+Well ... there was a problem, it seems to be working now.
+The utt2spk file has 515 lines, one line per utterance.
+Each line has 2 fields: the utterance and the speaker.
+-  utt2wav script
+This points from each utterance to its wav file.
+- Finished preparation of transcriptions
+- LM prep
+Make an LM with the training prompts?
+Should we include the test prompts?
+I'm including them for now.
+- lang prep
+- mfcc extraction
+It looks like mfcc extraction succeeded for the new test data
+- Ditto for cmvn stats
+- mono training and lm2fst
+- make fst graph
+- decode mono:
+WER: 41.61
+
+This is a system trained on 85 speakers from the Yaounde corpus and tested
+on 12 speakers from the Gabon corpus.
+The lm included the Gabon test prompts.
+
+- align with mono
+- make fst graph for tri1
+- decode with tri1
+WER: 46.02
+Up from 41.61 to 46.02
+Why?
+- align with tri1
+- train tri2a
+- make tri2a fst graph
+- decode with tri2a
+WER: 46.98
+Even worse? Up from 46.02 to 46.98
+
+- align with tri2a
+- train tri2b (lda + mllt)
+- make fst tri2b graph
+- decode with tri2b
+WER: 50.18
+What! 
+
+- Align with tri2b
+- train tri3b (sat)
+- make fst tri3b graph
+- decode with tri3b
+WER: 31.99
+Finally some improvement!
+
+- decode  tri3b si
+WER: 48.04
+- align with tri3b fmllr
+- train ubm (Gaussian mixture models)
+- train sgmm2 (subspace gmm)
+This seems to take longer.
+There's a lot going on in this  sgmm training script.
+Realignment seems to be taking a long time.
+Tre clustering, model initialization, Gaussian selection, graph compiling,
+alignment conversion, 5 training passes, data realignment ..., more training
+passes, more realignment, , more training passes ... , more realignment,
+alignment model lbuilding, 
+- make sgmm2 fst graph
+- Decode with sgmm2
+WER: 23.84
+
+Summary of WER scores:
+Model & WER
+Mono & 41.61
+Tri1 & 46.02
+Tri2a & 46.98
+Tri2b & 50.18
+Tri3b & 31.99
+Tri3b si & 48.04
+Sgmm2 & 23.84
+
+- Moving on to GP
+I need to incorporate the central accord data as test data instead of the gp
+folds.
+I'll  use all the gp data for training.
+The renaming script I had written is not working.
+I found the problem.
+The gp names end up out of order.
+I have a script that renames them.
+I have to point to the place where the new files with good names get stored.
+I don't think this is taken care of in the kaldi recipe for gp.
+
+- interesting lm problem
+By mistake I made a training set that was the concatenation of the same data
+3 times.
+This training set makes srilm fail to produce a 3gram lm.
+Srilm succeeds when I use only 1 copy of the data.
+- gp data prep
+- Decode with gp training and ca test, lm includes ca prompts:
+WER: 33.46
+
+- decode gp traing on yaounde corpus  as test data:
+This will take a while since there is a lot of yaounde data.
+I'll get the results tomorrow.
+
+Tomorrow:
+- Continue building gp system
+I'm running step 11 which trains the tri1 models.
+I'll also get the results for running the gp models on the yaounde corpus.
+- Continue building the gp+yaounde system
+I'm running step 5 that trains the monophones.
+
+
+
+
+
+
+- Similarly fixed spk2utt script.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, July 25, 2016 6:12 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: RE: DailyActivities Report for Friday July 222016
+
+* Goals for today:
+- TODO Finish the last step for the GP system.
+- TODO Incorporate the Gabon test set into the gp system
+
+* Longer term goals
+- TODO Incorporate kaldi's nnet, nnet2, and nnet3 programs into our recipe.
+
+My laptop disk has no more space on it.
+I removed some repeated corpora that I had under /home/data.
+
+I have no permissions on /home/data/scratch/CA_test_set
+
+- Ran step 29:the script to make the decoding graph 
+- running decoding with sgmm2_5b2
+- Decoding GP with sgmm2_5b2 finished:
+WER: 24.32
+
+WER Summary of GP system:
+
+Models & WER
+Mono & 41.80
+Tri1 & 29.08
+Tri2a & 29.01
+Tri2b & 27.97
+Tri3b.si & 29.66
+Tri3b & 26.38
+Sgmm2_5b2 & 24.32
+
+- processing the central Africa data
+- renamed directories.
+The pattern is:
+COUNTRY/GENDER/SPEAKERNUMBER/xxx.wav
+
+For example:
+Cameroon/m/001/001.wav
+
+- Write data setup scripts to handle central Africa test set
+
+- Got bogged down on file names.
+There was a file without a leading 0 in the utterance number.
+Cameroon/m/001/24.wav
+
+
+- Maybe a missing wav file for a .txt file?
+
+I renamed gabon/m/004/0{38-50}.wav
+and gabon/m/007/u30.wav
+
+
+- This scheme is not working.
+I can only have 2 levels in the hierarchy.
+Renaming directories again.
+I'm not sure what the best way to do this is.
+Some scripts depend on a correct or specific kind of ordering.
+I'm not sure I  have the right ordering now.
+
+Tomorrow:
+Resume data prep work .
+Yaounde directory
+00data_setup.sh script
+Local/get_utt2spk_test.sh
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 22, 2016 6:42 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: RE: DailyActivities Report for Friday July 222016
+
+- I'm back !
+Training tri2b finished successfully.
+Step 20 that makes the graph ran without any logging output. This seems a
+little suspicious, but the next step, decoding with tri2b seems to run ok.
+For some reason this decoding step had the number of jobs set 2 only 2
+instead of 10 as in previous steps.
+I think this is a mistake, it's taking longer.
+- decoding with tri2b (lda mllt)
+WER: 27.97
+Improvement from 29.01 to 27.97
+- aligning  with tri2b and graphs.
+Super fast
+- train sat tri3b
+- make graph with tri3b
+This writes lattices first to a directory called decode_test.si
+The scoring using these lattices yields:
+WER: 29.66
+I wonder if the SI stands for speaker independent?
+Now it has gone on to write lattices to the standard decode_test directory
+It looks like transforms are also written to this directory.
+WER: 26.38
+Improvement from 27.97 to 26.38
+- aligning using tri3b
+- training ubm
+- training sgmm2
+
+I'm not going to finish  the last decoding step today.
+- Monday: resume with steps 29 make graph 30 decoding.
+
+- Change of plans for next week:
+Start over using Gabon as test set.
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 22, 2016 3:00 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: RE: DailyActivities Report for Friday July 222016
+
+- Summary of Yaounde WERs from yesterday:
+Model & WER
+Mono & 27.71
+Tri1 & 24.74
+Tri2a & 24.92
+Tri2b (lda mllt) & 24.32
+Tri3b (sat) & 24.37
+Sgmm2_5b2 & 1412
+
+-  GP system today
+- Ran data prep, mfc extraction, lm and dict prep.
+- The script that creates the fst graph takes a long time. 
+Ok, I know what is wron.
+I have it pointing to the big lm I created yesterday.
+I'm going to back off this and use the small lm.
+- I started over since I had some old directories hanging around that  might
+have gotten used.
+I've been writing separate scripts to run each step and naming the file with
+an initial step number so it is easy to build the system by running each
+step in sequence.
+The kaldi style is to put all the steps in a file called run.sh.
+So I'm appending each of my scripts to a file called run.sh.
+- Decoded using monophones:
+GP:
+WER: 41.80
+Yaound: 
+WER: 88.39
+
+The Yaounde prompts are not in the GP lm, that why this last WER is so bad.
+
+- Aligned
+- trained triphones with delta+delta-delta features
+- Made fst graph
+- Decoded with triphones
+WER: 29.08
+Big drop here from 41 to 29
+- Aligned
+- train tri2a
+Runs 34 passes
+No. I made a mistake here. I ran the training before making the graph. I
+don't understand how the training ran without having made the graph
+previously. I guess training does not require the graph?
+- Now run make graph
+- run decoding  with tri2a system
+WER: 29.01
+Slight improvement from 29.08 to 29.01
+- aligning with tri2a
+- training tri2b
+
+I'm leaving now to fix my bike with Phil David.
+If we finish early, I'll return. Otherwise, next week pick up on step 20 to
+make the tri2b graph.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, July 21, 2016 5:35 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Thursday July 21 2016
+
+- Working on yaounde system with small lm
+- Decoded tri1
+WER: 24.74
+- Align with tri1 system
+
+There's an incremental building process.
+Train models, 
+use models to align the data
+train models with realignments
+
+So we trained tri1 models, then we used them to get alignments, next we
+train tri2a models.
+
+More specifically:
+Run steps/align_si.sh 
+Run steps/train_deltas.sh 
+Run  utils/mkgraph.sh
+Run steps/decode.sh
+
+The last mkgraph step ran very quickly. Too quickly?
+
+
+Stephen Tratz suggested I ask Justin to turn off hyperthreading to speed up
+processing. Maybe Justin did this already?
+
+Decoding is taking its time ...
+
+Mkgraph is not multithreaded
+Decoding uses multiple jobs
+I set the number of jobs to 10.
+Too many jobs?
+
+Decoding finished.
+WER: 24.92
+The WER went up slightly from 24.74 to 24.92.
+
+
+Now we align again this time using the tri2a models.
+Alignment is super fast.
+
+Next we run a new kind of training:
+Steps/train_lda_mllt.sh
+This will be system tri2b
+
+What is lda_mllt
+It is a method for transforming the mfcc features.
+Lda refers to linear discriminant analysis not latent dirichlet allocation.
+Lda is a method for dimension reduction.
+Splicing is performed over several frames.
+What is spliced?
+The splicing then requires dimension reduction?
+Mllt a.k.a. ctc is a diagonalizing transform
+
+Reading: 
+http://kald-asr.org/doc/transform.html
+
+lda is typically used for non-speaker specific transforms
+
+lda_mllt training finished
+run mkgraph for tri2b system
+Again this went really quickly.
+Decode using tri2b system
+
+WER: 24.32
+It's not clear to me what is being adapted to what here.
+
+
+- Align again using tri2b system.
+Here --use-graphs option is given to the align_si.sh script.
+What does this do?
+It uses the graphs to do the alignment.
+- train using train_sat.sh
+Sat stands for speaker adapted training.
+It looks like the train_sat.sh is a script for doing mllr adaptation.
+The mllr can be done on a system whose features have already been
+transformed with lda and mllt.
+
+- Make the graph for a new system tri3b.
+What about tri3a?
+
+- decode
+This uses steps/decode_fmllr.sh
+
+Lattice rescoring?
+It looks like this script decodes once, then rescores the lattices and
+decodes again.
+
+WER: 19.22
+
+
+- alignment
+Uses steps/align_fmllr.sh
+- train using steps/train_ubm.sh
+This trains a mixture of gaussians.
+I guess a ubm stands for a mixture of gaussians.
+The system is called ubm5b2
+I'm guessing this means 5 mixtures and 2 ... ?
+Gaussian selection?
+
+- train using  subspace Gaussian mixture model sgmm
+This is taking a while ...
+
+We need to work on a legitimate language model.
+Right now  we don't really have one.
+
+- Problems
+The scripts I'm using from the iban recipe get  confusing at this point.
+I don't see decoding for the ubm system.
+Apparently, the ubm system is trained for the sgmm system.
+?Anyway, I'll have to figure this out later.
+- Decoding using the sgmm system:
+WER: 14.12
+
+
+
+I'm done with this project.
+Summary:
+I followed the iban recipe where I used the yaounde corpus instead of the
+iban corpus.
+
+- lm:
+The voxforge recipe uses an lm trained on the transcripts of the training
+data.
+I did not do this for our yaounde corpus.
+This is tricky for our yaounde corpus.
+We have to choose our test set so that it does not overlap at the sentence
+level with the training set.
+I'm not sure this is possible, since the informants on one machine read a
+list of prompts that were also read by informatnts on another machine.
+Now that we have the Gabon test set, we could use the yaounde corpus for
+training, and test on the Gabon data.
+We would use the prompts from the yaounde corpus to train the lm.
+We could add some other text to the lm training set as long as we do not add
+the Gabon prompts.
+
+- G2P:
+I had a discussion with Hazrat about the g2p lexicon.
+There seem to be 3 approaches:
+1. Jalalabad
+2. Kanduhar
+Uses spelling from 1, but pronunciation from kanduhar.
+3. Expat Kanduhari
+Uses both spelling and pronunciation from Kanduhar.
+
+We need to figure out what # means in sampa and how it differs from the .
+sign.
+
+
+
+- Plan for tomorrow:
+Run through the same steps for the GP corpus and the younde+gp system.
+
+I'm a little disappointed with the iban recipe. I thought it included more
+methods.
+It does not go into neural network methods or ivector methods.
+I'll have to get these methods from another recipe.
+The babel recipe would probably be the best.
+
+
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, July 20, 2016 3:15 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: RE: Daily Activities Report for Tuesday July 19 2016
+
+The 3 and 4 ngram models are there this morning.
+No srilm errors, slthough there are Unicode non-character warnings for the
+lower casing of the gigaword corpus.
+
+
+- Try to use these ngram models in the gp and yaounde systems.
+
+It looks like monophone training does not require an lm.
+The lm is used for decoding.
+
+- lm2fst
+This took a while
+- make graph 
+This is taking even longer.
+This is the step that expands all the component FSTs into 1 big fst.
+
+- running mk graph on all 3 systems at once: yaound, gp, and yaound+gp
+ 
+Maybe I should stick to the small lm  for a first pass at getting all the
+steps to build?
+
+- Ran alignments using yaound+gp monophone system 
+This is the first step to building a triphone system.
+- Ran alignment diagnostic
+This tells you some interesting statistics about each phone.
+The proportion of the occurrence of each phone
+The average duration in frames of each phone.
+A final statistic says  that the corpus has a total of 31 hours of frames 24
+of which are non-silence.
+
+I'm giving up on the huge LM for now.
+I'm going back and using the prompts to traing the lm, at least for the
+yaounde system.
+
+- ran alignment on yaounde data
+Diagnostic claims a total of 7.3 hours and 4.2 non-silence.
+
+- running train deltas
+I'm not sure what this does.
+It uses the questions to build the decision tree to cluster the triphones.
+I don't think we have a set of questions yet.
+I have a stand in file for the questions.
+This adds delta and delta delta features
+- Moving along with triphone training on yaounde
+Ran the mk_graph script that expands the fst networks with all fst
+components.
+
+I'll pick up tomorrow with decoding of the tri1 system.
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, July 19, 2016 6:23 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Tuesday July 19 2016
+
+- lower case the prompts in the gp corpus
+This would be easy were it not for the fact that the file names contain
+upper case letters.
+I have  a script that writes the file name followed by the prompt.
+I cannot just lower case each line, since the file name needs to remain in
+upper case.
+So I first  store the file name and the prompt separately, down case the
+prompts, then I paste the resulting files into 1 file.
+
+I put in the time to write the filenames in the kaldi style.
+
+- build the gp system
+
+Why am I having to go through all this trouble to build gp?
+There's a recipe for it on kaldi.
+It assumes a language model.
+But other than that it should work.
+
+- Decoded gp on gp 
+WER: 41.80
+- Decoded gp on yaounde:
+WER: 88.39
+
+- decoded yaounde on gp
+WER: 92.86
+
+I think there is a reason these are so bad.
+The gp system uses the gp prompts to build the lm and the yaounde system
+uses the yaounde prompts.
+There is a mismatch between the gp prompts and the yaounde prompts.
+
+
+- lm
+Time to get a fixed lm to work with.
+I'm going to try to make an lm from the following corpora:
+1. yaounde prompts
+2. gp prompts
+3. gigafren
+
+I'm making a separate directory to do the lm work.
+
+- training lm
+
+Hopefully when I come in tomorrow the script will have produced ngram
+language models.
+
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, July 18, 2016 5:30 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Monday July 18 2016
+
+I left off last week on the yaounde + gp system.
+I had setup the train and test folds in a way that I ended up testing on the
+training data.
+I was running the same script that generates a random train/test split on
+the concatenation of the yaounde + gp data, but I was testing on the
+previous yaounde and gp random split.
+
+I now setup my scripts to use the split  done previously for yaounde and gp
+separately.
+I ran through the data setup script.
+On the way I'm trying to make the file naming conventions follow the kaldi
+conventions.
+TThis mostly means using underscores instead of dashes.
+
+I run into a problem when I run the lm prepare script.
+I'm using the prompts from yaounde and gp to make the lm training corpus.
+There are around 15k sentences.
+I get a kn discount error.
+I think this means there is not enough data to train 3 grams.
+This is a good time to get the yaounde prompts that Steve worked on.
+In working with Steve's prompts, I found a problem with the previous prompt
+list.
+I must have inserted a newline after an "i.e.".
+This inserted at least one extra sentence line.
+This could really make a difference if we have a lot of recordings of
+sentences beyond 1343.
+I don't think we do.
+
+I've spent most of the day going back to the basic yaounde system.
+I realized that I was not  conditioning the prompts before using them for
+training.
+Well ... I was, but I should have been doing it earlier in the process.
+I separated data preparation into 3 steps:
+1. setup
+2. lm prep
+3. dictionary prep
+
+- extracted mfccs
+- convert lm to fst
+- train monophones
+I get warnings.
+This could possibly mean there are problems with transcripts.
+- make graph
+- decode test data
+
+So I spent the whole day redoing the yaounde system
+It looks like the gp data does not have the same problem.
+It looks like it was ready to process out of the box.
+
+- Decoding  yaound on yaound finished.
+WER: 26.16
+So obviously something was wrong before.
+I think the labels were way off.
+I verified that the sets of speakers in the train and test sets were
+disjoint.
+
+- Back to yaounde + gp
+I need to set this to use the new yaounde prompts.
+It's suspicious that the gp does not do as well as the Yaounde.
+Sure enough ... I did not downcase the gp data.
+Punctuation was stripped, but no lowercasing.
+
+Tomorrow:
+- Return to the basic gp system
+Start by lower casing the gp prompts.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Friday, July 15, 2016 6:10 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Friday July 15 2016
+
+I'm going to skip gender for now on this gp+yaounde monophone system.
+- sorting problems
+The filenames in the GP corpus have upper case letters.
+When the environment variable LC_ALL is set to C upper case letters are
+ordered before  lowercase letters.
+In a script I sort the filenames.
+I was not setting the LC_ALL variable.
+The kaldi recipes have scripts that check for these kinds of problems.
+This was a problem when combining the filenames from yaounde and gp.
+Having trouble with monophone training.
+Could it be a sorting problem again.
+I sort the feats.scp file.
+Maybe I need to set LC_ALL=C here too?
+Yup, it looks like that was the problem.
+
+- Trained monophones 
+- Decoded yaounde + gp  on yaounde + gp test set
+WER: 55.21%
+This is a monophone system trained on both Yaounde and GP and tested on 7
+speakers from GP and 3 speakers from Yaounde.
+
+- Decoded yaounde + gp system on yaounde test set:
+WER: 63%
+This is the  same yaounde + gp system tested on the same 10 yaounde speakers
+as the yaounde system that got 88% WER.
+
+- Decoded Yaounde + GP system on GP test set:
+WER: 25.75
+Not sure why this is so good compared to gp on gp 44%.
+I'm getting these results from a file called best_wer.
+Apparently tests are run using different parameter settings.
+For example, I see 3 settings for word penalty.
+OK ... I'm being stupid ...
+I'm testing on training data.
+When I build the Yaounde + GP system I need to use the train/test fold split
+from the separate Yaounde and GP systems.
+So, I need to  rebuild the Yaounde + GP system.
+I'll stop here for this week.
+Next week I need to  resume by getting the appropriate training/test sets
+for a Yaounde + GP system.
+I'll have to fix the scripts that get the lists of training and test data.
+
+Summary table:
+
+Train & test & WER %
+Y & Y & 87
+GP & GP & 44 
+Gp & y & 92.54
+Y+GP & Y+GP & 55.21
+Y+GP & Y & 63
+Y+GP & GP & 25.75
+
+The 55.21 is ok for y+gp on y+gp, but the 63 and 25 for y+gp on y and y+gp
+on gp were obtained on contaminated data.
+
+
+Y stands for Yaounde
+
+
+The motivation of the problem we're working on is that a system trained on
+(even a large) corpus of European French performs poorly on French as spoken
+in Africa.  Also the corpora we have for sub populations inAfrica are small
+compared to corpora for European French, so systems trained only on those
+sub populations still perform poorly. So the fact that we get 87 wer for
+Yaounde on Yaounde supports our project. Although I expect that the 87 will
+drop with more sophisticated models.
+
+I need the results of gp on Yaounde to fill in the motivation. I think I got
+a 92, but I did not save the results
+ 
+GP on gp 44
+Y on y 87
+Gp on y 92
+
+These numbers support our story. GP on GP is good (44), while gp on Y (92)
+and Y on Y (87) are horrible.
+ 
+I'm running the gp on y again now.
+Yes.gp on y gives 92.54, really bad.
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Thursday, July 14, 2016 5:37 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Thursday July 14 2016
+
+Mono training finished successfully yesterday.
+- mkgraph ran successfully ( I think)
+This is an important step in the system building process.
+It creates a "fully expanded decoding graph"
+It basically creates the "model", including the lm, pronunciation
+dictionary, context dependency and hmm structure.
+The output is a finite state transducer (fst).
+I think each component is expanded to an fst then they are all combined into
+1 fst.
+
+- Ran decoding
+- Ran scoring
+I had trouble with scoring.
+The problem was a missing script:
+Utils/int2sym.pl
+The fact that this script was missing was buried in a log file for the
+scoring script run.
+I reran scoring:
+Wer: 44%
+The test data here are from the GP corpus.
+I guess what we want now is to test The GP system on Yaounde data.
+
+* TODO Test GP on Yaounde
+
+I have to downsample the Yaounde data from 22050 to 16k.
+Done.
+I asked  Justin to put this data on the corpora disk.
+
+- Ran decoding on Yaounde test data:
+WER: 92.54
+I consider this preliminary.
+There are a lot of files hanging around and I'm not sure the correct files
+are being used in decoding and scoring.
+I'm not sure how fst decoding works.
+There's an fst built with the training data.
+This is the "model" the decoder uses.
+The decoder "decodes" test data.
+The test data is stored in a directory.
+When I ran the GP decoder on the GP test data the decoder pointed at the GP
+test directory .
+When I ran the GP decoder on the yaounde test data I pointed the GP decoder
+to the yaounde test directory.
+I'm worried that the yaounde decoder and the gp decoder get the same score
+on the yaounde data 92%.
+Actually, with Steve's dictionary the Yaounde system got 87.
+- Reran Yaound build with downsampled data:
+WER: 88.08
+The test set is different on every build since it is chosen randomly.
+This might explain the difference between 87% for 22050 and 88% for 16000.
+
+
+- Moving on to a system built on GP concatenated with Yaounde.
+- working through the data setup script.
+This mostly involves making the script I used for gp to run on the union of
+gp and yaounde.
+To get one script to run, I made a symbolic link from the corpora disk to
+the working directory on the gpu machine.
+I'm not sure this will work down range.
+I'm leaving today at the point where the speaker genders are extracted from
+info files.
+I'm not sure if I'm going to do gender at this point.
+I might leave it for a later refinement.
+Next steps include lexicon preparation and lm prep.
+
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Wednesday, July 13, 2016 5:19 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for July 13 2016
+
+Writing the perl command line in a separate perl script seems to have solved
+the problem I was having yesterday with the script that prepares the lm
+training data.
+Currently I'm only using the prompts to train the lm.
+* TODO Decide on what to use for lm training data
+
+- Working on extracting MFCCs.
+GP data sampled at 16k
+Yaounde data sampled at 22050
+
+I think we need to downsample the Yaounde data to 16k.
+I did this in the past, I unintentionally skipped downsampling this time.
+
+I realized that gp file names are not in numerical order.
+I renamed wav files and prompts.
+
+The training script was failing.
+I finally figured out that the number of jobs must be the same for the mfcc
+extraction and the training.
+I set the number of jobs to 10 for both cases.
+More than 10 fails since there are only 10 speakers in the test set.
+
+- running a script  called format_lms.sh 
+I think this script converts the LM into an fst.
+
+- run make graph script
+
+- run decoder
+
+- run scoring
+
+On scoring I found a problem with my transcripts.
+The script that writes the prompts to each speaker directory did not write
+the speaker directory to the paths.
+I'm running each script again  to see if the problem gets fixed in scoring.
+I'm surprised this did not cause a problem somewhere else.
+I'm leaving having started the run of the mono train script.
+I'm not going to wait for it to finish before leaving.
+This script basically aligns mfcc vectors with monophones and computes
+parameters for the gaussians.
+If it succeeds, I need to next run the script that creates the graph.
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Tuesday, July 12, 2016 4:57 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for July 12 2016
+
+I got the scoring script to run. Indeed the problem was with the 3
+arguments.
+Score.sh takes 3 arguments:
+1. A data directory that contains  a bunch of files and directories
+associated with the run of the decoder on the test data.
+2. A language directory containing file and directories associated with the
+fst that is input to the decoder. There are a lot of files referring to
+phones and words  here.
+3. A directory where the results and trace from the scoring are placed.
+
+The WER was 92%, so only 8% of the words were correctly recognized.
+Hoepfully, this will be the lowest score we get :)
+
+
+* TODO Rebuild previous system with Steve's dictionary
+
+EU is not a phone in Steve's dictionary.
+Eu is a rounded phone as in deux
+Ee (schwa) needs to be added to phone list.
+
+The uy phone appears in the dictionary, but not in the phone list.
+Add uy to phone list.
+Add gn to phone list.
+
+I rebuilt the system with the new dictionary.
+WER: 87% down from 92%
+Installed 2 diagnostic scripts.
+LM:  3gram only trained on 1339 prompts.
+
+Moved on to building similar ASR system with Kaldi for the GlobalPhone
+corpus.
+Wrote data setup scripts :
+This mostly gets lists of files, associates wav files with prompts,
+utterences with speakers, speakers with utterences, etc .
+Wrote dict setup script:
+This mostly deals with preparing the phone lists to build FSTs and what to
+do with silence.
+
+I'm leaving in the middle of writing the  script to  prepare the lm
+There's 1 script to get the lexicon.
+This takes an argument that does not seem to be there yet.
+I have a perl command line written inside a bash script.
+I'm going to write the perl script in a separate file.
+
+
+
+-----Original Message-----
+From: Morgan, John J CIV USARMY RDECOM ARL (US) 
+Sent: Monday, July 11, 2016 3:42 PM
+To: Larocca, Stephen A CIV USARMY RDECOM ARL (US)
+<stephen.a.larocca.civ@mail.mil>; Vanni, Michelle T CIV USARMY RDECOM ARL
+(US) <michelle.t.vanni.civ@mail.mil>; Hernandez, Luis CIV USARMY RDECOM ARL
+(US) <luis.hernandez2.civ@mail.mil>
+Subject: Daily Activities Report for Monday July 11 2016
+
+I'm going to write a short Daily Journal, mostly so the next day I can
+remember where I left off the previous day.
+If this annoys you let me know.
+John
+I'm writing a kaldi recipe to build a monophone ASR system trained and
+tested on the Yaounde corpus of French.
+I have written the data preparation scripts, the scripts that run the mfcc
+extractor the script that runs the training, and the script that decodes
+test data.
+I'm leaving today in the middle of setting up the script that runs the score
+script.
+I'm expecting this to give me WER scores for the test data.
+It looks like the score script is expecting a file containing words.
+I haven't generated this file yet.
+I also have to look closely at the 3 arguments to the score script.
+
+
+
