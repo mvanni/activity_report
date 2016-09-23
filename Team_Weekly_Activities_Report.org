@@ -1,3 +1,34 @@
+* <2016-09-23 Fri>
+** Big Picture: a.k.a. Important not due soon
+- Do bottle neck models on African Accented Speech corpus
+- Do automatic lexicon expansion for French
+- Learn the latest ASR adaptation techniques.
+- Automatically transcribe the Yaounde Answers
+- Automatically transcribe the Central Accord Speech Data
+- Automatically transcribe the sri_gabon data.
+- Use transcriptions as semi-supervision
+- Move from Statistical MT to Neural MT
+- Move from hmm to dnn ASR.
+** Goals for Last Week:
+- DONE Write acomplishments
+I should run another pass over my accomplishments.  
+- DONE Use models to transcribe answers and sri_gabon data.
+I now have automatically generated transcripts. How good are they? Should I continue using them as semi supervision?
+- DONE Use transcriptions as semi-supervision in rebuild of models.
+This ran successfully on the answers data. It lowered the WER on the speaker adapted  test set. 
+Are the transcripts noticeably better? 
+** Goals for Next Week:
+- TODO One more pass on accomplishments and top 6 list.
+- TODO Run semi supervised ASR system build wit both answers and sri_gabon data sets.
+- TODO Start building online nnet2 system.
+- TODO Continue with nnet system build.
+- TODO Investigate new Pashto corpus from babel.
+- TODO Investigate how babel did bottle neck features.
+- TODO Get a new test set for African Accented Corpus. 
+- TODO Make another pass on the tr.
+** WAR:
+This week John Morgan obtained a further word error rate (WER) improvement for his African Accented French automatic speech recognition project. The best WER is now 23.79, down from the previous best of 25.85. 
+This improvement was achieved by employing a semi supervised training method. A corpus of unlabeled recordings were automatically transcribed by the previous best fully supervised system. The entire training recipe was then rerun with the new data and its automatically generated transcriptions. 
 * Friday, September 16, 2016 5:03 PM
 ** Big Picture: a.k.a. Important not due soon
 - Automatically transcribe the Yaounde Answers
