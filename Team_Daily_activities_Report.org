@@ -1,3 +1,40 @@
+* Goals for Friday set Thursday: <2016-09-23 Fri>
+- TODO Write scripts to run semi supervised training with sri_gabon data in addition to the answers data.
+- TODO Write accomplishments
+- TODO Write top 6 accomplishments document.
+- TODO Write more on tr.
+- TODO Run scripts to train sgmms discriminatively with mmi.
+
+The script to train the denominator lattices had finished when I came in this morning.
+I started the script to do mmi training on the sgmms.
+Training finishes relatively quickly (maybe 2 hours).
+I looked at the script to decode with the mmi discriminatively trained models. 
+I needed to add the command to decode the sri_gabon data. 
+Transforms are required to run this decoding.
+You get the transforms by decoding the test data with the tri5 data.
+So there 's some cheating going on here.
+
+- Data preparation for sri_gabon semi supervision:
+When I wrote the script to prepare the answers semi supervision training, I wrote the output training files to a directory called data/train_semi_supervision.
+I did this so as not to overwrite the training files from the supervised training stage.
+Now when I add the sri_gabon data, I am going to write the training files to a directory called data/train_semi_supervision_2.
+The best WER was 23.79 slightly better than the best so far.
+I think we need another test set.
+The test set we've been using will be the devtest.
+
+- online nnet2 
+I'm trying to start the process of building an online nnet2 system on our African Accented corpus.
+I got the recipe scripts from kaldi/egs/wsj/s5/local/online
+The first step is to extract MFCCs.
+These recipes use a different config file for the mfcc extraction.
+They extract higher resolution features.
+I guess they work better with neural nets.
+They add the suffix hires to some files and directories.
+Then a diag ubm set is trained.
+They need to run an fmllr alignment step to do this training.
+Then the lda mllt training is run.
+Then the ubm training is run on top of this.
+
 * Goals for <2016-09-22 Thu>
 - TODO run scripts to build sgmms.
 - TODO Write accomplishments.
