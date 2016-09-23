@@ -35,6 +35,38 @@ They need to run an fmllr alignment step to do this training.
 Then the lda mllt training is run.
 Then the ubm training is run on top of this.
 
+I am running into trouble.
+The hires mfcc features hozed my old mfcc features.
+I don't  think that's a big deal, I just have to run the old script over again.
+It copied the data/ directories, so it should not hurt them. Just in case, I'm rerunnig the prepare script to remake them.
+I'm going to skip the hires features for now.
+I'm going to continue the training from tri5.
+This is what the rm recipe does.
+The wsj recipe gets fancy with the new hires features and copying directoreis ect...
+So, I definitely need to rerun the script that extracts the mfcc features.
+
+As I'm getting ready to leave I'm trying to take the last step of the first stage of semi supervised training.
+I stillhave to decode the sri_gabon data with the best sgmm models.
+The problem was that in order to do this, I had to decode the sri_gabon data with the tri5 models in order to get the mllr transforms.
+That is now done.
+I am waiting to get the mfcc features back after having hozed them.
+Then I'll run the sri_gabon data through the decoder with the sgmm models.
+This will give me sri_gabon automatic transcripts.
+then I can start the building process over again with both answers and sri_gabon as semi supervised data.
+Oops, I was not using mfcc features for the model building, so I did not actually hoze anything.
+So, what do I do now for the nnet2 recipe?
+Can I use plp + pitch   features?
+I'm having problems decoding  the sri_gabon data too.
+It looks like I messed up things when I tried to get rid    of mllr.
+I'm going back to the step where I tried to make that change.
+I started doing it at the ubm training stage.
+I'm running that training script over again.
+I'm going back that far, because the next step fails.
+** Goals for Monday:
+- TODO Fix the mess I got myself into  for trying to get rid of mllr.
+- TODO If this gets fix, decode the sri_gabon data
+- TODO Use the automatic transcripts of the sri_gabon as semi supervised training data (try to finish this before moving on to nnet2 stuff).
+- TODO make another pass on top 6 list and accomplishments
 * Goals for <2016-09-22 Thu>
 - TODO run scripts to build sgmms.
 - TODO Write accomplishments.
