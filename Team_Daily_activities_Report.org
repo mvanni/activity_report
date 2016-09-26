@@ -1,3 +1,96 @@
+* Goals for Monday set Friday:
+- TODO Fix the mess I got myself into  for trying to get rid of mllr.
+
+I reran the script that makes the decoding fst graph. This takes a long time.
+After this finished I ran the script to decode the sri_gabon data.
+It still fails.
+My guess is there is a problem with the features. 
+My guess is that there is a problem with the file containing the map between the file names containing the extracted eatures and the files actually containing the extracted features.
+My guess is that this file got corrupted when I ran the program to generate the mfcc features.
+I am now rerunning the plp pitch feature extractor to see if this works and if my guess is correct.
+The decoding is now running, although I won't know for sure until it finishes if my guess was right.
+This is a good lesson for anyone who wants to learn kaldi.
+The files like utt2spk, spk2utt, feats.scp, wav.scp, ... are very important in kaldi.
+You're not going to get very far if you don't copy the pattern in these files.
+these files get created/modified when I run the plp and pitch feature extractor.
+Scripts downstream will fail if you change these files upstream.
+So, I probably didn't have to do all the script rerunning I did.
+I probably just had to rerun the plp and pitch feature extractor.
+The decoder has an argument pointing to the directory containing information about the test data or in my particular case right now the data/sri_gabon data directory.
+That information was incorrect, because I had run the mfcc extractor over the sri_gabon and that information was written to the data/sri_gabon directory.
+The models I had been building used the previously stored plp pitch feature vectors.
+So when I went to decode the data the input vectors were mfccs which have their standard dimensions.
+The models on the other hand had been trained with plp pitch vectors which have a different standard dimension.
+
+ 
+- TODO If this gets fix, decode the sri_gabon data
+
+It apparently got fixed and I am going through the process of decoding the sri_gabon data.
+It is taking a long time to decode the sri_gabon data with the sgmm5 models.
+
+- TODO Use the automatic transcripts of the sri_gabon as semi supervised training data (try to finish this before moving on to nnet2 stuff).
+- TODO make another pass on top 6 list and accomplishments
+** Top 6 accomplishments
+Name: John Morgan
+Office:
+Team Leader (No):
+Grade: 
+Series:
+# of refereed papers published (Form1) 0
+Single or first author0
+Co-author0
+# of non-refereed papers, reports, published (Form 1)0
+Single or first author0
+Co-author0
+# Presentations – at conferences or significant briefings0
+# Field Tests0
+Did you complete your IDP ?  No
+Recognition (awards, letters of appreciation, etc.)
+ List significant projects you are working on & your specific responsibilities:
+Project: Adaptation of Automatic Speech Recognition models from the well-resourced world language French to accents in regions of Africa. 
+Responsabilities:
+Preparation of data including acoustic recordings of speech  and text transcriptions.
+Conducting experiments to determine best performing models.
+Investigation of adaptation of mathematical models to be adapted including Hidden Markov Models, Subspace Gaussian Mixture Models and Deep Neural Networks.
+Project: Application of Deep Learning methods to Machine Translation for language pairs of interest to the US Army.
+Responsabilities: 
+Bitext data preparation.
+Setting up of computing environment with GPU 
+Compare DL methods with existing Statistical MT benchmarks.
+Conduct experiments to find methods that work best with low resourced language pairs like Dari and Pashto.
+6 Most significant Actions / Impacts
+1.  
+Action: 1. Applied state-of-art Deep Learning approaches with several toolkits to in-house data sets for machine translation and speech recognition tasks of interest to the US ARMY.
+Impact: An important outcome of this effort is a capability and expertise at using GPU-based technology in the MLCAB branch. 
+2. 
+Action: 1. 
+Impact: As a requirement for this project I became proficient at python programming, which the branch can now count on as a capability. 
+3. 
+Action: 1. Research work with UMD professors on simultaneous translation. 
+Impact: Also as a requirement for this project, I bcame familiar with the area of machine learning  called reinforcement learning, which should have an important impact on future applications of Deep Learning to NLP applications.
+4. 
+Action: 1. 
+Impact: 
+5. 
+Action: 1. 
+Impact: 
+6. 
+Action: 1. 
+Impact:  
+Other Comments:
+FOR OFFICIAL USE ONLY
+
+
+As I'm preparing to leave, the sri_gabon decoding with sgmm5 models step is still running. 
+I'm not sure what step I'll take tomorrow when this decoding  finishes. 
+I'll try to skip directly to decoding with the discriminative mmi models, but I suspect this will fail. 
+IIn that case, I'll have to take the next steps, wich are to align, extract denominator lattices and mmi train.
+After that I should finally be able to decode the sri_gabon data.
+** Goals for Tuesday:
+- TODO Continue with the answers part of semi supervised model ASR training.
+- TODO Another pass on accomplishments and top 6.
+- TODO Write more for tr.
+
 * Goals for Friday set Thursday: <2016-09-23 Fri>
 - TODO Write scripts to run semi supervised training with sri_gabon data in addition to the answers data.
 - TODO Write accomplishments
@@ -62,11 +155,16 @@ I'm going back to the step where I tried to make that change.
 I started doing it at the ubm training stage.
 I'm running that training script over again.
 I'm going back that far, because the next step fails.
+
+I ran the ubm training again.
+Now I'm running the sgmm training (step 57)
+
 ** Goals for Monday:
 - TODO Fix the mess I got myself into  for trying to get rid of mllr.
 - TODO If this gets fix, decode the sri_gabon data
 - TODO Use the automatic transcripts of the sri_gabon as semi supervised training data (try to finish this before moving on to nnet2 stuff).
 - TODO make another pass on top 6 list and accomplishments
+
 * Goals for <2016-09-22 Thu>
 - TODO run scripts to build sgmms.
 - TODO Write accomplishments.
