@@ -86,11 +86,19 @@ I'm not sure what step I'll take tomorrow when this decoding  finishes.
 I'll try to skip directly to decoding with the discriminative mmi models, but I suspect this will fail. 
 IIn that case, I'll have to take the next steps, wich are to align, extract denominator lattices and mmi train.
 After that I should finally be able to decode the sri_gabon data.
+
+The decoding finally finished.
+So now I have sgmm5 transcripts of the sri_gabon data.
+I also started the decoding with the discriminative mmi trained sgmm5 models.
+it looks like this is running and I don't have to run the alignment, denominator lattice generation and mmi training over again.
+The only problem was with the feature maps that I explained above.
+I was thinking of waiting for this decoding to finish because it is for some reason very fast decoding, but the corpus is pretty big 7400 utterences.
+
 ** Goals for Tuesday:
-- TODO Continue with the answers part of semi supervised model ASR training.
+- TODO Continue with the sri_gabon part of semi supervised model ASR training.
 - TODO Another pass on accomplishments and top 6.
 - TODO Write more for tr.
-
+- TODO The IDP form
 * Goals for Friday set Thursday: <2016-09-23 Fri>
 - TODO Write scripts to run semi supervised training with sri_gabon data in addition to the answers data.
 - TODO Write accomplishments
