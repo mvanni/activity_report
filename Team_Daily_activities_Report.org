@@ -1,3 +1,40 @@
+* Goals for Tuesday set Monday:
+- DONE Continue with the sri_gabon part of semi supervised model ASR training.
+
+I'm not sure why I did not start this before leaving yesterday. The decoding of the sri_gabon data by the sgmm5 mmi models had finished.
+I wrote the scripts for all the steps needed to complete the second stage of semi supervised training. 
+I have so far run the mono, tri1 and tri2 training and decoding scripts.
+As soon as the training finishes, I start the alignment for the next model set. I don't have to wait for decoding to finish.
+
+- TODO Another pass on accomplishments and top 6.
+- TODO Write more for tr.
+- DONE The IDP form
+I took a first pass at filling out the IDP form. It may not be possible for me to do this with JAWS.
+
+I've spent most of the day writing and running the scripts to do the sri_gabon stage of supervised training.
+I've almost gone through the whole process of training. 
+The decoding lags way behind.
+Something weird that has me worried.
+The tri3 model decoding yielded results before the tri2 model decoding.
+I checked and the tri2 models is decoding, it has not died.
+The tri3 models are currently decoding the sri_gabon data.
+
+I also read the sgmm accent adaptation paper.
+
+As I'm getting ready to leave, the sgmm5 model set is being trained with the answers and sri_gabon semi supervised data.
+Hopefully, this will be finished tomorrow and I'll start the last steps of this model building with the denominator lattice generation, mmi training and decoding.
+I also hope all the graph building and decoding up to tri5 and sgmm5 is finished. 
+I want to start writing the tr more seriously. 
+This will motivate me to wrap up this project before I go on leave.
+I'll have to fill in the missing pieces.
+I might want to do an experiment where  I use the sri_gabon data as unsupervised training data with gp.
+ 
+** Goals for Wednesday:
+- TODO Another pass at top 6 accomplishments
+- TODO Finish sri_gabon semi supervised model building and decoding.
+- TODO Write the tr.
+
+ 
 * Goals for Monday set Friday:
 - TODO Fix the mess I got myself into  for trying to get rid of mllr.
 
