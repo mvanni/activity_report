@@ -56,40 +56,42 @@ Technical Competency:
 Apply methods, theories, techniques, and skills learned in Computer Science Ph.D. corsework and research at UMD to projects of interest to ARL and the ARMY.
 
 In this past year I took and passed 2 graduate courses, 1 in Scientific Computing and 1 in Database Management Systems.
-The course in Scientific Computing covered the fundamental theory of optimization, which is  relevant to the computational solutions of many if not most problems in NLP and virtually all problems in Deep Learning.
-Our branch has several of its own speech and text corpora that have not yet been curated. The DBMS course I took will help our branch utilize and share our data for the benefit of the Army.
+The course in Scientific Computing covered the fundamental theory of optimization, which is  relevant to the computational solutions of many if not most problems in NLP and virtually all problems in Deep Learning. 
+I was introduced to matlab and octabe in this course and I studied the implementations of important algorithms in the python modules numpy and scipy. 
+Our branch has several of its own speech and text corpora that have not yet been curated. 
+The DBMS course I took will help our branch utilize and share our data for the benefit of the Army.
 
-As part of a research team at UMD, I developed software that uses Deep and Reinforcement Learning techniques to predict 
-language behaviors of a simultaneous translator. 
+As part of a research team at UMD, I developed software that uses Deep and Reinforcement Learning techniques to predict language behaviors of a simultaneous translator. 
 
-Develop machine translation software using the theories and methods emerging
-from the field of Deep Learning.
+Develop machine translation software using the theories and methods emerging from the field of Deep Learning.
 
-I became familiar with several toolkits for developing neural networks including google's open source Tensorflow, theano and keras. I used recurrent neural networks with long short term memory and gated recurrent units to perform Machine Translation. 
+I became familiar with several toolkits for developing neural networks including google's open source Tensorflow, theano and keras. 
+I used recurrent neural networks (RNN)s with long short term memory and gated recurrent units to perform Machine Translation. 
+I wrote code to implement an RNN that makes predictions about future words a simultaneous translators will choose to interpret. 
 
 Use python programming skills to develop software in ARL projects.
 
-Both the Tensorflow and Theano toolkits are implemented in python. I used my python programming skills to apply the tools in those toolkits to develop the MT systems I worked with.
+Both the Tensorflow and Theano toolkits are implemented in python. 
+I used my python programming skills to apply the tools in those toolkits to develop the MT systems I worked with.
 
-Support the team project to implement an Automatic Speech Recognition system
-adapted to  speech as spoken in African countries. 
+Support the team project to implement an Automatic Speech Recognition system adapted to  speech as spoken in African countries. 
 
 I made good progress on this objective. 
 I dedicated a lot of hard work to preparing our inhouse speech corpora  for processing by ASR system development tools. 
 
 I can now build subspace gaussian mixture model based ASR systems with the kaldi toolkit. 
 The recipes I have developed to prepare and process the African accented speech can be applied to our other holdings.
+I am investigating a semi supervised  acoustic model training strategy that could potentially cut the cost of transcribing collected speech data.
 
 Cooperation:
 
-Serve as a bridge between the multilingual computing branch and the academic
-community
-at UMD. 
+I collaborated closely with Dr. Stephen LaRocca on his project to implement an algorithm for selecting data to be used to train statistical n-gram language models. 
+
+Serve as a bridge between the multilingual computing branch and the academic community at UMD. 
 
 Communication:
 
-Publish a journal paper as first author on research on simultaneous
-translation.
+Publish a journal paper as first author on research on simultaneous translation.
 
 
 Customer Relations:
@@ -99,29 +101,83 @@ issues concerning machine translation and machine learning.
 
 Technology Transition:
 
-Transition simultaneous translation code developed for research into branch
-projects.
+Transition simultaneous translation code developed for research into branch projects.
 
 
 Diversity:
-Support ARL's diversity initiatives by participating in locally sponsored
-training, outreach and/or special emphasis programs to increase personal
-awareness and understanding of the various cultures that exist among
-laboratory employees.
+Support ARL's diversity initiatives by participating in locally sponsored training, outreach and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees.
 
+I learned a lot about the sacrifices African American soldiers made during World War II for the U.S. Army by attending a film in the ALC auditorium.
+I also served as a speaker on a panel for Disability Awareness Month.
 
 SHARP:
-Support leadership's efforts to address and prevent sexual harassment and
-sexual assault and ensure a respectful work environment for all.
-Demonstrate support for the SHARP program by actively participating in
-required training and other educational programs.  Intervene and
-appropriately respond to any instances of sexual harassment or sexual
-assault; encourage others to do the same.
+Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all.
+Demonstrate support for the SHARP program by actively participating in required training and other educational programs.  
+Intervene and appropriately respond to any instances of sexual harassment or sexual assault; encourage others to do the same.
+End of Accomplishments
 
 - TODO Finish sri_gabon semi supervised model building and decoding.
+
+The WER results are really looking bad for the second stage of the semi supervised training strategy. 
+The transcripts that we thought look really good actually are really bad. 
+I'm not sure why?
+The output looks very fluent, but they don't look like they are aligned to the speech. 
+I think they are just bad. 
+
 - TODO Write the tr.
 
- 
+The bad results on the sri_gabon actually supports the point I wanted to make in the tr. 
+My hypothesis is that if you put just a little effort in collecting some read speech, it makes a big difference. 
+Our results might show this.
+The results on the yaounde answers are very good (maybe). 
+This is the case where there is an overlap in the speakers, so it is quasi semi supervised.
+When you don't have this overlap, that is, the semi supervised case, you get bad results.
+
+- Experiment:
+I think I need to run another experiment in order to support the point I'm making in the tr.
+My point is that there is a large payoff to collecting some read data on a speech data collection   mission. 
+- Strategy 1:
+Do supervised training first with the read speech concatenated to the out of domain corpus (gp+yaounde read)
+Automatically transcribe the unlabeled corpus yaounde answers.
+Do semi-supervised training with  yaounde answers automatically generated transcriptions 
+Use these models to decode yaounde answers
+- Strategy 2:
+Do supervised training with only the out of domain corpus.
+Automatically transcribe the unlabeled corpus sri_gabon
+Do semi-supervised training with  automatically generated transcriptions of sri_gabon
+Use these models to transcribe the sri_gabon data.
+
+Find the amount of read data required to get similar results.
+
+
+- MAP:
+This comment is in the steps/train_map.sh script in kaldi:
+# Train a model on top of existing features (no feature-space learning of any
+# kind is done).  This script does not re-train the tree, it just does one iteration
+# of MAP adaptation to the model in the input alignment-directory.  It's useful for
+# adapting a system to a specific gender, or new acoustic conditions.
+
+# Note: what we implement here is not the MAP from the paper by Gauvain and Lee,
+# it's the simpler (and, I believe, more widely used) so-called "relevance MAP",
+# implemented in HTK, where we add a fixed count "tau" of fake Gaussian stats
+# generated from the old model, to the new 'in-domain' stats from the features
+# and alignments provided;  and we only update the mean.  So if the new count
+# is zero it just gives you the Gaussian parameters from the old model, but as
+# you get more than about tau counts, it approaches the in-domain stats.
+# We use 'gmm-ismooth-stats' in the command line because the equations for this
+# are the same as the equations for i-smoothing in discriminative training
+# (for which, see my [Dan Povey's] PhD thesis).
+
+There is also a script called steps/decode_with_map.sh in kaldi. 
+
+- GP:
+I've started the process of building models on the GP corpus alone.
+I'm doing this on my laptop for now. 
+** Goals for Thursday:
+- TODO GP model building on gpu machine
+- TODO Write TR
+- TODO Finish gp + yaounde sgmm model building
+- TODO Read papers
 * Goals for Tuesday set Monday:
 - DONE Continue with the sri_gabon part of semi supervised model ASR training.
 
