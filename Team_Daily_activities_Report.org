@@ -1,3 +1,127 @@
+* Goals for Wednesday set Tuesday:
+- TODO Another pass at big 6 accomplishments
+** Big 6 accomplishments
+Name: John Morgan
+Office:
+Team Leader (No):
+Grade: DB03
+Series:
+# of refereed papers published (Form1) 0
+Single or first author0
+Co-author0
+# of non-refereed papers, reports, published (Form 1)0
+Single or first author0
+Co-author0
+# Presentations – at conferences or significant briefings0
+# Field Tests0
+Did you complete your IDP ?  Yes
+Recognition (awards, letters of appreciation, etc.)
+ List significant projects you are working on & your specific responsibilities:
+Project: Adaptation of Automatic Speech Recognition models from the well-resourced world language French to accents in regions of Africa. 
+Responsabilities:
+Preparation of data including acoustic recordings of speech  and text transcriptions.
+Conducting experiments to determine best performing models.
+Investigation of adaptation of mathematical models to be adapted including Hidden Markov Models, Subspace Gaussian Mixture Models and Deep Neural Networks.
+Documentation of processes used in the project.
+Project: Application of Deep Learning methods to Machine Translation for language pairs of interest to the US Army.
+Responsabilities: 
+Bitext data preparation.
+Setting up of computing environment with GPU 
+Compare DL methods with existing Statistical MT benchmarks.
+Conduct experiments to find methods that work best with low resourced language pairs like Dari and Pashto.
+6 Most significant Actions / Impacts
+1.  
+Action: 1. Applied    algorithms from the reference kaldi ASR toolkit to in-house data sets for   speech recognition tasks of interest to the US ARMY.
+Impact: An important outcome of this effort is a capability and expertise at using GPU-based technology in the MCAB branch. 
+2. 
+Action: 1. Applied  Deep Learning approaches with  toolkits to in-house data sets for machine translation  tasks of interest to the US ARMY.
+Impact: As a requirement for this project I became proficient at python programming, which the branch can now count on as a capability. 
+3. 
+Action: 1. Research work with UMD professors on simultaneous translation. 
+Impact: As a requirement for this project, I bcame familiar with the area of machine learning  called reinforcement learning, which should have an important impact on future applications of Deep Learning to NLP applications.
+4. 
+Action: 1. Coded Recurrent Neural Networks for prediction    in simultaneous translation. 
+Impact: Understanding of the functioning of RNNs at an elementary level.
+5.  
+Action: 1. Investigated a potentially novel approach to adaptively training an ASR system to an accented version of a world Language.
+Impact: Potential cost savings in transcription of collected speech data.
+6. 
+Action: 1. 
+Impact:  
+Other Comments:
+FOR OFFICIAL USE ONLY
+
+** Accomplishments
+Technical Competency:
+Apply methods, theories, techniques, and skills learned in Computer Science Ph.D. corsework and research at UMD to projects of interest to ARL and the ARMY.
+
+In this past year I took and passed 2 graduate courses, 1 in Scientific Computing and 1 in Database Management Systems.
+The course in Scientific Computing covered the fundamental theory of optimization, which is  relevant to the computational solutions of many if not most problems in NLP and virtually all problems in Deep Learning.
+Our branch has several of its own speech and text corpora that have not yet been curated. The DBMS course I took will help our branch utilize and share our data for the benefit of the Army.
+
+As part of a research team at UMD, I developed software that uses Deep and Reinforcement Learning techniques to predict 
+language behaviors of a simultaneous translator. 
+
+Develop machine translation software using the theories and methods emerging
+from the field of Deep Learning.
+
+I became familiar with several toolkits for developing neural networks including google's open source Tensorflow, theano and keras. I used recurrent neural networks with long short term memory and gated recurrent units to perform Machine Translation. 
+
+Use python programming skills to develop software in ARL projects.
+
+Both the Tensorflow and Theano toolkits are implemented in python. I used my python programming skills to apply the tools in those toolkits to develop the MT systems I worked with.
+
+Support the team project to implement an Automatic Speech Recognition system
+adapted to  speech as spoken in African countries. 
+
+I made good progress on this objective. 
+I dedicated a lot of hard work to preparing our inhouse speech corpora  for processing by ASR system development tools. 
+
+I can now build subspace gaussian mixture model based ASR systems with the kaldi toolkit. 
+The recipes I have developed to prepare and process the African accented speech can be applied to our other holdings.
+
+Cooperation:
+
+Serve as a bridge between the multilingual computing branch and the academic
+community
+at UMD. 
+
+Communication:
+
+Publish a journal paper as first author on research on simultaneous
+translation.
+
+
+Customer Relations:
+
+Respond to requests from team customers for advice and technical support on
+issues concerning machine translation and machine learning.
+
+Technology Transition:
+
+Transition simultaneous translation code developed for research into branch
+projects.
+
+
+Diversity:
+Support ARL's diversity initiatives by participating in locally sponsored
+training, outreach and/or special emphasis programs to increase personal
+awareness and understanding of the various cultures that exist among
+laboratory employees.
+
+
+SHARP:
+Support leadership's efforts to address and prevent sexual harassment and
+sexual assault and ensure a respectful work environment for all.
+Demonstrate support for the SHARP program by actively participating in
+required training and other educational programs.  Intervene and
+appropriately respond to any instances of sexual harassment or sexual
+assault; encourage others to do the same.
+
+- TODO Finish sri_gabon semi supervised model building and decoding.
+- TODO Write the tr.
+
+ 
 * Goals for Tuesday set Monday:
 - DONE Continue with the sri_gabon part of semi supervised model ASR training.
 
