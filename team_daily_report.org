@@ -1,0 +1,8 @@
+* Goals for <2016-09-22 Thu>
+- TODO run scripts to build sgmms.
+- TODO Write accomplishments.
+
+
+I'm running the alignment script that uses the first sgmms to align the data.
+I'm also running the script to make the decoding graph for the first sgmms.
+ 
