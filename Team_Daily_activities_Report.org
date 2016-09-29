@@ -1,3 +1,40 @@
+* Goals for Thursday set Wednesday: <2016-09-29 Thu>
+- DONE GP model building on gpu machine
+
+I'm starting to run the gp model building scripts on the gpu machine and I'm finding an interesting problem. 
+The files don't seem to get sorted in the same wasy.
+I think the   sorting problem  depends on environment variables
+There might also be a file concatenation problem.
+I am concatenating files somewhere and I am not deleting the old file before starting the concatenation. 
+I had done a lot of these fixes under the yaounde+gp directory.
+I am copying those fixes to the gp directory.
+Problems remained.
+There were concatenation problems at every step.
+I spent most of the morning fixing these problems.
+I think I'm good now on data prep.
+I spoke a little too soon. I had do more fixes for the sorting.
+Now I'm getting similar problems with the test data.
+I was finally able to move on to the next steps.
+
+- TODO Write TR
+- TODO Finish gp + yaounde sgmm model building
+
+It's still cooking.
+- TODO Read papers
+
+I've got several things running as I'm getting ready to leave.
+- The second stage of the semi supervised training with sri_gabon is still making the denominator lattices.
+- The model building for the gp only system is training monophones on the gpu machine
+- sgmm models for the gp only system are being trained on my laptop
+- Decoding of  sri_gabon  with sgmm5 modles
+I'll only be here for half a day tomorrow, so I'm not expecting to much done.
+The modle building steps from monophones to sgmm5 are pretty stable in my scripts. I might put them all in 1 script and run them on the gpu machine.
+The step after the first sgmm5 step require an decoding fst from tri5, but this requires decoding with tri5 models. So, I'll do this step in a separate script before starting the next sgmm5 step.
+
+** Goals for Friday:
+- TODO Finish second stage of semi supervised training with sri_gabon
+- TODO Run model building scripts for gp only system on gpu machine ( maybe put several steps in 1 script)
+
 * Goals for Wednesday set Tuesday:
 - TODO Another pass at big 6 accomplishments
 ** Big 6 accomplishments
