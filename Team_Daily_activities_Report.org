@@ -1,3 +1,18 @@
+* Goals for Friday set Thursday<2016-09-30 Fri>:
+- TODO Finish second stage of semi supervised training with sri_gabon
+
+The mmi training is still running on the gpu machine on the sri_gabon semi supervised stage.
+Actually, it hasn't even got to training yet, it's still on denominator lattice generation.
+- DONE Run model building scripts for gp only system on gpu machine ( maybe put several steps in 1 script)
+
+I started a script that (if all goes well) will train the acoustic models tri2 through sgmm5.
+The scripts I had run before got through tri1 training. So this one starts with alignment using tri1.
+
+I started a similar script starting at monophones for yaounde+gp on my laptop.
+The difference with these scripts is that I'm only concentrating on training the acoustic models. I don't make the decoding graphs and I do not decode. 
+I'll make scripts for decoding graphs, decoding and the lm separately.
+
+
 * Goals for Thursday set Wednesday: <2016-09-29 Thu>
 - DONE GP model building on gpu machine
 
