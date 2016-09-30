@@ -1,3 +1,38 @@
+* <2016-09-30 Fri>
+** Big Picture: a.k.a. Important not due soon
+- Do bottle neck models on African Accented Speech corpus
+- Do automatic lexicon expansion for French
+- Learn the latest ASR adaptation techniques.
+- Automatically transcribe the Yaounde Answers
+- Automatically transcribe the Central Accord Speech Data
+- Automatically transcribe the sri_gabon data.
+- Use transcriptions as semi-supervision
+- Move from Statistical MT to Neural MT
+- Move from hmm to dnn ASR.
+** Goals for Last Week:
+- DONE One more pass on accomplishments and top 6 list.
+- TODO Run semi supervised ASR system build wit both answers and sri_gabon data sets.
+The run with sri_gabon semi supervision is still running. 
+The best test set WER so far for sri_gabon semi supervision is 28.61. 
+Which is not better than with only Answers semi supervision yet.
+
+- TODO Start building online nnet2 system.
+I've decided to wrap up the sgmm model building experiments before I move on to neural net building.
+- TODO Continue with nnet system build.
+No, I won't get to nnet building for at least another week.
+- TODO Investigate new Pashto corpus from babel.
+- TODO Investigate how babel did bottle neck features.
+- TODO Get a new test set for African Accented Corpus. 
+- DONE Make another pass on the tr.
+** WAR:
+John Morgan is in the middle of a second stage of semi supervised training of a supspace gaussian mixture model based automatic speech recognizer for African accented speech. 
+The first stage was quasi semi supervised because the speakers in the labeled and unlabeled corpora overlapped. 
+This second stage is concatenating to the previous corpora an unlabeled corpus that does not overlap with the labeled corpus. 
+The best word error rate so far with this training regime is 28.61 which is far from the 23.79 WER achieved last week. 
+** Goals for Next Week:
+- TODO Wrap up training and decoding of sgmm models.
+- TODO Write TR.
+
 * <2016-09-23 Fri>
 ** Big Picture: a.k.a. Important not due soon
 - Do bottle neck models on African Accented Speech corpus
