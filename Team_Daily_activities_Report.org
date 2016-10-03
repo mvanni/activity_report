@@ -1,3 +1,39 @@
+* <2016-10-03 Mon>
+** Goals For today Monday:
+- TODO Rerun the semi supervised training experiment
+
+I found the problem with the automatic transcripts I was using for semi supervised training.
+I already made a mistake in stage 1 when I used the Answers transcripts for training.
+The file I was using was actually the reference transcripts, which in the answers case were the questions.
+I was considering extracting the recognizer output from the decoding logs, but the log files are different when you get up into the sgmm modeling.
+I found another file that contains the hypotheses from the recognizer.
+I have to be careful, because it also contains the reference and some other files used in scoring.
+I am going back to the first semi supervised stage and using these new transcripts.
+They contain symbols like "*" that worry me a little.
+
+I have finished training monophone through sgmm acoustic models in supervised mode. 
+I am trying to decode with the sgmm models.
+First, I need to decode with the tri5 models to get transforms.
+Yes. Now that I have the tri5 transforms, the decoding is going forward with sgmm models.
+I made the mistake of firing up all the decoding steps at one.
+This bogged the machine and some of the processes failed.
+I'm going to go through them all 1 at a time.
+First monophones
+
+The monophones score lower 
+
+I've been looking at the output from the decoding with semi supervised monophones on the sri_gabon data.
+Look at speaker 048.
+She seems to be reading the whole list of prompts in one recording.
+There are a lot of very long utterences in several directories.
+No wonder it takes so long to decode the sri_gabon data. this speaker 113 goes on and on and on ...
+
+- problem:
+The three asterisks that appear in the wer_details/per_utt file make the scoring fail when I use it as the reference.
+I'll have to delete them before using it as a reference or as the source of my labels.
+** Goals for Tuesday:
+- TODO Write script to remove asterisks from per_utt file.
+- TODO Rerun semi supervised training with the improved labels. 
 * Goals for Friday set Thursday<2016-09-30 Fri>:
 - TODO Finish second stage of semi supervised training with sri_gabon
 
@@ -11,8 +47,6 @@ The scripts I had run before got through tri1 training. So this one starts with 
 I started a similar script starting at monophones for yaounde+gp on my laptop.
 The difference with these scripts is that I'm only concentrating on training the acoustic models. I don't make the decoding graphs and I do not decode. 
 I'll make scripts for decoding graphs, decoding and the lm separately.
-
-
 * Goals for Thursday set Wednesday: <2016-09-29 Thu>
 - DONE GP model building on gpu machine
 
