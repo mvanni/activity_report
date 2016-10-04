@@ -1,3 +1,35 @@
+* <2016-10-04 Tue>
+** Goals for Tuesday set Monday:
+- DONE Write script to remove asterisks from per_utt file.
+I just had to debug the perl script I had written yesterday.
+- TODO Rerun semi supervised training with the improved labels. 
+I'm starting over again at the semi supervision step.
+I'm extracting the plp and pitch features.
+Can I skip to tri5?
+tri5 requires the alignments from tri4.
+The first step, the monophone training, uses a flat start.
+I decode the answers data to get the transcripts.
+As part of this decoding, alignment is performed (I think).
+Maybe not by default.
+I do not know how to jump to tri5 with the semi supervised data.
+
+I am now training monophones with the semi supervised data.
+The labels for the semi supervised data now does not contain the asterisks.
+I killed the process I was running and I'm starting over again.
+I am going  to use a script that runs all the steps from feature extraction through monophones to sgmm5.
+I had such a script for the first supervised stage of training.
+I had to modify it or the semi supervised stage.
+I decoded the test set with semi supervised monophones. 
+WER: 57.98
+- TODO Separate out read sri_gabon data:
+
+- lexicon work:
+I'm removing the numbers in parens after some words in the lexicon.
+
+As I'm getting ready to leave, I'm working on the script to prepare the sri_gabon_read data.
+** Goals for Wednesday:
+- TODO finish writing the script to prepare the sri_gabon_read data
+- TODO Wrap up my current run of the first stage of semi supervised training.
 * <2016-10-03 Mon>
 ** Goals For today Monday:
 - TODO Rerun the semi supervised training experiment
