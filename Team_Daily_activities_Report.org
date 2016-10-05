@@ -14,6 +14,29 @@ I decode the test set with the tri5 semi supervised models.
 WER: 29.87 for speaker dependent models
 WER: 46.94 for speaker independent models.
 
+I screwed up again.
+I deleted the data/train_semi_supervised directory while working on the script to do the next stage.
+So the sgmm denominator lattice making died.
+I still might be able to run the test decoding with the regular sgmm models.
+I reran the data prep script and the plp pitch extractor again.
+I'm rerunning the denlats script just in case it works without having to start over.
+Well ... it seems to be running.
+It seems to have crashed and restarted?
+it is still running.
+It does decoding as part of the denlats making.
+I think half of the jobs died.
+There are only 5 directories and there should be 10.
+
+The decoding graph script for sgmm5 semi supervised finally finished. I'm surprised it did not crash.
+The decoding is running, also surprising.
+
+The denlats generation is also running. 
+
+** Goals for Thursday
+- TODO Write a first pass on objectives
+- TODO Wrap up yaounde answers semi supervised training 
+- TODO Start on sri_gabon_read semi supervised traing.
+
 * <2016-10-04 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Write script to remove asterisks from per_utt file.
