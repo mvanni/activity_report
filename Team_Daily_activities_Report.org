@@ -1,3 +1,19 @@
+* <2016-10-05 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO finish writing the script to prepare the sri_gabon_read data
+- TODO Wrap up my current run of the first stage of semi supervised training.
+
+
+The mono2sgmm script failed at sgmm denominator lattice making.
+Why did it fail?
+The fst decoding graph already existed, so it did not remake it.
+This could be the problem.
+I deleted the directory where the work on the denominator lattices is done and I am rerunning the denlats making script.
+
+I decode the test set with the tri5 semi supervised models.
+WER: 29.87 for speaker dependent models
+WER: 46.94 for speaker independent models.
+
 * <2016-10-04 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Write script to remove asterisks from per_utt file.
