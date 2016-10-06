@@ -220,6 +220,7 @@ C. Dari
 a. Variable Computation Graphs
 
 ** Goals for When I come back from leave:
+- TODO Write objectives and put them in the form (I'll need help with the form).
 - TODO Finish second stage of semi supervised training.
 - TODO Use best resulting models to transcribe sri_gabon_conv data.
 - TODO Get qualitative evaluation of these transcripts from Steve.
