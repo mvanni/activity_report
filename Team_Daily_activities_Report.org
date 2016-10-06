@@ -219,6 +219,14 @@ C. Dari
 2. Machine Translation
 a. Variable Computation Graphs
 
+After I sent out this report to Steve, I continued working on the next stage of semisupervised training.
+The acoustic models have trained through tri5.
+I am making the fst decoding graph as I am laeaving.
+This will also decode the test, answers  and sri_gabon_read sets.
+I have also prepared the sri_gabon_conv data directory.
+I have extracted plp  pitch features from it too.
+The next step will be to decode the sri_gabon_conv set with the tri5 models to get transforms.
+
 ** Goals for When I come back from leave:
 - TODO Write objectives and put them in the form (I'll need help with the form).
 - TODO Finish second stage of semi supervised training.
