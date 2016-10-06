@@ -1,3 +1,221 @@
+* <2016-10-06 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Write a first pass on objectives
+- TODO Wrap up yaounde answers semi supervised training 
+- TODO Start on sri_gabon_read semi supervised training.
+
+The sgmm5 denominator lattices generation had finished this morning.
+I started the boosted mutual maximum information (mmi) sgmm training.
+There might be something wrong.
+I'm getting the following warning:
+Frame-counts disagree 10969869 versus 9789113
+This might have something to do with the problem I had yesterday when I reran the data prep and feature extraction scripts.
+
+The decoding of the test set yesterday with sgmm5 models gave a best wer:
+WER: 22.03
+The similar decoding of the answers also succeeded:
+WER: 18.29
+This is testing on a lot of the training set.
+The similar decoding  on the sri_gabon_reaed data failed.
+This is because I had not decoded the sri_gabon_read  data with the tri5 models to get  transforms.
+Recall that these are speaker dependent models.
+I'm running the decoding of the sri_gabon_read data now with tri5 models.
+
+The boosted sgmm5 mmi training finished.
+There is the warning about different numbers of frames still.
+I am running the rescore decoding with the boosted mmi trained sgmm models.
+On the test set:
+Best WER: 21.25
+
+The decoding of the sri_gabon_read set with the tri5  yaounde answers semi supervised models finished.
+So now I have automatically generated transcripts of the sri_gabon_read data (modulo the problem yesterday).
+Now I need to decode with the sgmm5 semi supervised models.
+All done for this stage.
+
+I'm going to use these transcripts as supervision in the next stage of training.
+
+The next stage will use both the answer and sri_gabon_read automatically generated transcripts as training labels.
+Can I delete the data/sri_gabon_read directory and regenerate it?
+
+I ran the feature extractor for the train_semi_supervised_2 data set.
+
+- all the scores in my experiments
+Below are all the wer scores from the experiments I've run in the past few weeks.
+I'm surprised I got this far without deleteing my working directory.
+I sorted them in reverse numerical order.
+
+ 
+%WER 99.51 [ 14247 / 14317, 2614 ins, 3802 del, 7831 sub ] exp/sgmm5_mmi_b0.1/decode_answers_it3/wer_20_1.0
+%WER 99.33 [ 14221 / 14317, 2579 ins, 3812 del, 7830 sub ] exp/sgmm5_mmi_b0.1/decode_answers_it4/wer_20_1.0
+%WER 99.25 [ 14210 / 14317, 1461 ins, 5427 del, 7322 sub ] exp/tri1_semi_supervision_2/decode_answers/wer_20_1.0
+%WER 99.23 [ 14207 / 14317, 2579 ins, 3794 del, 7834 sub ] exp/sgmm5_mmi_b0.1/decode_answers_it1/wer_19_1.0
+%WER 99.15 [ 14195 / 14317, 2568 ins, 3812 del, 7815 sub ] exp/sgmm5_mmi_b0.1/decode_answers_it2/wer_20_1.0
+%WER 99.09 [ 14187 / 14317, 2541 ins, 3819 del, 7827 sub ] exp/sgmm5/decode_answers/wer_20_1.0
+%WER 99.02 [ 14176 / 14317, 2539 ins, 3793 del, 7844 sub ] exp/sgmm5/decode_fmllr_answers/wer_20_1.0
+%WER 98.84 [ 14088 / 14253, 1186 ins, 6097 del, 6805 sub ] exp/mono_semi_supervision/decode_answers/wer_17_1.0
+%WER 98.74 [ 14073 / 14253, 1318 ins, 5990 del, 6765 sub ] exp/tri1_semi_supervision/decode_answers/wer_19_1.0
+%WER 96.67 [ 13840 / 14317, 1504 ins, 5443 del, 6893 sub ] exp/tri2_semi_supervision_2/decode_answers/wer_17_1.0
+%WER 96.05 [ 13751 / 14317, 1134 ins, 6449 del, 6168 sub ] exp/tri2_semi_supervision/decode_answers/wer_16_1.0
+%WER 93.56 [ 13395 / 14317, 1157 ins, 6075 del, 6163 sub ] exp/sgmm5_semi_supervision/decode_answers_no_mllr/wer_20_1.0
+%WER 93.01 [ 13316 / 14317, 2282 ins, 4169 del, 6865 sub ] exp/tri5_semi_supervision/decode_answers/wer_19_1.0
+%WER 92.99 [ 13314 / 14317, 2173 ins, 4329 del, 6812 sub ] exp/tri5_semi_supervision_2/decode_answers.si/wer_17_1.0
+%WER 92.39 [ 13227 / 14317, 2349 ins, 3957 del, 6921 sub ] exp/tri5_semi_supervision_2/decode_answers/wer_15_1.0
+%WER 92.38 [ 13226 / 14317, 1802 ins, 5256 del, 6168 sub ] exp/tri5_semi_supervision/decode_answers.si/wer_19_1.0
+%WER 89.05 [ 12749 / 14317, 1714 ins, 4596 del, 6439 sub ] exp/sgmm5_semi_supervision/decode_answers/wer_17_1.0
+%WER 88.96 [ 12737 / 14317, 1615 ins, 5171 del, 5951 sub ] exp/tri3_semi_supervision_2/decode_answers/wer_17_1.0
+%WER 88.75 [ 12707 / 14317, 1851 ins, 4299 del, 6557 sub ] exp/sgmm5_semi_supervision_2/decode_answers/wer_14_1.0
+%WER 88.64 [ 12691 / 14317, 1156 ins, 6298 del, 5237 sub ] exp/tri3_semi_supervision/decode_answers/wer_16_1.0
+%WER 88.52 [ 12674 / 14317, 1747 ins, 4781 del, 6146 sub ] exp/tri4_semi_supervision_2/decode_answers/wer_19_1.0
+%WER 86.16 [ 12335 / 14317, 1917 ins, 4064 del, 6354 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_answers_it1/wer_11_1.0
+%WER 86.15 [ 12334 / 14317, 1980 ins, 4056 del, 6298 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_answers_it1/wer_11_1.0
+%WER 85.70 [ 12270 / 14317, 2001 ins, 4035 del, 6234 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_answers_it2/wer_11_1.0
+%WER 85.33 [ 12217 / 14317, 2044 ins, 4002 del, 6171 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_answers_it4/wer_11_1.0
+%WER 85.24 [ 12204 / 14317, 1920 ins, 4038 del, 6246 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_answers_it2/wer_11_1.0
+%WER 85.23 [ 12203 / 14317, 2023 ins, 4008 del, 6172 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_answers_it3/wer_11_1.0
+%WER 85.02 [ 12172 / 14317, 1991 ins, 3924 del, 6257 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_answers_it3/wer_10_1.0
+%WER 84.77 [ 12137 / 14317, 1944 ins, 4011 del, 6182 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_answers_it4/wer_11_1.0
+%WER 72.88 [ 9528 / 13073, 585 ins, 2216 del, 6727 sub ] exp/mono_semi_supervised/decode_answers/wer_9_0.5
+%WER 62.89 [ 10499 / 16694, 666 ins, 4244 del, 5589 sub ] exp/tri1_semi_supervised/decode_answers/wer_12_0.5
+%WER 62.86 [ 2006 / 3191, 67 ins, 772 del, 1167 sub ] exp/mono_semi_supervision_2/decode_test/wer_9_0.0
+%WER 60.17 [ 1920 / 3191, 117 ins, 1025 del, 778 sub ] exp/tri5_semi_supervision_2/decode_test.si/wer_10_0.0
+%WER 59.39 [ 1895 / 3191, 135 ins, 426 del, 1334 sub ] exp/mono_semi_supervision/decode_test/wer_13_0.0
+%WER 58.95 [ 9841 / 16694, 725 ins, 4054 del, 5062 sub ] exp/tri2_semi_supervised/decode_answers/wer_14_0.0
+%WER 57.98 [ 1850 / 3191, 111 ins, 475 del, 1264 sub ] exp/mono_semi_supervised/decode_test/wer_11_0.0
+%WER 56.06 [ 1789 / 3191, 84 ins, 1075 del, 630 sub ] exp/tri4_semi_supervision_2/decode_test/wer_9_0.0
+%WER 54.00 [ 1723 / 3191, 78 ins, 963 del, 682 sub ] exp/tri3_semi_supervision_2/decode_test/wer_10_0.0
+%WER 49.67 [ 1585 / 3191, 168 ins, 423 del, 994 sub ] exp/tri5_semi_supervision/decode_test.si/wer_13_1.0
+%WER 47.54 [ 1517 / 3191, 51 ins, 830 del, 636 sub ] exp/tri2_semi_supervision_2/decode_test/wer_11_0.0
+%WER 47.51 [ 1516 / 3191, 96 ins, 613 del, 807 sub ] exp/tri1_semi_supervision_2/decode_test/wer_10_0.0
+%WER 46.94 [ 1498 / 3191, 200 ins, 264 del, 1034 sub ] exp/tri5_semi_supervised/decode_test.si/wer_13_0.0
+%WER 44.02 [ 1410 / 3203, 149 ins, 306 del, 955 sub ] exp/tri5/decode_test.si/wer_19_1.0
+%WER 43.18 [ 1378 / 3191, 83 ins, 384 del, 911 sub ] exp/tri1_semi_supervision/decode_test/wer_12_1.0
+%WER 42.78 [ 1365 / 3191, 108 ins, 458 del, 799 sub ] exp/tri3_semi_supervision/decode_test/wer_18_0.0
+%WER 42.24 [ 1348 / 3191, 145 ins, 336 del, 867 sub ] exp/sgmm5_semi_supervision/decode_test_no_mllr/wer_10_0.0
+%WER 41.52 [ 1325 / 3191, 137 ins, 268 del, 920 sub ] exp/tri1_semi_supervised/decode_test/wer_12_0.0
+%WER 41.49 [ 1324 / 3191, 157 ins, 345 del, 822 sub ] exp/tri4_semi_supervision/decode_test/wer_14_0.0
+%WER 41.18 [ 21 / 51, 5 ins, 0 del, 16 sub ] exp/tri5_semi_supervised/decode_answers.si/wer_16_0.0
+%WER 39.05 [ 1246 / 3191, 95 ins, 332 del, 819 sub ] exp/tri2_semi_supervision/decode_test/wer_15_0.0
+%WER 37.01 [ 1181 / 3191, 111 ins, 277 del, 793 sub ] exp/tri2_semi_supervised/decode_test/wer_12_0.5
+%WER 34.78 [ 1114 / 3203, 168 ins, 225 del, 721 sub ] exp/tri5/decode_test/wer_19_1.0
+%WER 34.66 [ 1106 / 3191, 141 ins, 350 del, 615 sub ] exp/tri5_semi_supervision_2/decode_test/wer_13_0.0
+%WER 32.81 [ 1047 / 3191, 91 ins, 367 del, 589 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_test_it4/wer_13_0.0
+%WER 32.62 [ 1041 / 3191, 134 ins, 270 del, 637 sub ] exp/tri5_semi_supervision/decode_test/wer_15_0.0
+%WER 31.96 [ 1020 / 3191, 109 ins, 313 del, 598 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_test_it3/wer_10_0.0
+%WER 31.12 [ 993 / 3191, 110 ins, 293 del, 590 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_test_it2/wer_10_0.0
+%WER 29.87 [ 953 / 3191, 142 ins, 197 del, 614 sub ] exp/tri5_semi_supervised/decode_test/wer_18_0.0
+%WER 29.84 [ 3901 / 13073, 485 ins, 598 del, 2818 sub ] exp/tri5_semi_supervised/decode_answers/wer_16_0.5
+%WER 29.52 [ 942 / 3191, 131 ins, 199 del, 612 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_test_it1/wer_9_0.0
+%WER 29.22 [ 936 / 3203, 162 ins, 135 del, 639 sub ] exp/dnn6_pretrain-dbn_dnn/decode_test/wer_10_1.0
+%WER 28.61 [ 913 / 3191, 129 ins, 163 del, 621 sub ] exp/sgmm5_semi_supervision_2/decode_test/wer_9_0.0
+%WER 27.72 [ 888 / 3203, 160 ins, 128 del, 600 sub ] exp/sgmm5/decode_test/wer_17_0.0
+%WER 27.41 [ 878 / 3203, 110 ins, 183 del, 585 sub ] exp/sgmm5/decode_fmllr_test/wer_16_1.0
+%WER 26.16 [ 838 / 3203, 145 ins, 131 del, 562 sub ] exp/sgmm5_mmi_b0.1/decode_test_it1/wer_18_0.0
+%WER 25.98 [ 832 / 3203, 107 ins, 163 del, 562 sub ] exp/sgmm5_mmi_b0.1/decode_test_it3/wer_20_0.5
+%WER 25.94 [ 831 / 3203, 107 ins, 169 del, 555 sub ] exp/sgmm5_mmi_b0.1/decode_test_it4/wer_20_0.5
+%WER 25.85 [ 828 / 3203, 149 ins, 120 del, 559 sub ] exp/sgmm5_mmi_b0.1/decode_test_it2/wer_15_0.0
+%WER 24.38 [ 778 / 3191, 99 ins, 201 del, 478 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_test_it4/wer_12_0.0
+%WER 24.22 [ 773 / 3191, 95 ins, 200 del, 478 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_test_it3/wer_12_0.0
+%WER 23.97 [ 765 / 3191, 118 ins, 148 del, 499 sub ] exp/sgmm5_semi_supervision/decode_test/wer_11_0.0
+%WER 23.82 [ 760 / 3191, 94 ins, 188 del, 478 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_test_it2/wer_12_0.0
+%WER 23.79 [ 759 / 3191, 97 ins, 169 del, 493 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_test_it1/wer_12_0.0
+%WER 22.38 [ 714 / 3191, 91 ins, 141 del, 482 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_it4/wer_12_0.5
+%WER 22.03 [ 703 / 3191, 92 ins, 148 del, 463 sub ] exp/sgmm5_semi_supervised/decode_test/wer_17_0.0
+%WER 21.69 [ 692 / 3191, 116 ins, 111 del, 465 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_it2/wer_11_0.0
+%WER 21.62 [ 690 / 3191, 96 ins, 126 del, 468 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_it3/wer_14_0.0
+%WER 21.25 [ 678 / 3191, 93 ins, 126 del, 459 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_it1/wer_14_0.0
+%WER 20.78 [ 2693 / 12960, 283 ins, 516 del, 1894 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_answers_it4/wer_14_1.0
+%WER 20.56 [ 2665 / 12960, 299 ins, 482 del, 1884 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_answers_it3/wer_12_1.0
+%WER 19.91 [ 2580 / 12960, 290 ins, 466 del, 1824 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_answers_it2/wer_11_1.0
+%WER 19.31 [ 2502 / 12960, 309 ins, 419 del, 1774 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_answers_it1/wer_11_0.5
+%WER 18.29 [ 2370 / 12960, 317 ins, 399 del, 1654 sub ] exp/sgmm5_semi_supervised/decode_answers/wer_11_0.5
+%WER 129.10 [ 83893 / 64984, 18938 ins, 23081 del, 41874 sub ] exp/sgmm5_mmi_b0.1/decode_sri_gabon_it3/wer_20_1.0
+%WER 129.08 [ 83884 / 64984, 18930 ins, 23127 del, 41827 sub ] exp/sgmm5_mmi_b0.1/decode_sri_gabon_it4/wer_20_1.0
+%WER 129.02 [ 83845 / 64984, 18890 ins, 23122 del, 41833 sub ] exp/sgmm5_mmi_b0.1/decode_sri_gabon_it2/wer_20_1.0
+%WER 129.02 [ 83842 / 64984, 18888 ins, 23086 del, 41868 sub ] exp/sgmm5_mmi_b0.1/decode_sri_gabon_it1/wer_20_1.0
+%WER 128.74 [ 83663 / 64984, 20719 ins, 22972 del, 39972 sub ] exp/tri5_semi_supervised/decode_sri_gabon/wer_20_1.0
+%WER 128.71 [ 83643 / 64984, 20832 ins, 23084 del, 39727 sub ] exp/tri5_semi_supervised/decode_sri_gabon.si/wer_20_1.0
+%WER 127.02 [ 82542 / 64984, 19483 ins, 23425 del, 39634 sub ] exp/tri5/decode_sri_gabon/wer_20_1.0
+%WER 126.76 [ 82376 / 64984, 19248 ins, 23295 del, 39833 sub ] exp/sgmm5/decode_fmllr_sri_gabon/wer_20_1.0
+%WER 126.69 [ 82327 / 64984, 19196 ins, 23309 del, 39822 sub ] exp/sgmm5/decode_sri_gabon/wer_20_1.0
+%WER 126.29 [ 82069 / 64984, 18948 ins, 23521 del, 39600 sub ] exp/tri5/decode_sri_gabon.si/wer_20_1.0
+%WER 122.17 [ 79518 / 65089, 16340 ins, 27735 del, 35443 sub ] exp/tri5_semi_supervision/decode_sri_gabon.si/wer_20_1.0
+%WER 121.86 [ 79320 / 65089, 16043 ins, 27404 del, 35873 sub ] exp/tri1_semi_supervision/decode_sri_gabon/wer_20_1.0
+%WER 121.01 [ 78761 / 65089, 15386 ins, 27515 del, 35860 sub ] exp/tri5_semi_supervision/decode_sri_gabon/wer_20_1.0
+%WER 119.70 [ 77787 / 64984, 14549 ins, 27388 del, 35850 sub ] exp/sgmm5_semi_supervision/decode_sri_gabon/wer_20_1.0
+%WER 119.62 [ 77735 / 64984, 14497 ins, 27461 del, 35777 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_sri_gabon_it1/wer_20_1.0
+%WER 119.56 [ 77697 / 64984, 14442 ins, 27484 del, 35771 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_sri_gabon_it3/wer_20_1.0
+%WER 119.54 [ 77680 / 64984, 14435 ins, 27484 del, 35761 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_sri_gabon_it2/wer_20_1.0
+%WER 119.52 [ 77670 / 64984, 14419 ins, 27498 del, 35753 sub ] exp/sgmm5_semi_supervision_mmi_b0.1/decode_sri_gabon_it4/wer_20_1.0
+%WER 117.68 [ 76598 / 65089, 12998 ins, 29308 del, 34292 sub ] exp/mono_semi_supervision/decode_sri_gabon/wer_20_1.0
+%WER 117.44 [ 76320 / 64984, 13110 ins, 29970 del, 33240 sub ] exp/mono_semi_supervised/decode_sri_gabon/wer_20_1.0
+%WER 115.39 [ 74982 / 64984, 11584 ins, 30617 del, 32781 sub ] exp/tri5_semi_supervision_2/decode_sri_gabon/wer_20_1.0
+%WER 114.57 [ 74453 / 64984, 11177 ins, 29937 del, 33339 sub ] exp/sgmm5_semi_supervision_2/decode_sri_gabon/wer_20_1.0
+%WER 114.41 [ 74346 / 64984, 11038 ins, 30111 del, 33197 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_sri_gabon_it1/wer_20_1.0
+%WER 114.35 [ 74309 / 64984, 11030 ins, 30215 del, 33064 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_sri_gabon_it3/wer_20_1.0
+%WER 114.35 [ 74307 / 64984, 11026 ins, 30203 del, 33078 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_sri_gabon_it2/wer_20_1.0
+%WER 114.32 [ 74290 / 64984, 11028 ins, 30189 del, 33073 sub ] exp/sgmm5_semi_supervision_2_mmi_b0.1/decode_sri_gabon_it4/wer_20_1.0
+%WER 105.41 [ 15091 / 14317, 2817 ins, 3819 del, 8455 sub ] exp/tri5/decode_answers.si/wer_20_1.0
+%WER 104.25 [ 67748 / 64984, 3837 ins, 45236 del, 18675 sub ] exp/tri5_semi_supervision_2/decode_sri_gabon.si/wer_20_1.0
+%WER 104.13 [ 39389 / 37827, 2166 ins, 4183 del, 33040 sub ] exp/tri5_semi_supervised/decode_sri_gabon_read.si/wer_20_1.0
+%WER 104.11 [ 67658 / 64984, 3680 ins, 44021 del, 19957 sub ] exp/tri1_semi_supervision_2/decode_sri_gabon/wer_20_1.0
+%WER 103.37 [ 14799 / 14317, 2846 ins, 3682 del, 8271 sub ] exp/tri5/decode_answers/wer_20_1.0
+%WER 103.14 [ 39015 / 37827, 1944 ins, 2591 del, 34480 sub ] exp/tri5_semi_supervised/decode_sri_gabon_read/wer_20_1.0
+%WER 103.10 [ 66998 / 64984, 2974 ins, 45341 del, 18683 sub ] exp/mono_semi_supervision_2/decode_sri_gabon/wer_20_1.0
+%WER 102.91 [ 66873 / 64984, 2721 ins, 47246 del, 16906 sub ] exp/tri2_semi_supervision_2/decode_sri_gabon/wer_20_1.0
+%WER 102.08 [ 38613 / 37827, 1579 ins, 2191 del, 34843 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_sri_gabon_read_it4/wer_20_1.0
+%WER 102.06 [ 38607 / 37827, 1584 ins, 2198 del, 34825 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_sri_gabon_read_it3/wer_20_1.0
+%WER 102.05 [ 38602 / 37827, 1577 ins, 2216 del, 34809 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_sri_gabon_read_it2/wer_20_1.0
+%WER 102.00 [ 38583 / 37827, 1561 ins, 2232 del, 34790 sub ] exp/sgmm5_semi_supervised/decode_sri_gabon_read/wer_20_1.0
+%WER 101.98 [ 66270 / 64984, 2044 ins, 49862 del, 14364 sub ] exp/tri3_semi_supervision_2/decode_sri_gabon/wer_20_1.0
+%WER 101.97 [ 38571 / 37827, 1549 ins, 2225 del, 34797 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_sri_gabon_read_it1/wer_20_1.0
+%WER 101.89 [ 66212 / 64984, 1966 ins, 50793 del, 13453 sub ] exp/tri4_semi_supervision_2/decode_sri_gabon/wer_20_1.0
+%WER 100.28 [ 14357 / 14317, 853 ins, 6401 del, 7103 sub ] exp/mono_semi_supervision_2/decode_answers/wer_19_1.0
+john@A-TEAM19054:~/yaounde/kaldi-trunk/egs/gp+yaounde$ 
+
+** WAR:
+Since I'm going on leave tomorrow,, I'm writing a WAR today.
+John Morgan achieved a new best word error rate (WER) score for the speech recognizer he is building with the kaldi toolkit on African accented French. 
+The new best WER is 21.25 down from the previous best of 23.79. 
+
+** Performance Objectives
+The form is a nightmare.
+General Objectives:
+ASR Adaptation:
+What is practical?
+What method works in an S2S device?
+What kind of speaker adaptation can be done online?
+The best results we are getting with kaldi are speaker dependent.
+Can these models be used in a S2S device?
+If not, what are the best models for an S2S device?
+Latest Methods:
+Variable computational graphs.
+Learn pycnn.
+How can these methods be used for Army needs?
+kaldi:
+Chain Models.
+nnet2
+nnet3
+
+1. Speech Recognizer Adaptation:
+a. Acoustic Modeling.
+i. European French to African accents
+ii. Standard Arabic to Tunisian accent.
+iii. Neural Network Models:
+A. RBM
+B. TDNN
+C. RNN/LSTM
+D. Chain 
+b. Language Modeling:
+i. Dialogue modeling:
+A. French
+B. Arabic 
+ii. Lexicon expansion
+A. French
+B. Arabic.
+C. Dari
+2. Machine Translation
+a. Variable Computation Graphs
+
 * <2016-10-05 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO finish writing the script to prepare the sri_gabon_read data
@@ -36,7 +254,6 @@ The denlats generation is also running.
 - TODO Write a first pass on objectives
 - TODO Wrap up yaounde answers semi supervised training 
 - TODO Start on sri_gabon_read semi supervised traing.
-
 * <2016-10-04 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Write script to remove asterisks from per_utt file.
