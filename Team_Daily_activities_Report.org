@@ -1,8 +1,8 @@
 * <2016-10-06 Thu>
 ** Goals for Thursday set Wednesday:
-- TODO Write a first pass on objectives
-- TODO Wrap up yaounde answers semi supervised training 
-- TODO Start on sri_gabon_read semi supervised training.
+- DONE Write a first pass on objectives
+- DONE Wrap up yaounde answers semi supervised training 
+- DONE Start on sri_gabon_read semi supervised training.
 
 The sgmm5 denominator lattices generation had finished this morning.
 I started the boosted mutual maximum information (mmi) sgmm training.
@@ -39,7 +39,9 @@ Can I delete the data/sri_gabon_read directory and regenerate it?
 
 I ran the feature extractor for the train_semi_supervised_2 data set.
 
-- all the scores in my experiments
+I fired up a script that is supposed to run the steps  for the second stage of mono to sgmm semi supervised training.
+
+**  all the scores in my experiments
 Below are all the wer scores from the experiments I've run in the past few weeks.
 I'm surprised I got this far without deleteing my working directory.
 I sorted them in reverse numerical order.
@@ -173,7 +175,7 @@ I sorted them in reverse numerical order.
 john@A-TEAM19054:~/yaounde/kaldi-trunk/egs/gp+yaounde$ 
 
 ** WAR:
-Since I'm going on leave tomorrow,, I'm writing a WAR today.
+Since I'm going on leave tomorrow, I'm writing a WAR today.
 John Morgan achieved a new best word error rate (WER) score for the speech recognizer he is building with the kaldi toolkit on African accented French. 
 The new best WER is 21.25 down from the previous best of 23.79. 
 The improvement was obtained by automatically cleaning the transcripts of the data that was transcribed by the recognizer in the previous supervised stage of training. 
@@ -217,6 +219,13 @@ C. Dari
 2. Machine Translation
 a. Variable Computation Graphs
 
+** Goals for When I come back from leave:
+- TODO Finish second stage of semi supervised training.
+- TODO Use best resulting models to transcribe sri_gabon_conv data.
+- TODO Get qualitative evaluation of these transcripts from Steve.
+- TODO Wrap up sgmm ASR system build recipes.
+- TODO Start on neural network approaches to ASR
+- TODO Compare neural network approaches to baseline sgmm approach (this is a long term goal. To be achieved by Xmas)  
 * <2016-10-05 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO finish writing the script to prepare the sri_gabon_read data
