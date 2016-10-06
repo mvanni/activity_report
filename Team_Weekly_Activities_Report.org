@@ -1,3 +1,42 @@
+* <2016-10-06 Thu>
+** Bic Picture
+- TODO Figure out onlline decoding for use on real s2s devices
+- TODO Compare neural network approaches with sgmm baselines
+- TODO Learn about variable computational graphs (pycnn, chainer, etc) 
+- Do bottle neck models on African Accented Speech corpus
+- TODO Chain models in kaldi
+- Do automatic lexicon expansion for French
+- Learn the latest ASR adaptation techniques.
+- Automatically transcribe the sri_gabon conversational data.
+- Move from Statistical MT to Neural MT
+- Move from hmm to dnn ASR.
+
+** Goals for Last Week:
+- TODO Wrap up training and decoding of sgmm models.
+I finished 2 stages of what I think will end up being 3 stages
+The first stage was fully supervised training of acoustic models.
+The second stage was semi supervised.
+I added to the supervised data a corpus of unlabeled answers to questions to speakers who where in the supervised data set.
+Those 2 stages are done.
+Adding the  data in the second stage with automatically generated transcripts to the training data improved the word error rates.
+The third stage is currently running.
+In this stage I am adding a new  corpus of unlabeled read speech.  
+The speakers in this corpus do not overlap with the speakers in previous training sets.
+However, they do overlap with the test set data. This is a problem.
+- TODO Write TR.
+** WAR:
+John Morgan achieved a new best word error rate (WER) score for the speech recognizer he is building with the kaldi toolkit on African accented French. 
+The new best WER is 21.25 down from the previous best of 23.79. 
+The improvement was obtained by automatically cleaning the transcripts of the data that was transcribed by the recognizer in the previous supervised stage of training. 
+** Goals for 2 weeks from now:
+I'm going on leave for 10 days.
+- TODO Write objectives and put them in the form (I'll need help with the form).
+- TODO Finish third stage of semi supervised training.
+- TODO Use best resulting models to transcribe sri_gabon_conv data.
+- TODO Get qualitative evaluation of these transcripts from Steve.
+- TODO Wrap up sgmm ASR system build recipes.
+- TODO Start on neural network approaches to ASR
+- TODO Compare neural network approaches to baseline sgmm approach (this is a long term goal. To be achieved by Xmas)  
 * <2016-09-30 Fri>
 ** Big Picture: a.k.a. Important not due soon
 - Do bottle neck models on African Accented Speech corpus
@@ -10,6 +49,7 @@
 - Move from Statistical MT to Neural MT
 - Move from hmm to dnn ASR.
 ** Goals for Last Week:
+
 - DONE One more pass on accomplishments and top 6 list.
 - TODO Run semi supervised ASR system build wit both answers and sri_gabon data sets.
 The run with sri_gabon semi supervision is still running. 
