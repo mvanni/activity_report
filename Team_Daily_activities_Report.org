@@ -176,6 +176,7 @@ john@A-TEAM19054:~/yaounde/kaldi-trunk/egs/gp+yaounde$
 Since I'm going on leave tomorrow,, I'm writing a WAR today.
 John Morgan achieved a new best word error rate (WER) score for the speech recognizer he is building with the kaldi toolkit on African accented French. 
 The new best WER is 21.25 down from the previous best of 23.79. 
+The improvement was obtained by automatically cleaning the transcripts of the data that was transcribed by the recognizer in the previous supervised stage of training. 
 
 ** Performance Objectives
 The form is a nightmare.
