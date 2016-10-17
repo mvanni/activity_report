@@ -1,3 +1,175 @@
+* <2016-10-17 Mon>
+** Goals set When I went  for leave:
+- TODO Write objectives and put them in the form (I'll need help with the form).
+- TODO Finish second stage of semi supervised training.
+Since the test set overlapswith the sri gabon datathat I am going to use for semi supervised training, I am no longer going to worry about evaluating the test set. 
+I am instead going to concentrate on getting the best transcripts of the sri gabon data.
+As far as the report is concerned, I'm done testing.
+What were the best cores we got?
+WER 21.25  with speaker dependent subspace gaussian mixture models trained with boosted maximum mutual information.
+WER 44.02  with speaker independent triphones.
+- TODO Use best resulting models to transcribe sri_gabon_conv data.
+- TODO Get qualitative evaluation of these transcripts from Steve.
+- TODO Wrap up sgmm ASR system build recipes.
+I started the training of the gp only system.
+- TODO Start on neural network approaches to ASR
+- TODO Compare neural network approaches to baseline sgmm approach (this is a long term goal. To be achieved by Xmas)  
+
+As I'm getting ready to leave the gp only system is on the sgmm training.
+Hopefully, this system will be close to finished tomorrow.
+It still has to generate denominator lattices and do boosted mmi training.
+The gp+yaounde stage 2 system has decoded the answers.
+It is currently decoding the sri_gabon_read data.
+These transcripts will be used as semi supervised data for training a new stage 3 system to decode the sri_gabon_conv data.
+** TR draft
+Bootstrapping A Question Answering Speech
+Recognizer With Read Speech
+John Morgan
+October 17, 2016
+Abstract
+1 Introduction
+Speech to speech (S2S) devices enable dialogues between people who speak
+different languages. S2S devices for communicating between languages L1 and
+L2 consist of three major components: two Automatic Speech Recognizers,
+ASR1 and ASR2 for languages L1 and L2 respectively, also known as Speech
+to text; one Machine Translation (MT) system; and two Speech Synthecizers,
+T2S1 and T2S2 also known as text to speech. Speaker 1 speaks sentence s1
+in language l1. ASR system asr1 converts s1 into text t1 in language l1. t1 is
+translated into t2 in language l2 by machine translation system mt. Text t2 is
+converted into the spoken sentence s2 in language l2 by T2S2.
+The U.S. Army is interested in using high quality S2S technology to help
+communicate with soldiers in allied military units during training missions. Fre-
+quently, these soldiers speak an accented version of a world language like French
+or Arabic. S2S devices are trained on the speech data that is most widely avail-
+able, which is most often the standard version of the language. Accented speech
+can be different enough from the standard speech to make the ASR component
+of an S2S device fail. Adaptation techniques have been used to remedy this
+problem.
+Large amounts of recorded speech is used to train the acoustic models for
+ASR systems. ASR systemss for S2S devices are ideally trained on speech that
+is similar to the task for which the device will be used. Collecting this ideal kind
+of dialogue data is expensive. In order for the data to be used as training data
+for an ASR system it must be transcribed at the word-level. This transcription
+task is a major part of the reason why the data collection is expensive. A way
+to cut back on this cost is to obtain an automatically generated rough draft of
+the dialogue type of speech collected then to have a human correct the rough
+draft.
+If the data being collected comes from a language that lacks a corpus of
+speech data or if the data comes from a highly accented flavor of a well-resourced
+1
+language, automatic transcriptions of the data that are useful for humans to
+correct will not be possible. One way to solve this problem is to collect a small
+corpus of recitations by each speaker as part of the data collection. We will
+refer to this as the read part of the corpus. The other part will be refered to as
+the conversational part. Note that each informant contributes both a read and
+conversational part to the corpus. The small read corpus will not be sufficient to
+serve as a training set for an ASR system to be used in an S2S device. However,
+it can serve as a corpus to train an ASR system that can be used to obtain
+rough draft transcriptions of the conversational speech part. one reason this is
+possible is because as noted above the speakers in the read part are the same
+speakers that are in the conversational part.
+For scientific evaluation, for any ASR task, the speakers in the test set and
+training set are kept disjoint. The ASR taskk becomes much easier when the
+speakers in the training and test sets are the same.
+The cost of building an ASR system with read speech is much lower than
+building one with conversational speech. A pronouncing dictionary is the most
+expensive component of a phone-based ASR system. For a system built with
+read speech there is no cost involved with transcribing the data. The tran-
+scriptions are given by the prompts. The dictionary can be used to obtain a
+phone-level transcription from a word-level transcription.
+Previous work has shown that ASR for accented speech can benefit from the
+use of subspace gaussian mixture models (SGMM)s instead of triphone models.
+One of our contributions in this paper is a improvement to the above work. We
+describe a two step semi supervised process for building an ASR system that
+can be used effectively to get a rough transcription of the conversational part
+of a corpus. The first step uses the read part of the corpus to train acoustic
+models which are used to get a rough transcription of the conversational part
+of the corpus. The second step trains new models by adding to the training
+data the conversational part of the corpus with its automatically transcribed
+labels. We will refer to this as quasi semi supervised training (not quite semi
+supervised), since the speakers in the unlabeled training set are the same as
+those in the supervised read part of the training corpus. There are two benefits
+to this kind of data collection. First, we show that the quasi semi supervised
+training results in lower WER scors. Second, the automatic labeling results in
+a transcription of the conversational part of the corpus that can lower costs for
+human in the loop labeling. The results of this two stage approach to system
+building also supports our recommendation that both read and conversational
+speech be collected in data collection of accented speech.
+2 Methods
+2.1 Data
+Three speech corpora were used in this project.
+The Yaounde corpus: collected in Yaounde ,the capital city of Cameroon. It
+2
+has two parts: the read part which consists of recitations fof prompts and
+the conversational part which consists of answers to questions.
+The French part of the Globalphone corpus: This corpus consists of 100
+native French speakers. They recorded a total of 10478 utterences.
+The Central Accord Corpus: Collected in Gabon from speakers from four
+Central African countries. A small part of the read part of this corpus
+was used as test data.
+2.2 Acoustic Model Training
+All the experiments performed in this project used the kaldi toolkit. The stan-
+dard kaldi recipe framework was used.
+As recommended by the Babel project, we trained models on plp and pitch
+features. The following model building sequence was followed: We tried to
+follow the naming conventions used in the recipes for the babel project.
+Monophones (mono) Flat start and 40 iterations of monophone training,
+with delta-delta features. Per speaker cepstral mean normalization was
+applied.
+Triphones (tri1)
+Triphones (tri2)
+Triphones (tri3)
+Triphones (tri4) Trained with lda and mllt transforms.
+Triphones (tri5)
+Supspace Gaussian Mixture Models (sgmm)
+SGMMs with boosted mmi (sgmmb)
+Two configurations of the training folds of the data were compared.
+GP Consisting of the Globalphone prompts.
+GP + Yaounde Consisting of both the Yaounde and Globalphone prompts.
+The set of unlabeled data consists of answers to questions in the Yaounde
+corpus. The answers were given by the same speakers who made the recitations
+in the read part of the Yaounde corpus.
+After training Boosted MMI SGMM models on the supervised training sets,
+QUASI SEMI SUPERVISED transcriptions were obtained for the Answers by
+decoding with the resulting ASR system. decoding was done with lattice rescor-
+ing, where lattices were generated from a previous SGMM system. Speaker vec-
+tors and MLLR transforms were also used. The Yaounde Answers data together
+with their quasi semi supervised labels were Then appended to the training set
+and the same training regime was run again.
+3
+2.3 Language Model Training
+A three gram statistical language model was trained with srilm on the following
+text data sets:
+• Subtitles
+• GP transcripts
+•
+3 Results
+models trainingspeaker supervisionspeaker GP GP + Yaounde
+tri5 dependent full 34.78
+tri5 independent full 44.02
+tri5 dependent semi 29.87
+tri5 independent semi 46.94
+sgmm dependent semi 21.25
+sgmm dependent full 42.90 25.85
+sgmm independent full
+sgmm independent semi
+Table 1: WER scores for models and training sets.
+sgmm boosted mmi
+4 Discussion
+The Semi supervised method yields gains when speaker dependent models are
+trained. In this case the WER goes down from 25.85 to 21.25. However, when
+speaker independent model training methods were used, we saw the WER go
+up. In the triphone case, the scores went up from 44.02 to 46.94.
+Unfortunately, this observation implies that our method will not be useful
+for our target S2S device application where speaker dependent models are not
+practical. In future work, we plan on exploring neural network models and deep
+learning techniques to extend our ideas to the online decoding scenario.
+4
+** Goals for Tuesday:
+- TODO Write Objectives
+- TODO Finish training gp only system.
+- TODO Write tr.
+- TODO Run stage 3 of the gp+yaounde system which uses the sri_gabon_read transcripts from stage 2.
 * <2016-10-06 Thu>
 ** Goals for Thursday set Wednesday:
 - DONE Write a first pass on objectives
