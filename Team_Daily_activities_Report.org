@@ -12,63 +12,30 @@ I finally got the acoustic model training to start after fixing the data prep sc
 - DONE Start stage 2 of gp system to get semi supervised results
 This was relatively easy.
 - TODO Write TR
-** Performance Objectives
-General Objectives:
-ASR Adaptation:
-What is practical?
-It is not clear that the advances made last year can be implemented in applications that would directly benefit the Army. 
-What method works in an S2S device?
-This year I propose to capitalize on last year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
-What kind of speaker adaptation can be done online?
-The best results we are getting with kaldi are speaker dependent.
-Can these models be used in a S2S device?
-If not, what are the best models for an S2S device?
-I plan on focusing on developing models that result in software that can be demoed with realtime interaction. 
-Latest Methods:
-Variable Structured computational graphs.
-Many models used in NLP applications have a network of connected nodes. 
-Training these networks has been restricted to computing weights associated with the connections. 
-The topology of the networks largely remained fixed. 
-Lately there have been attempts to develop training methods that change the network topology with each training example. 
-I propose to learn to use a toolkit called DyNet that is designed to build systems with variable graph structures. 
+Made some progress. I wrote a first pass on the abstract.
+I filled out some of the arlticle form. It is starting to look like an ARL report.
 
-How can these methods be used for Army needs?
-I plan on using DyNet or a toolkit similar to it to build a Machine Translation System and to compare it with Joshua, Moses, Tensorflow, etc.  
-
-kaldi:
-Chain Models.
-nnet2
-nnet3
-
-1. Speech Recognizer Adaptation:
-a. Acoustic Modeling.
-i. European French to African accents
-ii. Standard Arabic to Tunisian accent.
-iii. Neural Network Models:
-A. RBM
-B. TDNN
-C. RNN/LSTM
-D. Chain 
-b. Language Modeling:
-i. Dialogue modeling:
-A. French
-B. Arabic 
-ii. Lexicon expansion
-A. French
-B. Arabic.
-C. Dari
-2. Machine Translation
-a. Variable Computation Graphs
-
-After I sent out this report to Steve, I continued working on the next stage of semisupervised training.
-The acoustic models have trained through tri5.
-I am making the fst decoding graph as I am laeaving.
-This will also decode the test, answers  and sri_gabon_read sets.
-I have also prepared the sri_gabon_conv data directory.
-I have extracted plp  pitch features from it too.
-The next step will be to decode the sri_gabon_conv set with the tri5 models to get transforms.
-
-
+As I'm getting ready to leave, there are 3 jobs running on the gpu machine:
+- stage 3 of semi supervised training on the gp + yaounde system.
+I am using the transcripts of the sri_gabon_conv obtained from models trained in stage 2 to train new models that will be used to get another (hopefully better) transcription of the sri_gabon_conv data.
+Once this step is finished, I will stop working on this project and move to neural network methods.
+- semi supervised training of the gp system.
+I am using the answers transcripts obtained in the first stage of training the gp system.
+I am only doing this for completeness. 
+We need the results to show that ...
+Well ...
+that collecting the read   part of the corpus makes a difference in WER scores.
+- Tri5 Decoding graph for gp system.
+The gp system training is passed the tri5 stage, so I can start generating the decoding graph for the tri5 models.
+I'll need this graph for decoding with the tri5 models and the sgmm models. 
+** Goals for Thursday:
+- TODO Take another pass on objectives
+- TODO Cyber Challenge mandatory training.
+- TODO Writing pass on TR.
+- TODO Make decoding graph for gp sgmms.
+- TODO Make decoding graphs for gp + yaounde stage 3 system.
+- TODO Decode test data with gp sgmm boosted mmi system to get results to put in report.
+- TODO Decode sri_gabon_conv data with stage 3 gp + yaounde system.
 * <2016-10-18 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Write Objectives
