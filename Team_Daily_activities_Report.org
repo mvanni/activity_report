@@ -1,3 +1,116 @@
+* <2016-10-20 Thu>
+** Goals for Thursday set Wednesday:
+- DONE Take another pass on objectives
+- TODO Cyber Challenge mandatory training.
+Work on this Tomorrow with Steve
+- DONE Writing pass on TR.
+I'm getting references in bibtex .
+I am finding several very relevant papers that were written a couple of years ago for the babel project.
+They deal with semi supervised training a.k.a. self training.
+I need to read these papers carefully.
+ 
+- DONE Make decoding graph for gp sgmms.
+- TODO Make decoding graphs for gp + yaounde stage 3 system.
+I am making  two of them now as I am getting ready to leave.
+The tri5 and sgmm ones.
+- DONE Decode test data with gp sgmm boosted mmi system to get results to put in report.
+Surprisingly, the boosted mmi training and lattice rescoring did not help.
+The best WER was 32.84 by the sgmm system.
+- TODO Decode sri_gabon_conv data with stage 3 gp + yaounde system.
+As I am getting ready to leave, the training script is at the denominator lattice generation step.
+Hopefully, this will finish by tomorrow.
+
+I am done with the experiments  that I plan on reporting on with one possible exception.
+I want to report speaker independent results.
+I can do this for the tri5 systems,but I'm not sure I can do it for the sgmm systems.
+
+After reading some of the semi supervised self training papers, I am wondering if I might change the training regime. 
+those papers work with deep neural networks, so I'm eager to move on and consider this work as a baseline.
+** Objectives Draft
+*** 1. TECHNICAL COMPETENCE
+**** ASR Adaptation:
+It is not clear that the advances made last year can be implemented in applications that would directly benefit the Army. 
+This year I propose to capitalize on last year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
+I plan on focusing on developing models that result in software that can be demoed with realtime interaction. 
+
+**** kaldi:
+
+The ASR systems I have built this year are based on HMMs and SGMMs. 
+I will consider these systems as baselines for the work I will do using neural network models. 
+I will continue developing with the Kaldi ASR toolkit. 
+Specifically, I will implement systems with the following models:
+Bottle Neck Features
+Chain Models
+nnet2
+nnet3
+TDNNs
+RBMs
+Eesen end to end rnn and lstm models.
+
+i. European French to African accents
+ii. Standard Arabic to Tunisian accent.
+b. Language Modeling:
+i. Dialogue modeling:
+A. French
+B. Arabic 
+ii. Lexicon expansion
+A. French
+B. Arabic.
+C. Dari
+2. Machine Translation
+a. Variable Computation Graphs
+
+**** Research:
+***** Variable Structured computational graphs.
+Many models used in NLP applications have a network of connected nodes. 
+Training these networks has been restricted to computing weights associated with the connections. 
+The topology of the networks has largely remained fixed. 
+Lately there have been attempts to develop training methods that change the network topology with each training example. 
+I propose to learn to use a toolkit called DyNet (or one like it) that is designed to build systems with variable graph structures. 
+
+I plan on using DyNet or a toolkit similar to it to build a Machine Translation System and to compare its performance with systems built with other reference toolkits like Joshua, Moses, Tensorflow, etc.  
+*** 2. COOPERATION
+
+Collaborate with colleagues to write papers that report on advances made in our projects. 
+Collaborate with the Basic Research team by contributing speech recognition components to efforts such as the bot language project. 
+*** 3. COMMUNICATIONS
+
+Write weekly activity reports to team members to keep them up to date on my work. 
+Read and comment on reports made by my team and branch mates.
+
+*** 4. MGMT. OF TIME & RESOURCES
+
+Set aside time during the day to practice some kind of  activity for physical fitness. 
+Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
+*** 5. CUSTOMER RELATIONS
+
+Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
+Establish contacts with researchers in the ASR and NLP fields. 
+Establish contacts with s2s device manufacturers.
+
+*** 6. TECH TRANSITION
+
+Contribute recipes for building ASR systems with our corpora to the MFLTS. 
+Transition ASR components and our other products to USA Army Africa and MFLTS.  
+*** 7. DIVERSITY: 
+Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
+*** 8. SHARP: 
+Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
+Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
+Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
+
+Third, Pls be sure to include the fixed values for "Wgt Assigned" for DB-3s to total 100: 
+40 - 15 - 10 - 15 - 10 -10 
+Also, check the box with an X for Tech Competence.
+
+** Goals for Friday:
+- TODO Doctor's appointment in the morning.
+- TODO Cyber Challenge Training
+- TODO Last Pass on objectives
+- TODO Read self training papers.
+- TODO Decode sri_gabon_conv datawith gp+yaounde system and show transcripts to Steve.
+- TODO Write tr.
+- TODO Get bibtex for tr citations.
 * <2016-10-19 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Write objectives
