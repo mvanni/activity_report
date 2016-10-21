@@ -91,7 +91,8 @@ The overlap of speakers in the supervised and unsupervised training data sets yi
 ** Goals for Next Week:
 - TODO Read papers on self training
 - TODO Write TR
-
+- TODO Fiish semi supervised stage 3 with gp + yaounde models
+- TODO Get qualitative evaluation of sri_gabon_conv transcripts produced by stage 3 semi supervised gp+yaounde models. 
 * <2016-10-06 Thu>
 ** Bic Picture
 - TODO Figure out onlline decoding for use on real s2s devices
