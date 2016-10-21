@@ -1,3 +1,18 @@
+* <2016-10-21 Fri>
+** Goals for Friday set Thursday:
+- DONE Doctor's appointment in the morning.
+The doctor scheduled me for an endoscopy on November 1 at 7:30. 
+He scheduled a follow up on Friday, November 18 at 9:15.
+- TODO <2016-11-01 Tue 07:30> Endoscopy at Laurel 
+- TODO <2016-11-18 Fri 09:15> Follow up with Dr. Lawrence
+- TODO Cyber Challenge Training
+- DONE Last Pass on objectives
+- TODO Read self training papers.
+- TODO Decode sri_gabon_conv datawith gp+yaounde system and show transcripts to Steve.
+- TODO Write tr.
+- TODO Get bibtex for tr citations.
+
+
 * <2016-10-20 Thu>
 ** Goals for Thursday set Wednesday:
 - DONE Take another pass on objectives
