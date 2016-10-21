@@ -2,14 +2,14 @@
 ** ASR Adaptation:
 It is not clear that the advances made last year can be implemented in applications that would directly benefit the Army. 
 This year I propose to capitalize on last year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
-I plan on focusing on developing models that result in software that can be demoed with realtime interaction. 
+I will focus on developing models that result in software that can be demoed with realtime interaction. 
 
-** kaldi:
+*** kaldi:
 
 The ASR systems I have built this year are based on HMMs and SGMMs. 
 I will consider these systems as baselines for the work I will do using neural network models. 
 I will continue developing with the Kaldi ASR toolkit. 
-Specifically, I will implement systems with the following models:
+Specifically, I will implement systems with the following kaldi named models:
 Bottle Neck Features
 Chain Models
 nnet2
@@ -18,18 +18,19 @@ TDNNs
 RBMs
 Eesen end to end rnn and lstm models.
 
-i. European French to African accents
-ii. Standard Arabic to Tunisian accent.
-b. Language Modeling:
-i. Dialogue modeling:
-A. French
-B. Arabic 
-ii. Lexicon expansion
-A. French
-B. Arabic.
-C. Dari
-2. Machine Translation
-a. Variable Computation Graphs
+I will replicate for Arabic the work I did last year for French. 
+That is, I will adapt Standard Arabic models to Tunisian accented speech in the same way I adapted European French to African accents.
+I will make an effort to improve the language modeling component of the French and Arabic systems I develop with Kaldi.
+
+*** Lexicon expansion
+I will attempt to use the work done in the Babel project for automatic lexicon expansion in our African French and Tunisian Arabic corpora. 
+This might involve automatic syllable boundary labeling. 
+
+*** Afghan Languages 
+
+I will build ASR systems for Dari and Pashto. 
+I will leverage resources produced by the babel project for Pashto. 
+I will work with Hazrat Ghulam Jahed on building high quality Dari and Pashto ASR systems.
 
 ** Research:
 *** Variable Structured computational graphs.
@@ -69,8 +70,3 @@ Support ARL's diversity initiatives by participating in locally-sponsored divers
 Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
 Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
 Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
-
-Third, Pls be sure to include the fixed values for "Wgt Assigned" for DB-3s to total 100: 
-40 - 15 - 10 - 15 - 10 -10 
-Also, check the box with an X for Tech Competence.
-
