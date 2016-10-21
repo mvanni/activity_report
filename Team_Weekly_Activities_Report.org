@@ -1,3 +1,97 @@
+* Team Weekly Activities Report <2016-10-21 Fri>
+** Big Picture
+** Goals from 2 Weeks ago:
+- DONE Write objectives and put them in the form (I'll need help with the form).
+Not in the form yet
+Here are my objectives:1. TECHNICAL COMPETENCE
+ASR Adaptation:
+It is not clear that the advances made last year can be implemented in applications that would directly benefit the Army. 
+This year I propose to capitalize on last year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
+I will focus on developing models that result in software that can be demoed with realtime interaction. 
+
+kaldi:
+
+The ASR systems I have built this year are based on HMMs and SGMMs. 
+I will consider these systems as baselines for the work I will do using neural network models. 
+I will continue developing with the Kaldi ASR toolkit. 
+Specifically, I will implement systems with the following kaldi named models:
+Bottle Neck Features
+Chain Models
+nnet2
+nnet3
+TDNNs
+RBMs
+Eesen end to end rnn and lstm models.
+
+I will replicate for Arabic the work I did last year for French. 
+That is, I will adapt Standard Arabic models to Tunisian accented speech in the same way I adapted European French to African accents.
+I will make an effort to improve the language modeling component of the French and Arabic systems I develop with Kaldi.
+
+Lexicon expansion
+I will attempt to use the work done in the Babel project for automatic lexicon expansion in our African French and Tunisian Arabic corpora. 
+This might involve automatic syllable boundary labeling. 
+
+Afghan Languages 
+
+I will build ASR systems for Dari and Pashto. 
+I will leverage resources produced by the babel project for Pashto. 
+I will work with Hazrat Ghulam Jahed on building high quality Dari and Pashto ASR systems.
+
+Research:
+Variable Structured computational graphs.
+Many models used in NLP applications have a network of connected nodes. 
+Training these networks has been restricted to computing weights associated with the connections. 
+The topology of the networks has largely remained fixed. 
+Lately there have been attempts to develop training methods that change the network topology with each training example. 
+I propose to learn to use a toolkit called DyNet (or one like it) that is designed to build systems with variable graph structures. 
+
+I plan on using DyNet or a toolkit similar to it to build a Machine Translation System and to compare its performance with systems built with other reference toolkits like Joshua, Moses, Tensorflow, etc.  
+2. COOPERATION
+
+Collaborate with colleagues to write papers that report on advances made in our projects. 
+Collaborate with the Basic Research team by contributing speech recognition components to efforts such as the bot language project. 
+3. COMMUNICATIONS
+
+Write weekly activity reports to team members to keep them up to date on my work. 
+Read and comment on reports made by my team and branch mates.
+
+4. MGMT. OF TIME & RESOURCES
+
+Set aside time during the day to practice some kind of  activity for physical fitness. 
+Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
+5. CUSTOMER RELATIONS
+
+Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
+Establish contacts with researchers in the ASR and NLP fields. 
+Establish contacts with s2s device manufacturers.
+
+6. TECH TRANSITION
+
+Contribute recipes for building ASR systems with our corpora to the MFLTS. 
+Transition ASR components and our other products to USA Army Africa and MFLTS.  
+7. DIVERSITY: 
+Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
+8. SHARP: 
+Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
+Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
+Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
+
+- DONE Finish third stage of semi supervised training.
+Training is done. Decoding is ongoing.
+- TODO Use best resulting models to transcribe sri_gabon_conv data.
+- TODO Get qualitative evaluation of these transcripts from Steve.
+- TODO Wrap up sgmm ASR system build recipes.
+- TODO Start on neural network approaches to ASR
+- TODO Compare neural network approaches to baseline sgmm approach (this is a long term goal. To be achieved by Xmas)  
+** WAR:
+John Morgan is finishing up a first stage in his project on automatic speech recognition for African accented French. 
+He is reading the research literature on previous work and writing a report. 
+He believes that one innovation in his work is a finding that the problem previous research has investigated concerning conflicts between discriminative training algorithms for ASR acoustic models and self training strategies can be dealt with by ensuring that informants contribute a small amount of read speech during data collection. 
+The overlap of speakers in the supervised and unsupervised training data sets yields an adequate reduction in uncertainty   generated by inaccurate labeling for discriminative training methods to produce models that lower word error rates. 
+** Goals for Next Week:
+- TODO Read papers on self training
+- TODO Write TR
+
 * <2016-10-06 Thu>
 ** Bic Picture
 - TODO Figure out onlline decoding for use on real s2s devices
@@ -10,7 +104,6 @@
 - Automatically transcribe the sri_gabon conversational data.
 - Move from Statistical MT to Neural MT
 - Move from hmm to dnn ASR.
-
 ** Goals for Last Week:
 - TODO Wrap up training and decoding of sgmm models.
 I finished 2 stages of what I think will end up being 3 stages
