@@ -14,8 +14,12 @@ Now that I write this, I realize that this is probably not a good idea, since th
 I really probably should start at tri5 semi supervised.
 Yeah ... I messed up.
 I am using the semi_supervised_3 models with the original gp training data set.
+Before I leave I'll restart the scripts using the correct data and models.
 
 There's a paper by Karel Vesely about this system.
+** Goals for Wednesday:
+- TODO Write tr.
+- TODO Run hybrid dnn/hmm system with discriminative sequence training.
 
 
 * Team DAR <2016-10-24 Mon>
