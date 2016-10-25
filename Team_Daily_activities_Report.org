@@ -1,3 +1,42 @@
+* Team DAR <2016-10-25 Tue>
+** Goals for Tuesday set Monday:
+- DONE Cyber Security Awareness Challenge mandatory training. Try to resume where I left off. I was working on the home security.
+Finally got this done thanks to Steve.
+- TODO Write TR.
+- TODO Start investigating what step to take next: chain models, nnet2, nnet2 online, nnet3 ...
+I found some scripts for nnet. 
+This is a hybrid dnn/hmm system.
+So the dnn replaces the gmm emission probability distribution. 
+I've run this before.
+Now I'm running it starting on the last tri5 models I produced. 
+tri5 semi supervised 3.
+Now that I write this, I realize that this is probably not a good idea, since these models have seen the test data.
+I really probably should start at tri5 semi supervised.
+Yeah ... I messed up.
+I am using the semi_supervised_3 models with the original gp training data set.
+
+There's a paper by Karel Vesely about this system.
+
+
+* Team DAR <2016-10-24 Mon>
+**  Goals for Monday set last Friday:
+- TODO Cyber Challenge Mandatory Training
+I've spent the afternoon trying to complete this training.
+I am stuck again.
+
+- TODO Read self training papers
+- DON Finish work on gp+yaounde  system training and decoding.
+The current project is done.
+- TODO Show best transcripts to Steve for qualitative  evaluation.
+- TODO Write tr
+
+I spent most of the morning cleaning up the gp+yaounde directory.
+I put all the scripts that run commands into one run.sh script.
+
+** Goals for Tuesday:
+- TODO Cyber Security Awareness Challenge mandatory training. Try to resume where I left off. I was working on the home security.
+- TODO Write TR.
+- TODO Start investigating what step to take next: chain models, nnet2, nnet2 online, nnet3 ...
 * <2016-10-21 Fri>
 ** Goals for Friday set Thursday:
 - DONE Doctor's appointment in the morning.
