@@ -1,3 +1,26 @@
+* Team DAR <2016-10-26 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Write tr.
+- TODO Run hybrid dnn/hmm system with discriminative sequence training.
+It is still running.
+
+I read the paper for Karel Vesely's nnet setup.
+I also started reading the paper for the nnet2 setup.
+It has a section on online system.
+- online decoding bad news
+ I ran a script that does online decoding for the gmm system.
+I started with the tri5_semi_supervised models.
+It does some preparation then decodes.
+The bad news is that the WER is 100 and 99 percent.
+- nnet training
+As I'm getting ready to leave the nnet system build is at iteration 14 of training.
+
+** Goals for Thursday
+- TODO Write tr.
+- TODO Chec if there is a problem with the gmm online decoding. Why is it so bad?
+- TODO Take next step on dnn nnet system.
+- TODO Setup nnet2 online training
+
 * Team DAR <2016-10-25 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Cyber Security Awareness Challenge mandatory training. Try to resume where I left off. I was working on the home security.
@@ -20,7 +43,6 @@ There's a paper by Karel Vesely about this system.
 ** Goals for Wednesday:
 - TODO Write tr.
 - TODO Run hybrid dnn/hmm system with discriminative sequence training.
-
 
 * Team DAR <2016-10-24 Mon>
 **  Goals for Monday set last Friday:
