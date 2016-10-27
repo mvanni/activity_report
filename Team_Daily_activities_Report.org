@@ -1,3 +1,30 @@
+* Team DAR <2016-10-27 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Write tr.
+- TODO Chec if there is a problem with the gmm online decoding. Why is it so bad?
+- TODO Take next step on dnn nnet system. I need to get a unigram lm somehow.
+I run the script that makes the unigram lm.
+There is a line that checks if the l times g fst is stochastic.
+The answer is no.
+The script says that this is an error.
+I'm not sure this is a problem.
+The script was not set to exit with an error status of 1, so I'm not sure if the fst is supposed to be stochastic or not.
+Anyway, I'm moving on to make the fst graph.
+The fst graph was made.
+I am decoding the test set with the unigram lm.
+The WER was 68.51.
+I think this is run to get many alternative paths in the lattice of hypothesis.
+When I ran the decoding yesterday before leaving with the pretrained dnn models the WER was 22.53
+now I'm aligning with the pretrained dnn models.
+Alignment finished. I see warnings in the log files.
+I started denominator  lattice generation.
+I think this will take a while.
+- TODO Setup nnet2 online training
+** Goals for Friday:
+- TODO Write tr
+- TODO Read more papers on dnn and sgmm accent adaptation.
+- TODO Run smbr training on dnn models.
+
 * Team DAR <2016-10-26 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Write tr.
@@ -18,7 +45,7 @@ As I'm getting ready to leave the nnet system build is at iteration 14 of traini
 ** Goals for Thursday
 - TODO Write tr.
 - TODO Chec if there is a problem with the gmm online decoding. Why is it so bad?
-- TODO Take next step on dnn nnet system.
+- TODO Take next step on dnn nnet system. I need to get a unigram lm somehow.
 - TODO Setup nnet2 online training
 
 * Team DAR <2016-10-25 Tue>
