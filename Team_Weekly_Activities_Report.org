@@ -1,3 +1,16 @@
+* Team WAR <2016-10-28 Fri>
+** Big Picture
+**  Goals for Last Week:
+- TODO Read papers on self training
+- TODO Write TR
+- DONE Fiish semi supervised stage 3 with gp + yaounde models
+- TODO Get qualitative evaluation of sri_gabon_conv transcripts produced by stage 3 semi supervised gp+yaounde models. 
+** WAR:
+John Morgan continued working on his project to develop Automatic Speech Recognizers  for African accented speech. 
+He comleted the development of ASR systems based on Subspace  Gaussian Mixture Models (SGMM)s with semi supervised self training and started working on systems based on Deep Neural Network (DNN) models. 
+He is currently working on a DNN system that is pretrained with Restricted Boltzmann Machine models. 
+These models build on the previous work he did with SGMMs. 
+
 * Team Weekly Activities Report <2016-10-21 Fri>
 ** Big Picture
 ** Goals from 2 Weeks ago:
