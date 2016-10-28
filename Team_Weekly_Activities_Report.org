@@ -1,16 +1,30 @@
 * Team WAR <2016-10-28 Fri>
 ** Big Picture
-**  Goals for Last Week:
+- Adaptation of Deep Neural Network ASR systems to accented speech
+- Onlline/realtime ASR 
+- Variable Structured Computation Graph Deep Neural Networks
+- learn to use chainer
+<**  Goals for Last Week:
 - TODO Read papers on self training
 - TODO Write TR
-- DONE Fiish semi supervised stage 3 with gp + yaounde models
-- TODO Get qualitative evaluation of sri_gabon_conv transcripts produced by stage 3 semi supervised gp+yaounde models. 
+Made a major pass.
+Steve needs to work on it next week.
+- DONE Finish semi supervised stage 3 with gp + yaounde models
+I feel good about having finished this part of the project.
+- DONE Get qualitative evaluation of central accord conv transcripts produced by stage 3 semi supervised gp+yaounde models. 
+Steve and I made a pass on this. 
+It would be good to get some written comments from Steve on what he thinks.
 ** WAR:
-John Morgan continued working on his project to develop Automatic Speech Recognizers  for African accented speech. 
-He comleted the development of ASR systems based on Subspace  Gaussian Mixture Models (SGMM)s with semi supervised self training and started working on systems based on Deep Neural Network (DNN) models. 
+John Morgan continued working on his project to develop Automatic Speech Recognizers  (ASR) for African accented speech. 
+He completed the development of ASR systems based on Subspace  Gaussian Mixture Models (SGMM)s with semi supervised self training and started working on systems based on Deep Neural Network (DNN) models. 
 He is currently working on a DNN system that is pretrained with Restricted Boltzmann Machine models. 
 These models build on the previous work he did with SGMMs. 
-
+** Goals for Next Week:
+- TODO Write TR with Steve.
+- TODO RBM Pretrained DNN for gp+yaounde
+- TODO nnet2 for gp+yaounde
+- TODO Finish sgmm gp+yaounde kaldi recipe 
+- TODO Get Steve up and  running with the recipe in his environment.
 * Team Weekly Activities Report <2016-10-21 Fri>
 ** Big Picture
 ** Goals from 2 Weeks ago:
