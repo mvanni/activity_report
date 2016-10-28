@@ -1,3 +1,25 @@
+* Team DAR <2016-10-28 Fri>
+**  Goals for Friday set Thursday:
+- TODO Write tr
+I'm ready to had it off to Steve.
+- TODO Read more papers on dnn and sgmm accent adaptation.
+- TODO Run smbr training on dnn models.
+The denominator lattice generation script is still running.
+I'm getting ready to leave and it is still running.
+
+I had started the nnet2 training recipe.
+I started it from the  tri5_semi_supervised directory so I could compare results with the sgmm system.
+The training is on iteration 150 as I'm getting ready to leave.
+It went all the way to iteration 159.
+This seems like a lot.
+And it looks like the training finished.
+I'm not sure what is the next step.
+** Goals for Monday:
+- TODO Finish preparing recipe for gp+yaounde sgmm.
+- TODO Get Steve up and running with recipe in his environment.
+- TODO Make a pass on TR.
+- TODO nnet2 dnn for gp+yaounde.
+
 * Team DAR <2016-10-27 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Write tr.
@@ -24,8 +46,7 @@ I think this will take a while.
 - TODO Write tr
 - TODO Read more papers on dnn and sgmm accent adaptation.
 - TODO Run smbr training on dnn models.
-
-* Team DAR <2016-10-26 Wed>
+ Team DAR <2016-10-26 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Write tr.
 - TODO Run hybrid dnn/hmm system with discriminative sequence training.
