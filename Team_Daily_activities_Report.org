@@ -1,3 +1,50 @@
+* <2016-10-31 Mon>
+** Goals for Monday set Friday:
+- DONE Finish preparing recipe for gp+yaounde sgmm.
+I think this is ready.
+- TODO Get Steve up and running with recipe in his environment.
+Steve is now a collaborator on my yaounde repo.
+- TODO Make a pass on TR.
+- TODO nnet2 dnn for gp+yaounde.
+
+
+- dnn
+I've built 2 dnn systems with different methods.
+I'm not sure I've reached the best results with these systems.
+1. dnn6 Pretrained dbn 
+This is my understanding of how to explain the name.
+dnn stands for deep neural network
+The 6 is there because we build on the tri5 system.
+dbn stands for deep belief network.
+My understanding is that a deep belief network is another  name for a restricted boltzmann machine.
+I think Hinton is to blame for the name.
+Pretrain is there because the dbn is used for pretraining.
+Here is the comments in the kaldi script: 
+train a DNN on top of fMLLR features. 
+The training is done in 3 stages,
+1) RBM pre-training:
+    unsupervised   train stack of RBMs, 
+    starting point for frame cross-entropy trainig.
+2) frame cross-entropy training:
+objective:  classify frames to correct pdfs.
+3) sequence-training optimizing sMBR: 
+objective:  emphasize state-sequences with better 
+frame accuracy w.r.t. reference alignment.
+
+After steps 1 and 2, I decoded the test set and I got a WER of 22.53.
+After step 3 I am getting really bad WER scores -- in the 90s.
+Something must be wrong.
+2. p-norm tri6 nnet2
+Best WER: 22.88
+
+3. online nnet2
+The best I've done so far is a WER of 53.46 and this is not even real online yet. It apparently is only a simulation of online decoding.
+
+I'm looking into eesen again.
+** Goals for Tuesday:
+- TODO Go to hospital for endoscopy
+- TODO Data preparation for eesen gp+yaounde.
+
 * Team DAR <2016-10-28 Fri>
 **  Goals for Friday set Thursday:
 - TODO Write tr
