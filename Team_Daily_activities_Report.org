@@ -27,9 +27,15 @@ e.g.
 niger_west_african_fr/sys1/sys1_1_001.wav
 So this would be the path to the file of the 001 recording for speaker 1 on device sys1.
 
+I just saw Steve's message about the speakers in the test set.
+I'll ask Justin to remove these speakers from the training corpous on /mnt/corpora.
+I think it would not take much effort to extend the current test set to the entire set of recordings from these speakers.
+Maybe Steve has a reason for not doing this.
+
 ** Goals for Thursday
 - TODO Put the Niger corpus in kaldi format.
 - TODO Setup eesen for gp+yaounde 
+- TODO Given Steve's identification of the speakers in the sri_gabon corpus that are in the test set, remove these speakers from the training data corpus.
 
 * Team DAR <2016-10-31 Mon>
 ** Goals for Monday set Friday:
