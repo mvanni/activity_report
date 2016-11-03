@@ -1,3 +1,37 @@
+* DAR <2016-11-03 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Put the Niger corpus in kaldi format.
+I spent the whole afternoon doing this.
+I have listened a second time to all the recordings in the Niger West African corpus.
+I had skipped some files yesterday.
+There are a couple of recordings with a rooster in the background.
+I've renamed the files and directories as I had planned yesterday.
+I also put the device transcripts for each speaker in their directory.
+It seems like there might be some directories where there are more transcripts than recordings.
+But I feel pretty confident that there is some kind of transcript for each recording that I kept in the directories.
+I separated out more noise files and files with Eddies voice.
+There was one recording of only a cough.
+There were a couple of recordings where the speaker spoke in English.
+I separated out those too.
+
+
+- TODO Setup eesen for gp+yaounde 
+no work on this today.
+
+- TODO Given Steve's identification of the speakers in the sri_gabon corpus that are in the test set, remove these speakers from the training data corpus.
+I spent the morning working on this.
+I had to do a search of my own.
+The names we had given to the speakers in the test set did not align with the sri_gabon speakers names.
+There was a case or two where the country was wrong.
+There is a speaker that is not in the sri_gabon directory.
+Justin moved the data with the new names to  the /mnt/corpora/central_accord.
+He also moved the directories  containing the test data from the sri_gabon directory to a directory called held_out.
+
+** Goals for Friday:
+- TODO  Incorporate Steve's section on the Lexicon into my latex version of the tr.
+- TODO Take another pass on the tr.
+- TODO Setup eesen scripts for gp+yaounde.
+
 * DAR <2016-11-02 Wed>
 ** Goals for Tuesday set Monday:
 - DONE Go to hospital for endoscopy
