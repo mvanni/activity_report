@@ -8,8 +8,18 @@
 - TODO Write TR with Steve.
 We made some progress.
 - TODO RBM Pretrained DNN for gp+yaounde
+I get a WER of 22.53, which is not as good as the sgmm system at 21.25.
+But this is before doing discriminative sequence to sequence training.
+When I do that, I get really bad results (WERs in the 90s).
+So I'm assuming I'm doing something wrong.
 - TODO nnet2 for gp+yaounde
-- TODO Finish sgmm gp+yaounde kaldi recipe 
+I started doing p-norm nnet2 online development.
+The best WER I've gotten so far is 22.88.
+
+I started working on nnet2 online, the best WER I've gotten so far is 53.46.
+This might be correct since online decoding cannot be speaker dependent like the system that gave me the 21.25 WER (as far as I know).
+- DONE Finish sgmm gp+yaounde kaldi recipe 
+We will want to add the test on the Niger corpus.
 - TODO Get Steve up and  running with the recipe in his environment.
 We started this.
 
@@ -19,6 +29,13 @@ This corpus is made up of 1000 recordings from 23 speakers from the West African
 The corpus has transcriptions for each recording made by the speech to speech (S2S) device that was used to collect the data. 
 Dr. Steve LaRocca and Morgan plan on using their recently developed ASR system to render their own transcription of the data and compare it to those produce by the S2S device.
  
+** Goals for Next Week:
+- TODO Take another pass on the tr
+- TODO Run gp+yaounde on niger corpus and compare it to the s2s device transcripts.
+- TODO Setup eesen on gp + yaounde training set.
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+
 * Team WAR <2016-10-28 Fri>
 ** Big Picture
 - Adaptation of Deep Neural Network ASR systems to accented speech
