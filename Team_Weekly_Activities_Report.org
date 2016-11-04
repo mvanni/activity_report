@@ -1,10 +1,31 @@
+* Team WAR <2016-11-04 Fri>
+** Big Picture
+- Adaptation of Deep Neural Network ASR systems to accented speech
+- Onlline/realtime ASR 
+- Variable Structured Computation Graph Deep Neural Networks
+- learn to use chainer
+** Goals for Last Week:
+- TODO Write TR with Steve.
+We made some progress.
+- TODO RBM Pretrained DNN for gp+yaounde
+- TODO nnet2 for gp+yaounde
+- TODO Finish sgmm gp+yaounde kaldi recipe 
+- TODO Get Steve up and  running with the recipe in his environment.
+We started this.
+
+** WAR:
+John Morgan spent most of this week on data preparation of a new corpus of African accented French speech. 
+This corpus is made up of 1000 recordings from 23 speakers from the West African country Niger. 
+The corpus has transcriptions for each recording made by the speech to speech (S2S) device that was used to collect the data. 
+Dr. Steve LaRocca and Morgan plan on using their recently developed ASR system to render their own transcription of the data and compare it to those produce by the S2S device.
+ 
 * Team WAR <2016-10-28 Fri>
 ** Big Picture
 - Adaptation of Deep Neural Network ASR systems to accented speech
 - Onlline/realtime ASR 
 - Variable Structured Computation Graph Deep Neural Networks
 - learn to use chainer
-<**  Goals for Last Week:
+**  Goals for Last Week:
 - TODO Read papers on self training
 - TODO Write TR
 Made a major pass.
