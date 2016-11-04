@@ -1,3 +1,19 @@
+* DAR <2016-11-04 Fri>
+** Goals for Friday set Thursday:
+- DONE  Incorporate Steve's section on the Lexicon into my latex version of the tr.
+There might be some problems with accents and apostrophes.
+- TODO Take another pass on the tr.
+- DONE Setup eesen scripts for gp+yaounde.
+I got through the basic data preparation step, including the Niger corpus.
+I even extracted the filterbank features.
+
+** Goals for Monday:
+- TODO Take another pass on the tr
+- TODO Run gp+yaounde on niger corpus and compare it to the s2s device transcripts.
+- TODO Setup eesen on gp + yaounde training set.
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+
 * DAR <2016-11-03 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Put the Niger corpus in kaldi format.
@@ -31,6 +47,7 @@ He also moved the directories  containing the test data from the sri_gabon direc
 - TODO  Incorporate Steve's section on the Lexicon into my latex version of the tr.
 - TODO Take another pass on the tr.
 - TODO Setup eesen scripts for gp+yaounde.
+** Goals for Monday:
 
 * DAR <2016-11-02 Wed>
 ** Goals for Tuesday set Monday:
