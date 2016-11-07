@@ -1,3 +1,38 @@
+* DAR <2016-11-07 Mon>
+**  Goals for Monday set Friday:
+- TODO Take another pass on the tr
+- TODO Run gp+yaounde on niger corpus and compare it to the s2s device transcripts.
+This is taking longer than I thought.
+I spent most of the day writing the data prep script for the central_accord + niger test data set.
+One problem was that the prompts files that I write are concatenated, so I have to delete them before I write them.
+As I'm getting ready to leave, it looks like I have this script running.
+I'm repeating the test  I ran before with the gp+yaounde system on the concatenation of the central accord and niger test data sets.
+I realize now that what I really want is to only test on the niger data.
+I'll let this run and I'll change it tomorrow.
+- TODO Setup eesen on gp + yaounde training set.
+I spent time working on training the lm
+I had a bug that I just finally fixed, I was missing the final e on the word yaounde in one of my scripts.
+I'm only doing the between 6 and 20 tokens restriction for this lm. 
+I also worked on the lexicon for eesen char. 
+I think this takes all the words in the training corpus-- which includes subs -- and makes a word to character map for each.
+It looks like this ran successfully.
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+
+
+I got a flu shot today.
+I also got some blood extracted.
+I guess they'll test it for cholesterol and sugar. 
+My blood pressure was 125 over 87 ( a little high).
+It was 147 over 90 the first time they tried.
+** Goals for Tuesday:
+- TODO Vote
+- TODO Run yaounde + gp systems tests only on niger corpus.
+- TODO Train the yaound+gp eesen char system with the lm and lexicon I prepared today.
+- TODO take another pass on the tr.
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+
 * DAR <2016-11-04 Fri>
 ** Goals for Friday set Thursday:
 - DONE  Incorporate Steve's section on the Lexicon into my latex version of the tr.
