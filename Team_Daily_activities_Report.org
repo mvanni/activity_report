@@ -1,3 +1,58 @@
+* DAR <2016-11-08 Tue>
+** oals for Tuesday set Monday:
+- DONE Vote
+- DONE Run yaounde + gp systems tests only on niger corpus.
+It turns out I don't have to do this.
+I don't have reference transcripts yet, so I can't get real scores.
+Below I included the WER scores taken between the output of our system and the device system.
+I'm running the tests again anyway with only the niger data to check if the reference labels line up.
+- TODO Train the yaound+gp eesen char system with the lm and lexicon I prepared today.
+I made some progress on this.
+As I'm getting ready to leave, I am trying to get the lang preparation script to run.
+I have to get 2 python scripts working in a script I have called 1lang.sh.
+The next step is training.
+- DONE take another pass on the tr.
+Steve wrote more on the lm section.
+I made some changes in the intro and discussion sections.
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+
+- Yaound + gp systems test on central accord + niger test set:
+%WER 48.29 [ 5740 / 11887, 415 ins, 1516 del, 3809 sub ] exp/sgmm5_semi_supervised_3/decode_test_central_accord+niger/wer_11_0.0
+%WER 48.57 [ 5773 / 11887, 407 ins, 1528 del, 3838 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_central_accord+niger_it1/wer_10_0.0
+%WER 48.61 [ 5778 / 11887, 433 ins, 1501 del, 3844 sub ] exp/sgmm5_semi_supervised_2/decode_test_central_accord+niger/wer_10_0.0
+%WER 48.80 [ 5801 / 11887, 388 ins, 1587 del, 3826 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_central_accord+niger_it2/wer_11_0.0
+%WER 48.80 [ 5801 / 11887, 413 ins, 1535 del, 3853 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_central_accord+niger_it1/wer_10_0.0
+%WER 48.99 [ 5824 / 11887, 370 ins, 1652 del, 3802 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_central_accord+niger_it2/wer_14_0.0
+%WER 49.02 [ 5827 / 11887, 398 ins, 1602 del, 3827 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_central_accord+niger_it3/wer_11_0.0
+%WER 49.03 [ 5828 / 11887, 399 ins, 1592 del, 3837 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_central_accord+niger_it4/wer_11_0.0
+%WER 49.07 [ 5833 / 11887, 380 ins, 1620 del, 3833 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_central_accord+niger_it3/wer_10_0.5
+%WER 49.10 [ 5836 / 11887, 335 ins, 1722 del, 3779 sub ] exp/tri5_semi_supervised_3/decode_test_central_accord+niger/wer_16_1.0
+%WER 49.13 [ 5840 / 11887, 375 ins, 1659 del, 3806 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_central_accord+niger_it4/wer_14_0.0
+%WER 49.50 [ 5884 / 11887, 408 ins, 1592 del, 3884 sub ] exp/tri5_semi_supervised_2/decode_test_central_accord+niger/wer_18_0.0
+%WER 49.64 [ 5901 / 11887, 354 ins, 1644 del, 3903 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_central_accord+niger_it2/wer_15_0.5
+%WER 49.64 [ 5901 / 11887, 359 ins, 1645 del, 3897 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_central_accord+niger_it1/wer_15_0.5
+%WER 49.73 [ 5911 / 11887, 389 ins, 1601 del, 3921 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_central_accord+niger_it3/wer_13_0.5
+%WER 49.83 [ 5923 / 11887, 363 ins, 1647 del, 3913 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_central_accord+niger_it4/wer_15_0.5
+%WER 49.89 [ 5930 / 11887, 363 ins, 1653 del, 3914 sub ] exp/sgmm5_semi_supervised/decode_test_central_accord+niger/wer_15_0.5
+%WER 51.79 [ 6156 / 11887, 450 ins, 1651 del, 4055 sub ] exp/sgmm5_mmi_b0.1/decode_test_central_accord+niger_it2/wer_12_0.5
+%WER 51.84 [ 6162 / 11887, 447 ins, 1655 del, 4060 sub ] exp/sgmm5_mmi_b0.1/decode_test_central_accord+niger_it1/wer_12_0.5
+%WER 51.87 [ 6166 / 11887, 502 ins, 1598 del, 4066 sub ] exp/sgmm5_mmi_b0.1/decode_test_central_accord+niger_it3/wer_13_0.0
+%WER 52.03 [ 6185 / 11887, 482 ins, 1635 del, 4068 sub ] exp/sgmm5_mmi_b0.1/decode_test_central_accord+niger_it4/wer_14_0.0
+%WER 52.19 [ 6204 / 11887, 537 ins, 1580 del, 4087 sub ] exp/sgmm5/decode_fmllr_test_central_accord+niger/wer_14_0.0
+%WER 52.23 [ 6209 / 11887, 541 ins, 1542 del, 4126 sub ] exp/sgmm5/decode_test_central_accord+niger/wer_13_0.0
+%WER 53.25 [ 6330 / 11887, 454 ins, 1771 del, 4105 sub ] exp/tri5_semi_supervised/decode_test_central_accord+niger/wer_18_0.5
+%WER 54.05 [ 6425 / 11887, 365 ins, 1826 del, 4234 sub ] exp/tri5_semi_supervised_3/decode_test_central_accord+niger.si/wer_15_1.0
+%WER 54.58 [ 6488 / 11887, 367 ins, 1926 del, 4195 sub ] exp/tri5_semi_supervised_2/decode_test_central_accord+niger.si/wer_19_1.0
+%WER 54.95 [ 6532 / 11887, 414 ins, 1906 del, 4212 sub ] exp/tri5/decode_test_central_accord+niger/wer_18_1.0
+%WER 62.02 [ 7372 / 11887, 571 ins, 2010 del, 4791 sub ] exp/tri5_semi_supervised/decode_test_central_accord+niger.si/wer_13_0.5
+%WER 63.31 [ 7526 / 11887, 570 ins, 2077 del, 4879 sub ] exp/tri5/decode_test_central_accord+niger.si/wer_13_1.0
+
+The WER scores range from 63.31 to 48.29
+
+** Goals for Wednesday:
+- TODO Train eesen gp+yaounde system (work on 1lang.sh and python scripts).
+- TODO another pass on the tr. 
 * DAR <2016-11-07 Mon>
 **  Goals for Monday set Friday:
 - TODO Take another pass on the tr
@@ -32,6 +87,7 @@ It was 147 over 90 the first time they tried.
 - TODO take another pass on the tr.
 - TODO Do speaker independent or country dependent version of gp+younde sgmm system.
 - TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+- TODO Another pass on the tr.
 
 * DAR <2016-11-04 Fri>
 ** Goals for Friday set Thursday:
