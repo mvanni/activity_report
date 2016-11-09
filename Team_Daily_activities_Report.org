@@ -6,6 +6,22 @@ They make the label files.
 I updated the command lines from the latest eesen in the repo.
 Training fails. I'm not sure why.
 - TODO another pass on the tr. 
+- Speech package for voxtec
+I spent the day putting together the wav data and labels for the Yaound Answers and Read dataset and the Central Accord data.
+The package is at:
+/home/data/ateam/African_speech
+on the GPU machine.
+
+I  included neither the central accord test set nor the niger test.
+I could do those tomorrow morning if needed.
+I probably want to delete the 12 files Steve commented on.
+I think we should delete them from the /mnt/corpora disk.
+
+** Goals for Thursday:
+- TODO Package the niger and central accord test sets if Steve wants them.
+- TODO Take a pass on the TR.
+- TODO Debug gp+younde eesen char system 
+- TODO Attend the Voxtec meeting.
 
 * DAR <2016-11-08 Tue>
 ** oals for Tuesday set Monday:
@@ -113,23 +129,6 @@ I even extracted the filterbank features.
 - TODO Setup eesen on gp + yaounde training set.
 - TODO Do speaker independent or country dependent version of gp+younde sgmm system.
 - TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
-
-- Speech package for voxtec
-I spent the day putting together the wav data and labels for the Yaound Answers and Read dataset and the Central Accord data.
-The package is at:
-/home/data/ateam/African_speech
-on the GPU machine.
-
-I  included neither the central accord test set nor the niger test.
-I could do those tomorrow morning if needed.
-I probably want to delete the 12 files Steve commented on.
-I think we should delete them from the /mnt/corpora disk.
-
-** Goals for Thursday:
-- TODO Package the niger and central accord test sets if Steve wants them.
-- TODO Take a pass on the TR.
-- TODO Debug gp+younde eesen char system 
-- TODO Attend the Voxtec meeting.
 
 * DAR <2016-11-03 Thu>
 **  Goals for Thursday set Wednesday:
