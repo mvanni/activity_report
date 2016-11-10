@@ -1,3 +1,28 @@
+* My WAR <2016-11-10 Thu>
+** Goals for Last Week:
+- DONE Take another pass on the tr
+- DONE Run gp+yaounde on niger corpus and compare it to the s2s device transcripts.
+We can only get an eyeball estimate of how well the test went since we do not have a reference transcription.
+- DONE Setup eesen on gp + yaounde training set.
+I did this for the char system.
+The training is failing.
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+
+** WAR:
+John Morgan transcribed a new corpus of speech from French speakers from Niger with an ASR system he and Steve LaRocca recently developed with  the Kaldi toolkit. 
+LaRocca is editing the transcriptionsso that they can be used as a reference in subsequent evaluations of ASR systems developed to recognize African accented speech. 
+
+** Goals for Next Week:
+- TODO Take another pass on tr.
+- TODO Debug eesen gp+yaounde char system.
+- TODO Setup eesen gp+yaounde phone system.
+- TODO Package Niger test set.
+- TODO Run gp+yaounde hmm/sgmm system tests on niger dataset.
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+- TODO Start online nnet2 development.
+
 * Team WAR <2016-11-04 Fri>
 ** Big Picture
 - Adaptation of Deep Neural Network ASR systems to accented speech
