@@ -1,3 +1,27 @@
+* DAR <2016-11-10 Thu>
+** Goals for Thursday set Wednesday:
+- DONE Package the niger and central accord test sets if Steve wants them.
+- TODO Take a pass on the TR.
+- TODO Debug gp+younde eesen char system 
+- DONE Attend the Voxtec meeting.
+
+- niger test set
+I spent most of the day working on the niger test set.
+This was pretty tedious. 
+I had Justin delete the files that Steve commented on. 
+As I'm getting ready to leave, I'm only working with 5 speakers from system1.
+Steve's comments end in the middle of speaker 6.
+My scripts depend on retrieving the wav files from the directories.
+I have a directory for each speaker.
+My scripts would pick up all the files in directory 6 and 7, so I'm going to wait until I know what files will finally be in those directories before processing with them.
+
+** Goals for Monday:
+- TODO Prepare niger test for packaging and sending to Jack.
+- TODO Run our own test on the niger test set.
+- TODO Debug eesen gp+yaounde char system.
+- TODO Setup eesen gp+yaounde phone system.
+- TODO Take a pass on tr.
+
 * DAR <2016-11-09 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Train eesen gp+yaounde system (work on 1lang.sh and python scripts).
