@@ -1,3 +1,63 @@
+* DAR <2016-11-14 Mon>
+** Goals for Monday set Thursday:
+- TODO Prepare niger test for packaging and sending to Jack.
+Steve did a pass on the niger recordings.
+He got through system 2 speaker 5.
+We now have 545 utterances from the Niger corpus with human validation.
+
+- DONE Run our own test on the niger test set.
+I ran the test on the current niger data set which consists of 5 speakers.
+%WER 14.43 [ 1165 / 8074, 23 ins, 523 del, 619 sub ] exp/sgmm5_semi_supervised_3/decode_test_niger/wer_11_0.0
+%WER 18.22 [ 1471 / 8074, 56 ins, 590 del, 825 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_niger_it1/wer_11_0.0
+%WER 19.22 [ 1552 / 8074, 65 ins, 613 del, 874 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_niger_it2/wer_11_0.0
+%WER 20.60 [ 1663 / 8074, 52 ins, 688 del, 923 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_niger_it3/wer_11_0.5
+%WER 21.23 [ 1714 / 8074, 94 ins, 633 del, 987 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_niger_it4/wer_11_0.0
+%WER 23.09 [ 1864 / 8074, 95 ins, 688 del, 1081 sub ] exp/sgmm5_semi_supervised_2/decode_test_niger/wer_11_0.5
+%WER 23.51 [ 1898 / 8074, 120 ins, 662 del, 1116 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_niger_it1/wer_11_0.0
+%WER 23.94 [ 1933 / 8074, 141 ins, 626 del, 1166 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_niger_it2/wer_10_0.0
+%WER 24.37 [ 1968 / 8074, 100 ins, 724 del, 1144 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_niger_it3/wer_12_0.5
+%WER 24.61 [ 1987 / 8074, 133 ins, 698 del, 1156 sub ] exp/sgmm5_semi_supervised_2_mmi_b0.1/decode_test_niger_it4/wer_13_0.0
+%WER 26.73 [ 2158 / 8074, 155 ins, 686 del, 1317 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_niger_it1/wer_14_0.0
+%WER 26.75 [ 2160 / 8074, 202 ins, 630 del, 1328 sub ] exp/sgmm5_semi_supervised/decode_test_niger/wer_12_0.0
+%WER 27.37 [ 2210 / 8074, 170 ins, 701 del, 1339 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_niger_it2/wer_14_0.0
+%WER 27.45 [ 2216 / 8074, 174 ins, 684 del, 1358 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_niger_it3/wer_13_0.0
+%WER 27.73 [ 2239 / 8074, 134 ins, 758 del, 1347 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_niger_it4/wer_14_0.5
+%WER 28.07 [ 2266 / 8074, 188 ins, 715 del, 1363 sub ] exp/tri5_semi_supervised_3/decode_test_niger/wer_15_0.0
+%WER 29.29 [ 2365 / 8074, 190 ins, 717 del, 1458 sub ] exp/sgmm5/decode_fmllr_test_niger/wer_13_0.5
+%WER 29.32 [ 2367 / 8074, 190 ins, 719 del, 1458 sub ] exp/sgmm5/decode_test_niger/wer_13_0.5
+%WER 29.33 [ 2368 / 8074, 196 ins, 719 del, 1453 sub ] exp/tri5_semi_supervised_2/decode_test_niger/wer_18_0.0
+%WER 29.60 [ 2390 / 8074, 220 ins, 700 del, 1470 sub ] exp/sgmm5_mmi_b0.1/decode_test_niger_it1/wer_13_0.0
+%WER 30.02 [ 2424 / 8074, 209 ins, 704 del, 1511 sub ] exp/sgmm5_mmi_b0.1/decode_test_niger_it2/wer_13_0.0
+%WER 30.18 [ 2437 / 8074, 198 ins, 731 del, 1508 sub ] exp/sgmm5_mmi_b0.1/decode_test_niger_it3/wer_14_0.0
+%WER 30.29 [ 2446 / 8074, 182 ins, 774 del, 1490 sub ] exp/sgmm5_mmi_b0.1/decode_test_niger_it4/wer_16_0.0
+%WER 34.30 [ 2769 / 8074, 260 ins, 836 del, 1673 sub ] exp/tri5_semi_supervised/decode_test_niger/wer_20_0.0
+%WER 37.22 [ 3005 / 8074, 303 ins, 843 del, 1859 sub ] exp/tri5/decode_test_niger/wer_20_0.0
+%WER 40.10 [ 3238 / 8074, 233 ins, 910 del, 2095 sub ] exp/tri5_semi_supervised_3/decode_test_niger.si/wer_14_1.0
+%WER 42.40 [ 3423 / 8074, 291 ins, 898 del, 2234 sub ] exp/tri5_semi_supervised_2/decode_test_niger.si/wer_14_0.5
+%WER 49.00 [ 3956 / 8074, 280 ins, 1243 del, 2433 sub ] exp/tri5_semi_supervised/decode_test_niger.si/wer_14_1.0
+%WER 52.07 [ 4204 / 8074, 311 ins, 1328 del, 2565 sub ] exp/tri5/decode_test_niger.si/wer_18_1.0
+
+- TODO Debug eesen gp+yaounde char system.
+- TODO Setup eesen gp+yaounde phone system.
+- TODO Take a pass on tr.
+
+- Score niger test device hyps
+I ran the compute-wer program with the test reference transcripts I got last week from Steve against the device hypotheses.
+The WER was 78.10.
+This is on the 162 transcripts Steve wrote for speakers 1 through 5 on system 1.
+I ran it again this evening on the larger 545 utterance Niger test set and the WER went down to 71.83.
+
+- Eesen gp+younde phone system.
+I spent a lot of time debugging my scripts for preparing the dictionary, lexicon, and lm for compiling into FSTs.
+I'm not sure I have it working yet.
+There was a problem that an empty line was creeping into my dictionary after some processing.
+ 
+** Goals for Tuesday:
+- TODO Run the gp+yaounde system tests on the new 545 utterances Niger test set.
+- TODO Get the eesen gp+younde phone system setup. Compile FSTs.
+- TODO Take a pass on the tr.
+- TODO package the Niger test set for Jack.
+
 * DAR <2016-11-10 Thu>
 ** Goals for Thursday set Wednesday:
 - DONE Package the niger and central accord test sets if Steve wants them.
