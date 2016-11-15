@@ -1,3 +1,33 @@
+* DAR <2016-11-15 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Run the gp+yaounde system tests on the new 545 utterances Niger test set.
+I started this, but the test set has changed in the mean time.
+We now have a niger test consisting of 532 utterances.
+
+- TODO Get the eesen gp+younde phone system setup. Compile FSTs.
+I found a bug. My script uses a tab to separate the utterence id from the transcript. An eesen python script that makes numerized label files uses a plain space. I fixed the script and I am using my own version of this script.
+I started working on the training.
+The training script uses a program called net-initialize.
+Apparently, this is a new program in eesen.
+I have to recompile the eesen programs.
+Maybe I'll ask Justin to put it on the GPU machine under a directory like /home/tools or /usr/local/share.
+The GPU was dead.
+Justin rebooted the GPU machine for me. 
+- TODO Take a pass on the tr.
+- DONE package the Niger test set for Jacquin.
+I copied the data from /mnt/corpora to /home/data/ateam/
+
+- Scoring the Voxtec device output
+I reran the test with  an updated test set (not the latest yet) and the WER was 62.47.
+
+
+** Goals for Wednesday:
+- TODO Get the device hypothesis file for only the files in our reference set (currently 532 utterances)
+- TODO Run the scoring again for the device output of the 532 reference utterances.
+- TODO Train the eesen gp+yaounde phone system. 
+- TODO possibly ask Justin to install eesen system wide.
+- TODO Take a pass on the tr.
+
 * DAR <2016-11-14 Mon>
 ** Goals for Monday set Thursday:
 - TODO Prepare niger test for packaging and sending to Jack.
