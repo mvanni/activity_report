@@ -1,3 +1,56 @@
+* DAR <2016-11-16 Wed>
+** Goals for Wednesday set Tuesday:
+- DONE Get the device hypothesis file for only the files in our reference set (currently 532 utterances)
+I wrote a script to do this. I called it niger_select_files.pl.
+I end up with 531 utterances instead of 532.
+I had deleted one line. I restore it and we now have 532 uttereances.
+
+- DONE Run the scoring again for the device output of the 532 reference utterances.
+The WER is 61.89.
+- TODO Train the eesen gp+yaounde phone system. 
+I had started the training with eesen yesterday before leaving and the process is still running.
+As I am getting ready to leave It is on epoch 11.
+I think it runs for no more than 25 epochs.
+So it might still be running tomorrow.
+
+- TODO possibly ask Justin to install eesen system wide.
+- TODO Take a pass on the tr.
+
+- Test gp+yaounde tri5-sgmm semi supervised systems on new Niger 532 data set:
+I'm running into a problem.
+The WER is over 200.
+There seems to be a problem with matching the output with the reference transcript during scoring.
+I'm trying to run the test on my laptop.
+I am copying the minimal components to run the decoder from the GPU machine to  my laptop.
+The HCLG.fst file is big.
+final.mdl
+tree/
+graph/words.txt
+graph/phones/silence.csl
+Forget it ... this bogged down my laptop
+I think I solved the problem I described above. I think there were old output files hanging around. 
+The test results are slightly worse for the Niger 532 data set than for our previous central accord test set.
+The WER for the same system that got 21.75 is:
+%WER 22.77 [ 920 / 4041, 110 ins, 158 del, 652 sub ] exp/sgmm5_semi_supervised_mmi_b0.1/decode_test_niger_it4/wer_15_0.0
+The semi supervised sgmm models are yielding WERs around 19.
+The best WER was:
+%WER 18.73 [ 757 / 4041, 85 ins, 133 del, 539 sub ] exp/sgmm5_semi_supervised_3_mmi_b0.1/decode_test_niger_it1/wer_11_0.0
+
+- Experiment for tr
+I am setting up an experiment that I think is missing for our tr.
+Split the younde  data into 2 parts A and B. 42 speakers for each part.
+1. Method A (our method):
+Supervised Training on gp + yaounde read part A  and semi supervised  training on yaounde answers part A.
+2. Method b:
+Supervised training on gp + younde read part A and semi supervised training on yaounde part b.
+So both systems get supervised training on the same corpus, but system A gets semi supervised training on yaounde answers part A while system B get semi supervised training on yaounde answers part B.
+The idea is to test the claim that the overlap of speakers gives a boost to the accuracy of the models.  
+** Goals for Thursday:
+- TODO Setup new experiment for TR
+- TODO Decode with eesen gp+younde phone models  (assuming it finishes tonight)
+- TODO Doctor's appointment in the morning.
+- TODO Take a pass on the tr.
+
 * DAR <2016-11-15 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Run the gp+yaounde system tests on the new 545 utterances Niger test set.
@@ -19,7 +72,6 @@ I copied the data from /mnt/corpora to /home/data/ateam/
 
 - Scoring the Voxtec device output
 I reran the test with  an updated test set (not the latest yet) and the WER was 62.47.
-
 
 ** Goals for Wednesday:
 - TODO Get the device hypothesis file for only the files in our reference set (currently 532 utterances)
