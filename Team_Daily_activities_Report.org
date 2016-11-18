@@ -1,3 +1,19 @@
+* DAR <2016-11-18 Fri>
+**  Goals for Friday set Thursday:
+- DONE Doctors appointment at 9:30
+Complete waste of time.
+- TODO map yaounde answers directory names to match read directory names.
+This is very tedious.
+- TODO Setup new experiment.
+I need to align the speakers first.
+- TODO Take a pass on the tr.
+
+** Goals for Monday:
+- TODO Fix the directory and file naming of the yaounde data to make the speakers in the read and answers parts of the corpus coincide.
+- TODO Follow Steve's comments on the Niger corpus data to remove bad recordings.
+- TODO Incorporate Steve's transcription of the Niger corpus into system build recipes.
+- TODO Setup the Speaker test experiment.
+
 * DAR <2016-11-17 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Setup new experiment for TR
