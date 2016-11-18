@@ -1,3 +1,49 @@
+* DAR <2016-11-17 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Setup new experiment for TR
+I realized when working on this that I was very sloppy about naming the directories for the yaounde answers.
+In order to perform the experiment, I have to align the speakers in the read data and the answers data.
+My current naming of the speaker directories does not do this.
+ctell1 speakers 1 through 17 should be good.
+Things go haywire after that.
+I am going back to the original data collection directories and aligning the read answers speaker directories.
+I am writing a list of the renaming that needs to be preformed.
+Here are the first couple of directory renames.
+ctell2_17 -> ctell2_18
+ctell1_18 -> ctell2_19
+ctell2_01 -> ctell2_20
+ctell2_02 -> ctell2_21
+
+I think this pattern will hold for ctell2
+- TODO Decode with eesen gp+younde phone models  (assuming it finishes tonight)
+When I arrived in the morning epoch 17 was running. 
+EPOCH 16 RUNNING ... ENDS [2016-Nov-17 01:50:13]: lrate 3.125e-07, TRAIN ACCURACY 95.4533%, VALID ACCURACY 86.4480%
+The training finished:
+EPOCH 18 RUNNING ... ENDS [2016-Nov-17 06:34:24]: lrate 7.8125e-08, TRAIN ACCURACY 95.4285%, VALID ACCURACY 86.6688%
+finished, too small rel. improvement .0511
+Training succeeded. The final model exp/train_phn_l4_c320/final.nnet
+Removing features tmpdir /tmp/tmp.vZV7b1RFLz @ A-TEAM19054
+cv.ark
+train.ark
+
+I had to do some digging to figure out how scoring works in the eesen scripts.
+The WER ended up as 44.13 for 3gram and 43.48 for 4gram.
+I'm not sure yet if this is good.
+This is a system trained on yaounde read and gp.
+No semi supervised training.
+
+
+- TODO Doctor's appointment in the morning.
+Today's appointment is actually at 11:30.
+Tomorrow's appointment is at 9:30
+- TODO Take a pass on the tr.
+
+** Goals for Friday:
+- TODO Doctors appointment at 9:30
+- TODO map yaounde answers directory names to match read directory names.
+- TODO Setup new experiment.
+- TODO Take a pass on the tr.
+
 * DAR <2016-11-16 Wed>
 ** Goals for Wednesday set Tuesday:
 - DONE Get the device hypothesis file for only the files in our reference set (currently 532 utterances)
