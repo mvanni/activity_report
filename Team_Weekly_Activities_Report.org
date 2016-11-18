@@ -1,3 +1,63 @@
+* My WAR <2016-11-18 Fri>
+** Goals for Last Week:
+- TODO Take another pass on tr.
+Did not work on the tr this week.
+- TODO Debug eesen gp+yaounde char system.
+I moved to the eesen phone system build, because I have had more success with it in the past.
+- DONE Setup eesen gp+yaounde phone system.
+I went end to end on the eesen gp+yaounde phone build.
+The WER was 44.13.
+I have done no semi supervised training yet. 
+Note that there is no speaker adaptation.
+ 
+- DONE Package Niger test set.
+We sent the package of 532 Niger test utterances with their transcriptions to Jacquin from voxtec.
+- TODO Run gp+yaounde hmm/sgmm system tests on niger dataset.
+I ran tests on the 1047 utterance central_accord + niger test.
+The best WER was 17.66 for sgmm semi supervised 3.
+%WER 17.66 [ 1277 / 7232, 164 ins, 236 del, 877 sub ] exp/sgmm5_semi_supervised_3/decode_test_central_accord+niger/wer_11_0.0
+The best score with no semi supervision was:
+%WER 25.39 [ 1836 / 7232, 237 ins, 351 del, 1248 sub ] exp/sgmm5_mmi_b0.1/decode_test_central_accord+niger_it2/wer_14_0.0
+- TODO Do speaker independent or country dependent version of gp+younde sgmm system.
+I did not get to this.
+- TODO Investigate what went wrong with discriminative training of pretrained dnn nnet system.
+Nope.
+- TODO Start online nnet2 development.
+Nope
+
+
+I have an idea for an experiment that I think is required by what I am claining in the tech report.
+I am claming that the fact that the speakers are the same in the read and conversational parts of the yaounde corpus makes semi supervised training lower WER rates.
+How do I test this?
+Split the yaounde corpus into 2 parts A and B.
+Train on GP + younde read part A.
+Do semi supervised Training to build 2 systems A and B.
+Do semi supervised   training for system A on answers part A.
+Do semi supervised   training for system B on answers part B.
+System A will have the same speakers in read and answers parts.
+System B will not.
+
+When I started working on this experiment, I realized that the speakers in the read and answers parts of the yaounde corpus were not aligned at all.
+I need to fix this.
+I started fixing the problem.
+It is very tedious work.
+
+** WAR:
+This week John Morgan continued working on a project to investigate techniques to adapt   Automatic Speech Recognition (ASR) systems to African accented French. 
+He succeeded this week in training and testing an ASR system based on neural networks instead of the Hidden Markov Model based systems he has been developing previously. 
+Using the same African accented speech as before, he used the Eesen add on to the Kaldi toolkit to train a Long Short Term Memory Recurrent Neural Network (LSTM) that performs Connectionist Temporal Classification. 
+He also used eesen to build a weighted finite state transducer that was used  to do lattice decoding of the test data with the models. 
+The Word Error rate (WER) for this system was 44.13. 
+The best WER score for the highly adapted HMM based systems is 17.66.
+Work done by other researchers has shown that the neural network approach yields lower WER scores than the HMM approach. 
+This indicates that a lot of work on the neural network approach will be required to reach those  reported levels of performance. 
+
+** Goals for Next Week:
+- TODO Fix the directory and file naming of the yaounde data to make the speakers in the read and answers parts of the corpus coincide.
+- TODO Follow Steve's comments on the Niger corpus data to remove bad recordings.
+- TODO Incorporate Steve's transcription of the Niger corpus into system build recipes.
+- TODO Setup the Speaker test experiment.
+
 * My WAR <2016-11-10 Thu>
 ** Goals for Last Week:
 - DONE Take another pass on the tr
