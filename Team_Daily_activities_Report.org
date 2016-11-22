@@ -1,3 +1,20 @@
+* DAR <2016-11-22 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Setup semi supervised data directory with new renamed corpus.
+I had a weird experience again today with the scripts.
+For some reason that I still have not figured out, a tab separated values files is appearing with a regular white space instead of the tab character.
+I finally just had the script split either on tab or white space and it is now running, but it took me most of the day to get to this point.
+
+- DONE Run semi supervised speaker training experiment with eesen yaounde + gp phone and speaker split answers data.
+I now have the eesen training running with semi supervised training data.
+As I'm getting ready to leave the training is on epoch 8.
+- TODO Run experiment with larger test set.
+- TODO Take a pass on tr.
+
+** Goals for Wednesday:
+- TODO Run gp+yaounde semi supervised sgmm system build and test with new file naming.
+- TODO Take a pass on TR.
+
 * DAR <2016-11-21 Mon>
 **  Goals for Monday set Friday:
 - DONE Fix the directory and file naming of the yaounde data to make the speakers in the read and answers parts of the corpus coincide.
