@@ -1,3 +1,39 @@
+* DAR <2016-11-21 Mon>
+**  Goals for Monday set Friday:
+- DONE Fix the directory and file naming of the yaounde data to make the speakers in the read and answers parts of the corpus coincide.
+I have not run the training scripts with the new naming, so I am not sure I did this correctly yet.
+I gave the read and answers parts  of the yaounde corpus the same names for the same speakers.
+There is a possible issue here with kaldi.
+Kaldi uses the basename of the file as the utterance name.
+The danger here  is that the speaker name is the first part of the basename of each file.
+The rest of the utterance name is the recording number.
+
+I don't think this will cause a collision because  I allocated 4 digits for the read recording names and only 3 digits for the answers recordings names.
+I padded with leading zeroes  in both cases.
+For example the file with name 1.wav was given the recording name 001.wav if it was an answer and 0001.wav if it was a read recording.
+I ran into problems when I started the semi supervised training.
+Here's one of the problems.
+When I make the spk2utt file I have to consolidate all the utterances corresponding to one speaker.
+This is not as easy as jut concatenating the spk2utt files for the read training data and the answers data.
+The utterances come from the same speakers.
+It took me a long time to figure out that this was a problem.
+Another problem is the sorting issue.
+The utterances do not appear in the correct order unless I explicitly sort them.
+Anyway, I spent the afternoon working on this problem and I'm still not finished.
+I'm pretty sure there are similar issues with the utt2spkand other files.  
+- DONE Follow Steve's comments on the Niger corpus data to remove bad recordings.
+I sent Justin a message requesting him to remove files.
+- DONE Incorporate Steve's transcription of the Niger corpus into system build recipes.
+I have not run scripts yet to validate the new transcripts.
+- TODO Setup the Speaker test experiment.
+Justin replaced the Yaounde corpus with the new corpus with renamed directories and files under /mnt/corpora/Yaounde.
+
+** Goals for Tuesday:
+- TODO Setup semi supervised data directory with new renamed corpus.
+- TODO Run semi supervised speaker training experiment with eesen yaounde + gp phone and speaker split answers data.
+- TODO Run experiment with larger test set.
+- TODO Take a pass on tr.
+
 * DAR <2016-11-18 Fri>
 **  Goals for Friday set Thursday:
 - DONE Doctors appointment at 9:30
