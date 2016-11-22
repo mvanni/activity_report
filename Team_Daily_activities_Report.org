@@ -10,6 +10,7 @@ I now have the eesen training running with semi supervised training data.
 As I'm getting ready to leave the training is on epoch 8.
 - TODO Run experiment with larger test set.
 - TODO Take a pass on tr.
+- TODO Read adaptation and iVector papers. 
 
 ** Goals for Wednesday:
 - TODO Run gp+yaounde semi supervised sgmm system build and test with new file naming.
