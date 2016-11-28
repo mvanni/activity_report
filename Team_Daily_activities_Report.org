@@ -1,3 +1,39 @@
+* DAR <2016-11-28 Mon>
+** Goals for Wednesday set Tuesday:
+- TODO Run gp+yaounde semi supervised sgmm system build and test with new file naming.
+The recipe script was getting stuck on the lang directory building.
+I removed the lang directory and it seems to be running now.
+
+- TODO Take a pass on TR.
+- TODO Decode Jamal's  recordings.
+- TODO Read adaptation and iVector papers. 
+
+I only came in to work for a short while. 
+I had 2 health related appointments.
+My upper GI imaging gave me some good news. 
+As expected, I have a hernia, but it is very small, only the size of an almond.
+
+- Incorporating Steve's corrected Niger transcripts into gp+yaounde cd gmm hmm system.
+
+- an4 chain models
+I want to investigate i-vectors.
+The chain model recipes use i-vectors.
+I am starting first with a toy system.
+I am starting with the an4 recipe.
+This is a relatively new recipe in the kaldi toolkit.
+The data is free and there is a script to download it.
+The recipe is very basic.
+I am running the chain model recipe from the rm system  with the an4 data.
+It would be nice to have the rm corpus and run the rm chain model recipe on the rm corpus.
+
+** WAR
+John Morgan is exploring the use of i-vectors as a method for adapting French speech recognition models  to accents from regions of Africa.
+He is building a toy chain model system that uses a hybrid of a Deep Neural Network and a GMM HMM system together with i-vectors. 
+
+** Goals for Tuesday:
+- TODO rebuild the gp+yaounde sgmm system with the new yaounde naming.
+- TODO build the an4 chain model toy system.
+- TODO write a toy cfg example with nltk to demo for Luis
 * DAR <2016-11-22 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Setup semi supervised data directory with new renamed corpus.
@@ -10,12 +46,12 @@ I now have the eesen training running with semi supervised training data.
 As I'm getting ready to leave the training is on epoch 8.
 - TODO Run experiment with larger test set.
 - TODO Take a pass on tr.
-- TODO Read adaptation and iVector papers. 
 
 ** Goals for Wednesday:
 - TODO Run gp+yaounde semi supervised sgmm system build and test with new file naming.
 - TODO Take a pass on TR.
 - TODO Decode Jamal's  recordings.
+- TODO Read adaptation and iVector papers. 
 * DAR <2016-11-21 Mon>
 **  Goals for Monday set Friday:
 - DONE Fix the directory and file naming of the yaounde data to make the speakers in the read and answers parts of the corpus coincide.
@@ -67,7 +103,6 @@ I need to align the speakers first.
 - TODO Follow Steve's comments on the Niger corpus data to remove bad recordings.
 - TODO Incorporate Steve's transcription of the Niger corpus into system build recipes.
 - TODO Setup the Speaker test experiment.
-
 * DAR <2016-11-17 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Setup new experiment for TR
