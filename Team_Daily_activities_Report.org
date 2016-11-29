@@ -1,3 +1,56 @@
+* DAR <2016-11-29 Tue>
+** Goals for Tuesday set Monday:
+- TODO rebuild the gp+yaounde sgmm system with the new yaounde naming.
+I saw these stats on the training trace after monopone training finished:
+states=115 gauss=988
+tri1:
+states=821 gauss=10030 tree-impr=4.18
+tri2:
+states=831 gauss=20038 tree-impr=4.50
+tri3:
+states=4891 gauss=75119 tree-impr=5.16
+tri4:
+states=5079 gauss=75101 tree-impr=6.19 lda-sum=28.81 mllt:impr,logdet=1.05,1.77
+tri5:
+states=5120 gauss=75078 fmllr-impr=2.92 over 28.77h tree-impr=8.88
+
+The system build had failed at the denominator lattice training.
+I saw that the graph construction had been skipped because exp/sgmm5_denlats/dengraph/HCLG.fst already existed.
+I put in a command to delete exp/sgmm5_denlats/dengraph/HCLG.fst and rerun.
+It seems to have gotten passed the problem for now.
+
+- TODO build the an4 chain model toy system.
+Steps:
+1. Data prep including utt2spk and spk2utt files 
+2. Feature extraction MFCCs in this case
+3. lang preparation
+4. train context dependent gaussian mixture model hidden markov model (cd gmm hmm)
+I'm going to use the term cd gmm hmm from now on to refer  to this kind of system.
+5. build a tree. This is standard, but I do not know enough about it to explain it. Is it different from the fst decoding graph? 
+6. train a universal background model (ubm).
+7. train an i-vector extractor.
+8. extract i-vectors for training data.
+It looks like an i-vector is extracted for each recording file.
+9. Train a chain model temporal delay neural network (tdnn)
+10. Extract test i-vectors.
+11. Decode.
+I have succeeded in all these steps on my laptop, but the training step is failing on the GPU machine.
+The WER is 20% compared to 6% for the cd gmm hmm system.
+
+Do I move on to setting up chain models for a real corpus like gp and  gp+yaounde  or do I fix the problem on the GPU?
+
+- DONE write a toy cfg example with nltk to demo for Luis
+
+- Jamal's datag
+I asked Justin to put it under /mnt/corpora
+I'll process it after I've built the new models.
+
+As I'm getting ready to leave the gp+yaounde cd gmm hmm system build with the new naming is doing boosted mmi train of sgmm models.
+
+** Goals for Wednesday:
+- TODO Setup and build the standard gp cd gmm hmm system with the kaldi recipe
+- TODO build chain models for the gp system
+
 * DAR <2016-11-28 Mon>
 ** Goals for Wednesday set Tuesday:
 - TODO Run gp+yaounde semi supervised sgmm system build and test with new file naming.
