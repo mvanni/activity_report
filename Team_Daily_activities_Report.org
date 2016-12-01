@@ -1,3 +1,8 @@
+* DAR <2016-12-01 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Make prompt lists for dev, eval, and train folds of gp data.
+- TODO Run norm script on fold prompt lists
+
 * DAR <2016-11-30 Wed>
 **  Goals for Wednesday:
 - TODO Setup and build the standard gp cd gmm hmm system with the kaldi recipe
@@ -21,8 +26,21 @@ Sorting the fst
 I think I have the script running now.
 
 ** Goals for Thursday:
-- TODO Make prompt lists for dev, eval, and train folds of gp data.
-- TODO Run norm script on fold prompt lists
+- DONE Make prompt lists for dev, eval, and train folds of gp data.
+- DONE Run norm script on fold prompt lists
+
+I spent the whole day working on the data preparation steps for the standard gp fr recipe.
+I think I'm finished with the data preparation step.
+I mostly went back to my gp+yaounde scripts, although I had to modify them to fit the dev, eval and train folds for the kaldi gp recipe.
+I now have wav.scp, text, utt2spk and spk2utt files.
+The kaldi gp recipe assumed these files already existed.
+Writing these files is a large part of the work involved in building a kaldi system. 
+
+As I'm getting ready to leave, I'm working on the gp_dict_prep.sh script
+
+** Goals for Friday:
+- TODO Setup dictionary preparation for the standard kaldi gp fr recipe. 
+- TODO Setup lang preparation for the standard kaldi gp fr recipe. 
 
 * DAR <2016-11-29 Tue>
 ** Goals for Tuesday set Monday:
