@@ -1,7 +1,33 @@
+* DAR <2016-11-30 Wed>
+**  Goals for Wednesday:
+- TODO Setup and build the standard gp cd gmm hmm system with the kaldi recipe
+- Data preparation
+I have lists of the dev, eval, and train speaker directories.
+Next step:
+get prompt lists for each of these folds.
+run the normalization script from the kaldi gp egs recipe scripts on each fold list.
+hopefully the rest of the recipe will work from that point on.
+- TODO build chain models for the gp system
+
+- gp+yaounde cd gmm hmm withnew naming
+The recipe script crashed when trying to make the the decoding graph.
+The g.fst was missing.
+Sure enough, the commands for making the g.fst are missing from the run.sh script.
+This involves the lm.
+Replacing epsilon and <s> and </s> symbols
+Finding  and removing oovs.
+Compiling the fst into binary format
+Sorting the fst
+I think I have the script running now.
+
+** Goals for Thursday:
+- TODO Make prompt lists for dev, eval, and train folds of gp data.
+- TODO Run norm script on fold prompt lists
+
 * DAR <2016-11-29 Tue>
 ** Goals for Tuesday set Monday:
 - TODO rebuild the gp+yaounde sgmm system with the new yaounde naming.
-I saw these stats on the training trace after monopone training finished:
+I saw these stats on the training trace after monophone training finished:
 states=115 gauss=988
 tri1:
 states=821 gauss=10030 tree-impr=4.18
@@ -41,7 +67,7 @@ Do I move on to setting up chain models for a real corpus like gp and  gp+yaound
 
 - DONE write a toy cfg example with nltk to demo for Luis
 
-- Jamal's datag
+- Jamal's data
 I asked Justin to put it under /mnt/corpora
 I'll process it after I've built the new models.
 
