@@ -1,3 +1,20 @@
+* DAR <2016-12-02 Fri>
+** Goals for Friday set Thursday:
+- DONE Setup dictionary preparation for the standard kaldi gp fr recipe. 
+- DONE Setup lang preparation for the standard kaldi gp fr recipe. 
+
+I ran out of space on the GPU machine.
+I deleted a lot of directories to free up some space.
+
+- gp+yaound cd gmm hmm rerun with aligned speaker directories.
+The script crashes when trying to decode the yaounde answers with boosted mmi sgmm.
+I have not figured out why this is happening.
+I see that decoding with mono, tri1, tri2, tri3, tri4, tri5, sgmm and sgmm fmllr all succeed.
+Why is decoding the yaounde answers failing with boosted mmi trained sgmm?
+The data/answers/text file is empty.
+
+** Goals for Monday:
+
 * DAR <2016-12-01 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Make prompt lists for dev, eval, and train folds of gp data.
@@ -15,6 +32,7 @@ As I'm getting ready to leave, I'm working on the gp_dict_prep.sh script
 - TODO Setup dictionary preparation for the standard kaldi gp fr recipe. 
 - TODO Setup lang preparation for the standard kaldi gp fr recipe. 
 
+* DAR <2016-12-02 Fri>
 * DAR <2016-11-30 Wed>
 **  Goals for Wednesday:
 - TODO Setup and build the standard gp cd gmm hmm system with the kaldi recipe
@@ -40,7 +58,6 @@ I think I have the script running now.
 ** Goals for Thursday:
 - TODO Make prompt lists for dev, eval, and train folds of gp data.
 - TODO Run norm script on fold prompt lists
-
 
 * DAR <2016-11-29 Tue>
 ** Goals for Tuesday set Monday:
