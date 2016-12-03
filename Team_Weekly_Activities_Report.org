@@ -1,3 +1,15 @@
+* My WAR <2016-12-02 Fri>
+**   Goals for Last Week:
+- DONE Fix the directory and file naming of the yaounde data to make the speakers in the read and answers parts of the corpus coincide.
+I'm not sure this is good yet.
+- DONE Follow Steve's comments on the Niger corpus data to remove bad recordings.
+- DONE Incorporate Steve's transcription of the Niger corpus into system build recipes.
+- TODO Setup the Speaker test experiment.
+
+** Goals for Next Week:
+- TODO Run standard gp kaldi recipe
+- TODO Adapt kaldi chain model recipe to run on gp
+
 * My WAR <2016-11-18 Fri>
 ** Goals for Last Week:
 - TODO Take another pass on tr.
