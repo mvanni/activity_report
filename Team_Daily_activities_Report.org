@@ -1,3 +1,29 @@
+* <2016-12-05 Mon>
+**  Goals for Monday set Friday:
+- TODO Run standard kaldi gp recipe.
+The run.sh script fails when invoking the gp_format_lm.sh script.
+This script converts the arpa lm into an fst.
+The gp_format_lm.sh script runs srilm via a script called utils/format_lm_sri.sh.
+That script says that you can convert an arpa lm to an fst with another script called format_lm.sh.
+I'm running that script now.
+The srilm script apparently restricts the vocabulary to the intersection of ...
+the words in the training data for the lm and the words in the pronouncing dictionary.
+This actually might be a cool thing, if it worked.
+Srilm is failing for some reason.
+When I use the script that does not use srilm, it succeeds in formatting the lm as an fst.
+- TODO Run kaldi chain model on gp.
+- DONE Fix answers data and continue building gp+yaounde cd gmm hmm system.
+I wrote scripts specific for yaounde answers data.
+The run.sh script is not crashing where it crashed last week.
+
+** WAR:
+John Morgan continued working on a project to adapt French Speech Recognition models to African accented speech.
+He is taking a step back and training a baseline context dependent gaussian mixture model hidden markov model (CD GMM HMM) system only on a reference corpus of European French. 
+The models in his previous systems were trained on data that included African Accented speech. 
+After completing the baseline system, he will train chain models on top of the cd gmm hmm and perform adaptation experiments with i-vectors. 
+
+** Goals for Tuesday:
+- TODO 
 * DAR <2016-12-02 Fri>
 ** Goals for Friday set Thursday:
 - DONE Setup dictionary preparation for the standard kaldi gp fr recipe. 
@@ -14,7 +40,10 @@ Why is decoding the yaounde answers failing with boosted mmi trained sgmm?
 The data/answers/text file is empty.
 
 ** Goals for Monday:
-
+- TODO Run standard kaldi gp recipe.
+- TODO Run kaldi chain model on gp.
+- TODO Fix answers data and continue building gp+yaounde cd gmm hmm system.
+ 
 * DAR <2016-12-01 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Make prompt lists for dev, eval, and train folds of gp data.
