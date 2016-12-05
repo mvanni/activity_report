@@ -11,10 +11,17 @@ the words in the training data for the lm and the words in the pronouncing dicti
 This actually might be a cool thing, if it worked.
 Srilm is failing for some reason.
 When I use the script that does not use srilm, it succeeds in formatting the lm as an fst.
+
 - TODO Run kaldi chain model on gp.
 - DONE Fix answers data and continue building gp+yaounde cd gmm hmm system.
 I wrote scripts specific for yaounde answers data.
 The run.sh script is not crashing where it crashed last week.
+
+I got stuck again on the answers data.
+This time it was the text file.
+It's a nightmare. 
+The file was being appended to each time I ran the utt2text writer.
+As a work around, I am deleteing any file with prefix yaounde_answers_ in the data/local/tmp directory.
 
 ** WAR:
 John Morgan continued working on a project to adapt French Speech Recognition models to African accented speech.
@@ -23,7 +30,9 @@ The models in his previous systems were trained on data that included African Ac
 After completing the baseline system, he will train chain models on top of the cd gmm hmm and perform adaptation experiments with i-vectors. 
 
 ** Goals for Tuesday:
-- TODO 
+- TODO Get the gp+yaounde cd gmm hmm system running again with the new speaker aligned directories.
+- TODO Get the gp cd gmm hmm system running again.
+
 * DAR <2016-12-02 Fri>
 ** Goals for Friday set Thursday:
 - DONE Setup dictionary preparation for the standard kaldi gp fr recipe. 
