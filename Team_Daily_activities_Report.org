@@ -1,3 +1,34 @@
+* DAR <2016-12-06 Tue>
+**  Goals for Tuesday set Monday:
+- DONE Get the gp+yaounde cd gmm hmm system running again with the new speaker aligned directories.
+I worked a lot on writing the yaound answers and sri gabon read data preparation scripts.
+As I'm getting ready to leave, I started the script to run the semi supervised part of this system build.
+- TODO Get the gp cd gmm hmm system running again.
+I'm separating the run.sh script into scripts for each command.
+install tools
+get prompts
+prepare data
+prepare dictionary
+prepare lang
+convert lm to fst
+create pruned lm ( this is done with irstlm)
+convert pruned lm to fst
+extract mfcc features
+train cd gmm hmm
+
+I thought I had all of this running today.
+As I'm geeting ready to leave I found a bug.
+The topo file under the lang_test directory is missing.
+I'm not sure why.
+The script utils/format_lm.sh has a for loop that copies this file over to from the lang directory to the lang_test directory.
+Why did the topo file not get copied over?
+This file is used to initialize the monophone system.
+
+** Goals for Wednesday:
+- TODO Make sure the lang_test directory is correct in the gp cd gmm hmm system.
+- TODO Restart the gp cd gmm hmm system.
+- TODO Run the semi supervised gp+yaounde system with aligned speakers.
+ 
 * <2016-12-05 Mon>
 **  Goals for Monday set Friday:
 - TODO Run standard kaldi gp recipe.
