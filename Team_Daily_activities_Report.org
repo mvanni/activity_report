@@ -1,3 +1,32 @@
+* DAR <2016-12-07 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Make sure the lang_test directory is correct in the gp cd gmm hmm system.
+It looks like there was a bug in an older version of the kaldi format_lm_sh script.
+I I was using the newer one on my laptop.
+It copies the topo file over to the lang_test directory.
+
+- DONE Restart the gp cd gmm hmm system.
+I am running into a strange sorting problem.
+The following 2 line are out of order:
+ctell1-01-001	ctell1-01
+ctell1-01-0010 ctell1-01
+Ah! it's the space between the fields. One is a tab and the other is a space.
+I am also running the decoding on the answers again. 
+For some reason the scoring failed before.
+To do the semi supervised training, I use the transcripts from the decoding with the boosted mmi trained sgmms.
+The transcripts that were available were done with the old naming.
+Actually, here is where the difference really should happen.
+The answers and read parts of the yaounde corpus have their speakers are now aligned.
+The effect of this should appear in the semi supervised training.
+
+- DONE Run the semi supervised gp+yaounde system with aligned speakers.
+I had to rebuild the data/train_semi_supervised directory.
+I also need to extract features from the sri_gabon_read data.
+
+** Goals for Thursday:
+- ToDO Restart the gp+yaounde with aligned speakers.
+- TODO After finishing the gp cd gmm hmm build, start the chain model build on top of it.
+ 
 * DAR <2016-12-06 Tue>
 **  Goals for Tuesday set Monday:
 - DONE Get the gp+yaounde cd gmm hmm system running again with the new speaker aligned directories.
@@ -17,7 +46,7 @@ extract mfcc features
 train cd gmm hmm
 
 I thought I had all of this running today.
-As I'm geeting ready to leave I found a bug.
+As I'm getting ready to leave I found a bug.
 The topo file under the lang_test directory is missing.
 I'm not sure why.
 The script utils/format_lm.sh has a for loop that copies this file over to from the lang directory to the lang_test directory.
