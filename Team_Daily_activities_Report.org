@@ -1,3 +1,46 @@
+* DAR <2016-12-08 Thu>
+**  Goals for Thursday set Wednesday:
+- ToDO Restart the gp+yaounde with aligned speakers.
+- TODO After finishing the gp cd gmm hmm build, start the chain model build on top of it.
+ I am splitting up the gp kaldi recipe into 1 step per command.
+Steps done:
+1. Get tools (sox, probably not needed),
+2. Prompts prep,
+3. data prep,
+4. dict prep,
+5. lang prep,
+6. convert lm to fst,
+7.  prune lm,
+8. convert pruned lm to fst,
+9.   extract MFCC features,
+10. Train monophones,
+11. make decoding graph for mono system,
+12. decode dev with mono,
+13. decode eval with mono system,
+14. align with mono,
+15. train tri1,
+16. align with tri1,
+17. train tri2a,
+18. 
+
+- Problem:
+I see warnings in step 15 about phones not being associated with data.
+I found the source of the problem.
+The gp scripts suck.
+They do not handle utf8 encoding well.
+The script that normalizes the dictionary is to blame.
+I fixed the problem.
+I wrote new scripts that write the lexicon with good utf8.
+I guess this was hard when this recipe was first written.
+My solution is to use the Encode module and the decode_utf8 function.
+The decode_utf8 function is a one line solution.
+  
+I have to start the training all over again.
+
+** Goals for Friday:
+- TODO Restart the gp cd gmm hmm build,
+- TODO Write a good set of goals for when I return from leave.
+
 * DAR <2016-12-07 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Make sure the lang_test directory is correct in the gp cd gmm hmm system.
