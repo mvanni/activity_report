@@ -1,3 +1,68 @@
+* DAR <2016-12-09 Fri>
+**  Goals for Friday set Thursday:
+- TODO Restart the gp cd gmm hmm build,
+Steps done:
+4. dict prep,
+5. lang prep,
+6. convert lm to fst,
+7.  prune lm,
+8. convert pruned lm to fst,
+9.   extract MFCC features,
+10. Train monophones,
+exp/mono: nj=8 align prob=-101.34 over 22.74h [retry=0.5%, fail=0.0%] states=118 gauss=992
+Does this mean 22.74 hours of training data?
+14. align with mono,
+15. train tri1,
+-Good News:
+The tri1 training is not showing the warnings about phones not being associated with data.
+exp/tri1: nj=8 align prob=-96.77 over 22.73h [retry=0.5%, fail=0.0%] states=2998 gauss=50126 tree-impr=5.11
+16. align with tri1,
+20. train tri2a,
+exp/tri2a: nj=5 align prob=-97.60 over 22.73h [retry=0.6%, fail=0.0%] states=1000 gauss=20047 tree-impr=4.88
+24. Train tri2b,
+tri2b also uses alignments from tri1.
+tri2b does lda and mllt training
+# LDA+MLLT refers to the way we transform the features after computing
+# the MFCCs: we splice across several frames, reduce the dimension (to 40
+# by default) using Linear Discriminant Analysis), and then later estimate,
+# over multiple iterations, a diagonalizing transform known as MLLT or CTC.
+# See http://kaldi-asr.org/doc/transform.html for more explanation.
+exp/tri2b: nj=5 align prob=-49.03 over 22.73h [retry=0.5%, fail=0.1%] states=4972 gauss=75122 tree-impr=5.88 lda-sum=26.25 mllt:impr,logdet=1.09,1.82
+28. align with tri2b,
+29. train tri3b
+# This does Speaker Adapted Training (SAT), i.e. train on
+# fMLLR-adapted features.  It can be done on top of either LDA+MLLT, or
+# delta and delta-delta features.  If there are no transforms supplied
+# in the alignment directory, it will estimate transforms itself before
+# building the tree (and in any case, it estimates transforms a number
+# of times during training).
+exp/tri3b: nj=5 align prob=-48.63 over 22.72h [retry=0.5%, fail=0.1%] states=5994 gauss=75100 fmllr-impr=2.85 over 19.88h tree-impr=8.68
+33. align with tri3b
+34. train ubm4,
+# This trains a UBM (i.e. a mixture of Gaussians), by clustering
+# the Gaussians from a trained HMM/GMM system and then doing a few
+# iterations of UBM training.
+# We mostly use this for SGMM systems.
+35. train sgmm2b
+# SGMM training, with speaker vectors.  This script would normally be called on
+# top of fMLLR features obtained from a conventional system, but it also works
+# on top of any type of speaker-independent features (based on
+# deltas+delta-deltas or LDA+MLLT).  For more info on SGMMs, see the paper "The
+# subspace Gaussian mixture model--A structured model for speech recognition".
+# (Computer Speech and Language, 2011).
+39. align with sgmm2_4a,
+40. Make sgmm2 denominator lattices,
+
+- TODO Write a good set of goals for when I return from leave.
+
+As I'm getting ready to leave, the script to make sgmm2 denominator lattices is running.
+
+For my goal of building chain models with the gp corpus, I'm basically done with this part of the project.
+The chain model recipe builds on the cd gmm hmm.
+
+** Goals for Next Year
+- TODO build a chain model on top of the gp cd gmm hmm.
+ 
 * DAR <2016-12-08 Thu>
 **  Goals for Thursday set Wednesday:
 - ToDO Restart the gp+yaounde with aligned speakers.
