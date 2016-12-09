@@ -1,3 +1,24 @@
+* MyWAR <2016-12-09 Fri>
+** Goals for Last Week:
+- TODO Run standard gp kaldi recipe,
+This was more involved than expected.
+The scripts from the kaldi gp recipe do not handle the utf8 encoding of the transcripts correctly.
+I had to fix this.
+I split the recipe script into one script per command.
+
+- TODO Adapt kaldi chain model recipe to run on gp
+I did not get to this, but I have gone through the kaldi recipe for building a cd gmm hmm on the gp corpus.
+The chain model recipe builds on a cd gmm hmm.
+
+** WAR:
+John Morgan continued working on the project to adapt speech recognition models to accented speech. 
+He completed the training of a baseline context dependent gaussian mixture model hidden markov model (cd gmm hmm) system for European French. 
+His next goal is to build a chain model on top of this cd gmm hmm.
+
+** Goals for Next Year:
+- TODO Build chain model for the gp corpus.
+- TODO Use i-vectores to adapt the gp system to African speech from different regions.
+
 * My WAR <2016-12-02 Fri>
 **   Goals for Last Week:
 - DONE Fix the directory and file naming of the yaounde data to make the speakers in the read and answers parts of the corpus coincide.
