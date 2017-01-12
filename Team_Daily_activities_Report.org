@@ -1,3 +1,36 @@
+* DAR <2017-01-12 Thu>
+**  Goals 
+- TODO build a chain model on top of the gp cd gmm hmm.
+I'm starting to work on this.
+I have so far built the cd gmm hmm on the gp data.
+I'm starting the process of building a chain model system.
+ 1. lattice alignments
+2. Generate topology 
+From the script:
+Generate a topology file.  
+This allows control of the number of states in the non-silence HMMs, and in the silence HMMs.  
+This is a modified version of 'utils/gen_topo.pl' that generates a different type of topology, one that we believe should be useful in the 'chain' model.  
+Note: right now it doesn't have any real options, and it treats silence and nonsilence the same.  
+The intention is that you write different versions of this script, or add options, if you experiment with it.
+
+3. Build a tree
+This script builds a tree for use in the 'chain' systems (although the script itself is pretty generic and doesn't use any 'chain' binaries).  
+This is just like the first stages of a standard system, like 'train_sat.sh', except it does 'convert-ali' to convert alignments to a monophone topology just created from the 'lang' directory (in case the topology is different from where you got the system's alignments from), and it stops after the tree-building and model-initialization stage, without re-estimating the Gaussians or training the transitions.
+
+4. Train a diagonal ubm.
+5. Train an i-vector extractor.
+6. Speaker Info
+7. Extract I-vectors
+8. train tdnn  on gpu.
+This was failing on iteration 10.
+I removed all the non-default options and it passed iterations 10.
+It got to iteration 19 and crashed.
+It looks like the GPU ran out of memory.
+I am trying again with mini-batch set to 128 instead of 512.
+** Goals for Friday:
+- TODO Train the tdnn for the chain models on the gp corpus.
+
+
 * DAR <2016-12-09 Fri>
 **  Goals for Friday set Thursday:
 - TODO Restart the gp cd gmm hmm build,
