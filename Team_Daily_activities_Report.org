@@ -1,10 +1,30 @@
+* DAR <2017-01-13 Fri>
+** Goals for Friday set Thursday:
+- DONE Train the tdnn for the chain models on the gp corpus.
+The 73 iterations of training finished after setting mini-batch to 128 instead of 512.
+
+I am now running the mkgraph script to make the decoding fst.
+it took several hours for the mkgraph program to finish.
+I decoded the eval data set.
+The best WER was 42.29
+Something must be wrong.
+The results from the gp kaldi directory gives WERs in the low 20s.
+My best was a 38.78 for the sgmm system.
+
+
+
+I'm going to try to get their results for the mono system before moving on.
+
+** Goals for Tuesday:
+- TODO Reproduce the results in the kaldi gp repo.
+
 * DAR <2017-01-12 Thu>
 **  Goals 
 - TODO build a chain model on top of the gp cd gmm hmm.
 I'm starting to work on this.
 I have so far built the cd gmm hmm on the gp data.
 I'm starting the process of building a chain model system.
- 1. lattice alignments
+1. lattice alignments
 2. Generate topology 
 From the script:
 Generate a topology file.  
@@ -23,7 +43,7 @@ This is just like the first stages of a standard system, like 'train_sat.sh', ex
 7. Extract I-vectors
 8. train tdnn  on gpu.
 This was failing on iteration 10.
-I removed all the non-default options and it passed iterations 10.
+I removed all the non-default options and it passed iteration 10.
 It got to iteration 19 and crashed.
 It looks like the GPU ran out of memory.
 I am trying again with mini-batch set to 128 instead of 512.
@@ -6475,6 +6495,3 @@ I'm expecting this to give me WER scores for the test data.
 It looks like the score script is expecting a file containing words.
 I haven't generated this file yet.
 I also have to look closely at the 3 arguments to the score script.
-
-
-
