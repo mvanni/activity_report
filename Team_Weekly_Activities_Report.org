@@ -1,3 +1,18 @@
+* My WAR <2017-01-13 Fri>
+** Goals for this Year:
+- TODO Build chain model for the gp corpus.
+Good News: I succeeded in going end to end to build a chain model system on the gp corpus.
+Bad News: The results were pretty bad compared to results given in the kaldi gp repo.
+38.78 versus 22.72 WER.
+- TODO Use i-vectores to adapt the gp system to African speech from different regions.
+
+** WAR:
+John Morgan succeeded this week in training and testing a chain model system for automatic speech recognition (ASR) on a corpus of European French.
+
+** Goals for next Week:
+- TODO Reproduce the results given in the kaldi gp repo.
+
+
 * MyWAR <2016-12-09 Fri>
 ** Goals for Last Week:
 - TODO Run standard gp kaldi recipe,
