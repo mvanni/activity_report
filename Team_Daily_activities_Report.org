@@ -1,3 +1,73 @@
+* DAR <2017-01-17 Tue>
+**  Goals for Tuesday set Friday:
+- DONE Reproduce the results in the kaldi gp repo.
+
+Why are my WER results for mono so bad compared to the results published in the kaldi gp repo?
+They report 41.80 my best so far is 49.05.
+I'm going back to the lm preparation scripts.
+
+I made 3 changes:
+1. I added the dev and test prompts to the lm training corpus. I doo not really want to do this since it feels like cheating.
+2. I used the utils/format_lm_sri.sh  script to convert the lm to an fst.
+3.  I also used the irstlm pruning commands.  
+
+OK: I achieved some lower WERs.
+Eval low: 
+%WER 41.14 [ 8927 / 21698, 1206 ins, 1305 del, 6416 sub ] 
+Dev low:
+43.88
+these are lower than the 41.80 and 45.69 that in the gp repo results.
+I'll try again without the test and dev prompts in the  lm
+Here is the srilm command to build the lm:
+ngram-count \
+    -order 3 \
+    -kndiscount \
+    -interpolate \
+    -unk \
+    -map-unk "<UNK>" \
+    -limit-vocab \
+    -text $corpus \
+    -lm $lmthreegram || exit 1;
+
+Then this command gets run:
+utils/format_lm_sri.sh \
+    --srilm-opts "-subset -prune-lowprobs -unk -tolower" \
+    data/lang \
+    language_models/lm_threegram.arpa.gz \
+    data/local/dict/lexicon.txt \
+    data/lang_sri
+
+Then the following irstlm command is run on the original lm data, not the results of the previous command.
+prune-lm \
+    --threshold=1e-7 \
+    language_models/lm_threegram.arpa.gz \
+    /dev/stdout | \
+    gzip -c > \
+	 data/local/lm/lm_threegram.arpa.gz
+
+Finally, the following irstlm command is run on what looks like the output from both the previous commands:
+utils/format_lm.sh \
+    data/lang_sri \
+    data/local/lm/lm_threegram.arpa.gz \
+    data/local/dict/lexicon.txt \
+    data/lang_test
+
+In the training I am using the data/lang_test directory.
+
+Do I really need the 2 irstlm commands to get the low WERs?
+
+- The dev and test prompts really make a difference.
+The best for eval without the dev and test prompts is 56.07
+The best for dev without the dev and test prompts is 58.54
+
+I think they used the dev and test prompts in their lm.
+ 
+** Goals for Wednesday:
+- TODO Meet with Jacquin to work on ASR for the voxtec device.
+- TODO Reproduce the rest of the gp results from the kaldi repo.
+- TODO Contact Bogdan Vlasenko (the person who got the kaldi repo results)
+
+
 * DAR <2017-01-13 Fri>
 ** Goals for Friday set Thursday:
 - DONE Train the tdnn for the chain models on the gp corpus.
