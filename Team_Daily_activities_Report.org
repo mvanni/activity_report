@@ -1,3 +1,29 @@
+* DAR <2017-01-19 Thu>
+**  Goals for Thursday set Wednesday:
+- Todo Reproduce the    gp results for models beyond monophones from the kaldi repo.
+The best on tri1 dev:
+%WER 36.70 [ 8182 / 22297, 2382 ins, 478 del, 5322 sub ]
+
+
+- Taking a step back.
+Steve found language models for global phone.
+Justin put the Bremen 3gram lm for French under:
+/mnt/corpora/Globalphone/gp/LMs/FR.3gram.lm.gz
+I rebuilt the  lang fst with this lm and restarted the building steps.
+- Mono results:
+dev:
+%WER 58.61 [ 13069 / 22297, 1181 ins, 2271 del, 9617 sub ]
+eval:
+%WER 56.44 [ 12247 / 21698, 1154 ins, 1917 del, 9176 sub ]
+
+So forget it.
+- Take another step back.
+I'm going to move forward with the gp training prompts as the data for training the lm.
+
+** Goals for Monday:
+- TODO Build our own lm.
+- TODO Continue building system with lm trained on gp training prompts.
+
 * DAR <2017-01-18 Wed>
 ** Goals for Wednesday set Tuesday:
 - DONE Meet with Jacquin to work on ASR for the voxtec device.
