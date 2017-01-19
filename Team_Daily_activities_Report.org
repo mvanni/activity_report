@@ -1,3 +1,17 @@
+* DAR <2017-01-18 Wed>
+** Goals for Wednesday set Tuesday:
+- DONE Meet with Jacquin to work on ASR for the voxtec device.
+We got the test set and transcripts to Jacq
+- TODO Reproduce the rest of the gp results from the kaldi repo.
+There were problems building the LMs.
+The srilm version seems to work on the gpu machine, but not on my laptop.
+I ran the test using the standard lm and the enhanced sri lm.
+the enhanced sri lm version gives slightly better results.
+41.16 versus 40.98
+- TODO Contact Bogdan Vlasenko (the person who got the kaldi repo results)
+
+** Goals for Thursday:
+- Todo Reproduce the    gp results for models beyond monophones from the kaldi repo.
 * DAR <2017-01-17 Tue>
 **  Goals for Tuesday set Friday:
 - DONE Reproduce the results in the kaldi gp repo.
@@ -66,7 +80,6 @@ I think they used the dev and test prompts in their lm.
 - TODO Meet with Jacquin to work on ASR for the voxtec device.
 - TODO Reproduce the rest of the gp results from the kaldi repo.
 - TODO Contact Bogdan Vlasenko (the person who got the kaldi repo results)
-
 
 * DAR <2017-01-13 Fri>
 ** Goals for Friday set Thursday:
