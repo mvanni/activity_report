@@ -1,3 +1,21 @@
+* MyWAR <2017-01-19 Thu>
+** Goals from last week:
+- TODO Reproduce the results given in the kaldi gp repo.
+I achieved the WER results for the monophone system by using all the gp prompts including training, dev and tst.
+Scores were not good for the tri1 models.
+Steve found a reference lm for gp  on the web.
+The monophone WER results wer way off though: 58 versus 45.
+** WAR:
+John Morgan spent this week trying to reproduce the Word Error (WEER)  Rates reported in the kaldi ASR toolkit repository.
+He had mixed success, only achieving the same WERs for context independent (monophone) acoustic models using a language model trained on text from all the prompts included in the Globalphone speech corpus. 
+These results show the importance of the language model component of an ASR system. 
+In the future he plans on building LMs with data containing text relevant to Army missions. 
+
+** Goals for Next Week:
+- TODO Build our own LM with Army relevant data.
+- TODO Continue building an ASR system with an lm trained on the gp traning promts.
+ 
+
 * My WAR <2017-01-13 Fri>
 ** Goals for this Year:
 - TODO Build chain model for the gp corpus.
@@ -11,7 +29,6 @@ John Morgan succeeded this week in training and testing a chain model system for
 
 ** Goals for next Week:
 - TODO Reproduce the results given in the kaldi gp repo.
-
 
 * MyWAR <2016-12-09 Fri>
 ** Goals for Last Week:
