@@ -1,3 +1,27 @@
+* DAR <2017-01-23 Mon>
+** Goals for Monday set Thursday:
+- TODO Build our own lm.
+I created a new git repo for fr-lm.
+I'm going to put the scripts and files for building French LMs here.
+I have scripts for gettting the gp prompts.
+I have the Yaounde prompts and questions.
+I am in the middle of collecting the transcripts from SRI.
+There are 4 files for the Canada and Gabon transcripts.
+2 for conversational speech and 2 for read speech.
+There are also transcripts under the tdf directory.
+The files under the tdf directory contain more information than just the transcripts.
+I'm not sure if the above 4 files overlap the tdf files.
+The conversation transcripts contain words in parens, double parens, some asterisks and some comments in braces.
+I am in the process of removing these by hand in the 4 above files.
+Should I have done this in scripts?
+
+I sent a message to the kaldi help mailing list asking Bogdan about what lm and lexicon he used to get his results.
+ 
+- TODO Continue building system with lm trained on gp training prompts.
+
+** Goals for Tuesday:
+- TODO Get more data to build LM and write scripts to process this data.
+
 * DAR <2017-01-19 Thu>
 **  Goals for Thursday set Wednesday:
 - Todo Reproduce the    gp results for models beyond monophones from the kaldi repo.
