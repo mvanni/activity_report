@@ -1,3 +1,17 @@
+* DAR <2017-01-24 Tue>
+** Goals for Tuesday set Monday:
+- DONE Get more data to build LM and write scripts to process this data.
+I processed the data from gp,train, dev and test,  yaounde, questions and prompts, sri gabon conversational tdf and bic
+
+- gp training
+I went ahead and started training a gp system only using the gp training prompts in the lm training.
+Again, the mono WER scores are bad: 56 and 58.
+
+** Goals for Wednesday:
+- TODO Meet with Jacquin.
+- TODO Train GP chain model system with only gp trainin prompts in lm. 
+- TODO Incorporate open subs into fr-lm training scripts.
+ 
 * DAR <2017-01-23 Mon>
 ** Goals for Monday set Thursday:
 - TODO Build our own lm.
