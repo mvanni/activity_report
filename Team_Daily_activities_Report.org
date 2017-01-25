@@ -1,3 +1,31 @@
+* DAR <2017-01-25 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Meet with Jacquin.
+Jacq gave us models and results.
+- TODO Train GP chain model system with only gp trainin prompts in lm. 
+I created a new git repo called gp-chain for the chain models on the gp corpus scripts.
+I have scripts to do the following:
+1. build up to tri1.
+2. Make alignment lattices.
+3. Make the template model with a special topology.
+4. Build a tree.
+5. Train a diagonal UBM.
+6. Train an i-vector extractor.
+7. Do something with speakers. (not sure, but it looks like only 2 utterences from each speaker are put aside).
+8. Extract i-vectors (online).
+9. Train a tdnn.
+10. Make a decoding fst graph.
+11. Extract test i-vectors (online) for dev and eval data.
+12. Decode dev and eval.
+
+- TODO Incorporate open subs into fr-lm training scripts.
+Did not get to this.
+
+** Goals for Thursday:
+- TODO Build gp system
+- TODO Build gp chain model system
+- TODO Incorporate open subs into fr-lm training scripts.
+
 * DAR <2017-01-24 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Get more data to build LM and write scripts to process this data.
