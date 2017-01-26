@@ -1,3 +1,28 @@
+* DAR <2017-01-26 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Build gp system
+I'm on the denominator lattice generation step for the sgmm system.
+This takes forever.
+- DONE Build gp chain model system
+I found a problem with the way I was trying to build the gp-chain system.
+I wanted to build the ubm directly from the tri1 models.
+When I ran the script to train the diab ubm, I got and error saying that the splice options were not available.
+I found that these splice options are associated with the triphone models that are trained with mllt and lda.
+So, I am taking a step back to train triphones with mllt and lda.
+As I'm getting ready to leave, the gp chain system has trained and even tested.
+The scoring scripts were not accessible, so I'm running the decoding step over again.
+  
+- TODO Incorporate open subs into fr-lm training scripts.
+
+
+- I spent more time cleaning up my repos.
+ I put the eesen scripts in their own repos.
+I worked on getting the yaounde scripts cleaned up in their own repo.
+
+** Goals for Friday:
+- TODO Clean up scripts in yaounde, gp+yaounde, etc. in their own repos.
+- TODO Write results for gp with simple lm.
+ 
 * DAR <2017-01-25 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Meet with Jacquin.
