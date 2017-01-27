@@ -1,3 +1,29 @@
+* MyWAR <2017-01-27 Fri>
+**  Goals for Last Week:
+- TODO Build our own LM with Army relevant data.
+I wrote scripts to process data from the French BIC.
+- DONE Continue building an ASR system with an lm trained on the gp traning promts.
+I finished a gp chain model build with the simple lm.
+The WER was 49.59.
+A chain model system builds on triphones trained with speaker adaptive training, mllt and ld. It does not use the sgmm models.
+I still need to work on the full build of the gp system with the simple lm.
+The full build of the gp system will include SGMMs.
+
+I spent a lot of time this week cleaning and rearranging my scripts in repositories for building the different kaldi ASR systems.
+I made separate repositories for the gp, gp-chain, yaounde, gp-yaounde, gp-yaounde-central-accord, eesen gp and a repository for the French LM work.
+
+** WAR:
+John Morgan built a minial chain model based automatic speech recognition (ASR) system on the GlobalPhone (GP) European French corpus with the kaldi ASR toolkit. 
+He found that the kaldi toolkit requires context dependent gaussian mixture models (CD GMM)s to be trained first with features modified by maximum Likelihood Linear Transformation (MLLT) and Linear Discrinitive Analysis (LDA). 
+He also found that better results are achieved   by modifying the CD GMMs with Speaker Adaptive Training (SAT). 
+The  chain model approach is a very active area of research, but Morgan has not yet observed that it performs better than the subspace gaussian mixture model approach on accented speech.
+
+** Goals for Next Week:
+- TODO Go end to end ( mono to sgmm) on the gp build with the simple lm and  put it all in a single run.sh script in the repo with results.
+- TODO Ditto for a gp + yaounde build (maybe wait for Steve to make a yaounde test set).
+- TODO Ditto for a gp + yaounde chain model build.
+
+
 * MyWAR <2017-01-19 Thu>
 ** Goals from last week:
 - TODO Reproduce the results given in the kaldi gp repo.
@@ -15,7 +41,6 @@ In the future he plans on building LMs with data containing text relevant to Arm
 - TODO Build our own LM with Army relevant data.
 - TODO Continue building an ASR system with an lm trained on the gp traning promts.
  
-
 * My WAR <2017-01-13 Fri>
 ** Goals for this Year:
 - TODO Build chain model for the gp corpus.
