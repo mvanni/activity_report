@@ -1,3 +1,38 @@
+* DAR <2017-01-27 Fri>
+** Goals for Friday set Thursday:
+- TODO Clean up scripts in yaounde, gp+yaounde, etc. in their own repos.
+- TODO Write results for gp with simple lm.
+
+- Experiment:
+My goal was to build a minimal gp chain model system for use as a baseline.
+The previous system  I was using started the chain model build from the tri3b system.
+How is the tri3b system built?
+1. Train mono
+2. Get alignments from mono
+3. Train tri1 with mono alignments.
+4. Train tri2b with mllt, lda and tri1 alignments.
+5. Get SI alignments with tri2b (I think the SI stands for speaker independent).
+6. Train tri3b with sat and tri2b alignments.
+7. Get fmllr alignments with tri3b (this get used later).
+8. Generate phone-level alignment lattices containing alternative pronunciations using fmllr alignment with tri3b models.
+9. Build a tree using tri3b alignments made in step 7.
+10.  Train a ubm for online i-vector extraction. This step uses the tri3b models to transform features (this is still a mystery).
+11. Train tdnn. this step uses both the alignment lattices generated in step 8 and the tree built in step 9. Note that the tree built in step 9 uses the allignments from step 8. So, this tdnn training step uses both alignments generated using the tri3b models.
+ 
+In attempting to build a minimal gp chain model system, I skipped the tri3b model and used the tri2b model instead. 
+This means I skipped sat training.
+The results were slightly worse for the system that only used tri2b.
+
+I'm going to make the minimal gp chain model include the tri3b step.
+I did this and the results wer as expected: wer: 49.59.
+
+** Goals for Monday:
+- TODO Finish the gp with simple lm build and consolidate all the steps in 1 run.sh script in the repo.
+- TODO clean uup the gp repo.
+- TODO Make a yaounde build and put all the scripts in the yaounde repo (wait for Steve's test set fold).
+- TODO Work on the other builds and scripts in their own repos.
+- TODo Consider a repo for gp + yaounde chain model scripts.
+
 * DAR <2017-01-26 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Build gp system
