@@ -1,3 +1,41 @@
+* DAR <2017-01-31 Tue>
+** Goals for Tuesday set Monday:
+- TODO visit NIST
+We had a Very good visit.
+
+- LRE
+Omid mentioned the LRE recipe as a model for accent id.
+I am looking at the kaldi recipes for LRE.
+It looks like all the steps he outlined are in the kaldi LRE recipes.
+Specifically, there is a way to use a dnn instead of a gmm to build a ubm.
+The ubm is then used to train an i-vector extractor.
+The script to train the dnn i-vector extractor requires an sgmm.
+The recipe I'm using requires a ubm to build an sgmm.
+The ubm here is used to initialize the sgmm.
+The first ubm is trained using a gmm.
+
+As I'm getting ready to leave, I'm training SGMMs on gp.
+A ubm was previously trained to initialize the sgmm.
+I am considering  building a dnn ubm to train the i-vector extractor by following the scripts in the lre recipes.
+This will probably require more data than the gp corpus to beat the gmm-based ubm.
+I'd eventually like to follow the LRE scripts to build an accent id similarly to the way they built a lid.
+
+** Goals for Wednesday:
+- TODO Build SGMMs for gp.  
+- TODO Build dnn i-vector extractor.
+
+
+* DAR <2017-01-30 Mon>
+**  Goals for Monday set Friday:
+- TODO Finish the gp with simple lm build and consolidate all the steps in 1 run.sh script in the repo.
+- TODO clean uup the gp repo.
+- TODO Make a yaounde build and put all the scripts in the yaounde repo (wait for Steve's test set fold).
+- TODO Work on the other builds and scripts in their own repos.
+- TODo Consider a repo for gp + yaounde chain model scripts.
+
+** Goals for Tuesday:
+- TODO visit NIST
+
 * DAR <2017-01-27 Fri>
 ** Goals for Friday set Thursday:
 - TODO Clean up scripts in yaounde, gp+yaounde, etc. in their own repos.
