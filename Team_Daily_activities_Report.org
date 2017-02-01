@@ -1,3 +1,24 @@
+* DAR <2017-02-01 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Build SGMMs for gp.
+training finished over night on my laptop.
+I started alignment this morning.
+
+- TODO Build dnn i-vector extractor.
+This would be cool, but I'm not sure now if it is necessary.
+
+- Accent ID plan:
+Omit seemed to suggest that we could follow the recipe that was used for LID to do Accent ID.
+I would like to look into this.
+My understanding of LID is that given some speech as input, LID outputs the best guess at the language spoken by the speaker.
+The pyspeech tutorial is trained with 57 languages. 
+I think we can start with a system that when given some french speech as input, outputs a guess that the speech is from either a speaker with a European accent or an African accent.
+
+** Goals for Thursday:
+- TODO Investigate deeper the LID recipe in kaldi to see if we can use if for AID.
+- TODO Process the transcripts made by SRI for the CA16 corpus.
+- TODO Consolidate all the scripts to process our African French holdings so that we can make an i-vector extractor for African Accented French.
+
 * DAR <2017-01-31 Tue>
 ** Goals for Tuesday set Monday:
 - TODO visit NIST
@@ -23,7 +44,6 @@ I'd eventually like to follow the LRE scripts to build an accent id similarly to
 ** Goals for Wednesday:
 - TODO Build SGMMs for gp.  
 - TODO Build dnn i-vector extractor.
-
 
 * DAR <2017-01-30 Mon>
 **  Goals for Monday set Friday:
