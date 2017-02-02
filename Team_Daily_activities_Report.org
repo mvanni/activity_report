@@ -1,3 +1,20 @@
+* DAR <2017-02-02 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Investigate deeper the LID recipe in kaldi to see if we can use if for AID.
+It would really help if we could get the LDC callfriend corpora, but not absolutely necessary.
+We may already have them, but they are not on the /mnt/corpora disk.
+
+- TODO Process the transcripts made by SRI for the CA16 corpus.
+I worked on this today.
+This will be the priority for the next couple of days.
+
+- TODO Consolidate all the scripts to process our African French holdings so that we can make an i-vector extractor for African Accented French.
+
+** Goals for Friday:
+- TODO Process the SRI provided transcripts for the CA16 data. Specifically, the conv tdf files and the read speech transcripts that Steve gave me today.
+- TODO Make a repo for the Niger corpus processing scripts. Specifically, we want a place for the official transcripts.
+- TODO consolidate the central accord test data and the sri_gabon directory on /mnt/corpora.
+
 * DAR <2017-02-01 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Build SGMMs for gp.
