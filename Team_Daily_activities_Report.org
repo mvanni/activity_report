@@ -1,3 +1,27 @@
+* DAR <2017-02-03 Fri>
+** Goals for Friday set Thursday:
+- TODO Process the SRI provided transcripts for the CA16 data. Specifically, the conv tdf files and the read speech transcripts that Steve gave me today.
+I worked all day on the conversational speech transcripts.
+I removed pronunciation comments.
+I processed comments in parens and double parens.
+I may have deleted more text than I should have.
+I'll have to go back and check what is done to the text in parens.
+
+- DONE Make a repo for the Niger corpus processing scripts. Specifically, we want a place for the official transcripts.
+I made  the repo and put the niger transcripts there.
+
+- TODO consolidate the central accord test data and the sri_gabon directory on /mnt/corpora.
+This will not happen for a while.
+
+* WAR:
+John Morgan conditioned a set of transcripts for the conversational part of the African  French speech corpus that was collected in Libreville, Gabon in 2016. 
+The transcripts are intended to be used for adaptation of European French acoustic models to African accented French. 
+Adaptted acoustic models will be used to improve speech-to-speech applications on hand-held devices.
+
+** Goals for Monday:
+- TODO Do another pass on the conversational speech transcripts conditioning.
+- TODO  Consolidate all the scripts to process our African French holdings so that we can make an i-vector extractor for African Accented French.
+
 * DAR <2017-02-02 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Investigate deeper the LID recipe in kaldi to see if we can use if for AID.
