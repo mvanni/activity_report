@@ -1,3 +1,20 @@
+* My WAR <2017-02-03 Fri>
+**  Goals set Last Week:
+- DONE Go end to end ( mono to sgmm) on the gp build with the simple lm and  put it all in a single run.sh script in the repo with results.
+- TODO Ditto for a gp + yaounde build (maybe wait for Steve to make a yaounde test set).
+- DONE Ditto for a gp + yaounde chain model build.
+I did this for a very basic chain model.
+
+** WAR:
+John Morgan conditioned a set of transcripts for the conversational part of the African  French speech corpus that was collected in Libreville, Gabon in 2016. 
+The transcripts are intended to be used for adaptation of European French acoustic models to African accented French. 
+Adaptted acoustic models will be used to improve speech-to-speech applications on hand-held devices.
+
+** Goals for Next Week:
+- TODO Another pass on the transcripts for the conversational  part of the Central Accord speech corpus. Specifically, check the text inside parens.
+- TODO Consolidate processing scripts for all the African Accented French Data so we can make an i-vector extractor for African Accented Speech.
+- TODO Go end to end for gp + yaounde  with a simple  LM.
+
 * MyWAR <2017-01-27 Fri>
 **  Goals for Last Week:
 - TODO Build our own LM with Army relevant data.
