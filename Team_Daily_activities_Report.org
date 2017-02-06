@@ -1,3 +1,23 @@
+* <2017-02-06 Mon>
+**  Goals for Monday set Friday:
+- DONE Do another pass on the conversational speech transcripts conditioning.
+Steve took a look at the results and it looks good.
+- TODO  Consolidate all the scripts to process our African French holdings so that we can make an i-vector extractor for African Accented French.
+Today I put the scripts to process the yaounde read transcripts in the accent-id repo.
+I'm currently working on the niger scripts in its own repo.
+As I am getting ready to leave, the next step to take tomorrow is the script that gets the Niger speaker names. 
+- librispeech:
+librispeech is a free corpus of English read speech.
+I had Justin put it on /mnt/corpora.
+I can build an ASR system with it and use it to make an i-vector extractor.
+
+
+** Goals for Tuesday:
+- TODO Niger data prep scripts.
+- TODO Consolidate Niger scripts into accent id scripts.
+- TODO Ditto for Central Accord/sri_gabon conversational speech scripts.
+- TODO Librispeech build.
+
 * DAR <2017-02-03 Fri>
 ** Goals for Friday set Thursday:
 - TODO Process the SRI provided transcripts for the CA16 data. Specifically, the conv tdf files and the read speech transcripts that Steve gave me today.
@@ -13,7 +33,7 @@ I made  the repo and put the niger transcripts there.
 - TODO consolidate the central accord test data and the sri_gabon directory on /mnt/corpora.
 This will not happen for a while.
 
-* WAR:
+** WAR:
 John Morgan conditioned a set of transcripts for the conversational part of the African  French speech corpus that was collected in Libreville, Gabon in 2016. 
 The transcripts are intended to be used for adaptation of European French acoustic models to African accented French. 
 Adaptted acoustic models will be used to improve speech-to-speech applications on hand-held devices.
