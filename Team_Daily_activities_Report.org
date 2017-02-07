@@ -1,3 +1,46 @@
+* DAR <2017-02-07 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Niger data prep scripts.
+- TODO Consolidate Niger scripts into accent id scripts.
+- TODO Ditto for Central Accord/sri_gabon conversational speech scripts.
+I did not get to this, but instead I put the gp processing scripts into the accent id repo.
+Now we have scripts for 3 data sets under the accent id repo:
+1. yaounde
+2. niger
+3. gp
+- TODO Librispeech build.
+I did not do a lot on this today, but I did run the following:
+1. data preparation,
+2. downloaded the pre-built language models,
+3. Dictionary preparation,
+4. lang directory preparation (this is mostly lexicon preparation),
+5. format the language models (arpa to fst  and const arpa format),  
+6. mfcc feature computation,
+7. 
+
+Maybe tomorrow I'll be able to start monophone training.
+The first next step is to make data subsets.
+
+- Demo project:
+I took a first step at building a  speech to speech demo.
+I setup a script to run a single wav file through the kaldi decoder.
+I did this for the gp system.
+I have  this tiny demo running on hclg fst files for  the following models:
+1. mono
+2. tri1
+
+I'm in the process of getting it to work for:
+3. tri2a
+4. tri2b
+5. tri3b
+6. sgmm
+
+** Goals for Wednesday:
+- TODO Train English monophones on librispeech,
+- TODO Make a separate repo for the conversational gabon/sri/central accord speech transcripts processing scripts,
+- TODO Incorporate the above scripts in the accent id repo,
+- TODO Drill further down into gp demo.
+
 * <2017-02-06 Mon>
 **  Goals for Monday set Friday:
 - DONE Do another pass on the conversational speech transcripts conditioning.
@@ -10,7 +53,6 @@ As I am getting ready to leave, the next step to take tomorrow is the script tha
 librispeech is a free corpus of English read speech.
 I had Justin put it on /mnt/corpora.
 I can build an ASR system with it and use it to make an i-vector extractor.
-
 
 ** Goals for Tuesday:
 - TODO Niger data prep scripts.
