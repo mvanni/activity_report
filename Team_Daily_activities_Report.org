@@ -1,3 +1,24 @@
+* DAR <2017-02-08 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Train English monophones on librispeech,
+I ran the monophone training.
+I started making the fst and decoding with the mono models.
+I also started the alignment with the mono models.
+These initial steps  are done with a relatively small amount of data.
+
+- TODO Make a separate repo for the conversational gabon/sri/central accord speech transcripts processing scripts,
+I made  gabon-read and gabon-conv repos.
+I am writing processing scripts.
+- TODO Incorporate the above scripts in the accent id repo,
+- TODO Drill further down into gp demo.
+
+** Goals for Thursday:
+- TODO Set up and build a gp + gabon system with the gabon data we sent to Voxtek.
+- TODO Train tri1 librispeech models.
+- TODO Accent id
+- TODO Demo
+
+
 * DAR <2017-02-07 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Niger data prep scripts.
