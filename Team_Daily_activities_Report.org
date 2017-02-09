@@ -1,3 +1,28 @@
+* DAR <2017-02-09 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Set up and build a gp + gabon system with the gabon data we sent to Voxtek.
+As part of this goal, I made scripts to process the gabon_conv data and put them in the gabon-conversational repo.
+At COB today, I've processed the gp data, the dictionary and the language model.
+I plan on building sgmm models with the gabon data on top of the gp data.
+I'll build the tri3b models only with gp
+- DONE Train tri1 librispeech models.
+At COB today I am training SAT models tri4b on 100 hours of speech.
+
+- TODO Accent id
+- TODO Demo
+- DONE LM for gp + gabon
+I included:
+1. GP training prompts
+2. Yaounde training (red) prompts.
+3. BIC
+4. Gabon read training prompts.
+5. Gabon conv training transcripts.
+6. subs
+
+** Goals for Friday:
+- TODO Librispeech 
+- TODO Gp build for gp + gabon 
+
 * DAR <2017-02-08 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Train English monophones on librispeech,
@@ -17,7 +42,7 @@ I am writing processing scripts.
 - TODO Train tri1 librispeech models.
 - TODO Accent id
 - TODO Demo
-
+- TODO LM for gp + gabon
 
 * DAR <2017-02-07 Tue>
 **  Goals for Tuesday set Monday:
