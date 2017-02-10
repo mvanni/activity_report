@@ -50,6 +50,7 @@ Morgan hopes to find potential improvements to Voxtek's system from new acoustic
 - TODO build gp + gabon + read + gabon conv sgmm system
 - TODO Build librispeech English system on 960 hours of read speech. 
 - TODO Make a French ASR demo and connect it to a joshua smt fr-en system.
+- TODO Attend IARPA Babel workshop (Wednesday and Thursday)
 
 * My WAR <2017-02-03 Fri>
 **  Goals set Last Week:
