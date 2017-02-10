@@ -1,3 +1,26 @@
+* DAR <2017-02-10 Fri>
+**  Goals for Friday set Thursday:
+- TODO Librispeech 
+At COB today I am aligning the 460 hour data set with the tri4b models.
+tri4b is a speaker adapted system trained on 100 hours.
+- DONE Gp build for gp + gabon 
+I am starting to prepare the gabon read to incorporate it into the gp+gabon system.
+The test set makes this a little tricky.
+Our test set has speaker directory names that are different from the speaker directory names in the training set.
+I parsed the speaker number and recording number out of the SRI transcribed test data files. 
+I did the same for our test set data files and matched them.
+- Caveat: this did not work.
+The  recording names do not match.
+The speakers can easily be mapped, but the recording names have to be aligned one by one.
+We now have 2 test sets from the Gabon data collection.
+1. Steve's 515 selected utterances from 12 speakers.
+2. The 375 utterances that overlap between the SRI transcripbed read data and Steve's test set.
+ 
+** Goals for Monday:
+- TODO Librispeech
+- TODO build gp + gabon read.
+- TODO Demo
+
 * DAR <2017-02-09 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Set up and build a gp + gabon system with the gabon data we sent to Voxtek.
