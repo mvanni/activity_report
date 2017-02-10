@@ -1,3 +1,56 @@
+* MyWAR <2017-02-10 Fri>
+**  Goals for Last Week:
+- DONE Another pass on the transcripts for the conversational  part of the Central Accord speech corpus. Specifically, check the text inside parens.
+The transcripts we got from SRI for the READ and Conversational parts of the Gabon corpus have been processed.
+Jacq says he had already done this, but we can use it for our work.
+- DONE Consolidate processing scripts for all the African Accented French Data so we can make an i-vector extractor for African Accented Speech.
+I consolidated the processing scripts for the following data sets:
+1. Yaounde Read.
+2. GP.
+3. Gabon Read (SRI provided)
+4. Gabon Conversational (SRI provided)
+
+I have not worked on the data  collected by SRI in Canada.
+- TODO Go end to end for gp + yaounde  with a simple  LM.
+Leaving this for now
+Steve wants me to Instead work on a gp  + gabon system so we can compare with Voxtex's system.
+I plan on building the system in 3 steps:
+1. Gp
+2. gp + gabon read
+3. gp + gabon read + gabon conversational
+
+I've finished steps 1 and I've written scripts for step 2.
+There is an issue with the gabon read test set (I guess we'll run in to it again for gabon conversational).
+The SRI team transcribed 375 utterances that overlap with our 512 test set.
+The next step is to build the gp + gabon read system.
+
+I also built the lm I'll be using.
+In addition to the text from the corpora listed above, I also added the subs corpus to the lm training set.
+- Demo:
+I'd like to make a speech to speech demo.
+The first step is to make a demo for French ASR.
+The second step is to build a French to English text demo.
+This would use a kaldi French ASR decoder to get French text from speech and maybe a joshua French to English smt decoder to get English text.
+I have a very rough demo of  French speech to text. 
+it uses an hlcg fst. 
+I take a french recording in a wav file.
+I extract mfcc features.
+I run  kaldi decoders in the same way I do when I evaluate systems built with kaldi recipes.
+The input is a wav file and the output is French text.
+
+** WAR:
+John Morgan is building an Automatic Speech Recognition (ASR) system for African Accented French. 
+The acoustic models will be trained on recordings of African Accented Speech that were collected last year in Gabon by Steve Larroca and SRI. 
+SRI recently provided text transcripts for the speech in the recordings. 
+Voxtek is alsos adapting their speech to speech device on this transcribed data. 
+Morgan hopes to find potential improvements to Voxtek's system from new acoustic modeling techniques that are now available to researchers.
+
+** Goals for Next Week:
+- TODO Build gp + gabon read sgmm system.
+- TODO build gp + gabon + read + gabon conv sgmm system
+- TODO Build librispeech English system on 960 hours of read speech. 
+- TODO Make a French ASR demo and connect it to a joshua smt fr-en system.
+
 * My WAR <2017-02-03 Fri>
 **  Goals set Last Week:
 - DONE Go end to end ( mono to sgmm) on the gp build with the simple lm and  put it all in a single run.sh script in the repo with results.
@@ -39,7 +92,6 @@ The  chain model approach is a very active area of research, but Morgan has not 
 - TODO Go end to end ( mono to sgmm) on the gp build with the simple lm and  put it all in a single run.sh script in the repo with results.
 - TODO Ditto for a gp + yaounde build (maybe wait for Steve to make a yaounde test set).
 - TODO Ditto for a gp + yaounde chain model build.
-
 
 * MyWAR <2017-01-19 Thu>
 ** Goals from last week:
