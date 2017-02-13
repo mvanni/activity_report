@@ -1,3 +1,48 @@
+* DAR <2017-02-13 Mon>
+**  Goals for Monday set Friday:
+- TODO Librispeech
+I started the training for the tri5b models.
+tri5b is built by running more sat on top of tri4b with 460 hours of speech.
+Recall that tri4b was SAT on 100 hours of speech.
+The tri5b training finished.
+I started the evaluation on tri5b.
+I also started the nnet5a training.
+I killed it because I saw that it is not using the GPU.
+It is set to use 16 threads instead.
+At COB today, I am restarting the nnet5a training with number of threads set to 1.
+This should trigger the GPU.
+ 
+- DONE build gp + gabon read.
+Putting everything in one run.sh script was not working, so I've gone back to my method of putting steps in their own scripts that have names beginning with numbers.
+The numbers make it easy to reproduce my steps.
+I have mllt lda sat tri3b models built on gp.
+I took the following steps: 
+1. I extracted mfcc features from the gabon read data.
+2. I consolidated the gp and gabon read data directories.
+This wrote new spk2utt, text, utt2spk and wav.scp files for the consolidated gp and gabon read corpora.
+3. I  aligned the gp gabon read data with the tri3b models.
+4.  I  ran sat  training on the gp gabon read data to get tri4b models.
+This tri4b training step finished.
+I also did the following steps:
+1. I extracted mfcc features from the gabon conv data.
+2. I consolidated the gp, gabon read and gp conv data directories.
+This wrote new spk2utt, text, utt2spk and wav.scp files for the consolidated gp,  gabon read and gp conv corpora.
+3. I  aligned the consolidated gp, gabon read and gabon conv data with the tri4b models.
+4.  I  ran sat  training on the gp, gabon read and gabon conv data to get tri5b models.
+
+At COB today, I am running the decoding scripts for the model sets I've built so far.
+- TODO Demo
+   I put a little work into this today.
+I am trying to get a minimal example for the mfcc extraction step.
+The script that wants to split the data into chunks to run in parallel is getting in the way.
+The utt2spk and spk2utt files are also being used and I'm not sure they are required.
+
+** Goals for Tuesday:
+- TODO Gp + Gabon Read + Gabon CONV evaluation for mono, tri1, tri2a, tri3b, tri4b and tri5b .
+- TODO Build nnet2, sgmm and sgmm2 models on gp+gabon read+gabon conv.
+- TODO librispeech nnet5a on {GPU.
+-TODO Demo
+ 
 * DAR <2017-02-10 Fri>
 **  Goals for Friday set Thursday:
 - TODO Librispeech 
