@@ -1,3 +1,33 @@
+* DAR <2017-02-14 Tue>
+**  Goals for Tuesday set Monday:
+- DONE Gp + Gabon Read + Gabon CONV evaluation for mono, tri1, tri2a, tri3b, tri4b and tri5b .
+I have to spend some time on writing a script to get the results from the files written by kaldi.
+- TODO Build nnet2, sgmm and sgmm2 models on gp+gabon read+gabon conv.
+This is running today.
+The nnet2 script is using the GPU.
+- TODO librispeech nnet5a on {GPU.
+This is also using the GPU.
+I was surprised to find that you could run 2 scripts that both use the GPU. 
+-TODO Demo
+ I read some of the kaldi tutorial.
+Specifically, about ark and scp files.
+This helped me get a better understanding of how to compute mfcc features.
+There is a kaldi program called compute-mfcc-feats that extracts mfcc features from .wav files and stores them in a file.
+It takes 2 arguments:
+1. a wav_rspecifier 
+2. a feats_wspecifier
+
+The 2 arguments involve ark and scp files.
+
+- gp + gabon read + gabon conv  nnet2 models on the GPU:
+When I left yesterday, I started a script to run the nnet2 p-norm training on the gp + gabon read + gabon conv data.
+I was not sure if the script would run.
+This morning it has gone through 267 iterations and the GPU is running at 99%.
+It will go through 480 iterations, so it might be done this afternoon.
+
+** Goals for Wednesday:
+- TODO Kaldi Workshop
+
 * DAR <2017-02-13 Mon>
 **  Goals for Monday set Friday:
 - TODO Librispeech
