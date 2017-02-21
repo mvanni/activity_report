@@ -1,3 +1,24 @@
+* DAR <2017-02-21 Tue>
+** Certification todo list:
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders:
+3. TODO Sign PLA 
+4. TODO Take Cyber security Fundamentals Course 
+5. TODO Pass Cyber security Fundamentals Course:
+ The lessons for this course are on the web and luckily they seem to be very accessible.
+Today I've gone through:
+a. Lesson 1: Army Information Assurance Program.
+b. Lesson 2: Federal Laws, DoD Regulations and Policies.
+c. Lesson 3: Army Regulations and Policies.
+d. Lesson 4: Army Information Information Assurance Training Program
+e. Lesson 5: Network and Hacker Threats.
+f. Lesson 6. Malware
+g. Lesson 7: Physical Security
+
+.
+6. 
+** Goals for Wednesday:
+- Todo Lessons 8-16 of Cyber Security Fundamentals.
 * DAR <2017-02-14 Tue>
 **  Goals for Tuesday set Monday:
 - DONE Gp + Gabon Read + Gabon CONV evaluation for mono, tri1, tri2a, tri3b, tri4b and tri5b .
