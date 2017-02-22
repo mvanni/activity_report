@@ -1,3 +1,41 @@
+* DAR <2017-02-22 Wed>
+**  Goals for Wednesday set Tuesday:
+- Todo Lessons 8-16 of Cyber Security Fundamentals.
+
+** Certification todo list:
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders.
+3. TODO Sign PLA. 
+4. TODO Take Cyber security Fundamentals Course 
+a. DONE Lesson 1: Army Information Assurance Program.
+b. DONE Lesson 2: Federal Laws, DoD Regulations and Policies.
+c. DONE Lesson 3: Army Regulations and Policies.
+d. DONE Lesson 4: Army Information Information Assurance Training Program
+e. DONE Lesson 5: Network and Hacker Threats.
+f. DONE Lesson 6. Malware
+g. DONE Lesson 7: Physical Security
+8. DONE Lesson 8: Risk Assessment and Management.
+9. DONE Lesson 9: Security and Incident Response  Planning
+10 DONE Lesson 10: Continuity Of Operations (COOP)
+11. DONE Lesson 11: Department of Defense Information Assurance Certification and Accreditation Process (DIACAP).
+12. DONE Lesson 12: Wireless Security (802.11)
+13. DONE Intrusion Detection Systems (IDS) and Auditing.
+14. DONE Lesson 14 Firewalss and Perimeter Defense.
+15. DONE Lesson 15: Encryption and Common Access Cards.
+16. TODO Lesson 16: Legal.
+
+
+
+5. TODO Pass Cyber security Fundamentals Course:
+6. 
+
+I spent the whole day reading the Cyber Security Fundamentals lessons 8-16. 
+I  should read lesson 16 again since I only skimmed through it this afternoon.
+
+** Goals for Thursday:
+- TODO Read lesson 16 from Cyber Security Fundamentals.
+- TODO Take the cyber security fundamentals test (Can I do this?)
+
 * DAR <2017-02-21 Tue>
 ** Certification todo list:
 1. DONE Create account  in ATTCTS.
