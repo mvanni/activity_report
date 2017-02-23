@@ -1,3 +1,33 @@
+* DAR <2017-02-23 Thu>
+**  Goals for Thursday set Wednesday:
+- DONE Read lesson 16 from Cyber Security Fundamentals.
+I'm ready to take the test.
+- DONE Take the cyber security fundamentals test (Can I do this?)
+I had to go to the test link on the opening page.
+I passed with a 75.
+
+- TODO Linux+ on skillport.
+I looked into this.
+There does not seem to be anything for LX0-101 and LX0-102.
+Justin says it is not a matter of knockingout a couple of test.
+The Linux+ is a real Comptia Certification.
+Maybe Reggie had it wrong?
+
+** Checklist
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders.
+3. DONE Sign Privileged Level Access Agreement. 
+4. DONE Take Cyber security Fundamentals Course. 
+5. DONE Pass Cyber security Fundamentals Course.
+6. TODO Study for Comptia A+ certification exam.
+7. TODO Take and pass Comptia A+ exam.
+8. TODO Study for Security+ exam.
+9. TODO Take and pass Security+ exam.
+10. TODO Work through Linux+ course on skillport.
+
+** Goals for Friday:
+- TODO Read Chapter 1 of Comptia A+ Complete Review Guide.
+
 * DAR <2017-02-22 Wed>
 **  Goals for Wednesday set Tuesday:
 - Todo Lessons 8-16 of Cyber Security Fundamentals.
@@ -35,6 +65,7 @@ I  should read lesson 16 again since I only skimmed through it this afternoon.
 ** Goals for Thursday:
 - TODO Read lesson 16 from Cyber Security Fundamentals.
 - TODO Take the cyber security fundamentals test (Can I do this?)
+- TODO Linux+ on skillport.
 
 * DAR <2017-02-21 Tue>
 ** Certification todo list:
