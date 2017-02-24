@@ -1,3 +1,34 @@
+* MyWAR <2017-02-24 Fri>
+**  Goals for Last Week:
+- TODO Build gp + gabon read sgmm system.
+- TODO build gp + gabon + read + gabon conv sgmm system
+- TODO Build librispeech English system on 960 hours of read speech. 
+- TODO Make a French ASR demo and connect it to a joshua smt fr-en system.
+- DONE Attend IARPA Babel workshop (Wednesday and Thursday)
+
+I spent the last couple of days preparing for the Cyber Security Accreditation exams.
+
+**  Accreditation Checklist
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders.
+3. DONE Sign Privileged Level Access Agreement. 
+4. DONE Take Cyber security Fundamentals Course. 
+5. DONE Pass Cyber security Fundamentals Course.
+6. TODO Study for Comptia A+ certification exam.
+7. TODO Take and pass Comptia A+ exam.
+8. TODO Study for Security+ exam.
+9. TODO Take and pass Security+ exam.
+10. TODO Work through Linux+ course on skillport.
+
+** WAR:
+John Morgan contributed to the kaldi toolkit code repository. 
+A recipe for building an ASR system for the Iban language was used to demonstrate the kaldi toolkit at last week's IARPA Babel workshop.
+While running this recipe on MacOSX, Morgan found some gnu linux extensions to some core utils tools that were invoked in the data preparation recipe scripts. 
+He pointed out these problems  to the kaldi developers and they incorporated fixes to the scripts into the main trunk of kaldi. 
+
+** Goals for Next Week:
+- TODO Read Comptia A+ Complete Review Guide.
+
 * MyWAR <2017-02-10 Fri>
 **  Goals for Last Week:
 - DONE Another pass on the transcripts for the conversational  part of the Central Accord speech corpus. Specifically, check the text inside parens.
