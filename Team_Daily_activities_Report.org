@@ -1,3 +1,25 @@
+* DAR <2017-02-24 Fri>
+**  Goals for Friday set Thursday:
+- TODO Read Chapter 1 of Comptia A+ Complete Review Guide.
+
+hse
+I'm not finished yet at COB today.
+
+** Accreditation Checklist
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders.
+3. DONE Sign Privileged Level Access Agreement. 
+4. DONE Take Cyber security Fundamentals Course. 
+5. DONE Pass Cyber security Fundamentals Course.
+6. TODO Study for Comptia A+ certification exam.
+7. TODO Take and pass Comptia A+ exam.
+8. TODO Study for Security+ exam.
+9. TODO Take and pass Security+ exam.
+10. TODO Work through Linux+ course on skillport.
+
+** Goals for Monday:
+- TODO Read chapter 2 of Comptia A+ Complete Review Guide.
+
 * DAR <2017-02-23 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Read lesson 16 from Cyber Security Fundamentals.
