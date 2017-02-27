@@ -1,8 +1,37 @@
+* DAR <2017-02-27 Mon>
+**  Goals for Monday set Friday:
+- TODO Read chapter 2 of Comptia A+ Complete Review Guide.
+I'm actually reading the Comptia A+ Complete Study Guide.
+Today, I finished reading Chapters 1, 2 and part of chapter 3.
+1. Motherboards, Processors and Memory.
+2. Storage Devices and Power Supply.
+3. Peripherals  and Expansion.
+
+I'm on the paragraph on input devices, specifically, keyboards.
+
+- TODO Librispeech build.
+I am running the quick SAT training with 960 hours of speech (tri6b).
+
+** Goals for Tuesday:
+- TODO Read chapters 3 and 4 of Comptia A+ Complete Study Guide.
+- TODO chain models on Librispeech.
+
+**  Accreditation Checklist
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders.
+3. DONE Sign Privileged Level Access Agreement. 
+4. DONE Take Cyber security Fundamentals Course. 
+5. DONE Pass Cyber security Fundamentals Course.
+6. TODO Study for Comptia A+ certification exam.
+7. TODO Take and pass Comptia A+ exam.
+8. TODO Study for Security+ exam.
+9. TODO Take and pass Security+ exam.
+10. TODO Work through Linux+ course on skillport.
+
 * DAR <2017-02-24 Fri>
 **  Goals for Friday set Thursday:
 - TODO Read Chapter 1 of Comptia A+ Complete Review Guide.
 
-hse
 I'm not finished yet at COB today.
 
 ** Accreditation Checklist
