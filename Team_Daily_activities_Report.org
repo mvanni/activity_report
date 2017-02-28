@@ -1,3 +1,30 @@
+* DAR <2017-02-28 Tue>
+** Goals for Tuesday set Monday:
+- DONE Read chapters 3 and 4 of Comptia A+ Complete Study Guide.
+- TODO chain models on Librispeech.
+I am running the clean up script.
+
+**  Accreditation Checklist
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders.
+3. DONE Sign Privileged Level Access Agreement. 
+4. DONE Take Cyber security Fundamentals Course. 
+5. DONE Pass Cyber security Fundamentals Course.
+6. TODO Study for Comptia A+ certification exam.
+7. TODO Take and pass Comptia A+ exam.
+8. TODO Study for Security+ exam.
+9. TODO Take and pass Security+ exam.
+10. TODO Work through Linux+ course on skillport.
+
+- SOFTunisia:
+We found a copy of the SOFTunis Arabic speech corpus.
+I made a new repository for the scripts to process this corpus.
+
+** Goals for Wednesday:
+- TODO Read chapters 5 and 6 of Comptia A+ Complete Study Guide.
+- TODO Chain models on librispeech.
+- TODO Data prep for SOFTunis
+
 * DAR <2017-02-27 Mon>
 **  Goals for Monday set Friday:
 - TODO Read chapter 2 of Comptia A+ Complete Review Guide.
@@ -27,6 +54,7 @@ I am running the quick SAT training with 960 hours of speech (tri6b).
 8. TODO Study for Security+ exam.
 9. TODO Take and pass Security+ exam.
 10. TODO Work through Linux+ course on skillport.
+- TODO Chain model training for librispeech.
 
 * DAR <2017-02-24 Fri>
 **  Goals for Friday set Thursday:
