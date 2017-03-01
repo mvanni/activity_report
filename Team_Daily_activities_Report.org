@@ -1,3 +1,36 @@
+* DAR <2017-03-01 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Read chapters 5 and 6 of Comptia A+ Complete Study Guide.
+I read chapter 5.
+I am in the middle of reading chapter 6 on networking.
+I am reading the section called "Explaining Ethernet Naming Standards"
+
+- TODO Chain models on librispeech.
+There was a problem.
+It looks like the clean up process failed yesterday or today with the brown out.
+The GPU is reporting about 30% utilization, but I don't see any processes running.
+I asked Justin to reboot the GPU machine.
+
+- DONE Data prep for SOFTunis
+I downsample the Tunisia data to 16000 HZ.
+
+** Goals for Thursday:
+- TODO Prepare transcripts for SOFTunis data.
+- TODO Rerun librispeech clean up on 960 hour corpus.
+- TODO Read chapters 6, 7, and 8 from Comptia A+ Complete Study Guide.
+
+**  Accreditation Checklist
+1. DONE Create account  in ATTCTS.
+2. TODO Appointment orders.
+3. DONE Sign Privileged Level Access Agreement. 
+4. DONE Take Cyber security Fundamentals Course. 
+5. DONE Pass Cyber security Fundamentals Course.
+6. TODO Study for Comptia A+ certification exam.
+7. TODO Take and pass Comptia A+ exam.
+8. TODO Study for Security+ exam.
+9. TODO Take and pass Security+ exam.
+10. TODO Work through Linux+ course on skillport.
+
 * DAR <2017-02-28 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Read chapters 3 and 4 of Comptia A+ Complete Study Guide.
