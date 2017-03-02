@@ -1,3 +1,18 @@
+* DAR <2017-03-02 Thu>
+**  Goals for Thursday set Wednesday:
+- DONE Prepare transcripts for SOFTunis data.
+I made the wav.scp, utt2spk, text and spk2utt files for the Recordings_Arabic data.
+
+- TODO Rerun librispeech clean up on 960 hour corpus.
+It is still running.
+- TODO Read chapters 6, 7, and 8 from Comptia A+ Complete Study Guide.
+I'm not finished with chapter 6 yet.
+
+** Goals for Friday:
+- TODO Read chapters 6, 7, and 8 from Comptia A+ Complete Study Guide.
+- TODO Prepare softunisia data, including lexicon, lm and mfcc features.
+- TODO librispeech tdnn on 960 hours of speech.
+
 * DAR <2017-03-01 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Read chapters 5 and 6 of Comptia A+ Complete Study Guide.
