@@ -1,3 +1,32 @@
+* DAR <2017-03-03 Fri>
+**  Goals for Friday set Thursday:
+- TODO Read chapters 6, 7, and 8 from Comptia A+ Complete Study Guide.
+Interesting fact from chapter 6.
+The structure of TCP/IP is based on DoD the model.
+The DoD model maps to the OSI model layers.
+4 DoD layers map to 7 OSI layers.
+Process or Application -> Presentation  + Application + Session
+Host to Host -> Transport 
+Internet -> Network
+Network Access -> Datalink + Physical.
+
+At COB, I've read chapters 6 and 7. 
+In chapter 8, I am reading the section on wireless encryption.
+- TODO Prepare softunisia data, including lexicon, lm and mfcc features.
+Steve found a recent LDC delivery LDC2017L01 that contains a pronouncing dictionary for Arabic.
+
+- TODO librispeech tdnn on 960 hours of speech.
+The clean up is still running.
+It does a lot of things.
+
+- DONE Conference call with JHU and TransApps
+Yenda was very helpful and cooperative.
+** Goals for Monday:
+- TODO Incorporate LDC2017L01 dictionary into the SOFTunis kaldi system build.
+- TODO Read chapters 8 and 9 of Comptia A+ Complete Study Guide.
+- TODO librispeech tdnn on 960 hours of speech.
+- TODO Prepare models for delivery to Transapps team.
+
 * DAR <2017-03-02 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Prepare transcripts for SOFTunis data.
