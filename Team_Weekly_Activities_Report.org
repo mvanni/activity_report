@@ -1,3 +1,24 @@
+* My WAR <2017-03-03 Fri>
+**  Goals for Past Week:
+- DONE Read Comptia A+ Complete Review Guide.
+I have read chapters 1 through 7.
+I am actually reading Comptia A+ Complete Study Guide
+
+** WAR:
+John Morgan started building an Automatic Speech Recognition (ASR) system for Tunisian accented Arabic. 
+He will build the system with the kaldi toolkit. 
+so far he has taken the first couple of data preparation steps for building a system with kaldi. 
+He downsampled the speech waveform data from 22050 Hertz to 16000 Hertz. 
+He  associated text labels or transcriptions with each of the speech recording files. 
+He is currently working on a lexicon for the system.
+
+** Goals for Next Week:
+- TODO Read the rest of Comptia A+ Complete Study Guide.
+- TODO Build an ASR system for SOFTunis with kaldi.
+- TODO Run kaldi tdnn recipe for Librispeech on 960 hours of speech.
+- TODO Run kaldi gale arabic recipe.
+- TODO Write a kaldi recipe for the King Saud University Arabic Corpus for.
+ 
 * MyWAR <2017-02-24 Fri>
 **  Goals for Last Week:
 - TODO Build gp + gabon read sgmm system.
