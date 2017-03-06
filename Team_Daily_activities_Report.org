@@ -1,4 +1,57 @@
 * DAR <2017-03-03 Fri>
+**  Goals for Monday set Friday:
+- TODO Incorporate LDC2017L01 dictionary into the SOFTunis kaldi system build.
+- DONE Read chapters 8 and 9 of Comptia A+ Complete Study Guide.
+At COB today I'm reading the section Display Port and Thunderbolt under The next Generation of laptop expansion cards under Understanding Laptop Architecture in Chapter 9.
+
+- TODO librispeech tdnn on 960 hours of speech.
+The first thing the script does seems to be extracting high resolution mfcc features?
+I hope so, since these get used in training the online models.
+- DONE Prepare models for delivery to Transapps team.
+I prepared a minimal example with gp monophones.
+
+- github repositories
+I spoke with Chem Friday about git and github repositories.
+I asked him what ARL's policy is concerning github repositories.
+He said that a repository on github  that has code created at work should be made into an open source project.
+For my purposes though he said what I really want is to create a bare repository.
+I think I figured out how to make a bare repository today.
+I used the following command on the GPU machine under /home/john:
+git init --bare --shared=all softunisia.git
+This creates a bare repository with name softunisia.git.
+The next question was how to I convert the softunisia repo that I already had to use the new bare repository.
+I went into the .git/config file and changed the url variable to point to the new bare repository on the GPU machine.
+I set url to john@131.218.130.12:/home/john/softunisia.git
+This seems to have done the job.
+I pushed a commit.
+I was prompted for my password.
+Now I can delete the softunisia repo from github and I will ot be going outside our rednet.
+I do this same procedure for all my repos.
+
+- Online models:
+The Transapps team is requesting the ASR components for decoding.
+Now I have to put my money where my mouth is.
+I setup a minimal example for the gp corpus system.
+The decoder command is at:
+/home/data/ateam/gp_mono_components/README.txt.
+It only requires 2 files:
+1. hclg.fst
+2. final.mdl
+There is another file:
+words.txt
+but I don't think it it required.
+This is a *very* minimal example.
+I copied the data/eval directory to the /home/data/ateam/gp_mono_components directory so the command could actually run.
+The data/eval directory avs the files needed to point the decoder to the data files to be decoded.
+I think we'll have to train online models to avoid using the files under data/eval in this way.
+
+** Goals for Tuesday:
+- TODO Read chapters 9 and 10 from Comptia A+ Complete Study Guide.
+- TODO Train Online models for gp.
+- TODO Librispeech 
+- TODO convert github repos to bare repos.
+- TODO SofTunis lexicon and lm.
+
 **  Goals for Friday set Thursday:
 - TODO Read chapters 6, 7, and 8 from Comptia A+ Complete Study Guide.
 Interesting fact from chapter 6.
