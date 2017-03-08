@@ -8,6 +8,7 @@ It will run for 384 passes.
 
 - TODO Librispeech. 
 - TODO Read chapters 11 and 12 of Comptia A+ Complete Study Guide.
+At  COB today I am in the middle of chapter 12 Hardware and Network Troubleshooting, Troubleshooting Storage Device problems, Identifying Optical Drive Issues.
 
 ** Goals for Thursday:
 - TODO Minimal decoding with gp nnet2 online models
