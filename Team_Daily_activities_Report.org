@@ -1,3 +1,20 @@
+* DAR <2017-03-08 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO SOFTunis data/lang directory.
+- TODO Convert gale arabic dictionary from Buckwalter to utf8.
+- DONE GP online models.
+The neural network training is running.
+It will run for 384 passes.
+
+- TODO Librispeech. 
+- TODO Read chapters 11 and 12 of Comptia A+ Complete Study Guide.
+
+** Goals for Thursday:
+- TODO Minimal decoding with gp nnet2 online models
+- TODO Incorporate Transtac Iraqi Arabic Dictionary into SofTunis ASR system build.
+- TODO Read chapters 12 and 13 of Comptia A+ Complete Study Guide.
+- TODO IDp in ACT
+
 * DAR <2017-03-07 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Read chapters 9 and 10 from Comptia A+ Complete Study Guide.
