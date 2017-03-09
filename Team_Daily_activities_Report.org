@@ -1,3 +1,37 @@
+* DAR <2017-03-09 Thu>
+** Goals for Thursday set Wednesday:
+- DONE Minimal decoding with gp nnet2 online models
+I put these models under:
+/home/data/ateam/gp_fr_nnet2_online_components
+The README.txt file has a minimal command line.
+
+- DONE Incorporate Transtac Iraqi Arabic Dictionary into SofTunis ASR system build.
+I got this to work.
+I deleted the # sign from the new dictionary -- it is not allowed in kaldi.
+
+- TODO Read chapters 12 and 13 of Comptia A+ Complete Study Guide.
+Chapter 12 is on troubleshooting. It is very long. I read the section on troubleshooting Printers. Next is the  section on networking.
+I finally finished chapter 12 today.
+That covers the first 220-901 part of the A+ exams.
+Chapter 13 is on Operating Systems in general.
+- DONE IDp in ACT
+I got this started:
+Steve told me to go to:
+https://actnow.army.mil/
+I put Reggie's name and series 1550 and cp16.
+I hit submit and accept.
+I'm not sure if this worked or not.
+Reggie got it.
+I probably need to fill out my goals.
+
+- Women's History Month:
+I went to Melissa Flag's talk.
+
+** Goals for Friday:
+- TODO Map small Santiago Arabic dictionary to Transtac phone  set for SOF Tunis ASR system build with Kaldi.
+- TODO Read chapters 13 and 14 of Comptia A+ Complete Study Guide.
+- TODO Check on status of Librispeech.
+
 * DAR <2017-03-08 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO SOFTunis data/lang directory.
