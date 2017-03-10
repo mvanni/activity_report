@@ -20,6 +20,7 @@ This week John Morgan built a minimal Arabic Automatic Speech Recognition system
 - TODO Extend minimal Tunisian ASR System to QCRI arabic dictionary
 - TODO Convert buckwalter entries in QCRI dictionary to unicode utf8.
 - TODO Restart librispeech chain model build.
+- TODO Write goals in ACT IDP form.
 
 * My WAR <2017-03-03 Fri>
 **  Goals for Past Week:
