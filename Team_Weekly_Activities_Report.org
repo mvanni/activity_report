@@ -1,3 +1,26 @@
+* My WAR <2017-03-10 Fri>
+** Goals from Past Week:
+- TODO Read the rest of Comptia A+ Complete Study Guide.
+I got through chapter 13 and 14.
+Chapters 1-13 covers the first A+ exam.
+- TODO Build an ASR system for SOFTunis with kaldi.
+I built a minimal monophone system with an old dictionary.
+
+- TODO Run kaldi tdnn recipe for Librispeech on 960 hours of speech.
+the script for building a chain tdnn model system crashed after initialization.
+
+- TODO Run kaldi gale arabic recipe.
+- TODO Write a kaldi recipe for the King Saud University Arabic Corpus for.
+ 
+** WAR:
+This week John Morgan built a minimal Arabic Automatic Speech Recognition system from a corpus of Tunisian speech.
+
+** Goals for Next Week:
+- TODO Read Chapters 14-20 of  Comptia A+ Complete Study Guide.
+- TODO Extend minimal Tunisian ASR System to QCRI arabic dictionary
+- TODO Convert buckwalter entries in QCRI dictionary to unicode utf8.
+- TODO Restart librispeech chain model build.
+
 * My WAR <2017-03-03 Fri>
 **  Goals for Past Week:
 - DONE Read Comptia A+ Complete Review Guide.
