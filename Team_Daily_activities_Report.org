@@ -1,3 +1,14 @@
+* DAR <2017-03-10 Fri>
+**  Goals for Friday set Thursday:
+- TODO Map small Santiago Arabic dictionary to Transtac phone  set for SOF Tunis ASR system build with Kaldi.
+This is not worth doing.
+- TODO Read chapters 13 and 14 of Comptia A+ Complete Study Guide.
+- TODO Check on status of Librispeech.
+
+** Goals for Monday:
+- TODO Buckwalter to Unicode on QCRI dictionary
+- TODO SOFTunisia build.
+Read chapters 14 and 15 of Comptia A+ Complete Study Guide.
 * DAR <2017-03-09 Thu>
 ** Goals for Thursday set Wednesday:
 - DONE Minimal decoding with gp nnet2 online models
@@ -32,7 +43,7 @@ I went to Melissa Flag's talk.
 - TODO Read chapters 13 and 14 of Comptia A+ Complete Study Guide.
 - TODO Check on status of Librispeech.
 
-* DAR <2017-03-08 Wed>
+** DAR <2017-03-08 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO SOFTunis data/lang directory.
 - TODO Convert gale arabic dictionary from Buckwalter to utf8.
@@ -49,8 +60,7 @@ At  COB today I am in the middle of chapter 12 Hardware and Network Troubleshoot
 - TODO Incorporate Transtac Iraqi Arabic Dictionary into SofTunis ASR system build.
 - TODO Read chapters 12 and 13 of Comptia A+ Complete Study Guide.
 - TODO IDp in ACT
-
-* DAR <2017-03-07 Tue>
+ DAR <2017-03-07 Tue>
 ** Goals for Tuesday set Monday:
 - DONE Read chapters 9 and 10 from Comptia A+ Complete Study Guide.
 At COB today I am in the middle of the Laser Printers section  in chapter 11 on printers.
