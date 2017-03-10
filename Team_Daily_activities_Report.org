@@ -5,6 +5,10 @@ This is not worth doing.
 - TODO Read chapters 13 and 14 of Comptia A+ Complete Study Guide.
 - TODO Check on status of Librispeech.
 
+- QCRI dictionary:
+I found a perl module for buckwalter.
+Encode::Arabic::Buckwalter
+
 ** Goals for Monday:
 - TODO Buckwalter to Unicode on QCRI dictionary
 - TODO SOFTunisia build.
