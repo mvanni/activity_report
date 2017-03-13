@@ -1,3 +1,28 @@
+* DAR <2017-03-13 Mon>
+**  Goals for Monday set Friday:
+- DONE Buckwalter to Unicode on QCRI dictionary.
+I converted the qcri dictionary types from Buckwalter to utf8 using the Encode::Arabic::Buckwalter perl module.
+I think this worked.
+I am not sure how many OOVs we have now.
+- DONE SOFTunisia build.
+It is running on the SOFTunis corpus.
+I am going to run through tri3b models and decode on the training data.
+- TODO Read chapters 14 and 15 of Comptia A+ Complete Study Guide.
+Over the week-end I read  chapters 18, 19, 20 and 21.
+I skipped for now chapter 14, 15, 16 and 17. 
+They all deal with windows.
+I need to spend more time on windows.
+I'm going to try to work on my windows notebook at home where I have admin privileges.
+I also downloaded the Comptia Security+ Study Guide and started reading it.
+
+** Goals for Tuesday:
+- TODO Read chapter 1 of  Comptia Security+ Study Guide.
+- TODO Read chapters  14 and 15 of Comptia A+ Complete Study Guide.
+- TODO Find OOVs for SOFTunis transcripts in qcri dictionary.
+- TODO Build an lm for SOFTunisia.
+- TODO Work on ARL Open Source Guidelines and Instruction with Cem.
+- TODO Convert github repos to bare repos on the GPU machine.
+
 * DAR <2017-03-10 Fri>
 **  Goals for Friday set Thursday:
 - TODO Map small Santiago Arabic dictionary to Transtac phone  set for SOF Tunis ASR system build with Kaldi.
