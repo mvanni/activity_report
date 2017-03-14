@@ -1,3 +1,27 @@
+* DAR <2017-03-14 Tue>
+** Goals for Tuesday set Monday:
+- TODO Read chapter 1 of  Comptia Security+ Study Guide.
+- TODO Read chapters  14 and 15 of Comptia A+ Complete Study Guide.
+- DONE Find OOVs for SOFTunis transcripts in qcri dictionary.
+I found 227 OOVs.
+
+I spent most of the day working with dictionaries.
+I'm trying to get words  in the QCRI dictionary that are close (in the levenshtein distance sense) to the 227 OOV words.
+The problem is making this tractable.
+- TODO Build an lm for SOFTunisia.
+- TODO Work on ARL Open Source Guidelines and Instruction with Cem.
+- DONE Convert github repos to bare repos on the GPU machine.
+I converted several repos this morning.
+I still have 28 to go.
+
+** Goals for Wednesday:
+- TODO Read chapter 1 of  Comptia Security+ Study Guide.
+- TODO Read chapters  14 and 15 of Comptia A+ Complete Study Guide.
+- TODO Find pronunciations for OOVs   from the SOFTunis transcripts in qcri dictionary.
+- TODO Build an lm for SOFTunisia.
+- TODO Work on ARL Open Source Guidelines and Instruction with Cem.
+- TODO Convert 5 github repos to bare repos on the GPU machine.
+
 * DAR <2017-03-13 Mon>
 **  Goals for Monday set Friday:
 - DONE Buckwalter to Unicode on QCRI dictionary.
