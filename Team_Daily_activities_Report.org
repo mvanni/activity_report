@@ -1,3 +1,42 @@
+* DAR <2017-03-15 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Read chapter 1 of  Comptia Security+ Study Guide.
+I feel pretty good about this after answering the practice questions at the end of the chapter.
+- TODO Read chapters  14 and 15 of Comptia A+ Complete Study Guide.
+- DONE Find pronunciations for OOVs   from the SOFTunis transcripts in qcri dictionary.
+I think I have the Levenshtein distance script working.
+1. load the qcri dictionary in a hash.
+2. for each o in OOVs:  Loop over the 228 OOVs.
+3. For each w in qcri: Loop over the qcri dictionary entries.
+4l(o,w): . Compute the Levenshtein distance between the oov and the qcri dictionary entry.
+5. If l(w,o) < 3 write w and its pronunciation.
+
+When I only wrote if the Levenshtein distance was less than 2, I did not get any words after a long time.
+I'm setting the threshold to 3.
+
+- TODO Build an lm for SOFTunisia.
+- DONE Work on ARL Open Source Guidelines and Instruction with Cem.
+I downloaded the acrotex and conv-xkv packages from https://www.ctan.org/.
+wget http://mirrors.ctan.org/macros/latex/contrib/conv-xkv.zip
+wget http://mirrors.ctan.org/macros/latex/contrib/conv-xkv.zip
+I unzipped the archives.
+I ran latex acrotex.ins and latex conv-xkb.ins
+I copied the directories to /usr/share/texlive/texmf-dist/tex/latex
+I ran texhash.
+Cem's make now runs.
+
+So far, the pdf form looks pretty good.
+- DONE Convert 5 github repos to bare repos on the GPU machine.
+I'm almost done removing work repos from github.
+** Goals for Thursday:
+- TODO Read chapters 2 and 3  of  Comptia Security+ Study Guide.
+- TODO Get close pronunciations for OOVs to Zack.
+- TODO - TODO Read chapters  14 and 15 of Comptia A+ Complete Study Guide.
+- TODO Convert the rest of the work repos on github  to repos on the GPU machine.
+- TODO Review form266 pdf file on ARL Open Source Guidelines and Instruction. 
+- TODO Build an lm for SOFTunisia.
+- TODO Finish IDP goals.
+
 * DAR <2017-03-14 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Read chapter 1 of  Comptia Security+ Study Guide.
