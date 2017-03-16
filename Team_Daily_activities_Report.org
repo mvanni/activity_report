@@ -1,3 +1,26 @@
+* DAR <2017-03-16 Thu>
+**  Goals for Thursday set Wednesday:
+- DONE Read chapters 2 and 3  of  Comptia Security+ Study Guide.
+Comptia assumes you've taken the Network+ exams for the Security+ exam.
+I'm going to start reading the Network+ study guide too.
+It's actually interesting and useful.
+- DONE Get close pronunciations for OOVs to Zack.
+I ended up with a total of 5349 words from the qcri dictionary that were within Levenshtein distance 3 of the OOVs.
+- TODO Read chapters  14 and 15 of Comptia A+ Complete Study Guide.
+- DONE Convert the rest of the work repos on github  to repos on the GPU machine.
+The repositories remaining were not done for ARL, so I'm leaving them.
+- TODO Review form266 pdf file on ARL Open Source Guidelines and Instruction. 
+- TODO Build an lm for SOFTunisia.
+I'm collecting text data.
+Justin put the Arabic fm texts that were on the L drive on the GPU machine.
+- TODO Finish IDP goals.
+
+** Goals for Friday:
+- TODO LM for SOFTunis ASR build.
+- TODO Read chapters 3  and 4 of  Comptia Security+ Study Guide.
+- TODO Read chapter 1 of  Comptia Network+ Study Guide.
+- TODO Finish IDP goals.
+
 * DAR <2017-03-15 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Read chapter 1 of  Comptia Security+ Study Guide.
