@@ -1,3 +1,26 @@
+* DAR <2017-03-17 Fri>
+** Goals for Friday set Thursday:
+- TODO LM for SOFTunis ASR build.
+I finally got through the GALE Arabic data preparation steps.
+Justin helped me get the directories better organized under /mnt/corpora.
+The transcripts that are used to train the lm are in Buckwalter.
+This is not a big deal, but at some point I'll have to convert them to utf8.
+
+I have not succeeded in getting the Arabic from the field manuals.
+- TODO Read chapters 3  and 4 of  Comptia Security+ Study Guide.
+- TODO Read chapter 1 of  Comptia Network+ Study Guide.
+- TODO Finish IDP goals.
+Where do I do this?
+
+** Goals for Monday:
+- TODO Read chapters 3  and 4 of  Comptia Security+ Study Guide.
+- TODO Read chapter 1 of  Comptia Network+ Study Guide.
+- TODO Finish IDP goals.
+- TODO Secure the Arabic text data from the field manuals and Ranger handbook.
+- TODO Convert the GALE Arabic transcripts from Buckwalter to UTF8.
+- TODO Process the ksu data including text for the SOFTunis lm.
+- TODO Process the Transtac Arabic data.
+
 * DAR <2017-03-16 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Read chapters 2 and 3  of  Comptia Security+ Study Guide.
