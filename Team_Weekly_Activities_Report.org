@@ -1,3 +1,40 @@
+* My WAR <2017-03-17 Fri>
+** Goals set Last Week:
+- TODO Read Chapters 14-20 of  Comptia A+ Complete Study Guide.
+I ended up reading chapters 19-22.
+Chapters 15-18 are all about Windows.
+I am postponing them until I have time to work on my windows notebook at home.
+
+- DONE Extend minimal Tunisian ASR System to QCRI arabic dictionary
+This was more involved than I thought.
+There were 227 OOVs for the Tunisian prompts.
+I used the Text::Levenshtein perl module to find words in the qcri dictionary that were within levenshtein distance 3 from the OOV words. 
+I am hoping Zack can use this data to get good pronunciations for the OOVs.
+
+- DONE Convert buckwalter entries in QCRI dictionary to unicode utf8.
+I did this with the Encode::Arabic::Buckwalter perl module.
+
+- TODO Restart librispeech chain model build.
+- TODO Write goals in ACT IDP form.
+I did not find where this is done at https://actnow.army.mil
+
+** WAR
+This week John Morgan performed data preparation tasks for his project to build an ASR system adapted to North African Arabic. 
+He is in the process of making a pronouncing dictionary for words appearing in The SOF Tunis speech corpus prompts. 
+He found that 227 words from the SOF Tunis corpus do not appear in a large pronouncing dictionary developed by the QCRI for the GALE Arabic project. 
+He used the Levenshtein distance to obtain pronunciations for words that are "close" to the Out of Vocabulary (OOV) words. 
+He is hoping that this data will help a human expert find good pronunciations for the 227 OOVs.
+
+** Goals for Next Week:
+- TODO Read    Comptia Security+ Study Guide.
+- TODO Read   Comptia Network+ Study Guide.
+- TODO Read Comptia A+ Study Guide.
+- TODO Finish IDP goals.
+- TODO Secure the Arabic text data from the field manuals and Ranger handbook.
+- TODO Convert the GALE Arabic transcripts from Buckwalter to UTF8.
+- TODO Process the ksu data including text for the SOFTunis lm.
+- TODO Process the Transtac Arabic data.
+
 * My WAR <2017-03-10 Fri>
 ** Goals from Past Week:
 - TODO Read the rest of Comptia A+ Complete Study Guide.
