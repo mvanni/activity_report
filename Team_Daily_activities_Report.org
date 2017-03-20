@@ -1,3 +1,17 @@
+* DAR <2017-03-20 Mon>
+**  Goals for Monday set Friday:
+- TODO Read chapters 3  and 4 of  Comptia Security+ Study Guide.
+- DONE Read chapter 1 of  Comptia Network+ Study Guide.
+I read Chapters 1-3 over the week-end.
+- TODO Finish IDP goals.
+- TODO Secure the Arabic text data from the field manuals and Ranger handbook.
+- TODO Convert the GALE Arabic transcripts from Buckwalter to UTF8.
+- TODO Process the ksu data including text for the SOFTunis lm.
+- TODO Process the Transtac Arabic data.
+
+* Goals for Tuesday:
+- TODO French English minimal joshua example  
+
 * DAR <2017-03-17 Fri>
 ** Goals for Friday set Thursday:
 - TODO LM for SOFTunis ASR build.
