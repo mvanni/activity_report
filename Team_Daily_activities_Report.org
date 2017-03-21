@@ -1,3 +1,17 @@
+* DAR <2017-03-21 Tue>
+* Goals for Tuesday set Monday:
+- TODO French English minimal joshua example  
+This is really giving me a hard time.
+Joshua used to be easy to run, not any more.
+
+Joshua is broken!
+The problem is getting thrax to run.
+I am trying to run the example on the GPU machine.
+It looks like one problem is that thrax was not compiled.
+
+** goals for Wednesday:
+- TODO minimal joshua example
+
 * DAR <2017-03-20 Mon>
 **  Goals for Monday set Friday:
 - TODO Read chapters 3  and 4 of  Comptia Security+ Study Guide.
