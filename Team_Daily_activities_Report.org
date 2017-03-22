@@ -1,5 +1,26 @@
+* DAR <2017-03-22 Wed>
+**  goals for Wednesday set Tuesday:
+- TODO minimal joshua example
+
+- OOVs 
+Zack got his edits back to me.
+I am running them through my scripts to git the levenshtein-close pronunciations.
+The way I am doing this involves the following steps:
+1. Append Zack's new dictionary entries to the qcri dictionary.
+Note that the qcri dictionary has been converted to utf8.
+2. Run the first couple of data prep steps for the kaldi build.
+This means getting to the step that creates the data/lang/words.txt file and the data/training/text file.
+3. Run the kaldi script check_oov.pl with the data/lang/words.txt and data/training/text files as input.
+This produces the OOVS.
+4. Run the script that prints words and their pronunciations that are within a threshold levenshtein distance of the OOVs.
+
+** Goals for Thursday:
+- TODO Get close pronunciations for OOVs to Zack.
+- TODO Minimal French English Joshua example.
+- TODO Read A+, Security+ and Network+ study guides.
+
 * DAR <2017-03-21 Tue>
-* Goals for Tuesday set Monday:
+** Goals for Tuesday set Monday:
 - TODO French English minimal joshua example  
 This is really giving me a hard time.
 Joshua used to be easy to run, not any more.
