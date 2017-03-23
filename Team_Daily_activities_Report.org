@@ -1,3 +1,22 @@
+* DAR <2017-03-23 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Get close pronunciations for OOVs to Zack.
+There are 120 OOVs in this batch.
+The first run yielded 1818 words from the qcri dictionary.
+I had not incorporated Zack's corrections, so I am running the levenshtein script over again.
+I removed the exclamation mark in the recordings prompts.
+The second run yielded 2230 words from the qcri dictionary.
+They only cover 31 OOVs.
+That leaves 88 left to do.
+
+- TODO Minimal French English Joshua example.
+- TODO Read A+, Security+ and Network+ study guides.
+I read chapter 5 of the Network+ Study guide.
+
+** Goals for Friday:
+- TODO Read Security+ and Network+ Study guides, forget A+.
+- TODO Language model for SofTunisia.
+
 * DAR <2017-03-22 Wed>
 **  goals for Wednesday set Tuesday:
 - TODO minimal joshua example
