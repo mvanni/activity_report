@@ -1,3 +1,25 @@
+* DAR <2017-03-24 Fri>
+**  Goals for Friday set Thursday:
+- TODO Read Security+ and Network+ Study guides, forget A+.
+Security+ assumes you know IP subnetting from Network+.
+I'm going back to read about subnetting in the Network+ book.
+
+- TODO Language model for SofTunisia.
+Instead of softunisia, I trained the lm for French for the transapps team.
+
+- TRANSTAC
+Justin put the TRANSTAC corpus on /mnt/corpora.
+I am trying to figure it out.
+I'd like to separate out the Iraqi Arabic.
+I can find the audio files, but I am having trouble associating the .wav files with transcription files.
+
+** Goals for Monday:
+- TODO TRANSTAC data preparation (first steps)
+- TODO Read Network+ Study guide.
+- TODO Read Security+ Study Guide.
+- TODO Get pronunciations for SOFTunisia OOVs from Zack.
+- TODO Investigate Multilingual model method.
+
 * DAR <2017-03-23 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Get close pronunciations for OOVs to Zack.
