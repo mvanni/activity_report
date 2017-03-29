@@ -1,3 +1,16 @@
+* DAR <2017-03-29 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Read Security+ Study Guide.
+I'm reading the chapter on Cryptology.
+- TODO Retake the Security+ measure up test.
+- DONE Get new batch of OOV pronunciations to Zack.
+I think Zack wants to go ahead on his own with the remaining 89 OOVS.
+
+** Goals for Thursday:
+- TODO Read Comptia Security+ guide.
+- TODO Retake measure up test.
+- TODO Write Mid term accomplishments for Reggie.
+
 * DAR <2017-03-28 Tue>
 I spend the day reading the Security+ study guide.
 I also started the process of generating the next batch of candidate OOV pronunciations for Zack.
