@@ -1,3 +1,17 @@
+* DAR <2017-04-03 Mon>
+**  Goals for Thursday set Wednesday:
+- DONE Read Comptia Security+ guide.
+
+- TODO Retake measure up test.
+- TODO Write Mid term accomplishments for Reggie.
+
+** Goals for Tuesday:
+- TODO Write Accomplishments for Reggie
+- TODO Retake measure up test.
+- TODO Read Chapter 11 of Comptia Security + Study Guide
+- TODO Work on LM for SOFTunis system.
+- TODO Extract dictionary specific for SOFTunis lexicon from qcri lexicon.
+
 * DAR <2017-03-29 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Read Security+ Study Guide.
