@@ -1,3 +1,35 @@
+* DAR <2017-04-04 Tue>
+**  Goals for Tuesday set Monday:
+- DONE Write Accomplishments for Reggie
+I wrote a list of accomplishments.
+- TODO Retake measure up test.
+- TODO Read Chapter 11 of Comptia Security + Study Guide
+- TODO Work on LM for SOFTunis system.
+- TODO Extract dictionary specific for SOFTunis lexicon from qcri lexicon.
+
+I ran through the kaldi training steps for monophones through tri3b. 
+I decoded the training set ( I haven't separated the corpus into training dev and test folds yet).
+The results seem pretty bad, which means something might be wron.
+The best wer is 27.46 and it was obtained with the tri1 models.
+I did not get results for tri2a.
+
+- Joshua models for Transapps:
+I fired up the English -> Tagalog joshua pipeline script that had on the GPU machine.
+It seems to be running.
+At least it is running the tuning step, which means thrax and hadoop are running.
+They should, since nothing really has been changed since we installed hadoop, thrax, joshua, etc.
+I'm going to make a really small English -> Tagalog model set (2500 bisegments) for a minimal set to send to the transapp team.
+As I'm getting ready to leave, tuning has completed 3 iterations on the minimal training and tuning set system.
+
+** Goals for Wednesday:
+- TODO Retake measure up test.
+- TODO Read Chapters 11 and 12 of Comptia Security + Study Guide
+- TODO Work on LM for SOFTunis system.
+- TODO Extract dictionary specific for SOFTunis lexicon from qcri lexicon.
+- TODO Send minimal English Tagalog model set to transapps team.
+- TODO Add Carmit to my benefits.
+- TODO Figure out why results are bad for SOFTunis kaldi build.
+
 * DAR <2017-04-03 Mon>
 **  Goals for Thursday set Wednesday:
 - DONE Read Comptia Security+ guide.
