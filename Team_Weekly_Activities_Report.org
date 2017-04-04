@@ -1,5 +1,6 @@
+* My WAR <2017-04-04 Tue>
 * MyWAR <2017-03-24 Fri>
-**  Goals for Next Week:
+**  Goals set Last Week:
 - TODO Read    Comptia Security+ Study Guide.
 - TODO Read   Comptia Network+ Study Guide.
 - TODO Read Comptia A+ Study Guide.
