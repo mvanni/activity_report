@@ -1,0 +1,22 @@
+* Accomplishments <2017-04-04 Tue>
+- Extended minimal Tunisian ASR System to QCRI 2 million word arabic dictionary.
+Used the Levenshtein distance to propose to a human expert pronunciations that are close to out of vocabulary words.
+Converted buckwalter entries in QCRI dictionary to unicode utf8.
+Prepared acoustic and text data for ASR model building with Kaldi on SOFTunis corpus.
+- Attended IARPA Babel workshop on Kaldi and pyspeech.
+Contributed improvement to Kaldi scripts used in IARPA workshop.
+- Wrote scripts to Implement a multi-step process to perform semi-supervised training of acoustic models using unlabeled speech data from the Yaounde corpus.
+Achieved improvements in WER score with semi-supervised training regime.
+- Wrote scripts for processing all the African Accented French Data to  make an i-vector extractor for African Accented Speech.
+- Wrote scripts for end to end  model training and testing with the Kaldi toolkit on several French corpora including:
+globalPhone (GP)
+GP + Yaounde African French ( chain model ) .
+Gabon and Niger 2016 data collection. 
+Models include:
+Monophone (mono)
+Triphones
+Subspace Gaussian Mixture Models
+- Prepared acoustic data and text labels for Yaounde African French and SOFTunis corpora.
+- Setup training with eesen (recurrent neural network) toolkit on gp + Yaounde  corpus.
+-Prepared data for lab test of VoxTek device.
+- Pass Cyber security Fundamentals Course.
