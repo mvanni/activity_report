@@ -1,3 +1,27 @@
+* DAR <2017-04-05 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Retake measure up test.
+I failed with 32 out of 50 questions correct.
+The Security+ course has been postponed until late June according to Mike Landes.
+I've decided to work on the skillport Security+ course which is also a requirement.
+Today I think I got through lesson 1.
+
+- DONE Read Chapters 11 and 12 of Comptia Security + Study Guide
+- TODO Work on LM for SOFTunis system.
+- TODO Extract dictionary specific for SOFTunis lexicon from qcri lexicon.
+- DONE Send minimal English Tagalog model set to transapps team.
+- DONE Add Carmit to my benefits.
+This was a lot easier than I expected.
+- TODO Figure out why results are bad for SOFTunis kaldi build.
+
+
+** Goals for Thursday:
+- TODO Skillport Security+ course lesson 2.
+- TODO 
+- TODO Work on LM for SOFTunis system.
+- TODO Extract dictionary specific for SOFTunis lexicon from qcri lexicon.
+- TODO Figure out why results are bad for SOFTunis kaldi build.
+
 * DAR <2017-04-04 Tue>
 **  Goals for Tuesday set Monday:
 - DONE Write Accomplishments for Reggie
