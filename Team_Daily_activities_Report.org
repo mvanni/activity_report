@@ -1,3 +1,31 @@
+* DAR <2017-04-06 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Skillport Security+ course lesson 2.
+I got stuck in the pretest.
+There are 3 questions that require matching items from 2 lists. 
+I do not know how to do this with JAWS.
+I called the help desk.
+Keith Garris was very helpful.
+He was returning a call I had made last week?
+I had already resolved that problem.
+When he asked me if there was anything else he could help with, I asked him if he could help with the list matching in skillport.
+He remoted into my computer and tried to help figure out how I could do the task with JAWS.
+He had a little exposure to JAWS in the past.
+Anyway ...
+It's time to get an upgrade for JAWS.
+
+- TODO Work on LM for SOFTunis system.
+- DONE Extract dictionary specific for SOFTunis lexicon from qcri lexicon.
+This took more work than expected.
+There are 1483 entries in the softunisia dictionary as it stands now.
+
+- TODO Figure out why results are bad for SOFTunis kaldi build.
+
+** Goals for Friday:
+- TODO Attend Voxtex presentation.
+- TODO JAWS upgrade
+
+
 * DAR <2017-04-05 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Retake measure up test.
@@ -14,10 +42,9 @@ Today I think I got through lesson 1.
 This was a lot easier than I expected.
 - TODO Figure out why results are bad for SOFTunis kaldi build.
 
-
 ** Goals for Thursday:
 - TODO Skillport Security+ course lesson 2.
-- TODO 
+
 - TODO Work on LM for SOFTunis system.
 - TODO Extract dictionary specific for SOFTunis lexicon from qcri lexicon.
 - TODO Figure out why results are bad for SOFTunis kaldi build.
