@@ -1,4 +1,30 @@
-* My WAR <2017-04-04 Tue>
+* My WAR <2017-04-07 Fri>
+**   Goals set 2 Weeks ago:
+- DONE Read    Comptia Security+ Study Guide.
+I gave a first read of most of this book.
+I started the skillport Security+ online course.
+I am lesson 2.
+
+- TODO Read   Comptia Network+ Study Guide.
+I'm going to focus on the Security+ study guide for the test.
+- TODO Read Comptia A+ Study Guide.
+I'm not going to take the A+ certification.
+- TODO Finish IDP goals.
+- TODO Secure the Arabic text data from the field manuals and Ranger handbook.
+- TODO Convert the GALE Arabic transcripts from Buckwalter to UTF8.
+- TODO Process the ksu data including text for the SOFTunis lm.
+- TODO Process the Transtac Arabic data.
+
+** WAR:
+John Morgan made progress this week on his project to build an Automatic Speech Recognition (ASR) system for African Accented Arabic using the SOF Tunis corpus. 
+In oreder to find bugs and rough estimates of hyperparametersIn these early stages of development he is overfitting to the training data. 
+Using this technique, he found that parameters that limit the number of leaves in a phonetic decision tree clustering algorithm and on the total number of gaussians in the ASR system made large improvements in word error rates. 
+
+** Goals for Next Week:
+- TODO JAWS upgrade
+- TODO Skillport Security+ course.
+- TODO Revisit semi supervised training for accented speech ASR and apply it to SOF Tunis.
+
 * MyWAR <2017-03-24 Fri>
 **  Goals set Last Week:
 - TODO Read    Comptia Security+ Study Guide.
@@ -9,7 +35,6 @@
 - TODO Convert the GALE Arabic transcripts from Buckwalter to UTF8.
 - TODO Process the ksu data including text for the SOFTunis lm.
 - TODO Process the Transtac Arabic data.
-
 
 * My WAR <2017-03-17 Fri>
 ** Goals set Last Week:
