@@ -1,3 +1,45 @@
+* DAR <2017-04-07 Fri>
+**  Goals for Friday set Thursday:
+- TODO Attend Voxtex presentation.
+- TODO JAWS upgrade
+- TODO Try to get help to move forward with skillport Security+ course.
+
+- SOFTunisia 
+I ran through the model building process:
+mono: %WER 37.53 
+tri1: %WER 26.81 
+
+So there was improvement, but this is still really bad.
+The tri2a decoding fails for some reason.
+I find warnings in exp/tri2a/log/init_model.log like this:
+WARNING (gmm-init-model:InitAmGmm():gmm-init-model.cc:83) Very small count for state 2: 45; corresponding phone list: 10 11 12 13 
+WARNING (gmm-init-model:InitAmGmm():gmm-init-model.cc:83) Very small count for state 169: 81; corresponding phone list: 42 43 44 45 
+
+I reduced the 2 parameters to the steps/train_deltas.sh script that limit the number of leaves and the total number of gaussians to 1000 and 4000.
+OK! that looks like it helped.
+The init_model.log file now has no WARNING lines.
+I need to do the same thing for the tri1 models, they produce the same warnings and the num_leaves and total_gaussian parameters are set too high too.
+I'm basically tuning the parameters here.
+The training seems to go faster too.
+I found another problem.
+I was including all the .wav files in the corpus.
+We only have transcriptions for  the Recordings (at least that is my understanding at the moment).
+I was using the Answers too with transcripts  from the Recordings.
+So for the Answer file numbered 51, I was using Recording prompt number 51 as its transcription.
+Without the Answers there are 8864 utterences.
+Here are results with these changes:
+Mono: %WER 12.26 
+tri1: %WER 3.92 
+tri2b: %WER 3.69 
+tri3b: %WER 5.97 
+This is more like it.
+There might still be something I can improve for tri3b.
+
+** Goals for Monday:
+- TODO Skillport Security+ course lesson 2.
+- TODO Apply semi supervised method from Gp + Yaounde to SOFTunis Answers.
+- TODO JAWS upgrade.
+
 * DAR <2017-04-06 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Skillport Security+ course lesson 2.
