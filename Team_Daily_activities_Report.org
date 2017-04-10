@@ -6,6 +6,8 @@ I went through part of lesson 2 on categories of malware.
 - TODO Apply semi supervised method from Gp + Yaounde to SOFTunis Answers.
 I added the Answers into the scripts  to build the SOFTunisia system.
 I'm going to run the decoder on the Answers data with the models built on the Recordings data.
+As I'm getting ready to leave, the build is running on the monophone stage.
+Hopefully, tomorrow I'll have the results of decoding the Answers. 
 - DONE JAWS upgrade.
 Steve submitted the request to cap.mil.
 
