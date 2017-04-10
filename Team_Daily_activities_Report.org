@@ -1,3 +1,18 @@
+* DAR <2017-04-10 Mon>
+**  Goals for Monday set Friday:
+- TODO Skillport Security+ course lesson 2.
+I went through part of lesson 2 on categories of malware.
+
+- TODO Apply semi supervised method from Gp + Yaounde to SOFTunis Answers.
+I added the Answers into the scripts  to build the SOFTunisia system.
+I'm going to run the decoder on the Answers data with the models built on the Recordings data.
+- DONE JAWS upgrade.
+Steve submitted the request to cap.mil.
+
+** Goals for Tuesday:
+- TODO Semi supervised training of SOFTunis system: get first rough draft of 1 speaker's Answers and pass them on to Zack.
+- TODO Skill port Security+ course lesson 2.
+ 
 * DAR <2017-04-07 Fri>
 **  Goals for Friday set Thursday:
 - TODO Attend Voxtex presentation.
