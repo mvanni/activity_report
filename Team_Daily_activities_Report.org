@@ -1,3 +1,23 @@
+* DAR <2017-04-11 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Semi supervised training of SOFTunis system: get first rough draft of 1 speaker's Answers and pass them on to Zack.
+I need to spend more time on the LM.
+Steve got me the  parallel data for Arabic English from the Subtitles corpus.
+Justin put the 2 files under /mnt/corpora/subs.
+I am reusing the script I had to restrict the training data from the subs corpus to only segments of length between 5 and 25 words.
+When I run the build scripts I am seeing warnings coming from the arpa2fst program.
+I am skipping the levenshtein distance program for finding words close to OOVs.
+ 
+- TODO Skill port Security+ course lesson 2.
+ I started taking the test.
+I got  1 question correct then I run into trouble again with the matching question that I had in lesson 1.
+I'll have to get help again from Michelle to get me past this point.
+
+** Goals for Wednesday:
+- TODO Skillport Security+ Lesson 2 test.
+- TODO LM for Arabic for SOFTunisia
+- TODO Get hypotheses for Answers for speaker 1 to give to Zack.
+
 * DAR <2017-04-10 Mon>
 **  Goals for Monday set Friday:
 - TODO Skillport Security+ course lesson 2.
