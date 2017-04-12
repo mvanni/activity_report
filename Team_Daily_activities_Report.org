@@ -1,3 +1,37 @@
+* DAR <2017-04-12 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Skillport Security+ Lesson 2 test.
+- DONE LM for Arabic for SOFTunisia
+The lm now is pretty big.
+There are advantages and disadvantages to having such a large lm.
+The results will probably be better with the larger lm.
+However, the decoding graph takes a long time to build.
+I am working on more restrictions in the script that filters the subs corpus.
+I am only letting segments with between 8 and 16 words through.
+This still lets a lot of segments through.
+I guess maybe around 3 million.
+I am further filtering by skipping segments with words that have characters that are not in Arabic script.
+I end up with 600k segments.
+
+- DONE Get hypotheses for Answers for speaker 1 to give to Zack.
+I did this, but I realized later that I was using the tiny dictionary with only the 1481 words that appear in the Recordings prompts.
+I fixed this and I am rerunning the system build with the larger qcri dictionary.
+Realized that there is a phone "U" that is in qcri but not the workds that appear in the REcordings prompts.
+Zac got back with transcriptions for the Answers by speaker 1 machine CTELLFIVE. 
+Now I have to figure out how to incorporate the new transcriptions into the training process.
+How did I do this for gp + yaounde?
+I have to ponder this for a while.
+I will have 3 kinds of transcriptions:
+1. The Recordings transcriptions which should be correct.
+2. The automatically generated transcriptions for the Answers from the decoding pass.
+3. The hand corrected transcriptions done by Zac.
+
+Should I incorporate the automatic transcriptions into training?
+
+** Goals for Thursday:
+- TODO Incorporate new transcriptions into second round of human in the loop semisupervised training of SOFTunis ASR system.
+- TODO Get help to pass skillport Security+ lesson 2 matching test
+
 * DAR <2017-04-11 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Semi supervised training of SOFTunis system: get first rough draft of 1 speaker's Answers and pass them on to Zack.
