@@ -1,3 +1,39 @@
+* DAR <2017-04-13 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Incorporate new transcriptions into second round of human in the loop semisupervised training of SOFTunis ASR system.
+8864 Recordings utterance files.
+List all the .wav Recordings files in a file.
+Make the wav.scp file for the Recordings.
+Make the utt2spk file for the Recordings.
+Make the text file for the Recordings.
+List all the Answers .wav files in a file.
+2980 Answers utterance files.
+- New plan:
+Separate into train and test folds
+Train first on Recordings and test on Answers.
+120 speakers
+Get feedback on Answers transcriptions from Zac.
+If the transcriptions are good, use them as semi supervised training labels.
+Otherwise only use the transcriptions from the Speaker Zac transcribed by hand.
+I passed the --max-arpa-warning=-1 to the arpa2fst program.
+Now the arpa2fst program gives me a lot of warnings
+The warnings claim an Arabic word is not in the word symbol table.
+Where are these words coming from?
+In the data/lang/words.txt file there are over 500k words.
+Where do these words come from.
+I think the warning words are words that are in the dictionary file but not in the words.txt file.
+So there is no need to include them in the fst.
+At least this is what arpa2fst assumes.
+It looks I have arpa2fst running now since it produces a G.fst file.
+The decoder was crashing before because there was no G.fst file under data/lang.
+ 
+- TODO Get help to pass skillport Security+ lesson 2 matching test
+
+** Goals for Friday:
+- TODO Debug arpa2fst warnings.
+- TODO Setup semi supervised  round 1 scripts.
+- TODO skillport Security+ lesson 2  
+
 * DAR <2017-04-12 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Skillport Security+ Lesson 2 test.
