@@ -24,9 +24,13 @@ Where do these words come from.
 I think the warning words are words that are in the dictionary file but not in the words.txt file.
 So there is no need to include them in the fst.
 At least this is what arpa2fst assumes.
-It looks I have arpa2fst running now since it produces a G.fst file.
+It looks like I have arpa2fst running now since it produces a G.fst file.
 The decoder was crashing before because there was no G.fst file under data/lang.
- 
+I think the 500k words in data/lang/words.txt is the lexicon for the lm.
+The lm is trained on subs.
+Are the warnings OOVs?
+Words that are in subs but not in the qcri dictionary?
+
 - TODO Get help to pass skillport Security+ lesson 2 matching test
 
 ** Goals for Friday:
