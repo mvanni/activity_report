@@ -1,3 +1,37 @@
+* My WAR <2017-04-14 Fri>
+**  Goals set for Last Week:
+- DONE JAWS upgrade
+Steve sent a message to Patricia Proctor. 
+She pointed us to the CAP web site: https://cap.mil.
+Steve filled out the form to get the latest version (18) of JAWS.
+This might take a couple  of weeks.
+
+- DONE Skillport Security+ course.
+Michelle got me through the drag and drop questions on the Lesson 1 test.
+I moved on to Lesson 2.
+The test for Lesson 2 also has a drag and drop exercise.
+Michelle helped me again to get through the lesson test.
+I got a certificate of completion. 
+Is this the certificate for the whole skillport Security+ course?
+Too good to be true.
+
+- TODO Revisit semi supervised training for accented speech ASR and apply it to SOF Tunis.
+I started working on this, but it's going to take a while to get everything setup.
+ 
+** WAR:
+John Morgan worked on the Language Model (LM) component of the Automatic Speech Recognition (ASR) system he is developing for African Accented Arabic. 
+As was done for the previously developed African Accented French ASR system, he is using the Open Subtitles corpus of movie transcriptsas training data for the statistical n-gram LM. 
+This corpus consists of 21 million parallel sentences in Arabic and English. 
+He is working with a 400k subsample to build an initial LM.
+One issue he is  having to deal with is the large number of words that appear in the Subtitles corpus but do not have a pronunciation in the large DARPA GALE dictionary. 
+
+** Goals for Next Week:
+- TODO Semi supervised transcription of SOFTunisia Answers.
+- TODO Get next speaker rough draft transcriptions to Zac.
+- TODO MeasureUp Security+ exam. 
+- TODO g2p for Arabic.
+- TODO Revisit GP + Yaounde build.
+ 
 * My WAR <2017-04-07 Fri>
 **   Goals set 2 Weeks ago:
 - DONE Read    Comptia Security+ Study Guide.
