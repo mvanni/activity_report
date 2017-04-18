@@ -1,3 +1,49 @@
+* DAR <2017-04-18 Tue>
+- TODO Security+ MeasureUp exam.
+- TODO Semi supervised transcripts for next SOFtunisia Answers speaker.
+I am renaming many of my files to supervised and unsupervised from Recordings and Answers to be consistent with the babel scripts .
+I want to incorporate the bottle nect features that the semisupervised babel recipe uses.
+The utils/prepare_lang.sh script takes a long time to run with the larger dictionary.
+It creates the l.fst and other FSTs.
+The l.fst is the lexicon fst not the lm fst.
+The lm fst is called G.fst for grammar fst.
+The lm training does not take long.
+I can't really decode on my laptop with these models.
+If I do, I can't do anything else.
+In the babel scripts for doing semisupervised training there is a script to get examples.
+This script referrs to files that have "best_path" in their names.
+I can find the log files with these names, but I haven't found 1 consolidated file.
+There's a script in the babel recipes named  best_path_weights.sh.
+I reaed more on semisupervised training in the babel recipe directory.
+There is a script that runs the semisupervised recipe.
+It uses Vietnamese.
+I think the best way to folow there recipe is to actuallly run it.
+We have the Vietnamese corpus under /mnt/corpora/babel.
+I'm asking Justin to unzip the package containing the Vietnamese data.
+It is called:
+IARPA-babel107b-v0.7-build-copr.zip
+I unzipped it into my home directory.
+I'm starting to run the script for babel Vietnamese in the kaldi tools directory.
+I'll have to go to the jhu clsp server to get some scripts.
+It looks like Yenda owns these scripts.
+- TODO GP + Yaounde build revisit.
+- TODO G2P for Arabic
+
+** Goals for Wednesday:
+- TODO Setup Vietnamese babel scripts (get some from jhu clsp server)
+- TODO Security+ on skillport.
+- TODO GP + Yaounde build revisit.
+- TODO G2P for Arabic
+
+* DAR <2017-04-17 Mon>
+**  Goals for Monday set Friday:
+- TODO Security+ MeasureUp exam.
+- TODO Semi supervised transcripts for next SOFtunisia Answers speaker.
+- TODO GP + Yaounde build revisit.
+- TODO G2P for Arabic
+
+** Goals for Tuesday:
+
 * DAR <2017-04-14 Fri>
 **  Goals for Friday set Thursday:
 - TODO Debug arpa2fst warnings.
