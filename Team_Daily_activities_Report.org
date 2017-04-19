@@ -1,4 +1,27 @@
+* DAR <2017-04-19 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Setup Vietnamese babel scripts (get some from jhu clsp server)
+I spent more time than I expected downloading files from CLSP.
+I am running the Vietnamese babel kaldi build in a separate directory instead of under the /home/tools/kaldi/egs/babel/s5d directory.
+I am copying over only the files that I need to run the build.
+The first main run is going well.
+As I am getting ready to leave it is running the denominator lattice training.
+I am working on a second run script that only requires the tri5 models.
+So it can be run now since the main run is passed that step.
+I am having trouble here because the script is hardwired to use queue.pl on a cluster.
+
+- TODO Security+ on skillport.
+- TODO GP + Yaounde build revisit.
+- TODO G2P for Arabic
+
+** Goals for Thursday:
+- TODO Remove dependence on queue in second run script in Vietnamese babel build.
+- TODO Security+ on skillport.
+- TODO GP + Yaounde build revisit.
+- TODO G2P for Arabic
+
 * DAR <2017-04-18 Tue>
+** Goals for Tuesday set Friday
 - TODO Security+ MeasureUp exam.
 - TODO Semi supervised transcripts for next SOFtunisia Answers speaker.
 I am renaming many of my files to supervised and unsupervised from Recordings and Answers to be consistent with the babel scripts .
