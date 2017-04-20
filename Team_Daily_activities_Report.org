@@ -1,3 +1,29 @@
+* DAR <2017-04-20 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Remove dependence on queue in second run script in Vietnamese babel build.
+I think I achieved this.
+I had to set the --cmd option in the train_pnorm_ensemble.sh script.
+That sent the correct option to the get_lda.sh script.
+I found another --cmd option that referes to queue.pl in train_pnorm_ensemble.sh.
+Where is the $cmd variable set for the train_pnorm_ensemble.sh script?
+The main run 1 script had also crashed on mmi training of the sgmms for the same reason.
+I set the --cmd to run.pl and the training is now running.
+The sgmm mmi training finished.
+That was quick.
+I made a lot of progress today on this Vietnamese semisupervised training example.
+There's a lot of processing yet to go.
+The goal is to replicate this process for our SOFTunis corpus and maybe GP + Yaounde.
+
+
+- TODO Security+ on skillport.
+- TODO GP + Yaounde build revisit.
+- TODO G2P for Arabic
+
+** Goals for Friday:
+- TODO SHARP training at 11.
+- TODO Run scripts for semi supervised training on the IARPA babel Vietnamese corpus.
+- TODO Start writing and investingating publication.
+
 * DAR <2017-04-19 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Setup Vietnamese babel scripts (get some from jhu clsp server)
