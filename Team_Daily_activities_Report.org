@@ -1,3 +1,31 @@
+* DAR <2017-04-21 Fri>
+**  Goals for Friday set Thursday:
+- DONE SHARP training at 11:30.
+- TODO Run scripts for semi supervised training on the IARPA babel Vietnamese corpus.
+The run-2a-nnet-ensemble.sh script finished.
+It created the tri6b_nnet model set.
+Here is the comment at the head of the script:
+# train an ensemble of neural networks with pnorm nonlinearities.
+# An ensemble of nets are first differently initialized, and then trained using the
+# same data during each iteration. 
+# In each training iteration, one term is added to
+# the objf, which is beta times the cross-entropy between the current net's posterior
+# output and the geometrically averaged posterior outputs of the ensemble of nets.
+# The beta values obey an exponentially increasing schedule (determined by initial_beta
+# and final_beta).
+
+I started the run-2b-bnf.sh script.
+Here is the comment in that script
+# This script trains a fairly vanilla network with tanh nonlinearities to generate bottleneck features
+
+
+- TODO Start writing and investingating publication.
+
+** Goals for Monday:
+- TODO Semisupervised training with bottle neck features on IARPA Babel Vietnamese corpus.
+- TODO Replicate above experiment on SOFTunis.
+- TODO Security + skillport lesson.
+
 * DAR <2017-04-20 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Remove dependence on queue in second run script in Vietnamese babel build.
