@@ -1,6 +1,13 @@
 * My WAR <2017-04-21 Fri>
 ** Goals set Last Week:
 - TODO Semi supervised transcription of SOFTunisia Answers.
+I did a lot of work on this goals this week.
+I decided to mimic the kaldi IARPA babel recipe for Vietnamese.
+This recipe uses a bottle neck network in addition to semi supervised training.
+I have the training on the Vietnamese corpus running.
+So far, I have a DNN trained and I'm starting the bottle neck network training.
+I'm also starting the process of replicating the experiment on the SOFTunis data.
+
 - TODO Get next speaker rough draft transcriptions to Zac.
 - TODO MeasureUp Security+ exam. 
 - TODO g2p for Arabic.
@@ -19,6 +26,7 @@ He now has a DNN trained on the Vietnamese corpus.
 - TODO Semisupervised training on Babel Vietnamese corpus with bottle nec features.
 - TODO Replicate Babel semisupervised training on SOFTunis corpus.
 - TODO Security + skillport lessons.
+- TODO Bring Carmit to work on Thursday.
 
 * My WAR <2017-04-14 Fri>
 **  Goals set for Last Week:
