@@ -1,3 +1,25 @@
+* My WAR <2017-04-21 Fri>
+** Goals set Last Week:
+- TODO Semi supervised transcription of SOFTunisia Answers.
+- TODO Get next speaker rough draft transcriptions to Zac.
+- TODO MeasureUp Security+ exam. 
+- TODO g2p for Arabic.
+- TODO Revisit GP + Yaounde build.
+ 
+** WAR:
+John Morgan is working on a project to build ASR models for Arabic adapted to North African speakers. 
+As a part of this project he wants to take advantage of some unlabeled speech data that is available  in the SOFTunis corpus. 
+To use this data he will employ semi-supervised training as he did for a previous project for African Accented French.
+This time he will follow the kaldi recipe for the IARPA funded Babel project for a corpus of Vietnamese speech. 
+In addition to semi-supervised training, this recipe uses a Deep Neural Network (DNN) acoustic modeling technique called bottle nec features. 
+This week Morgan started running the kaldi experiment on the Vietnamese corpus as well as replicating it for the SOFTunis Arabic corpus. 
+He now has a DNN trained on the Vietnamese corpus. 
+
+** Goals for Next Week:
+- TODO Semisupervised training on Babel Vietnamese corpus with bottle nec features.
+- TODO Replicate Babel semisupervised training on SOFTunis corpus.
+- TODO Security + skillport lessons.
+
 * My WAR <2017-04-14 Fri>
 **  Goals set for Last Week:
 - DONE JAWS upgrade
