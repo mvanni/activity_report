@@ -1,3 +1,21 @@
+* DAR <2017-04-24 Mon>
+**  Goals for Monday set Friday:
+- TODO Semisupervised training with bottle neck features on IARPA Babel Vietnamese corpus.
+The bottle neck features were trained.
+Then lda + mllt training and SAT training were done.
+Now I'm running sgmm training.
+- TODO Replicate above experiment on SOFTunis.
+To get started I am separating the folds for the supervised (Recordings_Arabic) data as follows:
+dev: All the data from CTELLONE,
+eval: All the data from CTELLTWO,
+train: All the data from machines CTELLTHREE, CTELLFOUR and CTELLFIVE.
+The sampling frequncy is set 8k in the Vietnamese configuration files I had to change this to 16k for SOFTunisia.
+I have monophone training running.
+
+- TODO Security + skillport lesson.
+
+** Goals for Tuesday:
+
 * DAR <2017-04-21 Fri>
 **  Goals for Friday set Thursday:
 - DONE SHARP training at 11:30.
