@@ -15,6 +15,9 @@ I have monophone training running.
 - TODO Security + skillport lesson.
 
 ** Goals for Tuesday:
+- TODO Semisupervised training with bnf on Babel Vietnamese.
+- TODO Semisupervised training with bnf on SOFtunisia
+- TODO Security + skillport lesson.
 
 * DAR <2017-04-21 Fri>
 **  Goals for Friday set Thursday:
