@@ -1,3 +1,30 @@
+* DAR <2017-04-25 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Semisupervised training with bnf on Babel Vietnamese.
+This is taking a long time to run. 
+I am at a decoding stage.
+I don't think I'm decoding with bnf yet.
+
+- TODO Semisupervised training with bnf on SOFtunisia
+The script reestimate_langp.sh gets used in the Babel Vietnamese semisupervised with bnf recipe.
+What does this script do?
+I am looking at it in the SOFTunisia build.
+It has Yenda's name on it.
+It gets run after each model build: i.e., mono, tri1, tri2, tri3, etc. 
+Does it reestimate probabilities associated with each word in the pronouncing dictionary?
+
+- TODO Security + skillport lesson.
+
+
+- OpenNMT:
+I am installing Torch as part of the openNMT install.
+
+** Goals for Wednesday:
+- TODO Semisupervised training with bnf for Babel Vietnamese.
+- TODO Semisupervised training with bnf for SOFTunisia.
+- TODO Security+ on lesson skillport
+- TODO Play with openNMT.
+
 * DAR <2017-04-24 Mon>
 **  Goals for Monday set Friday:
 - TODO Semisupervised training with bottle neck features on IARPA Babel Vietnamese corpus.
