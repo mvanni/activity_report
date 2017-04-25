@@ -12,6 +12,8 @@ I am looking at it in the SOFTunisia build.
 It has Yenda's name on it.
 It gets run after each model build: i.e., mono, tri1, tri2, tri3, etc. 
 Does it reestimate probabilities associated with each word in the pronouncing dictionary?
+i'm getting a warning at the tri4 and  tri5 training stages.
+WARNING (gmm-init-model[5.1.68~1390-7223]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 15 with no stats; corresponding phone list: 46 47 48 49 
 
 - TODO Security + skillport lesson.
 
