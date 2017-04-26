@@ -27,6 +27,7 @@ He now has a DNN trained on the Vietnamese corpus.
 - TODO Replicate Babel semisupervised training on SOFTunis corpus.
 - TODO Security + skillport lessons.
 - TODO Bring Carmit to work on Thursday.
+- TODO Start writing an article for publication.
 
 * My WAR <2017-04-14 Fri>
 **  Goals set for Last Week:
