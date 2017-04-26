@@ -1,3 +1,42 @@
+* DAR <2017-04-26 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Semisupervised training with bnf for Babel Vietnamese.
+The decoding runs without bnf ran overnight and are still running this morning.
+
+- TODO Semisupervised training with bnf for SOFTunisia.
+For some reason there is an argument to the reestimate_lang.sh script that is different in the SOFTunisia build than in the Vietnamese build.
+The script looks for a file called silence_phones.txt.
+This file isunder data/local in the Vietnamese build and under data/local/dict in the SOFTunisia.
+I changed this argument in all but the last run of the reestimate_lang.sh script.
+So I had to restart the run-1-main.sh script this morning for the SOFTunisia build.
+The run-1-main.sh script finished. 
+This script builds models mono, tri1, tri2 ...tri5 and  sgmm5.
+I started the script run-2a-nnet-ensemble-gpu.sh.
+this trains an nnet2 system.
+Should we be using nnet3?
+I sent Yenda this question.
+I am now doing nnet2 training on the SOFTunisia data.
+It is using the GPU.
+
+- TODO Security+ on lesson skillport
+I can't figure out how to move to the next lesson. This is a nightmare.
+I found another lesson in the Skillport Security+ course.
+It is on Vulnerabilities and Penetration Testing.
+
+- DONE Play with openNMT.
+Justin had installed OpenNMT and torch on the GPU machine.
+I had to activate torch from my .bashrc.
+The demo training is running.
+It says it is doing sequence to sequence training with attention. This is cool!
+I don't think I have it set to use the gpu.
+It will run 154 iterations.
+
+** Goals for Thursday:
+- TODO Escort Carmit around ARL. 
+- TODO Skillport lesson on Vulnerabilities and penetration testing.
+- TODO Semi supervised training on Babel Vietnamese.
+- TODO Semi supervised training with bnf on SOFTunisia.
+
 * DAR <2017-04-25 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Semisupervised training with bnf on Babel Vietnamese.
@@ -8173,3 +8212,12 @@ I'm expecting this to give me WER scores for the test data.
 It looks like the score script is expecting a file containing words.
 I haven't generated this file yet.
 I also have to look closely at the 3 arguments to the score script.
+. /home/tools/torch/install/bin/torch-activate
+I cloned the OpenNMT repo from:
+https://github.com/OpenNMT/OpenNMT.git
+I followed instructions in the README.md:
+cd OpenNMT
+To preprocess:
+th preprocess.lua -train_src data/src-train.txt -train_tgt data/tgt-train.txt -valid_src data/src-val.txt -valid_tgt data/tgt-val.txt -save_data data/demo
+To Train:
+th train.lua -data data/demo-train.t7 -save_model model
