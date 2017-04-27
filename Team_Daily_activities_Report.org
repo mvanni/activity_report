@@ -15,6 +15,8 @@ Does it segment the Vietnamese character strings?
 Does it segment the acoustic data?
 Looking at the script, it seems llike it segments the acoustic data and not the text data.
 I have to do more data preparation in the SOFTunisia directory before I can move forward.
+I made progress making the data/raw_train directory which is required by the segmentor training script.
+
 
 ** Goals for Friday:
 - TODO Skillport lesson on Vulnerabilities and penetration testing.
