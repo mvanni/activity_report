@@ -1,3 +1,26 @@
+* DAR <2017-04-27 Thu>
+**  Goals for Thursday set Wednesday:
+- DONE Escort Carmit around ARL. 
+- TODO Skillport lesson on Vulnerabilities and penetration testing.
+- TODO Semi supervised training on Babel Vietnamese.
+Decoding is still running.
+This is frustratingly slow.
+
+- TODO Semi supervised training with bnf on SOFTunisia.
+Making progress.
+The p-norm training with nnet2 finished.
+The next step according to the Vietnamese scripts is to train an automatic segmentor.
+What is this?
+Does it segment the Vietnamese character strings?
+Does it segment the acoustic data?
+Looking at the script, it seems llike it segments the acoustic data and not the text data.
+I have to do more data preparation in the SOFTunisia directory before I can move forward.
+
+** Goals for Friday:
+- TODO Skillport lesson on Vulnerabilities and penetration testing.
+- TODO Semi supervised training on Babel Vietnamese.
+- TODO Semi supervised training with bnf on SOFTunisia, specifically data prep.
+
 * DAR <2017-04-26 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Semisupervised training with bnf for Babel Vietnamese.
