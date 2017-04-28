@@ -1,3 +1,16 @@
+* DAR <2017-04-28 Fri>
+**  Goals for Friday set Thursday:
+- TODO Skillport lesson on Vulnerabilities and penetration testing.
+- TODO Semi supervised training on Babel Vietnamese.
+- TODO Semi supervised training with bnf on SOFTunisia, specifically data prep.
+.stm file:
+segment time mark input file
+
+** Goals for Monday:
+- TODO Babel Vietnamese semisupervised training with BFF.
+- TODO Semi supervised training with BNF to obtain transcripts for Zac
+- TODO Skillport Security+ lesson 3.
+
 * DAR <2017-04-27 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Escort Carmit around ARL. 
@@ -16,7 +29,6 @@ Does it segment the acoustic data?
 Looking at the script, it seems llike it segments the acoustic data and not the text data.
 I have to do more data preparation in the SOFTunisia directory before I can move forward.
 I made progress making the data/raw_train directory which is required by the segmentor training script.
-
 
 ** Goals for Friday:
 - TODO Skillport lesson on Vulnerabilities and penetration testing.
