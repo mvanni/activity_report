@@ -1,4 +1,30 @@
+* My WAR <2017-04-28 Fri>
+**  Goals set Last Week:
+- TODO Semisupervised training on Babel Vietnamese corpus with bottle nec features.
+Decoding is taking for ever (several days)
+- TODO Replicate Babel semisupervised training on SOFTunis corpus.
+Making slow progress.
+- TODO Security + skillport lessons.
+I found a new lesson on Vulnerabilities and Penetration Prevention.
+- DONE Bring Carmit to work on Thursday.
+- TODO Start writing an article for publication.
+
+** WAR:
+John Morgan is using a semi supervised training strategy to obtain a rough draft transcription of unlabeled speech data that is available in the SOF corpus of Arabic collected in Tunis Tunisia.
+The rough draft transcription will be passed to a human expert for correction. 
+The semi supervised recipe Morgan is following uses Deep Neural Network algorithms.
+ 
+** Goals for Next Week:
+- TODO Babel Vietnamese semi-supervised training with BNF.
+- TODO Semi supervised training   of SOFTunisia to obtain rough draft transcripts to give to Zac.
+- TODO Skillport Security+ lesson 3.
+
 * My WAR <2017-04-21 Fri>
+- TODO Get next speaker rough draft transcriptions to Zac.
+- TODO MeasureUp Security+ exam. 
+- TODO Skillport Security+ lesson on Vulnerabilities and Penetration Prevention.
+- TODO 
+
 ** Goals set Last Week:
 - TODO Semi supervised transcription of SOFTunisia Answers.
 I did a lot of work on this goals this week.
