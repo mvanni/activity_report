@@ -23,6 +23,7 @@ I also want to move from nnet2 to nnet3 as Yenda suggested.
 - TODO Babel Vietnamese Semisupervised training with BNF and KWS.
 - TODO Skillport lesson 3.
 - TODO Meeting with transapps team.
+- TODO TARP mandatory training
 
 * DAR <2017-04-28 Fri>
 **  Goals for Friday set Thursday:
