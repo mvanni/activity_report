@@ -1,3 +1,29 @@
+* DAR <2017-05-01 Mon>
+**  Goals for Monday set Friday:
+- TODO Babel Vietnamese semisupervised training with BFF.
+The decoding that was running last week finished over the week-end.
+There is a lot of work on kws in the scripts I am running now.
+There are a couple of kws lists I could not find and that are refered to in the scripts.
+I am copying other similar files to the missing names.
+I also reached a couple of scripts that do g2p with sequitur.
+Justin had to install sequitur for kaldi.
+
+- TODO Semi supervised training with BNF to obtain transcripts for Zac
+I ran alignment with the dnn nnet2 script.
+I've decided I'm going to start the SOFTunisia build from the beginning.
+I want to know what I'm doing at each step.
+Up till now I'm mostly running scripts that worked on the Vietnamese corpus.
+I also want to move from nnet2 to nnet3 as Yenda suggested.
+
+
+- TODO Skillport Security+ lesson 3.
+
+** Goals for Tuesday:
+- TODO SOFTunisia semisupervised training with BNF and nnet3.
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+- TODO Skillport lesson 3.
+- TODO Meeting with transapps team.
+
 * DAR <2017-04-28 Fri>
 **  Goals for Friday set Thursday:
 - TODO Skillport lesson on Vulnerabilities and penetration testing.
