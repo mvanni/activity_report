@@ -1,4 +1,54 @@
+* DAR <2017-05-02 Tue>
+**  Goals for Tuesday set Monday:
+- TODO SOFTunisia semisupervised training with BNF and nnet3.
+I'm starting from the beginning with a script for each step.
+The dictionary preparation script needs to be fixed.
+I'm going to assume I have the utf-8 dictionary instead of taking all the steps to convert the qcri buckwalter dictionary to utf8.
+I realized that on my laptop I had to install kaldi.
+I had done a make clean and had not finished the install.
+I recompiled and installed kaldi on my laptop.
+Steps:
+1. prepare supervised data
+2. Prepare acoustic model training lists (wav.scp, text, utt2spk and spk2utt)
+This is probably only for the basic cd gmm hmm model training. 
+3. Get the qcri dictionary ( I am skipping all the preparation steps it took to get this dicitonary).
+4. Prepare the data/lang directory ( this runs the script to build the lexicon fst)
+5. Get the subs data for lm training
+6. Get a list of subs OOVs.
+7. Skip subs segments with OOVs (should we be doing this?)
+8. Prepare lm.
+9. Format lm (This creates the G.fst fr grammar fst)
+10. Extract plp features with pitch
+11. Compute cmvn statistics.
+12 subset the training data to build the models incrementally.
+13. train monophones on very small subset of data 2500 utterances
+14. Align using monophones
+15. Train triphones on small data set 3000 utterances
+16. Align with tri1 models.
+17. Train tri2 models on most of the data.
+18. Reestimate pronunciation probabilities. These reestimation steps take a long time.
+19. Align with tri2 models.
+20. Train tri3 models on all the SOF Tunisia data.
+21 Reestimate lexicon probs with tri3 models.
+22.  
+
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+Decoding is running again for ever ...
+- TODO Skillport lesson 3.
+- DONE Meeting with transapps team.
+I was impressed.
+- TODO TARP mandatory training
+
+** Goals for Wednesday:
+- TODO Rebuild incrementally GP + Yaounde + CA for transapps team
+- TODO TARP mandatory training
+- TODO SOFTunisia semisupervised training with BNF and nnet3.
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+- TODO Skillport lesson 3.
+
 * DAR <2017-05-01 Mon>
+- TODO Skillport lesson 3.
+
 **  Goals for Monday set Friday:
 - TODO Babel Vietnamese semisupervised training with BFF.
 The decoding that was running last week finished over the week-end.
