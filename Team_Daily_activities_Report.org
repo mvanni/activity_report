@@ -1,3 +1,39 @@
+* DAR <2017-05-03 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Rebuild incrementally GP + Yaounde + CA for transapps team
+I'm making a lot of progress on this.
+I'm trying to organize the data in a way that is easy to understand.
+Under the data directory I have folders for each corpus:
+1. gp
+2. yaounde
+3. central accord
+4. niger
+
+- TODO TARP mandatory training
+- TODO SOFTunisia semisupervised training with BNF and nnet3.
+22. Align with tri3 models.
+23. Train lda and mllt adapted tri4 models.
+24. Reestimate pronunciation probs with tri4 models.
+25. align with tri4 models.
+26. Train speaker adapted SATtri5 models.
+27. Reestimate pronunciations probs with tri5 models.
+28. Align with tri5 models.
+29. Reestimate again with aligned tri5 models? (strange)
+30. Copy a test directory?
+31. Train a UBM.
+32. Train a subspace gaussian mixture model SGMM5.
+33. 
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+I think the decoding is still running, it's been several days.
+
+- TODO Skillport lesson 3.
+
+** Goals for Thursday:
+- TODO Incremental build of gp + yaounde with semisupervised training and bnf and nnet3.
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+
 * DAR <2017-05-02 Tue>
 **  Goals for Tuesday set Monday:
 - TODO SOFTunisia semisupervised training with BNF and nnet3.
@@ -47,7 +83,6 @@ I was impressed.
 - TODO Skillport lesson 3.
 
 * DAR <2017-05-01 Mon>
-- TODO Skillport lesson 3.
 
 **  Goals for Monday set Friday:
 - TODO Babel Vietnamese semisupervised training with BFF.
