@@ -1,3 +1,32 @@
+* DAR <2017-05-04 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Incremental build of gp + yaounde with semisupervised training and bnf and nnet3.
+I organized the data directories for the corpora very neatly.
+I found some problems.
+I had some old versions of the niger wav file lists that caused the scripts to use file paths that did not exist.
+I also found an interesting sorting problem.
+I've probably run into this before.
+I had written the yaounde utt2spk files with a singel white space as the field separator.
+I used a tab to seperate the fields in the gp corpus.
+This caused  kaldi to choke.
+It has to sort the 2 fields.
+It must include the field separator in the sort?
+Anyway, I solved those problems and I think I'm done with data preparation.
+
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+
+- SOFTunisia semisupervised training with bnf and nnet3 is stuck on the sgmm build.
+
+** Goals for Friday:
+
+- TODO Incremental build of gp + yaounde with semisupervised training and bnf and nnet3.
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- SOFTunisia semisupervised training with bnf and nnet3 is stuck on the sgmm build.
+
 * DAR <2017-05-03 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Rebuild incrementally GP + Yaounde + CA for transapps team
