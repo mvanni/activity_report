@@ -1,3 +1,13 @@
+* My WAR <2017-05-05 Fri>
+**  Goals set Last Week:
+- TODO Babel Vietnamese semi-supervised training with BNF.
+- TODO Semi supervised training   of SOFTunisia to obtain rough draft transcripts to give to Zac.
+- TODO Skillport Security+ lesson 3.
+
+** WAR:
+
+** Goals for Next Week:
+
 * My WAR <2017-04-28 Fri>
 **  Goals set Last Week:
 - TODO Semisupervised training on Babel Vietnamese corpus with bottle nec features.
