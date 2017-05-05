@@ -1,12 +1,28 @@
 * My WAR <2017-05-05 Fri>
 **  Goals set Last Week:
 - TODO Babel Vietnamese semi-supervised training with BNF.
+This is moving forward, but extremely slowly.
+I am considering running it on the CLSP cluster.
+Yenda might appreciate seeing results for Vietnamese using nnet3.
+
 - TODO Semi supervised training   of SOFTunisia to obtain rough draft transcripts to give to Zac.
+I started training a DNN.
+
 - TODO Skillport Security+ lesson 3.
-
 ** WAR:
-
+John Morgan and the A Team attended a meeting with the TransApps team. 
+The TransApps team demonstrated a Speech to Speech (S2S) app on an Android device. 
+They have been working very closely with the A Team on putting together the components for the S2S device. 
+Specifically, John Morgan provided the transApps team with a compiled finite state transducer containing French neural network  acoustic models, an n-gram language model and a lexicon all adapted to African Accented French.
+The A Team was impressed by the advances made by the TransApps team and looks forward to contributing more and better models to the S2S project.
+ 
 ** Goals for Next Week:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia Answers Transcription Project: Get a rough draft transcription of the next speaker  to Zac.
+- TODO GP + Yaounde: What models work with TransApps?
+- TODO Vietnamese semisupervised with bnf and nnet3 on CLSP  cluster.
+
 
 * My WAR <2017-04-28 Fri>
 **  Goals set Last Week:
