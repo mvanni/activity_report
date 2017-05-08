@@ -1,3 +1,94 @@
+* DAR <2017-05-08 Mon>
+** Goals for Monday set Friday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO Start with step 15 train tri3 models in gp + yaounde system.
+- TODO SOFTunisia: what will it take to get a rough draft of speaker 2 to Zac?
+I have the basic cd gmm hmm system trained.
+I moving ahead from this point with nnet3.
+I am setting the test data to the unsupervised SOFTunisia Answers data.
+I hope this will produce transcripts for these data at some point soon.
+Recall that I had taken around 35 steps to build an sgmm system.
+I am starting The nnet3 model building from tri4 models that were built in a previous step 23 and 24.
+tri4 models are adapted with feature space mllt and lda.
+Could I start from tri5 speaker adapted training SAT models?
+The first thing that has to be done in the nnet3 build is to extract i-vectors.
+To extract i-vectors, an ubm is required.
+mfcc features are made for Low Resolution Speed-Perturbed data for alignments.
+fmllr alignment
+I am separating the script that produces the ivectors into sevral scripts, one for each step.
+1. Make speed perturbed data
+2. Volume perturbation?
+3. Extract high resolution (hires) mfcc features.
+4. Do some kind of selection (not sure this is really doing anything)?
+5.  Extract ivectors on speed perturbed data.
+6. Make low resolution speed perturbed data.
+7. Extract ivectors on low resolution speed perturbed data.
+
+
+- TODO Vietnamese: run on CLSP cluster?
+I downloaded and installed kaldi on a directory on the clsp cluster.
+I do not know where the cuda toolkit is on their cluster.
+Justin does not know either.
+I'll have to ask for help to install kaldi with GPU.
+I'll ask Yenda tomorrow.
+
+** Goals for Tuesday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: start from local/nnet3/select_hires.sh
+- TODO gp + yaounde: Run step 16 on my laptop to try to debug pron problem.
+
+* DAR <2017-05-05 Fri>
+**  Goals for Friday set Thursday:
+- TODO Incremental build of gp + yaounde with semisupervised training and bnf and nnet3.
+I'm running the feature extraction stet.
+It looks like I've overcome the sorting problem in the training lists. 
+Recall that there are 4 list files required:
+1. wav.scp
+2. text
+3. utt2spk
+4. spk2utt
+Once you have these lists you can run feature extraction on the data referred to in the lists.
+I haven't found the place where I originally separate fields with a space instead of a tab.
+I'm doing it in the yaounde build.
+I am starting the monophone training step.
+Here are the steps I've done so far:
+0. Data prep. The result of this are the 4 acoustic modeling list I itemized above.
+1. Dictionary. I am not doing anything with the dictionary now, I am just copying our  previoius French dictionary. 
+2. Lan preparation. This will be repeated after each model build starting at tri2.
+3. lm. Again I am mostly copying the fr lm we had built previously.
+4. Feature extraction. plp + pitch features.
+5.  Training data subsetting.
+6. Monophone training. I am also decoding a test set in case I want to give these models to transaps with decoding parameters.
+7. Align with monophones. I guess we do not redo the lang directory at this point.
+8.  Train tri1 model set.
+9. Align with tri1 models.
+10 Train tri2 models.
+11. Get pronunciations with tri2. I do not understand what this step does yet.
+12. Add prons. Again I do not understand this step yet.
+13. Redo the lang directory using the results of steps 11 and 12.
+14.  Align using tri2 models.
+Next I need to train the tri3 model set.
+
+
+
+- TODO Babel Vietnamese Semisupervised training with BNF and KWS.
+
+It is still running.
+Maybe I could run this on the clsp cluster?
+Yenda might want to see results with nnet3 instead of nnet2 or nnet?
+
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+
+** Goals for Monday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO Start with step 15 train tri3 models in gp + yaounde system.
+- TODO SOFTunisia: what will it take to get a rough draft of speaker 2 to Zac?
+- TODO Vietnamese: run on CLSP cluster?
+
 * DAR <2017-05-04 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Incremental build of gp + yaounde with semisupervised training and bnf and nnet3.
@@ -20,7 +111,6 @@ Anyway, I solved those problems and I think I'm done with data preparation.
 - SOFTunisia semisupervised training with bnf and nnet3 is stuck on the sgmm build.
 
 ** Goals for Friday:
-
 - TODO Incremental build of gp + yaounde with semisupervised training and bnf and nnet3.
 - TODO Babel Vietnamese Semisupervised training with BNF and KWS.
 - TODO Skillport lesson 3.
