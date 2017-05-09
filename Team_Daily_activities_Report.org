@@ -1,3 +1,36 @@
+* DAR <2017-05-09 Tue>
+** Goals for Tuesday set Monday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: start from local/nnet3/select_hires.sh
+I ran the select command
+Next mllt and lda trained on mfcc hires.
+train a diagonal UBM.
+train the i-vector extractor.
+prepare the directory for speed perturbed low resolution data.
+Extract mfcc features  
+align 
+
+The alignment step is failing.
+Maybe I need to extract plp with pitch features?
+I am testing this as I am getting ready to leave.
+
+I also started decodeing with the tri4 models.
+I might want to get a rough transcript for speaker 2 to Zac with this decoding?
+
+- DONE gp + yaounde: Run step 16 on my laptop to try to debug pron problem.
+The problem was in step 17.
+I had skipped the step where the tri3 prons are added to the dictionary.
+I've taken the next few steps up to step 28 for tri5 models.
+
+** Goals for Wednesday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: Does alignment work with plp pitch features?
+- TODO  Get Zac a rough draft of speaker 2 even if it is using tri4 models.
+ 
+- TODO GP + Yaounde: resume on laptop at step 289. On GPU resume at step 27.
+
 * DAR <2017-05-08 Mon>
 ** Goals for Monday set Friday:
 - TODO Skillport lesson 3.
