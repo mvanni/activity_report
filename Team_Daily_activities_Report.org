@@ -1,3 +1,62 @@
+* DAR <2017-05-10 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: Does alignment work with plp pitch features?
+Answer: yes. At least the alignment went through after I used plp + pitch instead of mfcc.
+It looks like the script that makes the configuration file succeeded.
+I'm trying to run the script that  runs the rnn training.
+There was a problem with the number of jobs exceeding the number of egs?
+I set nj to 1 and it got passed that error.
+No. The problem is hat a final number of jobs is set to 10 and there is an eg archive for each of the 8 jobs set by the jn variable.
+I set the final jobs variable to 8.
+Good! it looks like the rnn training is running on the GPU.
+This was not too hard to get running.
+Hoepfully, this will produce an nnet3 system for SOFTunisia.
+Running into memory allocation errors.
+I'm fiddling with the number of jobs variables.
+Leaving nj at 8.
+I made the following modification:
+--trainer.rnn.num-chunk-per-minibatch=128,64 \
+to
+--trainer.rnn.num-chunk-per-minibatch=64,32 \
+This got me passed the memory allocation problem for now.
+RNN training finished.
+I started decoding the unsupervised Ansers data with the RNN models.
+I need to setup my scripts to enable retraining with the new human corrected data.
+I need to order the scripts I ran to get nnet3 running.
+41. speed perturb
+42. volume perturb
+43. make plp features for low resolution speed perturbed data?
+44.  
+
+As I'm preparing to leave, I have the rnn decoding and the tri5 decoding running.
+Check on these runs tomorrow morning.
+ 
+- TODO  Get Zac a rough draft of speaker 2 even if it is using tri4 models.
+I prepared Zac's transcription of the first speaker CTELLFIVE 01.
+I have output of the Answers data from several decodeings.
+
+- DONE GP + Yaounde: resume on laptop at step 29. On GPU resume at step 27.
+Moving forward with the incremental build.
+I've finished tri5.
+Next comes the sgmm building phase.
+The first step is to make the UBM.
+I am now running the sgmm2 training.
+What does the 2 stand for?
+2 pass maybe?
+This is running still as I am preparing to leave.
+Check on the results of this run tomorrow.
+
+** Goals for Thursday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFtunisia: Write scripts to easily incorporate new human corrected (Zac) data into retraining and decoding.
+- TODO SoFTunisia: Get the rough draft to Zac.
+- TODO GP + Yaounde: Decode at all model builds. Speciffically, decode with sgmm2 models that are training now.
+- TODO GP + Yaounde: Move to a new model: Chain, bnf nnet?
+- TODO Vietnamese: Contact Yenda about compiling kaldi with GPU on clsp cluster.
+
 * DAR <2017-05-09 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Skillport lesson 3.
@@ -28,7 +87,6 @@ I've taken the next few steps up to step 28 for tri5 models.
 - TODO Mandatory TARP training. 
 - TODO SOFTunisia: Does alignment work with plp pitch features?
 - TODO  Get Zac a rough draft of speaker 2 even if it is using tri4 models.
- 
 - TODO GP + Yaounde: resume on laptop at step 289. On GPU resume at step 27.
 
 * DAR <2017-05-08 Mon>
