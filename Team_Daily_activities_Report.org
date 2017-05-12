@@ -1,3 +1,113 @@
+* DAR <2017-05-11 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFtunisia: Write scripts to easily incorporate new human corrected (Zac) data into retraining and decoding.
+Where should I start training with the new human corrected data?
+Here is a list of the scripts I run to take each step: 
+The steps for building a standard cd gmm hmm go to step number 30.
+First basic data preparation steps
+01prep_data.sh
+02prep_lists.sh
+03get_dict.sh
+04prep_lang.sh
+05get_subs_data.sh
+06get_subs_oovs.sh
+07skip_subs_oovs.sh
+
+Make the Language Model
+
+08prep_lm.sh
+09format_lm.sh
+
+Extract front end feature vectors
+
+10extract_plp.sh
+11cnvn.sh
+
+Start building models
+12subset_data.sh
+13mono.sh
+14align_mono.sh
+15tri1.sh
+16align_tri1.sh
+17tri2.sh
+18reestimate_lang_tri2.sh
+19align_tri2.sh
+20tri3.sh
+21reestimate_lang_tri3.sh
+22align_tri3.sh
+23tri4.sh
+24reestimate_lang_tri4.sh
+25align_tri4.sh
+26tri5.sh
+27reestimate_lang_tri5.sh
+28align_tri5.sh
+29reestimate_lang_tri5.sh
+
+At this point building can diverge into several branches
+30copy_langp_test.sh
+30run-2a-nnet-cpu.sh
+30run-2a-nnet-ensemble-gpu.sh
+31run-2b-bnf.sh
+
+Build the SGMMs
+31ubm.sh
+32sgmm2.sh
+33align_sgmm2.sh
+34reestimate_lang_sgmm2.sh
+35denlats.sh
+36sgmm5_mmi.sh
+
+37prepare_data_subsets.sh
+
+Extract feature vectors for the Unsupervised data. I probably should do this during the initial data prep stage.
+38extract_plp_unsupervised.sh
+39cnvn_unsupervised.sh
+
+Decode unsupervised data with tri4 models
+40decode_unsupervised_tri4.sh
+
+Start the nnet3 rnn building
+41speed_perturb.sh
+42volume_perturb.sh
+43hires.sh
+44make_plp.sh
+45select_hires.sh
+46train_hires_mllt_lda.sh
+47ubm.sh
+48train_i-vector_extractor.sh
+49extract_ivectors.sh
+50align.sh
+51config.sh
+52train_rnn.sh
+
+I wrote scripts to prepare the acoustic model training lists for the human corrected data.
+I found a problem with how I was dealing with the unsupervised data.
+Since I was not using any of the Answers/unsupervised data for training, it did not appear as a problem before.
+Now that I am consolidating both file names from the Recordings/supervised and Answers/unsupervised  into acoustic model training list it appeared as a problem.
+I am consolidating the original Recordings/supervised data with the human corrected/Answers/previously unsupervised data for a new training session.
+The problem is with sorting.
+I was not worrying about the names I was assigning to the files when I was not using the Answers data for training.
+it is complicated, but the kaldi scripts are very sensitive to the sorting order of the wav files.
+Anyway, I think I fixed the problem with the file names.
+Unfortunately, I really should start all over with the model building.
+
+- TODO SoFTunisia: Get the rough draft to Zac.
+- TODO GP + Yaounde: Decode at all model builds. Speciffically, decode with sgmm2 models that are training now.
+- TODO GP + Yaounde: Move to a new model: Chain, bnf nnet?
+- TODO Vietnamese: Contact Yenda about compiling kaldi with GPU on clsp cluster.
+
+** Goals for Friday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO Change my AKO password.
+- TODO Rerun model building and retraining with human corrections.
+- TODO SoFTunisia: Get the rough draft to Zac.
+- TODO GP + Yaounde: Decode at all model builds. Speciffically, decode with sgmm2 models that are training now.
+- TODO GP + Yaounde: Move to a new model: Chain, bnf nnet?
+- TODO Vietnamese: Contact Yenda about compiling kaldi with GPU on clsp cluster.
+
 * DAR <2017-05-10 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Skillport lesson 3.
