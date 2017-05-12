@@ -1,3 +1,52 @@
+* My WAR <2017-05-12 Fri>
+** Goals set last Week:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+I tried to sign in to the TARP training online following the steps Anna Dye sent out.
+I got through step 7 and failed on step 8.
+
+- TODO SOFTunisia Answers Transcription Project: Get a rough draft transcription of the next speaker  to Zac.
+Although I did not accomplish this goal yet,  I got a lot of worked  done on this item this week.
+I cleaned up some of the data preparation scripts. 
+To do acoustic model training, kaldi requires 4 lists: wav.scp, text, utt2spk and spk2utt.
+Kaldi is very sensitive to the format of these lists.
+Specifically, they have to be sorted very carefully.
+You have to  be able to sort on both the speaker field and the utterance field and get the dame result.
+Since I was previously only training on the supervised Recordings files, I only worried about putting them in the correct sorting order.
+I ignored the unsupervised Answers data.
+When I attempted to use Zac's transcription of a rough draft from one of the Answers  speakers, I realized that I had to worry about the sorting format of the Answers data too.
+I wrote scripts to fix this problem.
+I also wrote scripts to process the human (Zac) corrected transcriptions.
+This meant writing acoustic model training list wav.scp, text, utt2spk and spk2utt lists for the human corrected data.
+Then consolidating the new human corrected lists with the old supervised data lists and sorting them.
+I do not have this process totally automated yet. 
+
+I consolidated all the commands to run the scripts for building the CD GMM HMM into 1 script.
+Once the CD GMM HMM models are trained there are several relatively independent branches to take:
+1.  sgmm
+2. nnet2 with bnf
+3. nnet3 rnn.
+
+Which branch should I take?
+
+- TODO GP + Yaounde: What models work with TransApps?
+
+- TODO Vietnamese semisupervised with bnf and nnet3 on CLSP  cluster.
+
+** WAR:
+John Morgan setup a framework to enable the integration of human corrected transcriptions into the process of training acoustic models for North African Accented Arabic. 
+The acoustic models that result are intended to be used for improved recognition on Arabic/English speech to speech devices when used by US Army soldiers who communicate with Arabic speakers in North African countries.
+THE branch has access to some North African Accented speech that has not been transcribed. 
+The framework Morgan wrote makes it easier to produce automatically generated  rough draft transcriptions to hand over to a human expert for correction and then to incorporate those corrections back into the acoustic model training process.
+
+** Goals for Next Week:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: Write scripts for each branch to take after CD GMM HMM models are trained. Branches: sgmm, nnet2 dnn bnf, nnet3 rnn.
+- TODO SOFTunisia: Test set?
+- TODO GP + Yaounde: Decode test seet at each model statge. 
+- TODO GP + Yaounde: Get models to TransApps for testing.
+
 * My WAR <2017-05-05 Fri>
 **  Goals set Last Week:
 - TODO Babel Vietnamese semi-supervised training with BNF.
@@ -22,7 +71,6 @@ The A Team was impressed by the advances made by the TransApps team and looks fo
 - TODO SOFTunisia Answers Transcription Project: Get a rough draft transcription of the next speaker  to Zac.
 - TODO GP + Yaounde: What models work with TransApps?
 - TODO Vietnamese semisupervised with bnf and nnet3 on CLSP  cluster.
-
 
 * My WAR <2017-04-28 Fri>
 **  Goals set Last Week:
