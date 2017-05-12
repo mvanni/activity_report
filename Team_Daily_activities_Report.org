@@ -1,3 +1,46 @@
+* DAR <2017-05-12 Fri>
+**  Goals for Friday set Thursday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+I tried to sign in to the TARP training online following the steps Anna Dye sent out.
+I got through step 7 and failed on step 8.
+
+- DONE Change my AKO password.
+- SOFTunisia: TODO Rerun model building and retraining with human corrections.
+I put all the scripts for building the CD GMM HMM into 1 script file.
+I am rerunning the CD GMM HMM build again with this script.
+I had to do this because there were problems with the way I was naming the Answers data.
+this problem was going to cause further problems when I consolidated the human transcriptions with the old supervised data.
+Hopefully, this problem is solved now.
+
+- Test set for SOFTunisia:
+I looked at the /mnt/corpora/arabic_speech folder.
+The waveform files are in .raw format.
+I am writing a script to convert these files to .wav format.
+The following sox command seems to work:
+sox   \
+    -r 16k \
+    -e signed \
+    -b 16 \
+    -c 1  \
+    /mnt/corpora/arabic_speech/f001arabic1/s1_001.raw  \
+    1.wav
+
+
+- TODO SoFTunisia: Get the rough draft to Zac.
+- TODO GP + Yaounde: Decode at all model builds. Speciffically, decode with sgmm2 models that are training now.
+- TODO GP + Yaounde: Move to a new model: Chain, bnf nnet?
+- TODO Vietnamese: Contact Yenda about compiling kaldi with GPU on clsp cluster.
+
+** Goals for Monday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: write the raw2wav.sh script for the West Point Arabic Speech data.
+- TODO SOFTunisia: Make a test set with  West Point Arabic Speech .wav data.
+- TODO GP + Yaounde: Decode test set at each model stage.
+- TODO SOFTunisia: Write scripts to continue each model branch. Branches: sgmm, nnet2 dnn bnf, nnet3 rnn.
+- TODO GP + Yaounde: Write scripts to continue each model branch. Branches: sgmm, nnet2 dnn bnf, nnet3 rnn.
+
 * DAR <2017-05-11 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Skillport lesson 3.
@@ -107,6 +150,8 @@ Unfortunately, I really should start all over with the model building.
 - TODO GP + Yaounde: Decode at all model builds. Speciffically, decode with sgmm2 models that are training now.
 - TODO GP + Yaounde: Move to a new model: Chain, bnf nnet?
 - TODO Vietnamese: Contact Yenda about compiling kaldi with GPU on clsp cluster.
+
+** Goals for Monday:
 
 * DAR <2017-05-10 Wed>
 **  Goals for Wednesday set Tuesday:
