@@ -1,3 +1,64 @@
+* DAR <2017-05-16 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO Zac: Get transcript of speaker #2.
+- TODO SOFTunisia: try tri4 models, tri3 if they don work.
+I'm trying to figure out what the problem is.
+My guess:
+When I add the new data, for some purposes, I am adding a new speaker, while for other purposes I am not.
+I wanted to skip the step where I extract the plp pitch features for the supervised (Recordings) data since this step has already been taken.
+The feature extraction step produces some files that get used in training.
+Specifically, feats.scp and cmvn.scp.
+Since I wanted to skip the feature extraction for the supervised data and only extract features for the human corrected data, I thought I could just concatenate and sort the feats.scp and cmvn.scp files from the train (supervised) and new human corrected data to get the feats.scp and cmvn.scp files for the new train + human corrected data training set.
+When I concatenate and sort these 2 files I do not get correct files.
+There is 1 entry in the cmvn.scp file for each speaker.
+After concatenating I get 69 speakers.
+Before concatenating there were only 68 speakers.
+I think this is where the problem is occurring.
+I am going to  extract features from the whole supervised + human corrected data set so that correct feats.scp and cmvn.scp files are generated.
+This seems to be working.
+So, I either figure out how to create correct feats.scp and cmvn.scp files without repeating the feature extraction step, or I run the feature extraction step on the whole concatenated data set.
+For now, I'm going to stick with what works.
+Training/retraining with SAT tri5 on the old train supervised (Recordings) data plus the new human corrected data succeeded.
+The probability reestimation scripts  ran successfully.
+When I go to decode, I get an error because the G.fst file is missing.
+The G.fst file is the compiled fst for the lm.
+Here is where I neeed to think about the lm which Steve reminded me to do a couple of days ago.
+I guess I need to append the human corrected transcripts to the lm data and rerun the training and fst compile.
+I did this and it seems to have worked.
+I ran the tri5 training on the new training set.
+I reeestimated the dictionary probs.
+I decoded the unsupervised data with the new models.
+I gave the output hypotheses to Zac.
+He says it looks very good.
+He is returning his corrected version to me.
+
+What steps should I take to retrain?
+1. Insert Zac's transcriptions into the local/src/human_corrections/transcriptions.tsv file.
+2. Remove the " hyp" from Zac's transcriptions.
+The " hyp" was part of the per_utt file where I get the hypotheses.
+I could remove the " hyp" before I give them to Zac.
+3. Add the new speaker to the speakers.txt list.
+4. Run the scripts that prepare the acoustic modleing lists: wav.scp, text, utt2spk snd spk2utt.
+5. Consolidate the old acoustic modleing list and the  new acoustic modeling list and store them in a new directory.
+6. Extract plp pitch features for the new consolidated training set.
+7. Align the training data with the new  human corrected models. 
+8. Reestimate again pron probs with the alignments.
+9. Prepare the lm with the new transcripts.
+10. Format the G.fst with the new lm.
+11. Decode the unsupervised data with the new system.
+
+** Goals for Wednesday:
+- TODO Doctor's appointment.
+
+** Goals for Thursday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: Decode unsupervised data with new human corrected 2 system.
+- TODO Get speaker #3 hypotheses to Zac.
+- TODO Get nnet3 rnn system decoding working again.
+
 * DAR <2017-05-15 Mon>
 **  Goals for Monday set Friday:
 - TODO Skillport lesson 3.
@@ -23,7 +84,6 @@ There might even be a problem with tri4 models since they also do adaptation.
 They do feature space adaptation.
 If tri4 models do not work, I'll retreat to tri2.
 My priority tomorrow is to get transcripts for Zac for speaker #2.
- 
 
 ** Goals for Tuesday:
 - TODO Skillport lesson 3.
