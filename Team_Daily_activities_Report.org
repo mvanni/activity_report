@@ -1,3 +1,84 @@
+* DAR <2017-05-18 Thu>
+** Goals for Wednesday set Tuesday:
+- DONE Doctor's appointment.
+
+** Goals for Thursday set Tuesday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: Decode unsupervised data with new human corrected 2 system.
+
+I had started the LM formatting when I left on Tuesday.
+It had finished when I came into work this morning and had produced the G.fst file.
+It puts the G.fst in the data/langp/tri5_human_corrected_1_ali folder.
+This is the new lang directory I will use for decoding with the new human corrected stage 2 models. 
+Actually, I do not need the G.fst and until decoding, it is not used in training.
+I can start the acoustic model training before finishing the lm training and G.fst compile.
+AM training finished and I started the decoding process.
+I decode the unsupervised data.
+Before decoding, the decoding fst graph has to be constructed.
+The mkgraph takes the following arguments:
+1.     data/langp/tri5_human_corrected_1_ali
+This folder gets produced in the pron prob reestimation step.
+2.    exp/tri5_human_corrected_1_ali
+This is the output of the alignment that  is run after AM training with the human corrected stage 1 data.
+3.    exp/tri5_human_corrected_2/graph
+The HCLGa.fst file is written to this folder.
+
+- Problem:
+When I went to decode with the decoding fst graph produced above, I got an error.
+The decoding scripts expect some components to exist in specific places. 
+There has to be a "tree" directory in the same directory where the decoding is done.
+The "tree" directory is in the place where the alignments were done.
+So the new arguments to the mkgraph script will be:
+1.     data/langp/tri5_human_corrected_1_ali same as above
+2.    exp/tri5_human_corrected_1_ali same as above
+3.    exp/tri5_human_corrected_1_ali/graph
+The graph/HCLGa.fst file has to end up under  the  ...
+
+- problem:
+I found a problem in a previous step.
+When I ran the  AM training, I was using the wrong alignment source directory.
+I was using:
+exp/tri5_ali
+This is the alignment directory from the first base building stage.
+I am rerunning the AM training with the following alignment source directory:
+exp/tri5_human_corrected_1_ali
+This directory was produced by running alignment with models that were trained with the stage 1 human corrections.
+It is important not   to skip this step since the main idea is that we incorporate the information from previous human corrections into the current   AM training stage.
+
+
+- DONE Get speaker #3 hypotheses to Zac.
+After decoding finished, I gave Zac (via Hazrat) speakers 3 4 5 6 and 7.
+
+- TODO Get nnet3 rnn system decoding working again.
+I've been going through the scripts to build the nnet3 rnn system.
+I was missing the scripts corresponding to the unsupervised  data which should be analogous to the scripts for the train data. 
+I made scripts for the unsupervised data for: 
+1. speed perturbation, 
+2. volume perturbation,
+3. plp extraction, 
+4. - problem:
+
+I do not think the mllt lda training that is done on the supervised train (Recordings) data can be done for the unsupervised (Answers) data.
+Can I skip this step for unuspervised?
+
+5. ubm training.
+This step depends on the mllt lda training in the previous step.
+So, it looks like I will not be able to extract the ubm for unsupervised.
+
+6. i-vector extractor training
+This totally bogged down my laptop. I might have to do it on the GPU machine exclusively.
+
+7. Extract i-vectors.
+I guess I can use this for both the train and unsupervised data. Maybe?
+
+** Goals for Friday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO TransApps: Figure out how to get models to TransApps.
+- TODO GP + Yaounde : Chain Models?
+
+
 * DAR <2017-05-16 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Skillport lesson 3.
@@ -58,7 +139,7 @@ I could remove the " hyp" before I give them to Zac.
 - TODO SOFTunisia: Decode unsupervised data with new human corrected 2 system.
 - TODO Get speaker #3 hypotheses to Zac.
 - TODO Get nnet3 rnn system decoding working again.
-
+,
 * DAR <2017-05-15 Mon>
 **  Goals for Monday set Friday:
 - TODO Skillport lesson 3.
