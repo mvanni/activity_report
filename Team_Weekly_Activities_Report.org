@@ -1,3 +1,52 @@
+* My WAR <2017-05-19 Fri>
+** Goals setLast Week:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: Write scripts for each branch to take after CD GMM HMM models are trained. Branches: sgmm, nnet2 dnn bnf, nnet3 rnn.
+Instead of this goal, I concentrated on getting a rough draft transcription to Zac for correction.
+I incorporated his corrections from the first speaker into the Speaker Adaptive Training (SAT)  tri5 model training step.
+I ran the pronunciation probability reestimation scripts, alignment and lm training with the new corrected data concatenated to the old training data.
+I decoded with the new model set.
+I gave Zac a rough draft from speaker 3. 
+He said it looks very good. 
+He had do very little correcting.
+I took his corrections and repeated the cycle.
+On this stage 3 of the cycle, I gave Zac data from 5 speakers.
+I expect he will give me corrections back on Monday.
+
+- TODO SOFTunisia: Test set?
+I worked on incorporating the Westpoint Arabic corpus into our SOFTunisia system building.
+I am almost at the point where I can incorporate the data into training. 
+I put the data into the kaldi directory structure format and I wrote the 4 list files required for  acoustic model training in kaldi. 
+
+- TODO GP + Yaounde: Decode test set at each model stage. 
+I tested at the tri1 and tri2 stages.
+The tri2 results were worse than the tri1 stage results: 49 versus 45 WER.
+I am going to do some tuning of the parameters to see if I can get the tri2 results better than the tri1 results.
+I am modifying the number of gaussians and the number of leaves.
+
+- TODO GP + Yaounde: Get models to TransApps for testing.
+I am talking with the TransApps team about using sftp or scp to transfer models to them
+I need to get them my public key.
+
+** WAR:
+This week John Morgan executed 2 cycles of a human in the loop process with an Automatic Speech recognizer. 
+The goal is to transcribe a corpus of Arabic speech from the North African country Tunisia. 
+A rough draft of speech from 1 speaker using a baseline ASR system was provided to a human expert for correction. 
+The correction was used to retrain the ASR system.
+The new system was used to get to the human expert a second rough draft transcription of speech from a second speaker for correction. 
+The corrections were then used to train a third ASR system.
+
+ 
+
+** Goals for Next Week:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO Transfer GP + Yaounde models to TransApps for testing.
+- TODO SOFTunisia: Incorporate  Westpoint data into training.
+- TODO SOFTunisia: Cycle through training  Decoding and Human Corrections (Zac) with SAT on tri5 models.
+- TODO SOFTunisia: get nnet3 rnn decoding to work.
+
 * My WAR <2017-05-12 Fri>
 ** Goals set last Week:
 - TODO Skillport lesson 3.
