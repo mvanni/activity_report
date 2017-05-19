@@ -1,3 +1,64 @@
+* DAR <2017-05-19 Fri>
+**  Goals for Friday set Thursday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO TransApps: Figure out how to get models to TransApps.
+Joe forwarded me to a sysadmin.
+It looks like we can use sftp or scp, but apparently I need to give them my public key.
+Not sure if I'll be able to do this.
+I don't really have mail on either the GPU machine or my laptop.
+Asking Justin for help.
+key-gen -t rsa -b 4096 -C "john.j.morgan50.civ@mail.mil"
+This creates the .ssh/id_rsa.pub
+Justin retrieved it from my laptop then he sent it to my enterprise machine.
+I then saved it and  forwarded to the transapps sysadmin Dereck.
+
+- TODO GP + Yaounde : Chain Models?
+I have decoded with tri1 and tri2 models.
+tri1: %WER 45.94 [ 15110 / 32888, 1133 ins, 2636 del, 11341 sub ] exp/tri1/decode_test/wer_14_0.5
+tri2: %WER 49.32 [ 16221 / 32888, 1143 ins, 2900 del, 12178 sub ] exp/tri2/decode_test/wer_12_0.5
+Something went wrong here.
+Possible problem:
+I changed the number of gaussians and the number of leaves parameters (not sure why?) from 600 150 to 300 1000 respectively.
+I'm rerunning the tri2 training with the parameters set to 800 2000.
+Next, I ran the pron probs reestimation scripts.
+I also ran the lm training again to get a new G.fst.
+Ran alignment.
+Decoding tri2 now.
+It's taking for ever on the gpu machine.
+Why is it taking so long?
+It bogged down my laptop when I ran it there.
+Why?
+
+- TODO Colloquium Presentation: Write Bio and Abstract. Start writing an outline.
+
+- SOFTunisia:
+Working on nnet3 build.
+fmllr alignment for both train and unsupervised data.
+i-vector extraction failed on my laptop, but it seems to be succeeding on the GPU machine.
+
+- problem:
+I am at the point where I run the rnn training.
+The kaldi script I am trying to copy uses the option:
+--ali-dir=exp/tri5_ali_train_sp
+I do not have this directory yet.
+I do have:
+--ali-dir=exp/tri4_ali_train_sp
+I am trying to find where this directory was created.
+I'm pretty sure it got created in the alignment run.
+I set the output directory to exp/tri5_ali_train_sp in the alignment script.
+I wrote the config file.
+Training is running on the GPU.
+Training finished.
+Decoding still fails.
+
+** Goals for Monday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO Zac: incorporate Zac's latest corrections into stage 3 of training and decoding. 
+- TODO TransApps: transfer some models to them via sftp or scp.
+- TODO SOFTunisia: Incorporate Westpoint data into SOFTunisia training.
+
 * DAR <2017-05-18 Thu>
 ** Goals for Wednesday set Tuesday:
 - DONE Doctor's appointment.
