@@ -43,10 +43,10 @@ The corrections were then used to train a third ASR system.
 - TODO Skillport lesson 3.
 - TODO Mandatory TARP training. 
 - TODO Transfer GP + Yaounde models to TransApps for testing.
-- TODO SOFTunisia: Incorporate  Westpoint data into training.
+- TODO SOFTunisia: Incorporate  Westpoint data into training or testing.
 - TODO SOFTunisia: Cycle through training  Decoding and Human Corrections (Zac) with SAT on tri5 models.
 - TODO SOFTunisia: get nnet3 rnn decoding to work.
-
+- TODO Colloquium preparation (abstract and bio)
 * My WAR <2017-05-12 Fri>
 ** Goals set last Week:
 - TODO Skillport lesson 3.
