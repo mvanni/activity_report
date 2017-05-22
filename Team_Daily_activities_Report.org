@@ -1,3 +1,89 @@
+* DAR <2017-05-22 Mon>
+**  Goals for Monday set Friday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO Zac: incorporate Zac's latest corrections into stage 3 of training and decoding. 
+I got the transcriptions for speakers 3 through 7 from Zac via Hazrat.
+1. Inserted 5 new speakers into speakers.txt file.
+2. Appended new transcriptions to transcriptions.tsv and transcriptions.txt files.
+3. Created file lists for acoustic model training with new data.
+4. Created langp directory for new training data.
+I don't think I took this step in the right place last cycle. 
+This might explain why Zac found an OOV repeated in the second cycle.
+I still don't understand everything that is being done with some of these scripts.
+5. Ran pron prob reestimation scripts.
+6. Prepared lm with new data
+7. Formatted lm and created new G.fst.
+8. Trained tri models with SAT.
+9. Decoded unsupervised data with FMLLR.
+10. I gave Hazrat rough draft transcriptions for 4 speakers 8, 9, 10 and 11. He took them to Zac on the thumb drive.
+
+- Problem:
+We want to incorporate the new words (OOVs) that Zac transcribes into our pronouncing dictionary.
+
+I also ran the same models on the training data.
+Here is the WER:
+%WER 10.56 [ 2929 / 27748, 432 ins, 294 del, 2203 sub ] exp/tri5_human_corrected_3_ali/decode_train/wer_17_0.0
+
+It probably should be better.
+
+- TODO TransApps: transfer some models to them via sftp or scp.
+Derek gave me an account on his linux box.
+I cannot connect.
+Got help from Justin.
+Problem: we are blocking port 4567.
+Justin requested an exception to open this port for me.
+
+- TODO SOFTunisia: Incorporate Westpoint data into SOFTunisia training.
+- DONE ARL Colloquium preparation (abstract and bio)
+Abstract:
+There are many scenarios in which US Army Soldiers need to communicate with people who do not speak English. 
+Speech to Speech  (S2S) devices provide a solution to this problem. 
+Soldiers in the field have recently been requesting access to S2S devices to communicate with Soldiers from allied forces who speak accented versions of French and Arabic. 
+
+The Applications Team (ATeam) in the Multilingual Computing and Analytics Branch (MCAB) is investigating methods for improving the performance of S2S devices when they are used to communicate  with speakers of low-resourced languages like Pashto and subpopulations of speakers of global languages like French. 
+The ATeam works on the three components of an S2S device: Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS).
+
+ATeam member, John Morgan will talk about the challenges posed by the linguistic environments encountered by US Soldiers for mathematically modeling the ASR and MT components of S2S devices. 
+He will present the latest adaptation work he is doing with the well-established Gaussian Mixture Model Hidden Markov Model (GMM-HMM) framework and his attempts to improve on these methods with more recent AI inspired Neural Network models.
+
+Bio:
+John Morgan is a Mathematician who has worked in the fields of Computational Linguistics and Natural Language Processing for 20 years, first at West Point in the Center for Technology Enhanced Language Learning and for the past 9 years at ARL in the Multilingual Computing and Analytics Branch. 
+He has a B.S. degree in Mathematics from the University of California, Irvine and an M.A. in Mathematics from UC Berkeley. 
+He also was a graduate Computer Science student studying Natural Language Processing at UMD.
+His work has focused on algorithms for the adaptation of models to sub populations of linguistic groups. 
+While at West Point he developed a method for adapting an Automatic Speech Recognition system so that it would tolerate speech from non-native foreign language learners. 
+He recently moved his focus from the investigation of Machine translation models for Afghan languages to Automatic Speech Recognition modeling of African Accented French and Arabic. 
+
+Gorden says it's good.
+I still need to get him a photo and a title.
+
+- GP + Yaounde models for TransApps:
+Monday morning: I had started the decoding for the tri2 models with new settings for  number of leaves and number of gaussians. 
+New Settings: 800 2000
+New WER: 43.78 down from 49.32.
+Should I try even higher settings?
+I am trying with 1024 and 4096
+The mkgraph script takes several hours to finish.
+Why?
+Our LM must be huge.
+
+- SOFTunisia: Fix decoding with tdnn lstm:
+When I try to run the decoding on the unsupervised data I get  an error that the feature dimensions for input to the neural network is expected to be 40 but my input has dimension 16.
+It looks like I can decode the training data.
+So there must be a problem with the way I am processing the unsupervised test set data.
+The problem could be with the i-vector extraction on the unsupervised data.
+
+** Goals for Tuesday:
+- TODO Skillport lesson 3.
+- TODO Mandatory TARP training. 
+- TODO SOFTunisia: Fix tdnn lstm decoding on unsupervised data.
+- TODO SOFTunisia: investigate incorporation of new words into pronouncing dictionary.
+- TODO TransApps: Connect to account on their linux box and transfer models (monophones?)
+- TODO GP + Yaounde: Build CD GMM HMM.
+- TODO SOFTunisia: Incorporate Westpoint data into SOFTunisia training or testing.
+- TODO ARL Colloquium: Get Title and photo to Gorden Videen
+
 * DAR <2017-05-19 Fri>
 **  Goals for Friday set Thursday:
 - TODO Skillport lesson 3.
@@ -58,6 +144,7 @@ Decoding still fails.
 - TODO Zac: incorporate Zac's latest corrections into stage 3 of training and decoding. 
 - TODO TransApps: transfer some models to them via sftp or scp.
 - TODO SOFTunisia: Incorporate Westpoint data into SOFTunisia training.
+- TODO ARL Colloquium preparation (abstract and bio)
 
 * DAR <2017-05-18 Thu>
 ** Goals for Wednesday set Tuesday:
