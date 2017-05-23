@@ -1,3 +1,51 @@
+* DAR <2017-05-23 Tue>
+** Goals for Tuesday set Monday:
+- TODO Skillport lesson 3.
+- DONE Mandatory TARP training. 
+Hazrat took me to the auditorium for TARP.
+- TODO SOFTunisia: Fix tdnn lstm decoding on unsupervised data.
+Here is the result after decoding the training set:
+%WER 92.89 [ 77329 / 83244, 1533 ins, 28529 del, 47267 sub ] exp/nnet3/tdnn_lstm_sp/decode_train/wer_8_0.0
+Why is this so bad?
+
+- TODO SOFTunisia: investigate incorporation of new words into pronouncing dictionary.
+- TODO TransApps: Connect to account on their linux box and transfer models (monophones?)
+It looks like tthe authorization to open the port was granted.
+
+- TODO GP + Yaounde: Build CD GMM HMM.
+The tri2 decoding with the 1024 4096 leaves and gaussians parameters set was running when I left yesterday.
+Here are the WER scores:
+%WER 40.77 [ 13410 / 32888, 1290 ins, 2001 del, 10119 sub ] exp/tri2/decode_test/wer_15_0.5
+This is down from 43.78.
+I am running again with 2048 and 8192 parameter settings.
+Results are still slightly better.
+%WER 39.66 [ 13045 / 32888, 1009 ins, 2290 del, 9746 sub ] exp/tri2/decode_test/wer_16_1.0
+
+- TODO SOFTunisia: Incorporate Westpoint data into SOFTunisia training or testing.
+I do not have data back from Zac yet, so I'm going to work on the westpoint data separately.
+I'm creating a bare shared repo on the GPU machine for the westpoint system.
+1. convert the raw waveform data to .wav formt.
+This also puts the .wav files in a local directory.
+2. Get the list of .txt files. It looks like most of the .txt files are actually in arabtex.
+3. Convert the arabtex to utf8.
+4. Prepare acoustic modleing lists.
+5. Prepare dictionary: I'm using the same dictionary as for the SOFTunisia build.
+6. Make data/lang directory.
+7. LM: same as SOFTunisia except westpoint prompts instead of SOFTunisia Recordings.
+8. Extract plp pitch features.
+9. Monophone training.
+
+- TODO ARL Colloquium: Get Title and photo to Gorden Videen
+
+
+** Goals for Wednesday:
+- TODO Skillport lesson 3.
+- TODO SOFTunisia: Try chain models instead of nnet3 tdnn lstm.
+- TODO Westpoint: build cd gmm hmm on only westpoing data.
+- TODO SOFTunisia: Cycle 4 of Answers transcriptions with Zac. (Zac is sic, so this is not a priority).
+- TODO GP + Yaounde: Tune tri2 leaves and gaussians parameters.
+- TODO TransApps: Can I logon?
+
 * DAR <2017-05-22 Mon>
 **  Goals for Monday set Friday:
 - TODO Skillport lesson 3.
