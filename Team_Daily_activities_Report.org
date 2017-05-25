@@ -1,3 +1,67 @@
+* DAR <2017-05-25 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Skillport lesson 3.
+- TODO SOFTunisia: Try chain models instead of nnet3 tdnn lstm.
+I copied the chain model script from wsj and with a couple of fixes it is still running on the GPU machine.
+
+- SOFTunisia: Zac got me stage 4 transcriptions.
+I am going through cycle 5.
+I decoded the eval and dev sets with the stage 4 models:
+Eval: 
+%WER 11.95 [ 1195 / 9999, 114 ins, 145 del, 936 sub ] exp/tri5_human_corrected_4_ali/decode_eval/wer_17_0.0
+Dev:
+%WER 12.23 [ 1292 / 10567, 120 ins, 140 del, 1032 sub ] exp/tri5_human_corrected_4_ali/decode_dev/wer_17_0.5
+
+
+- TODO Westpoint: figure out what is wrong.
+I am working on the westpoint santiago dictionary.
+Phone map:
+1. Remove g.
+There was only 1 instance of this phone.
+اَلشَّگَرَة	ah sh   ah g ah r  ah
+I removed this entry.
+2. G to g
+This corresponds to the "gain" arabic character (maybe a uvular fricative? like the French r).
+The qcri dictionary uses a g for this phone as far as I can tell.
+3. Q -> G
+I think this is the glottal stop.
+4. ae -> a
+Not sure.
+5. C -> E
+This is the ayn (Pharyngeal stop? or something like that).
+6. iy -> i
+7. ih -> i
+8. ah -> a
+9. TH -> V
+10. th -> v
+11. sh -> $
+12. aw -> a w
+13. ey -> a y (I do not think this is correct).
+14. ay -> a y (not correct?)
+
+- TODO Westpoint: split labeled data into folds.
+
+- TODO ARL Colloquium: Get Title and photo to Gorden Videen
+- TODO ARL Colloquium: Start preparing slides.
+- TODO TransApps: Can I logon?
+- TODO GP + Yaounde: move on to build the rest of the CD GMM HMM system.
+I ran the tri2 build again with 3000 10000 leaves gaussians parameter settings.
+%WER 39.97 [ 13145 / 32888, 1130 ins, 2238 del, 9777 sub ] exp/tri2/decode_test/wer_16_1.0
+I looked at the settings in the babel config files.
+It looks like the gaussians should be set higher, so I'm trying again with:
+2048 16384
+%WER 37.81 [ 12434 / 32888, 1039 ins, 2077 del, 9318 sub ] exp/tri2/decode_test/wer_14_1.0
+
+** Goals for Friday:
+- TODO Skillport lesson 3.
+- TODO SOFTunisia: Get stage 5 transcripts to Zac.
+- TODO SOFTunisia: Cain models?
+- TODO Westpoint: decode on training data.
+- TODO Westpoint: make dev eval and train folds.
+- TODO ARL Colloquium: Get Title and photo to Gorden Videen
+- TODO ARL Colloquium: Start preparing slides.
+- TODO TransApps: Connect to there server? 
+
 * DAR <2017-05-24 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Skillport lesson 3.
