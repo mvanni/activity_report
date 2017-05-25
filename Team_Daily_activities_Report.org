@@ -12,6 +12,7 @@ Eval:
 Dev:
 %WER 12.23 [ 1292 / 10567, 120 ins, 140 del, 1032 sub ] exp/tri5_human_corrected_4_ali/decode_dev/wer_17_0.5
 
+As I am getting ready to leave, the decoding for the unsupervised data is running.
 
 - TODO Westpoint: figure out what is wrong.
 I am working on the westpoint santiago dictionary.
