@@ -1,3 +1,58 @@
+* My WAR <2017-05-26 Fri>
+**  Goals set Last Week:
+- TODO Skillport lesson 3.
+- DONE Mandatory TARP training.
+I also attended the Asian Pacific Islander Heritage Month Event.
+- TODO Transfer GP + Yaounde models to TransApps for testing.
+The port TransApps gave us is blocked.
+Justin submitted the forms to have the port unblocked.
+2 people signed off on the request.
+We're waiting on 1 more signature.
+
+- TODO SOFTunisia: Incorporate  Westpoint data into training or testing.
+I spent a lot of time on this goal this week.
+I decided to make a separate repo for the development of a system on the westpoint corpus.
+I am able to train on the native speaker data.
+There was obviously a problem with my setup since the WER was 100%.
+I'm not sure yet what the problem is, but I'm pretty sure it's the mismatch between the westpoint transcripts and the qcri dictionary.
+The words in the qcri dictionary are not vowelized.
+The words in the westpoint transcripts are all voweled.
+I configured the Encode::Arabic::ArabTeX module to write the transcripts in nonvocalized mode.
+The WER went down to 47.13, wich is much better than 100%, but still bad for  the training data.
+
+I am also preparing the non-native data from the westpoint corpus.
+
+- DONE SOFTunisia: Cycle through training  Decoding and Human Corrections (Zac) with SAT on tri5 models.
+We're on stage 5.
+- TODO SOFTunisia: get nnet3 rnn decoding to work.
+I've decided to take a step back and try chain models instead.
+To do this however, I need to extract i-vectors using nnet3.
+The i-vector step is common to both the nnet3 tdnn_lstm and chain model builds.
+
+- DONE Colloquium preparation (abstract and bio)
+
+
+** WAR:
+John Morgan worked on incorporating another corpus of Arabic speech into the data he is using to build an ASR system for African accented Arabic. 
+The new corpus was collected around 15 years ago by a team at USMA  and will be refered to as the Westpoint corpus.
+One difficulty he had to overcome in preparing the data for use by the Kaldi ASR toolkit is converting the text encoding of the transcripts of the new speech. 
+The transcriptions  were given in a loer ascii encoding called ArabTeX. 
+All the transcripts included vowels. 
+The large pronouncing dictionary being used for this project however is completely unvowelized. 
+Fortunately, there is a perl module called Encode::Arabic::ArabTeX that allowed Morgan to write the transcripts in the UTF-8 text encoding without vowel decorations. 
+Once this hurdle was passed, Morgan continued building the ASR system with the Westpoint data. 
+
+** Goals for Next Week:
+- TODO Orientation and Mobility at train station (Tuesday)
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get photo and title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Incorporate the Westpoint data into the SOFTunisia training or testing.
+- TODO SOFTunisia: chain, tdnn_lstm and sgmm builds.
+
 * My WAR <2017-05-19 Fri>
 ** Goals setLast Week:
 - TODO Skillport lesson 3.
@@ -37,8 +92,6 @@ The correction was used to retrain the ASR system.
 The new system was used to get to the human expert a second rough draft transcription of speech from a second speaker for correction. 
 The corrections were then used to train a third ASR system.
 
- 
-
 ** Goals for Next Week:
 - TODO Skillport lesson 3.
 - TODO Mandatory TARP training. 
@@ -47,6 +100,7 @@ The corrections were then used to train a third ASR system.
 - TODO SOFTunisia: Cycle through training  Decoding and Human Corrections (Zac) with SAT on tri5 models.
 - TODO SOFTunisia: get nnet3 rnn decoding to work.
 - TODO Colloquium preparation (abstract and bio)
+
 * My WAR <2017-05-12 Fri>
 ** Goals set last Week:
 - TODO Skillport lesson 3.
