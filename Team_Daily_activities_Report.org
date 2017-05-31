@@ -1,3 +1,85 @@
+* DAR <2017-05-31 Wed>
+**  Goals for Tuesday set Friday:
+- DONE Orientation and Mobility at Silver Spring Train Station.
+
+
+** Goals for Wednesday set Friday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get photo and title to Gorden Videen.
+Got photo to Gorden.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate folds and build cd gmm hmm system just on the Westpoint corpus.
+I separated the folds.
+I've decided to do this in a better way.
+Our nonnative Arabic is a valuable resource.
+I am separating the folds by native and nonnative in addition to by train dev and eval.
+I spent most of the day working on the preparation of the Westpoint corpus.
+I was not even close to finishing last week.
+Just separating the data into folds requires concentration.
+The problem is that there are at least 2 naming conventions in the file from the Westpoint corpus.
+For the native data the arabtex transcripts are on one line in a .txt file.
+For the nonnative data, the arabtex transcripts are written one word per line the first line is !ENTER and the last line is !EXIT.
+This means I have to process them differently.
+
+- TODO SOFTunisia: Incorporate the Westpoint data into the SOFTunisia training or testing.
+- TODO SOFTunisia: chain, tdnn_lstm and sgmm builds.
+
+- I have too many things going on at once.
+I tried to concentrate on the Westpoint corpus today.
+
+- Zac got me his corrections for stage 5 of the SOFTunisia  Answers. 
+I started working on stage 6.
+I did the retraining, got the transcripts and handed them over to Zac, all in one afternoon.
+
+** Goals for Thursday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get  title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: prepare acoustic model training lists
+
+* DAR <2017-05-26 Fri>
+** Goals for Friday set Thursday:
+- TODO Skillport lesson 3.
+- TODO SOFTunisia: Get stage 5 transcripts to Zac.
+I got the stage transcripts.
+I put them on a thumb drive.
+I put the thumb drive in an envelope and put it under Hazrat's door.
+ 
+- TODO SOFTunisia: Chain models?
+I am starting over with chain models.
+I'll have to concentrate more on this to get it to work.
+
+- TODO Westpoint: decode on training data.
+I decoded on the train set.
+The WER was 100%.
+I'm pretty sure the problem is that the reference transcripts I have are voweled and the hypotheses that are getting written by the system are not voweled.
+I can convert the arabtex to utf8 with no vowels:
+Encode::Arabic::ArabTeX->demode('novocalize');
+After fixing the transcripts I get:
+%WER 47.13 [ 27340 / 58006, 1893 ins, 2002 del, 23445 sub ] exp/mono/decode_train/wer_11_1.0
+- TODO Westpoint: make dev eval and train folds.
+I spent most of the day on this.
+I am almost done.
+
+- TODO ARL Colloquium: Get Title and photo to Gorden Videen
+- TODO ARL Colloquium: Start preparing slides.
+- TODO TransApps: Connect to there server? 
+
+** Goals for Tuesday:
+- TODO Orientation and Mobility at Silver Spring Train Station.
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get photo and title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Incorporate the Westpoint data into the SOFTunisia training or testing.
+- TODO SOFTunisia: chain, tdnn_lstm and sgmm builds.
+
 * DAR <2017-05-25 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Skillport lesson 3.
