@@ -23,6 +23,14 @@ I have scripts that :
 The step that builds the decoding graph fst takes a long time.
 Otherwise the turn around is pretty quick.
 
+- WER for stage 6:
+eval:
+%WER 12.06 [ 1206 / 9999, 96 ins, 155 del, 955 sub ] exp/tri5_human_corrected_6_ali/decode_eval/wer_17_0.0
+dev:
+%WER 12.32 [ 1302 / 10567, 115 ins, 126 del, 1061 sub ] exp/tri5_human_corrected_6_ali/decode_dev/wer_17_0.0
+
+The WERs have gotten worse?
+
 Almost everything is automated now.
 
 ** Goals for Friday:
