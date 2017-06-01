@@ -1,3 +1,39 @@
+* DAR <2017-06-01 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get  title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+I think we've been forgotten.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: prepare acoustic model training lists
+I made some progress.
+Since I introduced the distinction between native and nonnative recordings, I had  to work through all the steps in getting the .wav files aligned with the .txt files containing the utf8 transcripts.
+I'm almost finished with this step.
+This is tricky, since different groups of speakers have transcripts in files with different extentions.
+
+- Zac: He got me the corrections for stage 6 this afternoon.
+I'm going through stage 7.
+I automated some more steps.
+I have scripts that :
+- get the new speaker names.
+- Concatenate the new speakers to the old speaker list.
+- Concatenate the new transcripts to the old transcripts.
+
+The step that builds the decoding graph fst takes a long time.
+Otherwise the turn around is pretty quick.
+
+Almost everything is automated now.
+
+** Goals for Friday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get  title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO Westpoint: Make acoustic model training lists.
+- TODO SOFTunisia: Get chain model scripts running on GPU machine.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+
 * DAR <2017-05-31 Wed>
 **  Goals for Tuesday set Friday:
 - DONE Orientation and Mobility at Silver Spring Train Station.
