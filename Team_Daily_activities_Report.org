@@ -5,6 +5,11 @@
 - TODO ARL Coloquium: Prepare.
 - TODO TransApps: Connect to their server and transfer models.
 - TODO Westpoint: Make acoustic model training lists.
+This is turning out to be much harder than I expected.
+I am trying to automate every step.
+sometimes I take steps out of order and then when I go to run everything from scratch, I realize files that are required are missing and it's all broken.
+I'll be happy once  I finish with the data preparation for this corpus.
+
 - TODO SOFTunisia: Get chain model scripts running on GPU machine.
 I am starting from the very beginning on the GPU machine.
 I think the problem is with the feature vectors.
@@ -19,6 +24,16 @@ I am putting the parameter back to 4096 from 8192 and rerunning.
 
 - TODO GP + Yaounde Fix: broken building steps at model tri2.
 
+
+** Goals for Monday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+- TODO SOFTunisia: chain model build with ivectors.
 
 * DAR <2017-06-01 Thu>
 **  Goals for Thursday set Wednesday:
