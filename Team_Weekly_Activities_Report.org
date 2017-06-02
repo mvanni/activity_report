@@ -1,3 +1,46 @@
+* My WAR <2017-06-02 Fri>
+** Goals set Last Week:
+- DONE Orientation and Mobility at train station (Tuesday)
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get photo and title to Gorden Videen.
+I got him the photo.
+
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+Apparently there are 2 levels of port blocking.
+The local ports were unblocked very quickly.
+The DOD network level ports are still blocked.
+
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate folds and build cd gmm hmm system just on the Westpoint corpus.
+I am taking advantage of the nonnative speech in the Westpoint corpus.
+I had to rewrite my data preparation scripts to take into consideration the distinction between native and nonnative speech files.
+this turned out to be harder than expected.
+The transcripts were not in a standard format for all the speaker directories.
+
+- TODO SOFTunisia: Incorporate the Westpoint data into the SOFTunisia training or testing.
+- TODO SOFTunisia: chain, tdnn_lstm and sgmm builds.
+I am working on the chain model build.
+I am starting from scratch on the GPU machine.
+I have a hunch the problems I've been having are because I was using the babel default of plp + pitch feature vectors and the chain model build scripts from kaldi only use mfcc feature vectors.
+I'm starting the build over only using mfcc features.
+
+** WAR:
+John Morgan is trying to build an ASR system for Tunisian accented Arabic with a new kind of neural network concept called Chain model. 
+This week he got stuck with a dimension mismatch between transformation matrices and feature vectors.
+He is restarting the building process this time with mfcc features instead of the plp pitch features he was using previously.
+He has a huntch that the dimension of the plp pitch feature vectors  are different from what the  transformation matrices are expected to operate on. 
+
+** Goals for Next Week:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+- TODO SOFTunisia: chain model build with ivectors.
+
 * My WAR <2017-05-26 Fri>
 **  Goals set Last Week:
 - TODO Skillport lesson 3.
