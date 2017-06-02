@@ -1,3 +1,25 @@
+* DAR <2017-06-02 Fri>
+**  Goals for Friday set Thursday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get  title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: Connect to their server and transfer models.
+- TODO Westpoint: Make acoustic model training lists.
+- TODO SOFTunisia: Get chain model scripts running on GPU machine.
+I am starting from the very beginning on the GPU machine.
+I think the problem is with the feature vectors.
+I think the chain models are set up to work with mfcc feature vectors.
+I was using plp pitch feature vectors.
+I am continuing to use plp pitch feature vectors on my laptop to do the cycle work with Zac.
+
+Zac called me yesterday evening.
+He says the transcripts are bad.
+i think it is because I pumped up the number of gaussians parameter.
+I am putting the parameter back to 4096 from 8192 and rerunning.
+
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+
+
 * DAR <2017-06-01 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Skillport lesson 3.
