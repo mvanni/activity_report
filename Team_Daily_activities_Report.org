@@ -1,3 +1,38 @@
+* DAR <2017-06-05 Mon>
+** Goals for Monday set Friday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- DONE TransApps: Connect to their server and transfer models.
+Finally, the ports are open.
+Dereck gave me a password.
+I transfered the central_accord test data to the transapps site.
+I filled up the disk partition Dereck gave me with the monophone models.
+
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+The change I tried did not work.
+I tried lowering the number of leaves and number of gaussians.
+
+- TODO SOFTunisia: chain model build with ivectors.
+I am making progress.
+I am actually at the decoding stage.
+I'm not sure if there were  errors in the training. 
+The decoding finished.
+%WER 7.53 [ 753 / 9999, 60 ins, 114 del, 579 sub ] exp/chain/tdnn1d_sp/decode_tgpr_eval/wer_8_0.0
+This has got to be to good to be true.
+
+** Goals for Tuesday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Fix stage 7.
+- TODO SOFTunisia: chain model: How real are the results I got today?
+
 * DAR <2017-06-02 Fri>
 **  Goals for Friday set Thursday:
 - TODO Skillport lesson 3.
