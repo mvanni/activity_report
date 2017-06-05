@@ -32,6 +32,7 @@ This has got to be to good to be true.
 - TODO Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
 - TODO SOFTunisia: Fix stage 7.
 - TODO SOFTunisia: chain model: How real are the results I got today?
+-TODO SOFTunisia: chain model decoding with lm rescoring.
 
 * DAR <2017-06-02 Fri>
 **  Goals for Friday set Thursday:
@@ -69,7 +70,6 @@ I am putting the parameter back to 4096 from 8192 and rerunning.
 - TODO: Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
 - TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
 - TODO SOFTunisia: chain model build with ivectors.
-
 * DAR <2017-06-01 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Skillport lesson 3.
