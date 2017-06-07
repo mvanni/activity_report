@@ -1,4 +1,61 @@
-* DAR <2017-06-05 Mon>
+* DAR <2017-06-07 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Skillport lesson 3.
+- DONE ARL Colloquium: Get title to Gorden Videen.
+Strategies For Developing Speech TO Speech Apps for Soldiers.
+- TODO ARL Coloquium: Prepare.
+I'm making slides.
+- TODO TransApps: transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: start over from the beginning.
+The CD GMM HMM tri5 models are built.
+I'm going to step through the 8 stages we ran so far with mfcc features.
+Then I'm going to move to chain models.
+- TODO SOFTunisia: chain model: How real are the results I got today?
+I have the chain model training running on my laptop.
+I thought it only ran with a GPU.
+It will probably take forever on my laptop.
+
+-TODO SOFTunisia: chain model decoding with lm rescoring.
+
+** Goals for Thursday:
+- TODO Skillport lesson 3.
+- TODO ARL Coloquium: Prepare slides.
+- TODO GP + Yaounde : Fix broken building steps at model tri2.
+- TODO Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: step through   stages 0-7    with mfcc features.
+- TODO SOFTunisia: Do Stage 8 with chain models.
+- TODO SOFTunisia: Decode stage 8 data with chain models and get rough draft to Zac.
+-TODO SOFTunisia: chain model decoding with lm rescoring.
+
+* DAR <2017-06-06 Tue>
+** Goals for Tuesday set Monday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+I'm going to the colloquium today with Gorden.
+- TODO TransApps: transfer models.
+I transfered the exp and data directories to run the gp-yaounde mono system.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Fix stage 7.
+- TODO SOFTunisia: chain model: How real are the results I got today?
+-TODO SOFTunisia: chain model decoding with lm rescoring.
+I fixed the lm rescoring commands in the chain model scripts.
+I'm not sure if I did this correctily, just a quick fix.
+
+** Goals for Wednesday:
+- TODO Skillport lesson 3.
+- TODO ARL Colloquium: Get title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+- TODO TransApps: transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: start over from the beginning
+- TODO SOFTunisia: chain model: How real are the results I got today?
+-TODO SOFTunisia: chain model decoding with lm rescoring.
+ DAR <2017-06-05 Mon>
 ** Goals for Monday set Friday:
 - TODO Skillport lesson 3.
 - TODO ARL Colloquium: Get title to Gorden Videen.
