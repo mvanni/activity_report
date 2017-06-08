@@ -1,3 +1,30 @@
+* DAR <2017-06-08 Thu>
+** Goals for Thursday:
+- TODO Skillport lesson 3.
+- TODO ARL Coloquium: Prepare slides.
+- TODO GP + Yaounde : Fix broken building steps at model tri2.
+- TODO Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+I made a little progress on this.
+I think I wrote all the wav.scp utt2spk spk2utt and text acoustic mdoel training lists for  the native nonnative dev eval and train folds.
+- TODO SOFTunisia: step through   stages 0-7    with mfcc features.
+I'm getting stuck for some reason on step 3.
+
+- TODO SOFTunisia: Do Stage 8 with chain models.
+As I'm getting ready to leave, I have the chain model trainin on the GPU and I'm hoping it will decode the unsupervised data. 
+- TODO SOFTunisia: Decode stage 8 data with chain models and get rough draft to Zac.
+-TODO SOFTunisia: chain model decoding with lm rescoring.
+
+** Goals for Friday:
+- TODO Get credit for Transgender mandatory training.
+- TODO Skillport lesson 3.
+- TODO ARL Coloquium: Prepare slides.
+- TODO GP + Yaounde : Fix broken building steps at model tri2.
+- TODO Westpoint: Start CD GMM HMM raining
+- TODO SOFTunisia: step Fix step 3 
+- TODO SOFTunisia: Do Stage 8 with chain models.
+- TODO SOFTunisia: Decode stage 8 data with chain models and get rough draft to Zac.
+-TODO SOFTunisia: chain model decoding with lm rescoring.
+
 * DAR <2017-06-07 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Skillport lesson 3.
