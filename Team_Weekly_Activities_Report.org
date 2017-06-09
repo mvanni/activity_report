@@ -1,3 +1,43 @@
+* My WAR <2017-06-09 Fri>
+**  Goals for setLast Week:
+- TODO Skillport lesson 3.
+- Done ARL Colloquium: Get title to Gorden Videen.
+- TODO ARL Coloquium: Prepare.
+I have slides, but they need work.
+- DONE TransApps: Connect to their server and transfer models.
+Only monophones so far.
+I transfered some test data.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- DONE: Westpoint: separate into native, nonnative, dev, eval and train  folds .
+I'm not sure if I've done this correctly. 
+- TODO Westpoint:   build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+I only got through 1 cycle.
+We're at stage 8.
+
+- DONE SOFTunisia: chain model build with ivectors.
+I'm very excited about this.
+The WERs are in the 7s.
+This seems almost too good to be true, but I've run it several times and I get the same results.
+
+** WAR:
+This week John Morgan succeeded in implementing an ASR system for Tunisian Accented Arabic with the new Chain model approach. 
+A Chain model is a neural network built on top of a CD GMM HMM system. 
+The Word Error Rate (WER) on a test set from the same Tunisian Arabic Corpus was 7.63%, which  is very good considering the small amount of data used to train the models.
+The Chain model system was also relatively easy to build. 
+Unlike other neural network approaches Morgan has worked with, this system was built on a laptop without a GPU and training time was relatively short. 
+
+** Goals for Next Week:
+- TODO Skillport lesson 3.
+- TODO ARL Coloquium: Prepare.
+- TODO ARL Coloquium: Put slides on S drive (Monday).
+- TODO ArL Colloquium Presentation (Tuesday 3 p.m.)
+- TODO TransApps: Transfer more models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint:   build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+- TODO Transgender Mandatory Training.
+
 * My WAR <2017-06-02 Fri>
 ** Goals set Last Week:
 - DONE Orientation and Mobility at train station (Tuesday)
