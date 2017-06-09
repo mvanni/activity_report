@@ -37,6 +37,7 @@ Unlike other neural network approaches Morgan has worked with, this system was b
 - TODO Westpoint:   build cd gmm hmm system just on the Westpoint corpus.
 - TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
 - TODO Transgender Mandatory Training.
+- TODO Get JAWS installed.
 
 * My WAR <2017-06-02 Fri>
 ** Goals set Last Week:
