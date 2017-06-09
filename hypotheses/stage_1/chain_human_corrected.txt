@@ -1,0 +1,100 @@
+CTELLFIVE_002_Answers_Arabic_26 ref   من  عَفَّ   عن  ظلم  العباد  تورعا  جاءته  ألطاف  الإله  تبرعا
+CTELLFIVE_002_Answers_Arabic_26 hyp  ***   ***   ***  ***    ***    نعم    انا   أفهمك  عندما  تتحدث
+CTELLFIVE_002_Answers_Arabic_26 op    D     D     D    D      D      S      S      S      S      S  
+CTELLFIVE_002_Answers_Arabic_26 #csid 0 5 0 5
+CTELLFIVE_002_Answers_Arabic_27 ref  ***  هذه   بتلك  والبادئ   أظلم 
+CTELLFIVE_002_Answers_Arabic_27 hyp  نعم  انا  محتاج  الرعاية  الصحية
+CTELLFIVE_002_Answers_Arabic_27 op    I    S     S       S        S  
+CTELLFIVE_002_Answers_Arabic_27 #csid 0 4 1 0
+CTELLFIVE_002_Answers_Arabic_28 ref   هي  النفس   ما  حَمَّلْتَها  تتحمل   وللدهر  أيام  تجور  وتَعْدِلُ
+CTELLFIVE_002_Answers_Arabic_28 hyp  ***   ***   نعم      انا       اشعر  بالحاجة   إلى  دورة    المياه 
+CTELLFIVE_002_Answers_Arabic_28 op    D     D     S        S         S       S       S     S       S    
+CTELLFIVE_002_Answers_Arabic_28 #csid 0 7 0 2
+CTELLFIVE_002_Answers_Arabic_29 ref   من  يغرق  يتعلق  بعود     قش  
+CTELLFIVE_002_Answers_Arabic_29 hyp  ***   ***    لا   أشعر  بالراحة
+CTELLFIVE_002_Answers_Arabic_29 op    D     D     S      S      S   
+CTELLFIVE_002_Answers_Arabic_29 #csid 0 3 0 2
+CTELLFIVE_002_Answers_Arabic_30 ref  أعزب  دهر  ولا  أرمل   شهر
+CTELLFIVE_002_Answers_Arabic_30 hyp   ***  ***  نعم   لدي  موعد
+CTELLFIVE_002_Answers_Arabic_30 op     D    D    S     S     S 
+CTELLFIVE_002_Answers_Arabic_30 #csid 0 3 0 2
+CTELLFIVE_002_Answers_Arabic_31 ref  ***  اعطني   عمرا   وارميني  بالبحر
+CTELLFIVE_002_Answers_Arabic_31 hyp  معي   على   الساعة  الخامسة   مساء 
+CTELLFIVE_002_Answers_Arabic_31 op    I     S       S       S        S  
+CTELLFIVE_002_Answers_Arabic_31 #csid 0 4 1 0
+CTELLFIVE_002_Answers_Arabic_32 ref  ألا   كل   ما   هو   آت  قريب  وللأرض   من  كل   حي  نصيب
+CTELLFIVE_002_Answers_Arabic_32 hyp  ***  ***  ***  ***  ***   ***    ***   نعم  كل  ***   يوم
+CTELLFIVE_002_Answers_Arabic_32 op    D    D    D    D    D     D      D     S    C   D     S 
+CTELLFIVE_002_Answers_Arabic_32 #csid 1 2 0 8
+CTELLFIVE_002_Answers_Arabic_33 ref  الحصاة   من   الجبل 
+CTELLFIVE_002_Answers_Arabic_33 hyp    نعم   كنت  البارحة
+CTELLFIVE_002_Answers_Arabic_33 op      S     S      S   
+CTELLFIVE_002_Answers_Arabic_33 #csid 0 3 0 0
+CTELLFIVE_002_Answers_Arabic_34 ref  ***  ***  الصباح    رباح 
+CTELLFIVE_002_Answers_Arabic_34 hyp  بقي  خمس   دقائق  بانتظار
+CTELLFIVE_002_Answers_Arabic_34 op    I    I      S       S   
+CTELLFIVE_002_Answers_Arabic_34 #csid 0 2 2 0
+CTELLFIVE_002_Answers_Arabic_35 ref  ***  العمر   واحد   والرب    واحد  
+CTELLFIVE_002_Answers_Arabic_35 hyp  نعم   أنا   مستعد  لإجراء  المقابلة
+CTELLFIVE_002_Answers_Arabic_35 op    I     S      S       S        S   
+CTELLFIVE_002_Answers_Arabic_35 #csid 0 4 1 0
+CTELLFIVE_002_Answers_Arabic_36 ref  المأمول     خير      من     المأكول
+CTELLFIVE_002_Answers_Arabic_36 hyp    نعم    المخدرات  وأسلحة  بالسيارة
+CTELLFIVE_002_Answers_Arabic_36 op      S         S        S        S   
+CTELLFIVE_002_Answers_Arabic_36 #csid 0 4 0 0
+CTELLFIVE_002_Answers_Arabic_37 ref  ***   ***   ***    أول   الشجرة   بذرة
+CTELLFIVE_002_Answers_Arabic_37 hyp  نعم  اعرف  جيدة  المقال   مكان   أقصده
+CTELLFIVE_002_Answers_Arabic_37 op    I     I     I      S       S      S  
+CTELLFIVE_002_Answers_Arabic_37 #csid 0 3 3 0
+CTELLFIVE_002_Answers_Arabic_38 ref   رب  بعيد  أنفع   من   قريب
+CTELLFIVE_002_Answers_Arabic_38 hyp  ***   ***   انه  قليل  الآن
+CTELLFIVE_002_Answers_Arabic_38 op    D     D     S     S     S 
+CTELLFIVE_002_Answers_Arabic_38 #csid 0 3 0 2
+CTELLFIVE_002_Answers_Arabic_39 ref  فيا  ليت  الشباب  يعود  يوما  فأخبره  بما   فعل   المشيب
+CTELLFIVE_002_Answers_Arabic_39 hyp  ***  ***    ***    ***   ***    ***   إنه  متوجه   مصيري
+CTELLFIVE_002_Answers_Arabic_39 op    D    D      D      D     D      D     S     S       S  
+CTELLFIVE_002_Answers_Arabic_39 #csid 0 3 0 6
+CTELLFIVE_002_Answers_Arabic_40 ref   ***   ***    كلكم    طلب   صيد
+CTELLFIVE_002_Answers_Arabic_40 hyp  سأحب  ثلاثة  افراد  عائلتي  معي
+CTELLFIVE_002_Answers_Arabic_40 op     I     I      S       S     S 
+CTELLFIVE_002_Answers_Arabic_40 #csid 0 3 2 0
+CTELLFIVE_002_Answers_Arabic_41 ref   ما  أبعد   ما  فات   وما  أقرب    ما    يأتي
+CTELLFIVE_002_Answers_Arabic_41 hyp  ***   ***  ***  نعم  أحمد   مع   امرأه  شخصية
+CTELLFIVE_002_Answers_Arabic_41 op    D     D    D    S     S     S     S      S  
+CTELLFIVE_002_Answers_Arabic_41 #csid 0 5 0 3
+CTELLFIVE_002_Answers_Arabic_42 ref   ما   كل   ما  يتمنى  المرء  يدركه  تجرى  الرياح    بما      لا    تشتهي  السفن
+CTELLFIVE_002_Answers_Arabic_42 hyp  ***  ***  ***   ***    ***    ***    ***    نعم   الأفراد  الذين  اصطحبه   لدية
+CTELLFIVE_002_Answers_Arabic_42 op    D    D    D     D      D      D      D      S       S       S       S      S  
+CTELLFIVE_002_Answers_Arabic_42 #csid 0 5 0 7
+CTELLFIVE_002_Answers_Arabic_43 ref    كل   حبل   على  غاربه
+CTELLFIVE_002_Answers_Arabic_43 hyp  سأكون   في  موعد  غرامي
+CTELLFIVE_002_Answers_Arabic_43 op     S     S     S     S  
+CTELLFIVE_002_Answers_Arabic_43 #csid 0 4 0 0
+CTELLFIVE_002_Answers_Arabic_44 ref   ما  أشبه  الليلة  بالبارحة
+CTELLFIVE_002_Answers_Arabic_44 hyp  ***   نعم   احتاج   المرافق
+CTELLFIVE_002_Answers_Arabic_44 op    D     S      S        S   
+CTELLFIVE_002_Answers_Arabic_44 #csid 0 3 0 1
+CTELLFIVE_002_Answers_Arabic_45 ref  أثقل   من    جبل 
+CTELLFIVE_002_Answers_Arabic_45 hyp   نعم  إحمل  سلاحا
+CTELLFIVE_002_Answers_Arabic_45 op     S     S     S  
+CTELLFIVE_002_Answers_Arabic_45 #csid 0 3 0 0
+CTELLFIVE_002_Answers_Arabic_46 ref  ***   أحذر    من     غراب  
+CTELLFIVE_002_Answers_Arabic_46 hyp  نعم  أوراق  رسمية  السيارات
+CTELLFIVE_002_Answers_Arabic_46 op    I     S      S        S   
+CTELLFIVE_002_Answers_Arabic_46 #csid 0 3 1 0
+CTELLFIVE_002_Answers_Arabic_47 ref  أحرس   من    كلب
+CTELLFIVE_002_Answers_Arabic_47 hyp   ***  تبعد  خمسة
+CTELLFIVE_002_Answers_Arabic_47 op     D     S     S 
+CTELLFIVE_002_Answers_Arabic_47 #csid 0 2 0 1
+CTELLFIVE_002_Answers_Arabic_48 ref    ***     أدنى     من      حبل   الوريد
+CTELLFIVE_002_Answers_Arabic_48 hyp  سنستغرق  ساعتين  الزمان  الوصول   هناك 
+CTELLFIVE_002_Answers_Arabic_48 op      I        S       S       S       S  
+CTELLFIVE_002_Answers_Arabic_48 #csid 0 4 1 0
+CTELLFIVE_002_Answers_Arabic_49 ref  أرخص    من   التمر   في   البصرة
+CTELLFIVE_002_Answers_Arabic_49 hyp   ***  سأقيم  ثلاثة  أيام   هنالك
+CTELLFIVE_002_Answers_Arabic_49 op     D     S      S      S      S  
+CTELLFIVE_002_Answers_Arabic_49 #csid 0 4 0 1
+CTELLFIVE_002_Answers_Arabic_50 ref  ***   ***   أسرع    من    الريح
+CTELLFIVE_002_Answers_Arabic_50 hyp  نعم  يمكن  هنالك  البقاء    به 
+CTELLFIVE_002_Answers_Arabic_50 op    I     I     S       S      S  
+CTELLFIVE_002_Answers_Arabic_50 #csid 0 3 2 0

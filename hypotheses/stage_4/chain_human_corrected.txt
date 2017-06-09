@@ -1,0 +1,400 @@
+CTELLFIVE_012_Answers_Arabic_01 ref  البعيد   عن  العين  بعيد   عن    القلب
+CTELLFIVE_012_Answers_Arabic_01 hyp    ***   ***   ***    لا   أعرف  بمفردي
+CTELLFIVE_012_Answers_Arabic_01 op      D     D     D      S     S      S  
+CTELLFIVE_012_Answers_Arabic_01 #csid 0 3 0 3
+CTELLFIVE_012_Answers_Arabic_02 ref   ***  ***  ***  ***  الحب   أعمى
+CTELLFIVE_012_Answers_Arabic_02 hyp  أعيش   مع  أمي   و    أبي  وأخوه
+CTELLFIVE_012_Answers_Arabic_02 op     I    I    I    I     S     S  
+CTELLFIVE_012_Answers_Arabic_02 #csid 0 2 4 0
+CTELLFIVE_012_Answers_Arabic_03 ref   من    أحب   ولده   رحم   الأيتام
+CTELLFIVE_012_Answers_Arabic_03 hyp  ***  يعيشون   مع   أربعة   أفراد 
+CTELLFIVE_012_Answers_Arabic_03 op    D      S      S     S       S   
+CTELLFIVE_012_Answers_Arabic_03 #csid 0 4 0 1
+CTELLFIVE_012_Answers_Arabic_04 ref   ***  القلوب    عند   بعضها
+CTELLFIVE_012_Answers_Arabic_04 hyp  عميل   واحد   وعشرون   عاما
+CTELLFIVE_012_Answers_Arabic_04 op     I      S       S      S  
+CTELLFIVE_012_Answers_Arabic_04 #csid 0 3 1 0
+CTELLFIVE_012_Answers_Arabic_05 ref   إن  العيون  التي   في  طرفها  حور  قتلننا   ثم   لم  يحيين  قتلانا  يَصرَعْنَ   ذا  اللب    حتى      لا  
+CTELLFIVE_012_Answers_Arabic_05 hyp  ***    ***    ***  ***   ***   ***    ***   ***  ***   ***     ***      سبعة    عشر   مرة  الفرصة  وثمانون
+CTELLFIVE_012_Answers_Arabic_05 op    D      D      D    D     D     D      D     D    D     D       D        S       S     S      S       S   
+CTELLFIVE_012_Answers_Arabic_05 #csid 0 5 0 11
+CTELLFIVE_012_Answers_Arabic_06 ref  حراك   به  وهن  أضعف    خلق   الله  إنسانا
+CTELLFIVE_012_Answers_Arabic_06 hyp   ***  ***  الف    و   تسعمئة    و   ثمانون
+CTELLFIVE_012_Answers_Arabic_06 op     D    D    S     S      S      S      S  
+CTELLFIVE_012_Answers_Arabic_06 #csid 0 5 0 2
+CTELLFIVE_012_Answers_Arabic_07 ref  أول  الشجرة  بذرة
+CTELLFIVE_012_Answers_Arabic_07 hyp  ***    ***    هنا
+CTELLFIVE_012_Answers_Arabic_07 op    D      D      S 
+CTELLFIVE_012_Answers_Arabic_07 #csid 0 1 0 2
+CTELLFIVE_012_Answers_Arabic_08 ref  ربك   رب  قلوب
+CTELLFIVE_012_Answers_Arabic_08 hyp  ***  ***  تحضر
+CTELLFIVE_012_Answers_Arabic_08 op    D    D     S 
+CTELLFIVE_012_Answers_Arabic_08 #csid 0 1 0 2
+CTELLFIVE_012_Answers_Arabic_09 ref  فإن  قليل  الحب  بالعقل  صالح  وإن  كثير  الحب  بالجهل  فاسد
+CTELLFIVE_012_Answers_Arabic_09 hyp  ***   ***   ***    ***    ***  ***   ***   ***  جنسيته  تنسى
+CTELLFIVE_012_Answers_Arabic_09 op    D     D     D      D      D    D     D     D      S      S 
+CTELLFIVE_012_Answers_Arabic_09 #csid 0 2 0 8
+CTELLFIVE_012_Answers_Arabic_10 ref   لا  تخف   ما  صنعت   بك  الأشواق  واشرح  هواك  فكلنا    عشاق 
+CTELLFIVE_012_Answers_Arabic_10 hyp  ***  ***  ***   ***  ***    ***     ***    ***   بين   الإسلام
+CTELLFIVE_012_Answers_Arabic_10 op    D    D    D     D    D      D       D      D     S       S   
+CTELLFIVE_012_Answers_Arabic_10 #csid 0 2 0 8
+CTELLFIVE_012_Answers_Arabic_11 ref  مرآة     الحب    عمياء
+CTELLFIVE_012_Answers_Arabic_11 hyp  حالة  إستمرارية  متوسط
+CTELLFIVE_012_Answers_Arabic_11 op     S       S        S  
+CTELLFIVE_012_Answers_Arabic_11 #csid 0 3 0 0
+CTELLFIVE_012_Answers_Arabic_12 ref  من  القلب  للقلب  رسول
+CTELLFIVE_012_Answers_Arabic_12 hyp  لا   ليس    لدى    ابن
+CTELLFIVE_012_Answers_Arabic_12 op    S    S      S      S 
+CTELLFIVE_012_Answers_Arabic_12 #csid 0 4 0 0
+CTELLFIVE_012_Answers_Arabic_13 ref  إذا  أتاك  أحد  الخصمين  وقد  فُقِئَتْ  عينه  فلا  تقض   له  حتى  يأتيك  خصمه  فلعله  قد  فُقِئَتْ  عيناه
+CTELLFIVE_012_Answers_Arabic_13 hyp  ***   ***  ***    ***    ***     ***     ***  ***  ***  ***  ***   ***    إنه   عدد   من    أبناء   وخمسة
+CTELLFIVE_012_Answers_Arabic_13 op    D     D    D      D      D       D       D    D    D    D    D     D      S     S     S      S       S  
+CTELLFIVE_012_Answers_Arabic_13 #csid 0 5 0 12
+CTELLFIVE_012_Answers_Arabic_14 ref  إذا    تولى   عقداً   أحكمه 
+CTELLFIVE_012_Answers_Arabic_14 hyp  نعم  العائلة   تشعر  بالأمان
+CTELLFIVE_012_Answers_Arabic_14 op    S      S       S       S   
+CTELLFIVE_012_Answers_Arabic_14 #csid 0 4 0 0
+CTELLFIVE_012_Answers_Arabic_15 ref  ***  الجزاء    من    جنس   العمل
+CTELLFIVE_012_Answers_Arabic_15 hyp  نعم    ان    يتحدث  لغات  متعددة
+CTELLFIVE_012_Answers_Arabic_15 op    I      S      S      S      S  
+CTELLFIVE_012_Answers_Arabic_15 #csid 0 4 1 0
+CTELLFIVE_012_Answers_Arabic_16 ref    ***    ***    ***    الحق    دولة    والباطل      جولة  
+CTELLFIVE_012_Answers_Arabic_16 hyp  اللحظة  التي  أحضرتها   لي   العربية  الفرنسيون  والإنجليز
+CTELLFIVE_012_Answers_Arabic_16 op      I      I      I       S      S         S          S    
+CTELLFIVE_012_Answers_Arabic_16 #csid 0 4 3 0
+CTELLFIVE_012_Answers_Arabic_17 ref  الرجوع  إلى  الحق    خير      من    التمادي    في   الباطل
+CTELLFIVE_012_Answers_Arabic_17 hyp    ***   ***   من   الدرجة  الثانية    التي   أتحدث   متوسط
+CTELLFIVE_012_Answers_Arabic_17 op      D     D     S      S       S        S       S       S  
+CTELLFIVE_012_Answers_Arabic_17 #csid 0 6 0 2
+CTELLFIVE_012_Answers_Arabic_18 ref  العاقل   لا  يبطل  حقا   ولا     يحق     باطلا 
+CTELLFIVE_012_Answers_Arabic_18 hyp    ***   ***   نعم   إن  أنهيت  دراستي  الثانوية
+CTELLFIVE_012_Answers_Arabic_18 op      D     D     S    S     S       S        S   
+CTELLFIVE_012_Answers_Arabic_18 #csid 0 5 0 2
+CTELLFIVE_012_Answers_Arabic_19 ref  ***   ***   ***  العدل  أساس  الْمُلْك
+CTELLFIVE_012_Answers_Arabic_19 hyp  لقد  درست  أربع  سنوات   في    الجامعة
+CTELLFIVE_012_Answers_Arabic_19 op    I     I     I     S      S       S   
+CTELLFIVE_012_Answers_Arabic_19 #csid 0 3 3 0
+CTELLFIVE_012_Answers_Arabic_20 ref  ***  العين  بالعين  والسن    بالسن  
+CTELLFIVE_012_Answers_Arabic_20 hyp  لقد   حصلت    على   شهادة  الدكتوراه
+CTELLFIVE_012_Answers_Arabic_20 op    I     S       S      S        S    
+CTELLFIVE_012_Answers_Arabic_20 #csid 0 4 1 0
+CTELLFIVE_012_Answers_Arabic_21 ref   ***  ***   صاحب  الحق  عينه   قوية
+CTELLFIVE_012_Answers_Arabic_21 hyp  إنني   لا  أنتمي   إلى   حزب  سياسي
+CTELLFIVE_012_Answers_Arabic_21 op     I    I     S      S     S     S  
+CTELLFIVE_012_Answers_Arabic_21 #csid 0 4 2 0
+CTELLFIVE_012_Answers_Arabic_22 ref  على  الباغي  تدور  الدوائر
+CTELLFIVE_012_Answers_Arabic_22 hyp  ***    لا    أميل   المدني
+CTELLFIVE_012_Answers_Arabic_22 op    D      S      S      S   
+CTELLFIVE_012_Answers_Arabic_22 #csid 0 3 0 1
+CTELLFIVE_012_Answers_Arabic_23 ref  قُضِيَ  الأَمرُ  الَّذِي  فِيهِ  تَستَفِتيَانِ
+CTELLFIVE_012_Answers_Arabic_23 hyp    ***     ***       لم    أشتغل       معهم    
+CTELLFIVE_012_Answers_Arabic_23 op      D       D        S       S          S      
+CTELLFIVE_012_Answers_Arabic_23 #csid 0 3 0 2
+CTELLFIVE_012_Answers_Arabic_24 ref  ***   كما  تدين   تدان
+CTELLFIVE_012_Answers_Arabic_24 hyp  لقد  قضيت  أربع  سنوات
+CTELLFIVE_012_Answers_Arabic_24 op    I     S     S     S  
+CTELLFIVE_012_Answers_Arabic_24 #csid 0 3 1 0
+CTELLFIVE_012_Answers_Arabic_25 ref   لا  يَفُلُّ  الحديد    إلا   الحديد
+CTELLFIVE_012_Answers_Arabic_25 hyp  نعم    انا     اشعر   بالسوء   العطش
+CTELLFIVE_012_Answers_Arabic_25 op    S      S        S       S       S  
+CTELLFIVE_012_Answers_Arabic_25 #csid 0 5 0 0
+CTELLFIVE_013_Answers_Arabic_26 ref   من  عَفَّ   عن  ظلم  العباد  تورعا   جاءته  ألطاف  الإله  تبرعا
+CTELLFIVE_013_Answers_Arabic_26 hyp  ***   ***   ***  ***    ***    ***   تفهمني  عندما  أتحدث   إليك
+CTELLFIVE_013_Answers_Arabic_26 op    D     D     D    D      D      D       S      S      S      S  
+CTELLFIVE_013_Answers_Arabic_26 #csid 0 4 0 6
+CTELLFIVE_013_Answers_Arabic_27 ref  هذه  بتلك  والبادئ  أظلم
+CTELLFIVE_013_Answers_Arabic_27 hyp  ***   إنه    يعيش   حياة
+CTELLFIVE_013_Answers_Arabic_27 op    D     S      S       S 
+CTELLFIVE_013_Answers_Arabic_27 #csid 0 3 0 1
+CTELLFIVE_013_Answers_Arabic_28 ref   هي  النفس   ما  حَمَّلْتَها  تتحمل  وللدهر  أيام  تجور  وتَعْدِلُ
+CTELLFIVE_013_Answers_Arabic_28 hyp  ***   ***   ***      ***       ***     ***    ***   لا      أشعر  
+CTELLFIVE_013_Answers_Arabic_28 op    D     D     D        D         D       D      D     S       S    
+CTELLFIVE_013_Answers_Arabic_28 #csid 0 2 0 7
+CTELLFIVE_013_Answers_Arabic_29 ref   من  يغرق  يتعلق  بعود   قش 
+CTELLFIVE_013_Answers_Arabic_29 hyp  ***   ***   ***    نعم  أشعر
+CTELLFIVE_013_Answers_Arabic_29 op    D     D     D      S     S 
+CTELLFIVE_013_Answers_Arabic_29 #csid 0 2 0 3
+CTELLFIVE_013_Answers_Arabic_30 ref  أعزب  دهر  ولا  أرمل   شهر 
+CTELLFIVE_013_Answers_Arabic_30 hyp   ***  ***  ***   نعم  لديهم
+CTELLFIVE_013_Answers_Arabic_30 op     D    D    D     S     S  
+CTELLFIVE_013_Answers_Arabic_30 #csid 0 2 0 3
+CTELLFIVE_013_Answers_Arabic_31 ref  اعطني   عمرا   وارميني  بالبحر
+CTELLFIVE_013_Answers_Arabic_31 hyp   ***   الساعة  السادسة  والنصف
+CTELLFIVE_013_Answers_Arabic_31 op     D       S       S        S  
+CTELLFIVE_013_Answers_Arabic_31 #csid 0 3 0 1
+CTELLFIVE_013_Answers_Arabic_32 ref  ألا   كل   ما   هو   آت  قريب  وللأرض   من   كل   حي  نصيب
+CTELLFIVE_013_Answers_Arabic_32 hyp  ***  ***  ***  ***  ***   ***    ***   ***  ***  نعم  كذلك
+CTELLFIVE_013_Answers_Arabic_32 op    D    D    D    D    D     D      D     D    D    S     S 
+CTELLFIVE_013_Answers_Arabic_32 #csid 0 2 0 9
+CTELLFIVE_013_Answers_Arabic_33 ref  الحصاة   من    الجبل 
+CTELLFIVE_013_Answers_Arabic_33 hyp    ***   نعم  الاختبار
+CTELLFIVE_013_Answers_Arabic_33 op      D     S       S   
+CTELLFIVE_013_Answers_Arabic_33 #csid 0 2 0 1
+CTELLFIVE_013_Answers_Arabic_34 ref  الصباح   رباح
+CTELLFIVE_013_Answers_Arabic_34 hyp    خمس   دقائق
+CTELLFIVE_013_Answers_Arabic_34 op      S      S  
+CTELLFIVE_013_Answers_Arabic_34 #csid 0 2 0 0
+CTELLFIVE_013_Answers_Arabic_35 ref  ***  العمر   واحد   والرب    واحد  
+CTELLFIVE_013_Answers_Arabic_35 hyp  نعم   أنا   مستعد  لإجراء  المقابلة
+CTELLFIVE_013_Answers_Arabic_35 op    I     S      S       S        S   
+CTELLFIVE_013_Answers_Arabic_35 #csid 0 4 1 0
+CTELLFIVE_013_Answers_Arabic_36 ref   ***  المأمول     خير       من      المأكول
+CTELLFIVE_013_Answers_Arabic_36 hyp  ليست     مع    المخدرات  والأسلحة  بالسيارة
+CTELLFIVE_013_Answers_Arabic_36 op     I      S         S         S         S   
+CTELLFIVE_013_Answers_Arabic_36 #csid 0 4 1 0
+CTELLFIVE_013_Answers_Arabic_37 ref  ***   ***    أول   الشجرة   بذرة
+CTELLFIVE_013_Answers_Arabic_37 hyp  نعم  أعرف  المكان   الذي   يقصده
+CTELLFIVE_013_Answers_Arabic_37 op    I     I      S       S      S  
+CTELLFIVE_013_Answers_Arabic_37 #csid 0 3 2 0
+CTELLFIVE_013_Answers_Arabic_38 ref   رب   بعيد  أنفع    من    قريب
+CTELLFIVE_013_Answers_Arabic_38 hyp  ***  نتوجه   الى  مدينة  للبيت
+CTELLFIVE_013_Answers_Arabic_38 op    D     S      S     S      S  
+CTELLFIVE_013_Answers_Arabic_38 #csid 0 4 0 1
+CTELLFIVE_013_Answers_Arabic_39 ref  فيا  ليت  الشباب  يعود  يوما   فأخبره  بما   فعل  المشيب
+CTELLFIVE_013_Answers_Arabic_39 hyp  ***  ***    ***    ***   ***  المدينة  إلى  الآن   روما 
+CTELLFIVE_013_Answers_Arabic_39 op    D    D      D      D     D      S      S     S      S  
+CTELLFIVE_013_Answers_Arabic_39 #csid 0 4 0 5
+CTELLFIVE_013_Answers_Arabic_40 ref  كلكم   طلب    صيد
+CTELLFIVE_013_Answers_Arabic_40 hyp   ***  ثلاثة  أشهر
+CTELLFIVE_013_Answers_Arabic_40 op     D     S      S 
+CTELLFIVE_013_Answers_Arabic_40 #csid 0 2 0 1
+CTELLFIVE_013_Answers_Arabic_41 ref   ما  أبعد   ما  فات   وما  أقرب    ما    يأتي
+CTELLFIVE_013_Answers_Arabic_41 hyp  ***   ***  ***  نعم  اعمل   معه  اثبات  شخصية
+CTELLFIVE_013_Answers_Arabic_41 op    D     D    D    S     S     S     S      S  
+CTELLFIVE_013_Answers_Arabic_41 #csid 0 5 0 3
+CTELLFIVE_013_Answers_Arabic_42 ref   ما   كل   ما  يتمنى  المرء  يدركه  تجرى  الرياح  بما   لا  تشتهي  السفن
+CTELLFIVE_013_Answers_Arabic_42 hyp  ***  ***  ***   ***    ***    ***    ***    ***   ***  ***   نعم   لديهم
+CTELLFIVE_013_Answers_Arabic_42 op    D    D    D     D      D      D      D      D     D    D     S      S  
+CTELLFIVE_013_Answers_Arabic_42 #csid 0 2 0 10
+CTELLFIVE_013_Answers_Arabic_43 ref   كل  حبل  على  غاربه
+CTELLFIVE_013_Answers_Arabic_43 hyp  ***  ***  ***   نعم 
+CTELLFIVE_013_Answers_Arabic_43 op    D    D    D     S  
+CTELLFIVE_013_Answers_Arabic_43 #csid 0 1 0 3
+CTELLFIVE_013_Answers_Arabic_44 ref   ما  أشبه  الليلة  بالبارحة
+CTELLFIVE_013_Answers_Arabic_44 hyp  ***   لا    أحتاج   لمعرفة 
+CTELLFIVE_013_Answers_Arabic_44 op    D     S      S        S   
+CTELLFIVE_013_Answers_Arabic_44 #csid 0 3 0 1
+CTELLFIVE_013_Answers_Arabic_45 ref  أثقل  من   جبل
+CTELLFIVE_013_Answers_Arabic_45 hyp   ***  لا  أعلم
+CTELLFIVE_013_Answers_Arabic_45 op     D    S    S 
+CTELLFIVE_013_Answers_Arabic_45 #csid 0 2 0 1
+CTELLFIVE_013_Answers_Arabic_46 ref  ***  ***   أحذر    من     غراب 
+CTELLFIVE_013_Answers_Arabic_46 hyp  نعم  على  أوراق  تسجيل  السيارة
+CTELLFIVE_013_Answers_Arabic_46 op    I    I     S      S       S   
+CTELLFIVE_013_Answers_Arabic_46 #csid 0 3 2 0
+CTELLFIVE_013_Answers_Arabic_47 ref  أحرس   من   كلب 
+CTELLFIVE_013_Answers_Arabic_47 hyp   ***  خمس  سنوات
+CTELLFIVE_013_Answers_Arabic_47 op     D    S     S  
+CTELLFIVE_013_Answers_Arabic_47 #csid 0 2 0 1
+CTELLFIVE_013_Answers_Arabic_48 ref  أدنى   من   حبل   الوريد
+CTELLFIVE_013_Answers_Arabic_48 hyp   ***  ***  عشرون   دقيقة
+CTELLFIVE_013_Answers_Arabic_48 op     D    D     S       S  
+CTELLFIVE_013_Answers_Arabic_48 #csid 0 2 0 2
+CTELLFIVE_013_Answers_Arabic_49 ref  أرخص   من  التمر    في   البصرة
+CTELLFIVE_013_Answers_Arabic_49 hyp   ***  ***   ***   ثلاثة   أشهر 
+CTELLFIVE_013_Answers_Arabic_49 op     D    D     D      S       S  
+CTELLFIVE_013_Answers_Arabic_49 #csid 0 2 0 3
+CTELLFIVE_013_Answers_Arabic_50 ref  أسرع   من    الريح
+CTELLFIVE_013_Answers_Arabic_50 hyp   نعم  يمكن  إنقاذه
+CTELLFIVE_013_Answers_Arabic_50 op     S     S      S  
+CTELLFIVE_013_Answers_Arabic_50 #csid 0 3 0 0
+CTELLFIVE_014_Answers_Arabic_51 ref  أقرب   من  اللسان  للأسنان
+CTELLFIVE_014_Answers_Arabic_51 hyp   ***  نحن   سأقيم   بمفردي
+CTELLFIVE_014_Answers_Arabic_51 op     D    S      S       S   
+CTELLFIVE_014_Answers_Arabic_51 #csid 0 3 0 1
+CTELLFIVE_014_Answers_Arabic_52 ref  ***  البعد   جفاء 
+CTELLFIVE_014_Answers_Arabic_52 hyp  لذا  سأقوم  بمفردي
+CTELLFIVE_014_Answers_Arabic_52 op    I     S       S  
+CTELLFIVE_014_Answers_Arabic_52 #csid 0 2 1 0
+CTELLFIVE_014_Answers_Arabic_53 ref  ***  البياض  نصف  الحسن
+CTELLFIVE_014_Answers_Arabic_53 hyp   لم    أكن    مع   أحد 
+CTELLFIVE_014_Answers_Arabic_53 op    I      S     S     S  
+CTELLFIVE_014_Answers_Arabic_53 #csid 0 3 1 0
+CTELLFIVE_014_Answers_Arabic_54 ref  الماء  أهون  موجود  وأعز  مفقود
+CTELLFIVE_014_Answers_Arabic_54 hyp   ***    ***  ثلاثة  أيام   وأنا
+CTELLFIVE_014_Answers_Arabic_54 op     D      D     S      S     S  
+CTELLFIVE_014_Answers_Arabic_54 #csid 0 3 0 2
+CTELLFIVE_014_Answers_Arabic_55 ref  المتكبر  كالواقف  على  الجبل  يرى  الناس  صغاراً  ويرونه   صغيراً
+CTELLFIVE_014_Answers_Arabic_55 hyp    ***      مشيا   على   ***   ***   ***     ***     ***   الأقدام
+CTELLFIVE_014_Answers_Arabic_55 op      D        S      C     D     D     D       D       D       S   
+CTELLFIVE_014_Answers_Arabic_55 #csid 1 2 0 6
+CTELLFIVE_014_Answers_Arabic_56 ref  أتبع    من     الظل  
+CTELLFIVE_014_Answers_Arabic_56 hyp   ***  سأبقى  بالمدينة
+CTELLFIVE_014_Answers_Arabic_56 op     D     S        S   
+CTELLFIVE_014_Answers_Arabic_56 #csid 0 2 0 1
+CTELLFIVE_014_Answers_Arabic_57 ref  إنه  لأشبه   به   من  التمرة  بالتمرة
+CTELLFIVE_014_Answers_Arabic_57 hyp  ***   ***   ***  ***  باتجاه   الجنوب
+CTELLFIVE_014_Answers_Arabic_57 op    D     D     D    D      S       S   
+CTELLFIVE_014_Answers_Arabic_57 #csid 0 2 0 4
+CTELLFIVE_014_Answers_Arabic_58 ref  ***  سارت  به  الرُّكْبانُ
+CTELLFIVE_014_Answers_Arabic_58 hyp   لا  يوجد  أي      شخص    
+CTELLFIVE_014_Answers_Arabic_58 op    I     S    S       S     
+CTELLFIVE_014_Answers_Arabic_58 #csid 0 3 1 0
+CTELLFIVE_014_Answers_Arabic_59 ref  عاد  الأمر  إلى  نصابه
+CTELLFIVE_014_Answers_Arabic_59 hyp  ***   ***   جئت   هنا 
+CTELLFIVE_014_Answers_Arabic_59 op    D     D     S     S  
+CTELLFIVE_014_Answers_Arabic_59 #csid 0 2 0 2
+CTELLFIVE_014_Answers_Arabic_60 ref  فالوجه  مثل  الصبح  مبيض  والشعر  مثل  الليل  مسود
+CTELLFIVE_014_Answers_Arabic_60 hyp    ***   ***   ***    ***    ***   ***   جئت    هنا
+CTELLFIVE_014_Answers_Arabic_60 op      D     D     D      D      D     D     S      S 
+CTELLFIVE_014_Answers_Arabic_60 #csid 0 2 0 6
+CTELLFIVE_014_Answers_Arabic_61 ref  فما  تحمد  العينان   كل  بشاشة  ولا   كل  وجه  عابس   بذميم 
+CTELLFIVE_014_Answers_Arabic_61 hyp  ***   ***    ***    ***   ***   ***  ***  ***  أحمل  الجنسية
+CTELLFIVE_014_Answers_Arabic_61 op    D     D      D      D     D     D    D    D     S      S   
+CTELLFIVE_014_Answers_Arabic_61 #csid 0 2 0 8
+CTELLFIVE_014_Answers_Arabic_62 ref  لسان  المرء   من   خدم   الفؤاد
+CTELLFIVE_014_Answers_Arabic_62 hyp   ***   ***   منذ  ثلاثة   أيام 
+CTELLFIVE_014_Answers_Arabic_62 op     D     D     S     S       S  
+CTELLFIVE_014_Answers_Arabic_62 #csid 0 3 0 2
+CTELLFIVE_014_Answers_Arabic_63 ref   ما   أشبه  الليلة  بالبارحة
+CTELLFIVE_014_Answers_Arabic_63 hyp  ليست   لدي    أي      وسيلة 
+CTELLFIVE_014_Answers_Arabic_63 op     S     S      S        S   
+CTELLFIVE_014_Answers_Arabic_63 #csid 0 4 0 0
+CTELLFIVE_014_Answers_Arabic_64 ref   من  يمدح  العروس  إلا   أهلها
+CTELLFIVE_014_Answers_Arabic_64 hyp  ***   ***    ***   منذ  ساعتين
+CTELLFIVE_014_Answers_Arabic_64 op    D     D      D     S      S  
+CTELLFIVE_014_Answers_Arabic_64 #csid 0 2 0 3
+CTELLFIVE_014_Answers_Arabic_65 ref   هو  يرقم  على  الماء
+CTELLFIVE_014_Answers_Arabic_65 hyp  ***   ***  نعم   انه 
+CTELLFIVE_014_Answers_Arabic_65 op    D     D    S     S  
+CTELLFIVE_014_Answers_Arabic_65 #csid 0 2 0 2
+CTELLFIVE_014_Answers_Arabic_66 ref  يخلق  من  الشبه  أربعين
+CTELLFIVE_014_Answers_Arabic_66 hyp   لم   أر    أي     شخص 
+CTELLFIVE_014_Answers_Arabic_66 op     S    S    S       S  
+CTELLFIVE_014_Answers_Arabic_66 #csid 0 4 0 0
+CTELLFIVE_014_Answers_Arabic_67 ref  إذا   لم  ينفعك  البازي  فانتف  ريشه
+CTELLFIVE_014_Answers_Arabic_67 hyp  ***  ***   ***     لا     أعرف   بعد
+CTELLFIVE_014_Answers_Arabic_67 op    D    D     D       S      S      S 
+CTELLFIVE_014_Answers_Arabic_67 #csid 0 3 0 3
+CTELLFIVE_014_Answers_Arabic_68 ref  أظلم   من    أفعى
+CTELLFIVE_014_Answers_Arabic_68 hyp   ***  حالة  واحدة
+CTELLFIVE_014_Answers_Arabic_68 op     D     S     S  
+CTELLFIVE_014_Answers_Arabic_68 #csid 0 2 0 1
+CTELLFIVE_014_Answers_Arabic_69 ref  التسلُّطُ  على  المماليك  دناءة
+CTELLFIVE_014_Answers_Arabic_69 hyp     ***     ***    ولكنه    مصاب
+CTELLFIVE_014_Answers_Arabic_69 op       D       D       S       S  
+CTELLFIVE_014_Answers_Arabic_69 #csid 0 2 0 2
+CTELLFIVE_014_Answers_Arabic_70 ref  الظلم  أسرع  شيء  إلى  تعجيل  نقمة  وتبديل  نعمة
+CTELLFIVE_014_Answers_Arabic_70 hyp   ***    ***  ***  ***   ***    ***    ***    نعم
+CTELLFIVE_014_Answers_Arabic_70 op     D      D    D    D     D      D      D      S 
+CTELLFIVE_014_Answers_Arabic_70 #csid 0 1 0 7
+CTELLFIVE_014_Answers_Arabic_71 ref  الظلم  مرتعه  وخيم
+CTELLFIVE_014_Answers_Arabic_71 hyp   ***    نعم    لقد
+CTELLFIVE_014_Answers_Arabic_71 op     D      S      S 
+CTELLFIVE_014_Answers_Arabic_71 #csid 0 2 0 1
+CTELLFIVE_014_Answers_Arabic_72 ref  إِنَّ  الإِنسَانَ  لَيَطغَى
+CTELLFIVE_014_Answers_Arabic_72 hyp   ***       ***        نعم  
+CTELLFIVE_014_Answers_Arabic_72 op     D         D          S   
+CTELLFIVE_014_Answers_Arabic_72 #csid 0 1 0 2
+CTELLFIVE_014_Answers_Arabic_73 ref  ***  بيت   الظالم  خراب
+CTELLFIVE_014_Answers_Arabic_73 hyp   لا  لست  المسؤول   هنا
+CTELLFIVE_014_Answers_Arabic_73 op    I    S      S       S 
+CTELLFIVE_014_Answers_Arabic_73 #csid 0 3 1 0
+CTELLFIVE_014_Answers_Arabic_74 ref  ***  جزاء  مُجيرِ  أُمِّ   عامِرٍ
+CTELLFIVE_014_Answers_Arabic_74 hyp   لا  أعرف    من      هو   المسؤول
+CTELLFIVE_014_Answers_Arabic_74 op    I     S      S      S       S   
+CTELLFIVE_014_Answers_Arabic_74 #csid 0 4 1 0
+CTELLFIVE_014_Answers_Arabic_75 ref  حرامي  بلا  بَيِّنةٍ  شريف
+CTELLFIVE_014_Answers_Arabic_75 hyp   ***   منذ     نصف    ساعة
+CTELLFIVE_014_Answers_Arabic_75 op     D     S       S       S 
+CTELLFIVE_014_Answers_Arabic_75 #csid 0 3 0 1
+CTELLFIVE_015_Answers_Arabic_100 ref  إذا  رأيت  نيوب  الليث  بارزة  فلا  تظنن   أن   الليث   يبتسم
+CTELLFIVE_015_Answers_Arabic_100 hyp  ***   ***   ***   ***    ***   ***   كنا  فيها   شخص   الزناد
+CTELLFIVE_015_Answers_Arabic_100 op    D     D     D     D      D     D     S     S     S       S  
+CTELLFIVE_015_Answers_Arabic_100 #csid 0 4 0 6
+CTELLFIVE_015_Answers_Arabic_76 ref  ضربني  وبكى  وسبقني  واشتكى
+CTELLFIVE_015_Answers_Arabic_76 hyp   ***    بعد    ربع    ساعة 
+CTELLFIVE_015_Answers_Arabic_76 op     D      S      S       S  
+CTELLFIVE_015_Answers_Arabic_76 #csid 0 3 0 1
+CTELLFIVE_015_Answers_Arabic_77 ref  ظلم  الأقارب  أشد  وقعا  من  السيف
+CTELLFIVE_015_Answers_Arabic_77 hyp  ***    ***    ***   ***  لا   أعرف
+CTELLFIVE_015_Answers_Arabic_77 op    D      D      D     D    S    S  
+CTELLFIVE_015_Answers_Arabic_77 #csid 0 2 0 4
+CTELLFIVE_015_Answers_Arabic_78 ref  غيري  يأكل  الدجاج  وأنا  أقع     في     السياج
+CTELLFIVE_015_Answers_Arabic_78 hyp   ***   ***    ***    ذهب  إلى  الأطفال  الحديقة
+CTELLFIVE_015_Answers_Arabic_78 op     D     D      D      S    S      S        S   
+CTELLFIVE_015_Answers_Arabic_78 #csid 0 4 0 3
+CTELLFIVE_015_Answers_Arabic_79 ref  كلما   طار    قص     جناحه
+CTELLFIVE_015_Answers_Arabic_79 hyp   ***  كانت  الأكبر  بمفرده
+CTELLFIVE_015_Answers_Arabic_79 op     D     S      S       S  
+CTELLFIVE_015_Answers_Arabic_79 #csid 0 3 0 1
+CTELLFIVE_015_Answers_Arabic_80 ref    ***      ***   ***  كمن   يربي  الذئب
+CTELLFIVE_015_Answers_Arabic_80 hyp  بإمكاني  التعرف  على  هذا  الشخص  الأمر
+CTELLFIVE_015_Answers_Arabic_80 op      I        I     I    S     S      S  
+CTELLFIVE_015_Answers_Arabic_80 #csid 0 3 3 0
+CTELLFIVE_015_Answers_Arabic_81 ref   لا   تجن   يمينك  على  شمالك
+CTELLFIVE_015_Answers_Arabic_81 hyp  على  العكس   انه   بشر  بيضاء
+CTELLFIVE_015_Answers_Arabic_81 op    S     S      S     S     S  
+CTELLFIVE_015_Answers_Arabic_81 #csid 0 5 0 0
+CTELLFIVE_015_Answers_Arabic_82 ref   لا  تسقني  ماء  الحياة  بذلة   بل  فاسقني  بالعز  كأس  الحنظل
+CTELLFIVE_015_Answers_Arabic_82 hyp  ***   ***   ***    ***    ***  ***    ***    نعم   إنه   كذلك 
+CTELLFIVE_015_Answers_Arabic_82 op    D     D     D      D      D    D      D      S     S      S  
+CTELLFIVE_015_Answers_Arabic_82 #csid 0 3 0 7
+CTELLFIVE_015_Answers_Arabic_83 ref  لمن  تشكو  إذا   كان   خصمك  القاضي
+CTELLFIVE_015_Answers_Arabic_83 hyp  ***   نعم  هذا  الشخص   بين   البشر
+CTELLFIVE_015_Answers_Arabic_83 op    D     S    S     S      S      S  
+CTELLFIVE_015_Answers_Arabic_83 #csid 0 5 0 1
+CTELLFIVE_015_Answers_Arabic_84 ref  ***   لو  خُيِّرْتُ   لاخترت
+CTELLFIVE_015_Answers_Arabic_84 hyp  نعم  لون    بشرته    الشخصية
+CTELLFIVE_015_Answers_Arabic_84 op    I    S       S         S   
+CTELLFIVE_015_Answers_Arabic_84 #csid 0 3 1 0
+CTELLFIVE_015_Answers_Arabic_85 ref  مُتْخَمٌ  يقسو   على    جائع  
+CTELLFIVE_015_Answers_Arabic_85 hyp     ***    لونه  أبيض  بالتأكيد
+CTELLFIVE_015_Answers_Arabic_85 op       D       S     S       S   
+CTELLFIVE_015_Answers_Arabic_85 #csid 0 3 0 1
+CTELLFIVE_015_Answers_Arabic_86 ref    من   ظَلَمَ  نفسه   فهو  لغيره  أظلم
+CTELLFIVE_015_Answers_Arabic_86 hyp  للأسف   أنها   فتاة  لكنك   على   وجهي
+CTELLFIVE_015_Answers_Arabic_86 op     S       S      S     S     S      S 
+CTELLFIVE_015_Answers_Arabic_86 #csid 0 6 0 0
+CTELLFIVE_015_Answers_Arabic_87 ref  ***   ***   ***     ***    نوم   الظالم  عبادة
+CTELLFIVE_015_Answers_Arabic_87 hyp  ليس  لهذا  الشخص  الصالح  العام   جوارب  طويلة
+CTELLFIVE_015_Answers_Arabic_87 op    I     I     I       I      S       S      S  
+CTELLFIVE_015_Answers_Arabic_87 #csid 0 3 4 0
+CTELLFIVE_015_Answers_Arabic_88 ref  ***  ***  ***  هذه   بتلك  والبادئ    أظلم 
+CTELLFIVE_015_Answers_Arabic_88 hyp  بما  أنه  ليس  لها  اللون   لحيته   الجوارب
+CTELLFIVE_015_Answers_Arabic_88 op    I    I    I    S     S       S        S   
+CTELLFIVE_015_Answers_Arabic_88 #csid 0 4 3 0
+CTELLFIVE_015_Answers_Arabic_89 ref  وَظُلْمُ  ذوي  القربى  أشد  مرارة  على  النفس   من  وقع  الحسام  المهند
+CTELLFIVE_015_Answers_Arabic_89 hyp     ***    ***    ***   ***   ***   ***   ***   ***  ليس    لها    لعمله
+CTELLFIVE_015_Answers_Arabic_89 op       D      D      D     D     D     D     D     D    S      S       S  
+CTELLFIVE_015_Answers_Arabic_89 #csid 0 3 0 8
+CTELLFIVE_015_Answers_Arabic_90 ref   ما   من  ظالم  إلا  سيبلى    بظالم 
+CTELLFIVE_015_Answers_Arabic_90 hyp  ***  ***   ***  لون  عينها  الخضروات
+CTELLFIVE_015_Answers_Arabic_90 op    D    D     D    S     S        S   
+CTELLFIVE_015_Answers_Arabic_90 #csid 0 3 0 3
+CTELLFIVE_015_Answers_Arabic_91 ref  ومن  نكد  الدنيا  على  الحر   أن  يرى  عدوا   له   ما   من  صداقته   بد 
+CTELLFIVE_015_Answers_Arabic_91 hyp  ***  ***    ***   ***   ***  ***  ***   ***  ***  ***  ***    ***   شعره
+CTELLFIVE_015_Answers_Arabic_91 op    D    D      D     D     D    D    D     D    D    D    D      D      S 
+CTELLFIVE_015_Answers_Arabic_91 #csid 0 1 0 12
+CTELLFIVE_015_Answers_Arabic_92 ref  ***   ***     ***   يا  ظالم   لك   يوم
+CTELLFIVE_015_Answers_Arabic_92 hyp  هذا  الشخص  تقريبا  في   نفس  طول  قامت
+CTELLFIVE_015_Answers_Arabic_92 op    I     I       I     S    S    S     S 
+CTELLFIVE_015_Answers_Arabic_92 #csid 0 4 3 0
+CTELLFIVE_015_Answers_Arabic_93 ref  ***   ***   ***  ***   من  يخشى  البلل   لا  يصطاد  السمك
+CTELLFIVE_015_Answers_Arabic_93 hyp   هو  بنفسه  إذا  فهو  ليس  أطول   مني   ولا   أكثر   مني 
+CTELLFIVE_015_Answers_Arabic_93 op    I     I     I    I    S     S     S     S     S      S  
+CTELLFIVE_015_Answers_Arabic_93 #csid 0 6 4 0
+CTELLFIVE_015_Answers_Arabic_94 ref  معظم   النار    من   مستصغر   الشرر
+CTELLFIVE_015_Answers_Arabic_94 hyp   ***  تقريبا  مثلنا    فمن   الصدمة
+CTELLFIVE_015_Answers_Arabic_94 op     D      S      S       S       S  
+CTELLFIVE_015_Answers_Arabic_94 #csid 0 4 0 1
+CTELLFIVE_015_Answers_Arabic_95 ref  اترك   الشر  يتركك
+CTELLFIVE_015_Answers_Arabic_95 hyp  إنها  شخصية   بشدة
+CTELLFIVE_015_Answers_Arabic_95 op     S     S      S  
+CTELLFIVE_015_Answers_Arabic_95 #csid 0 3 0 0
+CTELLFIVE_015_Answers_Arabic_96 ref  احذر  الأحمق  واحذر  وُدَّهُ  إنما  الأحمق  كالثوب  الْخَلَق
+CTELLFIVE_015_Answers_Arabic_96 hyp   ***    ***    ***     ***     ***    ***    انها     امرأة 
+CTELLFIVE_015_Answers_Arabic_96 op     D      D      D       D       D      D       S        S   
+CTELLFIVE_015_Answers_Arabic_96 #csid 0 2 0 6
+CTELLFIVE_015_Answers_Arabic_97 ref  احذروا   من   لا  يرجى  خيره   ولا  يؤمن    شره 
+CTELLFIVE_015_Answers_Arabic_97 hyp    ***   ***  ***   ***   نعم  أعرف   رقم  تلفونه
+CTELLFIVE_015_Answers_Arabic_97 op      D     D    D     D     S     S     S      S  
+CTELLFIVE_015_Answers_Arabic_97 #csid 0 4 0 4
+CTELLFIVE_015_Answers_Arabic_98 ref  إذا  جاء  الحين   حارت  العين
+CTELLFIVE_015_Answers_Arabic_98 hyp  ***  ***   ***   جنسية   سيئة
+CTELLFIVE_015_Answers_Arabic_98 op    D    D     D      S      S  
+CTELLFIVE_015_Answers_Arabic_98 #csid 0 2 0 3
+CTELLFIVE_015_Answers_Arabic_99 ref  إذا  ذكرت  الذئب  فأعد   له     العصا 
+CTELLFIVE_015_Answers_Arabic_99 hyp  ***   ***   ***   لأنك  تعلم  بالتأكيد
+CTELLFIVE_015_Answers_Arabic_99 op    D     D     D      S     S       S   
+CTELLFIVE_015_Answers_Arabic_99 #csid 0 3 0 3

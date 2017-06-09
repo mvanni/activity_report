@@ -1,0 +1,596 @@
+CTELLFOUR_007_Answers_Arabic_151 ref   ***    ***    السر    أمانة 
+CTELLFOUR_007_Answers_Arabic_151 hyp  الأمر  برمته  عائلته  السرطان
+CTELLFOUR_007_Answers_Arabic_151 op     I      I       S       S   
+CTELLFOUR_007_Answers_Arabic_151 #csid 0 2 2 0
+CTELLFOUR_007_Answers_Arabic_152 ref   ***   الشريف   إذا  تَقَوَّى  تواضع  والوضيع    إذا    تَقَوَّى   تكبر
+CTELLFOUR_007_Answers_Arabic_152 hyp  المرض   الذى   تسبب    بموت     أحد    أفراد   العائلة     هو     الحلم
+CTELLFOUR_007_Answers_Arabic_152 op     I       S      S       S       S       S        S         S       S  
+CTELLFOUR_007_Answers_Arabic_152 #csid 0 8 1 0
+CTELLFOUR_007_Answers_Arabic_153 ref  ***   الصدق   دليل   التقوى
+CTELLFOUR_007_Answers_Arabic_153 hyp  لدي  حساسية  لأدوية    كان 
+CTELLFOUR_007_Answers_Arabic_153 op    I      S       S       S  
+CTELLFOUR_007_Answers_Arabic_153 #csid 0 3 1 0
+CTELLFOUR_007_Answers_Arabic_154 ref  الصدق    يحسن   بالفتى  والكذب  يحسب     من      عيوبه
+CTELLFOUR_007_Answers_Arabic_154 hyp   ***   الأشياء   التي    تسبب    لي   السياحية  أدويتك
+CTELLFOUR_007_Answers_Arabic_154 op     D       S        S       S      S       S        S  
+CTELLFOUR_007_Answers_Arabic_154 #csid 0 6 0 1
+CTELLFOUR_007_Answers_Arabic_155 ref  ***  الضحك  بلا  سبب   من   قلة   الأدب 
+CTELLFOUR_007_Answers_Arabic_155 hyp  نعم   لدي   ردة  فعل  سيئة  بعض  الأدوية
+CTELLFOUR_007_Answers_Arabic_155 op    I     S     S    S     S    S      S   
+CTELLFOUR_007_Answers_Arabic_155 #csid 0 6 1 0
+CTELLFOUR_007_Answers_Arabic_156 ref  ***  ***  العتاب   خير    من  الحقد
+CTELLFOUR_007_Answers_Arabic_156 hyp  إنه   رد    فعل   الشيء  على   علم 
+CTELLFOUR_007_Answers_Arabic_156 op    I    I      S      S     S     S  
+CTELLFOUR_007_Answers_Arabic_156 #csid 0 4 2 0
+CTELLFOUR_007_Answers_Arabic_157 ref  ***   ***   العتاب   صابون    القلب  
+CTELLFOUR_007_Answers_Arabic_157 hyp  نعم  تعطيه    تحت   الضمان  الاجتماعي
+CTELLFOUR_007_Answers_Arabic_157 op    I     I       S       S        S    
+CTELLFOUR_007_Answers_Arabic_157 #csid 0 3 2 0
+CTELLFOUR_007_Answers_Arabic_159 ref  ***   العفو  عند  المقدرة
+CTELLFOUR_007_Answers_Arabic_159 hyp   لا  أتعاطى  أية    حال  
+CTELLFOUR_007_Answers_Arabic_159 op    I      S     S      S   
+CTELLFOUR_007_Answers_Arabic_159 #csid 0 3 1 0
+CTELLFOUR_007_Answers_Arabic_160 ref  العفو   يصلح  الكريم   ويفسد   اللئيم
+CTELLFOUR_007_Answers_Arabic_160 hyp    لا   أحتاج  لإجراء  لإجراء  العملية
+CTELLFOUR_007_Answers_Arabic_160 op     S      S       S       S       S   
+CTELLFOUR_007_Answers_Arabic_160 #csid 0 5 0 0
+CTELLFOUR_007_Answers_Arabic_161 ref  الغنى   في   يد  اللئيم  قبيح   قدر   قبح   الكريم    في   الإملاق
+CTELLFOUR_007_Answers_Arabic_161 hyp   ***   ***  لقد   عانيت   من   تمزق  عضلي  الدائري  إجراء   عملية 
+CTELLFOUR_007_Answers_Arabic_161 op     D     D    S      S      S     S     S      S       S       S   
+CTELLFOUR_007_Answers_Arabic_161 #csid 0 8 0 2
+CTELLFOUR_007_Answers_Arabic_162 ref  الفضل   ما   شهدت     به    الأعداء
+CTELLFOUR_007_Answers_Arabic_162 hyp   نعم   وان  اضطررت  لدخول  المستشفى
+CTELLFOUR_007_Answers_Arabic_162 op     S     S      S      S        S   
+CTELLFOUR_007_Answers_Arabic_162 #csid 0 5 0 0
+CTELLFOUR_007_Answers_Arabic_163 ref  ***  القدوة  الحسنة  خير    من   النصيحة
+CTELLFOUR_007_Answers_Arabic_163 hyp   لن   أعاني    من    أية  مشاكل    صحية 
+CTELLFOUR_007_Answers_Arabic_163 op    I      S       S     S     S       S   
+CTELLFOUR_007_Answers_Arabic_163 #csid 0 5 1 0
+CTELLFOUR_007_Answers_Arabic_164 ref  القدوة  الحسنة  خير   من  الوصية
+CTELLFOUR_007_Answers_Arabic_164 hyp    ***     وجه    من  كان   وراء 
+CTELLFOUR_007_Answers_Arabic_164 op      D       S     S    S      S  
+CTELLFOUR_007_Answers_Arabic_164 #csid 0 4 0 1
+CTELLFOUR_007_Answers_Arabic_165 ref  القناعة     كنز    لا   يفنى 
+CTELLFOUR_007_Answers_Arabic_165 hyp   طويلة   المناسبة  من  الصدمة
+CTELLFOUR_007_Answers_Arabic_165 op      S         S      S     S  
+CTELLFOUR_007_Answers_Arabic_165 #csid 0 4 0 0
+CTELLFOUR_007_Answers_Arabic_166 ref  الكذب  داء  والصدق   دواء
+CTELLFOUR_007_Answers_Arabic_166 hyp   ***   نعم   داخل   الكرة
+CTELLFOUR_007_Answers_Arabic_166 op     D     S      S      S  
+CTELLFOUR_007_Answers_Arabic_166 #csid 0 3 0 1
+CTELLFOUR_007_Answers_Arabic_167 ref  الكريم    من   أكرم  الأحرار
+CTELLFOUR_007_Answers_Arabic_167 hyp   أدخن   مرتين   في    اليوم 
+CTELLFOUR_007_Answers_Arabic_167 op      S      S      S      S   
+CTELLFOUR_007_Answers_Arabic_167 #csid 0 4 0 0
+CTELLFOUR_007_Answers_Arabic_168 ref  الكريم  يظلم   من    فوقه   واللئيم   يظلم  من   تحته
+CTELLFOUR_007_Answers_Arabic_168 hyp    ***    ***  ***  استهلكت    علبة   واحدة  في  اليوم
+CTELLFOUR_007_Answers_Arabic_168 op      D      D    D      S        S       S     S    S  
+CTELLFOUR_007_Answers_Arabic_168 #csid 0 5 0 3
+CTELLFOUR_007_Answers_Arabic_169 ref  المؤمن  كالنحلة  تأكل  طيبا  وتضع   طيبا
+CTELLFOUR_007_Answers_Arabic_169 hyp    ***     ***    أدخن   منذ  ثلاث  سنوات
+CTELLFOUR_007_Answers_Arabic_169 op      D       D       S     S     S     S  
+CTELLFOUR_007_Answers_Arabic_169 #csid 0 4 0 2
+CTELLFOUR_007_Answers_Arabic_170 ref  ***   ***  المرء  بالأخلاق  يسمو   ذكره
+CTELLFOUR_007_Answers_Arabic_170 hyp  نعم  هناك  آخرون   يدخنون    في   عائلة
+CTELLFOUR_007_Answers_Arabic_170 op    I     I     S        S       S     S  
+CTELLFOUR_007_Answers_Arabic_170 #csid 0 4 2 0
+CTELLFOUR_007_Answers_Arabic_171 ref  ***   ***  النظافة   من   الإيمان
+CTELLFOUR_007_Answers_Arabic_171 hyp  نعم  توقف   عودتك   لمدة    سنة  
+CTELLFOUR_007_Answers_Arabic_171 op    I     I      S       S      S   
+CTELLFOUR_007_Answers_Arabic_171 #csid 0 3 2 0
+CTELLFOUR_007_Answers_Arabic_172 ref  النعمة  عروس  مهرها    الشكر  
+CTELLFOUR_007_Answers_Arabic_172 hyp    ***   لكنك   تعلم  التدريبات
+CTELLFOUR_007_Answers_Arabic_172 op      D      S     S        S    
+CTELLFOUR_007_Answers_Arabic_172 #csid 0 3 0 1
+CTELLFOUR_007_Answers_Arabic_173 ref   ***   الوعد    سحاب   والإنجاز   مطره 
+CTELLFOUR_007_Answers_Arabic_173 hyp  توقفت    عن   تشخيصات    الفئة   السيئة
+CTELLFOUR_007_Answers_Arabic_173 op     I      S       S         S        S  
+CTELLFOUR_007_Answers_Arabic_173 #csid 0 4 1 0
+CTELLFOUR_007_Answers_Arabic_174 ref  أملك  الناس  لنفسه   من   كتم    سره 
+CTELLFOUR_007_Answers_Arabic_174 hyp   ***   ***    نعم   اشرب  شرب  الخمور
+CTELLFOUR_007_Answers_Arabic_174 op     D     D      S      S    S      S  
+CTELLFOUR_007_Answers_Arabic_174 #csid 0 4 0 2
+CTELLFOUR_007_Answers_Arabic_175 ref   إن  الله   يحب  معالي  الأمور  ويبغض  سفاسفها
+CTELLFOUR_007_Answers_Arabic_175 hyp  ***   ***  لكنه   ليس     بذي   أهمية    كبرى 
+CTELLFOUR_007_Answers_Arabic_175 op    D     D     S     S       S      S       S   
+CTELLFOUR_007_Answers_Arabic_175 #csid 0 5 0 2
+CTELLFOUR_007_Answers_Arabic_176 ref   ***    إن    المقْدِرة  تُذْهِبَ  الحفيظة
+CTELLFOUR_007_Answers_Arabic_176 hyp  ليست  حساسية    وإنما       في      غرفتها
+CTELLFOUR_007_Answers_Arabic_176 op     I      S        S          S        S   
+CTELLFOUR_007_Answers_Arabic_176 #csid 0 4 1 0
+CTELLFOUR_008_Answers_Arabic_177 ref  المرء  بأصغريه   قلبه    ولسانه 
+CTELLFOUR_008_Answers_Arabic_177 hyp   ***      لا    أتعاطى  المخدرات
+CTELLFOUR_008_Answers_Arabic_177 op     D       S        S        S   
+CTELLFOUR_008_Answers_Arabic_177 #csid 0 3 0 1
+CTELLFOUR_008_Answers_Arabic_178 ref  ***  ***   إنما  سُمِّيتَ  هانئاً   لتهنأ
+CTELLFOUR_008_Answers_Arabic_178 hyp  ضعه   في  وأشعر    بأني     أريد   حقيقية
+CTELLFOUR_008_Answers_Arabic_178 op    I    I     S        S        S       S  
+CTELLFOUR_008_Answers_Arabic_178 #csid 0 4 2 0
+CTELLFOUR_008_Answers_Arabic_179 ref  ***  ***   إنه   نسيج  وحده
+CTELLFOUR_008_Answers_Arabic_179 hyp   لا   لن  تحدثي   أية  صورة
+CTELLFOUR_008_Answers_Arabic_179 op    I    I     S      S     S 
+CTELLFOUR_008_Answers_Arabic_179 #csid 0 3 2 0
+CTELLFOUR_008_Answers_Arabic_180 ref  أولى  الناس  بالعفو  أقدرهم  على  العقوبة
+CTELLFOUR_008_Answers_Arabic_180 hyp   ***    لا    أعلم     أي    شيء   فعلته 
+CTELLFOUR_008_Answers_Arabic_180 op     D     S       S       S     S      S   
+CTELLFOUR_008_Answers_Arabic_180 #csid 0 5 0 1
+CTELLFOUR_008_Answers_Arabic_181 ref  ***   ***  إياك  وما  يعتذر    منه  
+CTELLFOUR_008_Answers_Arabic_181 hyp   لا  أعلم   أي   ضعف    في   العضلات
+CTELLFOUR_008_Answers_Arabic_181 op    I     I     S    S     S       S   
+CTELLFOUR_008_Answers_Arabic_181 #csid 0 4 2 0
+CTELLFOUR_008_Answers_Arabic_182 ref  ***  بالأرض  ولدتك    أمك 
+CTELLFOUR_008_Answers_Arabic_182 hyp   لا   اعلم    اين   المتعة
+CTELLFOUR_008_Answers_Arabic_182 op    I      S      S       S  
+CTELLFOUR_008_Answers_Arabic_182 #csid 0 3 1 0
+CTELLFOUR_008_Answers_Arabic_183 ref  بِشْرُ  الكريم  في  وجهه  يلوح
+CTELLFOUR_008_Answers_Arabic_183 hyp    ***     ***   لا  أعلم   فقد
+CTELLFOUR_008_Answers_Arabic_183 op      D       D     S    S     S 
+CTELLFOUR_008_Answers_Arabic_183 #csid 0 3 0 2
+CTELLFOUR_008_Answers_Arabic_184 ref  ***  بيت  المحسن   عمار
+CTELLFOUR_008_Answers_Arabic_184 hyp  ليس  ليس    لدي   مشكلة
+CTELLFOUR_008_Answers_Arabic_184 op    I    S      S      S  
+CTELLFOUR_008_Answers_Arabic_184 #csid 0 3 1 0
+CTELLFOUR_008_Answers_Arabic_185 ref  ***   ***   تاج  المروءة  التواضع
+CTELLFOUR_008_Answers_Arabic_185 hyp   لا  أعاني   من    مرض     السكر 
+CTELLFOUR_008_Answers_Arabic_185 op    I     I     S      S        S   
+CTELLFOUR_008_Answers_Arabic_185 #csid 0 3 2 0
+CTELLFOUR_008_Answers_Arabic_186 ref  ***   ترك   الذنب   أيسر    من    الاعتذار
+CTELLFOUR_008_Answers_Arabic_186 hyp   لا  أعاني    من   مشاكل  الغداء     فقد  
+CTELLFOUR_008_Answers_Arabic_186 op    I     S      S      S       S        S   
+CTELLFOUR_008_Answers_Arabic_186 #csid 0 5 1 0
+CTELLFOUR_008_Answers_Arabic_187 ref  تمام  الصدق  الإخبار  بما  تحمله   العقول
+CTELLFOUR_008_Answers_Arabic_187 hyp   ***   ***     ***     لا  أتبول  بالفكرة
+CTELLFOUR_008_Answers_Arabic_187 op     D     D       D      S     S       S   
+CTELLFOUR_008_Answers_Arabic_187 #csid 0 3 0 3
+CTELLFOUR_008_Answers_Arabic_188 ref  تناس  مساوئ  الإخوان   يدم   لك  وُدُّهُمْ
+CTELLFOUR_008_Answers_Arabic_188 hyp   ***   ***      لا    أشعر  بأي     شكل   
+CTELLFOUR_008_Answers_Arabic_188 op     D     D       S       S    S       S    
+CTELLFOUR_008_Answers_Arabic_188 #csid 0 4 0 2
+CTELLFOUR_008_Answers_Arabic_189 ref  حُسْنُ  الخلق   خير   قرين
+CTELLFOUR_008_Answers_Arabic_189 hyp    لا     أشعر  بحرقة  مرتب
+CTELLFOUR_008_Answers_Arabic_189 op      S      S      S      S 
+CTELLFOUR_008_Answers_Arabic_189 #csid 0 4 0 0
+CTELLFOUR_008_Answers_Arabic_190 ref  حُسْنُ  الخلق  يذيب  الخطايا  كما   تذيب  الشمس  الجليد
+CTELLFOUR_008_Answers_Arabic_190 hyp    ***    ***    لم     يحدث    شئ  رأيته    من     قبل 
+CTELLFOUR_008_Answers_Arabic_190 op      D      D      S      S      S     S      S       S  
+CTELLFOUR_008_Answers_Arabic_190 #csid 0 6 0 2
+CTELLFOUR_008_Answers_Arabic_191 ref  ***   ***  ***  حُسْنُ  الخلق  يوجب   المودة
+CTELLFOUR_008_Answers_Arabic_191 hyp   لم  يحدث   ان    كنت    أعني  محشو  بالكامل
+CTELLFOUR_008_Answers_Arabic_191 op    I     I    I      S      S      S      S   
+CTELLFOUR_008_Answers_Arabic_191 #csid 0 4 3 0
+CTELLFOUR_008_Answers_Arabic_192 ref   حق   من  كتب  بمسك   أن  يختم  بعنبر
+CTELLFOUR_008_Answers_Arabic_192 hyp  ***  ***  ***   ***  ***  لأول   مرة 
+CTELLFOUR_008_Answers_Arabic_192 op    D    D    D     D    D     S     S  
+CTELLFOUR_008_Answers_Arabic_192 #csid 0 2 0 5
+CTELLFOUR_008_Answers_Arabic_193 ref  خلقت  مُبَرَّأً   من   كل  عيب  كأنك   قد  خُلقْتَ  كما   تشاء 
+CTELLFOUR_008_Answers_Arabic_193 hyp   ***     ***     ***  ***  ***   ***  ***    ليس    لدي  حساسية
+CTELLFOUR_008_Answers_Arabic_193 op     D       D       D    D    D     D    D      S      S      S  
+CTELLFOUR_008_Answers_Arabic_193 #csid 0 3 0 7
+CTELLFOUR_008_Answers_Arabic_194 ref  خير  الناس  للناس  خيرهم   لنفسه
+CTELLFOUR_008_Answers_Arabic_194 hyp  ***    لا    أعلم    من   الصباح
+CTELLFOUR_008_Answers_Arabic_194 op    D     S      S      S       S  
+CTELLFOUR_008_Answers_Arabic_194 #csid 0 4 0 1
+CTELLFOUR_008_Answers_Arabic_195 ref  خير  الناس   من  فرح  للناس  بالخير
+CTELLFOUR_008_Answers_Arabic_195 hyp  ***   ***   ليس  لدي   خيار    آخر 
+CTELLFOUR_008_Answers_Arabic_195 op    D     D     S    S     S       S  
+CTELLFOUR_008_Answers_Arabic_195 #csid 0 4 0 2
+CTELLFOUR_008_Answers_Arabic_196 ref  خير  صِلاتِ  الكريم  أَعْوَدُها
+CTELLFOUR_008_Answers_Arabic_196 hyp  ***    ليس     لدي     تشنجات  
+CTELLFOUR_008_Answers_Arabic_196 op    D      S       S         S    
+CTELLFOUR_008_Answers_Arabic_196 #csid 0 3 0 1
+CTELLFOUR_008_Answers_Arabic_197 ref  خيركم  خيركم  لأهله
+CTELLFOUR_008_Answers_Arabic_197 hyp    لا    أعلم  البصر
+CTELLFOUR_008_Answers_Arabic_197 op     S      S      S  
+CTELLFOUR_008_Answers_Arabic_197 #csid 0 3 0 0
+CTELLFOUR_008_Answers_Arabic_198 ref  ذكر  الفتى  عمره   الثاني
+CTELLFOUR_008_Answers_Arabic_198 hyp  ***    لا   أعلم  الزوجية
+CTELLFOUR_008_Answers_Arabic_198 op    D     S      S      S   
+CTELLFOUR_008_Answers_Arabic_198 #csid 0 3 0 1
+CTELLFOUR_008_Answers_Arabic_199 ref  ساقي   القوم  آخرهم  شراباً
+CTELLFOUR_008_Answers_Arabic_199 hyp   ***  لاأعلم  فقدان   البصر
+CTELLFOUR_008_Answers_Arabic_199 op     D      S      S       S  
+CTELLFOUR_008_Answers_Arabic_199 #csid 0 3 0 1
+CTELLFOUR_008_Answers_Arabic_200 ref   سر  النجاح  على  الدوام   هو   أن  تسير  إلى  الأمام
+CTELLFOUR_008_Answers_Arabic_200 hyp  ***    ***   ***    ***   ***  ليس   لدي  ألم   بطني 
+CTELLFOUR_008_Answers_Arabic_200 op    D      D     D      D     D    S     S    S      S  
+CTELLFOUR_008_Answers_Arabic_200 #csid 0 4 0 5
+CTELLFOUR_008_Answers_Arabic_201 ref  ***  سيد  القوم  خادمهم
+CTELLFOUR_008_Answers_Arabic_201 hyp  ليس  لدي   شيء   بالعنف
+CTELLFOUR_008_Answers_Arabic_201 op    I    S     S       S  
+CTELLFOUR_008_Answers_Arabic_201 #csid 0 3 1 0
+CTELLFOUR_009_Answers_Arabic_202 ref  شكرت  جميل  صنعكم  بدمعي  ودمع  العين  مقياس  الشعور
+CTELLFOUR_009_Answers_Arabic_202 hyp   ***   ***   ***    ***    ليس   لدي    جيوب   أنفية
+CTELLFOUR_009_Answers_Arabic_202 op     D     D     D      D      S     S      S       S  
+CTELLFOUR_009_Answers_Arabic_202 #csid 0 4 0 4
+CTELLFOUR_009_Answers_Arabic_203 ref  صلاح  أمرك  بالأخلاق  مرجعه  فَقَوِّم  النفس  بالأخلاق  تستقم
+CTELLFOUR_009_Answers_Arabic_203 hyp   ***   ***     ***     ***      نعم     لديه    نزيف    الانف
+CTELLFOUR_009_Answers_Arabic_203 op     D     D       D       D        S       S        S       S  
+CTELLFOUR_009_Answers_Arabic_203 #csid 0 4 0 4
+CTELLFOUR_009_Answers_Arabic_204 ref  عامل  الناس  برأي  رفيق  والق   من  تلقى   بوجه   طليق
+CTELLFOUR_009_Answers_Arabic_204 hyp   ***   ***    ***   ***   ***  نعم   على  مشارف  أسنان
+CTELLFOUR_009_Answers_Arabic_204 op     D     D      D     D     D    S     S     S      S  
+CTELLFOUR_009_Answers_Arabic_204 #csid 0 4 0 5
+CTELLFOUR_009_Answers_Arabic_205 ref  عامل  الناس  بما  تحب    أن   يعاملوك   به 
+CTELLFOUR_009_Answers_Arabic_205 hyp   ***   ***   نعم  على  الرغم     من    حولك
+CTELLFOUR_009_Answers_Arabic_205 op     D     D     S    S     S       S       S 
+CTELLFOUR_009_Answers_Arabic_205 #csid 0 5 0 2
+CTELLFOUR_009_Answers_Arabic_206 ref  عصفور   في  اليد   خير  من  عشرة   على     الشجرة 
+CTELLFOUR_009_Answers_Arabic_206 hyp   ***   ***   لا   أعلم  من   ***  الغدد  اللمفاوية
+CTELLFOUR_009_Answers_Arabic_206 op     D     D     S     S    C    D     S        S    
+CTELLFOUR_009_Answers_Arabic_206 #csid 1 4 0 3
+CTELLFOUR_009_Answers_Arabic_207 ref  عندما  تكون   في  روما  تصرف   كما  يتصرف  الرومان
+CTELLFOUR_009_Answers_Arabic_207 hyp   ***    ***  ***   ***   لا   أعلم   كسور   التنفس
+CTELLFOUR_009_Answers_Arabic_207 op     D      D    D     D     S     S     S       S   
+CTELLFOUR_009_Answers_Arabic_207 #csid 0 4 0 4
+CTELLFOUR_009_Answers_Arabic_208 ref  فرط  الأنس  مكسبة  لقرناء  السوء
+CTELLFOUR_009_Answers_Arabic_208 hyp  ***   ***    نعم     على    أحد 
+CTELLFOUR_009_Answers_Arabic_208 op    D     D      S       S      S  
+CTELLFOUR_009_Answers_Arabic_208 #csid 0 3 0 2
+CTELLFOUR_009_Answers_Arabic_209 ref   فلان  دُرَّةُ  التاج  وواسطة  العقد
+CTELLFOUR_009_Answers_Arabic_209 hyp  عندما    تصل     تحت    السن   ونتعب
+CTELLFOUR_009_Answers_Arabic_209 op     S       S       S       S      S  
+CTELLFOUR_009_Answers_Arabic_209 #csid 0 5 0 0
+CTELLFOUR_009_Answers_Arabic_210 ref  فَمَن  يَعمَل  مِثقَالَ  ذَرَّةٍ  خَيرًا  يَرَهُ
+CTELLFOUR_009_Answers_Arabic_210 hyp   ***     ***      ليس      لدي     لمدة     عام 
+CTELLFOUR_009_Answers_Arabic_210 op     D       D        S        S        S       S  
+CTELLFOUR_009_Answers_Arabic_210 #csid 0 4 0 2
+CTELLFOUR_009_Answers_Arabic_211 ref   في  سعة  الأخلاق  كنوز  الأرزاق
+CTELLFOUR_009_Answers_Arabic_211 hyp  ***  ***     لم     أصب   البحث 
+CTELLFOUR_009_Answers_Arabic_211 op    D    D      S       S      S   
+CTELLFOUR_009_Answers_Arabic_211 #csid 0 3 0 2
+CTELLFOUR_009_Answers_Arabic_212 ref  قُل  كُلٌّ  يَعمَلُ  عَلَى  شَاكِلَتِهِ
+CTELLFOUR_009_Answers_Arabic_212 hyp  نعم   لدي    مشكلة     في      التنفس  
+CTELLFOUR_009_Answers_Arabic_212 op    S     S       S       S         S     
+CTELLFOUR_009_Answers_Arabic_212 #csid 0 5 0 0
+CTELLFOUR_009_Answers_Arabic_213 ref    ***   قلب  المؤمن    دليله 
+CTELLFOUR_009_Answers_Arabic_213 hyp  والسبب   في   الشعب  الهوائية
+CTELLFOUR_009_Answers_Arabic_213 op      I     S      S        S   
+CTELLFOUR_009_Answers_Arabic_213 #csid 0 3 1 0
+CTELLFOUR_009_Answers_Arabic_214 ref  قليل   في  الجيب  خير   من  كثير  في  الغيب
+CTELLFOUR_009_Answers_Arabic_214 hyp   ***  ***   ***   ***  ***   ***  لم   يحدث
+CTELLFOUR_009_Answers_Arabic_214 op     D    D     D     D    D     D    S    S  
+CTELLFOUR_009_Answers_Arabic_214 #csid 0 2 0 6
+CTELLFOUR_009_Answers_Arabic_215 ref  قَولٌ  مَّعرُوفٌ  وَمَغفِرَةُ  خَيرٌ  مِّن  صَدَقَةٍ  يَتبَعُهَا  أَذًى
+CTELLFOUR_009_Answers_Arabic_215 hyp   ***      ***         ***       ***    مع     عصابة       من      الصدر
+CTELLFOUR_009_Answers_Arabic_215 op     D        D           D         D      S       S          S        S  
+CTELLFOUR_009_Answers_Arabic_215 #csid 0 4 0 4
+CTELLFOUR_009_Answers_Arabic_216 ref   ***   ***   كل   امرئ  بما  يحسنه
+CTELLFOUR_009_Answers_Arabic_216 hyp  نعتقد   ان  اصاب  دقات  قلب  سريعة
+CTELLFOUR_009_Answers_Arabic_216 op     I     I     S     S    S     S  
+CTELLFOUR_009_Answers_Arabic_216 #csid 0 4 2 0
+CTELLFOUR_009_Answers_Arabic_217 ref  كما   أن  السؤال  يُذِلُّ  قوما    كذاك    يعز    قوم   بالعطاء
+CTELLFOUR_009_Answers_Arabic_217 hyp  ***  ***    ***     ***     بعض  الأحيان  أشعر  بالضيق   الصدر 
+CTELLFOUR_009_Answers_Arabic_217 op    D    D      D       D       S      S       S      S       S   
+CTELLFOUR_009_Answers_Arabic_217 #csid 0 5 0 4
+CTELLFOUR_009_Answers_Arabic_218 ref   لا  تشن    وجه   العفو  بالتأنيب
+CTELLFOUR_009_Answers_Arabic_218 hyp  ***  ***  لايحدث  الورم   الساقين
+CTELLFOUR_009_Answers_Arabic_218 op    D    D      S      S        S   
+CTELLFOUR_009_Answers_Arabic_218 #csid 0 3 0 2
+CTELLFOUR_009_Answers_Arabic_219 ref   لا  تكن  حلواً  فتؤكل  ولا  مراً  فترمى
+CTELLFOUR_009_Answers_Arabic_219 hyp  ***  ***   ***    نعم   لدي   ضغط   الدم
+CTELLFOUR_009_Answers_Arabic_219 op    D    D     D      S     S     S     S  
+CTELLFOUR_009_Answers_Arabic_219 #csid 0 4 0 3
+CTELLFOUR_009_Answers_Arabic_220 ref   لا  تمازح  الشريف  فيحنق  عليك  ولا  الدنيء  فيتجرأ  عليك
+CTELLFOUR_009_Answers_Arabic_220 hyp  ***   ***     ***    ***    ***  ***    نعم    يفقد   وزنه
+CTELLFOUR_009_Answers_Arabic_220 op    D     D       D      D      D    D      S       S      S 
+CTELLFOUR_009_Answers_Arabic_220 #csid 0 3 0 6
+CTELLFOUR_009_Answers_Arabic_221 ref   لا  تنه   عن  خلق  وتأتي  مثله  عار  عليك   إذا   فعلت    عظيم  
+CTELLFOUR_009_Answers_Arabic_221 hyp  ***  ***  ***  ***   ***    ***  أنا  أشعر  برغبة   في   استراليا
+CTELLFOUR_009_Answers_Arabic_221 op    D    D    D    D     D      D    S     S     S      S       S   
+CTELLFOUR_009_Answers_Arabic_221 #csid 0 5 0 6
+CTELLFOUR_009_Answers_Arabic_222 ref   لا  خير  فيمن   لا  يَأْلَفُ  ولا  يؤلف
+CTELLFOUR_009_Answers_Arabic_222 hyp  ***  ***   نعم  لدي     ألم    غير  مهتم
+CTELLFOUR_009_Answers_Arabic_222 op    D    D     S    S       S      S     S 
+CTELLFOUR_009_Answers_Arabic_222 #csid 0 5 0 2
+CTELLFOUR_009_Answers_Arabic_223 ref  لكل  مقام  مقال  ولكل  زمان   رجال
+CTELLFOUR_009_Answers_Arabic_223 hyp  ***   ***   ***   ***   ***  لعمله
+CTELLFOUR_009_Answers_Arabic_223 op    D     D     D     D     D     S  
+CTELLFOUR_009_Answers_Arabic_223 #csid 0 1 0 5
+CTELLFOUR_009_Answers_Arabic_224 ref  للشدائد  تُدَّخَرُ  الرجال
+CTELLFOUR_009_Answers_Arabic_224 hyp    ***       ليلة     واحدة
+CTELLFOUR_009_Answers_Arabic_224 op      D         S         S  
+CTELLFOUR_009_Answers_Arabic_224 #csid 0 2 0 1
+CTELLFOUR_009_Answers_Arabic_225 ref   لو  كان  الكذب  ينجي  فالصدق  أنجى
+CTELLFOUR_009_Answers_Arabic_225 hyp  ***  ***   ***    ***    ليس    لدي
+CTELLFOUR_009_Answers_Arabic_225 op    D    D     D      D      S      S 
+CTELLFOUR_009_Answers_Arabic_225 #csid 0 2 0 4
+CTELLFOUR_009_Answers_Arabic_226 ref   ما  كل   من     قال    قولا  وفى
+CTELLFOUR_009_Answers_Arabic_226 hyp  ***  مع  وجود  الصفراء   من   قبل
+CTELLFOUR_009_Answers_Arabic_226 op    D    S    S      S       S    S 
+CTELLFOUR_009_Answers_Arabic_226 #csid 0 5 0 1
+CTELLFOUR_010_Answers_Arabic_227 ref  ***  ما    هو     إلا   بستان
+CTELLFOUR_010_Answers_Arabic_227 hyp   لا  لن  استشير  طبيبا   أبدا
+CTELLFOUR_010_Answers_Arabic_227 op    I    S     S      S      S  
+CTELLFOUR_010_Answers_Arabic_227 #csid 0 4 1 0
+CTELLFOUR_010_Answers_Arabic_228 ref   من  حسن  إسلام  المرء  تَرْكُهُ  ما   لا   يعنيه
+CTELLFOUR_010_Answers_Arabic_228 hyp  ***  ***   ***    ***      ***    لا  لأنه   مريض
+CTELLFOUR_010_Answers_Arabic_228 op    D    D     D      D        D      S    S     S  
+CTELLFOUR_010_Answers_Arabic_228 #csid 0 3 0 5
+CTELLFOUR_010_Answers_Arabic_229 ref  ***  معاتبة  الإخوان   خير     من   فقدهم
+CTELLFOUR_010_Answers_Arabic_229 hyp   لا   لأنني     لم    أتعرض  لحادث   أفضل
+CTELLFOUR_010_Answers_Arabic_229 op    I      S       S       S      S      S  
+CTELLFOUR_010_Answers_Arabic_229 #csid 0 5 1 0
+CTELLFOUR_010_Answers_Arabic_230 ref  من  تواضع   لله   رفعه
+CTELLFOUR_010_Answers_Arabic_230 hyp  لا    و    الحمد   لله
+CTELLFOUR_010_Answers_Arabic_230 op    S    S      S      S 
+CTELLFOUR_010_Answers_Arabic_230 #csid 0 4 0 0
+CTELLFOUR_010_Answers_Arabic_231 ref  ***    من    حسن   خُلُقُه  استراح  وأراح
+CTELLFOUR_010_Answers_Arabic_231 hyp  نعم  عندما  تعرضت    الى     نزلة    برد 
+CTELLFOUR_010_Answers_Arabic_231 op    I     S      S       S        S      S  
+CTELLFOUR_010_Answers_Arabic_231 #csid 0 5 1 0
+CTELLFOUR_010_Answers_Arabic_232 ref   من   حسن   خُلقُه  وجب  حقُّه
+CTELLFOUR_010_Answers_Arabic_232 hyp  نعم  عندما    كنت   بلد    له 
+CTELLFOUR_010_Answers_Arabic_232 op    S     S       S     S     S  
+CTELLFOUR_010_Answers_Arabic_232 #csid 0 5 0 0
+CTELLFOUR_010_Answers_Arabic_233 ref   من  شابه  أباه   فما   ظلم
+CTELLFOUR_010_Answers_Arabic_233 hyp  ***   لا     و   الحمد  لله
+CTELLFOUR_010_Answers_Arabic_233 op    D     S     S     S     S 
+CTELLFOUR_010_Answers_Arabic_233 #csid 0 4 0 1
+CTELLFOUR_010_Answers_Arabic_234 ref   من  شَبَّ   على    شيء  شاب   عليه 
+CTELLFOUR_010_Answers_Arabic_234 hyp  نعم  عندما  تعرضت  لمرض   في  الحجرة
+CTELLFOUR_010_Answers_Arabic_234 op    S     S      S      S    S      S  
+CTELLFOUR_010_Answers_Arabic_234 #csid 0 6 0 0
+CTELLFOUR_010_Answers_Arabic_235 ref   من  عرف  نفسه  عرف  ربه
+CTELLFOUR_010_Answers_Arabic_235 hyp  ***  ***   ***  ***   لا
+CTELLFOUR_010_Answers_Arabic_235 op    D    D     D    D    S 
+CTELLFOUR_010_Answers_Arabic_235 #csid 0 1 0 4
+CTELLFOUR_010_Answers_Arabic_236 ref   من   لم    يقنع   باليسير    لم    يكتف  بالكثير
+CTELLFOUR_010_Answers_Arabic_236 hyp  قبل  قليل  الأناس   الذين   يرغبون  بهذا   المكان
+CTELLFOUR_010_Answers_Arabic_236 op    S     S      S       S        S      S      S   
+CTELLFOUR_010_Answers_Arabic_236 #csid 0 7 0 0
+CTELLFOUR_010_Answers_Arabic_237 ref   ***     ***    ***    ***  ***   نعم   الثوب  العافية   إذا  انسدل  على  الكفاف
+CTELLFOUR_010_Answers_Arabic_237 hyp  لأنني  الأناس  الذين  بسبب  هذا  المرض   عادة     ما    يكون  متقدم   في   السن 
+CTELLFOUR_010_Answers_Arabic_237 op     I       I      I      I    I     S      S       S       S     S     S      S  
+CTELLFOUR_010_Answers_Arabic_237 #csid 0 7 5 0
+CTELLFOUR_010_Answers_Arabic_238 ref  نعم   ***   العون  على  المروءة  المال
+CTELLFOUR_010_Answers_Arabic_238 hyp  نعم  عندما   أكون   في    غاية   التعب
+CTELLFOUR_010_Answers_Arabic_238 op    C     I      S     S      S       S  
+CTELLFOUR_010_Answers_Arabic_238 #csid 1 4 1 0
+CTELLFOUR_010_Answers_Arabic_239 ref  ***  ***   ***   نعم  المؤَدِّبُ   الدهر 
+CTELLFOUR_010_Answers_Arabic_239 hyp  إلا   إن  فقدان  أحد     أفراد    العائلة
+CTELLFOUR_010_Answers_Arabic_239 op    I    I     I     S        S         S   
+CTELLFOUR_010_Answers_Arabic_239 #csid 0 3 3 0
+CTELLFOUR_010_Answers_Arabic_240 ref  نعم  حاجب  الشهوات   غض   البصر
+CTELLFOUR_010_Answers_Arabic_240 hyp  ***   ***     ان    تركب  البحر
+CTELLFOUR_010_Answers_Arabic_240 op    D     D      S       S     S  
+CTELLFOUR_010_Answers_Arabic_240 #csid 0 3 0 2
+CTELLFOUR_010_Answers_Arabic_241 ref  هذا  الشبل   من  ذاك  الأسد
+CTELLFOUR_010_Answers_Arabic_241 hyp  ***   ***   ***  ***   الآن
+CTELLFOUR_010_Answers_Arabic_241 op    D     D     D    D     S  
+CTELLFOUR_010_Answers_Arabic_241 #csid 0 1 0 4
+CTELLFOUR_010_Answers_Arabic_242 ref   هي  الأخلاق  تنبت  كالنبات   إذا    سقيت     بماء   المكرمات
+CTELLFOUR_010_Answers_Arabic_242 hyp  ***    ***     ***     من    خلال  الساعات  القليلة   الماضية
+CTELLFOUR_010_Answers_Arabic_242 op    D      D       D      S       S      S        S         S   
+CTELLFOUR_010_Answers_Arabic_242 #csid 0 5 0 3
+CTELLFOUR_010_Answers_Arabic_243 ref  هيهات  تكتم   في  الظلام  مشاعل
+CTELLFOUR_010_Answers_Arabic_243 hyp   ***    ***  ***    لا     أحد 
+CTELLFOUR_010_Answers_Arabic_243 op     D      D    D      S      S  
+CTELLFOUR_010_Answers_Arabic_243 #csid 0 2 0 3
+CTELLFOUR_010_Answers_Arabic_244 ref  وأحسن  منك   لم   تر   قط  عيني  وأجمل  منك   لم  تلد  النساء
+CTELLFOUR_010_Answers_Arabic_244 hyp   ***   ***  ***  ***  ***   ***   ***   ***  ***  ***   لأبي 
+CTELLFOUR_010_Answers_Arabic_244 op     D     D    D    D    D     D     D     D    D    D      S  
+CTELLFOUR_010_Answers_Arabic_244 #csid 0 1 0 10
+CTELLFOUR_010_Answers_Arabic_245 ref  وإنما  الأمم  الأخلاق   ما  بقيت  فإن   هم  ذهبت  أخلاقهم   ذهبوا
+CTELLFOUR_010_Answers_Arabic_245 hyp   ***    ***     ***    ***   ***  ***  نعم  جديد     في    أمعائي
+CTELLFOUR_010_Answers_Arabic_245 op     D      D       D      D     D    D    S     S      S        S  
+CTELLFOUR_010_Answers_Arabic_245 #csid 0 4 0 6
+CTELLFOUR_010_Answers_Arabic_246 ref  وإني  وإن  كنت  الأخير  زمانه  لآت    بما   لم  تستطعه  الأوائل
+CTELLFOUR_010_Answers_Arabic_246 hyp   ***  ***  ***    ***    وجدت  بعض  المرضى  أن   نجلب     كبد  
+CTELLFOUR_010_Answers_Arabic_246 op     D    D    D      D      S     S      S     S     S       S   
+CTELLFOUR_010_Answers_Arabic_246 #csid 0 6 0 4
+CTELLFOUR_010_Answers_Arabic_247 ref  ***   ***   وأي  الناس   ليس  به   عيوب
+CTELLFOUR_010_Answers_Arabic_247 hyp  نعم  عندما  كنت    في   جولة  في  الجبل
+CTELLFOUR_010_Answers_Arabic_247 op    I     I     S     S      S    S    S  
+CTELLFOUR_010_Answers_Arabic_247 #csid 0 5 2 0
+CTELLFOUR_010_Answers_Arabic_248 ref  وتأتي  على  قدر  الكرام  المكارم
+CTELLFOUR_010_Answers_Arabic_248 hyp   ***   ***  نعم   أفهمك    جيدا 
+CTELLFOUR_010_Answers_Arabic_248 op     D     D    S      S       S   
+CTELLFOUR_010_Answers_Arabic_248 #csid 0 3 0 2
+CTELLFOUR_010_Answers_Arabic_249 ref  وتعظم   في  عين  الصغير  صغارها  وتصغر   في     عين    العظيم  العظائم
+CTELLFOUR_010_Answers_Arabic_249 hyp   ***   ***  ***    هو      هذا   المرض  الذي  اشتريته    عمل     آخر  
+CTELLFOUR_010_Answers_Arabic_249 op     D     D    D      S       S      S      S      S        S       S   
+CTELLFOUR_010_Answers_Arabic_249 #csid 0 7 0 3
+CTELLFOUR_010_Answers_Arabic_250 ref  وَلَو  كُنتَ  فَظًّا  غَلِيظَ  القَلبِ  لاَنفَضُّواْ   مِن   حَولِكَ
+CTELLFOUR_010_Answers_Arabic_250 hyp   ***    لكن     ليس     بهذا    المرض       عادة      سيفقد   حياته 
+CTELLFOUR_010_Answers_Arabic_250 op     D      S       S       S        S           S         S       S   
+CTELLFOUR_010_Answers_Arabic_250 #csid 0 7 0 1
+CTELLFOUR_010_Answers_Arabic_251 ref  ومهما  يكن  عند  امرئ   من  خَليقَةٍ   وإن  خالها  تَخْفَى  على  الناس  تُعْلَمِ
+CTELLFOUR_010_Answers_Arabic_251 hyp   ***   ***  ***   لذا  فهو     مرض    خطير   وليس    بها    عدة   يفقد    حياته 
+CTELLFOUR_010_Answers_Arabic_251 op     D     D    D     S    S       S       S     S       S      S     S        S   
+CTELLFOUR_010_Answers_Arabic_251 #csid 0 9 0 3
+CTELLFOUR_011_Answers_Arabic_252 ref  يد  الحر  ميزان
+CTELLFOUR_011_Answers_Arabic_252 hyp  لا   لست   حامل
+CTELLFOUR_011_Answers_Arabic_252 op    S    S     S  
+CTELLFOUR_011_Answers_Arabic_252 #csid 0 3 0 0
+CTELLFOUR_011_Answers_Arabic_253 ref  يَغْرِفُ    من      بحر 
+CTELLFOUR_011_Answers_Arabic_253 hyp   مظاهرة   لثلاثة  أسابيع
+CTELLFOUR_011_Answers_Arabic_253 op       S        S       S  
+CTELLFOUR_011_Answers_Arabic_253 #csid 0 3 0 0
+CTELLFOUR_011_Answers_Arabic_254 ref  لكل   جديد    لذة 
+CTELLFOUR_011_Answers_Arabic_254 hyp  حدث  للحمام  مرتين
+CTELLFOUR_011_Answers_Arabic_254 op    S      S      S  
+CTELLFOUR_011_Answers_Arabic_254 #csid 0 3 0 0
+CTELLFOUR_011_Answers_Arabic_255 ref  الثروة  تأتي  كالسلحفاة  وتذهب  كالغزال
+CTELLFOUR_011_Answers_Arabic_255 hyp    ***    ***     نعم      أشعر   بالألم
+CTELLFOUR_011_Answers_Arabic_255 op      D      D       S        S       S   
+CTELLFOUR_011_Answers_Arabic_255 #csid 0 3 0 2
+CTELLFOUR_011_Answers_Arabic_256 ref  ***  ***   ***  ***  الدراهم  مراهم
+CTELLFOUR_011_Answers_Arabic_256 hyp  منذ   ما  يزيد   عن    عشر    دقائق
+CTELLFOUR_011_Answers_Arabic_256 op    I    I     I    I      S       S  
+CTELLFOUR_011_Answers_Arabic_256 #csid 0 2 4 0
+CTELLFOUR_011_Answers_Arabic_257 ref   إن  غلا  اللحم  فالصبر  رخيص
+CTELLFOUR_011_Answers_Arabic_257 hyp  ***  ***   ***     ***    فيه
+CTELLFOUR_011_Answers_Arabic_257 op    D    D     D       D      S 
+CTELLFOUR_011_Answers_Arabic_257 #csid 0 1 0 4
+CTELLFOUR_011_Answers_Arabic_258 ref  ***  ***  إذا  تمنيت  فاستكثر
+CTELLFOUR_011_Answers_Arabic_258 hyp  نعم  انه   في   مكان    آمن  
+CTELLFOUR_011_Answers_Arabic_258 op    I    I    S     S       S   
+CTELLFOUR_011_Answers_Arabic_258 #csid 0 3 2 0
+CTELLFOUR_011_Answers_Arabic_259 ref  المال  يجلب  المال
+CTELLFOUR_011_Answers_Arabic_259 hyp   قلت    أنه    فخ 
+CTELLFOUR_011_Answers_Arabic_259 op     S      S     S  
+CTELLFOUR_011_Answers_Arabic_259 #csid 0 3 0 0
+CTELLFOUR_011_Answers_Arabic_260 ref  أغن   من  وليته   عن  السرقة
+CTELLFOUR_011_Answers_Arabic_260 hyp  ***  ***   ***   نعم  سابقين
+CTELLFOUR_011_Answers_Arabic_260 op    D    D     D     S      S  
+CTELLFOUR_011_Answers_Arabic_260 #csid 0 2 0 3
+CTELLFOUR_011_Answers_Arabic_261 ref  الأماني  رءوس   مال  المفاليس
+CTELLFOUR_011_Answers_Arabic_261 hyp    هذا     ليس  وليس    مجرد  
+CTELLFOUR_011_Answers_Arabic_261 op      S       S     S       S   
+CTELLFOUR_011_Answers_Arabic_261 #csid 0 4 0 0
+CTELLFOUR_011_Answers_Arabic_262 ref  التدبير  يثمر  اليسير  والتبذير  يبدد   الكثير
+CTELLFOUR_011_Answers_Arabic_262 hyp    ***     ***    ***     وليس     من   السيارة
+CTELLFOUR_011_Answers_Arabic_262 op      D       D      D        S       S      S   
+CTELLFOUR_011_Answers_Arabic_262 #csid 0 3 0 3
+CTELLFOUR_011_Answers_Arabic_263 ref  ***   ***    ***   ***  الرجال  بالأموال
+CTELLFOUR_011_Answers_Arabic_263 hyp  نعم  أشعر  بالألم   في    هذا     الوقت 
+CTELLFOUR_011_Answers_Arabic_263 op    I     I      I     I      S        S   
+CTELLFOUR_011_Answers_Arabic_263 #csid 0 2 4 0
+CTELLFOUR_011_Answers_Arabic_264 ref  ***  ***   ***   الشرط   نور 
+CTELLFOUR_011_Answers_Arabic_264 hyp   لا  ليس  الشخص   الذي  تريده
+CTELLFOUR_011_Answers_Arabic_264 op    I    I     I      S      S  
+CTELLFOUR_011_Answers_Arabic_264 #csid 0 2 3 0
+CTELLFOUR_011_Answers_Arabic_265 ref  ***  ***  الضامن   غارم
+CTELLFOUR_011_Answers_Arabic_265 hyp  نعم  عرض   منتصف  الليل
+CTELLFOUR_011_Answers_Arabic_265 op    I    I      S      S  
+CTELLFOUR_011_Answers_Arabic_265 #csid 0 2 2 0
+CTELLFOUR_011_Answers_Arabic_266 ref  الغالي  ثمنه   فيه 
+CTELLFOUR_011_Answers_Arabic_266 hyp    لم    أفقد  الوعي
+CTELLFOUR_011_Answers_Arabic_266 op      S      S     S  
+CTELLFOUR_011_Answers_Arabic_266 #csid 0 3 0 0
+CTELLFOUR_011_Answers_Arabic_267 ref  ***  الغنى  يورث  البطر
+CTELLFOUR_011_Answers_Arabic_267 hyp   لا    لن    مرة   أخرى
+CTELLFOUR_011_Answers_Arabic_267 op    I     S      S     S  
+CTELLFOUR_011_Answers_Arabic_267 #csid 0 3 1 0
+CTELLFOUR_011_Answers_Arabic_268 ref  القرش  الأبيض  ينفع   في   اليوم  الأسود
+CTELLFOUR_011_Answers_Arabic_268 hyp   ***     ***    نعم  أشعر   انه   المصعد
+CTELLFOUR_011_Answers_Arabic_268 op     D       D      S     S     S       S  
+CTELLFOUR_011_Answers_Arabic_268 #csid 0 4 0 2
+CTELLFOUR_011_Answers_Arabic_269 ref  ***   ***   ***    ***   ***  القلة    ذلة 
+CTELLFOUR_011_Answers_Arabic_269 hyp  نعم  كذلك  أشعر  بالألم   في   هذا   العالم
+CTELLFOUR_011_Answers_Arabic_269 op    I     I     I      I     I     S       S  
+CTELLFOUR_011_Answers_Arabic_269 #csid 0 2 5 0
+CTELLFOUR_011_Answers_Arabic_270 ref  المال  ينفد  حله  وحرامه  يوماً  ويبقى  بعد  ذلك   إثمه 
+CTELLFOUR_011_Answers_Arabic_270 hyp   ***    ***  ***    ***    ***    ***   ***  بعض  الرجال
+CTELLFOUR_011_Answers_Arabic_270 op     D      D    D      D      D      D     D    S      S  
+CTELLFOUR_011_Answers_Arabic_270 #csid 0 2 0 7
+CTELLFOUR_011_Answers_Arabic_271 ref   إن  الغنى  والعز   في  القناعة  والذل  في  الحرص  وفي  الوضاعة
+CTELLFOUR_011_Answers_Arabic_271 hyp  ***   ***    ***   ***    ***     ***   لا   أشعر   شد   الحبل 
+CTELLFOUR_011_Answers_Arabic_271 op    D     D      D     D      D       D     S    S     S      S   
+CTELLFOUR_011_Answers_Arabic_271 #csid 0 4 0 6
+CTELLFOUR_011_Answers_Arabic_272 ref  خير  مالك   ما  نفعك
+CTELLFOUR_011_Answers_Arabic_272 hyp  ***   ***  ***  لحظة
+CTELLFOUR_011_Answers_Arabic_272 op    D     D    D     S 
+CTELLFOUR_011_Answers_Arabic_272 #csid 0 1 0 3
+CTELLFOUR_011_Answers_Arabic_273 ref  خير  الأشياء  جديدها
+CTELLFOUR_011_Answers_Arabic_273 hyp  نعم    إنه     كذلك 
+CTELLFOUR_011_Answers_Arabic_273 op    S      S        S  
+CTELLFOUR_011_Answers_Arabic_273 #csid 0 3 0 0
+CTELLFOUR_011_Answers_Arabic_274 ref  رأيت  الناس   قد  مالوا  إلى    من     عنده   مال 
+CTELLFOUR_011_Answers_Arabic_274 hyp   ***   ***   ***   ***   نعم  أستطيع  تحريك  الجثة
+CTELLFOUR_011_Answers_Arabic_274 op     D     D     D     D     S      S      S      S  
+CTELLFOUR_011_Answers_Arabic_274 #csid 0 4 0 4
+CTELLFOUR_011_Answers_Arabic_275 ref  رِزْقُه   في   رجليه
+CTELLFOUR_011_Answers_Arabic_275 hyp    نعم    أراه  بوضوح
+CTELLFOUR_011_Answers_Arabic_275 op      S       S     S  
+CTELLFOUR_011_Answers_Arabic_275 #csid 0 3 0 0
+CTELLFOUR_012_Answers_Arabic_01 ref  البعيد   عن  العين  بعيد   عن    القلب
+CTELLFOUR_012_Answers_Arabic_01 hyp    ***   ***   ***    لا   أعرف  بمفردك
+CTELLFOUR_012_Answers_Arabic_01 op      D     D     D      S     S      S  
+CTELLFOUR_012_Answers_Arabic_01 #csid 0 3 0 3
+CTELLFOUR_012_Answers_Arabic_02 ref   ***  الحب   أعمى 
+CTELLFOUR_012_Answers_Arabic_02 hyp  تعيش   مع   عائلتي
+CTELLFOUR_012_Answers_Arabic_02 op     I     S      S  
+CTELLFOUR_012_Answers_Arabic_02 #csid 0 2 1 0
+CTELLFOUR_012_Answers_Arabic_03 ref   من   أحب  ولده   رحم   الأيتام
+CTELLFOUR_012_Answers_Arabic_03 hyp  ***  يعيش   مع   أربعة    أشهر 
+CTELLFOUR_012_Answers_Arabic_03 op    D     S     S     S       S   
+CTELLFOUR_012_Answers_Arabic_03 #csid 0 4 0 1
+CTELLFOUR_012_Answers_Arabic_04 ref  القلوب  عند  بعضها
+CTELLFOUR_012_Answers_Arabic_04 hyp   عمره   عشر  سنوات
+CTELLFOUR_012_Answers_Arabic_04 op      S     S     S  
+CTELLFOUR_012_Answers_Arabic_04 #csid 0 3 0 0
+CTELLFOUR_012_Answers_Arabic_05 ref   إن  العيون  التي   في  طرفها  حور  قتلننا    ثم     لم  يحيين  قتلانا  يَصرَعْنَ  ذا   اللب   حتى  لا
+CTELLFOUR_012_Answers_Arabic_05 hyp  ***    ***    ***  ***   ***   ***   تاريخ  ميلاده  عشر    من   أكتوبر     الف      و  تسعمئة   و   دم
+CTELLFOUR_012_Answers_Arabic_05 op    D      D      D    D     D     D      S       S     S     S       S        S       S     S     S    S
+CTELLFOUR_012_Answers_Arabic_05 #csid 0 10 0 6
+CTELLFOUR_012_Answers_Arabic_06 ref    ***    ***  حراك   به   وهن  أضعف    خلق   الله  إنسانا
+CTELLFOUR_012_Answers_Arabic_06 hyp  الصورة  التي   ولد  فيها  الف    و   تسعمئة    و    ثمين 
+CTELLFOUR_012_Answers_Arabic_06 op      I      I     S     S    S     S      S      S      S  
+CTELLFOUR_012_Answers_Arabic_06 #csid 0 7 2 0
+CTELLFOUR_012_Answers_Arabic_07 ref   ***    ***   أول  الشجرة  بذرة
+CTELLFOUR_012_Answers_Arabic_07 hyp  البلد  الذي  ولدت    بها   اسمه
+CTELLFOUR_012_Answers_Arabic_07 op     I      I     S      S      S 
+CTELLFOUR_012_Answers_Arabic_07 #csid 0 3 2 0
+CTELLFOUR_012_Answers_Arabic_08 ref   ربك    رب     قلوب 
+CTELLFOUR_012_Answers_Arabic_08 hyp  ولكن  بمدينة  الفرصة
+CTELLFOUR_012_Answers_Arabic_08 op     S      S       S  
+CTELLFOUR_012_Answers_Arabic_08 #csid 0 3 0 0
+CTELLFOUR_012_Answers_Arabic_09 ref  فإن  قليل  الحب  بالعقل  صالح  وإن  كثير  الحب   بالجهل   فاسد 
+CTELLFOUR_012_Answers_Arabic_09 hyp  ***   ***   ***    ***    ***  ***   ***   ***  الجنسية  النساء
+CTELLFOUR_012_Answers_Arabic_09 op    D     D     D      D      D    D     D     D      S        S  
+CTELLFOUR_012_Answers_Arabic_09 #csid 0 2 0 8
+CTELLFOUR_012_Answers_Arabic_10 ref   لا  تخف   ما  صنعت   بك  الأشواق  واشرح  هواك  فكلنا   عشاق
+CTELLFOUR_012_Answers_Arabic_10 hyp  ***  ***  ***   ***  ***    ***     ***    ***   ليلة  الأمس
+CTELLFOUR_012_Answers_Arabic_10 op    D    D    D     D    D      D       D      D     S      S  
+CTELLFOUR_012_Answers_Arabic_10 #csid 0 2 0 8
+CTELLFOUR_012_Answers_Arabic_11 ref  مرآة    الحب    عمياء
+CTELLFOUR_012_Answers_Arabic_11 hyp  حياة  اجتماعية  عالية
+CTELLFOUR_012_Answers_Arabic_11 op     S       S       S  
+CTELLFOUR_012_Answers_Arabic_11 #csid 0 3 0 0
+CTELLFOUR_012_Answers_Arabic_12 ref   من  القلب  للقلب  رسول
+CTELLFOUR_012_Answers_Arabic_12 hyp  ***   ليس    لدى    ابن
+CTELLFOUR_012_Answers_Arabic_12 op    D     S      S      S 
+CTELLFOUR_012_Answers_Arabic_12 #csid 0 3 0 1
+CTELLFOUR_012_Answers_Arabic_13 ref  إذا  أتاك  أحد  الخصمين  وقد  فُقِئَتْ  عينه  فلا  تقض   له  حتى  يأتيك  خصمه  فلعله   قد  فُقِئَتْ  عيناه
+CTELLFOUR_012_Answers_Arabic_13 hyp  ***   ***  ***    ***    ***     ***     ***  ***  ***  ***  ***   ***    ***   ***   هذه   الأشياء   إذن 
+CTELLFOUR_012_Answers_Arabic_13 op    D     D    D      D      D       D       D    D    D    D    D     D      D     D     S       S       S  
+CTELLFOUR_012_Answers_Arabic_13 #csid 0 3 0 14
+CTELLFOUR_012_Answers_Arabic_14 ref  إذا  تولى  عقداً   أحكمه
+CTELLFOUR_012_Answers_Arabic_14 hyp  نعم  تشعر  عائلة  بالأمر
+CTELLFOUR_012_Answers_Arabic_14 op    S     S     S       S  
+CTELLFOUR_012_Answers_Arabic_14 #csid 0 4 0 0
+CTELLFOUR_012_Answers_Arabic_15 ref  الجزاء    من   جنس  العمل
+CTELLFOUR_012_Answers_Arabic_15 hyp    مع    أتحدث  لغة   متعب
+CTELLFOUR_012_Answers_Arabic_15 op      S      S     S     S  
+CTELLFOUR_012_Answers_Arabic_15 #csid 0 4 0 0
+CTELLFOUR_012_Answers_Arabic_16 ref   الحق   دولة   والباطل      جولة   
+CTELLFOUR_012_Answers_Arabic_16 hyp  أتحدث  اللغة  الألمانية  والإيطالية
+CTELLFOUR_012_Answers_Arabic_16 op     S      S        S           S    
+CTELLFOUR_012_Answers_Arabic_16 #csid 0 4 0 0
+CTELLFOUR_012_Answers_Arabic_17 ref  الرجوع  إلى  الحق  خير   من  التمادي    في   الباطل
+CTELLFOUR_012_Answers_Arabic_17 hyp    ***   ***   ***  ***  ***   أتحدث   اللغة  بإتقان
+CTELLFOUR_012_Answers_Arabic_17 op      D     D     D    D    D      S       S       S  
+CTELLFOUR_012_Answers_Arabic_17 #csid 0 3 0 5
+CTELLFOUR_012_Answers_Arabic_18 ref  العاقل   لا  يبطل  حقا  ولا  يحق  باطلا
+CTELLFOUR_012_Answers_Arabic_18 hyp    ***   ***   ***  نعم  هذه  عشر  سنوات
+CTELLFOUR_012_Answers_Arabic_18 op      D     D     D    S    S    S     S  
+CTELLFOUR_012_Answers_Arabic_18 #csid 0 4 0 3
+CTELLFOUR_012_Answers_Arabic_19 ref   ***  العدل   أساس  الْمُلْك
+CTELLFOUR_012_Answers_Arabic_19 hyp  قضيت   ثلاث  سنوات   دراسية 
+CTELLFOUR_012_Answers_Arabic_19 op     I     S      S        S   
+CTELLFOUR_012_Answers_Arabic_19 #csid 0 3 1 0
+CTELLFOUR_012_Answers_Arabic_20 ref  العين  بالعين   والسن    بالسن 
+CTELLFOUR_012_Answers_Arabic_20 hyp  تحصلت    على   سيارته  الإنجليز
+CTELLFOUR_012_Answers_Arabic_20 op     S       S       S        S   
+CTELLFOUR_012_Answers_Arabic_20 #csid 0 4 0 0
+CTELLFOUR_012_Answers_Arabic_21 ref  صاحب  الحق  عينه   قوية
+CTELLFOUR_012_Answers_Arabic_21 hyp   ***  لأنه   حزب  سياسي
+CTELLFOUR_012_Answers_Arabic_21 op     D     S     S     S  
+CTELLFOUR_012_Answers_Arabic_21 #csid 0 3 0 1
+CTELLFOUR_012_Answers_Arabic_22 ref  على  الباغي  تدور  الدوائر
+CTELLFOUR_012_Answers_Arabic_22 hyp  ***    ***    نعم    نعم  
+CTELLFOUR_012_Answers_Arabic_22 op    D      D      S      S   
+CTELLFOUR_012_Answers_Arabic_22 #csid 0 2 0 2
+CTELLFOUR_012_Answers_Arabic_23 ref  قُضِيَ  الأَمرُ  الَّذِي   فِيهِ  تَستَفِتيَانِ
+CTELLFOUR_012_Answers_Arabic_23 hyp    ***   الوظيفة    التي   تشغلهم       علي     
+CTELLFOUR_012_Answers_Arabic_23 op      D       S        S        S          S      
+CTELLFOUR_012_Answers_Arabic_23 #csid 0 4 0 1
+CTELLFOUR_012_Answers_Arabic_24 ref    ***     ***  ***   كما  تدين  تدان
+CTELLFOUR_012_Answers_Arabic_24 hyp  المشكلة  بقية  منذ  خمسة   عشر   سنة
+CTELLFOUR_012_Answers_Arabic_24 op      I       I    I     S     S     S 
+CTELLFOUR_012_Answers_Arabic_24 #csid 0 3 3 0
+CTELLFOUR_012_Answers_Arabic_25 ref   لا  يَفُلُّ  الحديد    إلا   الحديد
+CTELLFOUR_012_Answers_Arabic_25 hyp  ***    ***     اشعر   بالعطش    منه 
+CTELLFOUR_012_Answers_Arabic_25 op    D      D        S       S       S  
+CTELLFOUR_012_Answers_Arabic_25 #csid 0 3 0 2
