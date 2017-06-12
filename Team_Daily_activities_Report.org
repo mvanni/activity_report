@@ -1,3 +1,39 @@
+* DAR <2017-06-12 Mon>
+**  Goals for Monday set Friday:
+- TODO Skillport lesson 3.
+- DONE ARL Coloquium: Prepare.
+I spent half the day working on the slides.
+- TODO ARL Coloquium: Put slides on S drive
+- TODO TransApps: Transfer more models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint:   build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+- TODO Transgender Mandatory Training.
+- DONE Get JAWS installed.
+
+** Goals for Tuesday:
+- TODO Skillport lesson 3.
+- TODO ARL Coloquium: Prepare.
+- TODO ARL Coloquium: Put slides on S drive
+- TODO TransApps: Transfer more models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint:   build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+- TODO Transgender Mandatory Training.
+- TODO Get JAWS installed.
+
+* DAR <2017-06-09 Fri>
+** Goals for Friday:
+- TODO Get credit for Transgender mandatory training.
+- TODO Skillport lesson 3.
+- TODO ARL Coloquium: Prepare slides.
+- TODO GP + Yaounde : Fix broken building steps at model tri2.
+- TODO Westpoint: Start CD GMM HMM training
+- TODO SOFTunisia:  Fix step 3 
+- TODO SOFTunisia: Do Stage 8 with chain models.
+- TODO SOFTunisia: Decode stage 8 data with chain models and get rough draft to Zac.
+-TODO SOFTunisia: chain model decoding with lm rescoring.
+
 * DAR <2017-06-08 Thu>
 ** Goals for Thursday:
 - TODO Skillport lesson 3.
