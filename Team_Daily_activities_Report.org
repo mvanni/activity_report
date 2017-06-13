@@ -1,3 +1,20 @@
+* DAR <2017-06-13 Tue>
+** Goals for Tuesday set Monday:
+- TODO Skillport lesson 3.
+- DONE ARL Coloquium: Prepare.
+- DONE ARL Coloquium: Put slides on S drive
+- DONE Give presentation
+- TODO Transgender Mandatory Training.
+
+
+** Goals for Wednesday:
+- TODO Skillport lesson 3.
+- TODO TransApps: Transfer more models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO Westpoint:   build cd gmm hmm system just on the Westpoint corpus.
+- TODO SOFTunisia: Cycle  through transcription process with Zac.
+- TODO Transgender Mandatory Training.
+
 * DAR <2017-06-12 Mon>
 **  Goals for Monday set Friday:
 - TODO Skillport lesson 3.
