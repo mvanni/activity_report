@@ -6,7 +6,6 @@
 - DONE Give presentation
 - TODO Transgender Mandatory Training.
 
-
 ** Goals for Wednesday:
 - TODO Skillport lesson 3.
 - TODO TransApps: Transfer more models.
