@@ -1,3 +1,39 @@
+* DAR <2017-06-14 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Skillport lesson 3.
+- TODO TransApps: Transfer more models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+I tried to start this again.
+- TODO Westpoint:   build cd gmm hmm system just on the Westpoint corpus.
+I gotsome work done on this item.
+The mono and tri1 models are trained.
+I evaluated the mono models.
+I am evaluating the tri1 models.
+- TODO SOFTunisia: Cycle  through transcription process with Zac.
+Starting from step 0.
+Recall that the SOF Tunisia corpus was split into dev, eval and train folds.
+Machine CTELLONE was used for dev.
+Machine CTELLTWO was used for eval.
+Machines CTELLTHREE, CTELLFOUR and CTELLFIVE were used for train.
+The training fold  has 5097 files.
+Stage 0 has 25 files.
+Consolidate train  and human corrections stage 0.
+5122 files for training. 
+MFCC features are extracted from this data.
+CMVN Stats are computed for this data.
+Since we have stages 0-7 we loop over them now.
+For stage 1 we added another 25 files.
+There are now 5047 files in the training data set.
+Stage 2 add 100 files.
+
+The training fails at stage 2.
+I need to do this over by hand.
+- TODO Transgender Mandatory Training.
+
+
+** Goals for Thursday:
+- TODO MFLTS meeting at Mitre.
+
 * DAR <2017-06-13 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Skillport lesson 3.
