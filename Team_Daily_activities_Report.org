@@ -1,3 +1,69 @@
+* DAR <2017-06-16 Fri>
+**  Goals for Thursday set Wednesday:
+- DONE MFLTS meeting at Mitre.
+
+- TODO SOFTunisia: Build cd gmm hmm incrementally
+Starting from step 0.
+Recall that the SOF Tunisia corpus was split into dev, eval and train folds.
+Machine CTELLONE was used for dev.
+Machine CTELLTWO was used for eval.
+Machines CTELLTHREE, CTELLFOUR and CTELLFIVE were used for train.
+The training fold  has 5097 files.
+Stage 0 has 25 files.
+Consolidate train  and human corrections stage 0.
+5122 files for training. 
+MFCC features are extracted from this data.
+CMVN Stats are computed for this data.
+Since we have stages 0-7 we loop over them now.
+For stage 1 we added another 25 files.
+There are now 5047 files in the training data set.
+Stage 2 add 125 files.
+There are now 5272 training files.
+Stage 3 had 99 files.
+There are 5371 training files at stage 3. 
+There are 100 new files in stage 4.
+There are 5471 training files at stage 4. 
+There are 174 new files in stage 5.
+There are 5645 training files at stage 5.
+There are 150 new files at stage 6.
+There are 5795 training files at stage 6.
+There are 149 new files at stage 7.
+There are 5944 training files at stage 7.
+
+The training fails at stage 3.
+I need to do this over by hand.
+
+I figured out that the problem was that I was skipping stage 1.
+I am rerunning starting at stage 1.
+
+Decoding the dev and eval sets was failing.
+I figured out that I had to delete the old cmvn.scp file.
+
+- GP + Yaounde Fix
+I'm starting from scratch.
+1. Data prep
+Several corpora get prepared:
+a. yaounde Recordings
+b. Yaounde Answers.
+c. Niger
+d. gp
+
+The yaounde Recordings and gp get concatenated for training.
+gp has a dev fold
+For testing, the Niger, gp tes and the central accord 515 get concatenated for test.
+2. Dictionary
+3. lang directory.
+4. lm
+5. extract mfcc
+6. train and decode mono
+
+- TODO Transgender Mandatory Training.
+
+** Goals for Monday:
+- TODO Westpoint: cd gmm hmm models.
+- TODO SOFTunisia: cd gmm hmm.
+- TODO GP + Yaounde: cd gmm hmm.
+- TODO Transgender Mandatory Training.
 * DAR <2017-06-14 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Skillport lesson 3.
@@ -29,7 +95,6 @@ Stage 2 add 100 files.
 The training fails at stage 2.
 I need to do this over by hand.
 - TODO Transgender Mandatory Training.
-
 
 ** Goals for Thursday:
 - TODO MFLTS meeting at Mitre.

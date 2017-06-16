@@ -1,3 +1,22 @@
+* My WAR <2017-06-16 Fri>
+**  Goals  set last Week:
+- TODO Skillport lesson 3.
+- DONE ARL Colloquium: Get title to Gorden Videen.
+- DONE ARL Coloquium: Prepare.
+- DONE TransApps: Connect to their server and transfer models.
+- TODO GP + Yaounde Fix: broken building steps at model tri2.
+- TODO: Westpoint: separate into native, nonnative, dev, eval, and train  folds and build cd gmm hmm system just on the Westpoint corpus.
+I still have not finished this!
+It is very tedious.
+- TODO SOFTunisia: Cycle 3 times through transcription process with Zac.
+- TODO SOFTunisia: chain model build with ivectors.
+
+** Goals for Next Week:
+- TODO Transapps: transfer more  models.
+- TODO Westpoint: cd gmm hmm
+- TODO GP + Yaounde cd gmm hmm
+- TODO SOFTunisia: cd gmm hmm
+- TODO Transgender Mandatory Training.
 * My WAR <2017-06-09 Fri>
 **  Goals set Last Week:
 - TODO Skillport lesson 3.
