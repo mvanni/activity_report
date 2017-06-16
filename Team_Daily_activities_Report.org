@@ -64,6 +64,8 @@ For testing, the Niger, gp tes and the central accord 515 get concatenated for t
 - TODO SOFTunisia: cd gmm hmm.
 - TODO GP + Yaounde: cd gmm hmm.
 - TODO Transgender Mandatory Training.
+- TODO Get models to Transapps.
+
 * DAR <2017-06-14 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Skillport lesson 3.
