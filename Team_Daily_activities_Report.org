@@ -1,3 +1,39 @@
+* DAR <2017-06-19 Mon>
+**  Goals for Monday set Friday:
+- TODO Westpoint: cd gmm hmm models.
+I have separated the data into native and nonnative folds.
+I also consolidated the native and nonnative train sets into one training set.
+I am currently training monophones on the native train set.
+I trained monophones only on the nonnative data,   but alignment failed.
+Thus, I won't train only on nonnative data.
+I trained monophones on both native and nonnative data.
+Tests:
+dev	native	44.76
+dev	nonnative	83.39
+eval	native	
+eval	nonnative	80.66
+
+- TODO SOFTunisia: cd gmm hmm.
+I am integrating the Westpoint corpus into the SOFTunisia build.
+I spent all afternoon working on the GALE corpus.
+I'd like to incorporate it into the SOFTunisia build.
+The GALE transcripts are in buckwalter.
+The original scripts are in utf8.
+I found the spot where the utf8 is converted into buckwalter.
+
+- TODO GP + Yaounde: cd gmm hmm.
+- TODO Transgender Mandatory Training.
+- TODO Get models to Transapps.
+
+
+** Goals for Tuesday:
+- TODO GALE: Get transcripts in UTF8.
+- TODO Incorporate GALE into SOFTunisia build.
+- TODO SOFTunisia: build cd gmm hmm.
+- TODO GP + Yaounde: cd gmm hmm.
+- TODO Transgender Mandatory Training.
+- TODO Get models to Transapps.
+
 * DAR <2017-06-16 Fri>
 **  Goals for Thursday set Wednesday:
 - DONE MFLTS meeting at Mitre.
