@@ -1,3 +1,35 @@
+* DAR <2017-06-22 Thu>
+** Goals for Monday:
+- TODO Investigate and prepare King Saud University corpus.
+- TODO GP + Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+- TODO SofTunisia: Incorporate Westpoint and KSU.
+- TODO Transgender Mandatory Training.
+
+* DAR <2017-06-21 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Investigate King Saud University corpus.
+Total number of recordings (.flac files):
+110929
+I checked one file with the file command and got:
+/mnt/corpora/LDC2014S02/KSU_Arabic_Speech_DB/data/Males/Session_1/NS1/1.Office/10.Questions_1/Computer_Mic_Front.flac: FLAC audio bitstream data, 16 bit, stereo, 48 kHz, 1659360 samples
+16bit
+stereo
+Sampling rate 48khz
+There is a major division between Saudis and Non Saudis.
+
+- TODO GP + Yaounde: build cd gmm hmm
+This is now going well.
+I just had to concentrate a little on this task.
+
+- TODO Transapps: Get models to transapps.
+
+Goals for Monday:
+- TODO Investigate and prepare King Saud University corpus.
+- TODO GP + Yaounde: Chain models?
+- TODO Transapps: Get models to transapps.
+- TODO SOFTunisia: Incorporate KSU and Westpoint
+
 * DAR <2017-06-20 Tue>
 **  Goals for Tuesday set Monday:
 - TODO GALE: Get transcripts in UTF8.
@@ -14,8 +46,7 @@ I listened to some GALE Arabic recordings -- they are from broadcast news.
 - TODO Investigate King Saud University corpus.
 - TODO GP + Yaounde: build cd gmm hmm
 - TODO Transapps: Get models to transapps.
-
-* DAR <2017-06-19 Mon>
+ DAR <2017-06-19 Mon>
 **  Goals for Monday set Friday:
 - TODO Westpoint: cd gmm hmm models.
 I have separated the data into native and nonnative folds.
