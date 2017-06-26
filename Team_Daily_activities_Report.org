@@ -1,3 +1,50 @@
+* DAR <2017-06-26 Mon>
+** Goals for Monday set Thursday:
+- TODO Investigate and prepare King Saud University corpus.
+Split into dev, eval and train folds by hand.
+YE: 15 male speakers.
+10 for train: NS1, NS2, ... NS10
+3 for eval: 
+2 for dev: NS32 NS33
+SY: 9 male speakers.
+1 for dev: NS43
+1 for eval: NS44
+7 for train: NS11	NS14	NS17	NS21	NS25	NS27	NS35	
+EG: 13 male speakers.
+2 for dev:       NS36	NS40	
+2 for eval:       NS46	NS153	
+9 for train: NS12	NS19	NS22	NS23	:NS24	:NS28	:NS29	:NS30	:NS31	 
+DZ: 
+1 for dev: NS151
+1 for eval: NS154
+2 for train: NS16	NS47	
+SD: 
+1 for dev: NS42
+1 for eval: NS52
+2 for  train: NS18	NS39	
+
+- GP + Yaounde: build chain models?
+
+- TODO Transapps: Get models to transapps.
+- TODO SofTunisia: Incorporate Westpoint and KSU.
+- DONE Transgender Mandatory Training.
+
+** WAR:
+John Morgan is investigating a new corpus of spoken Modern Standard Arabic for use as data for developing a baseline Speech Recognition System for African Accented Arabic. 
+The corpus was collected by the King Saud University and includes speakers from 28 nationalities. 
+John Morgan also has a extra curricular activity to report. 
+He and Dr. Phillip David completed the Garret County Grand Fondo "Diabolical Double" for the second year in a row on a tandem bicycle. 
+The Diabolical Double is a 200km ride with 16800 feet of climbing. 
+Dr. David rode as captain and Morgan as the stoker of the tandem.
+Dr. David and Morgan lower their time from last year by 1 hour by finishing in 12.5 hours.
+
+** Goals for Tuesday:
+- TODO Make folds for KSU corpus.
+- GP + Yaounde: build chain models?
+
+- TODO Transapps: Get models to transapps.
+- TODO SofTunisia: Incorporate Westpoint and KSU.
+
 * DAR <2017-06-22 Thu>
 ** Goals for Monday:
 - TODO Investigate and prepare King Saud University corpus.
@@ -5,6 +52,7 @@
 - TODO Transapps: Get models to transapps.
 - TODO SofTunisia: Incorporate Westpoint and KSU.
 - TODO Transgender Mandatory Training.
+
 
 * DAR <2017-06-21 Wed>
 ** Goals for Wednesday set Tuesday:
