@@ -1,3 +1,59 @@
+* DAR <2017-06-27 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Make folds for KSU corpus.
+Split into dev, eval and train folds by hand.
+country	dev number	dev speakers	eval number	eval speakers	train number	train speakers	total
+YE	2	NS32 NS33	2	NS13 NS15	10	NS1 NS2 NS3 NS4 NS5 NS6 NS7 NS8 NS9 NS10	15
+SY	1	NS43	1	NS44	7	NS11	NS14	NS17	NS21	NS25	NS27	NS35	9
+EG	2	NS36 NS40	2	NS46	NS153	9	NS12	NS19	NS22	NS23	NS24	NS28	NS29	NS30	NS31	13
+DZ	0		0		4	NS151 NS154 NS16 NS47	4
+SD 	0		0		4	NS18 NS52 NS42 NS39	4
+TN	0		0		4	NS155 NS156 NS26 NS152	4
+LB	0		0		1	NS41	1
+PL	0		0		1	NS45	1
+PK	2	NS211 NS212	2	NS213 NS214	4	NS201 NS205 NS206 NS209	8
+IN	1	NS220	2	NS221 NS228	6	NS202 NS203 NS204 NS207 NS208 NS210	9
+ML	0		0		2	NS215 NS230	2
+AF	0		0		4	NS237 NS217 NS216 NS248	4
+NP	1	NS218	1	NS219	5	NS222 NS223 NS224 NS225 NS229	7
+NG	0		0		3	NS226 NS239 NS245	3
+UG	0		0		3	NS227 NS242 NS249	3
+BD	0	0	1	NS231	1
+AG	0		0		1	NS232	1
+ID	1	NS233	1	NS238	7	NS240 NS241 NS244 NS259 NS262 NS263 NS264	9
+BG	0		0		2	NS234 NS261	2
+RS	0		0		1	NS235	1
+KE	0		0		2	NS236 NS253	2
+PH	0		0		2	NS254 NS256	2
+GW	0		0		1	NS255	1
+BJ	0		0		1	NS243	1
+CF	0		0		1	NS246	1
+BN	0		0		1	NS247	1
+CI	0		0		1	NS250	1
+SN	0		0		1	NS251	1
+LR	0		0		1	NS252	1
+TH	0		0		1	NS257	1
+TG	0		0		1	NS260	1
+SA	4	S2 S3 S4 S5	8	S10 S11 S12 S13 S14 S15 S16 S17	139		152
+
+Finished making folds? 
+- GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+- TODO SofTunisia: Incorporate Westpoint and KSU.
+I worked most of the afternoon on this.
+There werr bugs in the Westpoint data prep scripts.
+I'm almost happy with this now.
+
+
+** Goals for Wednesday:
+- TODO Meeting with Voxtek (10:15 )
+- TODO SofTunisia: Build cd gmm hmm with SOFTunisia and Westpoint.
+- TODO Get some draft transcripts of Answers to Zaq.
+- GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+- TODO KSU: Demux data.
+- TODO KSU: downsample.
+
 * DAR <2017-06-26 Mon>
 ** Goals for Monday set Thursday:
 - TODO Investigate and prepare King Saud University corpus.
@@ -22,6 +78,18 @@ SD:
 1 for dev: NS42
 1 for eval: NS52
 2 for  train: NS18	NS39	
+TN: 4 male speakers.
+1 for dev: NS155
+1 for eval: NS156
+2 for train: NS26 NS152
+LB: 2 male speakers.
+1 for train.
+PL: 1 male speaker.
+1 for train.
+PK: 8 speakers.
+2 for dev: NS211 NS212
+2 for eval: NS213 NS214
+4 for train: NS201	     NS205	NS206	NS209	
 
 - GP + Yaounde: build chain models?
 
@@ -52,7 +120,6 @@ Dr. David and Morgan lower their time from last year by 1 hour by finishing in 1
 - TODO Transapps: Get models to transapps.
 - TODO SofTunisia: Incorporate Westpoint and KSU.
 - TODO Transgender Mandatory Training.
-
 
 * DAR <2017-06-21 Wed>
 ** Goals for Wednesday set Tuesday:
