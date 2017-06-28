@@ -1,3 +1,42 @@
+* DAR <2017-06-28 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Meeting with Voxtek (10:15 )
+- TODO SofTunisia: Build cd gmm hmm with SOFTunisia and Westpoint.
+There was still a bug in the Westpoint prep scripts.
+The problem is that there are 2 sub corpora in the Westpoint corpus.
+The nonnative recordings have a transcript in an arabtex file with a .txt file extention.
+The transcript appears on one line in those files.
+
+I'm restarting the building process.
+I think everything is good for the softunisia data prep.
+The westpoint conversion to 16k looks good.
+There wer still bugs in the westpoint data prep scripts.
+I think I've squashed them now.
+There were problems with the processing of the subs data for the lm.
+The OOVs were not being considered.
+The dictionary building needed some work too.
+
+As I am preparing to leave, I've started training monophones.
+I have all of SOFTunisia and most of Westpoint in training. 
+Before I leave I'm going to start the tri1 training.
+The monophone training finished successfully.
+I started the alignment  with monophones and a bug surfaced.
+The utt2spk file for the training data was empty.
+I fixed this and restarted.
+- TODO Get some draft transcripts of Answers to Zaq.
+- GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+- TODO KSU: Demux data.
+- TODO KSU: downsample.
+
+** Goals for  Thursday:
+- TODO SOFTunisia: CD GMM HMM on softunisia and westpoint.
+- TODO GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+- TODO KSU: Demux data.
+- TODO KSU: downsample.
+- TODO Mandatory training.
+
 * DAR <2017-06-27 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Make folds for KSU corpus.
@@ -43,7 +82,6 @@ Finished making folds?
 I worked most of the afternoon on this.
 There werr bugs in the Westpoint data prep scripts.
 I'm almost happy with this now.
-
 
 ** Goals for Wednesday:
 - TODO Meeting with Voxtek (10:15 )
