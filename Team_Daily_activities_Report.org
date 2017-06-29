@@ -1,3 +1,46 @@
+* DAR <2017-06-29 Thu>
+** Goals for  Thursday set Wednesday:
+- TODO SOFTunisia: CD GMM HMM on softunisia and westpoint.
+Still more bugs.
+For some reason the training data subsetting script is failing.
+It somehow deletes the utt2spk file.
+I am skipping the subsetting step.
+I'm going to train on all of the training data from the beginning.
+Interesting bug:
+I ran into yet another bug.
+The alignment was failing again.
+I looked carefully at the log file.
+There wer mfcc vectors missing.
+The mfcc extractor is pretty stupid.
+It uses the final directory name as a label.
+I had my data arranged by corpus like:
+westpoint/train
+softunisia/train
+When I run the mfccc extractor on these directories the later one hozes the previous one.
+This is stupid.
+Anyway ...
+I need to go back and rename my directory structures.
+I am renaming westpoint/train to westpoint_train.
+
+I ran all the basic cd gmm hmm steps up to tri3b.
+I am currently trying to set up decoding.
+
+- TODO GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+- TODO KSU: Demux data.
+I found a way to do this with sox.
+- TODO KSU: downsample.
+I can do this at the same time as demuxing.
+- DONE Mandatory training.
+I did the records management training.
+
+** Goals for Friday:
+- TODO KSU: Demux and downsample.
+- TODO SOFTunisia: Chain models.
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+
 * DAR <2017-06-28 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Meeting with Voxtek (10:15 )
