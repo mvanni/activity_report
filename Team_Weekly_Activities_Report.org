@@ -1,3 +1,28 @@
+* My WAR <2017-06-30 Fri>
+
+** Goals set Last Week:
+- TODO Transapps: transfer more  models.
+- DONE Westpoint: cd gmm hmm
+I still have to fix the eval data set and decode.
+
+- TODO GP + Yaounde cd gmm hmm
+- TODO SOFTunisia: cd gmm hmm
+I am working on the King Saud Corpus that I will eventually incorporate into the SOFTunisia build.
+- DONE Transgender Mandatory Training.
+I also did the Records management training.
+** WAR:
+John Morgan is preparing the King Saud University (KSU) corpus of spoken Modern Standard Arabic.
+Some preparation steps include: demuxing stereo to mono, converting transcript ext formats and grouping speakers by country. 
+The KSU corpus will be used to develop a baseline Saudi ASR system then experiments will be performed with the data from the speakers from the non Saudi countries. 
+
+** Goals for Next Week:
+- TODO KSU: Prepare  corpus for processing with kaldi.
+- TODO SOFTunisia: Chain models.
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models.
+- TODO Transapps: Get models to transapps.
+- TODO Mandatory training.
+
 * My WAR <2017-06-16 Fri>
 **  Goals  set last Week:
 - TODO Skillport lesson 3.
