@@ -1,3 +1,35 @@
+* DAR <2017-06-30 Fri>
+** Goals for Friday set Thursday:
+- TODO KSU: Demux and downsample.
+Splitting the data into dev, eval and train and by country.
+I made progress on this.
+1. Get the rtf files
+Count all the rtf files with the following command:
+find /mnt/corpora/LDC2014S02/KSU_Arabic_Speech_DB/data/ -type f -name "*rtf" | wc -l
+there are 13072 rtf files.
+BTW: this command took around a minute to run.
+I chose the speakers for each fold by hand.
+This should be easy to modify if we want to change the folds later.
+There are 110929 flac files.
+With scripts I wrote 1 file with the following fields:
+speaker id	country	fold	rtf file
+I'd like to have a file with the extra field flac file:
+speaker id	country	fold	rtf file	flac file
+
+I spent the whole afternoon working on a script to copy the flac and txt files to disk.
+
+- TODO SOFTunisia: Chain models.
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+
+** Goals for Monday:
+- TODO KSU: write scripts to copy rtf and flac files to disk. 
+- TODO SOFTunisia: Chain models.
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models?
+- TODO Transapps: Get models to transapps.
+
 * DAR <2017-06-29 Thu>
 ** Goals for  Thursday set Wednesday:
 - TODO SOFTunisia: CD GMM HMM on softunisia and westpoint.
