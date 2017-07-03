@@ -1,3 +1,25 @@
+* DAR <2017-07-03 Mon>
+** Goals for Monday set Friday:
+- TODO KSU: write scripts to copy rtf and flac files to disk. 
+Made a little progress on this.
+There are flac files that are missing.
+I put some code in my script that avoids crashing and error messages from sox when files are missing.
+
+- TODO SOFTunisia: Chain models.
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models?
+I worked on gp - yaounde today.
+There were some problems with test data.
+Some weirdness training the monophones too.
+Why does it take so long to train monophones?
+
+- TODO Transapps: Get models to transapps.
+
+** Goals for Wednesday:
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models?
+- TODO Mandatory training.
+ 
 * DAR <2017-06-30 Fri>
 ** Goals for Friday set Thursday:
 - TODO KSU: Demux and downsample.
