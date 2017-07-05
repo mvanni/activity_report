@@ -1,3 +1,23 @@
+* DAR <2017-07-05 Wed>
+**  Goals for Wednesday set Monday:
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models?
+I am still stuck on decoding the monophones.
+There is an error:
+ERROR: FstImpl::ReadHeader: FST not of type vector: <unspecified>
+Something seems to be wrong with the way the  fst is being made.
+
+- TODO Mandatory training.
+
+- ksu: Apparently, there are no transcripts for session 3.
+It looks like I have utf-8 transcripts for about 25k utterances.
+
+** Goals for Thursday:
+- TODO GP + Yaounde: Figure out what is wrong with the decoding fst.
+- TODO SOFTunisia: Get transcripts to Zac.
+- TODO KSU: Create transcripts in folds for non-noise utterances.
+- TODO Mandatory training.
+
 * DAR <2017-07-03 Mon>
 ** Goals for Monday set Friday:
 - TODO KSU: write scripts to copy rtf and flac files to disk. 
