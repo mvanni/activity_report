@@ -1,3 +1,25 @@
+* DAR <2017-07-06 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO GP + Yaounde: Figure out what is wrong with the decoding fst.
+The decoding runs on the gpu machine.
+I am running into a problem when I run the scripts that rebuild the lexicon.
+I think it has to do with the option 	--position-dependent-phones false \
+that I use  with the prepare_lang script.
+I restarted at the prepare lang   step with the option set to true.
+The monophone training is extremely slow.
+- TODO SOFTunisia: Get transcripts to Zac.
+- TODO KSU: Create transcripts in folds for non-noise utterances.
+Some rtf files are actually text files encoded with the Arabic Windows CP1256 code page.
+Other files are real rtf files and the text they contain is in UTF-8.
+
+- TODO Mandatory training.
+
+** Goals for Friday:
+- TODO Mandatory training.
+- TODO KSU: Convert rtf files from CP1256 to UTF-8.
+- TODO GP + Yaounde: Pron probs
+- TODO SOFTunisia: Get transcripts to Zac.
+
 * DAR <2017-07-05 Wed>
 **  Goals for Wednesday set Monday:
 - TODO SOFTunisia: Get transcripts for Zak.
