@@ -10,7 +10,12 @@ The monophone training is extremely slow.
 - TODO SOFTunisia: Get transcripts to Zac.
 - TODO KSU: Create transcripts in folds for non-noise utterances.
 Some rtf files are actually text files encoded with the Arabic Windows CP1256 code page.
+I use iconv -f CP1256 INFILE -t UTF-8 > OUTFILE
+to write the new file in UTF-8.
 Other files are real rtf files and the text they contain is in UTF-8.
+I use 
+catdoc -s UTF-8 -w INFILE > OUTFILE
+to get the text out of these files.
 
 - TODO Mandatory training.
 
