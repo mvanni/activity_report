@@ -1,3 +1,33 @@
+* My War <2017-07-07 Fri>
+** Goals set Last Week:
+- TODO KSU: Prepare  corpus for processing with kaldi.
+I thought I'd be done with this a long time ago.
+There is a lot of tedious work to do on this corpus.
+The problem is that transcripts are  in different formats.
+I'm not even sure the text files are transcripts.
+some of them might be the prompts and the recordings are not actually transcribed.
+
+- TODO SOFTunisia: Chain models.
+- TODO SOFTunisia: Get transcripts for Zak.
+- TODO GP Yaounde: build chain models.
+I worked a lot on GP Yaounde this week.
+I have decided to follow very closely the mini librispeech recipe.
+This recipe is supposed to have the latest advances in kaldi.
+I noticed something new that I ignored previously.
+The lang and dict directories some times have a _nosp appended to their names.
+Unfortunately, I have been ignoring this.
+I now realize that in the pron prob steps this becomes important.
+
+- TODO Transapps: Get models to transapps.
+- TODO Mandatory training.
+I started on Constitution Day training.
+
+** Goals for Next Week:
+- TODO Mandatory training.
+- TODO GP Yaounde: Try to follow the mini librispeech  very closely. Maybe make 3 LMs (small, medium and large). Pay close attention to the nosp string appended to directory names. There is a reason they are there. They go away after the pron prob step.
+-TODO SOFTunisia: Get transcripts to Zac.
+- TODO Transapps: Give them beeter models.
+
 * My WAR <2017-06-30 Fri>
 
 ** Goals set Last Week:
