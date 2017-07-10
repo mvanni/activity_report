@@ -1,3 +1,96 @@
+* DAR <2017-07-10 Mon>
+**  Goals for Monday set Friday:
+- TODO Mandatory Training.
+- TODO GP Yaounde: Fix LM Rescore command line.
+lmrescoring requires more than 1 lm.
+I do not have another lm right now, so I'm going to skip lmrescoring.
+
+Here are the results for decoding the test set with the cd gmm hmm model sets:
+find exp -type f -name "best_wer" | xargs cat | grep WER | sort -gr
+%WER 75.17 [ 24723 / 32888, 923 ins, 5496 del, 18304 sub ] exp/mono/decode_test/wer_13_0.5
+%WER 45.50 [ 14964 / 32888, 1033 ins, 3036 del, 10895 sub ] exp/tri3b/decode_test/wer_16_0.5
+%WER 39.51 [ 12993 / 32888, 978 ins, 2274 del, 9741 sub ] exp/tri1/decode_test/wer_14_0.5
+%WER 37.13 [ 12211 / 32888, 978 ins, 2021 del, 9212 sub ] exp/tri2b/decode_test/wer_14_0.5
+
+The best results are with the tri2b models.
+I do not understand why the tri3b speaker adapted models are not better than the tri2b mllt lda models.
+Even the tri1 models are better than the tri3b models.
+
+I am moving on to chain model training.
+
+Speed and volume perturbed versions of the training data are created with sox.
+The sp affix stands for speed perturbed.
+sp used to stand for short pause.
+High resolution mfcc features are extracted from this data.
+A system is trained on the high resolution data to get an lda+mllt  transform.
+The lda+mllt transform is used to produce the diagonal GMM.
+The diagonal UBM is trained.
+The ivector extractor is trained.
+Ivectors are extracted online. on the speed perturbed high resoluiton training data
+Ivectors are extracted from the non-perturbed test data.
+Data is speed perturbed again but at low resolution.
+For alignment?
+Alignments are produced on the speed perturbed low resolution training data.
+I file specifying the model topology is written.
+Apparently, chain models have a special topology.
+The alignments are reproduced as lattices. 
+The tree is rebuilt.
+The config file for chain mdoel training is written.
+
+
+
+- Softunisia:
+I am running similar stages for SOFTunisia and gp + Yaounde.
+Here are cd gmm hmm results for SOFTunisia:
+
+%WER 39.12 [ 34670 / 88622, 2153 ins, 4785 del, 27732 sub ] exp/mono/decode_train/wer_10_0.5
+%WER 34.45 [ 30527 / 88622, 1735 ins, 3780 del, 25012 sub ] exp/tri1/decode_train/wer_13_1.0
+%WER 27.52 [ 24391 / 88622, 1794 ins, 2407 del, 20190 sub ] exp/tri3b/decode_train/wer_15_1.0
+%WER 25.99 [ 23035 / 88622, 1682 ins, 1981 del, 19372 sub ] exp/tri2a/decode_train/wer_15_1.0
+%WER 22.11 [ 19593 / 88622, 1700 ins, 1312 del, 16581 sub ] exp/tri2b/decode_train/wer_14_1.0
+
+Again the best results are with tri2b not tri3b.
+These numbers are much lower than the GP Yaounde models.
+Why?
+I am training the monophones on all the training data.
+
+** WAR:
+John Morgan is investigating a new kind of acoustic model for Automatic Speech Recognition (ASR) called chain models. 
+His understanding is that chain models combine Time Delayed Neural Networks (TDNN),  Long Short-term Memory models (LSTM), i-vectors and a new objective function. 
+This week he is trying to understand why the i-vectors are trained with 3-way speed perturbed waveform data. 
+Morgan is interested in chain models because preliminary experiments he has performed yield results significantly better than the subspace gaussian mixture models (SGMM) which until recently were the best performers. 
+
+** Goals for Tuesday:
+- TODO Mandatory Training: Constitution Day Training
+- TODO GP + Yaounde: Chain Models.
+- TODO SofTunisia:  Chain models.
+
+* DAR <2017-07-07 Fri>
+**  Goals for Friday set Thursday:
+- TODO Mandatory training.
+I started on the Constitution Day training.
+- TODO KSU: Convert rtf files from CP1256 to UTF-8.
+I get arabic when I run catdoc -w INFILE > OUTFILE 
+from the command line, but I get question marks instead when I run it from a perl script.
+I'm trying to set binmode in the perl script.
+binmode(STDIN, ":utf8");
+binmode(STDOUT, ":utf8");
+I am moving to doing this in bash scripts.
+
+- TODO GP + Yaounde: Pron probs.
+The cd gmm hmm build finished successfully on the GPU machine.
+The WERs were not good.
+Starting over.Following minilibrispeech.
+I have to look very carefully at the arguments to the scripts.
+Notice the nosp string appended to the lang directories.
+After the pron probs script run the output lang directory no longer has the nosp.
+  
+- TODO SOFTunisia: Get transcripts to Zac.
+
+** Goals for Monday:
+- TODO Mandatory Training.
+- TODO GP Yaounde: Fix LM Rescore command line.
+
 * DAR <2017-07-06 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO GP + Yaounde: Figure out what is wrong with the decoding fst.
