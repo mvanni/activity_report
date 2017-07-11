@@ -1,3 +1,94 @@
+* DAR <2017-07-11 Tue>
+** Goals for Tuesday set Monday:
+- TODO Mandatory Training: Constitution Day Training
+- TODO GP + Yaounde: Chain Models.
+List of steps for building chain models:
+A utt2dur file is written.
+A duration for each utterance.
+wav-to-duration.cc:92) Mean duration was 4.12628, min and max durations were 1.21725, 19.2263
+I don't think this utt2dur file gets used, it only gets written because of the speed peertubation that follows.
+Speed and volume perturbed versions of the training data are created with sox.
+speed factors:
+0.9
+1.1
+The speed perturbed versions are combined.
+We end up with over 42k utterances.
+The new files are written to data/train_sp
+
+A copy of the data/train_sp is made and named data/train_sp_hires
+hires stands for high resolution.
+High resolution mfcc features are extracted from this data.
+Here is the config file for the mfcc hires extraction:
+# config for high-resolution MFCC features, intended for neural network training
+# Note: we keep all cepstra, so it has the same info as filterbank features,
+# but MFCC is more easily compressible (because less correlated) which is why 
+# we prefer this method.
+--use-energy=false   # use average of log energy, not energy.
+--num-mel-bins=40     # similar to Google's setup.
+--num-ceps=40     # there is no dimensionality reduction.
+--low-freq=20     # low cutoff frequency for mel bins... this is high-bandwidth data, so
+                  # there might be some information at the low end.
+--high-freq=-400 # high cutoff frequently, relative to Nyquist of 8000 (=7600) 
+
+Volume perturbation is performed on the high resolution data.
+cmvn stats are also computed for the high resolution data.
+Selection of segments is performed.
+Segments in the high resolution data that were already in the original data. 
+I do not understand this.
+We end up with 14k utterances -- probably the same original utterances before the perturbation.
+It looks like the reason we generate the high resolution data is to train a lda + mllt transform that will produce the diagonal GMM for the diagonal UBM.
+Here is data printed after the lda+mllt transform is computed:
+exp/nnet3/tri5: nj=4 16.18h data log-like=-51.21 states=2308 gauss=4400 tree-impr=5.19 lda-sum=18.28 mllt:impr,logdet=1.13,1.48
+Notice that only 18 hours of dta is being used.
+
+The diagonal UBM is trained.
+The diagonal UBM is trained on a quarter of the training data.
+The UBM is trained to have 512 gaussians.
+The UBM is one big gmm.
+4 passes of training are performed.
+
+The ivector extractor is trained.
+the ivector extractor is trained on all the training data.
+The ivectors have a default dimension of 100.
+
+Ivectors are extracted online. 
+Ivectors are extracted from the speed perturbed high resolution training data.
+There is a strange data setup at this point.
+Utterances are put into pairs.
+Each pair is considered a separate speaker.
+Apparently, i-vector extraction  works better when there are many speakers?
+There end up being many diverse i-vectors.
+The ivector is set to 0 at the beginning of each pseudo speaker (utterance pair).
+Luckily, there are scripts that do all this.
+Here is interesting trace: 
+utils/data/modify_speaker_info.sh: copied data from data/train_sp_hires to exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2, number of speakers changed from 555 to 21546
+21k speakers.
+
+Ivectors are extracted from the non-perturbed test data.
+
+Data is speed perturbed again but at low resolution.
+Alignments are produced on the speed perturbed low resolution training data.
+We used the tri3b models to do alignment, that is why we did low resolution speed perturbation. 
+
+A file specifying the model topology is written.
+Apparently, chain models have a special topology.
+The alignments are reproduced as lattices. 
+The tree is rebuilt.
+The config file for chain mdoel training is written.
+
+Alignment lattices are generated with alternate pronunciations.
+A tree is built.
+The config file for chain model training is written.
+A phone language model is created.
+
+
+- TODO SofTunisia:  Chain models.
+
+** Goals for Wednesday:
+- TODO Mandatory training.
+- TODO SofTunisia: Chain models. Why are alignments made with tri3b models and with speed perturbed data?
+- GP + Yaounde: Improve the cd gmm hmm WER results before moving on to chain models.
+
 * DAR <2017-07-10 Mon>
 **  Goals for Monday set Friday:
 - TODO Mandatory Training.
