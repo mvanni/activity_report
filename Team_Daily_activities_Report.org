@@ -1,3 +1,29 @@
+* DAR <2017-07-13 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Mandatory Training.
+- TODO SofTunisia: Change to only train and evaluate on native data.
+Monophone scores went down slightly, but not as much as I expected. 
+%WER 47.30 [ 2914 / 6161, 206 ins, 224 del, 2484 sub ] exp/mono/decode_eval/wer_10_1.0
+
+I need a Tunisian test set.
+What about the Tunisians from the KSU corpus?
+There are 4 Tunisians in the KSU corpus.
+NS26
+NS152
+NS155
+NS156
+
+I spent the whole day preparing the KSU Tunisian speaker data.
+I end up with 512 utterances.
+It looks right now like I have transcripts for each utterance.
+I need an Arabic speaker to verify that the transcripts correspond to the utterances.
+
+- TODO GP + Yaounde: Improve cd gmm hmm results before moving on to chain models.
+
+** Goals for Friday:
+- TODO Mandatory Training.
+- TODO Incorporate KSU Tunisian speakers into SofTunisia as test data.
+
 * DAR <2017-07-12 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Mandatory training.
