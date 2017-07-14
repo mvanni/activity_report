@@ -1,3 +1,37 @@
+* My WAR <2017-07-14 Fri>
+** Goals set Last Week:
+- TODO Mandatory training.
+- TODO GP Yaounde: Try to follow the mini librispeech  very closely. Maybe make 3 LMs (small, medium and large). Pay close attention to the nosp string appended to directory names. There is a reason they are there. They go away after the pron prob step.
+I backed off on this.
+I don't think I'm at the point yet where this is relevant.
+
+-TODO SOFTunisia: Get transcripts to Zac.
+- TODO Transapps: Give them beeter models.
+
+
+- KSU: 
+I have spent the last 2 days preparing the data from the 2 Tunisian speakers in the ksu corpus.
+I plan to use this data as a test set for our system trained on the SOFTunis corpus.
+This is an ideal situation.
+We will have a Tunisian train set and a Tunisian test set and they were collected separately.
+No overlap of speakers or prompts.
+
+There are 4 speakers: NS26, NS152, NS155 and NS156.
+This preparation step is difficult because the transcript files are not uniform.
+They all have .rft extentions, but some have UTF-8 encoding, others and have CP1256 encoding and who knows what other encodings.
+I have been writing scripts to extract the text from the .rtf transcript files with catdoc.
+This was very frustrating  because the scripts would work as expected if I ran them from the command line, but they would produce junk if I ran them from other scripts.
+I finaly found out that I was sourcing a kaldi script that set the following variable:
+export LC_ALL=C
+With this variable set to C, data is only written by catdoc in ascii.
+Things work when I set this variable to en_US.UTF-8
+
+** Goals for Next Week:
+- TODO Mandatory Training.
+- TODO KSU: prepare  the data from tunisian speakers for a good test set.
+- TODO SOFTunisia: Build  a cd gmm only on native training data.
+- TODO SOFTunisia: Test the cd gmm hmm system on the new KSU Tunisian test set.
+
 * My War <2017-07-07 Fri>
 ** Goals set Last Week:
 - TODO KSU: Prepare  corpus for processing with kaldi.
