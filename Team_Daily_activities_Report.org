@@ -1,3 +1,25 @@
+* DAR <2017-07-17 Mon>
+** Goals for Next Week:
+- TODO Mandatory Training.
+
+- DONE KSU: prepare  the data from tunisian speakers for a good test set.
+Zac took a look at the transcripts and recordings.
+As I feared, the  recordins with questions in the file names are not transcripts of what the speaker said. They are the questions used to prompt answers.
+Everything else looks like transcripts of recited speech.
+I got rid of English digits and punctuation. 
+- TODO SOFTunisia: Build  a cd gmm only on native training data.
+- TODO SOFTunisia: Test the cd gmm hmm system on the new KSU Tunisian test set.
+Heere are the WER results for the first test using monophones:
+%WER 89.14 [ 1831 / 2054, 38 ins, 435 del, 1358 sub ] exp/mono/decode_test/wer_10_0.5
+Better transcripts should improve this, but it is what it is.
+I guess there is a lot of room for improvement.
+
+** Goals for Tuesday:
+- TODO Mandatory Training:
+- TODO SOFTunisia: Test on the cleaned ksu data.
+- TODO SOFTunisia: Get the cd gmm hmm build and ksu test set running on the GPU machine.
+- TODO GP + Yaounde: Build the system similar to what Transaps is using.
+
 * DAR <2017-07-13 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Mandatory Training.
