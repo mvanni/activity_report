@@ -1,3 +1,45 @@
+* DAR <2017-07-18 Tue>
+** Goals for Tuesday set Monday:
+- TODO Mandatory Training:
+- TODO SOFTunisia: Test on the cleaned ksu data.
+Here are the WER results for each model set up to tri3b:
+find -f -name "best_wer" | xargs cat | grep WER | sort -gr
+%WER 89.14 [ 1831 / 2054, 38 ins, 435 del, 1358 sub ] exp/mono/decode_test/wer_10_0.5
+%WER 87.73 [ 1802 / 2054, 24 ins, 455 del, 1323 sub ] exp/tri1/decode_test/wer_16_1.0
+%WER 86.76 [ 1782 / 2054, 44 ins, 401 del, 1337 sub ] exp/tri3b/decode_eval/wer_17_1.0
+%WER 85.98 [ 1766 / 2054, 63 ins, 378 del, 1325 sub ] exp/tri2a/decode_test/wer_16_0.5
+%WER 85.54 [ 1757 / 2054, 44 ins, 382 del, 1331 sub ] exp/tri2b/decode_test/wer_17_1.0
+
+- DONE SOFTunisia: Get the cd gmm hmm build and ksu test set running on the GPU machine.
+I have it running, but results are even worse than on the laptop:
+%WER 93.97 [ 1635 / 1740, 25 ins, 183 del, 1427 sub ] exp/mono/decode_test/wer_12_1.0
+I think I might be using an older version of the data or a corrupted version.
+
+I am rerunning The cd gmm hmm build with Zac's corrections to the the Answers from CTELLFIVE.
+
+- TODO GP + Yaounde: Build the system similar to what Transaps is using.
+I have chain models building now.
+The build fails on the second iteration.
+I think the problem is with memory on the GPU.
+I am rerunning the chain model training with the following change:
+Before:
+--trainer.num-chunk-per-minibatch=256,128,64
+After:
+--trainer.num-chunk-per-minibatch=128,64,32
+
+Tomorrow I'll know if this works.
+
+- Babel: I want to run the babel_multilang recipe.
+It looks like before you run babel_multilang you need to run babel.
+I actually have the babel cd gmm hmm build running now.
+
+** Goals for Wednesday:
+- TODO Mandatory Training:
+- TODO GP + Yaounde: Get chain models working.
+- ToDO SOFTunisia: Run cd gmm hmm with Zac's Answers from CTELLFIVE.
+- TODO SOFTunisia: Produce rough draft transcripts for next chunk of Answers.
+- TODO Babel: Move from cd gmm hmm to babel multilang.
+
 * DAR <2017-07-17 Mon>
 ** Goals for Next Week:
 - TODO Mandatory Training.
