@@ -32,7 +32,7 @@ Tomorrow I'll know if this works.
 - Babel: I want to run the babel_multilang recipe.
 It looks like before you run babel_multilang you need to run babel.
 I actually have the babel cd gmm hmm build running now.
-
+Yenda just answered me, and yes, the babel system needs to be guilt first.
 ** Goals for Wednesday:
 - TODO Mandatory Training:
 - TODO GP + Yaounde: Get chain models working.
