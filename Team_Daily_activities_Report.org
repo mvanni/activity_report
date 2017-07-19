@@ -1,3 +1,51 @@
+* DAR <2017-07-19 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Mandatory Training:
+I am reading the 508 compliant version of Constitution Day training.
+This is a 131 page document.
+Does everyone actually do this training?
+- TODO GP + Yaounde: Get chain models working.
+The training failed on iteration 7.
+The training is suppposed to run for 41 iterations.
+Training finished.
+Decoding now.
+
+- ToDO SOFTunisia: Run cd gmm hmm with Zac's Answers from CTELLFIVE.
+This is more involved than I thought originally.
+I have to add code to my scripts that processs the training data.
+My previous scripts only assumed that I would be training on files containing Recordings_Arabic in their names.
+
+- TODO SOFTunisia: Produce rough draft transcripts for next chunk of Answers.
+- TODO Babel: Move from cd gmm hmm to babel multilang.
+The tri5 training is finished for Lithuanian.
+Now what?
+
+There is a multilang script under nnet2.
+Here is the comment at the beginning of the script:
+# train_multilang2.sh is for multi-language training of neural nets.  It
+# takes multiple egs directories which must be created by get_egs2.sh, and the
+# corresponding alignment directories (only needed for training the transition
+# models).
+
+# for the n languages, we share all the hidden layers but there are separate
+# final layers.  On each iteration of training we average the hidden layers
+# across all jobs of all languages, but average the parameters of the final,
+# output layer only within each language.  The script starts from a partially
+# trained model from the first language (language 0 in the directory-numbering
+# scheme).  See egs/rm/s5/local/online/run_nnet2_wsj_joint.sh for example.
+#
+# This script requires you to supply a neural net partially trained for the 1st
+# language, by one of the regular training scripts, to be used as the initial
+# neural net (for use by other languages, we'll discard the last layer); it
+# should not have been subject to "mix-up" (since this script does mix-up), or
+# combination (since it would increase the parameter range to a too-large value
+# which isn't compatible with our normal learning rate schedules).
+
+** Goals for Thursday:
+- TODO Mandatory training.
+- TODO GP + Yaounde: Share models (tri3b and chain) with Transapps.
+- TODO Babel: Investigate multilang training.
+
 * DAR <2017-07-18 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Mandatory Training:
