@@ -10,6 +10,18 @@ The training is suppposed to run for 41 iterations.
 Training finished.
 Decoding now.
 
+Here are the results including chain models:
+%WER 54.02 [ 12045 / 22297, 714 ins, 2102 del, 9229 sub ] exp/mono/decode_dev/wer_9_0.5
+%WER 51.14 [ 16820 / 32888, 964 ins, 3433 del, 12423 sub ] exp/mono/decode_test/wer_9_0.5
+%WER 38.43 [ 12640 / 32888, 991 ins, 2098 del, 9551 sub ] exp/tri1/decode_test/wer_14_0.5
+%WER 37.77 [ 12423 / 32888, 1302 ins, 1718 del, 9403 sub ] exp/tri3b/decode_test.si/wer_13_0.5
+%WER 35.85 [ 11790 / 32888, 1034 ins, 1786 del, 8970 sub ] exp/tri2b/decode_test/wer_14_0.5
+%WER 32.29 [ 10621 / 32888, 954 ins, 1459 del, 8208 sub ] exp/tri3b/decode_test/wer_16_0.5
+%WER 29.34 [ 6541 / 22297, 322 ins, 886 del, 5333 sub ] exp/chain/tdnnarl_sp/decode_dev/wer_9_0.0
+%WER 28.90 [ 9504 / 32888, 515 ins, 1737 del, 7252 sub ] exp/chain/tdnnarl_sp/decode_test/wer_9_0.5
+
+I guess I should train sgmm and other model types.
+ 
 - ToDO SOFTunisia: Run cd gmm hmm with Zac's Answers from CTELLFIVE.
 This is more involved than I thought originally.
 I have to add code to my scripts that processs the training data.
