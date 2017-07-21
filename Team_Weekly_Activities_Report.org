@@ -1,3 +1,54 @@
+* My WAR <2017-07-21 Fri>
+** Goals set Last Week:
+- DONE Mandatory training.
+I read the Constitution Day mandatory training.
+- DONE KSU: prepare  the data from tunisian speakers for a good test set.
+The data has been prepared, but it cannot be called a test set yet.
+A lot of work still needs to be done on the transcripts.
+There are a lot of OOVs.
+- DONE SOFTunisia: Build  a cd gmm only on native training data.
+- DONE SOFTunisia: Test the cd gmm hmm system on the new KSU Tunisian test set.
+Here are the WER results.
+%WER 87.59 [ 1524 / 1740, 44 ins, 160 del, 1320 sub ] exp/mono/decode_test/wer_10_1.0
+%WER 84.66 [ 1473 / 1740, 44 ins, 152 del, 1277 sub ] exp/tri1/decode_test/wer_16_1.0
+%WER 83.05 [ 1445 / 1740, 62 ins, 111 del, 1272 sub ] exp/tri3b/decode_eval/wer_17_1.0
+%WER 82.24 [ 1431 / 1740, 75 ins, 85 del, 1271 sub ] exp/tri2b/decode_test/wer_17_1.0
+
+The results are really bad.
+I'm pretty sure this has mostly to do with the OOVs.
+
+I ran the same monophones on the Westpoint Native eval set:
+%WER 60.25 [ 3712 / 6161, 174 ins, 421 del, 3117 sub ] exp/mono/decode_westpoint_native_eval/wer_12_1.0
+
+This is probably close to what could be expected.
+The Westpoint data is similar to the SOFTunis data, but the speakers are not Tunisian.
+They are mostly Lebanese.
+
+- GP + Yaounde:
+This week I succeeded in training and decoding with chain models.
+Here are the WER results for CD GMM HMM models and Chain models:
+
+%WER 54.02 [ 12045 / 22297, 714 ins, 2102 del, 9229 sub ] exp/mono/decode_dev/wer_9_0.5
+%WER 51.14 [ 16820 / 32888, 964 ins, 3433 del, 12423 sub ] exp/mono/decode_test/wer_9_0.5
+%WER 38.43 [ 12640 / 32888, 991 ins, 2098 del, 9551 sub ] exp/tri1/decode_test/wer_14_0.5
+%WER 37.77 [ 12423 / 32888, 1302 ins, 1718 del, 9403 sub ] exp/tri3b/decode_test.si/wer_13_0.5
+%WER 35.85 [ 11790 / 32888, 1034 ins, 1786 del, 8970 sub ] exp/tri2b/decode_test/wer_14_0.5
+%WER 32.29 [ 10621 / 32888, 954 ins, 1459 del, 8208 sub ] exp/tri3b/decode_test/wer_16_0.5
+%WER 29.34 [ 6541 / 22297, 322 ins, 886 del, 5333 sub ] exp/chain/tdnnarl_sp/decode_dev/wer_9_0.0
+%WER 28.90 [ 9504 / 32888, 515 ins, 1737 del, 7252 sub ] exp/chain/tdnnarl_sp/decode_test/wer_9_0.5
+
+The chain models achieved 28.90  on the test set.
+I am in the process of decoding the test set with sgmm models.
+Recall that sgmm models require 2 passes of decoding.
+
+** Goals for Next Week:
+- TODO Mandatory Training. (Anti Terrorism Level I)
+- TODO GP: Reproduce the Kaldi results for the FR corpus (does the lm make a difference?).
+- TODO SOFTunisia: Get rough draft transcriptions to Zac.
+- TODO SOFTunisia: Get an end-2-end chain model recipe working.
+- TODO GP + Yaounde: Compare SGMM and Chain model results.
+- TODO Babel Multilang: Investigate how to implement these recipes. 
+
 * My WAR <2017-07-14 Fri>
 ** Goals set Last Week:
 - TODO Mandatory training.
@@ -31,7 +82,7 @@ Things work when I set this variable to en_US.UTF-8
 - TODO KSU: prepare  the data from tunisian speakers for a good test set.
 - TODO SOFTunisia: Build  a cd gmm only on native training data.
 - TODO SOFTunisia: Test the cd gmm hmm system on the new KSU Tunisian test set.
-
+- TODO KSU: Add Yemen speakers.
 * My War <2017-07-07 Fri>
 ** Goals set Last Week:
 - TODO KSU: Prepare  corpus for processing with kaldi.
@@ -61,7 +112,6 @@ I started on Constitution Day training.
 - TODO GP Yaounde: Try to follow the mini librispeech  very closely. Maybe make 3 LMs (small, medium and large). Pay close attention to the nosp string appended to directory names. There is a reason they are there. They go away after the pron prob step.
 -TODO SOFTunisia: Get transcripts to Zac.
 - TODO Transapps: Give them beeter models.
-
 * My WAR <2017-06-30 Fri>
 
 ** Goals set Last Week:
