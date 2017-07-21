@@ -41,6 +41,13 @@ The chain models achieved 28.90  on the test set.
 I am in the process of decoding the test set with sgmm models.
 Recall that sgmm models require 2 passes of decoding.
 
+** WAR:
+John Morgan prepared a test set for ASR systems built from Tunisian Accented Arabic. 
+The speech data comes from the four male Tunisians in the King Saude University (KSU) Speech Corpus.
+Currently, the recordings come from office noise conditions and a Yamaha mixer microphone device.
+The test set will require more work to be a part of an effective way to measure the accuracy of ASR systems. 
+Specifically, the text transcripts of the speech contain many words that are not in the pronouncing dictionary that is currently being used in experiments. 
+
 ** Goals for Next Week:
 - TODO Mandatory Training. (Anti Terrorism Level I)
 - TODO GP: Reproduce the Kaldi results for the FR corpus (does the lm make a difference?).
