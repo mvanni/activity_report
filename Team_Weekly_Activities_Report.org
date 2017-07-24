@@ -54,6 +54,9 @@ Specifically, the text transcripts of the speech contain many words that are not
 - TODO SOFTunisia: Get rough draft transcriptions to Zac.
 - TODO SOFTunisia: Get an end-2-end chain model recipe working.
 - TODO GP + Yaounde: Compare SGMM and Chain model results.
+chain	28.90
+sgmm	28.44 
+
 - TODO Babel Multilang: Investigate how to implement these recipes. 
 
 * My WAR <2017-07-14 Fri>
