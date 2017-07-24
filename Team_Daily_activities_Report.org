@@ -1,3 +1,143 @@
+* <2017-07-24 Mon>
+** Goals for Monday set Friday:
+- TODO Mandatory Training (508 compliant Anti Terrorism Level I)
+- TODO GP : Reproduce as close as possible kaldi results.
+
+system build details: 
+training data:
+Total number of utterances: 8818
+total hours of data: 22.7 
+
+Eval:
+total number of utterances: 821
+Total number of hours: 2.0
+
+WER:
+%WER 47.65 [ 10340 / 21698, 688 ins, 1513 del, 8139 sub ] exp/gp/mono/decode_eval/wer_9_0.5
+%WER 35.17 [ 7631 / 21698, 803 ins, 496 del, 6332 sub ] exp/gp/tri1/decode_eval/wer_12_0.0
+%WER 34.30 [ 7442 / 21698, 727 ins, 536 del, 6179 sub ] exp/gp/tri2b/decode_eval/wer_16_0.0
+
+Dev:
+total number of utterances: 839
+Total number of hours: 2.1
+
+WER:
+%WER 51.55 [ 11494 / 22297, 714 ins, 1880 del, 8900 sub ] exp/gp/mono/decode_dev/wer_9_0.5
+%WER 37.14 [ 8280 / 22297, 791 ins, 840 del, 6649 sub ] exp/gp/tri1/decode_dev/wer_14_0.0
+
+I am going to rerun this system build and evaluation.
+The problem is I am not sure what lm is being used.
+I ran this build in the same directory with the gp+yaounde system build and it uses our lm.
+I need to run these 2 system builds in separate directories.
+
+- TODO GP +Yaounde: Compare chain model results with sgmm results.
+Results:
+model	test
+mono	51.14
+tri1	38.43
+tri2b(lda+mllt)		35.85
+tri3b.si(lda+mllt+sat speaker independent)	37.77 
+tri3b(lda+mllt+sat)	32.29
+chain	28.90
+sgmm	28.44 
+
+The subspace gaussian mixture models were better than the chain models.
+
+Here are all the results:
+%WER 54.02 [ 12045 / 22297, 714 ins, 2102 del, 9229 sub ] exp/mono/decode_dev/wer_9_0.5
+%WER 51.14 [ 16820 / 32888, 964 ins, 3433 del, 12423 sub ] exp/mono/decode_test/wer_9_0.5
+%WER 38.43 [ 12640 / 32888, 991 ins, 2098 del, 9551 sub ] exp/tri1/decode_test/wer_14_0.5
+%WER 37.77 [ 12423 / 32888, 1302 ins, 1718 del, 9403 sub ] exp/tri3b/decode_test.si/wer_13_0.5
+%WER 35.85 [ 11790 / 32888, 1034 ins, 1786 del, 8970 sub ] exp/tri2b/decode_test/wer_14_0.5
+%WER 32.29 [ 10621 / 32888, 954 ins, 1459 del, 8208 sub ] exp/tri3b/decode_test/wer_16_0.5
+%WER 29.71 [ 9770 / 32888, 735 ins, 1654 del, 7381 sub ] exp/sgmm4b_mmi_b0.1/decode_test_it4/wer_12_1.0
+%WER 29.48 [ 9695 / 32888, 810 ins, 1501 del, 7384 sub ] exp/sgmm4b_mmi_b0.1/decode_test_it3/wer_12_0.5
+%WER 29.34 [ 6541 / 22297, 322 ins, 886 del, 5333 sub ] exp/chain/tdnnarl_sp/decode_dev/wer_9_0.0
+%WER 29.17 [ 9595 / 32888, 736 ins, 1541 del, 7318 sub ] exp/sgmm4b_mmi_b0.1/decode_test_it2/wer_11_1.0
+%WER 28.90 [ 9504 / 32888, 515 ins, 1737 del, 7252 sub ] exp/chain/tdnnarl_sp/decode_test/wer_9_0.5
+%WER 28.74 [ 9451 / 32888, 743 ins, 1385 del, 7323 sub ] exp/sgmm4b_mmi_b0.1/decode_test_it1/wer_10_1.0
+%WER 28.44 [ 9354 / 32888, 704 ins, 1384 del, 7266 sub ] exp/sgmm4b/decode_test/wer_11_1.0
+
+Here are specific details about the system build:
+training data:
+Total number of utterances: 15117
+utterances from gp: 8818 
+utterances from yaounde: 6299 
+Total number of hours:  31.2
+
+Test:
+total number of utterances: 2322
+Number of utterances from gp: 821
+number of utterances from niger: 986
+Number of Utterances from CA16: 515
+Total number of hours: 3.3
+
+- Note:
+I ran the gp+yaounde monosystem on the dev set.
+The dev set is made up of only gp utterances.
+The WER was  54.02
+When I ran the gp mono system on the same set I got 51.55
+
+gp	gp+yaounde
+51.55	54.02
+
+So the Yaounde data hurts the gp system by 2.5 percent.
+
+I am also going to rerun this system build and evaluation so I can be sure about which lm is being used.
+
+CA16:
+Total number of utterances: 515
+Total number of hours:  0.3 
+%WER 48.79 [ 1557 / 3191, 101 ins, 389 del, 1067 sub ] exp/mono/decode_ca16/wer_12_0.0
+
+I need to run the gp system on the larger test set and the gp+yaounde system on the gp eval set.
+
+- TODO Investigate Babel multilang recipes.
+- TODO KSU: Add Yemen speakers.
+
+
+** Goals for Tuesday:
+- TODO Mandatory Training (Anti Terrorism level I)
+- TODO GP: run system build to reproduce kaldi results in separate directory.
+- TODO GP+Yaounde: ditto
+- TODO Investigate Babel multilang recipes.
+- TODO KSU: Add Yemen speakers.
+
+* DAR <2017-07-21 Fri>
+** Goals set Wednesday: 
+- DONE Mandatory training.
+I read the Constitution Day (508 Version) mandatory training. I'm ready to take the BAR exam!
+- TODO GP + Yaounde: Share models (tri3b and chain) with Transapps.
+I have decided to reproduce the results published in the kaldi gp recipe for fr.
+I do not have the lexicon at the moment, so I cannot reproduce the exact same experiment.
+My first attemp:
+Mono:
+%WER 47.59 [ 10325 / 21698, 940 ins, 1196 del, 8189 sub ] exp/gp/mono/decode_eval/wer_9_0.0
+The results in the kaldi recipe:
+Mono:
+%WER 45.16 [ 10073 / 22306, 684 ins, 2010 del, 7379 sub ] exp/FR/mono/decode_dev_tgpr_sri/wer_8
+
+
+- TODO Babel: Investigate multilang training.
+
+- SOFTunisia: 
+%WER 60.25 [ 3712 / 6161, 174 ins, 421 del, 3117 sub ] exp/mono/decode_westpoint_native_eval/wer_12_1.0
+
+
+** Goals for Monday:
+- TODO Mandatory Training (508 compliant Anti Terrorism Level I)
+- TODO GP : Reproduce as close as possible kaldi results.
+- TODO GP +Yaounde: Compare chain model results with sgmm results.
+- TODO Investigate Babel multilang recipes.
+- TODO KSU: Add Yemen speakers.
+
+* DAR <2017-07-20 Thu>
+** Goals for Thursday set Wednesday:
+- DONE Mandatory training.
+I read the Constitution Day (508 Version) mandatory training. I'm ready to take the BAR exam!
+- TODO GP + Yaounde: Share models (tri3b and chain) with Transapps.
+- TODO Babel: Investigate multilang training.
+
 * DAR <2017-07-19 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Mandatory Training:
@@ -65,7 +205,6 @@ Here is the comment at the top of the rm recipe referenced above:
 # (you may want to keep --stage 8 on the above command line after run_nnet2.sh,
 # in case you already ran some scripts in local/online/ in ../../wsj/s5/ and
 # the earlier stages are finished, otherwise remove it).
-
 
 ** Goals for Thursday:
 - TODO Mandatory training.
