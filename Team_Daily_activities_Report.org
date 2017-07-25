@@ -1,3 +1,60 @@
+* DAR <2017-07-25 Tue>
+**  Goals for Tuesday set Monday:
+- DONE Mandatory Training (Anti Terrorism level I)
+I attended the Alcohol and Drug Abuse Awareness training.
+
+- TODO GP: run system build to reproduce kaldi results in separate directory.
+- TODO GP+Yaounde: ditto
+niger:
+Total number of utterances: 986
+Total number of hours: 1.0
+
+Here are results from yesterday's run. I'm not sure the correct lm was used.
+%WER 53.91 [ 4312 / 7999, 214 ins, 1242 del, 2856 sub ] exp/mono/decode_niger/wer_12_0.0
+%WER 45.39 [ 3631 / 7999, 240 ins, 998 del, 2393 sub ] exp/tri1/decode_niger/wer_19_0.0
+%WER 44.61 [ 3568 / 7999, 310 ins, 992 del, 2266 sub ] exp/tri3b/decode_niger.si/wer_19_0.0
+%WER 42.14 [ 3371 / 7999, 153 ins, 1118 del, 2100 sub ] exp/tri2b/decode_niger/wer_19_1.0
+%WER 35.12 [ 2809 / 7999, 223 ins, 816 del, 1770 sub ] exp/tri3b/decode_niger/wer_20_0.5
+%WER 30.97 [ 2477 / 7999, 178 ins, 847 del, 1452 sub ] exp/sgmm4b/decode_niger/wer_15_0.0
+%WER 30.34 [ 2427 / 7999, 140 ins, 806 del, 1481 sub ] exp/chain/tdnnarl_sp/decode_niger/wer_12_0.0
+
+- note: chain models were the best.
+
+CA16:
+Here are results from yesterday's run:
+%WER 48.79 [ 1557 / 3191, 101 ins, 389 del, 1067 sub ] exp/mono/decode_ca16/wer_12_0.0
+%WER 35.22 [ 1124 / 3191, 103 ins, 303 del, 718 sub ] exp/tri1/decode_ca16/wer_15_0.5
+%WER 34.88 [ 1113 / 3191, 144 ins, 257 del, 712 sub ] exp/tri3b/decode_ca16.si/wer_20_0.0
+%WER 31.06 [ 991 / 3191, 139 ins, 219 del, 633 sub ] exp/tri2b/decode_central_accord/wer_15_0.0
+%WER 27.61 [ 881 / 3191, 94 ins, 232 del, 555 sub ] exp/chain/tdnnarl_sp/decode_ca16/wer_12_0.0
+%WER 22.94 [ 732 / 3191, 130 ins, 133 del, 469 sub ] exp/tri3b/decode_ca16/wer_20_0.0
+%WER 20.28 [ 647 / 3191, 95 ins, 179 del, 373 sub ] exp/sgmm4b_mmi_b0.1/decode_ca16_it4/wer_16_0.0
+%WER 19.87 [ 634 / 3191, 92 ins, 175 del, 367 sub ] exp/sgmm4b_mmi_b0.1/decode_ca16_it3/wer_16_0.0
+%WER 19.12 [ 610 / 3191, 90 ins, 155 del, 365 sub ] exp/sgmm4b_mmi_b0.1/decode_ca16_it2/wer_16_0.0
+%WER 18.80 [ 600 / 3191, 109 ins, 102 del, 389 sub ] exp/sgmm4b_mmi_b0.1/decode_ca16_it1/wer_11_0.0
+%WER 18.36 [ 586 / 3191, 86 ins, 125 del, 375 sub ] exp/sgmm4b/decode_ca16/wer_12_0.5
+
+- Observation:
+The sgmm models blow away the chain models on the ca16 set.
+
+test set	sgmm	chain
+ca16	18.36	27.61
+niger	30.94	30.34
+gp+niger+ca16	28.44	28.90
+
+The chain and sgmm models are very close on the niger test set and the combination of the gp, niger and ca16 test set.
+What about on the gp eval and dev?
+
+I want to run this build all over again just to be sure about the lm I am using.
+
+- TODO Investigate Babel multilang recipes.
+- TODO KSU: Add Yemen speakers.
+
+** Goals for Wednesday:
+- TODO gp: Run end to end.
+- TODO gp + yaounde: Run end to end.
+- TODO Write report on findings.
+
 * <2017-07-24 Mon>
 ** Goals for Monday set Friday:
 - TODO Mandatory Training (508 compliant Anti Terrorism Level I)
@@ -94,7 +151,6 @@ I need to run the gp system on the larger test set and the gp+yaounde system on 
 
 - TODO Investigate Babel multilang recipes.
 - TODO KSU: Add Yemen speakers.
-
 
 ** Goals for Tuesday:
 - TODO Mandatory Training (Anti Terrorism level I)
