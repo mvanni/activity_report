@@ -1,3 +1,53 @@
+* DAR <2017-07-27 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO GP: Build system with ARL's LM and dictionary.
+I started this.
+It might need more work tomorrow.
+- TODO GP: Test gp system  on niger and central accord in addition to GP eval and dev.
+I added decoding for niger and ca16.
+Probably will need more work tomorrow.
+- TODO GP + Yaounde: Check why results are strange.
+This was a false alarm.
+The tri3b ca16 score I was concerned about was for a speaker  independent model set.
+I now know that the tri3b (lda mllt sat) systems use 2 passes of decoding.
+I really do not think  that tri3b is a feasible model for s2s apps.
+
+Here are the results from yesterday:
+%WER 54.28 [ 4342 / 7999, 210 ins, 1208 del, 2924 sub ] exp/mono/decode_niger/wer_11_0.0
+%WER 53.65 [ 11963 / 22297, 705 ins, 1984 del, 9274 sub ] exp/mono/decode_dev/wer_9_0.5
+%WER 51.00 [ 16773 / 32888, 1337 ins, 2718 del, 12718 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 49.46 [ 10732 / 21698, 648 ins, 1665 del, 8419 sub ] exp/mono/decode_gp_eval/wer_9_0.5
+%WER 47.23 [ 1507 / 3191, 116 ins, 370 del, 1021 sub ] exp/mono/decode_ca16/wer_12_0.0
+%WER 45.79 [ 3663 / 7999, 226 ins, 1230 del, 2207 sub ] exp/tri1/decode_niger/wer_18_0.0
+%WER 43.13 [ 3450 / 7999, 221 ins, 1202 del, 2027 sub ] exp/tri2b/decode_niger/wer_16_0.0
+%WER 42.67 [ 3413 / 7999, 281 ins, 1022 del, 2110 sub ] exp/tri3b/decode_niger.si/wer_16_0.0
+%WER 36.72 [ 12077 / 32888, 999 ins, 1998 del, 9080 sub ] exp/tri1/decode_test/wer_13_0.5
+%WER 36.26 [ 11925 / 32888, 1126 ins, 1814 del, 8985 sub ] exp/tri3b/decode_test.si/wer_14_0.5
+%WER 35.94 [ 8013 / 22297, 804 ins, 685 del, 6524 sub ] exp/tri3b/decode_dev.si/wer_12_1.0
+%WER 35.59 [ 7935 / 22297, 636 ins, 801 del, 6498 sub ] exp/tri1/decode_dev/wer_11_1.0
+%WER 35.29 [ 11606 / 32888, 1007 ins, 1989 del, 8610 sub ] exp/tri2b/decode_test/wer_16_0.0
+%WER 34.53 [ 7699 / 22297, 621 ins, 738 del, 6340 sub ] exp/tri2b/decode_dev/wer_12_1.0
+%WER 34.08 [ 2726 / 7999, 168 ins, 924 del, 1634 sub ] exp/tri3b/decode_niger/wer_19_0.5
+%WER 33.89 [ 7353 / 21698, 740 ins, 485 del, 6128 sub ] exp/tri3b/decode_gp_eval.si/wer_10_1.0
+%WER 33.69 [ 1075 / 3191, 176 ins, 202 del, 697 sub ] exp/tri3b/decode_ca16.si/wer_15_0.0
+%WER 33.28 [ 7222 / 21698, 647 ins, 528 del, 6047 sub ] exp/tri1/decode_gp_eval/wer_9_1.0
+%WER 32.91 [ 1050 / 3191, 127 ins, 257 del, 666 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 32.87 [ 7330 / 22297, 732 ins, 539 del, 6059 sub ] exp/tri3b/decode_dev/wer_12_0.5
+%WER 32.27 [ 7001 / 21698, 520 ins, 570 del, 5911 sub ] exp/tri2b/decode_gp_eval/wer_12_1.0
+%WER 31.37 [ 1001 / 3191, 135 ins, 272 del, 594 sub ] exp/tri2b/decode_ca16/wer_16_0.0
+%WER 31.19 [ 10258 / 32888, 748 ins, 1614 del, 7896 sub ] exp/tri3b/decode_test/wer_15_1.0
+%WER 30.95 [ 6715 / 21698, 510 ins, 495 del, 5710 sub ] exp/tri3b/decode_gp_eval/wer_13_1.0
+%WER 22.56 [ 720 / 3191, 125 ins, 123 del, 472 sub ] exp/tri3b/decode_ca16/wer_18_0.0
+
+The run on the gpu machine is still doing sgmm training.
+If this is not relevant to transapps, I think we should drop it. It takes up a lot of time.
+
+** Goals for Friday:
+- TODO SOFTunisia: Prepare rough draft for Zac.
+- TODO GP: Build system with ARL's LM and dictionary.
+- TODO GP: Test gp system  on niger and central accord in addition to GP eval and dev.
+- TODO GP + Yaounde: Chain models?
+
 * DAR <2017-07-26 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO gp: Run end to end.
@@ -33,14 +83,24 @@ for the record, here are the currently available results:
 
 This looks different than what I got yesterday.
 The WER for tri3b on the ca16 set is different.
+Yesterday is was %WER 22.94 [ 732 / 3191, 130 ins, 133 del, 469 sub ] exp/tri3b/decode_ca16/wer_20_0.0
+Today it is: %WER 33.69 [ 1075 / 3191, 176 ins, 202 del, 697 sub ] exp/tri3b/decode_ca16.si/wer_15_0.0
+There must be something wrong.
+
 I'll have to look into this tomorrow.
+
+False alarm, those are the speaker independent results.
+I am assuming si stands for speaker independent.
+I do not have the results for the sat tri3b decoding of ca16 yet.
+
 
  
 - TODO Write report on findings.
 
 
 ** Goals for Thursday:
-- TODO GP: Build system with ARL's LM and dictionary. 
+- TODO GP: Build system with ARL's LM and dictionary.
+- TODO GP: Test gp system  on niger and central accord in addition to GP eval and dev.
 - TODO GP + Yaounde: Check why results are strange.
 
 * DAR <2017-07-25 Tue>
