@@ -1,3 +1,54 @@
+* My WAR <2017-07-28 Fri>
+**  Goals set Last Week:
+- DONE Mandatory Training. (Anti Terrorism Level I)
+I did the ASAP Alcohol and Substance Awareness Program mandatory training instead.  
+- TODO GP: Reproduce the Kaldi results for the FR corpus (does the lm make a difference?).
+- TODO SOFTunisia: Get rough draft transcriptions to Zac.
+I did some work on this.
+I've come to the conclusion that I need to simplify what I'm doing.
+I've been trying to implement some kaldi methods for updating dictionary probabilities.
+I'm going to back off this for now since I don't really understand it.
+Instead I'm going to only add the new human-corrected data with their transcriptions and not worry for now about updating the dictionary.
+I have an easy way to update the lm, so I'll keep that.
+The next step will be to write scripts that add OOVs to the dictionary.
+I won't worry about probabilities for now.
+
+- TODO SOFTunisia: Get an end-2-end chain model recipe working.
+- TODO GP + Yaounde: Compare SGMM and Chain model results.
+Here are all the results I have so far on the Central Accord 2016 test set:
+%WER 47.23 [ 1507 / 3191, 116 ins, 370 del, 1021 sub ] exp/mono/decode_ca16/wer_12_0.0
+%WER 33.69 [ 1075 / 3191, 176 ins, 202 del, 697 sub ] exp/tri3b/decode_ca16.si/wer_15_0.0
+%WER 32.91 [ 1050 / 3191, 127 ins, 257 del, 666 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 31.37 [ 1001 / 3191, 135 ins, 272 del, 594 sub ] exp/tri2b/decode_ca16/wer_16_0.0
+%WER 22.56 [ 720 / 3191, 125 ins, 123 del, 472 sub ] exp/tri3b/decode_ca16/wer_18_0.0
+%WER 18.77 [ 599 / 3191, 106 ins, 89 del, 404 sub ] exp/sgmm4b/decode_ca16/wer_12_0.0
+
+I don't have chain model results yet.
+
+I don't think the tri3b and sgmm results are relevant for our transapps s2s project.
+S2s requires a system that can be run in real time.
+The tri3b models are speaker dependent and use 2 passes of decoding.
+After the first pass of decoding, fmmlr and rescoring are run on all the output from each speaker in the first decoding.
+I don't see how this could be done in real time on a phone.
+The tri2b models require only 1 pass of decoding.
+I know there are kaldi nnet2 models that can be run in real time or so called online.
+I'm not sure if this is true for chain models.
+I'm not sure about sgmm models either.
+The chain models use ivectors that can be extracted "online", so I'm assuming they will run in real time an that they will be good for transapps.
+
+** WAR:
+John Morgan prepared an Automatic Speech Recognition (ASR) package for African Accented French this week. 
+The ASR package is ready to be delivered to the TransApps team for testing on the Android platform.
+Before delivering the package, Morgan verified that the Acoustic models he trained and other components in the package can be run with the same programs that TransApps has implemented in an app running under Android.
+The models are quite large, so Morgan and his ATeam partners are curious to know if the TransApps team can get the new ASR package to run efficiently on a smart phone.
+The ASR package is one component of TransApps' Speech to Speech app that will enable US Soldiers to communicate with African Accented French speakers.
+
+** Goals for Next Week:
+- TODO Mandatory Training.
+- TODO Proposal and Accomplishments.
+- TODO GP + Yaounde: chain models.
+- TODO Transapps: Get models to Mike Le.
+
 * My WAR <2017-07-21 Fri>
 ** Goals set Last Week:
 - DONE Mandatory training.
