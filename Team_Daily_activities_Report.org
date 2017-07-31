@@ -1,3 +1,65 @@
+* DAR <2017-07-31 Mon>
+**  Goals for Monday set Friday:
+- TODO Mandatory Training.
+- TODO Project Proposal and Accomplishments 
+-TODO GP: Get results.
+Only chain model results are missing.
+I am skipping the boosted mmi runs.
+I am going to wait until I get the chain model running for GP + Yaounde before running chain models for GP alone.
+
+- TODO GP + Yaounde: Chain models: get a demo running and pass it on to Mike Le.
+The run failed when invoking the chain model training script.
+I am knocking down the mini batch size to 32,16,8 and retrying.
+Still failed.
+I am now trying with number of jobs knocked down from 24 to 4.
+- TODO SOFTunisia: Get rough draft to Zac with new simplified training strategy.
+The 6th stage is still failing.
+There are problems with the way I have been making the 4 acoustic model training lists: wav.scp, utt2txt, spk2utt and text.
+
+** Goals for Tuesday:
+- TODO Mandatory Training.
+- TODO Proposal and Accomplishments.
+- TODO SOFTunisia: Fix the acoustic model training lists.
+- TODO GP + Yaounde: Get chain models running.
+  - TODO GP: Get chain models running.
+
+* DAR <2017-07-28 Fri>
+** Goals for Friday set Thursday:
+- TODO SOFTunisia: Prepare rough draft for Zac.
+I worked a lot on this today.
+I am going to give up on the scripts that add probabilities to the dictionary or now.
+I am going to go with a simplified strategy for now.
+I am not going to worry about modifying the dictionary.
+I am not even going to add OOVs to the dictionary.
+I have a script that adds the new transcripts to the lm and that seems to work, so I'll keep it.
+Otherwise, I'm going to only add the new data and their transcripts to the next batch of training data.
+I'll work on writing scripts that deal with adding OOVs to the dictionary, but this might take a while.
+- TODO GP: Build system with ARL's LM and dictionary.
+I am still working on getting a good script to do this.
+
+- TODO GP: Test gp system  on niger and central accord in addition to GP eval and dev.
+- TODO GP + Yaounde: Chain models?
+
+Here are the WERs for ca16 including sgms.
+the chain models are still missing.
+
+%WER 47.23 [ 1507 / 3191, 116 ins, 370 del, 1021 sub ] exp/mono/decode_ca16/wer_12_0.0
+%WER 33.69 [ 1075 / 3191, 176 ins, 202 del, 697 sub ] exp/tri3b/decode_ca16.si/wer_15_0.0
+%WER 32.91 [ 1050 / 3191, 127 ins, 257 del, 666 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 31.37 [ 1001 / 3191, 135 ins, 272 del, 594 sub ] exp/tri2b/decode_ca16/wer_16_0.0
+%WER 22.56 [ 720 / 3191, 125 ins, 123 del, 472 sub ] exp/tri3b/decode_ca16/wer_18_0.0
+%WER 18.77 [ 599 / 3191, 106 ins, 89 del, 404 sub ] exp/sgmm4b/decode_ca16/wer_12_0.0
+
+The script is finally getting to the chain model training step.
+I only had to restart the script once.
+
+** Goals for Monday:
+- TODO Mandatory Training.
+- TODO Project Proposal and Accomplishments 
+-TODO GP: Get results.
+- TODO GP + Yaounde: Chain models: get a demo running and pass it on to Mike Le.
+- TODO SOFTunisia: Get rough draft to Zac with new simplified training strategy.
+
 * DAR <2017-07-27 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO GP: Build system with ARL's LM and dictionary.
