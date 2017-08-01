@@ -1,4 +1,102 @@
-* DAR <2017-07-31 Mon>
+* DAR <2017-08-01 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Mandatory Training.
+- TODO Proposal and Accomplishments.
+- TODO SOFTunisia: Fix the acoustic model training lists.
+- TODO GP + Yaounde: Get chain models running.
+The scripts are paranoid about overwriting files that already exist. 
+This wastes a lot of time.
+Yesterday evening it was the tree final.mdl file that already existed.
+
+I've been trying to get the chain model training to run all day.
+It looks like the GPU does not have enough memory for the models I am trying to train.
+As I am getting ready to leave, I have the chain model training running on the GPU.
+It is on iteration 68 of 144.
+For the record here are arguments that I used for this run:
+2017-08-01 08:15:16,450 [./steps/nnet3/chain/train.py:259 - train - INFO ] Arguments for the experiment
+{'alignment_subsampling_factor': 3,
+ 'apply_deriv_weights': False,
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'chunk_left_context': 0,
+ 'chunk_left_context_initial': 0,
+ 'chunk_right_context': 0,
+ 'chunk_right_context_final': 0,
+ 'chunk_width': '80,50,90',
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl',
+ 'deriv_truncate_margin': None,
+ 'dir': 'exp/chain/tdnn_sp',
+ 'dropout_schedule': None,
+ 'egs_command': 'queue.pl',
+ 'egs_dir': None,
+ 'egs_opts': '--frames-overlap-per-eg 0',
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_sp_hires',
+ 'final_effective_lrate': 0.0001,
+ 'frame_subsampling_factor': 3,
+ 'frames_per_iter': 2000000,
+ 'initial_effective_lrate': 0.001,
+ 'l2_regularize': 5e-05,
+ 'lat_dir': 'exp/chain/tri3b_train_sp_lats',
+ 'leaky_hmm_coefficient': 0.1,
+ 'left_deriv_truncate': None,
+ 'left_tolerance': 5,
+ 'lm_opts': '--num-extra-lm-states=1000',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_param_change': 2.0,
+ 'momentum': 0.0,
+ 'num_chunk_per_minibatch': '32,16,8',
+ 'num_epochs': 4.0,
+ 'num_jobs_final': 2,
+ 'num_jobs_initial': 1,
+ 'online_ivector_dir': 'exp/nnet3/ivectors_train_sp_hires',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'proportional_shrink': 60.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'right_tolerance': 5,
+ 'samples_per_iter': 400000,
+ 'shrink_saturation_threshold': 0.4,
+ 'shrink_value': 1.0,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'transform_dir': 'exp/chain/tri3b_train_sp_lats',
+ 'tree_dir': 'exp/chain/tree_a_sp',
+ 'use_gpu': True,
+ 'xent_regularize': 0.1}
+
+- TODO GP: Get chain models running.
+- TODO KSU: Prepare YE data.
+- TODO Accent Id: prepare GP and African Accented training and test sets.
+I worked a lot on this today.
+I am at the point where features are being extracted from the training data.
+The language recognition recipe scripts use vtln warping.
+I am getting errors for this step.
+I am going to try to skip vtln for now.
+The language recognition recipe I am looking at uses a DNN to initialize the UBM which is later used to train an ivector extractor.
+The ubm is a full covariance gmm.
+Usually for tractability, GMMs have diagonal covariance matrix.
+The LR recipe trains the DNN on a large corpus.
+What should we do here?
+Train on wsj maybe?
+
+** Goals for Wednesday:
+- TODO Mandatory Training
+- TODO Proposal and Accomplishments
+- TODO Accent ID: 
+- TODO GP + Yaounde: Chain model results.
+- TODO SOFTunisia: Fix Acoustic model training lists.
+ 
+ * DAR <2017-07-31 Mon>
 **  Goals for Monday set Friday:
 - TODO Mandatory Training.
 - TODO Project Proposal and Accomplishments 
@@ -16,13 +114,18 @@ I am now trying with number of jobs knocked down from 24 to 4.
 The 6th stage is still failing.
 There are problems with the way I have been making the 4 acoustic model training lists: wav.scp, utt2txt, spk2utt and text.
 
+- ksu: I did some work preparing the YE data.
+- Accent Id: I did some work on preparing GP and African Accented data.
+
 ** Goals for Tuesday:
 - TODO Mandatory Training.
 - TODO Proposal and Accomplishments.
 - TODO SOFTunisia: Fix the acoustic model training lists.
 - TODO GP + Yaounde: Get chain models running.
-  - TODO GP: Get chain models running.
-
+- TODO GP: Get chain models running.
+- TODO KSU: Prepare YE data.
+- TODO Accent Id: prepare GP and African Accented training and test sets.
+ 
 * DAR <2017-07-28 Fri>
 ** Goals for Friday set Thursday:
 - TODO SOFTunisia: Prepare rough draft for Zac.
