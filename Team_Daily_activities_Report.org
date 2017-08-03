@@ -1,3 +1,26 @@
+* DAR <2017-08-03 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Accomplishments and Proposal.
+- TODO GP + Yaounde: Implement Dan Povey's suggestions to improve the chain models.
+I am experimenting with a smaller lm.
+
+- SOFTunisia:
+I am fixing the script that builds the tri3b models after each new batch of corrected drafts comes in from Zac.
+I am removing the probabilistic dictionary from the scripts for now.
+
+- Accent Id:
+I am running the wsj script.
+It had crashed yesterday.
+I restarted it at stage 5.
+It is now training tri4b which is tri3b with the probabilistic dictionary.
+
+** Goals for Friday:
+- TODO Accomplishments and Proposal
+- TODO GP + Yaounde: Chain model tuning.
+- TODO KSU: incorporate YE into SOFTunisia.
+- TODO: Accent ID: USe WSJ to train ivector extractor.
+- TODO SOFTunisia: Fix Stage 8.
+
 * DAR <2017-08-02 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Mandatory Training
