@@ -1,6 +1,6 @@
 * My War <2017-08-04 Fri>
 ** Goals setLast Week:
-- TODO Mandatory Training. (Anti Terrorism Level I)
+- DONE Mandatory Training. (Anti Terrorism Level I)
 I did the Suicide Prevention Training instead. 
 - TODO GP: Reproduce the Kaldi results for the FR corpus (does the lm make a difference?).
 - TODO SOFTunisia: Get rough draft transcriptions to Zac.
@@ -18,6 +18,7 @@ sgmm	28.44
 Where did I get these numbers?
 The chain model results I have now are much worse.
 %WER 35.82 [ 1143 / 3191, 88 ins, 270 del, 785 sub ] exp/chain/tdnn_sp/decode_central_accord_1/wer_10_0.0
+Apparently, the older results were from a system trained  on GP and tested on GP.
 
 I got the online chain model working as a demo.
 It uses the ivector extractor.
@@ -26,14 +27,20 @@ I've been working on tuning the chain models.
 It looks now like the chunk width is an important parameter.
 The problem is that the training crashes with a GPU memory allocation error.
 I am considering several possible causes:
-LM size.: It looks llike this is not the problem. I made a smaller LM with only the prompts and the GPU memory problem still occurrs.
-Hidden Layer Dimension: I lowered these from 512 to 64 and the GPU memory  problem did not occurr, so this is a candidate.
-Chunk mini batch sizes: I lowered tis to 64,32,16 and the GPU memory problem went away, so this is a candidate.
-Chunk width: I halved this parameter to 70,50,80 and the training succeeded. This is my favoritte candidate now.
+LM size: 
+It looks llike this is not the problem. 
+I made a smaller LM with only the prompts and the GPU memory problem still occurs.
+Hidden Layer Dimension: 
+I lowered these from 512 to 64 and the GPU memory  problem did not occur, so this is a candidate.
+Chunk mini batch sizes: 
+I lowered this to 64,32,16 and the GPU memory problem went away, so this is a candidate.
+Chunk width: 
+I halved this parameter to 70,50,80 and the training succeeded. This is my favorite candidate now.
 
 - TODO Babel Multilang: Investigate how to implement these recipes. 
 
-- Accent ID: This week I started setting up a recipe for Accent Id.
+- Accent ID: 
+This week I started setting up a recipe for Accent Id.
 The plan is to first build a system that can do the following simple task:
 Given a recording by either a European or African French speaker, the system will output either European or  African.
 
