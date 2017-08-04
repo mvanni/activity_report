@@ -1,3 +1,45 @@
+* My War <2017-08-04 Fri>
+** Goals setLast Week:
+- TODO Mandatory Training. (Anti Terrorism Level I)
+I did the Suicide Prevention Training instead. 
+- TODO GP: Reproduce the Kaldi results for the FR corpus (does the lm make a difference?).
+- TODO SOFTunisia: Get rough draft transcriptions to Zac.
+I worked a lot on this task this week.
+I found some problems that were causing the scripts to crash around stage 6.
+I have to do some editing after Zac gives me his corrections of the  rough draft.
+Specifically, I have to delete a " hyp" string before using it as transcripts.
+I apparently missed this editing step on stage 6.
+There were other problems I found.
+
+- TODO SOFTunisia: Get an end-2-end chain model recipe working.
+- TODO GP + Yaounde: Compare SGMM and Chain model results.
+chain	28.90
+sgmm	28.44 
+Where did I get these numbers?
+The chain model results I have now are much worse.
+%WER 35.82 [ 1143 / 3191, 88 ins, 270 del, 785 sub ] exp/chain/tdnn_sp/decode_central_accord_1/wer_10_0.0
+
+I got the online chain model working as a demo.
+It uses the ivector extractor.
+
+I've been working on tuning the chain models.
+It looks now like the chunk width is an important parameter.
+The problem is that the training crashes with a GPU memory allocation error.
+I am considering several possible causes:
+LM size.: It looks llike this is not the problem. I made a smaller LM with only the prompts and the GPU memory problem still occurrs.
+Hidden Layer Dimension: I lowered these from 512 to 64 and the GPU memory  problem did not occurr, so this is a candidate.
+Chunk mini batch sizes: I lowered tis to 64,32,16 and the GPU memory problem went away, so this is a candidate.
+Chunk width: I halved this parameter to 70,50,80 and the training succeeded. This is my favoritte candidate now.
+
+- TODO Babel Multilang: Investigate how to implement these recipes. 
+
+** Goals for Next Week:
+- TODO Accomplishments and Proposal.
+- TODO GP + Yaounde: Chain Model tuning.
+- TODO SOFTunisia: Get a rough draft of the next chunk of data to Zac.
+- TODO: Investigate Russian, Spanish and Arabic resources for building ASR system for TransApps.
+- TODO Mandatory Traiing.
+
 * My WAR <2017-07-28 Fri>
 **  Goals set Last Week:
 - DONE Mandatory Training. (Anti Terrorism Level I)
@@ -49,6 +91,7 @@ The ASR package is one component of TransApps' Speech to Speech app that will en
 - TODO GP + Yaounde: chain models.
 - TODO Transapps: Get models to Mike Le.
 
+* My WAR <2017-08-04 Fri>
 * My WAR <2017-07-21 Fri>
 ** Goals set Last Week:
 - DONE Mandatory training.
