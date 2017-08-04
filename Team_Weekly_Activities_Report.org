@@ -33,12 +33,27 @@ Chunk width: I halved this parameter to 70,50,80 and the training succeeded. Thi
 
 - TODO Babel Multilang: Investigate how to implement these recipes. 
 
+- Accent ID: This week I started setting up a recipe for Accent Id.
+The plan is to first build a system that can do the following simple task:
+Given a recording by either a European or African French speaker, the system will output either European or  African.
+
+** WAR:
+Online Chain Models for African Accented Speech Recognition:
+Last week John Morgan prepared an Automatic Speech Recognition (ASR) package for African Accented French that will be delivered to TransApps for testing on the Android platform. 
+That package included Context Dependent (CD) Gaussian Mixture Model (GMM) Hidden Markov Model (HMM) acoustic models. 
+CD GMM HMMs are a reliable and well understood framework for pacoustic modeling and the TransApps team has been able to implement them on the Android platform.
+This week John Morgan prepared another package for TransApps testing that includes a much newer kind of acoustic modleing framework called Chain Models. 
+Morgan verified that the chain models can be run in real time decoding mode with and i-vector extractor. 
+This makes him optimistic that TransApps  will be able to use chain models in their Speech to Speech  (S2S) application on an smart phone running Android. 
+
+
 ** Goals for Next Week:
 - TODO Accomplishments and Proposal.
 - TODO GP + Yaounde: Chain Model tuning.
 - TODO SOFTunisia: Get a rough draft of the next chunk of data to Zac.
 - TODO: Investigate Russian, Spanish and Arabic resources for building ASR system for TransApps.
-- TODO Mandatory Traiing.
+- TODO Mandatory Traing.
+- TODO Accent Id: Use older kaldi recipe that does not use A DNN to build the UBM and iVector extractor.
 
 * My WAR <2017-07-28 Fri>
 **  Goals set Last Week:
@@ -77,7 +92,7 @@ I know there are kaldi nnet2 models that can be run in real time or so called on
 I'm not sure if this is true for chain models.
 I'm not sure about sgmm models either.
 The chain models use ivectors that can be extracted "online", so I'm assuming they will run in real time an that they will be good for transapps.
-
+,
 ** WAR:
 John Morgan prepared an Automatic Speech Recognition (ASR) package for African Accented French this week. 
 The ASR package is ready to be delivered to the TransApps team for testing on the Android platform.
