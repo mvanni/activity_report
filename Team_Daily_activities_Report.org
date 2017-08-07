@@ -1,3 +1,113 @@
+* DAR <2017-08-07 Mon>
+** Goals for Next Week:
+- TODO Accomplishments and Proposal.
+- TODO GP + Yaounde: Chain Model tuning.
+Here is the run that I started Friday:
+%WER 38.04 [ 1214 / 3191, 102 ins, 399 del, 713 sub ] exp/chain/tdnn_sp/decode_central_accord/wer_13_0.0
+%WER 35.82 [ 1143 / 3191, 88 ins, 270 del, 785 sub ] exp/chain/tdnn_sp/decode_central_accord_1/wer_10_0.0
+%WER 35.70 [ 2856 / 7999, 170 ins, 984 del, 1702 sub ] exp/chain/tdnn_sp/decode_niger/wer_14_0.0
+%WER 32.10 [ 10556 / 32888, 598 ins, 2215 del, 7743 sub ] exp/chain/tdnn_sp/decode_test/wer_11_0.0
+%WER 30.65 [ 6835 / 22297, 338 ins, 1060 del, 5437 sub ] exp/chain/tdnn_sp/decode_dev/wer_9_0.0
+
+I set the chunks per mini batch to 128,64,32 and I got a crash.
+I left that parameter there and halved the chunk width to 35,25,40 and  the training did not crash.
+Results?
+
+- DONE SOFTunisia: Get a rough draft of the next chunk of data to Zac.
+Finally, I have something I can give to Zac.
+It's not pretty, but it's a start.
+
+- TODO: Investigate Russian, Spanish and Arabic resources for building ASR system for TransApps.
+I'm making progress on the Russian.
+The hardest part is to get the file names changed so that I can get the utt2spk files and spk2utt to sort correctly.
+This involves renaming files.
+- TODO Mandatory Training.
+- TODO Accent Id: Use older kaldi recipe that does not use A DNN to build the UBM and iVector extractor.
+
+** Goals for Tuesday:
+- TODO Mandatory training.
+- TODO Accomplishments and Proposal.
+- TODO Get thumb drive with rough draft to Zac.
+- TODO Russian: Rename files.
+- TODO Accent Id:
+- TODO SOFTunisia: Chain model tuning.
+
+* DAR <2017-08-04 Fri>
+**  Goals for Friday set Thursday:
+- TODO Accomplishments and Proposal
+- TODO GP + Yaounde: Chain model tuning.
+Lowering the chunks per mini batch did not work.
+I am trying  training with lower chunk sizes of 70,50,80
+Good news: the traininng is running.
+Here is the configuration:
+{'alignment_subsampling_factor': 3,
+ 'apply_deriv_weights': False,
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'chunk_left_context': 0,
+ 'chunk_left_context_initial': 0,
+ 'chunk_right_context': 0,
+ 'chunk_right_context_final': 0,
+ 'chunk_width': '70,50,80',
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl',
+ 'deriv_truncate_margin': None,
+ 'dir': 'exp/chain/tdnn_sp',
+ 'dropout_schedule': None,
+ 'egs_command': 'queue.pl',
+ 'egs_dir': None,
+ 'egs_opts': '--frames-overlap-per-eg 0',
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_sp_hires',
+ 'final_effective_lrate': 0.0001,
+ 'frame_subsampling_factor': 3,
+ 'frames_per_iter': 3000000,
+ 'initial_effective_lrate': 0.001,
+ 'l2_regularize': 5e-05,
+ 'lat_dir': 'exp/chain/tri3b_train_sp_lats',
+ 'leaky_hmm_coefficient': 0.1,
+ 'left_deriv_truncate': None,
+ 'left_tolerance': 5,
+ 'lm_opts': '--num-extra-lm-states=2000',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_param_change': 2.0,
+ 'momentum': 0.0,
+ 'num_chunk_per_minibatch': '64,32,16',
+ 'num_epochs': 3.0,
+ 'num_jobs_final': 1,
+ 'num_jobs_initial': 1,
+ 'online_ivector_dir': 'exp/nnet3/ivectors_train_sp_hires',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'proportional_shrink': 60.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'right_tolerance': 5,
+ 'samples_per_iter': 400000,
+ 'shrink_saturation_threshold': 0.4,
+ 'shrink_value': 1.0,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'transform_dir': 'exp/chain/tri3b_train_sp_lats',
+ 'tree_dir': 'exp/chain/tree_a_sp',
+ 'use_gpu': True,
+ 'xent_regularize': 0.1}
+
+- TODO KSU: incorporate YE into SOFTunisia.
+- TODO: Accent ID: USe WSJ to train ivector extractor.
+I looked at an older version of the kaldi recipes ro LR.
+They do not use a separate corpus to train the UBM and ivector extractor.
+I will use this method first.
+
+- TODO SOFTunisia: Fix Stage 8.
+
 * DAR <2017-08-03 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Accomplishments and Proposal.
