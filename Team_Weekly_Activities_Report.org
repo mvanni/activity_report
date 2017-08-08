@@ -53,7 +53,6 @@ This week John Morgan prepared another package for TransApps testing that includ
 Morgan verified that the chain models can be run in real time decoding mode with and i-vector extractor. 
 This makes him optimistic that TransApps  will be able to use chain models in their Speech to Speech  (S2S) application on an smart phone running Android. 
 
-
 ** Goals for Next Week:
 - TODO Accomplishments and Proposal.
 - TODO GP + Yaounde: Chain Model tuning.
