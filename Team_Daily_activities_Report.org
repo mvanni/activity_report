@@ -1,3 +1,53 @@
+* DAR <2017-08-08 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Mandatory training.
+- TODO Accomplishments and Proposal.
+- DONE Get thumb drive with rough draft to Zac.
+I Gave it to Zac and he got it back to me this afternoon.
+- DONE Russian: Rename files.
+This took a lot of work.
+But now it looks like I have the waveform data almost ready for training.
+- TODO Accent Id:
+- DONE SOFTunisia: Chain model tuning.
+Here are the results after halving the chunk widths:
+%WER 42.37 [ 1352 / 3191, 99 ins, 412 del, 841 sub ] exp/chain/tdnn_sp/decode_central_accord/wer_13_0.0
+%WER 41.59 [ 1327 / 3191, 100 ins, 402 del, 825 sub ] exp/chain/tdnn_sp_online/decode_central_accord/wer_13_0.0
+%WER 37.15 [ 2972 / 7999, 157 ins, 1021 del, 1794 sub ] exp/chain/tdnn_sp/decode_niger/wer_15_0.0
+%WER 36.58 [ 2926 / 7999, 139 ins, 1033 del, 1754 sub ] exp/chain/tdnn_sp_online/decode_niger/wer_17_0.0
+%WER 35.82 [ 1143 / 3191, 88 ins, 270 del, 785 sub ] exp/chain/tdnn_sp/decode_central_accord_1/wer_10_0.0
+%WER 33.05 [ 10871 / 32888, 588 ins, 2286 del, 7997 sub ] exp/chain/tdnn_sp/decode_test/wer_11_0.0
+%WER 32.83 [ 10797 / 32888, 592 ins, 2274 del, 7931 sub ] exp/chain/tdnn_sp_online/decode_test/wer_11_0.0
+%WER 31.04 [ 6921 / 22297, 316 ins, 1109 del, 5496 sub ] exp/chain/tdnn_sp/decode_dev/wer_9_0.0
+%WER 31.04 [ 6920 / 22297, 323 ins, 1091 del, 5506 sub ] exp/chain/tdnn_sp_online/decode_dev/wer_9_0.0
+
+Notice that the WER scores are worse than the previous ones.
+Lowering the chunk widths increases the WERs.
+
+My next experiment run will pump up the chunk widths and lower the chunks per mini batch.
+
+Here are the resulsts for chunks per mini batch down to 16,8,2 and chunk widths pumped up to 280,200,320
+%WER 35.82 [ 1143 / 3191, 88 ins, 270 del, 785 sub ] exp/chain/tdnn_sp/decode_central_accord_1/wer_10_0.0
+%WER 33.72 [ 1076 / 3191, 109 ins, 250 del, 717 sub ] exp/chain/tdnn_sp/decode_central_accord/wer_10_0.0
+%WER 33.34 [ 1064 / 3191, 104 ins, 250 del, 710 sub ] exp/chain/tdnn_sp_online/decode_central_accord/wer_10_0.0
+%WER 32.47 [ 2597 / 7999, 105 ins, 1003 del, 1489 sub ] exp/chain/tdnn_sp/decode_niger/wer_13_0.5
+%WER 31.90 [ 2552 / 7999, 157 ins, 826 del, 1569 sub ] exp/chain/tdnn_sp_online/decode_niger/wer_12_0.0
+%WER 30.39 [ 6775 / 22297, 375 ins, 933 del, 5467 sub ] exp/chain/tdnn_sp_online/decode_dev/wer_9_0.0
+%WER 30.31 [ 9969 / 32888, 655 ins, 1648 del, 7666 sub ] exp/chain/tdnn_sp/decode_test/wer_9_0.0
+%WER 30.31 [ 6758 / 22297, 367 ins, 929 del, 5462 sub ] exp/chain/tdnn_sp/decode_dev/wer_9_0.0
+%WER 30.19 [ 9929 / 32888, 590 ins, 1833 del, 7506 sub ] exp/chain/tdnn_sp_online/decode_test/wer_10_0.0
+
+This looks better.
+
+I am running one more experiment with the chunks per mini batch set to 32,16,8
+** Goals for Wednesday:
+- TODO Accomplishments.
+- TODO Proposal
+- TODO Mandatory Training.
+- TODO Gp + Yaounde: Final chain model tuning. 
+- TODO Russian: phony dictionary and lm.
+- TODO Spanish: Investigate Corpora.
+- TODO SOFTunisia: Get next rough draft to Zac.
+
 * DAR <2017-08-07 Mon>
 ** Goals for Next Week:
 - TODO Accomplishments and Proposal.
