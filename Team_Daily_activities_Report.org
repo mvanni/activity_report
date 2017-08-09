@@ -1,3 +1,53 @@
+* DAR <2017-08-09 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Accomplishments.
+- TODO Proposal
+- TODO Mandatory Training.
+- TODO Gp + Yaounde: Final chain model tuning. 
+Here are the results from yesterday's run:
+%WER 36.48 [ 1164 / 3191, 135 ins, 298 del, 731 sub ] exp/chain/tdnn_sp_online/decode_central_accord/wer_10_0.0
+%WER 36.04 [ 1150 / 3191, 113 ins, 318 del, 719 sub ] exp/chain/tdnn_sp/decode_central_accord/wer_11_0.0
+%WER 35.82 [ 1143 / 3191, 88 ins, 270 del, 785 sub ] exp/chain/tdnn_sp/decode_central_accord_1/wer_10_0.0
+%WER 34.15 [ 2732 / 7999, 138 ins, 998 del, 1596 sub ] exp/chain/tdnn_sp/decode_niger/wer_13_0.0
+%WER 33.75 [ 2700 / 7999, 152 ins, 945 del, 1603 sub ] exp/chain/tdnn_sp_online/decode_niger/wer_12_0.0
+%WER 30.87 [ 10152 / 32888, 669 ins, 1719 del, 7764 sub ] exp/chain/tdnn_sp/decode_test/wer_9_0.0
+%WER 30.82 [ 10137 / 32888, 677 ins, 1718 del, 7742 sub ] exp/chain/tdnn_sp_online/decode_test/wer_9_0.0
+%WER 30.18 [ 6730 / 22297, 365 ins, 902 del, 5463 sub ] exp/chain/tdnn_sp/decode_dev/wer_9_0.0
+%WER 30.14 [ 6721 / 22297, 365 ins, 909 del, 5447 sub ] exp/chain/tdnn_sp_online/decode_dev/wer_9_0.0
+
+Ignore the decode_central_accord_1 result. It is from an earlier run.
+Notice that these results are quite a bit worse. 
+I did not expect this.
+I increased the chunks per mini batch and the WER went up.
+
+- DONE Russian: phony dictionary and lm.
+I have trained monophones.
+I found work I had done at Westpoint on Russian.
+There is a utf8 dictionary.
+I started preparing the lexicon with this dictionary.
+For some reason the ɛ character does not get processed by some tools.
+
+- TODO Spanish: Investigate Corpora.
+I also found work I had done at Westpoint for Spanish.
+It includes a dictionary and aparently transcripts for all the Answers data.
+
+- DONE SOFTunisia: Get next rough draft to Zac.
+I gave him a rough draft of all the utterances remaining on CTELLFOUR.
+
+I am running the decoding for the next batch.
+
+** Goals for Wednesday:
+- TODO Accomplishments.
+- TODO Proposal.
+- TODO Mandatory Training.
+- TODO Russian: prepare the lexicon.
+- TODO Russian: Prepare an lm.
+- TODO Russian: Continue training acoustic models.
+- TODO Russian: Decode with trained acoustic models new lexicon and lm.
+- TODO SOFTunisia: Get next rough draft to Zac.
+- TODO Spanish: Start data preparation.
+- TODO GP: Run test with models built only on GP.
+
 * DAR <2017-08-08 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Mandatory training.
