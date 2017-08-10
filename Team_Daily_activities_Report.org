@@ -1,3 +1,35 @@
+* DAR <2017-08-10 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Accomplishments.
+- TODO Proposal.
+- TODO Mandatory Training.
+- TODO Russian: prepare the lexicon.
+I figured out that LC_ALL needs to be set to C to get ɛ to be sorted.
+I think I'm done with the SOFPeter lexicon.
+The WEstpoint I corpus lexicon needs work.
+The transcripts are written in latex 7-bit ascii encoding. 
+
+- TODO Russian: Prepare an lm.
+Where should I get the text data?
+i can make an lm on just the prompts and Answers transcripts.
+- TODO Russian: Continue training acoustic models.
+- TODO Russian: Decode with trained acoustic models new lexicon and lm.
+- DONE SOFTunisia: Get next rough draft to Zac.
+I got him stage 11 with a rough draft for speakers CTELLONE_010 thru CTELLONE_018.
+
+- TODO Spanish: Start data preparation.
+- TODO GP: Run test with models built only on GP.
+
+** Goals for Friday:
+- TODO Mandatory Training.
+- TODO Accomplishments.
+- TODO Proposal.
+- TODO Russian: Train acoustic models.
+- TODO Russian: Transcripts for Westpoint I corpus.
+- TODO Spanish: Start data prep.
+- TODO GP: Results with no yaounde.
+
+
 * DAR <2017-08-09 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Accomplishments.
