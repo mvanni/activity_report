@@ -1,3 +1,59 @@
+* My WAR <2017-08-11 Fri>
+**  Goals set Last Week:
+- TODO Accomplishments and Proposal.
+- DONE GP + Yaounde: Chain Model tuning.
+I got the best results with high chunk width and low chunks per mini batch.
+%WER 33.72 [ 1076 / 3191, 109 ins, 250 del, 717 sub ] exp/chain/tdnn_sp/decode_central_accord/wer_10_0.0
+%WER 33.34 [ 1064 / 3191, 104 ins, 250 del, 710 sub ] exp/chain/tdnn_sp_online/decode_central_accord/wer_10_0.0
+
+- DONE SOFTunisia: Get a rough draft of the next chunk of data to Zac.
+We went through 2 batches of speakers and Zac is working on a third. 
+He is working on speakers 11-19 of machine CTELLONE.
+We're about half way through all the Answers data.
+- DONE: Investigate Russian, Spanish and Arabic resources for building ASR system for TransApps.
+I worked a lot on Russian this week.
+The SOFPeter corpus and the Westpoint I  corpora are available.
+There are transcriptions.
+I'm not sure how accurate the transcriptions are.
+There is a dictionary in utf8.
+GlobalPhone has a Russian 3gram lm.
+The transcription of the Westpoint I data is a bit strange.
+There are several holes in the transcription.
+For example, it looks like prompt 44 was never transcribed.
+I think I know what happened.
+We had someone review the corpus.
+They converted the latex input into utf8.
+They had problems with some of the prompts and they refused to convert them into utf8.
+There are around 11.5 hours of speech in the SOFPeter corpus.
+Assuming 100 frames per second, the alignments represent 11.5 hours of data, or 8.3 hours if SIL frames are excluded.
+There are apparently around 2 hours of speech in the Westpoint I corpus:
+Assuming 100 frames per second, the alignments represent 2.2 hours of data, or 1.2 hours if SIL frames are excluded.
+There seem to be 1784 utterances that are transcribed in the Westpoint I corpus.
+There seem to be 10626 utterances that are transcribed in the SOFPeter corpus.
+- TODO Mandatory Training.
+- TODO Accent Id: Use older kaldi recipe that does not use A DNN to build the UBM and iVector extractor.
+
+** WAR
+John Morgan started work on building an Automatic Speech Recognition (ASR) system for the Russian language. 
+He is doing this for 2 main reasons. 
+1. The ITEP (formerly known as TransApps) team has identified Russian as one of the languages they will offer on their Speech to Speech App. 
+The ATeam will provide ITEP with the Russian ASR component for their first S2S release. 
+2. Morgan plans to implement the kaldi multilang recipe as a project for the coming fiscal year. 
+This new recipe uses ASR systems from several well -resourced languages to build an ASR system for a low-resourced language. 
+Thus, Morgan is building ASR systems for languages for which he has a corpus of training data. 
+The ATeam has a corpus of Russian speech that was collected at West Point and Saint Petersburg starting in the 1990s. 
+Morgan is working now with  this corpus. 
+Soon, the ATeam will have access to the 21 GlobalPhone speech corpora including Russian. 
+
+** Goals for Next Week:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Spanish:  Data preparation to build cd gmm hmm system.
+- TODO Russian: Results for cd gmm hmm.
+- TODO Russian: Chain models?
+- TODO SOFTunisia: Get rough drafts to Zac (3 during the week).
+- TODO GP: Get results without Yaounde.
+
 * My War <2017-08-04 Fri>
 ** Goals setLast Week:
 - DONE Mandatory Training. (Anti Terrorism Level I)
