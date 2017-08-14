@@ -1,3 +1,55 @@
+* DAR <2017-08-14 Mon>
+**  Goals for Next Week:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Spanish:  Data preparation to build cd gmm hmm system.
+- TODO Russian: Results for cd gmm hmm.
+Here is what I got from the run on Friday:
+%WER 95.21 [ 8391 / 8813, 281 ins, 2548 del, 5562 sub ] exp/mono/decode_test/wer_8_1.0
+%WER 85.10 [ 7500 / 8813, 227 ins, 2514 del, 4759 sub ] exp/tri1/decode_test/wer_11_1.0
+%WER 81.58 [ 7190 / 8813, 313 ins, 2199 del, 4678 sub ] exp/tri2b/decode_test/wer_11_1.0
+%WER 81.28 [ 7163 / 8813, 283 ins, 2239 del, 4641 sub ] exp/tri3b/decode_test.si/wer_12_1.0
+%WER 76.76 [ 3934 / 5125, 192 ins, 1215 del, 2527 sub ] [PARTIAL] exp/tri3b/decode_test/wer_11_1.0
+
+This seems really bad.
+Something is probably wrong.
+
+
+I spent the day going through the run.sh script.
+There was a problem with the utt2spk file.
+I had to rename the files and directories.
+The utt2spk file has to be written so that if you sort it by utterance id you get the same as if you sort it by speaker id.
+To achieve this you want the speaker id to be a prefix of the utterance id.
+So now I have directories 001 - 107 indexed by speakers.
+In each of these directories I have files with names like:
+001_Anssers_0001.wav 
+This seems to have fixed the problem.
+
+I am training monophones right now.
+What should I do for the LM?
+I have the prompts that I can use to make an lm and I have the lm from GlobalPHone.
+
+- TODO Russian: Chain models?
+- TODO SOFTunisia: Get rough drafts to Zac (3 during the week).
+I got him stage 12 today.
+- TODO GP: Get results without Yaounde.
+
+** Goals for Tuesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Russian:  Run 2 decodings with 2 different LMs.
+- TODO Spanish: Prepare data for training.
+
+* DAR <2017-08-11 Fri>
+**  Goals for Friday set Thursday:
+- TODO Mandatory Training.
+- TODO Accomplishments.
+- TODO Proposal.
+- TODO Russian: Train acoustic models.
+- TODO Russian: Transcripts for Westpoint I corpus.
+- TODO Spanish: Start data prep.
+- TODO GP: Results with no yaounde.
+
 * DAR <2017-08-10 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Accomplishments.
@@ -28,7 +80,6 @@ I got him stage 11 with a rough draft for speakers CTELLONE_010 thru CTELLONE_01
 - TODO Russian: Transcripts for Westpoint I corpus.
 - TODO Spanish: Start data prep.
 - TODO GP: Results with no yaounde.
-
 
 * DAR <2017-08-09 Wed>
 ** Goals for Wednesday set Tuesday:
