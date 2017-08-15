@@ -1,3 +1,40 @@
+* DAR <2017-08-15 Tue>
+** Goals for Tuesday set Monday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Russian:  Run 2 decodings with 2 different LMs.
+I've already run the decoding with the gp lm (see the results from yesterday).
+Here are the same results run on the GPU machine.
+%WER 89.62 [ 7898 / 8813, 301 ins, 2322 del, 5275 sub ] exp/mono/decode_test/wer_7_0.5
+%WER 84.56 [ 7452 / 8813, 284 ins, 2250 del, 4918 sub ] exp/tri1/decode_test/wer_10_1.0
+%WER 83.26 [ 7338 / 8813, 324 ins, 2158 del, 4856 sub ] exp/tri2b/decode_test/wer_11_0.5
+%WER 82.84 [ 7301 / 8813, 354 ins, 1938 del, 5009 sub ] exp/tri3b/decode_test.si/wer_9_1.0
+%WER 76.16 [ 6712 / 8813, 295 ins, 1957 del, 4460 sub ] exp/tri3b/decode_test/wer_12_1.0
+
+Now I am going to run decoding with the lm made from the prompts and answers.
+As I am getting ready to leave, I have results for monophones.
+%WER 55.68 [ 4907 / 8813, 342 ins, 1449 del, 3116 sub ] exp/mono/decode_test/wer_11_0.0
+The LM trained on the prompts and Ansers  makes a big difference.
+
+I still do not have the correct sorting order for the files in the SOFPeter corpus.
+It looks like Steve's hunch that the length of the file names might be right.
+I changed Answers to a and Recordings to r.
+Now all the files have the same format, specifically, the length.
+xxx_yyyy_{a|r}.wav
+
+- TODO Spanish: Prepare data for training.
+- TODO SOFTunisia: Get corrections back from Zac and turn around next rough draft.
+Got the corrections back from Zac.
+I am decoding the new batch of Answers.
+
+** Goals for Wednesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO SOFTunisia: Get rough draft of stage 13 of Answers to Zac.
+- TODO Russian: Results for CD GMM HMMs.
+- TODO Russian: Chain Models?
+- TODO Spanish: Prepare Data.
+
 * DAR <2017-08-14 Mon>
 **  Goals for Next Week:
 - TODO Accomplishments.
@@ -39,6 +76,7 @@ I got him stage 12 today.
 - TODO Mandatory Training.
 - TODO Russian:  Run 2 decodings with 2 different LMs.
 - TODO Spanish: Prepare data for training.
+- TODO SOFTunisia: Get corrections back from Zac and turn around next rough draft.
 
 * DAR <2017-08-11 Fri>
 **  Goals for Friday set Thursday:
@@ -80,7 +118,6 @@ I got him stage 11 with a rough draft for speakers CTELLONE_010 thru CTELLONE_01
 - TODO Russian: Transcripts for Westpoint I corpus.
 - TODO Spanish: Start data prep.
 - TODO GP: Results with no yaounde.
-
 * DAR <2017-08-09 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Accomplishments.
