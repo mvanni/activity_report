@@ -13,8 +13,12 @@ Here are the same results run on the GPU machine.
 
 Now I am going to run decoding with the lm made from the prompts and answers.
 As I am getting ready to leave, I have results for monophones.
+%WER 57.84 [ 5097 / 8813, 241 ins, 1765 del, 3091 sub ] exp/tri1/decode_test/wer_15_0.5
 %WER 55.68 [ 4907 / 8813, 342 ins, 1449 del, 3116 sub ] exp/mono/decode_test/wer_11_0.0
 The LM trained on the prompts and Ansers  makes a big difference.
+
+But something is not right.
+The monophone results are better than the triphone tri1 results.
 
 I still do not have the correct sorting order for the files in the SOFPeter corpus.
 It looks like Steve's hunch that the length of the file names might be right.
@@ -32,7 +36,7 @@ I am decoding the new batch of Answers.
 - TODO Mandatory Training.
 - TODO SOFTunisia: Get rough draft of stage 13 of Answers to Zac.
 - TODO Russian: Results for CD GMM HMMs.
-- TODO Russian: Chain Models?
+- TODO Russian: Why are tri1 results worse than mono results?
 - TODO Spanish: Prepare Data.
 
 * DAR <2017-08-14 Mon>
