@@ -1,3 +1,37 @@
+* DAR <2017-08-16 Wed>
+**  Goals for Wednesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- DONE SOFTunisia: Get rough draft of stage 13 of Answers to Zac.
+I gave the draft to Zac.
+He got his corrections back to me at 1:30.
+I have the next draft ready to give to him tomorrow.
+
+- TODO Russian: Results for CD GMM HMMs.
+%WER 55.87 [ 4924 / 8813, 265 ins, 1574 del, 3085 sub ] exp/tri3b/decode_test.si/wer_14_0.5
+%WER 55.68 [ 4907 / 8813, 342 ins, 1449 del, 3116 sub ] exp/mono/decode_test/wer_11_0.0
+%WER 55.08 [ 4854 / 8813, 273 ins, 1657 del, 2924 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 54.34 [ 4789 / 8813, 344 ins, 1331 del, 3114 sub ] exp/tri1/decode_test/wer_15_0.0
+%WER 49.91 [ 4399 / 8813, 248 ins, 1376 del, 2775 sub ] exp/tri3b/decode_test/wer_17_0.5
+
+I would expect the triphones to be much better.
+I might have old and new results mixed in above.
+- TODO Russian: Why are tri1 results worse than mono results?
+- DONE Spanish: Prepare Data.
+I think I'm mostly done preparing our West Point and Heroico data.
+I started working with the entropic corpus.
+Bad news: The data is sampled at 8khz.
+At least the 100sentences read part of the corpus that I looked at is sampled at 8khz.
+
+** Goals for Thursday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Spanish: cd gmm hmm system build and results.
+- TODO Entropic Spanish: Is there any 16khz data in this corpus?
+- TODO Multilang: Take first tiny steps with a few corpora.
+- TODO German: Prepare Westpoint corpus.
+- TODO SOFTunisia: Get rough draft to Zac and try to get corrections back from him.
+
 * DAR <2017-08-15 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Accomplishments.
