@@ -1,3 +1,44 @@
+* DAR <2017-08-17 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Spanish: cd gmm hmm system build and results.
+I had a bug in the script that prepares the dictionary.
+I am restarting.
+I am also using a different dictionary.
+
+The build went really fast on the GPU machine.
+%WER 34.87 [ 5828 / 16713, 537 ins, 1069 del, 4222 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 33.05 [ 5523 / 16713, 546 ins, 1809 del, 3168 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 32.75 [ 5473 / 16713, 680 ins, 1128 del, 3665 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 30.77 [ 5143 / 16713, 602 ins, 1168 del, 3373 sub ] exp/tri1/decode_test/wer_16_0.0
+%WER 28.40 [ 4746 / 16713, 676 ins, 674 del, 3396 sub ] exp/tri3b/decode_test/wer_17_1.0
+
+The GPU machine seems to be running faster.
+I wonder if the fix to the memory helped speed up the GPU machine?
+
+- TODO Entropic Spanish: Is there any 16khz data in this corpus?
+I thought there was, since in the .hdr files it says that some (720)  of the recordings were done at 16khz.
+But the flac files claim to be sampled at 8khz.
+I am skipping this corpus
+- TODO Multilang: Take first tiny steps with a few corpora.
+- TODO German: Prepare Westpoint corpus.
+I took the first steps.
+It looks like there is a lot of transcription work done by Milan.
+We have a dictionary.
+I am not sure if we have transcriptions for the Answers.
+I'm afraid we do not.
+
+- DONE SOFTunisia: Get rough draft to Zac and try to get corrections back from him.
+As I am getting ready to leave, I am decoding stage 15, speakers CTELLTHREE_015 - CTELLTHREE_022.
+
+
+** Goals for Friday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO German: prepare data.
+- TODO German LMKuln: Search for Answers transcripts.
+
 * DAR <2017-08-16 Wed>
 **  Goals for Wednesday:
 - TODO Accomplishments.
