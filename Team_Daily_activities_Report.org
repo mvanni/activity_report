@@ -1,8 +1,49 @@
+* DAR <2017-08-21 Mon>
+**  Goals set Last Week:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO SOFTunisia: Get rough draft transcriptions to Zac.
+- TODO Russian: Rerun system build with chain models included.
+Here are the WER results including chain models: 
+%WER 61.42 [ 5413 / 8813, 325 ins, 2285 del, 2803 sub ] exp/chain/tdnn_sp/decode_test/wer_10_0.0
+%WER 55.87 [ 4924 / 8813, 265 ins, 1574 del, 3085 sub ] exp/tri3b/decode_test.si/wer_14_0.5
+%WER 55.68 [ 4907 / 8813, 342 ins, 1449 del, 3116 sub ] exp/mono/decode_test/wer_11_0.0
+%WER 55.08 [ 4854 / 8813, 273 ins, 1657 del, 2924 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 54.34 [ 4789 / 8813, 344 ins, 1331 del, 3114 sub ] exp/tri1/decode_test/wer_15_0.0
+%WER 49.91 [ 4399 / 8813, 248 ins, 1376 del, 2775 sub ] exp/tri3b/decode_test/wer_17_0.5
+
+I still think something is wrong with the Russian build.
+
+- DONE German: Build cd gmm hmm and chain models.
+I do not have a test set separated out yet, so I tested on the training data.
+Here are the WER results:
+%WER 9.76 [ 10137 / 103907, 205 ins, 5528 del, 4404 sub ] exp/mono/decode_train/wer_14_0.0
+%WER 3.03 [ 3145 / 103907, 247 ins, 1664 del, 1234 sub ] exp/tri1/decode_train/wer_17_0.0
+%WER 2.93 [ 3041 / 103907, 302 ins, 1483 del, 1256 sub ] exp/tri3b/decode_train.si/wer_17_0.0
+%WER 2.51 [ 2608 / 103907, 213 ins, 1418 del, 977 sub ] exp/tri2b/decode_train/wer_17_0.0
+%WER 2.50 [ 2597 / 103907, 241 ins, 1372 del, 984 sub ] exp/tri3b/decode_train/wer_17_0.0
+%WER 1.24 [ 1289 / 103907, 22 ins, 888 del, 379 sub ] exp/chain/tdnn_sp/decode_test/wer_10_0.0
+
+- TODO Croatian: Build cd gmm hmms and chain models.
+I worked all day today on this.
+There is a problem with the dictionary that was part of the Westpoint hard drive.
+The big dictionary is not encoded in utf8.
+The multi-byte characters are mangled.
+I'm not sure how to recover the dictionary in utf8.
+I have a small (2500 entries) dictionary that I am using as a stand in for now.
+
+** Goals for Tuesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Croatian: Try to recover big dictionary.
+- TODO Croatian: Build cd gmm hmm and chain models.
+- TODO Russian: Figure out what is wrong.
+
 * DAR <2017-08-17 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Accomplishments.
 - TODO Mandatory Training.
-- TODO Spanish: cd gmm hmm system build and results.
+- DONE Spanish: cd gmm hmm system build and results.
 I had a bug in the script that prepares the dictionary.
 I am restarting.
 I am also using a different dictionary.
@@ -32,12 +73,12 @@ I'm afraid we do not.
 - DONE SOFTunisia: Get rough draft to Zac and try to get corrections back from him.
 As I am getting ready to leave, I am decoding stage 15, speakers CTELLTHREE_015 - CTELLTHREE_022.
 
-
 ** Goals for Friday:
 - TODO Accomplishments.
 - TODO Mandatory Training.
 - TODO German: prepare data.
 - TODO German LMKuln: Search for Answers transcripts.
+- TODO SOFTunisia: Get stage 15 rough draft to Zac (via email).
 
 * DAR <2017-08-16 Wed>
 **  Goals for Wednesday:
