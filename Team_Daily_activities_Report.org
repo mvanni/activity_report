@@ -1,3 +1,24 @@
+* DAR <2017-08-22 Tue>
+** Goals for Tuesday set Monday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO Croatian: Try to recover big dictionary.
+I think I'm wasting my time doing this right now.
+I am going to wait until GlobalPhone arrives.
+Then I'll have a lexicon to work with.
+
+- TODO Croatian: Build cd gmm hmm and chain models.
+
+- TODO Russian: Figure out what is wrong.
+I get 56% WER for monophones which is not horrible, but I still think something is not right.
+
+** Goals for Wednesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO GP: cd gmm hmm chain model build.
+- TODO Russian: tune system.
+
+
 * DAR <2017-08-21 Mon>
 **  Goals set Last Week:
 - TODO Accomplishments.
