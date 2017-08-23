@@ -1,3 +1,50 @@
+* DAR <2017-08-23 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO GP French: cd gmm hmm chain model build.
+I am not happy yet.
+Here are the WER results so far:
+%WER 46.16 [ 10293 / 22297, 1922 ins, 903 del, 7468 sub ] exp/gp/tri3b/decode_dev.si/wer_17_1.0
+%WER 44.55 [ 9666 / 21698, 1913 ins, 696 del, 7057 sub ] exp/gp/tri3b/decode_eval.si/wer_17_1.0
+%WER 44.26 [ 9868 / 22297, 2039 ins, 770 del, 7059 sub ] exp/gp/tri3b/decode_dev/wer_17_1.0
+%WER 43.90 [ 9526 / 21698, 1365 ins, 1209 del, 6952 sub ] exp/gp/tri1/decode_eval/wer_17_1.0
+%WER 43.52 [ 9442 / 21698, 1768 ins, 828 del, 6846 sub ] exp/gp/tri2b/decode_eval/wer_17_1.0
+%WER 43.09 [ 9350 / 21698, 2082 ins, 571 del, 6697 sub ] exp/gp/tri3b/decode_eval/wer_17_1.0
+
+I think the low scores might have something to do with the LM.
+I am using the text from the GP prompts and the African data transcripts.
+
+- TODO Russian: tune system.
+I only have mono WER results so far.
+%WER 56.61 [ 4989 / 8813, 258 ins, 1635 del, 3096 sub ] exp/mono/decode_test/wer_10_0.5
+
+This seems to have gooten worse too.
+
+Maybe the issue is the LM here too.
+Is there a subs corpus for Russian?
+
+- Croatian:
+I am still getting horrible WER results here too.
+%WER 97.53 [ 62125 / 63700, 227 ins, 24154 del, 37744 sub ] exp/mono/decode_train/wer_7_0.0
+
+Notice that this results is on the training data.
+Obviously, something is wrong.
+
+
+- SOFTunisia:
+Zac and I talked about the WER for the latest stage.
+There seems to be a trend.
+The WER gets worse as we go along.
+We agreed that on the next stage Zac will modify the dictionary.
+
+** Goals for Thursday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO SOFTunisia: Get stage 17 rough draft to Zac.
+- TODO GP French: After getting results with current system, test a new system with the large LM including subs.
+- TODO Russian: Ditto. Get subs corpus if available.
+
 * DAR <2017-08-22 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Accomplishments.
@@ -17,7 +64,6 @@ I get 56% WER for monophones which is not horrible, but I still think something 
 - TODO Mandatory Training.
 - TODO GP: cd gmm hmm chain model build.
 - TODO Russian: tune system.
-
 
 * DAR <2017-08-21 Mon>
 **  Goals set Last Week:
