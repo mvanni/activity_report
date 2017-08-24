@@ -1,4 +1,16 @@
 * DAR <2017-08-23 Wed>
+**  Goals for Thursday set Wednesday:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO SOFTunisia: Get stage 17 rough draft to Zac.
+This is on hold until Zac fixes the dictionary.
+- TODO GP French: After getting results with current system, test a new system with the large LM including subs.
+I am returning to the original kaldi gp recipe.
+I am finding some strange steps.
+The organization of the directories is different than what I have now.
+I'd like to follow the recipe closely so I can tell what is causeing our worse WER scores.
+- TODO Russian: Ditto. Get subs corpus if available.
+
 **  Goals for Wednesday set Tuesday:
 - TODO Accomplishments.
 - TODO Mandatory Training.
@@ -37,6 +49,10 @@ Zac and I talked about the WER for the latest stage.
 There seems to be a trend.
 The WER gets worse as we go along.
 We agreed that on the next stage Zac will modify the dictionary.
+** Goals for Friday:
+- TODO Accomplishments
+- TODO Mandatory Training.
+- TODO GP French. Implement kaldi recipe more closely.
 
 ** Goals for Thursday:
 - TODO Accomplishments.
