@@ -1,3 +1,59 @@
+* My WAR <2017-08-25 Fri>
+**  Goals set Last Week:
+- TODO Accomplishments.
+- TODO Mandatory Training.
+- TODO SOFTunisia: Get rough draft transcriptions to Zac.
+This has been put on hold until Zac fixes the dictionary we are currently using.
+We are now using the dictionary that was produced for the GALE project.
+It is very large and very messy.
+Zac is going to try to clean it up.
+
+- TODO Russian: Rerun system build with chain models included.
+I'm not happy with the Russian yet.
+The monophones aren't terrible, but they could be better.
+There are problems with the triphones.
+They should be much better.
+This make me think there is something else wrong.
+
+%WER 56.61 [ 4989 / 8813, 258 ins, 1635 del, 3096 sub ] exp/mono/decode_test/wer_10_0.5
+%WER 54.37 [ 4792 / 8813, 285 ins, 1508 del, 2999 sub ] exp/tri2b/decode_test/wer_14_0.0
+%WER 52.88 [ 4660 / 8813, 235 ins, 1483 del, 2942 sub ] exp/tri1/decode_test/wer_14_0.5
+
+- DONE German: Build cd gmm hmm and chain models.
+I don't have a test set separated out.
+I'm going to wait until we get GlobalPhone to continue working on German.
+I did build the cd gmm hmm chain model system and got the following WER results on the training data:
+%WER 9.76 [ 10137 / 103907, 205 ins, 5528 del, 4404 sub ] exp/mono/decode_train/wer_14_0.0
+%WER 3.03 [ 3145 / 103907, 247 ins, 1664 del, 1234 sub ] exp/tri1/decode_train/wer_17_0.0
+%WER 2.93 [ 3041 / 103907, 302 ins, 1483 del, 1256 sub ] exp/tri3b/decode_train.si/wer_17_0.0
+%WER 2.51 [ 2608 / 103907, 213 ins, 1418 del, 977 sub ] exp/tri2b/decode_train/wer_17_0.0
+%WER 2.50 [ 2597 / 103907, 241 ins, 1372 del, 984 sub ] exp/tri3b/decode_train/wer_17_0.0
+%WER 1.24 [ 1289 / 103907, 22 ins, 888 del, 379 sub ] exp/chain/tdnn_sp/decode_test/wer_10_0.0
+
+- TODO Croatian: Build cd gmm hmms and chain models.
+Something is definitely not right with the Croatian data.
+%WER 98.21 [ 62562 / 63700, 95 ins, 40095 del, 22372 sub ] exp/tri3b/decode_train/wer_7_0.0
+%WER 98.02 [ 62439 / 63700, 109 ins, 38008 del, 24322 sub ] exp/tri1/decode_train/wer_7_0.0
+%WER 97.81 [ 62305 / 63700, 160 ins, 32792 del, 29353 sub ] exp/tri3b/decode_train.si/wer_7_0.0
+%WER 97.68 [ 62222 / 63700, 142 ins, 33746 del, 28334 sub ] exp/tri2b/decode_train/wer_7_0.0
+%WER 97.53 [ 62125 / 63700, 227 ins, 24154 del, 37744 sub ] exp/mono/decode_train/wer_7_0.0
+
+
+** WAR:
+John Morgan worked on reproducing an experiment for French Automatic Speech Recognition (ASR) with the Globalphone (GP) corpus of read speech and the Kaldi toolkit. 
+Results were published   in 2016 for a recent experiment with the GP corpus and Kaldi. 
+Morgan is trying to reproduce the previous results because he is using GP as a foundation to build an ASR system for African accented French. 
+The published word error rate (WER) results are very good and Morgan is interested in learning how they were obtained. 
+He is also interested in the GP experiment because his project for next year will involve building ASR systems for the 20 languages in the GP database. 
+The system builds all follow a Kaldi recipe similar to the one for French. 
+Next year Morgan plans on implementing a new Kaldi recipe that uses the multi-task machine learning approach to build an ASR system for a low-resource language. 
+The kaldi multilang recipe leverages the shared representations from the hidden layers of the neural network acousti models from several languages to train the last hidden layer of a new acoustic model. 
+
+** Goals for Next Week:
+- TODO Accomplishments
+- TODO  Mandatory Training.
+- TODO GP French: Reproduce a close as possible the GP French WER results.
+
 * My WAR <2017-08-18 Fri>
 **  Goals for set Last Week:
 - TODO Accomplishments.
