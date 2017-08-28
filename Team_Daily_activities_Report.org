@@ -16,6 +16,7 @@ I have to copy the data to disk to get it in a format that can be used by the sc
 - TODO Accomplishments
 - TODO  Mandatory Training.
 - TODO GP French: Finish the data prep and start training.
+- TODO Spanish Heroico: Do extra careful recipe writing.
 
 * DAR <2017-08-25 Fri>
 ** Goals for Friday set Thursday:
