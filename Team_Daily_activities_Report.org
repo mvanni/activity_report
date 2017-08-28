@@ -1,3 +1,31 @@
+* DAR <2017-08-28 Mon>
+** Goals for Next Week:
+- TODO Accomplishments
+- TODO  Mandatory Training.
+- TODO GP French: Reproduce a close as possible the GP French WER results.
+I worked on this all day today.
+I am mostly simplifying the kaldi scripts that build  the cd gmm hmm system with the French Globalphone corpus.
+The scripts are written to handle several of the Globalphone languages.
+This makes them overly complicated and hard to read.
+
+I also am skipping some steps.
+I am assuming that sox is already installed.
+I have to copy the data to disk to get it in a format that can be used by the scripts.
+
+** Goals for Tuesday:
+- TODO Accomplishments
+- TODO  Mandatory Training.
+- TODO GP French: Finish the data prep and start training.
+
+* DAR <2017-08-25 Fri>
+** Goals for Friday set Thursday:
+- TODO Accomplishments
+- TODO Mandatory Training.
+- TODO GP French. Implement kaldi recipe more closely.
+I made some progress on this.
+It looks like the recipe assumed there were files processed by shorten.
+These files have an extention like: .adc.shn
+
 * <2017-08-24 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Accomplishments.
