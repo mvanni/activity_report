@@ -20,6 +20,11 @@ I process the heroico answers recordings separately.
 Then I bring them together and run the sort -k1,1-u on the lists.
 This seems to give me good sorting.
 
+I process USMA native and nonnative data separately.
+Then I bring them together.
+I run the sort -k1,1 -u on the resultin file.
+This does not seem to b working. 
+
 ** Goals for Wednesday:
 - TODO Accomplishments.
 - TODO Mandatory training.
