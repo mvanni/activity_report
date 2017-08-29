@@ -1,3 +1,31 @@
+* DAR <2017-08-29 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Accomplishments
+- TODO  Mandatory Training.
+- TODO GP French: Finish the data prep and start training.
+I wrote scripts that rename the data files.
+I did this so that they are oredered correctly.
+I think I succeeded.
+
+- TODO Spanish Heroico: Do extra careful recipe writing.
+I also have sorting problems here.
+I checked in the utils/fix_data_dir.sh script to see how sorting is done.
+It uses:
+sort -k1,1 -u
+The -u switch does uniq.
+I'm not sure what the -k1,1 does.
+
+I process the heroico and usma corpora separately.
+I process the heroico answers recordings separately.
+Then I bring them together and run the sort -k1,1-u on the lists.
+This seems to give me good sorting.
+
+** Goals for Wednesday:
+- TODO Accomplishments.
+- TODO Mandatory training.
+
+Stop everything and do these 2 goals!
+
 * DAR <2017-08-28 Mon>
 ** Goals for Next Week:
 - TODO Accomplishments
