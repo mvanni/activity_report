@@ -1,3 +1,34 @@
+* DAR <2017-08-31 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Accomplishments.
+I actually started working on this finally!
+- TODO SOFTunisia: Get Encode::Arabic::Buckwalter to print with no vocalization
+I downloaded http://alt.qcri.org/resources/msa-dictionary/releases/current/ar-ar_lexicon_2014-03-17.txt.bz2
+It looks like the same dictionary available from the LDC.
+No utf8.
+The transcripts of the GALE data are at:
+/mnt/corpora/LDC2013T17
+
+We could use these data as input to the method described in the paper:
+A COMPLETE KALDI RECIPE FOR BUILDING ARABIC SPEECH RECOGNITION SYSTEMS
+
+
+- Heroico:
+I contacted Yenda to see if I can contribute the recipe to the Kaldi repo.
+I separated the native and nonnative data from the usma corpus.
+I am training on heroico and testing on usma.
+I am hoping that the fact that we have a corpus of nonnative speech will make Yenda and Dan accept the recipe for contribution to kaldi.
+
+As I am getting ready to leave, I am running the heroico recipe again.
+It is almost at the point where it training the chain models.
+I don't do any testing until I've trained all the models.
+
+** Goals for Friday:
+- TODO Accomplishments
+- TODO Mandatory training.
+- TODO GP French: Get recipe running.
+- TODO SOFTunisia: Search for dictionary in original text encoding.
+
 * DAR <2017-08-30 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Accomplishments.
