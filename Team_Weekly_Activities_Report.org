@@ -1,4 +1,94 @@
+* My WAR <2017-09-01 Fri>
+- TODO Accomplishments
+- DONE  Mandatory Training.
+I did the No Fear training.
+- TODO GP French: Reproduce a close as possible the GP French WER results.
+I am not finished with this yet, but I made good progress.
+Modulo some caveats, I am satisfied witht the results.
+
+model	fold	kaldi	arl
+mono	dev	45.16	44.89
+mono	eval	%WER 41.80	41.47
+tri1	dev	28.44	28.84
+tri1	eval	26.26	26.54
+tri2a	dev	28.45	28.80
+tri2a	eval	26.18	26.38
+tri2b	dev	27.76	27.47
+tri2b	eval	25.43	25.64
+tri3b	dev	25.62	25.94
+tri3b	eval	23.82	
+
+
+The WER scores are very close.
+We do not have access to the same lexicon. 
+We are also not doing exactly the same training for the lm.
+Kaldi normalized statistics in the lm after removing OOVs.
+We had trouble getting this to work, so we settled for just removing the OOVs.
+
+
+	- Heroico:
+I worked this week on the Spanish Heroico system. 
+I am hoping that i can get it contributed to the Kaldi set of recipes. 
+I have a script that almost runs end to end.
+The only problem right now is that I set the nj (number of jobs) variable to 12 for decoding and there are only 8 speakers in each of the native and nonnative speaker groups.
+The results for the chain models are ready since I ran the chain model script with fewer jobs.
+
+%WER 26.08 [ 2403 / 9215, 186 ins, 612 del, 1605 sub ] exp/chain/tdnn_sp/decode_nonnative/wer_10_0.0
+%WER 25.89 [ 2386 / 9215, 194 ins, 589 del, 1603 sub ] exp/chain/tdnn_sp_online/decode_nonnative/wer_10_0.0
+%WER 23.88 [ 3991 / 16713, 298 ins, 949 del, 2744 sub ] exp/chain/tdnn_sp/decode_test/wer_10_0.0
+%WER 23.69 [ 3959 / 16713, 272 ins, 938 del, 2749 sub ] exp/chain/tdnn_sp_online/decode_test/wer_9_0.5
+%WER 21.10 [ 1582 / 7498, 85 ins, 391 del, 1106 sub ] exp/chain/tdnn_sp/decode_native/wer_10_0.5
+%WER 20.93 [ 1569 / 7498, 78 ins, 380 del, 1111 sub ] exp/chain/tdnn_sp_online/decode_native/wer_9_1.0
+
+
+there is a 5 percentage point difference between native and nonnative groups.
+
+Here are the remaining cd gmm hmm results:
+%WER 32.40 [ 2986 / 9215, 412 ins, 482 del, 2092 sub ] exp/tri3b/decode_nonnative.si/wer_17_1.0
+%WER 30.89 [ 5163 / 16713, 768 ins, 750 del, 3645 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 29.00 [ 2672 / 9215, 203 ins, 926 del, 1543 sub ] exp/tri2b/decode_nonnative/wer_17_1.0
+%WER 28.85 [ 2163 / 7498, 348 ins, 262 del, 1553 sub ] exp/tri3b/decode_native.si/wer_17_1.0
+%WER 28.15 [ 2594 / 9215, 229 ins, 459 del, 1906 sub ] exp/mono/decode_nonnative/wer_10_0.5
+%WER 27.33 [ 4568 / 16713, 415 ins, 1410 del, 2743 sub ] exp/tri2b/decode_test/wer_17_1.0
+%WER 27.29 [ 2515 / 9215, 217 ins, 639 del, 1659 sub ] exp/tri1/decode_nonnative/wer_17_1.0
+%WER 27.16 [ 4540 / 16713, 391 ins, 770 del, 3379 sub ] exp/mono/decode_test/wer_10_0.5
+%WER 27.06 [ 2494 / 9215, 371 ins, 272 del, 1851 sub ] exp/tri3b/decode_nonnative/wer_17_1.0
+%WER 26.40 [ 4412 / 16713, 428 ins, 1048 del, 2936 sub ] exp/tri1/decode_test/wer_17_1.0
+%WER 26.08 [ 4358 / 16713, 691 ins, 426 del, 3241 sub ] exp/tri3b/decode_test/wer_17_1.0
+%WER 25.85 [ 1938 / 7498, 159 ins, 308 del, 1471 sub ] exp/mono/decode_native/wer_10_0.5
+%WER 25.37 [ 1902 / 7498, 225 ins, 375 del, 1302 sub ] exp/tri1/decode_native/wer_15_1.0
+%WER 25.31 [ 1898 / 7498, 220 ins, 475 del, 1203 sub ] exp/tri2b/decode_native/wer_16_1.0
+%WER 24.69 [ 1851 / 7498, 307 ins, 159 del, 1385 sub ] exp/tri3b/decode_native/wer_17_1.0
+
+
+The difference between the mono, tri1, tri2b and tri3b WER results are very small.
+I'm pretty sure this means that I need to tune the parameters for the triphone models.
+The parameters are the number of leaves and gaussians.
+
+** WAR:
+John Morgan ran a replication experiment this week for French Automatic Speech Recognition (ASR) to reproduce results published by a Kaldi team. 
+The ASR system was developed with the GlobalPhone (GP) corpus and the Kaldi ASR toolkit. 
+Since the ATeam had developed their own French lexicon and since Lexicons are so expensive,the French part of GP was purchased without the lexicon. 
+The Kaldi team had normalized the language model statistics after out of vocabulary (OOV) words were removed. 
+John Morgan skipped this step and just removed the OOVs.
+Despite these caveats the word error rate (WER) results were very similar. 
+Morgan is encouraged by the WER results and is confident that he is using mehods that are as good as though used by the team that published the previous results in the Kaldi repository.
+He wil use the French GP corpus to build chain models and then use the chain models as one component of the multilang experiment he will work on next year.
+
+** Goals for Next Week:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+- TODO Heroico: Tune triphone parameters.
+- TODO SOFTunisia: Dictionary work.
+- TODO: GP French: Get Chain model results.
+- TODO Multilang: Investigate first steps.
+
 * My WAR <2017-08-25 Fri>
+**  Goals for Next Week:
+- TODO Accomplishments
+- TODO  Mandatory Training.
+- TODO GP French: Reproduce a close as possible the GP French WER results.
+
 **  Goals set Last Week:
 - TODO Accomplishments.
 - TODO Mandatory Training.
@@ -37,7 +127,6 @@ Something is definitely not right with the Croatian data.
 %WER 97.81 [ 62305 / 63700, 160 ins, 32792 del, 29353 sub ] exp/tri3b/decode_train.si/wer_7_0.0
 %WER 97.68 [ 62222 / 63700, 142 ins, 33746 del, 28334 sub ] exp/tri2b/decode_train/wer_7_0.0
 %WER 97.53 [ 62125 / 63700, 227 ins, 24154 del, 37744 sub ] exp/mono/decode_train/wer_7_0.0
-
 
 ** WAR:
 John Morgan worked on reproducing an experiment for French Automatic Speech Recognition (ASR) with the Globalphone (GP) corpus of read speech and the Kaldi toolkit. 
