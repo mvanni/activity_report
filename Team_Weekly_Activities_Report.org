@@ -16,7 +16,7 @@ tri2a	eval	26.18	26.38
 tri2b	dev	27.76	27.47
 tri2b	eval	25.43	25.64
 tri3b	dev	25.62	25.94
-tri3b	eval	23.82	
+tri3b	eval	23.82	24.25
 
 
 The WER scores are very close.
