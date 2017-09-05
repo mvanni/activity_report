@@ -1,3 +1,26 @@
+* DAR <2017-09-05 Tue>
+**  Goals for Next Week:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+I am trying to access the CTIP training.
+
+- TODO Heroico: Tune triphone parameters.
+- TODO SOFTunisia: Dictionary work.
+- TODO: GP French: Get Chain model results.
+- DONE Multilang: Investigate first steps.
+Yenda sent me his setup script.
+I am modifying it to work now with: french (gp), heroico, german, croatian and russian.
+I might as well run it on all the corpora I have now.
+I've got it partially running.
+
+** Goals for Wednesday:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+- TODO Multilang: Run a very simple example with our corpora.
+- TODO Heroico: Tune triphone parameters.
+- TODO SOFTunisia: Dictionary work.
+- TODO: GP French: Get Chain model results.
+
 * DAR <2017-08-31 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Accomplishments.
