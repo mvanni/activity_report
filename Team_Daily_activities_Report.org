@@ -1,3 +1,22 @@
+* DAR <2017-09-06 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+- TODO Multilang: Run a very simple example with our corpora.
+- TODO Heroico: Tune triphone parameters.
+- TODO SOFTunisia: Dictionary work.
+- TODO: GP French: Get Chain model results.
+I think training is done.
+I have to get chain model decoding working for GP FR.
+
+** Goals for Thursday:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+- TODO Multilang: Investigate possibly running on babel corpora to understand method.
+- TODO Heroico: Tune triphone parameters.
+- TODO SOFTunisia: Dictionary work.
+- TODO: GP French: Get Chain model results.
+
 * DAR <2017-09-05 Tue>
 **  Goals for Next Week:
 - TODO Write Accomplishments.
