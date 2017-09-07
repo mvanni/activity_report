@@ -1,3 +1,44 @@
+* DAR <2017-09-07 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+- TODO Multilang: Investigate possibly running on babel corpora to understand method.
+With help from Yenda, I'm getting a much better idea  of how this works.
+1. build monolingual systems up to lda mllt sat adapted context dependent gmm hmm  models. 
+babel calls these models tri5 they used to be called tri3b.
+2. 
+Run Yenda's script that sets up directories for multilang training.
+3. Do multilang training.
+I'm not sure about this since Yenda seems to have skipped this in his explanation, but I think you have to run:
+local/nnet3/run_tdnn_multilang.sh
+4. Extract BN features.
+I think step 3 produces a bnf extractor.
+If not, that has to be done somehow.
+5. Train systems with new feature vectors.
+Concatenate BN features to mfcc features.
+
+- TODO Heroico: Tune triphone parameters.
+Yenda says he will incorporate the heroico recipe in the kaldi repo.
+He says they would like to put the lexicon on openslr.org because it takes up too much space on the git repo.
+I told him to go ahead with that plan.
+I wonder if the LDC heroico speech data could be mirrored there as well?
+
+- TODO SOFTunisia: Dictionary work.
+- TODO: GP French: Get Chain model results.
+I decided to rewrite the scripts so that they do not put everything under an extra FR directory layer.
+This was causing problems at chain model decoding  time.
+I am currently rerunning the training scripts.
+
+** Goals for Friday:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+- TODO Multilang: Run minimal example with french german and spanish.
+- TODO Heroico: tune triphone parameters and address warnings in log files concerning acoustic models not getting training data.
+- TODO GP French: Run cd gmm hmm chain model end to end with results.
+- TODO GP Yaounde + Canadian Accented  African French
+- TODO ARTI_Cameroon_242_fr: Prepare data for processing with kaldi
+- TODO SOFTunisia: Dictionary work.
+
 * DAR <2017-09-06 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Write Accomplishments.
