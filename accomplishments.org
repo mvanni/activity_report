@@ -1,3 +1,86 @@
+* Accomplishments <2017-08-31 Thu>
+
+** 1. TECHNICAL COMPETENCE
+*** ASR Adaptation:
+A goal set last year was  to capitalize on the previous year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
+I pledged to  develop models that result in software that can be demoed with realtime interaction. 
+
+I believe I achieved this goal and together with ATeam colleagues I far exceeded my own expectations of what could be done in this area. 
+I was part of an effort by the Applications Team to develop a platform where the products we produce could be implemented and tested under conditions that would more closely resemble the actual conditions that Soldiers would face in the field. 
+The ATeam made the necessary contacts with an industry contractor working for a  branch in the SED division to build a prototype speech to speech device on a smart phone that would be capable of running the software products we develop. 
+A demo run on that prototype system used acoustic models and other components that I developed this year.
+
+*** kaldi:
+
+The ASR systems I have built this year are based on HMMs and SGMMs. 
+I will consider these systems as baselines for the work I will do using neural network models. 
+I will continue developing with the Kaldi ASR toolkit. 
+Specifically, I will implement systems with the following kaldi named models:
+Bottle Neck Features
+Chain Models
+nnet2
+nnet3
+TDNNs
+RBMs
+Eesen end to end rnn and lstm models.
+
+In the past year I have become familiar with the steps required to build chain models. 
+
+I will replicate for Arabic the work I did last year for French. 
+That is, I will adapt Standard Arabic models to Tunisian accented speech in the same way I adapted European French to African accents.
+I will make an effort to improve the language modeling component of the French and Arabic systems I develop with Kaldi.
+
+A major accomplishment this year is the acceptance of my recipe for building a Spanish ASR system into the Kaldi repository.
+
+*** Lexicon expansion
+I will attempt to use the work done in the Babel project for automatic lexicon expansion in our African French and Tunisian Arabic corpora. 
+This might involve automatic syllable boundary labeling. 
+
+*** Afghan Languages 
+
+I will build ASR systems for Dari and Pashto. 
+I will leverage resources produced by the babel project for Pashto. 
+I will work with Hazrat Ghulam Jahed on building high quality Dari and Pashto ASR systems.
+
+** Research:
+*** Variable Structured computational graphs.
+Many models used in NLP applications have a network of connected nodes. 
+Training these networks has been restricted to computing weights associated with the connections. 
+The topology of the networks has largely remained fixed. 
+Lately there have been attempts to develop training methods that change the network topology with each training example. 
+I propose to learn to use a toolkit called DyNet (or one like it) that is designed to build systems with variable graph structures. 
+
+I plan on using DyNet or a toolkit similar to it to build a Machine Translation System and to compare its performance with systems built with other reference toolkits like Joshua, Moses, Tensorflow, etc.  
+** 2. COOPERATION
+
+Collaborate with colleagues to write papers that report on advances made in our projects. 
+Collaborate with the Basic Research team by contributing speech recognition components to efforts such as the bot language project. 
+** 3. COMMUNICATIONS
+   
+Write weekly activity reports to team members to keep them up to date on my work. 
+Read and comment on reports made by my team and branch mates.
+
+** 4. MGMT. OF TIME & RESOURCES
+
+Set aside time during the day to practice some kind of  activity for physical fitness. 
+Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
+** 5. CUSTOMER RELATIONS
+
+Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
+Establish contacts with researchers in the ASR and NLP fields. 
+Establish contacts with s2s device manufacturers.
+
+** 6. TECH TRANSITION
+
+Contribute recipes for building ASR systems with our corpora to the MFLTS. 
+Transition ASR components and our other products to USA Army Africa and MFLTS.  
+** 7. DIVERSITY: 
+Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
+** 8. SHARP: 
+Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
+Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
+Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
+
 * Accomplishments <2017-04-04 Tue>
 - Extended minimal Tunisian ASR System to QCRI 2 million word arabic dictionary.
 Used the Levenshtein distance to propose to a human expert pronunciations that are close to out of vocabulary words.
