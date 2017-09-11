@@ -1,3 +1,67 @@
+* DAR <2017-09-11 Mon>
+**  Goals for Next Week:
+- TODO Write accomplishments.
+I wrote a little today.
+- TODO Mandatory Training.
+- TODO Multilang: Minimal example.
+- DONE French: prepare data from SRI Canadian African Accented speech for use in training and  testing ASR systems.
+
+
+
+- GP French:
+I finally have the WER scores for chain models:
+Here are all the WER scores I computed:
+%WER 44.74 [ 9981 / 22307, 672 ins, 1926 del, 7383 sub ] exp/mono/decode_dev_tgpr/wer_9_0.0
+%WER 41.48 [ 9002 / 21700, 637 ins, 1627 del, 6738 sub ] exp/mono/decode_eval_tgpr/wer_9_0.0
+%WER 29.02 [ 6473 / 22307, 780 ins, 762 del, 4931 sub ] exp/tri1/decode_dev_tgpr/wer_15_0.0
+%WER 28.98 [ 6464 / 22307, 816 ins, 728 del, 4920 sub ] exp/tri2a/decode_dev_tgpr/wer_14_0.0
+%WER 28.52 [ 6361 / 22307, 887 ins, 669 del, 4805 sub ] exp/tri3b/decode_dev_tgpr.si/wer_15_0.0
+%WER 27.44 [ 6121 / 22307, 810 ins, 665 del, 4646 sub ] exp/tri2b/decode_dev_tgpr/wer_16_0.0
+%WER 26.61 [ 5774 / 21700, 757 ins, 524 del, 4493 sub ] exp/tri2a/decode_eval_tgpr/wer_14_0.0
+%WER 26.58 [ 5767 / 21700, 674 ins, 593 del, 4500 sub ] exp/tri1/decode_eval_tgpr/wer_13_0.5
+%WER 26.35 [ 5719 / 21700, 776 ins, 539 del, 4404 sub ] exp/tri3b/decode_eval_tgpr.si/wer_13_0.5
+%WER 26.06 [ 5814 / 22307, 768 ins, 635 del, 4411 sub ] exp/sgmm2b/decode_dev_tgpr/wer_11_0.0
+%WER 25.89 [ 5776 / 22307, 799 ins, 600 del, 4377 sub ] exp/tri3b/decode_dev_tgpr/wer_17_0.0
+%WER 25.65 [ 5567 / 21700, 761 ins, 494 del, 4312 sub ] exp/tri2b/decode_eval_tgpr/wer_15_0.0
+%WER 25.14 [ 5608 / 22307, 785 ins, 543 del, 4280 sub ] exp/sgmm2_4a/decode_dev_tgpr/wer_11_0.0
+%WER 24.48 [ 5461 / 22307, 782 ins, 490 del, 4189 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it1/wer_11_0.0
+%WER 24.34 [ 5429 / 22307, 756 ins, 491 del, 4182 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it2/wer_12_0.0
+%WER 24.33 [ 5427 / 22307, 788 ins, 453 del, 4186 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it4/wer_12_0.0
+%WER 24.32 [ 5426 / 22307, 766 ins, 471 del, 4189 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it3/wer_12_0.0
+%WER 24.02 [ 5212 / 21700, 738 ins, 443 del, 4031 sub ] exp/tri3b/decode_eval_tgpr/wer_17_0.0
+%WER 23.51 [ 5101 / 21700, 608 ins, 516 del, 3977 sub ] exp/sgmm2_4a/decode_eval_tgpr/wer_12_0.5
+%WER 23.32 [ 5201 / 22307, 633 ins, 457 del, 4111 sub ] exp/chain/tdnn_sp_online/decode_dev/wer_11_0.0
+%WER 23.24 [ 5184 / 22307, 585 ins, 518 del, 4081 sub ] exp/chain/tdnn_sp/decode_dev/wer_12_0.0
+%WER 23.05 [ 5001 / 21700, 693 ins, 389 del, 3919 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it1/wer_10_0.5
+%WER 22.97 [ 4985 / 21700, 767 ins, 323 del, 3895 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it4/wer_11_0.0
+%WER 22.91 [ 4972 / 21700, 735 ins, 353 del, 3884 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it3/wer_12_0.0
+%WER 22.86 [ 4961 / 21700, 666 ins, 400 del, 3895 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it2/wer_11_0.5
+%WER 21.24 [ 4610 / 21700, 515 ins, 337 del, 3758 sub ] exp/chain/tdnn_sp_online/decode_eval/wer_12_0.0
+%WER 21.21 [ 4602 / 21700, 513 ins, 331 del, 3758 sub ] exp/chain/tdnn_sp/decode_eval/wer_12_0.0
+
+
+- African French:
+I am writing scripts to train on gp, sri ca, gabon read, ARTI Cameroon, Niger and Yaounde.
+I'm almost done preparing the data.
+I might include  more data if we have it.
+Maybe the conversational data?
+
+** Goals for Tuesday:
+- TODO Write Accomplishments.
+- TODO Mandatory Tart Training tomorrow at 10. ( I   am pretty sure I have already done this, but it is still in my ted) . I've learned that is is always always best to leave  mandatory training to  as late as possible otherwise you end up doing them twice.
+- TODO African French ASR: Prepare data from all our GP and African French Speech holdings for training 1 system.
+
+* DAR <2017-09-08 Fri>
+** Goals for Friday set Thursday:
+- TODO Write Accomplishments.
+- TODO Mandatory Training.
+- TODO Multilang: Run minimal example with french german and spanish.
+- TODO Heroico: tune triphone parameters and address warnings in log files concerning acoustic models not getting training data.
+- TODO GP French: Run cd gmm hmm chain model end to end with results.
+- TODO GP Yaounde + Canadian Accented  African French
+- TODO ARTI_Cameroon_242_fr: Prepare data for processing with kaldi
+- TODO SOFTunisia: Dictionary work.
+
 * DAR <2017-09-07 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Write Accomplishments.
