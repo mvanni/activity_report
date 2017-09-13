@@ -1,3 +1,138 @@
+* DAR <2017-09-13 Wed>
+**   Goals for Wednesday set Tuesday:
+- TODO Write Accomplishments.
+I made good progress on writing today.
+
+Here is what I have so far:
+*** Accomplishments <2017-08-31 Thu>
+
+*** The ULTRA Project
+A goal set last year was  to investigate Automatic Speech Recognition (ASR) models that have well defined pathways to implementation  in speech to speech (S2S) devices. 
+I pledged to  develop models that result in software that can be demoed with realtime interaction. 
+
+I believe I achieved this goal and together with my ATeam colleagues we far exceeded our expectations of what could be done in this area. 
+I was part of an effort by the Applications Team to develop a platform where the products we produce could be implemented and tested under conditions that would more closely resemble the actual conditions that Soldiers would face in the field. 
+The ATeam made the necessary contacts with an industry contractor working for a  branch in the SED division to build a prototype S2S device on a smart phone that would be capable of running the software products we develop. 
+The prototype system is currently called ULTRA.
+A demo run on that prototype system used acoustic models and other components that I developed this year.
+Although the future of this project is not certain, in the past year the ATeam went from  baseline systems that ran only on laboratory computers to having a functioning prototype running our own acoustic models and other software components on a smart phone. 
+
+*** African French:
+I was part of an ATeam effort to coach the VoxTek team on adapting their existing English French S2S application to African Accented Speech. 
+I developed African Accented French ASR components as a part of the VoxTek project and for the ULTRA project as well. 
+To make sure I was getting state-of-the-art performance from the components I was building, I took on the task of replicating the results that were published in the Kaldi repository for the baseline GP French ASR system. 
+Despite the fact that I did not have the exact same lexicon as the one that was used in the published results, my results were very close. 
+I also produced better WER scores using chain models that were not available at the time the results were published. 
+Specifically, the best published WER results are 22.51% with boosted maximum mutual information training while I obtained a 21.21% with chain models and 21.24 with online chain models.
+It should be noted that the online chain models are designed to run in online or real time mode, whereas it is not clear that this can be accomplished with the sgmm models. 
+The tri2b models that we have verified do work on the smart phone platform only achieved a 25.65% WER. 
+I curated several small speech corpora for use as training data including African Accented French speech from Cameroon, Chad, Congo, Gabon and Niger. 
+These corpora can be used later in experiments that measure the influence of Accent on ASR systems. 
+
+*** Publication of Heroico Recipe 
+In the past year I have become familiar with the concept of a "recipe" in the context of the Kaldi ASR toolkit. 
+I have written my own recipes for several languages including: Arabic, French, German, Russian and Spanish. 
+It takes time to learn how to write concise recipe scripts. 
+A major achievement this year is getting my recipe for the Heroico Spanish Corpus accepted in the Kaldi repository. 
+My recipe is an example of what I have learned in the past year about building state-of-the-art ASR systems with Kaldi. 
+First, I have scripts that perform the tedious but nonetheless important task of preparing the acoustic and text datain the Heroico corpus for processing by the Kaldi training and evaluation tools. 
+I am especially proud of this work since I was involved in every aspect of the creation of the Heroico Corpus which is available from the LDC. 
+After data preparation, I go through the standard Kaldi steps of progressively building context dependent (CD) gaussian mixture (GMM) hidden markov model (HMM) acoustic models. 
+Then I haves scripts that use the CD GMM HMM models to train an I-Vector extractor. 
+In the last training step, I train chain models which are the currently best performing neural network acoustic models. 
+Chain models  are a kind of time delayed neural network (TDNN) that are trained on speed perturbed (SP) acoustic data. 
+The I-Vector extraction and TDNN SP models are part of a third generation of neural networks that Kaldi calls nnet3. 
+I mention TDNN SP and nnet3 because I had stated as a goal to investigate these kinds of models.
+Finally, I have scripts that evaluate the performance of the systems at each step of the building process. 
+Word Error Rates are generated for each of these steps. 
+One kind of model I had mentioned in my goals that I did not get to are bottleneck neural networks. 
+However, I have not ignored these kinds of models. 
+In fact, recently most of my work has involved preparing for next year's project that will involve Bottlenect neural networks. 
+
+I explored other neural network approaches for ASR in my work on the African Accented French. 
+Among those approaches I will mention that I tried the rnn lstm models with the Eesen add on to Kaldi. 
+The character-base version of this approach was fairly easy to implement since it does not use a lexicon. 
+However, the results were not encouraging. 
+The WER scores were in the mid forties while comparable scores for the cd gmm hmm approach were in the mid twenties. 
+The rnn lstm approach might have advantages that are not apparent to me at the moment (perhaps online decoding), but I drop the exploration of this approach because of the bad performance. 
+
+I also explored several other approaches including Deep Neural Network (DNN), Deep Belief Networks and Restricted Boltzmann Machines (RBMs). 
+The WER scores for these approaches were good, but not quite as good as those for the CD GMM HMM approach. 
+Since they also involved longer and more  complicated training regimes, I also dropped them and focused my attention on chain models. 
+
+- TODO Mandatory Training.
+- DONE African French: Incorporate Yaounde into system scripts.
+I also simplified the gp data prep.
+I use a file containing 2 fields a .wav file name and the transcription for that file. 
+this makes the script much more simple, but the method ffor preparing the data is hidden. 
+- DONE GP French: Run sgmm models and chain models on ca16.
+
+I haven't done the chain models yet only the sgmm and online chain models.
+
+%WER 76.15 [ 2430 / 3191, 158 ins, 538 del, 1734 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 70.89 [ 2262 / 3191, 187 ins, 601 del, 1474 sub ] exp/tri1/decode_test/wer_14_0.5
+%WER 70.26 [ 2242 / 3191, 185 ins, 618 del, 1439 sub ] exp/tri2a/decode_test/wer_17_0.0
+%WER 69.48 [ 2217 / 3191, 135 ins, 643 del, 1439 sub ] exp/chain/tdnn_sp_online/decode_test/wer_17_0.0
+%WER 68.13 [ 2174 / 3191, 179 ins, 637 del, 1358 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 67.44 [ 2152 / 3191, 171 ins, 572 del, 1409 sub ] exp/tri3b/decode_test.si/wer_17_0.5
+%WER 61.33 [ 1957 / 3191, 171 ins, 517 del, 1269 sub ] exp/sgmm2b/decode_test/wer_16_0.0
+%WER 59.98 [ 1914 / 3191, 234 ins, 335 del, 1345 sub ] exp/tri3b/decode_test/wer_17_0.0
+%WER 54.47 [ 1738 / 3191, 185 ins, 314 del, 1239 sub ] exp/sgmm2_4a/decode_test/wer_16_0.0
+%WER 53.81 [ 1717 / 3191, 154 ins, 347 del, 1216 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it4/wer_15_0.5
+%WER 53.40 [ 1704 / 3191, 173 ins, 330 del, 1201 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it1/wer_17_0.0
+%WER 53.18 [ 1697 / 3191, 146 ins, 344 del, 1207 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it3/wer_15_0.5
+%WER 53.06 [ 1693 / 3191, 145 ins, 365 del, 1183 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it2/wer_16_0.5
+%WER 44.74 [ 9981 / 22307, 672 ins, 1926 del, 7383 sub ] exp/mono/decode_dev_tgpr/wer_9_0.0
+%WER 41.48 [ 9002 / 21700, 637 ins, 1627 del, 6738 sub ] exp/mono/decode_eval_tgpr/wer_9_0.0
+%WER 29.02 [ 6473 / 22307, 780 ins, 762 del, 4931 sub ] exp/tri1/decode_dev_tgpr/wer_15_0.0
+%WER 28.98 [ 6464 / 22307, 816 ins, 728 del, 4920 sub ] exp/tri2a/decode_dev_tgpr/wer_14_0.0
+%WER 28.52 [ 6361 / 22307, 887 ins, 669 del, 4805 sub ] exp/tri3b/decode_dev_tgpr.si/wer_15_0.0
+%WER 27.44 [ 6121 / 22307, 810 ins, 665 del, 4646 sub ] exp/tri2b/decode_dev_tgpr/wer_16_0.0
+%WER 26.61 [ 5774 / 21700, 757 ins, 524 del, 4493 sub ] exp/tri2a/decode_eval_tgpr/wer_14_0.0
+%WER 26.58 [ 5767 / 21700, 674 ins, 593 del, 4500 sub ] exp/tri1/decode_eval_tgpr/wer_13_0.5
+%WER 26.35 [ 5719 / 21700, 776 ins, 539 del, 4404 sub ] exp/tri3b/decode_eval_tgpr.si/wer_13_0.5
+%WER 26.06 [ 5814 / 22307, 768 ins, 635 del, 4411 sub ] exp/sgmm2b/decode_dev_tgpr/wer_11_0.0
+%WER 25.89 [ 5776 / 22307, 799 ins, 600 del, 4377 sub ] exp/tri3b/decode_dev_tgpr/wer_17_0.0
+%WER 25.65 [ 5567 / 21700, 761 ins, 494 del, 4312 sub ] exp/tri2b/decode_eval_tgpr/wer_15_0.0
+%WER 25.14 [ 5608 / 22307, 785 ins, 543 del, 4280 sub ] exp/sgmm2_4a/decode_dev_tgpr/wer_11_0.0
+%WER 24.48 [ 5461 / 22307, 782 ins, 490 del, 4189 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it1/wer_11_0.0
+%WER 24.34 [ 5429 / 22307, 756 ins, 491 del, 4182 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it2/wer_12_0.0
+%WER 24.33 [ 5427 / 22307, 788 ins, 453 del, 4186 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it4/wer_12_0.0
+%WER 24.32 [ 5426 / 22307, 766 ins, 471 del, 4189 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it3/wer_12_0.0
+%WER 24.02 [ 5212 / 21700, 738 ins, 443 del, 4031 sub ] exp/tri3b/decode_eval_tgpr/wer_17_0.0
+%WER 23.51 [ 5101 / 21700, 608 ins, 516 del, 3977 sub ] exp/sgmm2_4a/decode_eval_tgpr/wer_12_0.5
+%WER 23.32 [ 5201 / 22307, 633 ins, 457 del, 4111 sub ] exp/chain/tdnn_sp_online/decode_dev/wer_11_0.0
+%WER 23.24 [ 5184 / 22307, 585 ins, 518 del, 4081 sub ] exp/chain/tdnn_sp/decode_dev/wer_12_0.0
+%WER 23.05 [ 5001 / 21700, 693 ins, 389 del, 3919 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it1/wer_10_0.5
+%WER 22.97 [ 4985 / 21700, 767 ins, 323 del, 3895 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it4/wer_11_0.0
+%WER 22.91 [ 4972 / 21700, 735 ins, 353 del, 3884 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it3/wer_12_0.0
+%WER 22.86 [ 4961 / 21700, 666 ins, 400 del, 3895 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it2/wer_11_0.5
+%WER 21.24 [ 4610 / 21700, 515 ins, 337 del, 3758 sub ] exp/chain/tdnn_sp_online/decode_eval/wer_12_0.0
+%WER 21.21 [ 4602 / 21700, 513 ins, 331 del, 3758 sub ] exp/chain/tdnn_sp/decode_eval/wer_12_0.0
+
+Here are just the CA16 results:
+%WER 76.15 [ 2430 / 3191, 158 ins, 538 del, 1734 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 70.89 [ 2262 / 3191, 187 ins, 601 del, 1474 sub ] exp/tri1/decode_test/wer_14_0.5
+%WER 70.26 [ 2242 / 3191, 185 ins, 618 del, 1439 sub ] exp/tri2a/decode_test/wer_17_0.0
+%WER 69.48 [ 2217 / 3191, 135 ins, 643 del, 1439 sub ] exp/chain/tdnn_sp_online/decode_test/wer_17_0.0
+%WER 68.13 [ 2174 / 3191, 179 ins, 637 del, 1358 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 67.44 [ 2152 / 3191, 171 ins, 572 del, 1409 sub ] exp/tri3b/decode_test.si/wer_17_0.5
+%WER 61.33 [ 1957 / 3191, 171 ins, 517 del, 1269 sub ] exp/sgmm2b/decode_test/wer_16_0.0
+%WER 59.98 [ 1914 / 3191, 234 ins, 335 del, 1345 sub ] exp/tri3b/decode_test/wer_17_0.0
+%WER 54.47 [ 1738 / 3191, 185 ins, 314 del, 1239 sub ] exp/sgmm2_4a/decode_test/wer_16_0.0
+%WER 53.81 [ 1717 / 3191, 154 ins, 347 del, 1216 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it4/wer_15_0.5
+%WER 53.40 [ 1704 / 3191, 173 ins, 330 del, 1201 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it1/wer_17_0.0
+%WER 53.18 [ 1697 / 3191, 146 ins, 344 del, 1207 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it3/wer_15_0.5
+%WER 53.06 [ 1693 / 3191, 145 ins, 365 del, 1183 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it2/wer_16_0.5
+
+The mismatch between training and testing data has a strong impact on WER scores.
+The scores go from 22.86 to 53.06.
+
+** Goals for Thursday:
+- TODO Write Accomplishments and accomplishments summary.
+- TODO African French: Write script to build ASR system on all the training data from arti242, gabon read, gp, niger, SRI Canada and yaounde and test on CA16.
+- TODO GP French: Run chain model on CA16.
+
 * DAR <2017-09-12 Tue>* DAR <2017-09-11 Mon>
 ** Goals for Tuesday set Monday:
 - TODO Write Accomplishments.
