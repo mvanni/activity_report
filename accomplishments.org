@@ -1,36 +1,66 @@
 * Accomplishments <2017-08-31 Thu>
 
-** 1. TECHNICAL COMPETENCE
-*** ASR Adaptation:
-A goal set last year was  to capitalize on the previous year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
+** The ULTRA Project
+A goal set last year was  to investigate Automatic Speech Recognition (ASR) models that have well defined pathways to implementation  in speech to speech (S2S) devices. 
 I pledged to  develop models that result in software that can be demoed with realtime interaction. 
 
-I believe I achieved this goal and together with ATeam colleagues I far exceeded my own expectations of what could be done in this area. 
+I believe I achieved this goal and together with my ATeam colleagues we far exceeded our expectations of what could be done in this area. 
 I was part of an effort by the Applications Team to develop a platform where the products we produce could be implemented and tested under conditions that would more closely resemble the actual conditions that Soldiers would face in the field. 
-The ATeam made the necessary contacts with an industry contractor working for a  branch in the SED division to build a prototype speech to speech device on a smart phone that would be capable of running the software products we develop. 
+The ATeam made the necessary contacts with an industry contractor working for a  branch in the SED division to build a prototype S2S device on a smart phone that would be capable of running the software products we develop. 
+The prototype system is currently called ULTRA.
 A demo run on that prototype system used acoustic models and other components that I developed this year.
+Although the future of this project is not certain, in the past year the ATeam went from  baseline systems that ran only on laboratory computers to having a functioning prototype running our own acoustic models and other software components on a smart phone. 
 
-*** kaldi:
+** African French:
+I was part of an ATeam effort to coach the VoxTek team on adapting their existing English French S2S application to African Accented Speech. 
+I developed African Accented French ASR components as a part of the VoxTek project and for the ULTRA project as well. 
+To make sure I was getting state-of-the-art performance from the components I was building, I took on the task of replicating the results that were published in the Kaldi repository for the baseline GP French ASR system. 
+Despite the fact that I did not have the exact same lexicon as the one that was used in the published results, my results were very close. 
+I also produced better WER scores using chain models that were not available at the time the results were published. 
+Specifically, the best published WER results are 22.51% with boosted maximum mutual information training while I obtained a 21.21% with chain models and 21.24 with online chain models.
+It should be noted that the online chain models are designed to run in online or real time mode, whereas it is not clear that this can be accomplished with the sgmm models. 
+The tri2b models that we have verified do work on the smart phone platform only achieved a 25.65% WER. 
+I curated several small speech corpora for use as training data including African Accented French speech from Cameroon, Chad, Congo, Gabon and Niger. 
+These corpora can be used later in experiments that measure the influence of Accent on ASR systems. 
 
-The ASR systems I have built this year are based on HMMs and SGMMs. 
-I will consider these systems as baselines for the work I will do using neural network models. 
-I will continue developing with the Kaldi ASR toolkit. 
-Specifically, I will implement systems with the following kaldi named models:
-Bottle Neck Features
-Chain Models
-nnet2
-nnet3
-TDNNs
-RBMs
-Eesen end to end rnn and lstm models.
+** Publication of Heroico Recipe 
+In the past year I have become familiar with the concept of a "recipe" in the context of the Kaldi ASR toolkit. 
+I have written my own recipes for several languages including: Arabic, French, German, Russian and Spanish. 
+It takes time to learn how to write concise recipe scripts. 
+A major achievement this year is getting my recipe for the Heroico Spanish Corpus accepted in the Kaldi repository. 
+My recipe is an example of what I have learned in the past year about building state-of-the-art ASR systems with Kaldi. 
+First, I have scripts that perform the tedious but nonetheless important task of preparing the acoustic and text datain the Heroico corpus for processing by the Kaldi training and evaluation tools. 
+I am especially proud of this work since I was involved in every aspect of the creation of the Heroico Corpus which is available from the LDC. 
+After data preparation, I go through the standard Kaldi steps of progressively building context dependent (CD) gaussian mixture (GMM) hidden markov model (HMM) acoustic models. 
+Then I haves scripts that use the CD GMM HMM models to train an I-Vector extractor. 
+In the last training step, I train chain models which are the currently best performing neural network acoustic models. 
+Chain models  are a kind of time delayed neural network (TDNN) that are trained on speed perturbed (SP) acoustic data. 
+The I-Vector extraction and TDNN SP models are part of a third generation of neural networks that Kaldi calls nnet3. 
+I mention TDNN SP and nnet3 because I had stated as a goal to investigate these kinds of models.
+Finally, I have scripts that evaluate the performance of the systems at each step of the building process. 
+Word Error Rates are generated for each of these steps. 
+One kind of model I had mentioned in my goals that I did not get to are bottleneck neural networks. 
+However, I have not ignored these kinds of models. 
+In fact, recently most of my work has involved preparing for next year's project that will involve Bottlenect neural networks. 
 
-In the past year I have become familiar with the steps required to build chain models. 
+I explored other neural network approaches for ASR in my work on the African Accented French. 
+Among those approaches I will mention that I tried the rnn lstm models with the Eesen add on to Kaldi. 
+The character-base version of this approach was fairly easy to implement since it does not use a lexicon. 
+However, the results were not encouraging. 
+The WER scores were in the mid forties while comparable scores for the cd gmm hmm approach were in the mid twenties. 
+The rnn lstm approach might have advantages that are not apparent to me at the moment (perhaps online decoding), but I drop the exploration of this approach because of the bad performance. 
 
-I will replicate for Arabic the work I did last year for French. 
+I also explored several other approaches including Deep Neural Network (DNN), Deep Belief Networks and Restricted Boltzmann Machines (RBMs). 
+The WER scores for these approaches were good, but not quite as good as those for the CD GMM HMM approach. 
+Since they also involved longer and more  complicated training regimes, I also dropped them and focused my attention on chain models. 
+
+I had set as a goal  to replicate for Arabic the work I did last year for French. 
 That is, I will adapt Standard Arabic models to Tunisian accented speech in the same way I adapted European French to African accents.
+
+
 I will make an effort to improve the language modeling component of the French and Arabic systems I develop with Kaldi.
 
-A major accomplishment this year is the acceptance of my recipe for building a Spanish ASR system into the Kaldi repository.
+
 
 *** Lexicon expansion
 I will attempt to use the work done in the Babel project for automatic lexicon expansion in our African French and Tunisian Arabic corpora. 
