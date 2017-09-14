@@ -1,3 +1,63 @@
+* DAR <2017-09-14 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Write Accomplishments and accomplishments summary.
+- DONE African French: Write script to build ASR system on all the training data from arti242, gabon read, gp, niger, SRI Canada and yaounde and test on CA16.
+I am using the lm we were using before that gets trained on subs.
+I started the run on both my laptop and on the gpu machine.
+- TODO GP French: Run chain model on CA16.
+I did this, but I messed up the previous results on the way.
+%WER 77.69 [ 2479 / 3191, 87 ins, 959 del, 1433 sub ] exp/chain/tdnn_sp/decode_test/wer_17_0.5
+%WER 77.34 [ 2468 / 3191, 141 ins, 795 del, 1532 sub ] exp/chain/tdnn_sp_online/decode_test/wer_17_0.0
+%WER 76.15 [ 2430 / 3191, 158 ins, 538 del, 1734 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 70.89 [ 2262 / 3191, 187 ins, 601 del, 1474 sub ] exp/tri1/decode_test/wer_14_0.5
+%WER 70.26 [ 2242 / 3191, 185 ins, 618 del, 1439 sub ] exp/tri2a/decode_test/wer_17_0.0
+%WER 68.13 [ 2174 / 3191, 179 ins, 637 del, 1358 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 67.44 [ 2152 / 3191, 171 ins, 572 del, 1409 sub ] exp/tri3b/decode_test.si/wer_17_0.5
+%WER 61.33 [ 1957 / 3191, 171 ins, 517 del, 1269 sub ] exp/sgmm2b/decode_test/wer_16_0.0
+%WER 59.98 [ 1914 / 3191, 234 ins, 335 del, 1345 sub ] exp/tri3b/decode_test/wer_17_0.0
+%WER 54.47 [ 1738 / 3191, 185 ins, 314 del, 1239 sub ] exp/sgmm2_4a/decode_test/wer_16_0.0
+%WER 53.81 [ 1717 / 3191, 154 ins, 347 del, 1216 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it4/wer_15_0.5
+%WER 53.40 [ 1704 / 3191, 173 ins, 330 del, 1201 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it1/wer_17_0.0
+%WER 53.18 [ 1697 / 3191, 146 ins, 344 del, 1207 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it3/wer_15_0.5
+%WER 53.06 [ 1693 / 3191, 145 ins, 365 del, 1183 sub ] exp/sgmm2_4a_mmi_b0.1/decode_test_it2/wer_16_0.5
+%WER 44.74 [ 9981 / 22307, 672 ins, 1926 del, 7383 sub ] exp/mono/decode_dev_tgpr/wer_9_0.0
+%WER 41.48 [ 9002 / 21700, 637 ins, 1627 del, 6738 sub ] exp/mono/decode_eval_tgpr/wer_9_0.0
+%WER 29.02 [ 6473 / 22307, 780 ins, 762 del, 4931 sub ] exp/tri1/decode_dev_tgpr/wer_15_0.0
+%WER 28.98 [ 6464 / 22307, 816 ins, 728 del, 4920 sub ] exp/tri2a/decode_dev_tgpr/wer_14_0.0
+%WER 28.52 [ 6361 / 22307, 887 ins, 669 del, 4805 sub ] exp/tri3b/decode_dev_tgpr.si/wer_15_0.0
+%WER 27.53 [ 6142 / 22307, 625 ins, 754 del, 4763 sub ] exp/chain/tdnn_sp/decode_dev/wer_12_0.0
+%WER 27.44 [ 6121 / 22307, 810 ins, 665 del, 4646 sub ] exp/tri2b/decode_dev_tgpr/wer_16_0.0
+%WER 27.42 [ 6116 / 22307, 567 ins, 826 del, 4723 sub ] exp/chain/tdnn_sp_online/decode_dev/wer_13_0.0
+%WER 26.61 [ 5774 / 21700, 757 ins, 524 del, 4493 sub ] exp/tri2a/decode_eval_tgpr/wer_14_0.0
+%WER 26.58 [ 5767 / 21700, 674 ins, 593 del, 4500 sub ] exp/tri1/decode_eval_tgpr/wer_13_0.5
+%WER 26.40 [ 5728 / 21700, 505 ins, 685 del, 4538 sub ] exp/chain/tdnn_sp/decode_eval/wer_12_0.0
+%WER 26.35 [ 5719 / 21700, 776 ins, 539 del, 4404 sub ] exp/tri3b/decode_eval_tgpr.si/wer_13_0.5
+%WER 26.34 [ 5716 / 21700, 507 ins, 678 del, 4531 sub ] exp/chain/tdnn_sp_online/decode_eval/wer_12_0.0
+%WER 26.06 [ 5814 / 22307, 768 ins, 635 del, 4411 sub ] exp/sgmm2b/decode_dev_tgpr/wer_11_0.0
+%WER 25.89 [ 5776 / 22307, 799 ins, 600 del, 4377 sub ] exp/tri3b/decode_dev_tgpr/wer_17_0.0
+%WER 25.65 [ 5567 / 21700, 761 ins, 494 del, 4312 sub ] exp/tri2b/decode_eval_tgpr/wer_15_0.0
+%WER 25.14 [ 5608 / 22307, 785 ins, 543 del, 4280 sub ] exp/sgmm2_4a/decode_dev_tgpr/wer_11_0.0
+%WER 24.48 [ 5461 / 22307, 782 ins, 490 del, 4189 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it1/wer_11_0.0
+%WER 24.34 [ 5429 / 22307, 756 ins, 491 del, 4182 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it2/wer_12_0.0
+%WER 24.33 [ 5427 / 22307, 788 ins, 453 del, 4186 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it4/wer_12_0.0
+%WER 24.32 [ 5426 / 22307, 766 ins, 471 del, 4189 sub ] exp/sgmm2_4a_mmi_b0.1/decode_dev_tgpr_it3/wer_12_0.0
+%WER 24.02 [ 5212 / 21700, 738 ins, 443 del, 4031 sub ] exp/tri3b/decode_eval_tgpr/wer_17_0.0
+%WER 23.51 [ 5101 / 21700, 608 ins, 516 del, 3977 sub ] exp/sgmm2_4a/decode_eval_tgpr/wer_12_0.5
+%WER 23.05 [ 5001 / 21700, 693 ins, 389 del, 3919 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it1/wer_10_0.5
+%WER 22.97 [ 4985 / 21700, 767 ins, 323 del, 3895 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it4/wer_11_0.0
+%WER 22.91 [ 4972 / 21700, 735 ins, 353 del, 3884 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it3/wer_12_0.0
+%WER 22.86 [ 4961 / 21700, 666 ins, 400 del, 3895 sub ] exp/sgmm2_4a_mmi_b0.1/decode_eval_tgpr_it2/wer_11_0.5
+
+I did something to mess up the chain model results.
+What did I do?
+I need to run the whole recipe over again with all the test sets there from the beginning.
+
+** Goals for Friday:
+- TODO Turn in accomplishments and summary of accomplishments.
+- TODO GP French: Run full recipe with ca16 testing.
+- TODO African French: Get results  for system with gp, arti242, gabon read, niger, sri canada and yaounde.
+- TODO SOFTunisia: Clean up in preparation for resuming work with Zac on Monday.
+ 
 * DAR <2017-09-13 Wed>
 **   Goals for Wednesday set Tuesday:
 - TODO Write Accomplishments.
