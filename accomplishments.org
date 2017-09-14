@@ -65,7 +65,6 @@ I also explored several other approaches including Deep Neural Network (DNN), De
 The WER scores for these approaches were good, but not quite as good as those for the CD GMM HMM and SGMM approaches. 
 Since these neural network models also involved longer and more  complicated training regimes, I also dropped them and focused my attention on chain models. 
 
-
 ** Tunisian Arabic:
 
 Obviously, language technologies that are targeted to perform well when used by Soldiers will benefit the Army.
@@ -100,58 +99,10 @@ This turns out to be a good source of data for training LMs.
 
 ** Colloquium Presentation:
 Two projects I worked on this year involved a set of pre transcribed data and a set of unlabled data that came from the same speakers. 
-I performed semi supervised traininfg  on the French data from Cameroon to get automatic transcriptions for the unlabled data. 
-I got an unexpected improvement in WER scores by using these automatically generated transcriptions. 
-
-
-*** Lexicon expansion
-I will attempt to use the work done in the Babel project for automatic lexicon expansion in our African French and Tunisian Arabic corpora. 
-This might involve automatic syllable boundary labeling. 
-
-*** Afghan Languages 
-
-I will build ASR systems for Dari and Pashto. 
-I will leverage resources produced by the babel project for Pashto. 
-I will work with Hazrat Ghulam Jahed on building high quality Dari and Pashto ASR systems.
-
-** Research:
-*** Variable Structured computational graphs.
-Many models used in NLP applications have a network of connected nodes. 
-Training these networks has been restricted to computing weights associated with the connections. 
-The topology of the networks has largely remained fixed. 
-Lately there have been attempts to develop training methods that change the network topology with each training example. 
-I propose to learn to use a toolkit called DyNet (or one like it) that is designed to build systems with variable graph structures. 
-
-I plan on using DyNet or a toolkit similar to it to build a Machine Translation System and to compare its performance with systems built with other reference toolkits like Joshua, Moses, Tensorflow, etc.  
-** 2. COOPERATION
-
-Collaborate with colleagues to write papers that report on advances made in our projects. 
-Collaborate with the Basic Research team by contributing speech recognition components to efforts such as the bot language project. 
-** 3. COMMUNICATIONS
-   
-Write weekly activity reports to team members to keep them up to date on my work. 
-Read and comment on reports made by my team and branch mates.
-
-** 4. MGMT. OF TIME & RESOURCES
-
-Set aside time during the day to practice some kind of  activity for physical fitness. 
-Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
-** 5. CUSTOMER RELATIONS
-
-Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
-Establish contacts with researchers in the ASR and NLP fields. 
-Establish contacts with s2s device manufacturers.
-
-** 6. TECH TRANSITION
-
-Contribute recipes for building ASR systems with our corpora to the MFLTS. 
-Transition ASR components and our other products to USA Army Africa and MFLTS.  
-** 7. DIVERSITY: 
-Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
-** 8. SHARP: 
-Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
-Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
-Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
+I performed semi supervised training on the French data from Cameroon to get automatic transcriptions for the unlabled data. 
+I got an unexpected improvement in WER scores by using these automatically generated transcriptions as training data. 
+I believe the improvement stems from the fact that the unlabeled data comes from speakers that the models have already been trained on. 
+I presented this idea at the ARL Colloquium. 
 
 * Accomplishments <2017-04-04 Tue>
 - Extended minimal Tunisian ASR System to QCRI 2 million word arabic dictionary.
