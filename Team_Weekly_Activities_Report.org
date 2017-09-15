@@ -1,3 +1,17 @@
+* My WAR <2017-09-15 Fri>
+**  Goals from last Week:
+- DONE Write accomplishments.
+- TODO Mandatory Training.
+- TODO Multilang: Minimal example.
+- DONE French: prepare data from SRI Canadian African Accented speech for use in training and  testing ASR systems.
+
+** Goals for Next Week:
+- TODO Mandatory Training
+- TODO Objectives
+- TODO African French: Incorporate SRI Canada Conversational speech into ASR build scripts.
+- TODO SOFTunisia: Resume work with Zac on transcribing SOFTunisia answers.
+- TODO Multilang: minimal example.
+
 * My WAR <2017-09-08 Fri>
 ** Goals set Last Week:
 - TODO Write Accomplishments.
