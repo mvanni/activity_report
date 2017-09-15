@@ -1,5 +1,4 @@
 * Accomplishments <2017-08-31 Thu>
-
 ** The ULTRA Project
 A goal set last year was  to investigate Automatic Speech Recognition (ASR) models that have well defined pathways to implementation  in speech to speech (S2S) devices. 
 I pledged to  develop models that result in software that can be demoed with realtime interaction. 
@@ -16,6 +15,7 @@ Although the future of this project is not certain, in the past year the ATeam w
 ** African French:
 I was part of an ATeam effort to coach the VoxTek team on adapting their existing English French S2S application to African Accented Speech. 
 I developed African Accented French ASR components as a part of the VoxTek project and for the ULTRA project as well. 
+
 To make sure I was getting state-of-the-art performance from the components I was building, I took on the task of replicating the results that were published in the Kaldi repository for the baseline GP French ASR system. 
 Despite the fact that I did not have the exact same lexicon as the one that was used in the published results, my results were within  half a percentage point of the published Word Error Rates (WER). 
 I also produced better WER scores using chain models that were not available at the time the results were published. 
@@ -24,10 +24,10 @@ It should be noted that the online chain models are designed to run in online or
 The tri2b models that we have verified do work on the ULTRA smart phone platform achieved a 25.65% WER. 
 
 Dr. Steve LaRocca and I curated several small speech corpora for use as training data including African Accented French speech from Cameroon, Chad, Congo, Gabon and Niger. 
-These corpora can be used later in experiments that measure the influence of Accent on ASR systems. 
+These corpora can easily be used later in experiments that measure the influence of Accent on ASR systems. 
 We have been using one particular corpus of 515 African Accented French utterances  that we call Central Accord 2016 (CA16) as a test set on the VoxTek project and many other occasions when we want to compare the performance of a new system with previous results. 
 For example, it is interesting to know that the online chain modle system trained and tested only on European  French achieved a WER of 21.24%. 
-When that system was tested on CA16 its WER scores went up to 69.48%. 
+When that same system was tested on CA16 its WER scores went up to 69.48%. 
 Future experiments will test what happens when increasing amounts of in-domain data are added to the training set to reduce mismatch between training and test sets. 
 There is optimism in the ASR community that deep learning approaches produce systems that are more robust to the mismatch between training and test data folds. 
 
@@ -50,10 +50,8 @@ The I-Vector extraction and TDNN SP models are part of a third generation of neu
 I mention TDNN SP and nnet3 because I had stated as a goal to investigate these kinds of models.
 Finally, I have scripts that evaluate the performance of the systems at each step of the building process. 
 Word Error Rates are generated for each of these steps. 
-One kind of model I had mentioned in my goals that I did not get to are bottleneck neural networks. 
-However, I have not ignored these kinds of models. 
-In fact, recently, most of my work has involved preparing for next year's project that will involve Bottleneck neural networks. 
 
+** Neural Networks and Deep Learning
 I explored other neural network approaches for ASR in my work on the African Accented French. 
 Among those approaches I will mention that I tried the rnn lstm models with the Eesen add on to Kaldi. 
 The character-base version of this approach was fairly easy to implement since it does not use a lexicon. 
@@ -65,15 +63,19 @@ I also explored several other approaches including Deep Neural Network (DNN), De
 The WER scores for these approaches were good, but not quite as good as those for the CD GMM HMM and SGMM approaches. 
 Since these neural network models also involved longer and more  complicated training regimes, I also dropped them and focused my attention on chain models. 
 
-** Tunisian Arabic:
+One kind of model I had mentioned in my goals that I did not get to are bottleneck neural networks. 
+However, I have not ignored these kinds of models. 
+In fact, recently, most of my work has involved preparing for next year's project that will involve Bottleneck neural networks. 
 
+** Tunisian Arabic:
 Obviously, language technologies that are targeted to perform well when used by Soldiers will benefit the Army.
 ASR components that are adapted to perform well on key languages like Arabic and its North African accented flavor are such technologies. 
-The ATeam has a government-owned corpus of Arabic speech that was collected from speakers in Tunisia. 
+The ATeam has access to a government-owned corpus of Arabic speech that was collected from speakers in Tunisia. 
+I was involved in the creation of this corpus when I worked at West Point. 
 A portion of this corpus was not labeled since it was given by informants as answers to questions. 
-This year I began a project to use the expertise gained so far to automatically transcribe the unlabeled data with ASR systems developed with Kaldi. 
+This year I began a project to use the expertise gained  with Kaldi so far to automatically transcribe the unlabeled data. 
 I Built on what I learned last year about semi supervised training  for African Accented French. 
-However, instead of stopping after obtaining automatic transcriptions of the unlabeled data, I introduced a human in the loop step to the labeling process. 
+However, instead of stopping after obtaining automatic transcriptions of the unlabeled data as in that case , I introduced a human in the loop step to the labeling process. 
 I was able to do this since the ATeam counts with an Arabic speaking expert. 
 I built an ASR system with supervised training on the available transcribed speech. 
 Then I ran the system on the data from a small set of speakers to get a "rough draft" transcription of the data. 
@@ -92,15 +94,15 @@ The speech work done by the ATeam is mostly directed to future implementation in
 S2S apps are meant to facilitate dialogues. 
 The S2S components will work best when there is a match between their training data and the data they experience when they are used in the field. 
 Training data includes the text that is  used to train the language model (LM)s.
-This year we started using the SUBS corpus for training our LMs. 
+This year we started using the SUBS corpus for training our LMs for Arabic and French. 
 The SUBS corpus is a collection of movie subtitles. 
-Most of these subtitles are transcriptions of dialogues between characters in the movie. 
-This turns out to be a good source of data for training LMs. 
+Most of these subtitles are transcriptions of dialogues between characters in movies. 
+This turns out to be a good source of data for training LMs that are intended to be used in S2S systems. 
 
 ** Colloquium Presentation:
 Two projects I worked on this year involved a set of pre transcribed data and a set of unlabled data that came from the same speakers. 
 I performed semi supervised training on the French data from Cameroon to get automatic transcriptions for the unlabled data. 
-I got an unexpected improvement in WER scores by using these automatically generated transcriptions as training data. 
+I got an unexpectedly large improvement in WER scores by using these automatically generated transcriptions as training data. 
 I believe the improvement stems from the fact that the unlabeled data comes from speakers that the models have already been trained on. 
 I presented this idea at the ARL Colloquium. 
 
