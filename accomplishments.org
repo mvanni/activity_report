@@ -1,4 +1,12 @@
 * Accomplishments <2017-08-31 Thu>
+** Summary:
+1. ASR components I produced were tested on a platform that would be used by Soldiers in the field.
+2. I built a Chain Model French ASR system that achieved a WER of 21.21% lowering the previous best published WER of 22.51%.
+3. I presented my research at the ARL Colloquium. 
+4. My recipe for building an ASR system with the Heroico Spanish corpus was accepted for inclusion in the Kaldi toolkit repository. 
+5. I implemented a framework for performing a human in the loop transcription of unlabeled speech from the SOF Tunisian  Arabic corpuswith rough drafts produced automatically by my Kaldi recipe.
+6. I curated several small speech corpora that will be used as test sets for future experiments with ASR systems. 
+
 ** The ULTRA Project
 A goal set last year was  to investigate Automatic Speech Recognition (ASR) models that have well defined pathways to implementation  in speech to speech (S2S) devices. 
 I pledged to  develop models that result in software that can be demoed with realtime interaction. 
