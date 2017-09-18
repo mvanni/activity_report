@@ -1,3 +1,23 @@
+* DAR <2017-09-18 Mon>
+** Goals for Next Week:
+- TODO Mandatory Training
+- TODO Objectives
+- DONE African French: Incorporate SRI Canada Conversational speech into ASR build scripts.
+I incorporated a set of 341 utterances.
+I think there is a large set of conversations from the Gabon data out there still.
+The data that Luis worked on. 
+- TODO SOFTunisia: Resume work with Zac on transcribing SOFTunisia answers.
+- TODO Multilang: minimal example.
+I made a little progress on this today.
+I am working with french and german as training data and herooico as test data.
+I got past the step where hires mfcc features are extracted.
+
+** Goals for Tuesday:
+- TODO Mandatory Training
+- TODO Objectives
+- TODO Yaounde: Write a recipe that could be a candidate for the kaldi repo.
+- TODO Multilang: minimal example.
+
 * DAR <2017-09-14 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Write Accomplishments and accomplishments summary.
