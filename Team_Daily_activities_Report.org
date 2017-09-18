@@ -17,7 +17,7 @@ I got past the step where hires mfcc features are extracted.
 - TODO Objectives
 - TODO Yaounde: Write a recipe that could be a candidate for the kaldi repo.
 - TODO Multilang: minimal example.
-
+- TODO African French: Get WER results.
 * DAR <2017-09-14 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Write Accomplishments and accomplishments summary.
