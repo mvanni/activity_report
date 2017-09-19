@@ -1,3 +1,31 @@
+* DAR <2017-09-19 Tue>
+** Goals for Tuesday set Monday:
+- TODO Mandatory Training
+- TODO Objectives
+- TODO Yaounde: Write a recipe that could be a candidate for the kaldi repo.
+I started working on this, it's more involved than I thought.
+- TODO Multilang: minimal example.
+I need to run this on the gpu machine.
+I am at a point where neural network training is running and it is very very slow unless it runs on a gpu.
+- TODO African French: Get WER results.
+The run crashed yesterday because I did not have mfcc features extracted for the ca16 test data.
+I restarted today and so far I have mono WER results.
+
+%WER 41.37 [ 1320 / 3191, 114 ins, 290 del, 916 sub ] exp/mono/decode_ca16/wer_10_0.0
+
+This is trained on the following corpora: GP, ARTI242, gabon conversationl (smalle 341 utterances), gabon read, niger, sri canada, yaounde read and yaounde answers.
+There are a total of 24115 utterances.
+Assuming 100 frames per second, the alignments represent 40.4 hours of data, or 29.4 hours if SIL frames are excluded.
+
+** Goals for Wednesday:
+- TODO Mandatory Training
+- TODO Objectives
+- TODO African French: Get WER results.
+- TODO Mail: Let Justin reboot my laptop and fix my window manager after my jobs finish.
+- TODO Multilang: Get recipe running on GPU machine.
+- TODO SOFTunisia: Resume work with Zac.
+- TODO Yaounde: Write a recipe that could be a candidate for the kaldi repo.
+
 * DAR <2017-09-18 Mon>
 ** Goals for Next Week:
 - TODO Mandatory Training
@@ -18,6 +46,7 @@ I got past the step where hires mfcc features are extracted.
 - TODO Yaounde: Write a recipe that could be a candidate for the kaldi repo.
 - TODO Multilang: minimal example.
 - TODO African French: Get WER results.
+
 * DAR <2017-09-14 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Write Accomplishments and accomplishments summary.
