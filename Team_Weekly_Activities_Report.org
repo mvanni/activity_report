@@ -1,3 +1,38 @@
+* My WAR: <2017-09-22 Fri>
+** Goals set Last Week:
+- TODO Mandatory Training.
+Big Problems: I cannot access the training. My guess is that the problem is with Internet Explorer and JAWS.
+I am using Internet Explorer because my mozzila is hozed!.
+The help desk has come to my office twice and failed to fix the problem.
+
+- TODO Objectives
+took first baby step.
+I need to remember to add items that talk about cooperating with the other team on ASR for a speech interface to their robot and virtual humans 
+- DONE African French: Incorporate SRI Canada Conversational speech into ASR build scripts.
+I am working on the chain model WER results.
+- TODO SOFTunisia: Resume work with Zac on transcribing SOFTunisia answers.
+- TODO Multilang: minimal example.
+I made some surprising progress on this.
+I am using the French and German corpora as training data and the Heroico corpus as the target.
+It looks like the training went all the way through. 
+The build crashes when it hits the heroico corpus step.
+
+** WAR:
+The review process started this week for John Morgan's recipe to build an Automatic Speech Recognition (ASR) system for the Heroico Spanish corpus with the Kaldi toolkit. 
+Dr. Jan (Yenda) Trmal who is a Kaldi administrator and a research scientist at Johns Hopkins Center for Speech and Language Processing (CSLP) is running Morgan's recipe and performing the review. 
+Yenda is making many very helpful suggestions. 
+He pointed out a method that CLSP uses for preparing the speech data that is much more efficient than the one Morgan was previously using. 
+He also suggested using more recent methods for doing I-Vector extraction. 
+Once the review process is complete the recipe will be posted to the Kaldi repository. 
+
+
+** Goals for Next Week:
+- TODO Mandatory Training.
+- TODO Objectives.
+- TODO Heroico: Address Yenda's suggestions for the kaldi recipe.
+- TODO SOFTunisia: Resume work with Zac.
+- TODO African French:  Train on Progressively larger amounts of  data.
+
 * My WAR <2017-09-15 Fri>
 **  Goals from last Week:
 - DONE Write accomplishments.
