@@ -1,4 +1,10 @@
-* 1. TECHNICAL COMPETENCE
+* <2017-09-22 Fri>
+** 1. TECHNICAL COMPETENCE
+
+** Acoustic Models for Low Resource Languages
+Can we leverage the resources we have available to build acoustic models for a language for which we have very few resources?
+I will use the kaldi multilang recipe to build acoustic models for one language given resources from many other languages. 
+* 2016-2017: 1. TECHNICAL COMPETENCE
 ** ASR Adaptation:
 It is not clear that the advances made last year can be implemented in applications that would directly benefit the Army. 
 This year I propose to capitalize on last year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
