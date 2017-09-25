@@ -1,4 +1,61 @@
+* DAR <2017-09-25 Mon>
+**  Goals for Next Week:
+- TODO Mandatory Training.
+- TODO Objectives.
+- TODO Heroico: Address Yenda's suggestions for the kaldi recipe.
+I've made a lot of changes.
+The main problem is that I found that the text transcript files are not in utf8.
+I want all the text files to be in utf8.
+I changed the scripts that make the lists so I can change the encoding of the text files to utf8.
+I changed the make llists scripts to be pipes.
+I run iconv in the run.sh script and I pipe the results to the make lists scripts.
+I'm not sure Yenda will like this.
+
+- TODO SOFTunisia: Resume work with Zac.
+Zac told me to stand down for another week.
+He's doing good work on the dictionary.
+
+- TODO African French:  Train on Progressively larger amounts of  data.
+I finally got all of the results for the full training set:
+find exp -type f -name "best_wer" | xargs cat | grep WER | sort -gr
+%WER 41.37 [ 1320 / 3191, 114 ins, 290 del, 916 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.88 [ 762 / 3191, 148 ins, 99 del, 515 sub ] exp/tri3b/decode_ca16.si/wer_12_0.0
+%WER 22.63 [ 722 / 3191, 109 ins, 163 del, 450 sub ] exp/tri1/decode_ca16/wer_15_0.0
+%WER 20.09 [ 641 / 3191, 98 ins, 128 del, 415 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+%WER 15.98 [ 510 / 3191, 92 ins, 74 del, 344 sub ] exp/tri3b/decode_ca16/wer_15_0.0
+%WER 12.69 [ 405 / 3191, 47 ins, 81 del, 277 sub ] exp/chain/tdnn_sp_online/decode_ca16_1/wer_10_1.0
+%WER 12.63 [ 403 / 3191, 60 ins, 62 del, 281 sub ] exp/chain/tdnn_sp/decode_ca16/wer_9_0.5
+%WER 12.63 [ 403 / 3191, 60 ins, 62 del, 281 sub ] exp/chain/tdnn_sp/decode_ca16_1/wer_9_0.5
+%WER 12.60 [ 402 / 3191, 57 ins, 67 del, 278 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_0.5
+
+The results for exp/chain/tdnn_sp/decode_ca16_1 were obtained by running the decoding step separately. 
+I'm not sure why I get a different result.
+I'm not sure why the best results were obtained with the online models. 
+Is it possible that different runs yield different scores?
+
+I ran the online chain model system separately and I get 12.69 WER.
+
+** Goals for Tuesday:
+- TODO Mandatory Training.
+- TODO Objectives.
+- TODO Heroico: Address more of Yenda's suggestions for the kaldi recipe.
+- TODO African French: Train and test on pregressively more data.
+- TODO Heroico: run end2end to get WERs.
+- TODO Yaounde: Write recipe following work I've been doing for heroico.
+- TODO Multilang: Investigate decoding errors.
 * DAR <2017-09-20 Wed>
+** Goals for Thursday or Friday set Wednesday:
+- TODO Mandatory Training
+- TODO Objectives
+- TODO Multilang: What is going on?
+- TODO Yaounde: Get ivector and chain model training working.
+- TODO SOFTunisia: Where is Zac?
+- TODO African French: Get Chain model training working.
+- TODO African French: Get WER results for Chain models.
+- TODO Heroico: Get scripts to run on clsp cluster (work with Yenda on this)
+Yenda is reviewing my recipe.
+A lot is happening with this task.
+
 ** Goals for Wednesday set Tuesday:
 - TODO Mandatory Training
 I can't access some of the trainings. I removed the pop up blocker, but I still cannot access a training with JAWS.
@@ -54,7 +111,6 @@ This is a minimal example that uses french and german to build a Spanish model s
 - TODO Yaounde: Write a recipe that could be a candidate for the kaldi repo.
 This is crashing too on ivector training because of missing configuration files.
 
-
 ** Goals for Thursday or Friday:
 - TODO Mandatory Training
 - TODO Objectives
@@ -63,6 +119,7 @@ This is crashing too on ivector training because of missing configuration files.
 - TODO SOFTunisia: Where is Zac?
 - TODO African French: Get Chain model training working.
 - TODO African French: Get WER results for Chain models.
+- TODO Heroico: Get scripts to run on clsp cluster (work with Yenda on this)
 
 * DAR <2017-09-19 Tue>
 ** Goals for Tuesday set Monday:
@@ -91,7 +148,6 @@ Assuming 100 frames per second, the alignments represent 40.4 hours of data, or 
 - TODO Multilang: Get recipe running on GPU machine.
 - TODO SOFTunisia: Resume work with Zac.
 - TODO Yaounde: Write a recipe that could be a candidate for the kaldi repo.
-
 * DAR <2017-09-18 Mon>
 ** Goals for Next Week:
 - TODO Mandatory Training
