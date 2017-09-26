@@ -1,3 +1,33 @@
+* DAR <2017-09-26 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Mandatory Training.
+- TODO Objectives.
+- TODO Heroico: Address more of Yenda's suggestions for the kaldi recipe.
+I ran into a problem with the GPU.
+It turns out that we want to run in exclusive mode.
+We were running in default mode that allows multiple jobs to run on the GPU.
+I also had to set the initial and final number of jobs to 1 to get the training to run on the GPU with mini batch chunk sizes set to 256,128,64.
+
+- TODO African French: Train and test on pregressively more data.
+I worked on yaounde instead today.
+
+- TODO Heroico: run end2end to get WERs.
+Hoepfully this will be done tomorrow.
+- TODO Yaounde: Write recipe following work I've been doing for heroico.
+I made a lot of probress on this today.
+I got the scripts to write the acoustic modeling llistsdone.
+I made a lot of fixes to the run.sh script.
+
+- TODO Multilang: Investigate decoding errors.
+
+** Goals for Wednesday:
+- TODO Mandatory Training.
+- TODO Objectives.
+- TODO Heroico: Address more of Yenda's suggestions for the kaldi recipe.
+- TODO Yaounde: Write recipe to kaldi standards.
+- TODO Multilang: Investigate decoding errors.
+- TODO give Justin some time to install the new hard drives.
+
 * DAR <2017-09-25 Mon>
 **  Goals for Next Week:
 - TODO Mandatory Training.
