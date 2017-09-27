@@ -1,3 +1,58 @@
+* DAR <2017-09-27 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Mandatory Training.
+I don't think I can do any training until my firefox is fixed.
+Van from the help desk reinstalled firefox for me.
+I finished!
+I got help from Van from the help desk for the obsec.
+I passed the Trafficking in Persons test.
+I got help from Michelle for the PII.
+
+I still have to do cyber awareness , but that is not part of mandatory training.
+
+- TODO Objectives.
+- TODO Heroico: Address more of Yenda's suggestions for the kaldi recipe.
+I removed some references to _tgsmall in the chain model script.
+I had to rerun the step that formats the data/lang_test directory with the lm to get the G.fst file.
+I removed the calls to decoding with lm rescoring.
+After doing that I got the following (hard to believe) WER scores:
+%WER 5.30 [ 488 / 9215, 20 ins, 170 del, 298 sub ] exp/chain/tdnn1c_sp/decode_nonnative/wer_14_0.0
+%WER 4.55 [ 419 / 9215, 22 ins, 123 del, 274 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative/wer_14_0.0
+%WER 4.11 [ 687 / 16713, 33 ins, 241 del, 413 sub ] exp/chain/tdnn1c_sp/decode_test/wer_14_0.0
+%WER 3.39 [ 566 / 16713, 33 ins, 171 del, 362 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_14_0.0
+%WER 2.57 [ 193 / 7498, 10 ins, 71 del, 112 sub ] exp/chain/tdnn1c_sp/decode_native/wer_16_0.0
+%WER 1.93 [ 145 / 7498, 10 ins, 50 del, 85 sub ] exp/chain/tdnn1c_sp_online/decode_native/wer_16_0.0
+
+I got even harder to believe results later:
+%WER 3.54 [ 326 / 9215, 83 ins, 26 del, 217 sub ] exp/tri3b/decode_nonnative.si/wer_17_0.0
+%WER 2.68 [ 448 / 16713, 120 ins, 42 del, 286 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 1.78 [ 164 / 9215, 44 ins, 15 del, 105 sub ] exp/tri2b/decode_nonnative/wer_17_0.5
+%WER 1.49 [ 112 / 7498, 29 ins, 16 del, 67 sub ] exp/tri3b/decode_native.si/wer_17_1.0
+%WER 1.42 [ 131 / 9215, 32 ins, 15 del, 84 sub ] exp/tri3b/decode_nonnative/wer_17_0.5
+%WER 1.24 [ 208 / 16713, 53 ins, 28 del, 127 sub ] exp/tri2b/decode_test/wer_17_1.0
+%WER 1.08 [ 180 / 16713, 41 ins, 27 del, 112 sub ] exp/tri3b/decode_test/wer_17_0.5
+%WER 0.87 [ 80 / 9215, 14 ins, 13 del, 53 sub ] exp/tri1/decode_nonnative/wer_17_0.5
+%WER 0.78 [ 72 / 9215, 10 ins, 16 del, 46 sub ] exp/mono/decode_nonnative/wer_16_0.0
+%WER 0.78 [ 131 / 16713, 20 ins, 28 del, 83 sub ] exp/tri1/decode_test/wer_17_1.0
+%WER 0.69 [ 52 / 7498, 11 ins, 14 del, 27 sub ] exp/tri1/decode_native/wer_16_0.0
+%WER 0.65 [ 49 / 7498, 9 ins, 12 del, 28 sub ] exp/tri3b/decode_native/wer_17_0.0
+%WER 0.58 [ 97 / 16713, 14 ins, 30 del, 53 sub ] exp/mono/decode_test/wer_16_0.0
+%WER 0.57 [ 43 / 7498, 9 ins, 11 del, 23 sub ] exp/tri2b/decode_native/wer_17_0.5
+%WER 0.36 [ 27 / 7498, 4 ins, 13 del, 10 sub ] exp/mono/decode_native/wer_16_0.0
+
+I actually think something is  wrong.
+- TODO Yaounde: Write recipe to kaldi standards.
+I'm almos done with this.
+- TODO Multilang: Investigate decoding errors.
+- DONE give Justin some time to install the new hard drives.
+- TODO African French: Train and test on progressively larger amounts of data.
+
+** Goals for Thursday:
+- TODO Objectives.
+- TODO Yaounde: Write recipe to kaldi standards (organize data).
+- TODO Multilang: Investigate decoding errors.
+- TODO African French: Train and test on progressively larger amounts of data.
+
 * DAR <2017-09-26 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Mandatory Training.
@@ -27,6 +82,7 @@ I made a lot of fixes to the run.sh script.
 - TODO Yaounde: Write recipe to kaldi standards.
 - TODO Multilang: Investigate decoding errors.
 - TODO give Justin some time to install the new hard drives.
+- TODO African French: Train and test on progressively larger amounts of data.
 
 * DAR <2017-09-25 Mon>
 **  Goals for Next Week:
