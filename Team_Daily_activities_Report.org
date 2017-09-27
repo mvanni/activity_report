@@ -49,6 +49,7 @@ I'm almos done with this.
 
 ** Goals for Thursday:
 - TODO Objectives.
+- TODO Cyber Awareness Training.
 - TODO Yaounde: Write recipe to kaldi standards (organize data).
 - TODO Multilang: Investigate decoding errors.
 - TODO African French: Train and test on progressively larger amounts of data.
