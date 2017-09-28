@@ -1,3 +1,29 @@
+* DAR <2017-09-28 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Objectives.
+- TODO Cyber Awareness Training.
+- TODO Yaounde: Write recipe to kaldi standards (organize data).
+The WER scores were very bad.
+Obviously something was wrong.
+I figured out that the problem was in the sox command I was writing in the wav.scp file for the test data.
+The sox command is very simple:
+sox $line -t wav - |
+Because the .wav files for the test data are already in the correct format.
+- TODO Multilang: Investigate decoding errors.
+- TODO African French: Train and test on progressively larger amounts of data.
+Zac delivered  the  new lexicon.
+I worked on incorporating it into the next stage of model training and rough draft writing.
+
+
+** Goals for Friday:
+- TODO Objectives.
+- TODO Cyber Awareness Training.
+- TODO Yaounde: Write recipe to kaldi standards (organize data).
+- TODO Heroico: Get recipe  running on clsp cluster (read qsub tutorial)
+- TODO SOFTunisia: Get next stage rough draft to Zac.
+- TODO Multilang: Investigate decoding errors.
+- TODO African French: Train and test on progressively larger amounts of data.
+
 * DAR <2017-09-27 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Mandatory Training.
