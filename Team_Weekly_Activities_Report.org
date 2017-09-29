@@ -15,6 +15,12 @@ The queue.pl command line flags have to be written in the cmd.sh file.
 Then you run the run.sh script directly in the shell.
 I was running the run.sh script as an argument to queue.pl.
 - TODO SOFTunisia: Get next stage rough draft to Zac.
+Zac's new lexicon has a different set of phones.
+For example, there does not seem to be a B phone.
+I will have to make sure Zac Zac meant to drop this hone and I will have to search for more differences before proceeding.
+If he indeed change the phone set, I will have to build the system again from the monophone ste.
+this is probably a good idea anyway.
+
 - TODO Multilang: Investigate decoding errors.
 - TODO African French: Train and test on progressively larger amounts of data.
 
@@ -27,6 +33,7 @@ This week he got his Kaldi recipe to run end to end on the CCAB GPU enabled serv
 - TODO African French: build systems on progressively large amounts of data.
 - TODO Multilang: minimal example.
 - TODO Yaounde: Write recipe to kaldi standards (organize data).
+- TODO SOFTunisia: Rebuild system with Zac's new lexicon.
 
 * My WAR: <2017-09-22 Fri>
 ** Goals set Last Week:
@@ -62,8 +69,7 @@ Once the review process is complete the recipe will be posted to the Kaldi repos
 - TODO Heroico: Address Yenda's suggestions for the kaldi recipe.
 - TODO SOFTunisia: Resume work with Zac.
 - TODO African French:  Train on Progressively larger amounts of  data.
-
-* My WAR <2017-09-15 Fri>
+My WAR <2017-09-15 Fri>
 **  Goals from last Week:
 - DONE Write accomplishments.
 - TODO Mandatory Training.
