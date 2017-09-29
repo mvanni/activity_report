@@ -1,11 +1,18 @@
 * <2017-09-22 Fri>
 ** 1. TECHNICAL COMPETENCE
 
-** Acoustic Models for Low Resource Languages
-Can we leverage the resources we have available to build acoustic models for a language for which we have very few resources?
-I will use the kaldi multilang recipe to build acoustic models for one language given resources from many other languages. 
-* 2016-2017: 1. TECHNICAL COMPETENCE
-** ASR Adaptation:
+*** Acoustic Models for Low Resource Languages
+**** Problem
+ASR coponents like acousti models are not available for key languages and accented versions of major languages.
+**** Research Question
+Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
+**** Proposed Method 
+I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
+I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
+I will obtain the source language resources from the GlobalPhone corpus.
+* 2016-2017: 
+** 1. TECHNICAL COMPETENCE
+*** ASR Adaptation:
 It is not clear that the advances made last year can be implemented in applications that would directly benefit the Army. 
 This year I propose to capitalize on last year's successes by investigating ASR models that have well defined pathways to implementation  in speech to speech devices. 
 I will focus on developing models that result in software that can be demoed with realtime interaction. 
@@ -38,8 +45,8 @@ I will build ASR systems for Dari and Pashto.
 I will leverage resources produced by the babel project for Pashto. 
 I will work with Hazrat Ghulam Jahed on building high quality Dari and Pashto ASR systems.
 
-** Research:
-*** Variable Structured computational graphs.
+*** Research:
+**** Variable Structured computational graphs.
 Many models used in NLP applications have a network of connected nodes. 
 Training these networks has been restricted to computing weights associated with the connections. 
 The topology of the networks has largely remained fixed. 
@@ -47,32 +54,32 @@ Lately there have been attempts to develop training methods that change the netw
 I propose to learn to use a toolkit called DyNet (or one like it) that is designed to build systems with variable graph structures. 
 
 I plan on using DyNet or a toolkit similar to it to build a Machine Translation System and to compare its performance with systems built with other reference toolkits like Joshua, Moses, Tensorflow, etc.  
-* 2. COOPERATION
+** 2. COOPERATION
 
 Collaborate with colleagues to write papers that report on advances made in our projects. 
 Collaborate with the Basic Research team by contributing speech recognition components to efforts such as the bot language project. 
-* 3. COMMUNICATIONS
+** 3. COMMUNICATIONS
 
 Write weekly activity reports to team members to keep them up to date on my work. 
 Read and comment on reports made by my team and branch mates.
 
-* 4. MGMT. OF TIME & RESOURCES
+** 4. MGMT. OF TIME & RESOURCES
 
 Set aside time during the day to practice some kind of  activity for physical fitness. 
 Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
-* 5. CUSTOMER RELATIONS
+** 5. CUSTOMER RELATIONS
 
 Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
 Establish contacts with researchers in the ASR and NLP fields. 
 Establish contacts with s2s device manufacturers.
 
-* 6. TECH TRANSITION
+** 6. TECH TRANSITION
 
 Contribute recipes for building ASR systems with our corpora to the MFLTS. 
 Transition ASR components and our other products to USA Army Africa and MFLTS.  
-* 7. DIVERSITY: 
+** 7. DIVERSITY: 
 Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
-* 8. SHARP: 
+** 8. SHARP: 
 Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
 Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
 Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
