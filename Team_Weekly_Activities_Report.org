@@ -1,3 +1,33 @@
+* My WAR <2017-09-29 Fri>
+** Goals setLast Week:
+- DONE Mandatory Training
+Everything on  my TED list is done.
+I  also finished the cyber awareness challenge.
+- TODO Objectives
+- TODO African French: Incorporate SRI Canada Conversational speech into ASR build scripts.
+- DONE SOFTunisia: Resume work with Zac on transcribing SOFTunisia answers.
+Zac gave me the lexicon he worked on.
+- TODO Multilang: minimal example.
+** Goals set yesterday:
+- TODO Yaounde: Write recipe to kaldi standards (organize data).
+- DONE Heroico: Get recipe  running on clsp cluster (read qsub tutorial)
+The queue.pl command line flags have to be written in the cmd.sh file.
+Then you run the run.sh script directly in the shell.
+I was running the run.sh script as an argument to queue.pl.
+- TODO SOFTunisia: Get next stage rough draft to Zac.
+- TODO Multilang: Investigate decoding errors.
+- TODO African French: Train and test on progressively larger amounts of data.
+
+** WAR:
+Mr. John Morgan is addressing issues raised by reviewers at the CLSP on his recipe for building an ASR system for the Spanish Heroico Corpus with the Kaldi Toolkit. 
+This week he got his Kaldi recipe to run end to end on the CCAB GPU enabled server and he is working on getting the recipe to run on CLSP's cluster. 
+
+** Goals for Next Week:
+- TODO Objectives:
+- TODO African French: build systems on progressively large amounts of data.
+- TODO Multilang: minimal example.
+- TODO Yaounde: Write recipe to kaldi standards (organize data).
+
 * My WAR: <2017-09-22 Fri>
 ** Goals set Last Week:
 - TODO Mandatory Training.
