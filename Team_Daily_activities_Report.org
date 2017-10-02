@@ -1,3 +1,65 @@
+* DAR <2017-10-02 Mon>
+** Goals for Next Week:
+- TODO Objectives:
+- TODO African French: build systems on progressively larger amounts of data.
+- TODO Multilang: minimal example.
+- TODO Yaounde: Writel recipe to kaldi standards (organize data).
+- TODO Yaounde: Figure out why WER scores are so bad: test on training data
+- TODO SOFTunisia: Rebuild system with Zac's new lexicon.
+I focused on this today.
+I am trying to make a clean fresh start.
+I am building the new system in the softunisia/s5 directory.
+I wrote new scripts to process the answers and recordings training data without copying files.
+These scripts are very similar to the ones I wrote for heroico.   
+Zac wants me to start from stage 15 and redo stage 16.
+This is a good idea since he can compare the new lexicon with the old one. 
+As I am getting ready to leave, I am building an LM with the subs corpus.
+
+- Heroico: 
+I added commands to my run.sh script to use the gp lm in testing.
+I get the following WER results:
+%WER 64.77 [ 5969 / 9215, 415 ins, 1251 del, 4303 sub ] exp/mono/decode_nonnative_gplm/wer_7_0.5
+%WER 62.27 [ 10408 / 16713, 766 ins, 2062 del, 7580 sub ] exp/mono/decode_test_gplm/wer_7_0.5
+%WER 59.18 [ 4437 / 7498, 338 ins, 808 del, 3291 sub ] exp/mono/decode_native_gplm/wer_7_0.5
+%WER 58.01 [ 5346 / 9215, 647 ins, 754 del, 3945 sub ] exp/tri3b/decode_nonnative_gplm.si/wer_13_1.0
+%WER 56.82 [ 5236 / 9215, 385 ins, 1036 del, 3815 sub ] exp/tri1/decode_nonnative_gplm/wer_14_1.0
+%WER 55.01 [ 5069 / 9215, 494 ins, 836 del, 3739 sub ] exp/tri2b/decode_nonnative_gplm/wer_14_1.0
+%WER 53.30 [ 8908 / 16713, 1171 ins, 1156 del, 6581 sub ] exp/tri3b/decode_test_gplm.si/wer_13_1.0
+%WER 53.18 [ 8888 / 16713, 817 ins, 1494 del, 6577 sub ] exp/tri1/decode_test_gplm/wer_13_1.0
+%WER 51.32 [ 4729 / 9215, 647 ins, 596 del, 3486 sub ] exp/tri3b/decode_nonnative_gplm/wer_16_0.5
+%WER 50.72 [ 8476 / 16713, 917 ins, 1277 del, 6282 sub ] exp/tri2b/decode_test_gplm/wer_14_1.0
+%WER 48.25 [ 3618 / 7498, 513 ins, 403 del, 2702 sub ] exp/tri1/decode_native_gplm/wer_10_1.0
+%WER 47.54 [ 7945 / 16713, 1171 ins, 916 del, 5858 sub ] exp/tri3b/decode_test_gplm/wer_16_0.5
+%WER 47.43 [ 3556 / 7498, 424 ins, 482 del, 2650 sub ] exp/tri3b/decode_native_gplm.si/wer_16_1.0
+%WER 45.37 [ 3402 / 7498, 423 ins, 440 del, 2539 sub ] exp/tri2b/decode_native_gplm/wer_14_1.0
+%WER 42.77 [ 3207 / 7498, 455 ins, 368 del, 2384 sub ] exp/tri3b/decode_native_gplm/wer_16_1.0
+%WER 3.96 [ 365 / 9215, 101 ins, 23 del, 241 sub ] exp/tri3b/decode_nonnative_simple.si/wer_17_0.0
+%WER 2.70 [ 451 / 16713, 124 ins, 42 del, 285 sub ] exp/tri3b/decode_test_simple.si/wer_17_0.0
+%WER 1.66 [ 153 / 9215, 45 ins, 17 del, 91 sub ] exp/tri2b/decode_nonnative_simple/wer_17_0.0
+%WER 1.25 [ 115 / 9215, 28 ins, 14 del, 73 sub ] exp/tri3b/decode_nonnative_simple/wer_17_0.0
+%WER 1.20 [ 200 / 16713, 56 ins, 30 del, 114 sub ] exp/tri2b/decode_test_simple/wer_17_0.0
+%WER 1.19 [ 89 / 7498, 24 ins, 19 del, 46 sub ] exp/tri3b/decode_native_simple.si/wer_17_0.5
+%WER 0.93 [ 156 / 16713, 32 ins, 27 del, 97 sub ] exp/tri3b/decode_test_simple/wer_17_0.0
+%WER 0.82 [ 76 / 9215, 17 ins, 7 del, 52 sub ] exp/tri1/decode_nonnative_simple/wer_17_0.0
+%WER 0.75 [ 69 / 9215, 12 ins, 12 del, 45 sub ] exp/mono/decode_nonnative_simple/wer_15_0.0
+%WER 0.69 [ 116 / 16713, 25 ins, 19 del, 72 sub ] exp/tri1/decode_test_simple/wer_17_0.0
+%WER 0.62 [ 104 / 16713, 19 ins, 30 del, 55 sub ] exp/mono/decode_test_simple/wer_16_0.0
+%WER 0.61 [ 46 / 7498, 10 ins, 13 del, 23 sub ] exp/tri2b/decode_native_simple/wer_17_0.5
+%WER 0.52 [ 39 / 7498, 8 ins, 12 del, 19 sub ] exp/tri1/decode_native_simple/wer_16_0.0
+%WER 0.52 [ 39 / 7498, 4 ins, 13 del, 22 sub ] exp/tri3b/decode_native_simple/wer_16_0.0
+%WER 0.39 [ 29 / 7498, 4 ins, 17 del, 8 sub ] exp/mono/decode_native_simple/wer_17_1.0
+
+The chain models are training as I am getting ready to leave.
+
+** Goals for Tuesday:
+- TODO Objectives.
+- TODO Heroico: Get results for gplm 
+- TODO Heeroico: Build bigger lm and test.
+- TODO SOFTunisia: Finish subs lm
+- TODO SOFTunisia: Build cd gmm hmm system and chain models
+- TODO: Get rough draft hypotheses for stage 16?
+- TODO SOFTunisia: Compare WER scores for old and new lexicons(Zac will do this)
+
 * DAR <2017-09-28 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Objectives.
@@ -13,7 +75,6 @@ Because the .wav files for the test data are already in the correct format.
 - TODO African French: Train and test on progressively larger amounts of data.
 Zac delivered  the  new lexicon.
 I worked on incorporating it into the next stage of model training and rough draft writing.
-
 
 ** Goals for Friday:
 - TODO Objectives.
@@ -90,7 +151,7 @@ It turns out that we want to run in exclusive mode.
 We were running in default mode that allows multiple jobs to run on the GPU.
 I also had to set the initial and final number of jobs to 1 to get the training to run on the GPU with mini batch chunk sizes set to 256,128,64.
 
-- TODO African French: Train and test on pregressively more data.
+- TODO African French: Train and test on progressively more data.
 I worked on yaounde instead today.
 
 - TODO Heroico: run end2end to get WERs.
@@ -110,7 +171,6 @@ I made a lot of fixes to the run.sh script.
 - TODO Multilang: Investigate decoding errors.
 - TODO give Justin some time to install the new hard drives.
 - TODO African French: Train and test on progressively larger amounts of data.
-
 * DAR <2017-09-25 Mon>
 **  Goals for Next Week:
 - TODO Mandatory Training.
