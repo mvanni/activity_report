@@ -1,3 +1,73 @@
+* DAR <2017-10-03 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Objectives.
+- TODO Heroico: Get results for gplm 
+The chain model WER results for the gplm decoding are not good.
+I'm not sure what is wrong.
+%WER 67.89 [ 6256 / 9215, 388 ins, 1391 del, 4477 sub ] exp/chain/tdnn1c_sp/decode_nonnative_gplm/wer_9_0.0
+%WER 67.28 [ 6200 / 9215, 408 ins, 1353 del, 4439 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative_gplm/wer_9_0.0
+%WER 64.77 [ 5969 / 9215, 415 ins, 1251 del, 4303 sub ] exp/mono/decode_nonnative_gplm/wer_7_0.5
+%WER 63.55 [ 10621 / 16713, 543 ins, 2647 del, 7431 sub ] exp/chain/tdnn1c_sp/decode_test_gplm/wer_9_0.5
+%WER 62.47 [ 10441 / 16713, 688 ins, 2192 del, 7561 sub ] exp/chain/tdnn1c_sp_online/decode_test_gplm/wer_8_0.5
+%WER 62.27 [ 10408 / 16713, 766 ins, 2062 del, 7580 sub ] exp/mono/decode_test_gplm/wer_7_0.5
+%WER 59.18 [ 4437 / 7498, 338 ins, 808 del, 3291 sub ] exp/mono/decode_native_gplm/wer_7_0.5
+%WER 58.08 [ 4355 / 7498, 316 ins, 863 del, 3176 sub ] exp/chain/tdnn1c_sp/decode_native_gplm/wer_7_1.0
+%WER 58.01 [ 5346 / 9215, 647 ins, 754 del, 3945 sub ] exp/tri3b/decode_nonnative_gplm.si/wer_13_1.0
+%WER 56.82 [ 5236 / 9215, 385 ins, 1036 del, 3815 sub ] exp/tri1/decode_nonnative_gplm/wer_14_1.0
+%WER 56.66 [ 4248 / 7498, 302 ins, 821 del, 3125 sub ] exp/chain/tdnn1c_sp_online/decode_native_gplm/wer_8_0.5
+%WER 55.01 [ 5069 / 9215, 494 ins, 836 del, 3739 sub ] exp/tri2b/decode_nonnative_gplm/wer_14_1.0
+%WER 53.30 [ 8908 / 16713, 1171 ins, 1156 del, 6581 sub ] exp/tri3b/decode_test_gplm.si/wer_13_1.0
+%WER 53.18 [ 8888 / 16713, 817 ins, 1494 del, 6577 sub ] exp/tri1/decode_test_gplm/wer_13_1.0
+%WER 5.25 [ 484 / 9215, 32 ins, 164 del, 288 sub ] exp/chain/tdnn1c_sp/decode_nonnative_simple/wer_17_0.0
+%WER 51.32 [ 4729 / 9215, 647 ins, 596 del, 3486 sub ] exp/tri3b/decode_nonnative_gplm/wer_16_0.5
+%WER 50.72 [ 8476 / 16713, 917 ins, 1277 del, 6282 sub ] exp/tri2b/decode_test_gplm/wer_14_1.0
+%WER 5.00 [ 461 / 9215, 33 ins, 144 del, 284 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative_simple/wer_16_0.0
+%WER 48.25 [ 3618 / 7498, 513 ins, 403 del, 2702 sub ] exp/tri1/decode_native_gplm/wer_10_1.0
+%WER 47.54 [ 7945 / 16713, 1171 ins, 916 del, 5858 sub ] exp/tri3b/decode_test_gplm/wer_16_0.5
+%WER 47.43 [ 3556 / 7498, 424 ins, 482 del, 2650 sub ] exp/tri3b/decode_native_gplm.si/wer_16_1.0
+%WER 4.54 [ 758 / 16713, 52 ins, 261 del, 445 sub ] exp/chain/tdnn1c_sp/decode_test_simple/wer_17_0.0
+%WER 45.37 [ 3402 / 7498, 423 ins, 440 del, 2539 sub ] exp/tri2b/decode_native_gplm/wer_14_1.0
+%WER 42.77 [ 3207 / 7498, 455 ins, 368 del, 2384 sub ] exp/tri3b/decode_native_gplm/wer_16_1.0
+%WER 4.02 [ 672 / 16713, 49 ins, 227 del, 396 sub ] exp/chain/tdnn1c_sp_online/decode_test_simple/wer_17_0.0
+%WER 3.96 [ 365 / 9215, 101 ins, 23 del, 241 sub ] exp/tri3b/decode_nonnative_simple.si/wer_17_0.0
+%WER 3.56 [ 267 / 7498, 20 ins, 96 del, 151 sub ] exp/chain/tdnn1c_sp/decode_native_simple/wer_17_0.0
+%WER 2.75 [ 206 / 7498, 13 ins, 74 del, 119 sub ] exp/chain/tdnn1c_sp_online/decode_native_simple/wer_17_0.0
+%WER 2.70 [ 451 / 16713, 124 ins, 42 del, 285 sub ] exp/tri3b/decode_test_simple.si/wer_17_0.0
+%WER 1.66 [ 153 / 9215, 45 ins, 17 del, 91 sub ] exp/tri2b/decode_nonnative_simple/wer_17_0.0
+%WER 1.25 [ 115 / 9215, 28 ins, 14 del, 73 sub ] exp/tri3b/decode_nonnative_simple/wer_17_0.0
+%WER 1.20 [ 200 / 16713, 56 ins, 30 del, 114 sub ] exp/tri2b/decode_test_simple/wer_17_0.0
+%WER 1.19 [ 89 / 7498, 24 ins, 19 del, 46 sub ] exp/tri3b/decode_native_simple.si/wer_17_0.5
+%WER 0.93 [ 156 / 16713, 32 ins, 27 del, 97 sub ] exp/tri3b/decode_test_simple/wer_17_0.0
+%WER 0.82 [ 76 / 9215, 17 ins, 7 del, 52 sub ] exp/tri1/decode_nonnative_simple/wer_17_0.0
+%WER 0.75 [ 69 / 9215, 12 ins, 12 del, 45 sub ] exp/mono/decode_nonnative_simple/wer_15_0.0
+%WER 0.69 [ 116 / 16713, 25 ins, 19 del, 72 sub ] exp/tri1/decode_test_simple/wer_17_0.0
+%WER 0.62 [ 104 / 16713, 19 ins, 30 del, 55 sub ] exp/mono/decode_test_simple/wer_16_0.0
+%WER 0.61 [ 46 / 7498, 10 ins, 13 del, 23 sub ] exp/tri2b/decode_native_simple/wer_17_0.5
+%WER 0.52 [ 39 / 7498, 8 ins, 12 del, 19 sub ] exp/tri1/decode_native_simple/wer_16_0.0
+%WER 0.52 [ 39 / 7498, 4 ins, 13 del, 22 sub ] exp/tri3b/decode_native_simple/wer_16_0.0
+%WER 0.39 [ 29 / 7498, 4 ins, 17 del, 8 sub ] exp/mono/decode_native_simple/wer_17_1.0
+
+- TODO Heeroico: Build bigger lm and test.
+I asked Justin to download the subs Spanishcorpus.
+I'll try making an lm with subs.
+ 
+- DONE SOFTunisia: Finish subs lm
+
+- DONE SOFTunisia: Build cd gmm hmm system and chain models
+I finished the cd gmm hmm and I sent Zac the rough draft for the simple decoding.
+I did not do chain models.
+- DONE: Get rough draft hypotheses for stage 16?
+I sent Zac all the hypothesis transcripts for CTELLTWO.
+I asked him to work on the first 4 speakers.
+- TODO SOFTunisia: Compare WER scores for old and new lexicons(Zac will do this)
+
+** Goals for Wednesday:
+- TODO Objectives:
+- TODO Heroico: Finish run on clsp cluster and contact Yenda
+- TODO SOFTunisia: Get feed back from Zac and send him the hypotheses from the gplm decoding.
+- TODO Yaounde: Why are WERs so bad?
+- TODO Heroico: Build lm with subs? 
+
 * DAR <2017-10-02 Mon>
 ** Goals for Next Week:
 - TODO Objectives:
@@ -59,7 +129,6 @@ The chain models are training as I am getting ready to leave.
 - TODO SOFTunisia: Build cd gmm hmm system and chain models
 - TODO: Get rough draft hypotheses for stage 16?
 - TODO SOFTunisia: Compare WER scores for old and new lexicons(Zac will do this)
-
 * DAR <2017-09-28 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Objectives.
