@@ -1,3 +1,55 @@
+* DAR <2017-10-04 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Objectives:
+
+1. TECHNICAL COMPETENCE
+a. Acoustic Models for Low Resource Languages
+I. Problem
+ASR components like acousti models are not available for key low resource languages and accented versions of major languages.
+II. Research Question
+Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
+III. Proposed Method 
+I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
+I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
+I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
+b. Corpus Curation
+I. Problem:
+In my previous job at West Point, I was part of a team that developed speech corpora for the  following languages: 
+A. Arabic (West Point LDC2002S02)
+B. Arabic (Tunisia)
+C. French (collected in Yaounde Cameroon)
+D. Croatian (LDC2005S28)
+E. German
+F. Korean (LDC2006S36)
+G. Portuguese (Brazilian LDC2008s04)
+H. Russian (West Point LDC2003S05)
+I. Russian (SOF Peter)
+J. Spanish (Heroico LDC2006S37)
+
+Of these 10 corpora, 6 were published in the Linguistic Data Consortium. 
+The remaining 4 corpora for Arabic, French, German  and Russian are available to our team and have yet to be published. 
+Unless the corpora are published, results obtained from training ASR systems with them are not reproduceable.
+
+ii. Proposed Method: 
+I have 3 related goals this year concerning these 4 remaining corpora.
+First, I want to prepare these corpora for use as source data in the multilang project mentioned above. 
+Second, I want to publish these corpora in the openslrm.org repository.
+Third, In addition to the multilang project, I want to write Kaldi recipes  for each corpus. 
+
+Publishing these corpora is an important goal. 
+It is not hard to imagine these corpora disappearing after our generation retires. 
+
+Preparing the data  and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
+
+** Goals for Thursday:
+- TODO Objectives:
+- TODO SOFTunisia: Finish training with stage 16 speakers and get rough draft to ZAC.
+- TODO African French: Build system without ARTI corpus.
+- TODO Heroico: Incorporate subs trained lm into system.
+- TODO Heroico: Contact Yenda about status of recipe.
+- TODO Yaounde: What is wrong?
+- TODO Multilang: Minimal example.
+
 * DAR <2017-10-03 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Objectives.
