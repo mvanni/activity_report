@@ -1,15 +1,43 @@
 * <2017-09-22 Fri>
 ** 1. TECHNICAL COMPETENCE
-
 *** Acoustic Models for Low Resource Languages
 **** Problem
-ASR coponents like acousti models are not available for key languages and accented versions of major languages.
+ASR coponents like acousti models are not available for key low resource languages and accented versions of major languages.
 **** Research Question
 Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
 **** Proposed Method 
 I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
 I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
-I will obtain the source language resources from the GlobalPhone corpus.
+I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
+** Corpus Curation
+*** Problem:
+In my previous job, I was part of a team that developed speech corpora for the  following languages: 
+1. Arabic (West Point LDC2002S02)
+2. Arabic (Tunisia)
+3. French (collected in Yaounde Cameroon)
+4. Croatian (LDC2005S28)
+5. German
+6. Korean (LDC2006S36)
+7. Portuguese (Brazilian LDC2008s04)
+8. Russian (West Point LDC2003S05)
+9. Russian (SOF Peter)
+10. Spanish (Heroico LDC2006S37)
+
+Of these 10 corpora, 6 were published in the Linguistic Data Consortium. 
+The remaining 4 corpora for Arabic, French, German  and Russian are available to our team and have yet to be published. 
+Unless the corpora are published, results obtained from training ASR systems with them are not reproduceable.
+
+*** Proposed Method: 
+I have 3 related goals this year concerning these 4 remaining corpora.
+First, I want to prepare these corpora for use as source data in the project mentioned above. 
+Second, I want to publish these corpora in the openslrm.org repository.
+Third, In addition to the multilang project, I want to write Kaldi recipes  for each corpus. 
+
+Publishing these corpora is an important goal. 
+It is not hard to imagine these corpora disappearing after our generation retires. 
+
+Preparing the data  and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
+
 * 2016-2017: 
 ** 1. TECHNICAL COMPETENCE
 *** ASR Adaptation:
