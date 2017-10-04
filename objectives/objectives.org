@@ -2,7 +2,7 @@
 ** 1. TECHNICAL COMPETENCE
 *** Acoustic Models for Low Resource Languages
 **** Problem
-ASR coponents like acousti models are not available for key low resource languages and accented versions of major languages.
+ASR components like acousti models are not available for key low resource languages and accented versions of major languages.
 **** Research Question
 Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
 **** Proposed Method 
@@ -11,7 +11,7 @@ I will use the kaldi multilang recipe to build acoustic models for  the target "
 I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
 ** Corpus Curation
 *** Problem:
-In my previous job, I was part of a team that developed speech corpora for the  following languages: 
+In my previous job at West Point, I was part of a team that developed speech corpora for the  following languages: 
 1. Arabic (West Point LDC2002S02)
 2. Arabic (Tunisia)
 3. French (collected in Yaounde Cameroon)
