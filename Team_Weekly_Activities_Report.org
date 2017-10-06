@@ -1,3 +1,64 @@
+* My WAR <2017-10-06 Fri>
+**  Goals set Last Week:
+- TODO Objectives:
+- TODO African French: build systems on progressively larger amounts of data.
+- TODO Multilang: minimal example.
+- DONE Yaounde: Write recipe to kaldi standards (organize data).
+- TODO Yaounde: Figure out why WER scores are so bad: test on training data
+The test on the training data gave a 21% WER.
+I am close to finishing this recipe.
+I need to decide if I should include  the test on the simple lm trained only on the prompts or should I only include the subs lm tests.
+
+- DONE SOFTunisia: Rebuild system with Zac's new lexicon.
+Zac's new dictionary gave better WER scores.
+Zac gets below 15% WER.
+
+- Goals for Friday:
+- TODO Heroico: Run again with subs lm and without gplm.
+Here are the gmm hmm WER scores for the subs lm test:
+%WER 31.57 [ 2909 / 9215, 193 ins, 610 del, 2106 sub ] exp/mono/decode_nonnative_subs/wer_9_0.0
+%WER 28.51 [ 4765 / 16713, 401 ins, 880 del, 3484 sub ] exp/mono/decode_test_subs/wer_8_0.0
+%WER 25.64 [ 2363 / 9215, 351 ins, 290 del, 1722 sub ] exp/tri3b/decode_nonnative_subs.si/wer_16_0.5
+%WER 24.69 [ 1851 / 7498, 178 ins, 310 del, 1363 sub ] exp/mono/decode_native_subs/wer_8_0.0
+%WER 22.91 [ 2111 / 9215, 245 ins, 311 del, 1555 sub ] exp/tri1/decode_nonnative_subs/wer_17_0.0
+%WER 21.33 [ 1966 / 9215, 164 ins, 361 del, 1441 sub ] exp/tri2b/decode_nonnative_subs/wer_17_1.0
+%WER 21.00 [ 3509 / 16713, 427 ins, 510 del, 2572 sub ] exp/tri3b/decode_test_subs.si/wer_17_1.0
+%WER 19.26 [ 3219 / 16713, 314 ins, 522 del, 2383 sub ] exp/tri1/decode_test_subs/wer_16_0.5
+%WER 18.13 [ 1671 / 9215, 208 ins, 247 del, 1216 sub ] exp/tri3b/decode_nonnative_subs/wer_17_1.0
+%WER 17.88 [ 2989 / 16713, 275 ins, 511 del, 2203 sub ] exp/tri2b/decode_test_subs/wer_16_1.0
+%WER 15.30 [ 1147 / 7498, 149 ins, 154 del, 844 sub ] exp/tri3b/decode_native_subs.si/wer_17_1.0
+%WER 14.62 [ 2444 / 16713, 282 ins, 359 del, 1803 sub ] exp/tri3b/decode_test_subs/wer_17_1.0
+%WER 14.55 [ 1091 / 7498, 122 ins, 153 del, 816 sub ] exp/tri1/decode_native_subs/wer_13_1.0
+%WER 13.28 [ 996 / 7498, 119 ins, 123 del, 754 sub ] exp/tri2b/decode_native_subs/wer_15_0.5
+%WER 10.26 [ 769 / 7498, 74 ins, 113 del, 582 sub ] exp/tri3b/decode_native_subs/wer_16_1.0
+
+I do not have the chain model results yet.
+These results look reasonable.
+If the chain model results also look reasonable, I will only put these in the recipe and I will drop the simple  test that uses the lm trained on the prompts.
+- TODO Yaounde: Test on CA16.
+I started doing this, but the results are not any better.
+
+- TODO African French: Get an lm working.
+- TODO African French: Test on ca16.
+
+** WAR:
+Mr. John Morgan worked this week on improving the evaluation task for the ASR system recipes he is writing. 
+The difficulty of the tasks in the ASR systems he is  building is given by the language model (LM). 
+So far he has been training the LMs on the training data transcripts. 
+The tasks given by LMs trained this way are not adequate. 
+In one case this kind of LM makes the task too easy and another case too hard.
+Mr. Morgan thus moved to training his LMs on the corpus of movie subtitles (SUBS). 
+The SUBS corpora are parallel, large and freely available in several language pairs. 
+Word Error Rates (WER) Results on these corpra look reasonable so far.
+
+** Goals for Next Week:
+- TODO Objectives
+- TODO Heroico: Chain model results?
+- TODO Heroico: Decide about lm (include simple lm?)
+- TODO Yaounde: Chain model results?
+- TODO African French: Build system on progressivly smaller training sets.
+- TODO Multilang: Minimal example
+
 * My WAR <2017-09-29 Fri>
 ** Goals setLast Week:
 - DONE Mandatory Training
@@ -33,8 +94,8 @@ This week he got his Kaldi recipe to run end to end on the CCAB GPU enabled serv
 - TODO African French: build systems on progressively large amounts of data.
 - TODO Multilang: minimal example.
 - TODO Yaounde: Write recipe to kaldi standards (organize data).
+- TODO Yaounde: Figure out why WER scores are so bad: test on training dat
 - TODO SOFTunisia: Rebuild system with Zac's new lexicon.
-
 * My WAR: <2017-09-22 Fri>
 ** Goals set Last Week:
 - TODO Mandatory Training.
