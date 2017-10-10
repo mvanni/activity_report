@@ -21,7 +21,7 @@ Is there something wrong with the ARTI242 data? (Transcripts, recording paramete
 - TODO Objectives
 - TODO Yaounde: What happens with subs trained lm?
 - TODO African French: Complete set of results.
-- TODO Heroico: Results and contact Yenda.
+- TODO Heroico: Results including chain model results and contact Yenda.
 
 * DAR <2017-10-05 Thu>
 ** Goals for Thursday set Wednesday:
@@ -106,7 +106,6 @@ This is still pretty bad.
 - TODO Yaounde: Test on CA16.
 - TODO African French: Get an lm working.
 - TODO African French: Test on ca16.
-
 * DAR <2017-10-04 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Objectives:
