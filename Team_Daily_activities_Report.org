@@ -1,3 +1,28 @@
+* DAR <2017-10-10 Tue>
+**  Goals for Next Week:
+- TODO Objectives
+- TODO Heroico: Chain model results?
+- DONE Heroico: Decide about lm (include simple lm?)
+I am going with only subs.
+- TODO Yaounde: Chain model results?
+
+- TODO African French: Build system on progressivly smaller training sets.
+
+I removed the ARTI data set of 242 utterances.
+So far I only have chain model results.
+%WER 11.69 [ 373 / 3191, 56 ins, 65 del, 252 sub ] exp/chain/tdnn_sp/decode_ca16/wer_10_1.0
+%WER 11.69 [ 373 / 3191, 54 ins, 65 del, 254 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_1.0
+
+This is better than the previous results which were 12.63.
+Is there something wrong with the ARTI242 data? (Transcripts, recording parameters, ...)
+
+- TODO Multilang: Minimal example
+** Goals for Wednesday:
+- TODO Objectives
+- TODO Yaounde: What happens with subs trained lm?
+- TODO African French: Complete set of results.
+- TODO Heroico: Results and contact Yenda.
+
 * DAR <2017-10-05 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Objectives:
