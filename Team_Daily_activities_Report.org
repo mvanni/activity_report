@@ -4,6 +4,22 @@
 I got the form from Shanel.
 - TODO Yaounde: What happens with subs trained lm?
 - TODO African French: Complete set of results.
+Here is what I have now:
+%WER 42.09 [ 1343 / 3191, 132 ins, 270 del, 941 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 141 ins, 120 del, 474 sub ] exp/tri1/decode_ca16/wer_13_0.0
+%WER 20.90 [ 667 / 3191, 100 ins, 133 del, 434 sub ] exp/tri2b/decode_ca16/wer_15_0.5
+%WER 11.69 [ 373 / 3191, 56 ins, 65 del, 252 sub ] exp/chain/tdnn_sp/decode_ca16/wer_10_1.0
+%WER 11.69 [ 373 / 3191, 54 ins, 65 del, 254 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_1.0
+
+
+| model | WER |
+mono | 42.09 |
+| tri1 | 23.03 |
+tri2b | 20.90 \
+| tri3b |         |
+| chain | 11.69 \ |
+|chaine online | 11.69 |
+
 - TODO Heroico: Results including chain model results and contact Yenda.
 I contacted Yenda.
 He was not much help.
