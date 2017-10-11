@@ -60,6 +60,7 @@ Why are the chain models not better than the cd gmm hmm ?
 
 ** Goals for Thursday:
 - TODO Objectives
+- TODO African French: Get tri3b results.
 - TODO Heroico: Tune chain models. 
 - TODO African French: Run with another training chunk removed 
 - TODO Yaounde: More work to figure out why results are so bad.
