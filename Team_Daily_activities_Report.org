@@ -1,3 +1,63 @@
+* DAR <2017-10-12 Thu>
+**  Goals for Thursday:
+- TODO Objectives
+- TODO African French: Get tri3b results.
+%WER 22.56 [ 720 / 3191, 124 ins, 116 del, 480 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
+%WER 16.61 [ 530 / 3191, 97 ins, 86 del, 347 sub ] exp/tri3b/decode_ca16/wer_16_0.5
+%WER 42.09 [ 1343 / 3191, 132 ins, 270 del, 941 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 141 ins, 120 del, 474 sub ] exp/tri1/decode_ca16/wer_13_0.0
+%WER 20.90 [ 667 / 3191, 100 ins, 133 del, 434 sub ] exp/tri2b/decode_ca16/wer_15_0.5
+%WER 11.69 [ 373 / 3191, 56 ins, 65 del, 252 sub ] exp/chain/tdnn_sp/decode_ca16/wer_10_1.0
+%WER 11.69 [ 373 / 3191, 54 ins, 65 del, 254 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_1.0
+
+| model | WER |
+mono | 42.09 |
+| tri1 | 23.03 |
+tri2b | 20.90 \
+| tri3b | 16.61        |
+| chain | 11.69 \ |
+|chaine online | 11.69 |
+
+- TODO Heroico: Tune chain models.
+Here are the WER scores I get on the clsp cluster:
+%WER 44.07 [ 4061 / 9215, 121 ins, 1871 del, 2069 sub ] exp/chain/tdnn1c_sp/decode_nonnative/wer_12_0.0
+%WER 41.95 [ 3866 / 9215, 149 ins, 1600 del, 2117 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative/wer_11_0.0
+%WER 36.95 [ 6176 / 16713, 269 ins, 2525 del, 3382 sub ] exp/chain/tdnn1c_sp/decode_test/wer_9_0.0
+%WER 35.25 [ 5891 / 16713, 251 ins, 2406 del, 3234 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_10_0.0
+%WER 28.03 [ 2102 / 7498, 86 ins, 951 del, 1065 sub ] exp/chain/tdnn1c_sp/decode_native/wer_9_0.0
+%WER 26.81 [ 2010 / 7498, 83 ins, 873 del, 1054 sub ] exp/chain/tdnn1c_sp_online/decode_native/wer_9_0.0
+%WER 23.28 [ 2145 / 9215, 169 ins, 364 del, 1612 sub ] exp/mono/decode_nonnative/wer_9_0.0
+%WER 20.36 [ 3402 / 16713, 266 ins, 590 del, 2546 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 19.63 [ 1809 / 9215, 241 ins, 219 del, 1349 sub ] exp/tri3b/decode_nonnative.si/wer_17_1.0
+%WER 16.70 [ 1252 / 7498, 97 ins, 221 del, 934 sub ] exp/mono/decode_native/wer_9_0.0
+%WER 15.68 [ 1445 / 9215, 162 ins, 202 del, 1081 sub ] exp/tri1/decode_nonnative/wer_17_0.5
+%WER 15.23 [ 2545 / 16713, 333 ins, 319 del, 1893 sub ] exp/tri3b/decode_test.si/wer_16_1.0
+%WER 15.07 [ 1389 / 9215, 182 ins, 186 del, 1021 sub ] exp/tri2b/decode_nonnative/wer_17_0.5
+%WER 12.91 [ 2158 / 16713, 225 ins, 299 del, 1634 sub ] exp/tri1/decode_test/wer_16_0.5
+%WER 12.49 [ 1151 / 9215, 133 ins, 153 del, 865 sub ] exp/tri3b/decode_nonnative/wer_16_1.0
+%WER 11.92 [ 1992 / 16713, 237 ins, 278 del, 1477 sub ] exp/tri2b/decode_test/wer_17_0.5
+%WER 9.47 [ 1583 / 16713, 169 ins, 225 del, 1189 sub ] exp/tri3b/decode_test/wer_16_1.0
+%WER 9.43 [ 707 / 7498, 93 ins, 89 del, 525 sub ] exp/tri3b/decode_native.si/wer_17_0.5
+%WER 9.32 [ 699 / 7498, 65 ins, 93 del, 541 sub ] exp/tri1/decode_native/wer_14_0.5
+%WER 7.94 [ 595 / 7498, 63 ins, 82 del, 450 sub ] exp/tri2b/decode_native/wer_14_0.5
+%WER 5.61 [ 421 / 7498, 40 ins, 59 del, 322 sub ] exp/tri3b/decode_native/wer_16_0.5
+
+|             model | native |  both | nonnative |
+| mono         |  16.70      | 20.36      |     23.28      |
+| tri1         |   9.32     | 12.91      |     15.68      |
+| tri2b        |   7.94     | 11.92 |     15.07 |
+| tri3b        |   5.61     |  9.47 |     12.49 |
+| chain        | 28.03  | 36.95 |     44.07 |
+| chain online | 26.81  | 35.25 |    41.95  |
+
+- TODO African French: Run with another training chunk removed 
+- TODO Yaounde: More work to figure out why results are so bad.
+I am going to test on the CA16 corpus.
+
+
+** Goals for Friday:
+- Objectives
+
 * DAR <2017-10-11 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Objectives
@@ -12691,3 +12751,4 @@ th preprocess.lua -train_src data/src-train.txt -train_tgt data/tgt-train.txt -v
 To Train:
 th train.lua -data data/demo-train.t7 -save_model model
 q
+
