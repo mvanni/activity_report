@@ -54,9 +54,10 @@ Here are the WER scores I get on the clsp cluster:
 - TODO Yaounde: More work to figure out why results are so bad.
 I am going to test on the CA16 corpus.
 
-
 ** Goals for Friday:
-- Objectives
+- TODO Objectives
+- TODO Yaounde: What WER scores do we get for ca16?
+- TODO African French: WER scores when srica is removed.
 
 * DAR <2017-10-11 Wed>
 ** Goals for Wednesday set Tuesday:
