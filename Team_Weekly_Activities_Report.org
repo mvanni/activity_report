@@ -1,3 +1,77 @@
+* My WAR <2017-10-13 Fri>
+**  Goals from Last Week:
+- TODO Objectives
+- TODO Heroico: Chain model results?
+WER Scores:
+|              model | native |  both | nonnative |
+| mono         |  17.07 | 20.40 |     23.13 |
+| tri1         |   9.44 | 12.91 |     15.74 |
+| tri2b        |   8.27 | 12.12 |     15.37 |
+| tri3b        |   5.57 |  9.24 |     12.14 |
+| chain        |  16.16 | 22.44 |     27.34 |
+| chain online |  15.91 | 21.58 |     26.16 |
+
+Why are the chain model WER scores worse than the tri3b scores?
+
+- DONE Heroico: Decide about lm (include simple lm?)
+I am going with the LM trained on the subs corpus and not including the simple LM.
+- TODO Yaounde: Chain model results?
+- TODO African French: Build system on progressivly smaller training sets.
+
+| model |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+mono | 41.99 | 41.43 | 42.09 | 41.37 |
+| tri1 | | 22.78      | 23.03 | 22.63 |
+tri2b | | 20.34 | 20.90 | 20.09 |
+| tri3b | | 16.64             | 16.61 | 15.98 |
+| chain | | 12.75        | 11.69 |12.63 |
+|chaine online | | 12.85      | 11.69 | 12.60 |
+
+- TODO Multilang: Minimal example
+
+** Goals for Friday:
+- TODO Objectives
+- TODO Yaounde: What WER scores do we get for ca16?
+%WER 96.96 [ 3094 / 3191, 47 ins, 1382 del, 1665 sub ] exp/mono/decode_ca16/wer_17_0.0
+%WER 90.99 [ 2050 / 2253, 39 ins, 971 del, 1040 sub ] exp/mono/decode_test/wer_14_1.0
+
+So the problem is definitely not with the ARTI242 test set. 
+- TODO African French: WER scores when srica is removed.
+%WER 41.43 [ 1322 / 3191, 117 ins, 272 del, 933 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 133 ins, 124 del, 478 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
+%WER 22.78 [ 727 / 3191, 109 ins, 144 del, 474 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 20.34 [ 649 / 3191, 114 ins, 128 del, 407 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+%WER 16.64 [ 531 / 3191, 106 ins, 75 del, 350 sub ] exp/tri3b/decode_ca16/wer_17_0.0
+%WER 12.85 [ 410 / 3191, 65 ins, 73 del, 272 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_12_0.5
+%WER 12.75 [ 407 / 3191, 77 ins, 56 del, 274 sub ] exp/chain/tdnn_sp/decode_ca16/wer_12_0.0
+
+| model | WER |
+mono | 41.43 |
+| tri1 | 22.78      |
+tri2b | 20.34 \
+| tri3b | 16.64             |
+| chain | 12.75 \      |
+|chaine online | 12.85      |
+
+** WAR:
+This  week Mr. Morgan was able to run his Heroico recipe end to end witout interruptions. 
+The Heroico recipe is a set of  scripts that use the Kaldi  toolkit to build  an Automatic Speech Recognizer (ASR) system for Spanish  using the government-owned Heroico corpus. 
+The recipe starts off with three resources: a database of recorded speech, a lexicon and a corpus of text. 
+It first runs data preparation on these three components including feature extraction  from the  speech data and a step that builds a statistical n-gram language model with the text corpus. 
+Then it runs a sequence of training steps that result in gaussian mixture (GMM) hidden markov  (HMM) acoustic models. 
+At each of these steps the acoustic models, the lexicon and the language model are compiled into a finite state transducer (FST). 
+The FST serves as a graph that is used by the ASR decoder to evaluate the model set. 
+Although these model sets are useful and important , the ultimate goal of the Heroico recipe is to produce chain models. 
+The context dependent (CD) GMM HMM acoustic models are only used to get precise alignments between the acoustic data and the phonetic labels. 
+The alignments are used next by the recipe to train an i-vector extractor. 
+Finally, the i-vector extractor is used to train the chain models which are a kind of deep neural network. 
+Mr. Morgan's latest chain model results are not performing better than the best GMM HMM models, so he plans on doing more tuning of the i-vector extractor and chain model parameters.
+
+** Goals for Next Week:
+- TODO Objectives (Monday) 
+- TODO Heroico: Tune Chain Models?
+- TODO African French: Get WER scores for models trained on progressivley smaller training sets. (try removing yaounde)
+- TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
+
 * My WAR <2017-10-06 Fri>
 **  Goals set Last Week:
 - TODO Objectives:

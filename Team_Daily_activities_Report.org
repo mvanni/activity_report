@@ -1,6 +1,6 @@
 * DAR <2017-10-12 Thu>
 **  Goals for Thursday:
-- TODO Objectives
+- TODO Objectives.
 - TODO African French: Get tri3b results.
 %WER 22.56 [ 720 / 3191, 124 ins, 116 del, 480 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
 %WER 16.61 [ 530 / 3191, 97 ins, 86 del, 347 sub ] exp/tri3b/decode_ca16/wer_16_0.5
@@ -50,14 +50,37 @@ Here are the WER scores I get on the clsp cluster:
 | chain        | 28.03  | 36.95 |     44.07 |
 | chain online | 26.81  | 35.25 |    41.95  |
 
-- TODO African French: Run with another training chunk removed 
+- TODO African French: Run with another training chunk removed.
+I am now running with Niger removed. 
 - TODO Yaounde: More work to figure out why results are so bad.
 I am going to test on the CA16 corpus.
+
+- Hispanic Heritage Month Activity: I attended the presentation by Raquel Tamez.
 
 ** Goals for Friday:
 - TODO Objectives
 - TODO Yaounde: What WER scores do we get for ca16?
+%WER 96.96 [ 3094 / 3191, 47 ins, 1382 del, 1665 sub ] exp/mono/decode_ca16/wer_17_0.0
+%WER 90.99 [ 2050 / 2253, 39 ins, 971 del, 1040 sub ] exp/mono/decode_test/wer_14_1.0
+
+So the problem is definitely not with the ARTI242 test set. 
+
 - TODO African French: WER scores when srica is removed.
+%WER 41.43 [ 1322 / 3191, 117 ins, 272 del, 933 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 133 ins, 124 del, 478 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
+%WER 22.78 [ 727 / 3191, 109 ins, 144 del, 474 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 20.34 [ 649 / 3191, 114 ins, 128 del, 407 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+%WER 16.64 [ 531 / 3191, 106 ins, 75 del, 350 sub ] exp/tri3b/decode_ca16/wer_17_0.0
+%WER 12.85 [ 410 / 3191, 65 ins, 73 del, 272 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_12_0.5
+%WER 12.75 [ 407 / 3191, 77 ins, 56 del, 274 sub ] exp/chain/tdnn_sp/decode_ca16/wer_12_0.0
+
+| model | WER |
+mono | 41.43 |
+| tri1 | 22.78      |
+tri2b | 20.34 \
+| tri3b | 16.64             |
+| chain | 12.75 \      |
+|chaine online | 12.85      |
 
 * DAR <2017-10-11 Wed>
 ** Goals for Wednesday set Tuesday:
@@ -141,7 +164,7 @@ So far I only have chain model results.
 %WER 11.69 [ 373 / 3191, 56 ins, 65 del, 252 sub ] exp/chain/tdnn_sp/decode_ca16/wer_10_1.0
 %WER 11.69 [ 373 / 3191, 54 ins, 65 del, 254 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_1.0
 
-This is better than the previous results which were 12.63.
+This is better than the previous result which was 12.63.
 Is there something wrong with the ARTI242 data? (Transcripts, recording parameters, ...)
 
 - TODO Multilang: Minimal example
@@ -338,7 +361,7 @@ I'm not sure what is wrong.
 - TODO Heeroico: Build bigger lm and test.
 I asked Justin to download the subs Spanishcorpus.
 I'll try making an lm with subs.
- 
+
 - DONE SOFTunisia: Finish subs lm
 
 - DONE SOFTunisia: Build cd gmm hmm system and chain models
@@ -355,7 +378,6 @@ I asked him to work on the first 4 speakers.
 - TODO SOFTunisia: Get feed back from Zac and send him the hypotheses from the gplm decoding.
 - TODO Yaounde: Why are WERs so bad?
 - TODO Heroico: Build lm with subs? 
-
 * DAR <2017-10-02 Mon>
 ** Goals for Next Week:
 - TODO Objectives:
@@ -557,6 +579,14 @@ find exp -type f -name "best_wer" | xargs cat | grep WER | sort -gr
 %WER 12.63 [ 403 / 3191, 60 ins, 62 del, 281 sub ] exp/chain/tdnn_sp/decode_ca16/wer_9_0.5
 %WER 12.63 [ 403 / 3191, 60 ins, 62 del, 281 sub ] exp/chain/tdnn_sp/decode_ca16_1/wer_9_0.5
 %WER 12.60 [ 402 / 3191, 57 ins, 67 del, 278 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_0.5
+
+| model | WER |
+| mono | 41.37 |
+| tri1 | 22.63 |
+| tri2b | 20.09 |
+| tri3b | 15.98 |
+| chain | 12.63 |
+| chain online | 12.60 |
 
 The results for exp/chain/tdnn_sp/decode_ca16_1 were obtained by running the decoding step separately. 
 I'm not sure why I get a different result.
