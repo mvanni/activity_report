@@ -45,7 +45,7 @@ Preparing the data  and writing the recipes will entail producing a lexicon that
 *** Publish
 In the first quarter of this year I propose to write a report on what I have learned about ASR for Low Resource languages. ublish 
 *** Speech to Speech
-*** Problem
+**** Problem
 The Army wants the services that can be provided by a S2S applications.
 Security concerns sometimes require that the S2S application run disconnected from a network.
 ASR systems in S2S applications must be very responsive.
@@ -55,7 +55,7 @@ How are ASR systems made to run online?
 What kinds of acoustic models are best fit for use in S2S applications on hand-held devices?
 How do ASR systems interact with the MT component in an S2S application?
 
-*** Solution
+**** Solution
 Cooperate with the Kaldi and TransApps teams.
 ** 2. COOPERATION
 
