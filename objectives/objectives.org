@@ -9,7 +9,10 @@ Can small and large resources  available from many languages be leveraged to bui
 **** Proposed Method 
 I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
 I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
+The Kaldi multilang recipe was originally written for a keyword spotting task, so it will have to be modified to work for the S2S task.
 I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
+GlobalPhone consists of  speech recordings from 20 languages, 18 of which come with a lexicon. 
+
 *** Corpus Curation
 **** Problem:
 In my previous job at West Point, I was part of a team that developed speech corpora for the  following languages: 
@@ -39,8 +42,21 @@ It is not hard to imagine these corpora disappearing after our generation retire
 
 Preparing the data  and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
 
-*** Write Papers
-In the first quarter of this year I propose to write a report on what I have learned about ASR for Low Resource languages. 
+*** Publish
+In the first quarter of this year I propose to write a report on what I have learned about ASR for Low Resource languages. ublish 
+*** Speech to Speech
+*** Problem
+The Army wants the services that can be provided by a S2S applications.
+Security concerns sometimes require that the S2S application run disconnected from a network.
+ASR systems in S2S applications must be very responsive.
+Hardware resources on hand-held devices are getting larger and better, however they are still smaller than those available to laboratory researchers.
+I plan to work on several problems related to S2S applications.
+How are ASR systems made to run online?
+What kinds of acoustic models are best fit for use in S2S applications on hand-held devices?
+How do ASR systems interact with the MT component in an S2S application?
+
+*** Solution
+Cooperate with the Kaldi and TransApps teams.
 ** 2. COOPERATION
 
 *** Collaborate with colleagues to write papers that report on advances made in our projects. 
@@ -56,7 +72,10 @@ I want to reach the point where I can contribute new methods and algorithms for 
 I propose to do this through the Kaldi project. 
 In order to become proficient enough with the state-of-the-art in ASR to make a contribution, I need to establish professional communications with scientists who work on the Kaldi project.
 ** 4. MGMT. OF TIME & RESOURCES
-
+Good resource management leads to good time management.
+To this end, Curate and archive our own valuable  speech and text corpora on our branch storage disks. 
+Format the data so that the corpora that can be made publically available are ready to be transfered. 
+Organize the data so that it is easy to access from recipes running on connected branch machines.
 Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
 
 ** 5. CUSTOMER RELATIONS
