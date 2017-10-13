@@ -2,15 +2,16 @@
 ** 1. TECHNICAL COMPETENCE
 *** Acoustic Models for Low Resource Languages
 **** Problem
-ASR components like acousti models are not available for key low resource languages and accented versions of major languages.
+ASR components like acoustic models are not available for key low resource languages and accented versions of major languages. 
+
 **** Research Question
 Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
 **** Proposed Method 
 I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
 I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
 I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
-** Corpus Curation
-*** Problem:
+*** Corpus Curation
+**** Problem:
 In my previous job at West Point, I was part of a team that developed speech corpora for the  following languages: 
 1. Arabic (West Point LDC2002S02)
 2. Arabic (Tunisia)
@@ -23,20 +24,59 @@ In my previous job at West Point, I was part of a team that developed speech cor
 9. Russian (SOF Peter)
 10. Spanish (Heroico LDC2006S37)
 
-Of these 10 corpora, 6 were published in the Linguistic Data Consortium. 
+Of these 10 corpora, 6 were published in the Linguistic Data Consortium (LDC). 
 The remaining 4 corpora for Arabic, French, German  and Russian are available to our team and have yet to be published. 
-Unless the corpora are published, results obtained from training ASR systems with them are not reproduceable.
+Unless the corpora are published, results obtained from training ASR systems with them are not reproduceable by other researchers.
 
-*** Proposed Method: 
+**** Proposed Method: 
 I have 3 related goals this year concerning these 4 remaining corpora.
-First, I want to prepare these corpora for use as source data in the project mentioned above. 
-Second, I want to publish these corpora in the openslrm.org repository.
-Third, In addition to the multilang project, I want to write Kaldi recipes  for each corpus. 
+First, I will prepare these corpora for use as source data in the multilang project mentioned above. 
+Second, I will publish these corpora in the openslrm.org repository and the ARL repository that is being established in the NSRL .
+Third, In addition to  using the corpora in the multilang project, I will write Kaldi recipes  for each corpus. 
 
 Publishing these corpora is an important goal. 
 It is not hard to imagine these corpora disappearing after our generation retires. 
 
 Preparing the data  and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
+
+*** Write Papers
+In the first quarter of this year I propose to write a report on what I have learned about ASR for Low Resource languages. 
+** 2. COOPERATION
+
+*** Collaborate with colleagues to write papers that report on advances made in our projects. 
+
+*** Collaborate with the Basic Research team by contributing speech recognition components to efforts such as the bot language project. 
+
+** 3. COMMUNICATIONS
+
+Write weekly activity reports to team members to keep them up to date on my work. 
+Read and comment on reports made by my team and branch mates.
+
+I want to reach the point where I can contribute new methods and algorithms for ASR. 
+I propose to do this through the Kaldi project. 
+In order to become proficient enough with the state-of-the-art in ASR to make a contribution, I need to establish professional communications with scientists who work on the Kaldi project.
+** 4. MGMT. OF TIME & RESOURCES
+
+Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
+
+** 5. CUSTOMER RELATIONS
+
+Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
+Establish contacts with researchers in the ASR and NLP fields. 
+Establish contacts with s2s device manufacturers.
+
+** 6. TECH TRANSITION
+
+Contribute recipes for building ASR systems with our corpora to the MFLTS. 
+Transition ASR components and our other products to USA Army Africa and MFLTS.  
+
+** 7. DIVERSITY: 
+Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
+
+** 8. SHARP: 
+Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
+Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
+Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
 
 * 2016-2017: 
 ** 1. TECHNICAL COMPETENCE
