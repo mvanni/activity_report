@@ -1,0 +1,619 @@
+* DAR <2017-10-17 Tue>
+**  Goals for Tuesday set Monday:
+- TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
+- TODO African French: Get chain model results and move on to next step by removing more data.
+%WER 43.94 [ 1402 / 3191, 117 ins, 288 del, 997 sub ] exp/mono/decode_ca16/wer_12_0.0
+%WER 23.72 [ 757 / 3191, 154 ins, 100 del, 503 sub ] exp/tri1/decode_ca16/wer_15_0.0
+%WER 22.56 [ 720 / 3191, 104 ins, 165 del, 451 sub ] exp/tri2b/decode_ca16/wer_17_1.0
+%WER 19.08 [ 609 / 3191, 121 ins, 80 del, 408 sub ] exp/tri3b/decode_ca16/wer_17_0.5
+%WER 14.10 [ 450 / 3191, 78 ins, 66 del, 306 sub ] exp/chain/tdnn_sp/decode_ca16/wer_11_0.0
+%WER 13.88 [ 443 / 3191, 69 ins, 73 del, 301 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_11_0.5
+
+| model | WER gabonread gp 25.6 hours              | WER gabonread gp gabonconv 26.3 hours          |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+mono | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
+| tri1 | 25.51 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
+| tri2b | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
+| tri3b | 19.84 | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
+| chain | | 14.10 | 12.28 | 12.75        | 11.69 |12.63 |
+|chaine online | | 13.88 | 12.28 | 12.85      | 11.69 | 12.60 |
+
+%WER 45.28 [ 1445 / 3191, 107 ins, 337 del, 1001 sub ] exp/mono/decode_ca16/wer_14_0.0
+%WER 27.08 [ 864 / 3191, 144 ins, 162 del, 558 sub ] exp/tri3b/decode_ca16.si/wer_16_1.0
+%WER 25.51 [ 814 / 3191, 157 ins, 129 del, 528 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 21.87 [ 698 / 3191, 142 ins, 93 del, 463 sub ] exp/tri2b/decode_ca16/wer_15_0.0
+%WER 19.84 [ 633 / 3191, 133 ins, 91 del, 409 sub ] exp/tri3b/decode_ca16/wer_16_0.5
+
+The chain model results are not ready yet.
+- TODO Heroico: Maybe  start from beginning since scripts are not moving forward and they die on pca transform estimation.
+%WER 23.33 [ 2150 / 9215, 162 ins, 373 del, 1615 sub ] exp/mono/decode_nonnative/wer_9_0.0
+%WER 20.46 [ 3420 / 16713, 288 ins, 533 del, 2599 sub ] exp/mono/decode_test/wer_8_0.0
+%WER 18.42 [ 1697 / 9215, 233 ins, 193 del, 1271 sub ] exp/tri3b/decode_nonnative.si/wer_17_1.0
+%WER 16.67 [ 1250 / 7498, 123 ins, 181 del, 946 sub ] exp/mono/decode_native/wer_7_0.0
+%WER 15.72 [ 1449 / 9215, 147 ins, 224 del, 1078 sub ] exp/tri1/decode_nonnative/wer_17_0.5
+%WER 14.60 [ 1345 / 9215, 222 ins, 135 del, 988 sub ] exp/tri2b/decode_nonnative/wer_17_0.0
+%WER 14.36 [ 2400 / 16713, 318 ins, 306 del, 1776 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 13.01 [ 2175 / 16713, 230 ins, 320 del, 1625 sub ] exp/tri1/decode_test/wer_16_0.5
+%WER 11.70 [ 1078 / 9215, 128 ins, 137 del, 813 sub ] exp/tri3b/decode_nonnative/wer_17_1.0
+%WER 11.63 [ 1944 / 16713, 292 ins, 211 del, 1441 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 9.59 [ 719 / 7498, 78 ins, 100 del, 541 sub ] exp/tri1/decode_native/wer_15_0.5
+%WER 9.20 [ 690 / 7498, 123 ins, 76 del, 491 sub ] exp/tri3b/decode_native.si/wer_14_0.0
+%WER 9.02 [ 1507 / 16713, 192 ins, 166 del, 1149 sub ] exp/tri3b/decode_test/wer_16_0.5
+%WER 7.79 [ 584 / 7498, 80 ins, 63 del, 441 sub ] exp/tri2b/decode_native/wer_14_0.0
+%WER 5.49 [ 412 / 7498, 34 ins, 52 del, 326 sub ] exp/tri3b/decode_native/wer_14_0.5
+
+The run failed again on the ubm training step.
+I enables this line in my path.sh file:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+
+Maybe this is what was missing all this time?
+No. It failed again :(
+
+** Goals for Wednesday:
+- TODO Multilang: Make my own data prep scripts for Arabic.
+- TODO African French: Get current results.
+- TODO African French: Get results when only Training on gp (I probably have these results already, but get them anyway just for completeness).
+
+* DAR <2017-10-16 Mon>
+**  Goals set Last Week:
+- DONE Objectives (Monday) 
+(1) TECHNICAL Objectives (Weight 30)
+A. Acoustic Models for Low Resource Languages
+Adapt the Kaldi multilang recipe to build acoustic models for  a target low resource language  given resources from many other source languages. 
+
+Specific Rating tasks:
+Modify the Kaldi multilang recipe    from its original keyword spotting task to the Speech to Speech (S2S) task.
+Build 18 ASR systems from source language resources in the GlobalPhone corpus and government owned corpora (see corpus curation task below).
+Setup experiment to evaluate effectiveness of the multilang approach. 
+
+B. Corpus Curation
+Curate four government owned speech corpora.
+
+Specific Rating Tasks:
+Prepare Arabic, French, German and Russian speech data  for   use in the multilang project listed above.
+Write Kaldi recipes for each language corpus.
+Submit recipes for publication in Kaldi repository.
+Publish data, lexicons and recipes in ARL NSRL repository.
+
+C. Speech to Speech Technology
+Investigate S2S hardware restrictions and software solutions with the goal of contributing optimized components. 
+
+Specific Rating Tasks:
+Study methods for performing online or real time ASR processing and produce ASR components that are optimized to work with these methods. 
+Study methods for integrating ASR and MT components in S2S applications and tailor our products to conform to these methods.
+Study methods for making S2S ASR highly responsive and accurate and use results of investigations to guide our choices of models and algorithms. 
+
+
+
+(2) COOPERATION (Weight 10)
+
+A. Cooperate with colleagues.
+
+Specific Rating Tasks:
+Collaborate with Steve LaRocca in first quarter  to write papers that report on advances made in our projects. 
+Collaborate with the Basic Research team and CERDEC by contributing speech recognition components to Human Robot communication efforts. 
+
+(3) COMMUNICATIONS  (Weight 30)
+
+A. Publish papers and reports
+
+Specific Rating Tasks:
+Write a TR with Steve LaRocca in the first quarter documenting projects. 
+Write journal paper with Steve LaRocca that reports on multilang project results.
+
+B. Activity Reports
+Write weekly reports to help guide research and to recored progress .
+
+C. Establish Professional Communication Channels with Scientists contributing to Kaldi project.
+
+Specific Rating Tasks:
+Contribute algorithm to Kaldi
+
+(4) MGMT. OF TIME & RESOURCES (Weight 15)
+
+A. Curate and archive our own valuable  speech and text corpora on our branch storage disks. 
+
+
+Specific Rating Tasks:
+Format the data so that the corpora that can be made publically available are ready to be transfered. 
+Organize the data so that it is easy to access from recipes running on connected branch machines.
+Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
+
+(5) CUSTOMER RELATIONS (Weight 15)
+
+Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
+Establish contacts with researchers in the ASR and NLP fields. 
+Establish contacts with s2s application developers.
+
+(6) TECH TRANSITION (Weight 10)
+
+Contribute recipes for building ASR systems with our corpora to the MFLTS. 
+Transition ASR components and our other products to USA Army Africa and MFLTS.  
+
+(7) DIVERSITY: 
+Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
+
+(8) SHARP: 
+Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
+Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
+Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
+
+- TODO Heroico: Tune Chain Models?
+I found more references to the mini_librispeech recipe in the scripts I am using to do the i-vector extraction and chain model training.
+I removed the references to the data splitting in the scripts when they are run on the clsp cluster.
+
+- TODO African French: Get WER scores for models trained on progressivley smaller training sets. (try removing yaounde)
+%WER 41.99 [ 1340 / 3191, 114 ins, 314 del, 912 sub ] exp/mono/decode_ca16/wer_11_0.0
+%WER 24.01 [ 766 / 3191, 154 ins, 105 del, 507 sub ] exp/tri3b/decode_ca16.si/wer_13_0.0
+%WER 23.22 [ 741 / 3191, 85 ins, 185 del, 471 sub ] exp/tri1/decode_ca16/wer_14_1.0
+%WER 20.78 [ 663 / 3191, 112 ins, 126 del, 425 sub ] exp/tri2b/decode_ca16/wer_15_0.0
+%WER 17.05 [ 544 / 3191, 100 ins, 90 del, 354 sub ] exp/tri3b/decode_ca16/wer_16_0.5
+%WER 12.28 [ 392 / 3191, 65 ins, 66 del, 261 sub ] exp/chain/tdnn_sp/decode_ca16/wer_13_0.0
+%WER 12.28 [ 392 / 3191, 54 ins, 74 del, 264 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_12_0.5
+
+| model |   WER gabonread gp gabonconv 26.3 hours        |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+mono | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
+| tri1 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
+| tri2b | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
+| tri3b | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
+| chain | | 12.28 | 12.75        | 11.69 |12.63 |
+|chaine online | | 12.28 | 12.85      | 11.69 | 12.60 |
+
+
+%WER 43.94 [ 1402 / 3191, 117 ins, 288 del, 997 sub ] exp/mono/decode_ca16/wer_12_0.0
+%WER 23.72 [ 757 / 3191, 154 ins, 100 del, 503 sub ] exp/tri1/decode_ca16/wer_15_0.0
+%WER 22.56 [ 720 / 3191, 104 ins, 165 del, 451 sub ] exp/tri2b/decode_ca16/wer_17_1.0
+%WER 19.08 [ 609 / 3191, 121 ins, 80 del, 408 sub ] exp/tri3b/decode_ca16/wer_17_0.5
+
+- TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
+I worked a little on this today.
+None of the languages work out of the box.
+I think I'm going to write my own scripts.
+I want to use utf8 and I don't want to mess with converting waveform data.
+I will put the waveform data that is ready for processing under /mnt/disk01/globalphone.
+
+** Goals for Tuesday:
+- TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
+- TODO African French: Get chain model results and move on to next step by removing more data.
+- TODO Heroico: Maybe  start from beginning since scripts are not moving forward and they die on pca transform estimation.
+
+* DAR <2017-10-12 Thu>
+**  Goals for Thursday:
+- TODO Objectives.
+- TODO African French: Get tri3b results.
+%WER 22.56 [ 720 / 3191, 124 ins, 116 del, 480 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
+%WER 16.61 [ 530 / 3191, 97 ins, 86 del, 347 sub ] exp/tri3b/decode_ca16/wer_16_0.5
+%WER 42.09 [ 1343 / 3191, 132 ins, 270 del, 941 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 141 ins, 120 del, 474 sub ] exp/tri1/decode_ca16/wer_13_0.0
+%WER 20.90 [ 667 / 3191, 100 ins, 133 del, 434 sub ] exp/tri2b/decode_ca16/wer_15_0.5
+%WER 11.69 [ 373 / 3191, 56 ins, 65 del, 252 sub ] exp/chain/tdnn_sp/decode_ca16/wer_10_1.0
+%WER 11.69 [ 373 / 3191, 54 ins, 65 del, 254 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_1.0
+
+| model | WER |
+mono | 42.09 |
+| tri1 | 23.03 |
+tri2b | 20.90 \
+| tri3b | 16.61        |
+| chain | 11.69 \ |
+|chaine online | 11.69 |
+
+- TODO Heroico: Tune chain models.
+Here are the WER scores I get on the clsp cluster:
+%WER 44.07 [ 4061 / 9215, 121 ins, 1871 del, 2069 sub ] exp/chain/tdnn1c_sp/decode_nonnative/wer_12_0.0
+%WER 41.95 [ 3866 / 9215, 149 ins, 1600 del, 2117 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative/wer_11_0.0
+%WER 36.95 [ 6176 / 16713, 269 ins, 2525 del, 3382 sub ] exp/chain/tdnn1c_sp/decode_test/wer_9_0.0
+%WER 35.25 [ 5891 / 16713, 251 ins, 2406 del, 3234 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_10_0.0
+%WER 28.03 [ 2102 / 7498, 86 ins, 951 del, 1065 sub ] exp/chain/tdnn1c_sp/decode_native/wer_9_0.0
+%WER 26.81 [ 2010 / 7498, 83 ins, 873 del, 1054 sub ] exp/chain/tdnn1c_sp_online/decode_native/wer_9_0.0
+%WER 23.28 [ 2145 / 9215, 169 ins, 364 del, 1612 sub ] exp/mono/decode_nonnative/wer_9_0.0
+%WER 20.36 [ 3402 / 16713, 266 ins, 590 del, 2546 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 19.63 [ 1809 / 9215, 241 ins, 219 del, 1349 sub ] exp/tri3b/decode_nonnative.si/wer_17_1.0
+%WER 16.70 [ 1252 / 7498, 97 ins, 221 del, 934 sub ] exp/mono/decode_native/wer_9_0.0
+%WER 15.68 [ 1445 / 9215, 162 ins, 202 del, 1081 sub ] exp/tri1/decode_nonnative/wer_17_0.5
+%WER 15.23 [ 2545 / 16713, 333 ins, 319 del, 1893 sub ] exp/tri3b/decode_test.si/wer_16_1.0
+%WER 15.07 [ 1389 / 9215, 182 ins, 186 del, 1021 sub ] exp/tri2b/decode_nonnative/wer_17_0.5
+%WER 12.91 [ 2158 / 16713, 225 ins, 299 del, 1634 sub ] exp/tri1/decode_test/wer_16_0.5
+%WER 12.49 [ 1151 / 9215, 133 ins, 153 del, 865 sub ] exp/tri3b/decode_nonnative/wer_16_1.0
+%WER 11.92 [ 1992 / 16713, 237 ins, 278 del, 1477 sub ] exp/tri2b/decode_test/wer_17_0.5
+%WER 9.47 [ 1583 / 16713, 169 ins, 225 del, 1189 sub ] exp/tri3b/decode_test/wer_16_1.0
+%WER 9.43 [ 707 / 7498, 93 ins, 89 del, 525 sub ] exp/tri3b/decode_native.si/wer_17_0.5
+%WER 9.32 [ 699 / 7498, 65 ins, 93 del, 541 sub ] exp/tri1/decode_native/wer_14_0.5
+%WER 7.94 [ 595 / 7498, 63 ins, 82 del, 450 sub ] exp/tri2b/decode_native/wer_14_0.5
+%WER 5.61 [ 421 / 7498, 40 ins, 59 del, 322 sub ] exp/tri3b/decode_native/wer_16_0.5
+
+|             model | native |  both | nonnative |
+| mono         |  16.70      | 20.36      |     23.28      |
+| tri1         |   9.32     | 12.91      |     15.68      |
+| tri2b        |   7.94     | 11.92 |     15.07 |
+| tri3b        |   5.61     |  9.47 |     12.49 |
+| chain        | 28.03  | 36.95 |     44.07 |
+| chain online | 26.81  | 35.25 |    41.95  |
+
+- TODO African French: Run with another training chunk removed.
+I am now running with Niger removed. 
+- TODO Yaounde: More work to figure out why results are so bad.
+I am going to test on the CA16 corpus.
+
+- Hispanic Heritage Month Activity: I attended the presentation by Raquel Tamez.
+
+** Goals for Friday:
+- TODO Objectives
+- TODO Yaounde: What WER scores do we get for ca16?
+%WER 96.96 [ 3094 / 3191, 47 ins, 1382 del, 1665 sub ] exp/mono/decode_ca16/wer_17_0.0
+%WER 90.99 [ 2050 / 2253, 39 ins, 971 del, 1040 sub ] exp/mono/decode_test/wer_14_1.0
+
+So the problem is definitely not with the ARTI242 test set. 
+
+- TODO African French: WER scores when srica is removed.
+%WER 41.43 [ 1322 / 3191, 117 ins, 272 del, 933 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 133 ins, 124 del, 478 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
+%WER 22.78 [ 727 / 3191, 109 ins, 144 del, 474 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 20.34 [ 649 / 3191, 114 ins, 128 del, 407 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+%WER 16.64 [ 531 / 3191, 106 ins, 75 del, 350 sub ] exp/tri3b/decode_ca16/wer_17_0.0
+%WER 12.85 [ 410 / 3191, 65 ins, 73 del, 272 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_12_0.5
+%WER 12.75 [ 407 / 3191, 77 ins, 56 del, 274 sub ] exp/chain/tdnn_sp/decode_ca16/wer_12_0.0
+
+| model | WER |
+mono | 41.43 |
+| tri1 | 22.78      |
+tri2b | 20.34 \
+| tri3b | 16.64             |
+| chain | 12.75 \      |
+|chaine online | 12.85      |
+
+* DAR <2017-10-11 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Objectives
+I got the form from Shanel.
+- TODO Yaounde: What happens with subs trained lm?
+- TODO African French: Complete set of results.
+Here is what I have now:
+%WER 42.09 [ 1343 / 3191, 132 ins, 270 del, 941 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 141 ins, 120 del, 474 sub ] exp/tri1/decode_ca16/wer_13_0.0
+%WER 20.90 [ 667 / 3191, 100 ins, 133 del, 434 sub ] exp/tri2b/decode_ca16/wer_15_0.5
+%WER 11.69 [ 373 / 3191, 56 ins, 65 del, 252 sub ] exp/chain/tdnn_sp/decode_ca16/wer_10_1.0
+%WER 11.69 [ 373 / 3191, 54 ins, 65 del, 254 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_1.0
+
+
+| model | WER |
+mono | 42.09 |
+| tri1 | 23.03 |
+tri2b | 20.90 \
+| tri3b |         |
+| chain | 11.69 \ |
+|chaine online | 11.69 |
+
+- TODO Heroico: Results including chain model results and contact Yenda.
+I contacted Yenda.
+He was not much help.
+I fixed a reference to the clsp cluster in the ivector prep script.
+It was hard coded to use the mini_librispeech corpus.
+
+%WER 9.47 [ 710 / 7498, 96 ins, 94 del, 520 sub ] exp/tri3b/decode_native.si/wer_17_0.5
+%WER 9.44 [ 708 / 7498, 79 ins, 103 del, 526 sub ] exp/tri1/decode_native/wer_14_0.5
+%WER 9.24 [ 1544 / 16713, 164 ins, 214 del, 1166 sub ] exp/tri3b/decode_test/wer_17_1.0
+%WER 8.27 [ 620 / 7498, 76 ins, 90 del, 454 sub ] exp/tri2b/decode_native/wer_15_0.5
+%WER 5.57 [ 418 / 7498, 43 ins, 53 del, 322 sub ] exp/tri3b/decode_native/wer_16_0.5
+%WER 27.34 [ 2519 / 9215, 191 ins, 558 del, 1770 sub ] exp/chain/tdnn1c_sp/decode_nonnative/wer_11_0.0
+%WER 26.16 [ 2411 / 9215, 184 ins, 537 del, 1690 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative/wer_11_0.0
+%WER 23.13 [ 2131 / 9215, 173 ins, 376 del, 1582 sub ] exp/mono/decode_nonnative/wer_9_0.0
+%WER 22.44 [ 3750 / 16713, 278 ins, 848 del, 2624 sub ] exp/chain/tdnn1c_sp/decode_test/wer_11_0.0
+%WER 21.58 [ 3607 / 16713, 273 ins, 819 del, 2515 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_11_0.0
+%WER 20.40 [ 3410 / 16713, 273 ins, 610 del, 2527 sub ] exp/mono/decode_test/wer_9_0.0
+%WER 19.32 [ 1780 / 9215, 246 ins, 206 del, 1328 sub ] exp/tri3b/decode_nonnative.si/wer_16_1.0
+%WER 17.07 [ 1280 / 7498, 98 ins, 231 del, 951 sub ] exp/mono/decode_native/wer_9_0.0
+%WER 16.16 [ 1212 / 7498, 77 ins, 306 del, 829 sub ] exp/chain/tdnn1c_sp/decode_native/wer_12_0.0
+%WER 15.91 [ 1193 / 7498, 73 ins, 303 del, 817 sub ] exp/chain/tdnn1c_sp_online/decode_native/wer_12_0.0
+%WER 15.74 [ 1450 / 9215, 159 ins, 211 del, 1080 sub ] exp/tri1/decode_nonnative/wer_16_0.5
+%WER 15.37 [ 1416 / 9215, 218 ins, 155 del, 1043 sub ] exp/tri2b/decode_nonnative/wer_17_0.0
+%WER 14.98 [ 2504 / 16713, 382 ins, 278 del, 1844 sub ] exp/tri3b/decode_test.si/wer_17_0.5
+%WER 12.91 [ 2158 / 16713, 240 ins, 303 del, 1615 sub ] exp/tri1/decode_test/wer_15_0.5
+%WER 12.14 [ 1119 / 9215, 127 ins, 153 del, 839 sub ] exp/tri3b/decode_nonnative/wer_17_1.0
+%WER 12.12 [ 2026 / 16713, 303 ins, 232 del, 1491 sub ] exp/tri2b/decode_test/wer_17_0.0
+
+|             model | native |  both | nonnative |
+| mono         |  17.07 | 20.40 |     23.13 |
+| tri1         |   9.44 | 12.91 |     15.74 |
+| tri2b        |   8.27 | 12.12 |     15.37 |
+| tri3b        |   5.57 |  9.24 |     12.14 |
+| chain        |  16.16 | 22.44 |     27.34 |
+| chain online |  15.91 | 21.58 |     26.16 |
+
+Why are the chain models not better than the cd gmm hmm ?
+
+** Goals for Thursday:
+- TODO Objectives
+- TODO African French: Get tri3b results.
+- TODO Heroico: Tune chain models. 
+- TODO African French: Run with another training chunk removed 
+- TODO Yaounde: More work to figure out why results are so bad.
+
+* DAR <2017-10-10 Tue>
+**  Goals for Next Week:
+- TODO Objectives
+- TODO Heroico: Chain model results?
+- DONE Heroico: Decide about lm (include simple lm?)
+I am going with only subs.
+- TODO Yaounde: Chain model results?
+
+- TODO African French: Build system on progressivly smaller training sets.
+
+I removed the ARTI data set of 242 utterances.
+So far I only have chain model results.
+%WER 11.69 [ 373 / 3191, 56 ins, 65 del, 252 sub ] exp/chain/tdnn_sp/decode_ca16/wer_10_1.0
+%WER 11.69 [ 373 / 3191, 54 ins, 65 del, 254 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_10_1.0
+
+This is better than the previous result which was 12.63.
+Is there something wrong with the ARTI242 data? (Transcripts, recording parameters, ...)
+
+- TODO Multilang: Minimal example
+** Goals for Wednesday:
+- TODO Objectives
+- TODO Yaounde: What happens with subs trained lm?
+- TODO African French: Complete set of results.
+- TODO Heroico: Results including chain model results and contact Yenda.
+
+* DAR <2017-10-05 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Objectives:
+- DONE SOFTunisia: Finish training with stage 16 speakers and get rough draft to ZAC.
+- TODO African French: Build system without ARTI corpus.
+- DONE Heroico: Incorporate subs trained lm into system.
+I am going to remove the gp lm from the recipe.
+I want to use UTF8 as the text encoding.
+I am pretty sure the gp lm is not in utf8.
+Here are the WER scores for today.
+I don't have the chain model results for subs yet.
+%WER 67.34 [ 6205 / 9215, 398 ins, 1455 del, 4352 sub ] exp/chain/tdnn1c_sp/decode_nonnative_gplm/wer_8_0.5
+%WER 66.61 [ 6138 / 9215, 388 ins, 1417 del, 4333 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative_gplm/wer_8_0.5
+%WER 65.28 [ 6016 / 9215, 453 ins, 1214 del, 4349 sub ] exp/mono/decode_nonnative_gplm/wer_8_0.0
+%WER 62.40 [ 10429 / 16713, 733 ins, 2089 del, 7607 sub ] exp/mono/decode_test_gplm/wer_7_0.5
+%WER 6.22 [ 573 / 9215, 28 ins, 182 del, 363 sub ] exp/chain/tdnn1c_sp/decode_nonnative_simple/wer_15_0.0
+%WER 60.64 [ 10135 / 16713, 686 ins, 2199 del, 7250 sub ] exp/chain/tdnn1c_sp/decode_test_gplm/wer_8_0.5
+%WER 59.98 [ 10024 / 16713, 665 ins, 2155 del, 7204 sub ] exp/chain/tdnn1c_sp_online/decode_test_gplm/wer_8_0.5
+%WER 58.98 [ 4422 / 7498, 339 ins, 820 del, 3263 sub ] exp/mono/decode_native_gplm/wer_7_0.5
+%WER 57.58 [ 5306 / 9215, 571 ins, 787 del, 3948 sub ] exp/tri3b/decode_nonnative_gplm.si/wer_14_1.0
+%WER 57.04 [ 5256 / 9215, 526 ins, 861 del, 3869 sub ] exp/tri1/decode_nonnative_gplm/wer_12_1.0
+%WER 55.14 [ 5081 / 9215, 518 ins, 838 del, 3725 sub ] exp/tri2b/decode_nonnative_gplm/wer_14_1.0
+%WER 53.06 [ 8868 / 16713, 950 ins, 1356 del, 6562 sub ] exp/tri1/decode_test_gplm/wer_12_1.0
+%WER 52.74 [ 8815 / 16713, 1047 ins, 1206 del, 6562 sub ] exp/tri3b/decode_test_gplm.si/wer_14_1.0
+%WER 52.41 [ 3930 / 7498, 288 ins, 734 del, 2908 sub ] exp/chain/tdnn1c_sp/decode_native_gplm/wer_7_1.0
+%WER 51.73 [ 3879 / 7498, 227 ins, 829 del, 2823 sub ] exp/chain/tdnn1c_sp_online/decode_native_gplm/wer_8_1.0
+%WER 50.87 [ 4688 / 9215, 588 ins, 673 del, 3427 sub ] exp/tri3b/decode_nonnative_gplm/wer_16_1.0
+%WER 50.66 [ 8466 / 16713, 1049 ins, 1184 del, 6233 sub ] exp/tri2b/decode_test_gplm/wer_13_1.0
+%WER 48.07 [ 3604 / 7498, 422 ins, 497 del, 2685 sub ] exp/tri1/decode_native_gplm/wer_12_1.0
+%WER 47.30 [ 7906 / 16713, 1125 ins, 942 del, 5839 sub ] exp/tri3b/decode_test_gplm/wer_15_1.0
+%WER 4.72 [ 435 / 9215, 18 ins, 152 del, 265 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative_simple/wer_17_0.0
+%WER 46.87 [ 3514 / 7498, 512 ins, 379 del, 2623 sub ] exp/tri3b/decode_native_gplm.si/wer_13_1.0
+%WER 45.25 [ 3393 / 7498, 467 ins, 413 del, 2513 sub ] exp/tri2b/decode_native_gplm/wer_13_1.0
+%WER 42.92 [ 3218 / 7498, 566 ins, 287 del, 2365 sub ] exp/tri3b/decode_native_gplm/wer_13_1.0
+%WER 4.19 [ 700 / 16713, 43 ins, 223 del, 434 sub ] exp/chain/tdnn1c_sp/decode_test_simple/wer_15_0.0
+%WER 3.80 [ 350 / 9215, 93 ins, 22 del, 235 sub ] exp/tri3b/decode_nonnative_simple.si/wer_17_0.0
+%WER 3.31 [ 553 / 16713, 33 ins, 187 del, 333 sub ] exp/chain/tdnn1c_sp_online/decode_test_simple/wer_17_0.0
+%WER 31.57 [ 2909 / 9215, 193 ins, 610 del, 2106 sub ] exp/mono/decode_nonnative_subs/wer_9_0.0
+%WER 28.51 [ 4765 / 16713, 401 ins, 880 del, 3484 sub ] exp/mono/decode_test_subs/wer_8_0.0
+%WER 2.71 [ 453 / 16713, 121 ins, 37 del, 295 sub ] exp/tri3b/decode_test_simple.si/wer_17_0.0
+%WER 25.64 [ 2363 / 9215, 351 ins, 290 del, 1722 sub ] exp/tri3b/decode_nonnative_subs.si/wer_16_0.5
+%WER 24.69 [ 1851 / 7498, 178 ins, 310 del, 1363 sub ] exp/mono/decode_native_subs/wer_8_0.0
+%WER 22.91 [ 2111 / 9215, 245 ins, 311 del, 1555 sub ] exp/tri1/decode_nonnative_subs/wer_17_0.0
+%WER 21.33 [ 1966 / 9215, 164 ins, 361 del, 1441 sub ] exp/tri2b/decode_nonnative_subs/wer_17_1.0
+%WER 21.00 [ 3509 / 16713, 427 ins, 510 del, 2572 sub ] exp/tri3b/decode_test_subs.si/wer_17_1.0
+%WER 19.26 [ 3219 / 16713, 314 ins, 522 del, 2383 sub ] exp/tri1/decode_test_subs/wer_16_0.5
+%WER 18.13 [ 1671 / 9215, 208 ins, 247 del, 1216 sub ] exp/tri3b/decode_nonnative_subs/wer_17_1.0
+%WER 17.88 [ 2989 / 16713, 275 ins, 511 del, 2203 sub ] exp/tri2b/decode_test_subs/wer_16_1.0
+%WER 1.71 [ 158 / 9215, 44 ins, 15 del, 99 sub ] exp/tri2b/decode_nonnative_simple/wer_17_0.5
+%WER 1.65 [ 124 / 7498, 12 ins, 42 del, 70 sub ] exp/chain/tdnn1c_sp/decode_native_simple/wer_17_0.0
+%WER 1.64 [ 123 / 7498, 15 ins, 38 del, 70 sub ] exp/chain/tdnn1c_sp_online/decode_native_simple/wer_17_0.0
+%WER 1.54 [ 142 / 9215, 36 ins, 14 del, 92 sub ] exp/tri3b/decode_nonnative_simple/wer_17_0.0
+%WER 15.30 [ 1147 / 7498, 149 ins, 154 del, 844 sub ] exp/tri3b/decode_native_subs.si/wer_17_1.0
+%WER 14.62 [ 2444 / 16713, 282 ins, 359 del, 1803 sub ] exp/tri3b/decode_test_subs/wer_17_1.0
+%WER 14.55 [ 1091 / 7498, 122 ins, 153 del, 816 sub ] exp/tri1/decode_native_subs/wer_13_1.0
+%WER 1.40 [ 105 / 7498, 30 ins, 16 del, 59 sub ] exp/tri3b/decode_native_simple.si/wer_17_1.0
+%WER 13.28 [ 996 / 7498, 119 ins, 123 del, 754 sub ] exp/tri2b/decode_native_subs/wer_15_0.5
+%WER 1.21 [ 203 / 16713, 59 ins, 25 del, 119 sub ] exp/tri2b/decode_test_simple/wer_17_0.0
+%WER 1.14 [ 191 / 16713, 50 ins, 25 del, 116 sub ] exp/tri3b/decode_test_simple/wer_17_0.0
+%WER 1.04 [ 96 / 9215, 24 ins, 12 del, 60 sub ] exp/tri1/decode_nonnative_simple/wer_17_0.0
+%WER 10.26 [ 769 / 7498, 74 ins, 113 del, 582 sub ] exp/tri3b/decode_native_subs/wer_16_1.0
+%WER 0.83 [ 138 / 16713, 33 ins, 23 del, 82 sub ] exp/tri1/decode_test_simple/wer_17_0.0
+%WER 0.75 [ 69 / 9215, 11 ins, 14 del, 44 sub ] exp/mono/decode_nonnative_simple/wer_17_0.0
+%WER 0.64 [ 48 / 7498, 14 ins, 12 del, 22 sub ] exp/tri3b/decode_native_simple/wer_15_1.0
+%WER 0.57 [ 96 / 16713, 15 ins, 27 del, 54 sub ] exp/mono/decode_test_simple/wer_17_0.0
+%WER 0.56 [ 42 / 7498, 10 ins, 12 del, 20 sub ] exp/tri2b/decode_native_simple/wer_17_0.5
+%WER 0.55 [ 41 / 7498, 9 ins, 11 del, 21 sub ] exp/tri1/decode_native_simple/wer_16_0.0
+%WER 0.37 [ 28 / 7498, 4 ins, 13 del, 11 sub ] exp/mono/decode_native_simple/wer_17_0.0
+john@A-TEAM19054:~/work/kaldi/egs/heroico/s5$ 
+- TODO Heroico: Contact Yenda about status of recipe.
+- TODO Yaounde: What is wrong?
+I decoded the training set:
+%WER 21.59 [ 15107 / 69957, 1707 ins, 5179 del, 8221 sub ] exp/mono/decode_train/wer_12_1.0
+This is still pretty bad.
+
+- TODO Multilang: Minimal example.
+
+** Goals for Friday:
+- Objectives
+- TODO Heroico: Run again with subs lm and without gplm.
+- TODO Yaounde: Test on CA16.
+- TODO African French: Get an lm working.
+- TODO African French: Test on ca16.
+* DAR <2017-10-04 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Objectives:
+
+1. TECHNICAL COMPETENCE
+a. Acoustic Models for Low Resource Languages
+I. Problem
+ASR components like acousti models are not available for key low resource languages and accented versions of major languages.
+II. Research Question
+Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
+III. Proposed Method 
+I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
+I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
+I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
+b. Corpus Curation
+I. Problem:
+In my previous job at West Point, I was part of a team that developed speech corpora for the  following languages: 
+A. Arabic (West Point LDC2002S02)
+B. Arabic (Tunisia)
+C. French (collected in Yaounde Cameroon)
+D. Croatian (LDC2005S28)
+E. German
+F. Korean (LDC2006S36)
+G. Portuguese (Brazilian LDC2008s04)
+H. Russian (West Point LDC2003S05)
+I. Russian (SOF Peter)
+J. Spanish (Heroico LDC2006S37)
+
+Of these 10 corpora, 6 were published in the Linguistic Data Consortium. 
+The remaining 4 corpora for Arabic, French, German  and Russian are available to our team and have yet to be published. 
+Unless the corpora are published, results obtained from training ASR systems with them are not reproduceable.
+
+ii. Proposed Method: 
+I have 3 related goals this year concerning these 4 remaining corpora.
+First, I want to prepare these corpora for use as source data in the multilang project mentioned above. 
+Second, I want to publish these corpora in the openslrm.org repository.
+Third, In addition to the multilang project, I want to write Kaldi recipes  for each corpus. 
+
+Publishing these corpora is an important goal. 
+It is not hard to imagine these corpora disappearing after our generation retires. 
+
+Preparing the data  and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
+
+** Goals for Thursday:
+- TODO Objectives:
+- TODO SOFTunisia: Finish training with stage 16 speakers and get rough draft to ZAC.
+- TODO African French: Build system without ARTI corpus.
+- TODO Heroico: Incorporate subs trained lm into system.
+- TODO Heroico: Contact Yenda about status of recipe.
+- TODO Yaounde: What is wrong?
+- TODO Multilang: Minimal example.
+
+* DAR <2017-10-03 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Objectives.
+- TODO Heroico: Get results for gplm 
+The chain model WER results for the gplm decoding are not good.
+I'm not sure what is wrong.
+%WER 67.89 [ 6256 / 9215, 388 ins, 1391 del, 4477 sub ] exp/chain/tdnn1c_sp/decode_nonnative_gplm/wer_9_0.0
+%WER 67.28 [ 6200 / 9215, 408 ins, 1353 del, 4439 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative_gplm/wer_9_0.0
+%WER 64.77 [ 5969 / 9215, 415 ins, 1251 del, 4303 sub ] exp/mono/decode_nonnative_gplm/wer_7_0.5
+%WER 63.55 [ 10621 / 16713, 543 ins, 2647 del, 7431 sub ] exp/chain/tdnn1c_sp/decode_test_gplm/wer_9_0.5
+%WER 62.47 [ 10441 / 16713, 688 ins, 2192 del, 7561 sub ] exp/chain/tdnn1c_sp_online/decode_test_gplm/wer_8_0.5
+%WER 62.27 [ 10408 / 16713, 766 ins, 2062 del, 7580 sub ] exp/mono/decode_test_gplm/wer_7_0.5
+%WER 59.18 [ 4437 / 7498, 338 ins, 808 del, 3291 sub ] exp/mono/decode_native_gplm/wer_7_0.5
+%WER 58.08 [ 4355 / 7498, 316 ins, 863 del, 3176 sub ] exp/chain/tdnn1c_sp/decode_native_gplm/wer_7_1.0
+%WER 58.01 [ 5346 / 9215, 647 ins, 754 del, 3945 sub ] exp/tri3b/decode_nonnative_gplm.si/wer_13_1.0
+%WER 56.82 [ 5236 / 9215, 385 ins, 1036 del, 3815 sub ] exp/tri1/decode_nonnative_gplm/wer_14_1.0
+%WER 56.66 [ 4248 / 7498, 302 ins, 821 del, 3125 sub ] exp/chain/tdnn1c_sp_online/decode_native_gplm/wer_8_0.5
+%WER 55.01 [ 5069 / 9215, 494 ins, 836 del, 3739 sub ] exp/tri2b/decode_nonnative_gplm/wer_14_1.0
+%WER 53.30 [ 8908 / 16713, 1171 ins, 1156 del, 6581 sub ] exp/tri3b/decode_test_gplm.si/wer_13_1.0
+%WER 53.18 [ 8888 / 16713, 817 ins, 1494 del, 6577 sub ] exp/tri1/decode_test_gplm/wer_13_1.0
+%WER 5.25 [ 484 / 9215, 32 ins, 164 del, 288 sub ] exp/chain/tdnn1c_sp/decode_nonnative_simple/wer_17_0.0
+%WER 51.32 [ 4729 / 9215, 647 ins, 596 del, 3486 sub ] exp/tri3b/decode_nonnative_gplm/wer_16_0.5
+%WER 50.72 [ 8476 / 16713, 917 ins, 1277 del, 6282 sub ] exp/tri2b/decode_test_gplm/wer_14_1.0
+%WER 5.00 [ 461 / 9215, 33 ins, 144 del, 284 sub ] exp/chain/tdnn1c_sp_online/decode_nonnative_simple/wer_16_0.0
+%WER 48.25 [ 3618 / 7498, 513 ins, 403 del, 2702 sub ] exp/tri1/decode_native_gplm/wer_10_1.0
+%WER 47.54 [ 7945 / 16713, 1171 ins, 916 del, 5858 sub ] exp/tri3b/decode_test_gplm/wer_16_0.5
+%WER 47.43 [ 3556 / 7498, 424 ins, 482 del, 2650 sub ] exp/tri3b/decode_native_gplm.si/wer_16_1.0
+%WER 4.54 [ 758 / 16713, 52 ins, 261 del, 445 sub ] exp/chain/tdnn1c_sp/decode_test_simple/wer_17_0.0
+%WER 45.37 [ 3402 / 7498, 423 ins, 440 del, 2539 sub ] exp/tri2b/decode_native_gplm/wer_14_1.0
+%WER 42.77 [ 3207 / 7498, 455 ins, 368 del, 2384 sub ] exp/tri3b/decode_native_gplm/wer_16_1.0
+%WER 4.02 [ 672 / 16713, 49 ins, 227 del, 396 sub ] exp/chain/tdnn1c_sp_online/decode_test_simple/wer_17_0.0
+%WER 3.96 [ 365 / 9215, 101 ins, 23 del, 241 sub ] exp/tri3b/decode_nonnative_simple.si/wer_17_0.0
+%WER 3.56 [ 267 / 7498, 20 ins, 96 del, 151 sub ] exp/chain/tdnn1c_sp/decode_native_simple/wer_17_0.0
+%WER 2.75 [ 206 / 7498, 13 ins, 74 del, 119 sub ] exp/chain/tdnn1c_sp_online/decode_native_simple/wer_17_0.0
+%WER 2.70 [ 451 / 16713, 124 ins, 42 del, 285 sub ] exp/tri3b/decode_test_simple.si/wer_17_0.0
+%WER 1.66 [ 153 / 9215, 45 ins, 17 del, 91 sub ] exp/tri2b/decode_nonnative_simple/wer_17_0.0
+%WER 1.25 [ 115 / 9215, 28 ins, 14 del, 73 sub ] exp/tri3b/decode_nonnative_simple/wer_17_0.0
+%WER 1.20 [ 200 / 16713, 56 ins, 30 del, 114 sub ] exp/tri2b/decode_test_simple/wer_17_0.0
+%WER 1.19 [ 89 / 7498, 24 ins, 19 del, 46 sub ] exp/tri3b/decode_native_simple.si/wer_17_0.5
+%WER 0.93 [ 156 / 16713, 32 ins, 27 del, 97 sub ] exp/tri3b/decode_test_simple/wer_17_0.0
+%WER 0.82 [ 76 / 9215, 17 ins, 7 del, 52 sub ] exp/tri1/decode_nonnative_simple/wer_17_0.0
+%WER 0.75 [ 69 / 9215, 12 ins, 12 del, 45 sub ] exp/mono/decode_nonnative_simple/wer_15_0.0
+%WER 0.69 [ 116 / 16713, 25 ins, 19 del, 72 sub ] exp/tri1/decode_test_simple/wer_17_0.0
+%WER 0.62 [ 104 / 16713, 19 ins, 30 del, 55 sub ] exp/mono/decode_test_simple/wer_16_0.0
+%WER 0.61 [ 46 / 7498, 10 ins, 13 del, 23 sub ] exp/tri2b/decode_native_simple/wer_17_0.5
+%WER 0.52 [ 39 / 7498, 8 ins, 12 del, 19 sub ] exp/tri1/decode_native_simple/wer_16_0.0
+%WER 0.52 [ 39 / 7498, 4 ins, 13 del, 22 sub ] exp/tri3b/decode_native_simple/wer_16_0.0
+%WER 0.39 [ 29 / 7498, 4 ins, 17 del, 8 sub ] exp/mono/decode_native_simple/wer_17_1.0
+
+- TODO Heeroico: Build bigger lm and test.
+I asked Justin to download the subs Spanishcorpus.
+I'll try making an lm with subs.
+
+- DONE SOFTunisia: Finish subs lm
+
+- DONE SOFTunisia: Build cd gmm hmm system and chain models
+I finished the cd gmm hmm and I sent Zac the rough draft for the simple decoding.
+I did not do chain models.
+- DONE: Get rough draft hypotheses for stage 16?
+I sent Zac all the hypothesis transcripts for CTELLTWO.
+I asked him to work on the first 4 speakers.
+- TODO SOFTunisia: Compare WER scores for old and new lexicons(Zac will do this)
+
+** Goals for Wednesday:
+- TODO Objectives:
+- TODO Heroico: Finish run on clsp cluster and contact Yenda
+- TODO SOFTunisia: Get feed back from Zac and send him the hypotheses from the gplm decoding.
+- TODO Yaounde: Why are WERs so bad?
+- TODO Heroico: Build lm with subs? 
+* DAR <2017-10-02 Mon>
+** Goals for Next Week:
+- TODO Objectives:
+- TODO African French: build systems on progressively larger amounts of data.
+- TODO Multilang: minimal example.
+- TODO Yaounde: Writel recipe to kaldi standards (organize data).
+- TODO Yaounde: Figure out why WER scores are so bad: test on training data
+- TODO SOFTunisia: Rebuild system with Zac's new lexicon.
+I focused on this today.
+I am trying to make a clean fresh start.
+I am building the new system in the softunisia/s5 directory.
+I wrote new scripts to process the answers and recordings training data without copying files.
+These scripts are very similar to the ones I wrote for heroico.   
+Zac wants me to start from stage 15 and redo stage 16.
+This is a good idea since he can compare the new lexicon with the old one. 
+As I am getting ready to leave, I am building an LM with the subs corpus.
+
+- Heroico: 
+I added commands to my run.sh script to use the gp lm in testing.
+I get the following WER results:
+%WER 64.77 [ 5969 / 9215, 415 ins, 1251 del, 4303 sub ] exp/mono/decode_nonnative_gplm/wer_7_0.5
+%WER 62.27 [ 10408 / 16713, 766 ins, 2062 del, 7580 sub ] exp/mono/decode_test_gplm/wer_7_0.5
+%WER 59.18 [ 4437 / 7498, 338 ins, 808 del, 3291 sub ] exp/mono/decode_native_gplm/wer_7_0.5
+%WER 58.01 [ 5346 / 9215, 647 ins, 754 del, 3945 sub ] exp/tri3b/decode_nonnative_gplm.si/wer_13_1.0
+%WER 56.82 [ 5236 / 9215, 385 ins, 1036 del, 3815 sub ] exp/tri1/decode_nonnative_gplm/wer_14_1.0
+%WER 55.01 [ 5069 / 9215, 494 ins, 836 del, 3739 sub ] exp/tri2b/decode_nonnative_gplm/wer_14_1.0
+%WER 53.30 [ 8908 / 16713, 1171 ins, 1156 del, 6581 sub ] exp/tri3b/decode_test_gplm.si/wer_13_1.0
+%WER 53.18 [ 8888 / 16713, 817 ins, 1494 del, 6577 sub ] exp/tri1/decode_test_gplm/wer_13_1.0
+%WER 51.32 [ 4729 / 9215, 647 ins, 596 del, 3486 sub ] exp/tri3b/decode_nonnative_gplm/wer_16_0.5
+%WER 50.72 [ 8476 / 16713, 917 ins, 1277 del, 6282 sub ] exp/tri2b/decode_test_gplm/wer_14_1.0
+%WER 48.25 [ 3618 / 7498, 513 ins, 403 del, 2702 sub ] exp/tri1/decode_native_gplm/wer_10_1.0
+%WER 47.54 [ 7945 / 16713, 1171 ins, 916 del, 5858 sub ] exp/tri3b/decode_test_gplm/wer_16_0.5
+%WER 47.43 [ 3556 / 7498, 424 ins, 482 del, 2650 sub ] exp/tri3b/decode_native_gplm.si/wer_16_1.0
+%WER 45.37 [ 3402 / 7498, 423 ins, 440 del, 2539 sub ] exp/tri2b/decode_native_gplm/wer_14_1.0
+%WER 42.77 [ 3207 / 7498, 455 ins, 368 del, 2384 sub ] exp/tri3b/decode_native_gplm/wer_16_1.0
+%WER 3.96 [ 365 / 9215, 101 ins, 23 del, 241 sub ] exp/tri3b/decode_nonnative_simple.si/wer_17_0.0
+%WER 2.70 [ 451 / 16713, 124 ins, 42 del, 285 sub ] exp/tri3b/decode_test_simple.si/wer_17_0.0
+%WER 1.66 [ 153 / 9215, 45 ins, 17 del, 91 sub ] exp/tri2b/decode_nonnative_simple/wer_17_0.0
+%WER 1.25 [ 115 / 9215, 28 ins, 14 del, 73 sub ] exp/tri3b/decode_nonnative_simple/wer_17_0.0
+%WER 1.20 [ 200 / 16713, 56 ins, 30 del, 114 sub ] exp/tri2b/decode_test_simple/wer_17_0.0
+%WER 1.19 [ 89 / 7498, 24 ins, 19 del, 46 sub ] exp/tri3b/decode_native_simple.si/wer_17_0.5
+%WER 0.93 [ 156 / 16713, 32 ins, 27 del, 97 sub ] exp/tri3b/decode_test_simple/wer_17_0.0
+%WER 0.82 [ 76 / 9215, 17 ins, 7 del, 52 sub ] exp/tri1/decode_nonnative_simple/wer_17_0.0
+%WER 0.75 [ 69 / 9215, 12 ins, 12 del, 45 sub ] exp/mono/decode_nonnative_simple/wer_15_0.0
+%WER 0.69 [ 116 / 16713, 25 ins, 19 del, 72 sub ] exp/tri1/decode_test_simple/wer_17_0.0
+%WER 0.62 [ 104 / 16713, 19 ins, 30 del, 55 sub ] exp/mono/decode_test_simple/wer_16_0.0
+%WER 0.61 [ 46 / 7498, 10 ins, 13 del, 23 sub ] exp/tri2b/decode_native_simple/wer_17_0.5
+%WER 0.52 [ 39 / 7498, 8 ins, 12 del, 19 sub ] exp/tri1/decode_native_simple/wer_16_0.0
+%WER 0.52 [ 39 / 7498, 4 ins, 13 del, 22 sub ] exp/tri3b/decode_native_simple/wer_16_0.0
+%WER 0.39 [ 29 / 7498, 4 ins, 17 del, 8 sub ] exp/mono/decode_native_simple/wer_17_1.0
+
+The chain models are training as I am getting ready to leave.
+
+** Goals for Tuesday:
+- TODO Objectives.
+- TODO Heroico: Get results for gplm 
+- TODO Heeroico: Build bigger lm and test.
+- TODO SOFTunisia: Finish subs lm
+- TODO SOFTunisia: Build cd gmm hmm system and chain models
+- TODO: Get rough draft hypotheses for stage 16?
+- TODO SOFTunisia: Compare WER scores for old and new lexicons(Zac will do this)
