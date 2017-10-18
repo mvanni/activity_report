@@ -1,3 +1,35 @@
+* DAR <2017-10-18 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Multilang: Make my own data prep scripts for Arabic.
+I made a lot of progress on this goal today.
+I have scripts that prepare the data and write the lists for acoustic model training and testing.
+I train an LM on the training text.
+I am using the dictionary supplied by the Globalphone corpus.
+Monophone training is running, but I don not know yet if decoding will work.
+- DONE African French: Get current results.
+%WER 45.28 [ 1445 / 3191, 107 ins, 337 del, 1001 sub ] exp/mono/decode_ca16/wer_14_0.0
+%WER 27.08 [ 864 / 3191, 144 ins, 162 del, 558 sub ] exp/tri3b/decode_ca16.si/wer_16_1.0
+%WER 25.51 [ 814 / 3191, 157 ins, 129 del, 528 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 21.87 [ 698 / 3191, 142 ins, 93 del, 463 sub ] exp/tri2b/decode_ca16/wer_15_0.0
+%WER 19.84 [ 633 / 3191, 133 ins, 91 del, 409 sub ] exp/tri3b/decode_ca16/wer_16_0.5
+%WER 14.95 [ 477 / 3191, 75 ins, 89 del, 313 sub ] exp/chain/tdnn_sp/decode_ca16/wer_12_0.0
+%WER 14.79 [ 472 / 3191, 72 ins, 94 del, 306 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_13_0.0
+
+| model | WER gp 22.7hours  | gabonread gp 25.6 hours   | WER gabonread gp gabonconv 26.3 hours          |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
+| tri1 |  | 25.51 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
+| tri2b | 47.23 | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
+| tri3b | | 19.84 | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
+| chain | | 14.95 | 14.10 | 12.28 | 12.75        | 11.69 |12.63 |
+|chaine online | | 14.79 | 13.88 | 12.28 | 12.85      | 11.69 | 12.60 |
+
+- TODO African French: Get results when only Training on gp (I probably have these results already, but get them anyway just for completeness).
+
+** Goals for Thursday:
+- TODO Multilang: Arabic training and evaluation.
+- TODO Multilang: Bulgarian?
+- TODO African French: What do we get when we only run on gp?
+
 * DAR <2017-10-17 Tue>
 **  Goals for Tuesday set Monday:
 - TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
