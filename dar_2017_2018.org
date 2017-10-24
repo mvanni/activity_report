@@ -1,3 +1,45 @@
+* DAR <2017-10-24 Tue>
+** Goals set Last Week:
+- TODO Setup kaldi recipes for the remaining gp languages:
+French ?
+Swedish (This needs to be worked on first. I think it needs a dictionary normalization script.)
+Thai
+Tamil
+Turkish
+Vietnamese
+wu
+
+I got a lot done on Swedish today.
+
+- DONE African French: Get results for GP aloen and other training sequences.
+
+%WER 53.90 [ 1720 / 3191, 125 ins, 386 del, 1209 sub ] exp/mono/decode_ca16/wer_14_0.0
+%WER 52.40 [ 1672 / 3191, 159 ins, 443 del, 1070 sub ] exp/chain/tdnn_sp/decode_ca16/wer_17_0.5
+%WER 51.27 [ 1636 / 3191, 165 ins, 396 del, 1075 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_17_0.5
+%WER 48.82 [ 1558 / 3191, 189 ins, 401 del, 968 sub ] exp/tri3b/decode_ca16.si/wer_17_0.5
+%WER 45.28 [ 1445 / 3191, 176 ins, 390 del, 879 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+%WER 44.59 [ 1423 / 3191, 220 ins, 262 del, 941 sub ] exp/tri1/decode_ca16/wer_17_0.0
+%WER 35.85 [ 1144 / 3191, 162 ins, 254 del, 728 sub ] exp/tri3b/decode_ca16/wer_17_1.0
+
+| model | WER gp 22.7hours  | gabonread gp 25.6 hours   | WER gabonread gp gabonconv 26.3 hours          |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
+| tri1 | 44.59 | 25.51 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
+| tri2b | 45.28      | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
+| tri3b | 35.85 | 19.84 | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
+| chain | 52.40 | 14.95 | 14.10 | 12.28 | 12.75        | 11.69 |12.63 |
+|chaine online | 51.27 | 14.79 | 13.88 | 12.28 | 12.85      | 11.69 | 12.60 |
+
+** Goals for Wednesday:
+- TODO Setup kaldi recipes for the remaining gp languages:
+French ?
+Thai
+Tamil
+Turkish
+Vietnamese
+wu
+- TODO African French: Build with some more combinations of data.
+- TODO African French: Get hours of speech by running monophone training,  alignment and testing for data sets that are missing hours.
+- TODO Start wrigin paper.
 * DAR <2017-10-19 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Multilang: Arabic training and evaluation.
