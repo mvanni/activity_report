@@ -1,3 +1,36 @@
+* DAR <2017-10-25 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Setup kaldi recipes for the remaining gp languages:
+French ?
+Thai
+Tamil 
+tamil does not have a globalphone dictionary.
+Babel has a tamil dictionary.
+Turkish
+Vietnamese
+wuu
+Wuu has no dictionary
+
+- Swedish: 
+17.4 hours of data
+
+I started looking at the multilang recipe.
+It suggests using plp + pitch features for each language.
+I started doing this for each file.
+I copied the plp pitch configuration files to each directory.
+I also fixed some problems with dictionaries. 
+I am currently working on Japanese.
+
+- TODO African French: Build with some more combinations of data.
+- TODO African French: Get hours of speech by running monophone training,  alignment and testing for data sets that are missing hours.
+- TODO Start writing paper.
+
+** Goals for Thursday:
+- TODO Multilang: Setup all languages to train on plp pitch (start tomorrow with Japanese).
+- TODO Multilang: Go through each language and check the state of the dictionary and try to correct problems.
+- TODO Writing.
+- TODO Multilang: What is the next step?
+ 
 * DAR <2017-10-24 Tue>
 ** Goals set Last Week:
 - TODO Setup kaldi recipes for the remaining gp languages:
