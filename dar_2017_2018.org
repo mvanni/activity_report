@@ -1,3 +1,36 @@
+* DAR <2017-10-26 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Multilang: Setup all languages to train on plp pitch (start tomorrow with Japanese).
+- TODO Multilang: Go through each language and check the state of the dictionary and try to correct problems.
+Arabic: ok
+Bulgarian: ok
+Croatian: ok
+Czech: ok
+German: ok
+
+- TODO Writing.
+- TODO Multilang: What is the next step?
+
+
+- Bulgarian:
+17.1 hours of speech.
+I fixed some issues with the dictionary normalization script.
+This should work better now.
+- Croatian:
+7.7 hours of data
+%WER 77.30 [ 6596 / 8533, 264 ins, 1480 del, 4852 sub ] exp/mono/decode_eval/wer_13_0.5
+This maybe as good as this will get for such a small corpus.
+
+- German:
+14.8 hours of dat
+%WER 81.46 [ 3664 / 4498, 249 ins, 669 del, 2746 sub ] [PARTIAL] exp/mono/decode_eval/wer_13_0.5
+I think this should be doing better than this.
+
+** Goals for Friday:
+- TODO Multilang: Continue checking dictionaries.
+- TODO Multilang: Get monophone results for each language.
+- TODO Writing
+
 * DAR <2017-10-25 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Setup kaldi recipes for the remaining gp languages:
