@@ -1,0 +1,293 @@
+* WAR <2017-10-27 Fri>
+** Goals for Friday:
+- TODO Multilang: Continue checking dictionaries.
+Arabic: ok
+Bulgarian: ok
+Croatian: ok
+Czech: ok
+German: ok
+hausa: ok
+Japanese ok
+Korean: ok
+
+- TODO Multilang: Get monophone results for each language.
+
+| language | hours | monoWER |
+| Arabic | 15.3 | |
+| Bulgarian | 17.1 | 100.00 |
+| Croatian | 7.7 | 77.30 |
+| Czech | 16.0 | 88.96 |
+| German | 14.8 | 81.46 |
+| Hausa| 4.8 | 48.38 |
+| Japanese | | |
+| Korean | | |
+| Mandarin | 26.6 | 103.04 |
+| Polish | 18.2 | 71.43 |
+| Portuguese | 16.0 | 100.0 |
+| Russian | 20.9 | 99.89 |
+| Spanish | 17.5 | 60.20 |
+| Swedish | 17.4 | 81.69 |
+| Turkish | 13.2 | 82.91 |
+| Vietnamese | 13.6 | 97.80 |
+
+- Swedish MFCC: 
+%WER 81.69 [ 14830 / 18154, 826 ins, 3532 del, 10472 sub ] exp/mono/decode_eval/wer_9_1.0
+%WER 71.25 [ 12935 / 18154, 1753 ins, 2091 del, 9091 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 69.66 [ 12646 / 18154, 1892 ins, 1931 del, 8823 sub ] exp/tri3b/decode_eval/wer_17_1.0
+
+-Turkish:
+%WER 82.91 [ 10400 / 12543, 215 ins, 2685 del, 7500 sub ] exp/mono/decode_eval/wer_10_1.0
+
+
+- TODO Writing
+
+** WAR:
+Mr. John Morgan is in the middle of the data preparation phase of the multi language project he will be working on for the coming year. 
+This week he has focused on the pronouncing dictionaries that are associated with the 20 languages he is working with from the GlobalPhone (GP) speech corpus. 
+The goal of the project is to build an Automatic Speech Recognition system for a low resource language using the resources from the ASR systems build with the GP corpora. 
+The dictionaries map words to sequences of phonetic labels. 
+This map requires careful attention since the phonetic labels will denote fundamental models in the ASR system being constructed. 
+Even though the dictionary work is not done yet, Mr. Morgan has already been able to start the acoustic model training process for all the GP languages. 
+
+** Goals for Next Week:
+- TODO Multilang: Finish dictionary work for all languages.
+- TODO Multilang: Train cd gmm hmm systems for each language.
+- TODO Workshop: (Thursday).
+- TODO Writing.
+
+* My WAR <2017-10-13 Fri>
+**  Goals from Last Week:
+- TODO Heroico: Chain model results?
+WER Scores:
+|              model | native |  both | nonnative |
+| mono         |  17.07 | 20.40 |     23.13 |
+| tri1         |   9.44 | 12.91 |     15.74 |
+| tri2b        |   8.27 | 12.12 |     15.37 |
+| tri3b        |   5.57 |  9.24 |     12.14 |
+| chain        |  16.16 | 22.44 |     27.34 |
+| chain online |  15.91 | 21.58 |     26.16 |
+
+Why are the chain model WER scores worse than the tri3b scores?
+
+- DONE Heroico: Decide about lm (include simple lm?)
+I am going with the LM trained on the subs corpus and not including the simple LM.
+- TODO Yaounde: Chain model results?
+- TODO African French: Build system on progressivly smaller training sets.
+
+| model |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+mono | 41.99 | 41.43 | 42.09 | 41.37 |
+| tri1 |23.22 | 22.78      | 23.03 | 22.63 |
+tri2b | | 20.34 | 20.90 | 20.09 |
+| tri3b | | 16.64             | 16.61 | 15.98 |
+| chain | | 12.75        | 11.69 |12.63 |
+|chaine online | | 12.85      | 11.69 | 12.60 |
+
+- TODO Multilang: Minimal example
+
+- TODO Objectives
+ <2017-09-22 Fri>
+ 1. TECHNICAL COMPETENCE
+ Acoustic Models for Low Resource Languages
+ Problem
+ASR components like acoustic models are not available for key low resource languages and accented versions of major languages. 
+
+ Research Question
+Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
+ Proposed Method 
+I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
+I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
+The Kaldi multilang recipe was originally written for a keyword spotting task, so it will have to be modified to work for the S2S task.
+I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
+GlobalPhone consists of  speech recordings from 20 languages, 18 of which come with a lexicon. 
+
+Corpus Curation
+ Problem:
+In my previous job at West Point, I was part of a team that developed speech corpora for the  following languages: 
+1. Arabic (West Point LDC2002S02)
+2. Arabic (Tunisia)
+3. French (collected in Yaounde Cameroon)
+4. Croatian (LDC2005S28)
+5. German
+6. Korean (LDC2006S36)
+7. Portuguese (Brazilian LDC2008s04)
+8. Russian (West Point LDC2003S05)
+9. Russian (SOF Peter)
+10. Spanish (Heroico LDC2006S37)
+
+Of these 10 corpora, 6 were published in the Linguistic Data Consortium (LDC). 
+The remaining 4 corpora for Arabic, French, German  and Russian are available to our team and have yet to be published. 
+Unless the corpora are published, results obtained from training ASR systems with them are not reproduceable by other researchers.
+
+ Proposed Method: 
+I have 3 related goals this year concerning these 4 remaining corpora.
+First, I will prepare these corpora for use as source data in the multilang project mentioned above. 
+Second, I will publish these corpora in the openslrm.org repository and the ARL repository that is being established in the NSRL .
+Third, In addition to  using the corpora in the multilang project, I will write Kaldi recipes  for each corpus. 
+
+Publishing these corpora is an important goal. 
+It is not hard to imagine these corpora disappearing after our generation retires. 
+
+Preparing the data  and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
+
+ Publish
+In the first quarter of this year I propose to write a report on what I have learned about ASR for Low Resource languages. ublish 
+
+ Speech to Speech
+ Problem
+The Army wants the services that can be provided by a S2S applications.
+Security concerns sometimes require that the S2S application run disconnected from a network.
+ASR systems in S2S applications must be very responsive.
+Hardware resources on hand-held devices are getting larger and better, however they are still smaller than those available to laboratory researchers.
+I plan to work on several problems related to S2S applications.
+How are ASR systems made to run online?
+What kinds of acoustic models are best fit for use in S2S applications on hand-held devices?
+How do ASR systems interact with the MT component in an S2S application?
+
+ Solution
+Cooperate with the Kaldi and TransApps teams.
+
+ 2. COOPERATION
+
+ Collaborate with colleagues to write papers that report on advances made in our projects. 
+
+ Collaborate with the Basic Research team by contributing speech recognition components to efforts such as the bot language project. 
+
+ 3. COMMUNICATIONS
+
+Write weekly activity reports to team members to keep them up to date on my work. 
+Read and comment on reports made by my team and branch mates.
+
+I want to reach the point where I can contribute new methods and algorithms for ASR. 
+I propose to do this through the Kaldi project. 
+In order to become proficient enough with the state-of-the-art in ASR to make a contribution, I need to establish professional communications with scientists who work on the Kaldi project.
+
+ 4. MGMT. OF TIME & RESOURCES
+Good resource management leads to good time management.
+To this end, Curate and archive our own valuable  speech and text corpora on our branch storage disks. 
+Format the data so that the corpora that can be made publically available are ready to be transfered. 
+Organize the data so that it is easy to access from recipes running on connected branch machines.
+Stay abreast of possible areas where hardware upgrades could improve work efficiency. 
+
+ 5. CUSTOMER RELATIONS
+
+Establish relationships with MFLTS and CERDEC to remain aware of Army requirements.
+Establish contacts with researchers in the ASR and NLP fields. 
+Establish contacts with s2s device manufacturers.
+
+ 6. TECH TRANSITION
+
+Contribute recipes for building ASR systems with our corpora to the MFLTS. 
+Transition ASR components and our other products to USA Army Africa and MFLTS.  
+
+ 7. DIVERSITY: 
+Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
+
+ 8. SHARP: 
+Support leadership's efforts to address and prevent sexual harassment and sexual assault and ensure a respectful work environment for all. 
+Demonstrate support for the SHARP program by actively participating in required training and other educational programs. 
+Intervene and appropriately respond to any instances of sexual harassment or sexual assault and encourage others to do the same.
+
+
+** Goals for Friday:
+- TODO Yaounde: What WER scores do we get for ca16?
+%WER 96.96 [ 3094 / 3191, 47 ins, 1382 del, 1665 sub ] exp/mono/decode_ca16/wer_17_0.0
+%WER 90.99 [ 2050 / 2253, 39 ins, 971 del, 1040 sub ] exp/mono/decode_test/wer_14_1.0
+
+So the problem is definitely not with the ARTI242 test set. 
+- TODO African French: WER scores when srica is removed.
+%WER 41.43 [ 1322 / 3191, 117 ins, 272 del, 933 sub ] exp/mono/decode_ca16/wer_10_0.0
+%WER 23.03 [ 735 / 3191, 133 ins, 124 del, 478 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
+%WER 22.78 [ 727 / 3191, 109 ins, 144 del, 474 sub ] exp/tri1/decode_ca16/wer_16_0.0
+%WER 20.34 [ 649 / 3191, 114 ins, 128 del, 407 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+%WER 16.64 [ 531 / 3191, 106 ins, 75 del, 350 sub ] exp/tri3b/decode_ca16/wer_17_0.0
+%WER 12.85 [ 410 / 3191, 65 ins, 73 del, 272 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_12_0.5
+%WER 12.75 [ 407 / 3191, 77 ins, 56 del, 274 sub ] exp/chain/tdnn_sp/decode_ca16/wer_12_0.0
+
+| model | WER |
+mono | 41.43 |
+| tri1 | 22.78      |
+tri2b | 20.34 |
+| tri3b | 16.64             |
+| chain | 12.75 |
+|chaine online | 12.85      |
+
+** WAR:
+This  week Mr. Morgan was able to run his Heroico recipe end to end witout interruptions. 
+The Heroico recipe is a set of  scripts that use the Kaldi  toolkit to build  an Automatic Speech Recognizer (ASR) system for Spanish  using the government-owned Heroico corpus. 
+The recipe starts off with three resources: a database of recorded speech, a lexicon and a corpus of text. 
+It first runs data preparation on these three components including feature extraction  from the  speech data and a step that builds a statistical n-gram language model with the text corpus. 
+Then it runs a sequence of training steps that result in gaussian mixture (GMM) hidden markov  (HMM) acoustic models. 
+At each of these steps the acoustic models, the lexicon and the language model are compiled into a finite state transducer (FST). 
+The FST serves as a graph that is used by the ASR decoder to evaluate the model set. 
+Although these model sets are useful and important , the ultimate goal of the Heroico recipe is to produce chain models. 
+The context dependent (CD) GMM HMM acoustic models are only used to get precise alignments between the acoustic data and the phonetic labels. 
+The alignments are used next by the recipe to train an i-vector extractor. 
+Finally, the i-vector extractor is used to train the chain models which are a kind of deep neural network. 
+Mr. Morgan's latest chain model results are not performing better than the best GMM HMM models, so he plans on doing more tuning of the i-vector extractor and chain model parameters.
+
+** Goals for Next Week:
+- TODO Objectives (Monday) 
+- TODO Heroico: Tune Chain Models?
+- TODO African French: Get WER scores for models trained on progressivley smaller training sets. (try removing yaounde)
+- TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
+
+* My WAR <2017-10-06 Fri>
+**  Goals set Last Week:
+- TODO Objectives:
+- TODO African French: build systems on progressively larger amounts of data.
+- TODO Multilang: minimal example.
+- DONE Yaounde: Write recipe to kaldi standards (organize data).
+- TODO Yaounde: Figure out why WER scores are so bad: test on training data
+The test on the training data gave a 21% WER.
+I am close to finishing this recipe.
+I need to decide if I should include  the test on the simple lm trained only on the prompts or should I only include the subs lm tests.
+
+- DONE SOFTunisia: Rebuild system with Zac's new lexicon.
+Zac's new dictionary gave better WER scores.
+Zac gets below 15% WER.
+
+- Goals for Friday:
+- TODO Heroico: Run again with subs lm and without gplm.
+Here are the gmm hmm WER scores for the subs lm test:
+%WER 31.57 [ 2909 / 9215, 193 ins, 610 del, 2106 sub ] exp/mono/decode_nonnative_subs/wer_9_0.0
+%WER 28.51 [ 4765 / 16713, 401 ins, 880 del, 3484 sub ] exp/mono/decode_test_subs/wer_8_0.0
+%WER 25.64 [ 2363 / 9215, 351 ins, 290 del, 1722 sub ] exp/tri3b/decode_nonnative_subs.si/wer_16_0.5
+%WER 24.69 [ 1851 / 7498, 178 ins, 310 del, 1363 sub ] exp/mono/decode_native_subs/wer_8_0.0
+%WER 22.91 [ 2111 / 9215, 245 ins, 311 del, 1555 sub ] exp/tri1/decode_nonnative_subs/wer_17_0.0
+%WER 21.33 [ 1966 / 9215, 164 ins, 361 del, 1441 sub ] exp/tri2b/decode_nonnative_subs/wer_17_1.0
+%WER 21.00 [ 3509 / 16713, 427 ins, 510 del, 2572 sub ] exp/tri3b/decode_test_subs.si/wer_17_1.0
+%WER 19.26 [ 3219 / 16713, 314 ins, 522 del, 2383 sub ] exp/tri1/decode_test_subs/wer_16_0.5
+%WER 18.13 [ 1671 / 9215, 208 ins, 247 del, 1216 sub ] exp/tri3b/decode_nonnative_subs/wer_17_1.0
+%WER 17.88 [ 2989 / 16713, 275 ins, 511 del, 2203 sub ] exp/tri2b/decode_test_subs/wer_16_1.0
+%WER 15.30 [ 1147 / 7498, 149 ins, 154 del, 844 sub ] exp/tri3b/decode_native_subs.si/wer_17_1.0
+%WER 14.62 [ 2444 / 16713, 282 ins, 359 del, 1803 sub ] exp/tri3b/decode_test_subs/wer_17_1.0
+%WER 14.55 [ 1091 / 7498, 122 ins, 153 del, 816 sub ] exp/tri1/decode_native_subs/wer_13_1.0
+%WER 13.28 [ 996 / 7498, 119 ins, 123 del, 754 sub ] exp/tri2b/decode_native_subs/wer_15_0.5
+%WER 10.26 [ 769 / 7498, 74 ins, 113 del, 582 sub ] exp/tri3b/decode_native_subs/wer_16_1.0
+
+I do not have the chain model results yet.
+These results look reasonable.
+If the chain model results also look reasonable, I will only put these in the recipe and I will drop the simple  test that uses the lm trained on the prompts.
+- TODO Yaounde: Test on CA16.
+I started doing this, but the results are not any better.
+
+- TODO African French: Get an lm working.
+- TODO African French: Test on ca16.
+
+** WAR:
+Mr. John Morgan worked this week on improving the evaluation task for the ASR system recipes he is writing. 
+The difficulty of the tasks in the ASR systems he is  building is given by the language model (LM). 
+So far he has been training the LMs on the training data transcripts. 
+The tasks given by LMs trained this way are not adequate. 
+In one case this kind of LM makes the task too easy and another case too hard.
+Mr. Morgan thus moved to training his LMs on the corpus of movie subtitles (SUBS). 
+The SUBS corpora are parallel, large and freely available in several language pairs. 
+Word Error Rates (WER) Results on these corpra look reasonable so far.
+
+** Goals for Next Week:
+- TODO Objectives
+- TODO Heroico: Chain model results?
+- TODO Heroico: Decide about lm (include simple lm?)
+- TODO Yaounde: Chain model results?
+- TODO African French: Build system on progressivly smaller training sets.
+- TODO Multilang: Minimal example
