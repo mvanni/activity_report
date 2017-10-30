@@ -1,5 +1,124 @@
+* DAR <2017-10-30 Mon>
+** Goals for Monday:
+- DONE Check Mandarin dictionary normalization.
+The list of phones looks good.
+** Goals for Next Week:
+- DONE Multilang: Finish dictionary work for all languages.
+Arabic: ok
+Bulgarian: ok
+Croatian: ok
+Czech: ok
+German: ok
+hausa: ok
+Japanese: ok
+Korean: ok
+Mandarin: ok
+Polish: ok
+Portuguese: ok
+Russian: ok
+Spanish: ok
+Swedish: ok
+Tamil: There are backslashes
+Thai: ok
+Turkish: ok
+Vietnamese: ok
+
+- TODO Multilang: Train cd gmm hmm systems for each language.
+Arabic: Started
+Bulgarian: Started
+Croatian: Started
+Czech: DONE
+German: Done
+Hausa: Done
+Japanese: Started
+Korean: Started
+Mandarin: Started
+Polish: Started 
+Portuguese: Problems with the folds. There are files that don't really have usable data  in them . They are very small.
+Russian: Started
+Spanish: Done
+Swedish: Done
+Tamil: Done
+Thai: Started
+Turkish: Done
+Vietnamese: Started
+
+- Polish mfcc:
+%WER 71.43 [ 10840 / 15176, 838 ins, 2521 del, 7481 sub ] exp/mono/decode_eval/wer_11_0.0
+%WER 64.05 [ 9720 / 15176, 905 ins, 3022 del, 5793 sub ] exp/tri1/decode_eval/wer_13_0.0
+
+- TODO Workshop: (Thursday).
+- TODO Writing.
+
+
+
+- Multilang recipe:
+I started running the multilang recipe.
+I am only using the languages that I have built cd gmm hmm systems for so far.
+Arabic
+Czech
+German
+Hausa
+Spanish
+Swedish
+Turkish
+
+
+I had to link the data/train and exp/tri3b_ali directories to the local working directory.
+Now I am extracting high resolution mfcc features (and pitch?).
+
+** Goals for Tuesday:
+- TODO Multilang: Investigate recipe.
+- TODO Writing.
+
+* DAR <2017-10-27 Fri>
+** Goals for Friday set Thursday:
+- TODO Multilang: Continue checking dictionaries.
+Arabic: ok
+Bulgarian: ok
+Croatian: ok
+Czech: ok
+German: ok
+hausa: ok
+Japanese ok
+Korean: ok
+
+- TODO Multilang: Get monophone results for each language.
+
+| language | hours | monoWER |
+| Arabic | 15.3 | 99.91 |
+| Bulgarian | 17.1 | 100.00 |
+| Croatian | 7.7 | 77.30 |
+| Czech | 16.0 | 88.96 |
+| German | 14.8 | 81.46 |
+| Hausa| 4.8 | 48.38 |
+| Japanese | 28.8 | 100.00 |
+| Korean | 18.9 | 100.00 |
+| Mandarin | 26.6 | 103.04 |
+| Polish | 18.2 | 71.43 |
+| Portuguese | 16.0 | 100.0 |
+| Russian | 20.9 | 99.89 |
+| Spanish | 17.5 | 60.20 |
+| Swedish | 17.4 | 81.69 |
+| Turkish | 13.2 | 82.91 |
+| Vietnamese | 13.6 | 97.80 |
+
+- Swedish MFCC: 
+%WER 81.69 [ 14830 / 18154, 826 ins, 3532 del, 10472 sub ] exp/mono/decode_eval/wer_9_1.0
+%WER 71.25 [ 12935 / 18154, 1753 ins, 2091 del, 9091 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 69.66 [ 12646 / 18154, 1892 ins, 1931 del, 8823 sub ] exp/tri3b/decode_eval/wer_17_1.0
+
+-Turkish:
+%WER 82.91 [ 10400 / 12543, 215 ins, 2685 del, 7500 sub ] exp/mono/decode_eval/wer_10_1.0
+
+
+- TODO Writing
+
+** Goals for Monday:
+- TODO Check Mandarin dictionary normalization.
+
 * DAR <2017-10-26 Thu>
-**  Goals for Thursday set Wednesday:
+** Goals for Thursday set Wednesday:
 - TODO Multilang: Setup all languages to train on plp pitch (start tomorrow with Japanese).
 - TODO Multilang: Go through each language and check the state of the dictionary and try to correct problems.
 Arabic: ok
@@ -20,11 +139,14 @@ This should work better now.
 7.7 hours of data
 %WER 77.30 [ 6596 / 8533, 264 ins, 1480 del, 4852 sub ] exp/mono/decode_eval/wer_13_0.5
 This maybe as good as this will get for such a small corpus.
-
+-Czech:
+16.0 hours of data
 - German:
-14.8 hours of dat
+14.8 hours of data
 %WER 81.46 [ 3664 / 4498, 249 ins, 669 del, 2746 sub ] [PARTIAL] exp/mono/decode_eval/wer_13_0.5
 I think this should be doing better than this.
+- Hausa:
+4.8 hours of data
 
 ** Goals for Friday:
 - TODO Multilang: Continue checking dictionaries.
@@ -32,7 +154,7 @@ I think this should be doing better than this.
 - TODO Writing
 
 * DAR <2017-10-25 Wed>
-**  Goals for Wednesday set Tuesday:
+** Goals for Wednesday set Tuesday:
 - TODO Setup kaldi recipes for the remaining gp languages:
 French ?
 Thai
@@ -55,7 +177,7 @@ I also fixed some problems with dictionaries.
 I am currently working on Japanese.
 
 - TODO African French: Build with some more combinations of data.
-- TODO African French: Get hours of speech by running monophone training,  alignment and testing for data sets that are missing hours.
+- TODO African French: Get hours of speech by running monophone training, alignment and testing for data sets that are missing hours.
 - TODO Start writing paper.
 
 ** Goals for Thursday:
@@ -87,13 +209,13 @@ I got a lot done on Swedish today.
 %WER 44.59 [ 1423 / 3191, 220 ins, 262 del, 941 sub ] exp/tri1/decode_ca16/wer_17_0.0
 %WER 35.85 [ 1144 / 3191, 162 ins, 254 del, 728 sub ] exp/tri3b/decode_ca16/wer_17_1.0
 
-| model | WER gp 22.7hours  | gabonread gp 25.6 hours   | WER gabonread gp gabonconv 26.3 hours          |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+| model | WER gp 22.7hours | gabonread gp 25.6 hours | WER gabonread gp gabonconv 26.3 hours | WER gabonread gp yaounde gabonconv 36.6 hours | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
 mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
-| tri1 | 44.59 | 25.51 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
-| tri2b | 45.28      | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
-| tri3b | 35.85 | 19.84 | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
-| chain | 52.40 | 14.95 | 14.10 | 12.28 | 12.75        | 11.69 |12.63 |
-|chaine online | 51.27 | 14.79 | 13.88 | 12.28 | 12.85      | 11.69 | 12.60 |
+| tri1 | 44.59 | 25.51 | 23.72 |23.22 | 22.78 | 23.03 | 22.63 |
+| tri2b | 45.28 | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
+| tri3b | 35.85 | 19.84 | 19.08 | 17.05 | 16.64 | 16.61 | 15.98 |
+| chain | 52.40 | 14.95 | 14.10 | 12.28 | 12.75 | 11.69 |12.63 |
+|chaine online | 51.27 | 14.79 | 13.88 | 12.28 | 12.85 | 11.69 | 12.60 |
 
 ** Goals for Wednesday:
 - TODO Setup kaldi recipes for the remaining gp languages:
@@ -104,15 +226,15 @@ Turkish
 Vietnamese
 wu
 - TODO African French: Build with some more combinations of data.
-- TODO African French: Get hours of speech by running monophone training,  alignment and testing for data sets that are missing hours.
+- TODO African French: Get hours of speech by running monophone training, alignment and testing for data sets that are missing hours.
 - TODO Start wrigin paper.
 * DAR <2017-10-19 Thu>
-**  Goals for Thursday set Wednesday:
+** Goals for Thursday set Wednesday:
 - DONE Multilang: Arabic training and evaluation.
 15.35 hours of training data.
 
 I got a lot done on this goal today.
-I setup the basic recipe for  13 of the 18 languages:
+I setup the basic recipe for 13 of the 18 languages:
 Arabic
 Bulgarian
 Croatian
@@ -144,7 +266,7 @@ u
 - TODO African French: Get results for GP aloen and other training sequences.
 
 * DAR <2017-10-18 Wed>
-**  Goals for Wednesday set Tuesday:
+** Goals for Wednesday set Tuesday:
 - DONE Multilang: Make my own data prep scripts for Arabic.
 I made a lot of progress on this goal today.
 I have scripts that prepare the data and write the lists for acoustic model training and testing.
@@ -160,13 +282,13 @@ Monophone training is running, but I don not know yet if decoding will work.
 %WER 14.95 [ 477 / 3191, 75 ins, 89 del, 313 sub ] exp/chain/tdnn_sp/decode_ca16/wer_12_0.0
 %WER 14.79 [ 472 / 3191, 72 ins, 94 del, 306 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_13_0.0
 
-| model | WER gp 22.7hours  | gabonread gp 25.6 hours   | WER gabonread gp gabonconv 26.3 hours          |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+| model | WER gp 22.7hours | gabonread gp 25.6 hours | WER gabonread gp gabonconv 26.3 hours | WER gabonread gp yaounde gabonconv 36.6 hours | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
 mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
-| tri1 |  | 25.51 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
+| tri1 | | 25.51 | 23.72 |23.22 | 22.78 | 23.03 | 22.63 |
 | tri2b | 47.23 | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
-| tri3b | | 19.84 | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
-| chain | | 14.95 | 14.10 | 12.28 | 12.75        | 11.69 |12.63 |
-|chaine online | | 14.79 | 13.88 | 12.28 | 12.85      | 11.69 | 12.60 |
+| tri3b | | 19.84 | 19.08 | 17.05 | 16.64 | 16.61 | 15.98 |
+| chain | | 14.95 | 14.10 | 12.28 | 12.75 | 11.69 |12.63 |
+|chaine online | | 14.79 | 13.88 | 12.28 | 12.85 | 11.69 | 12.60 |
 
 - TODO African French: Get results when only Training on gp (I probably have these results already, but get them anyway just for completeness).
 
@@ -176,7 +298,7 @@ mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
 - TODO African French: What do we get when we only run on gp?
 
 * DAR <2017-10-17 Tue>
-**  Goals for Tuesday set Monday:
+** Goals for Tuesday set Monday:
 - TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
 - TODO African French: Get chain model results and move on to next step by removing more data.
 %WER 43.94 [ 1402 / 3191, 117 ins, 288 del, 997 sub ] exp/mono/decode_ca16/wer_12_0.0
@@ -186,13 +308,13 @@ mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
 %WER 14.10 [ 450 / 3191, 78 ins, 66 del, 306 sub ] exp/chain/tdnn_sp/decode_ca16/wer_11_0.0
 %WER 13.88 [ 443 / 3191, 69 ins, 73 del, 301 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_11_0.5
 
-| model | WER gabonread gp 25.6 hours              | WER gabonread gp gabonconv 26.3 hours          |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+| model | WER gabonread gp 25.6 hours | WER gabonread gp gabonconv 26.3 hours | WER gabonread gp yaounde gabonconv 36.6 hours | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
 mono | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
-| tri1 | 25.51 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
+| tri1 | 25.51 | 23.72 |23.22 | 22.78 | 23.03 | 22.63 |
 | tri2b | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
-| tri3b | 19.84 | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
-| chain | | 14.10 | 12.28 | 12.75        | 11.69 |12.63 |
-|chaine online | | 13.88 | 12.28 | 12.85      | 11.69 | 12.60 |
+| tri3b | 19.84 | 19.08 | 17.05 | 16.64 | 16.61 | 15.98 |
+| chain | | 14.10 | 12.28 | 12.75 | 11.69 |12.63 |
+|chaine online | | 13.88 | 12.28 | 12.85 | 11.69 | 12.60 |
 
 %WER 45.28 [ 1445 / 3191, 107 ins, 337 del, 1001 sub ] exp/mono/decode_ca16/wer_14_0.0
 %WER 27.08 [ 864 / 3191, 144 ins, 162 del, 558 sub ] exp/tri3b/decode_ca16.si/wer_16_1.0
@@ -201,7 +323,7 @@ mono | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
 %WER 19.84 [ 633 / 3191, 133 ins, 91 del, 409 sub ] exp/tri3b/decode_ca16/wer_16_0.5
 
 The chain model results are not ready yet.
-- TODO Heroico: Maybe  start from beginning since scripts are not moving forward and they die on pca transform estimation.
+- TODO Heroico: Maybe start from beginning since scripts are not moving forward and they die on pca transform estimation.
 %WER 23.33 [ 2150 / 9215, 162 ins, 373 del, 1615 sub ] exp/mono/decode_nonnative/wer_9_0.0
 %WER 20.46 [ 3420 / 16713, 288 ins, 533 del, 2599 sub ] exp/mono/decode_test/wer_8_0.0
 %WER 18.42 [ 1697 / 9215, 233 ins, 193 del, 1271 sub ] exp/tri3b/decode_nonnative.si/wer_17_1.0
@@ -231,14 +353,14 @@ No. It failed again :(
 - TODO African French: Get results when only Training on gp (I probably have these results already, but get them anyway just for completeness).
 
 * DAR <2017-10-16 Mon>
-**  Goals set Last Week:
+** Goals set Last Week:
 - DONE Objectives (Monday) 
 (1) TECHNICAL Objectives (Weight 30)
 A. Acoustic Models for Low Resource Languages
-Adapt the Kaldi multilang recipe to build acoustic models for  a target low resource language  given resources from many other source languages. 
+Adapt the Kaldi multilang recipe to build acoustic models for a target low resource language given resources from many other source languages. 
 
 Specific Rating tasks:
-Modify the Kaldi multilang recipe    from its original keyword spotting task to the Speech to Speech (S2S) task.
+Modify the Kaldi multilang recipe from its original keyword spotting task to the Speech to Speech (S2S) task.
 Build 18 ASR systems from source language resources in the GlobalPhone corpus and government owned corpora (see corpus curation task below).
 Setup experiment to evaluate effectiveness of the multilang approach. 
 
@@ -246,7 +368,7 @@ B. Corpus Curation
 Curate four government owned speech corpora.
 
 Specific Rating Tasks:
-Prepare Arabic, French, German and Russian speech data  for   use in the multilang project listed above.
+Prepare Arabic, French, German and Russian speech data for use in the multilang project listed above.
 Write Kaldi recipes for each language corpus.
 Submit recipes for publication in Kaldi repository.
 Publish data, lexicons and recipes in ARL NSRL repository.
@@ -266,10 +388,10 @@ Study methods for making S2S ASR highly responsive and accurate and use results 
 A. Cooperate with colleagues.
 
 Specific Rating Tasks:
-Collaborate with Steve LaRocca in first quarter  to write papers that report on advances made in our projects. 
+Collaborate with Steve LaRocca in first quarter to write papers that report on advances made in our projects. 
 Collaborate with the Basic Research team and CERDEC by contributing speech recognition components to Human Robot communication efforts. 
 
-(3) COMMUNICATIONS  (Weight 30)
+(3) COMMUNICATIONS (Weight 30)
 
 A. Publish papers and reports
 
@@ -287,7 +409,7 @@ Contribute algorithm to Kaldi
 
 (4) MGMT. OF TIME & RESOURCES (Weight 15)
 
-A. Curate and archive our own valuable  speech and text corpora on our branch storage disks. 
+A. Curate and archive our own valuable speech and text corpora on our branch storage disks. 
 
 
 Specific Rating Tasks:
@@ -304,7 +426,7 @@ Establish contacts with s2s application developers.
 (6) TECH TRANSITION (Weight 10)
 
 Contribute recipes for building ASR systems with our corpora to the MFLTS. 
-Transition ASR components and our other products to USA Army Africa and MFLTS.  
+Transition ASR components and our other products to USA Army Africa and MFLTS. 
 
 (7) DIVERSITY: 
 Support ARL's diversity initiatives by participating in locally-sponsored diversity training, broad outreach, and/or special emphasis programs to increase personal awareness and understanding of the various cultures that exist among laboratory employees. 
@@ -327,13 +449,13 @@ I removed the references to the data splitting in the scripts when they are run 
 %WER 12.28 [ 392 / 3191, 65 ins, 66 del, 261 sub ] exp/chain/tdnn_sp/decode_ca16/wer_13_0.0
 %WER 12.28 [ 392 / 3191, 54 ins, 74 del, 264 sub ] exp/chain/tdnn_sp_online/decode_ca16/wer_12_0.5
 
-| model |   WER gabonread gp gabonconv 26.3 hours        |  WER gabonread gp yaounde gabonconv 36.6 hours     | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+| model | WER gabonread gp gabonconv 26.3 hours | WER gabonread gp yaounde gabonconv 36.6 hours | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
 mono | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
-| tri1 | 23.72 |23.22 | 22.78      | 23.03 | 22.63 |
+| tri1 | 23.72 |23.22 | 22.78 | 23.03 | 22.63 |
 | tri2b | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
-| tri3b | 19.08 | 17.05 | 16.64             | 16.61 | 15.98 |
-| chain | | 12.28 | 12.75        | 11.69 |12.63 |
-|chaine online | | 12.28 | 12.85      | 11.69 | 12.60 |
+| tri3b | 19.08 | 17.05 | 16.64 | 16.61 | 15.98 |
+| chain | | 12.28 | 12.75 | 11.69 |12.63 |
+|chaine online | | 12.28 | 12.85 | 11.69 | 12.60 |
 
 
 %WER 43.94 [ 1402 / 3191, 117 ins, 288 del, 997 sub ] exp/mono/decode_ca16/wer_12_0.0
@@ -351,10 +473,10 @@ I will put the waveform data that is ready for processing under /mnt/disk01/glob
 ** Goals for Tuesday:
 - TODO MultiLang: Start processing GlobalPhone corpora. Start with corpora that overlap with our own corpora, i.e. Arabic, Croatian, French, German, Korean, Portuguese, Russian, Spanish.
 - TODO African French: Get chain model results and move on to next step by removing more data.
-- TODO Heroico: Maybe  start from beginning since scripts are not moving forward and they die on pca transform estimation.
+- TODO Heroico: Maybe start from beginning since scripts are not moving forward and they die on pca transform estimation.
 
 * DAR <2017-10-12 Thu>
-**  Goals for Thursday:
+** Goals for Thursday:
 - TODO Objectives.
 - TODO African French: Get tri3b results.
 %WER 22.56 [ 720 / 3191, 124 ins, 116 del, 480 sub ] exp/tri3b/decode_ca16.si/wer_14_0.0
@@ -369,7 +491,7 @@ I will put the waveform data that is ready for processing under /mnt/disk01/glob
 mono | 42.09 |
 | tri1 | 23.03 |
 tri2b | 20.90 \
-| tri3b | 16.61        |
+| tri3b | 16.61 |
 | chain | 11.69 \ |
 |chaine online | 11.69 |
 
@@ -397,13 +519,13 @@ Here are the WER scores I get on the clsp cluster:
 %WER 7.94 [ 595 / 7498, 63 ins, 82 del, 450 sub ] exp/tri2b/decode_native/wer_14_0.5
 %WER 5.61 [ 421 / 7498, 40 ins, 59 del, 322 sub ] exp/tri3b/decode_native/wer_16_0.5
 
-|             model | native |  both | nonnative |
-| mono         |  16.70      | 20.36      |     23.28      |
-| tri1         |   9.32     | 12.91      |     15.68      |
-| tri2b        |   7.94     | 11.92 |     15.07 |
-| tri3b        |   5.61     |  9.47 |     12.49 |
-| chain        | 28.03  | 36.95 |     44.07 |
-| chain online | 26.81  | 35.25 |    41.95  |
+| model | native | both | nonnative |
+| mono | 16.70 | 20.36 | 23.28 |
+| tri1 | 9.32 | 12.91 | 15.68 |
+| tri2b | 7.94 | 11.92 | 15.07 |
+| tri3b | 5.61 | 9.47 | 12.49 |
+| chain | 28.03 | 36.95 | 44.07 |
+| chain online | 26.81 | 35.25 | 41.95 |
 
 - TODO African French: Run with another training chunk removed.
 I am now running with Niger removed. 
@@ -431,11 +553,11 @@ So the problem is definitely not with the ARTI242 test set.
 
 | model | WER |
 mono | 41.43 |
-| tri1 | 22.78      |
+| tri1 | 22.78 |
 tri2b | 20.34 \
-| tri3b | 16.64             |
-| chain | 12.75 \      |
-|chaine online | 12.85      |
+| tri3b | 16.64 |
+| chain | 12.75 \ |
+|chaine online | 12.85 |
 
 * DAR <2017-10-11 Wed>
 ** Goals for Wednesday set Tuesday:
@@ -455,7 +577,7 @@ Here is what I have now:
 mono | 42.09 |
 | tri1 | 23.03 |
 tri2b | 20.90 \
-| tri3b |         |
+| tri3b | |
 | chain | 11.69 \ |
 |chaine online | 11.69 |
 
@@ -487,13 +609,13 @@ It was hard coded to use the mini_librispeech corpus.
 %WER 12.14 [ 1119 / 9215, 127 ins, 153 del, 839 sub ] exp/tri3b/decode_nonnative/wer_17_1.0
 %WER 12.12 [ 2026 / 16713, 303 ins, 232 del, 1491 sub ] exp/tri2b/decode_test/wer_17_0.0
 
-|             model | native |  both | nonnative |
-| mono         |  17.07 | 20.40 |     23.13 |
-| tri1         |   9.44 | 12.91 |     15.74 |
-| tri2b        |   8.27 | 12.12 |     15.37 |
-| tri3b        |   5.57 |  9.24 |     12.14 |
-| chain        |  16.16 | 22.44 |     27.34 |
-| chain online |  15.91 | 21.58 |     26.16 |
+| model | native | both | nonnative |
+| mono | 17.07 | 20.40 | 23.13 |
+| tri1 | 9.44 | 12.91 | 15.74 |
+| tri2b | 8.27 | 12.12 | 15.37 |
+| tri3b | 5.57 | 9.24 | 12.14 |
+| chain | 16.16 | 22.44 | 27.34 |
+| chain online | 15.91 | 21.58 | 26.16 |
 
 Why are the chain models not better than the cd gmm hmm ?
 
@@ -505,7 +627,7 @@ Why are the chain models not better than the cd gmm hmm ?
 - TODO Yaounde: More work to figure out why results are so bad.
 
 * DAR <2017-10-10 Tue>
-**  Goals for Next Week:
+** Goals for Next Week:
 - TODO Objectives
 - TODO Heroico: Chain model results?
 - DONE Heroico: Decide about lm (include simple lm?)
@@ -613,7 +735,7 @@ This is still pretty bad.
 - TODO African French: Get an lm working.
 - TODO African French: Test on ca16.
 * DAR <2017-10-04 Wed>
-**  Goals for Wednesday set Tuesday:
+** Goals for Wednesday set Tuesday:
 - TODO Objectives:
 
 1. TECHNICAL COMPETENCE
@@ -621,14 +743,14 @@ a. Acoustic Models for Low Resource Languages
 I. Problem
 ASR components like acousti models are not available for key low resource languages and accented versions of major languages.
 II. Research Question
-Can small and large resources  available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
+Can small and large resources available from many languages be leveraged to build acoustic models for a language for which we have very few resources?
 III. Proposed Method 
-I will choose a target language  say Korean for which we actually have some resources so that we can evaluate results. 
-I will use the kaldi multilang recipe to build acoustic models for  the target "low" resource language Korean given resources from many other source languages. 
+I will choose a target language say Korean for which we actually have some resources so that we can evaluate results. 
+I will use the kaldi multilang recipe to build acoustic models for the target "low" resource language Korean given resources from many other source languages. 
 I will obtain the source language resources from the GlobalPhone corpus and government owned corpora that are available to us (see below).
 b. Corpus Curation
 I. Problem:
-In my previous job at West Point, I was part of a team that developed speech corpora for the  following languages: 
+In my previous job at West Point, I was part of a team that developed speech corpora for the following languages: 
 A. Arabic (West Point LDC2002S02)
 B. Arabic (Tunisia)
 C. French (collected in Yaounde Cameroon)
@@ -641,19 +763,19 @@ I. Russian (SOF Peter)
 J. Spanish (Heroico LDC2006S37)
 
 Of these 10 corpora, 6 were published in the Linguistic Data Consortium. 
-The remaining 4 corpora for Arabic, French, German  and Russian are available to our team and have yet to be published. 
+The remaining 4 corpora for Arabic, French, German and Russian are available to our team and have yet to be published. 
 Unless the corpora are published, results obtained from training ASR systems with them are not reproduceable.
 
 ii. Proposed Method: 
 I have 3 related goals this year concerning these 4 remaining corpora.
 First, I want to prepare these corpora for use as source data in the multilang project mentioned above. 
 Second, I want to publish these corpora in the openslrm.org repository.
-Third, In addition to the multilang project, I want to write Kaldi recipes  for each corpus. 
+Third, In addition to the multilang project, I want to write Kaldi recipes for each corpus. 
 
 Publishing these corpora is an important goal. 
 It is not hard to imagine these corpora disappearing after our generation retires. 
 
-Preparing the data  and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
+Preparing the data and writing the recipes will entail producing a lexicon that I also would like to publlish on openslr.org.
 
 ** Goals for Thursday:
 - TODO Objectives:
@@ -665,7 +787,7 @@ Preparing the data  and writing the recipes will entail producing a lexicon that
 - TODO Multilang: Minimal example.
 
 * DAR <2017-10-03 Tue>
-**  Goals for Tuesday set Monday:
+** Goals for Tuesday set Monday:
 - TODO Objectives.
 - TODO Heroico: Get results for gplm 
 The chain model WER results for the gplm decoding are not good.
@@ -745,7 +867,7 @@ I focused on this today.
 I am trying to make a clean fresh start.
 I am building the new system in the softunisia/s5 directory.
 I wrote new scripts to process the answers and recordings training data without copying files.
-These scripts are very similar to the ones I wrote for heroico.   
+These scripts are very similar to the ones I wrote for heroico. 
 Zac wants me to start from stage 15 and redo stage 16.
 This is a good idea since he can compare the new lexicon with the old one. 
 As I am getting ready to leave, I am building an LM with the subs corpus.
