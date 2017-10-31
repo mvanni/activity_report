@@ -1,3 +1,34 @@
+* DAR <2017-10-31 Tue>
+** Goals for Tuesday set Monday:
+- TODO Multilang: Investigate recipe.
+My current understanding is that the multilang recipe is going to make a nnet3 model on all the data I feed it, which right now comes from 8 languages.
+Then the target language data is used to train/retrain the last layer of the neural net.
+
+- TODO Writing.
+Steve and I discussed a mind map for the paper.
+I think we can write about the chain model versus tri3b results:
+Look at the first 3 columns of the table below.
+tri3b on gp: 35.85
+Chain model on GP: 51.27
+Add 3 hours of Gabon Read: 
+tri3b with 3h of babon read: 19.84
+chain with 3h of gabon read: 14.78
+
+
+| model | WER gp 22.7hours | gabonread gp 25.6 hours | WER gabonread gp gabonconv 26.3 hours | WER gabonread gp yaounde gabonconv 36.6 hours | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
+mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
+| tri1 | 44.59 | 25.51 | 23.72 |23.22 | 22.78 | 23.03 | 22.63 |
+| tri2b | 45.28 | 21.87 | 22.56 | 20.78 | 20.34 | 20.90 | 20.09 |
+| tri3b | 35.85 | 19.84 | 19.08 | 17.05 | 16.64 | 16.61 | 15.98 |
+| chain | 52.40 | 14.95 | 14.10 | 12.28 | 12.75 | 11.69 |12.63 |
+|chaine online | 51.27 | 14.79 | 13.88 | 12.28 | 12.85 | 11.69 | 12.60 |
+
+
+** Goals for Wednesday:
+- TODO Setup the gp_french and incorporate it into multilang.
+- TODO Study the multilang recipe.
+- TODO Writing.
+
 * DAR <2017-10-30 Mon>
 ** Goals for Monday:
 - DONE Check Mandarin dictionary normalization.
@@ -116,7 +147,6 @@ Korean: ok
 
 ** Goals for Monday:
 - TODO Check Mandarin dictionary normalization.
-
 * DAR <2017-10-26 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Multilang: Setup all languages to train on plp pitch (start tomorrow with Japanese).
