@@ -1,3 +1,29 @@
+* DAR <2017-11-01 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE Setup the gp_french and incorporate it into multilang.
+I am starting the multilang over again.
+I got to the point where the multilang recipe was going to train the ivector extractor.
+All the data was pooled.
+At this point the utt2spk file failed.
+Most of the GP corpora use speaker names like 001.
+I have to make them distinct across languages.
+So, for example, I'll label them as AR001 and SP001 for Arabic and Spanish respectively.
+I also plan on starting small, maybe with 3 languages.
+I am starting with Arabic, Bulgarian , Croatian and French. Maybe Turkish too.
+Later I'll start over again using the GP LMs, for now I am building the LMS on the training text.
+
+- TODO Study the multilang recipe.
+I am reading the Disertation by Ngoc Thang Vu.
+It looks like my project this year will consist of replicating some of the work in this disertation and then improving on it with chain models.
+The disertation uses DNNS.
+My experience with DNNs was a little disappointing.
+I think Chain models should do better than the  DNNs. 
+- TODO Writing.
+The Ngoc Thang Vu disertation is good background for anything we will write about.
+
+** Goals for Thursday:
+- TODO Workshop. (should take up the whole day)
+
 * DAR <2017-10-31 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Multilang: Investigate recipe.
@@ -13,7 +39,6 @@ Chain model on GP: 51.27
 Add 3 hours of Gabon Read: 
 tri3b with 3h of babon read: 19.84
 chain with 3h of gabon read: 14.78
-
 
 | model | WER gp 22.7hours | gabonread gp 25.6 hours | WER gabonread gp gabonconv 26.3 hours | WER gabonread gp yaounde gabonconv 36.6 hours | WER gabonread gp niger yaounde gabonconv 37.3 hours| gabonread gp niger yaounde gabonconv srica | gabonread gp niger yaounde gabonconv srica |arti
 mono | 53.90 | 45.28 | 43.94 | 41.99 | 41.43 | 42.09 | 41.37 |
