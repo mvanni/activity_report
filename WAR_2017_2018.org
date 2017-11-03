@@ -1,4 +1,30 @@
-* WAR <2017-10-27 Fri>
+* My WAR <2017-11-03 Fri>
+** Goals set Last Week:
+- TODO Multilang: Finish dictionary work for all languages.
+I have all the dictionaries working, but I think there are still bugs.
+I realized that in preparing the Arabic dictionary, I was downcasing all the words.
+I was not downcasing the text used for the lm nor the text for the decoding evaluation references.
+I am going to correct this by not downcasing the words in the dictionary.
+
+There are many other problems with dictionaries remaining.
+Today I delt with changing the tabs to white spaces.
+Apparently this is a new requirement for  kaldi: no tabs.
+the tabs were helping me split the word from the pronunciation, so I am going to keep them in my preparation steps.
+I also fixed encoding problems with Bulgarian , Croatian, Czech and German.
+I am converting everything to utf8. 
+
+- TODO Multilang: Train cd gmm hmm systems for each language.
+- DONE Workshop: (Thursday).
+- TODO Writing.
+
+** Goals for Next Week:
+-TODO Multilang: Expand tabs to white space in all dictionaries.
+- TODO Multilang: make sure all files are in UTF8 (or ascii).
+- TODO Multilang: Incorporate reference LMs.
+- TODO Multilang: Train CD GMM HMM systems for all languages.
+- TODO Multilang: Run chain model training for all languages (this will help down the line).
+
+* My WAR <2017-10-27 Fri>
 ** Goals for Friday:
 - TODO Multilang: Continue checking dictionaries.
 Arabic: ok
