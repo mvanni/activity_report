@@ -1,3 +1,108 @@
+* DAR <2017-11-06 Mon>
+**  Goals for Next Week:
+-TODO Multilang: Expand tabs to white space in all dictionaries.
+I worked a lot on this today.
+I am working in alphabetical order.
+I finished up through gp_spanish.
+
+I should go back and fix the <UNK> entry, it still has a tab.
+- TODO Multilang: make sure all files are in UTF8 (or ascii).
+Same as above, I finished up through gp_spanish.
+- TODO Multilang: Incorporate reference LMs.
+- TODO Multilang: Train CD GMM HMM systems for all languages.
+
+Here is an update on WER scores:
+Arabic:
+%WER 77.57 [ 7015 / 9043, 349 ins, 1201 del, 5465 sub ] exp/mono/decode_dev/wer_16_0.0
+%WER 73.09 [ 12048 / 16484, 598 ins, 1511 del, 9939 sub ] exp/mono/decode_eval/wer_13_0.5
+%WER 72.07 [ 6517 / 9043, 731 ins, 608 del, 5178 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 71.68 [ 6482 / 9043, 572 ins, 802 del, 5108 sub ] exp/tri1/decode_dev/wer_17_1.0
+%WER 71.03 [ 6423 / 9043, 746 ins, 574 del, 5103 sub ] exp/tri3b/decode_dev/wer_17_1.0
+%WER 70.64 [ 6388 / 9043, 590 ins, 780 del, 5018 sub ] exp/tri2b/decode_dev/wer_17_1.0
+%WER 66.68 [ 10991 / 16484, 1281 ins, 720 del, 8990 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 66.11 [ 10898 / 16484, 1073 ins, 955 del, 8870 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 65.63 [ 10819 / 16484, 1059 ins, 996 del, 8764 sub ] exp/tri2b/decode_eval/wer_17_1.0
+%WER 65.47 [ 10792 / 16484, 1370 ins, 547 del, 8875 sub ] exp/tri3b/decode_eval/wer_17_1.0
+
+Bulgarian:
+%WER 52.68 [ 7312 / 13881, 541 ins, 1575 del, 5196 sub ] exp/mono/decode_eval/wer_11_0.0
+%WER 49.37 [ 7464 / 15118, 680 ins, 1425 del, 5359 sub ] exp/mono/decode_dev/wer_11_0.0
+%WER 37.98 [ 5272 / 13881, 913 ins, 761 del, 3598 sub ] exp/tri3b/decode_eval.si/wer_16_1.0
+%WER 37.82 [ 5250 / 13881, 917 ins, 707 del, 3626 sub ] exp/tri1/decode_eval/wer_17_0.5
+%WER 36.36 [ 5047 / 13881, 898 ins, 695 del, 3454 sub ] exp/tri2b/decode_eval/wer_17_0.5
+%WER 34.37 [ 4771 / 13881, 969 ins, 608 del, 3194 sub ] exp/tri3b/decode_eval/wer_16_1.0
+%WER 33.71 [ 5097 / 15118, 887 ins, 693 del, 3517 sub ] exp/tri1/decode_dev/wer_17_1.0
+%WER 33.31 [ 5036 / 15118, 1005 ins, 625 del, 3406 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 32.38 [ 4895 / 15118, 903 ins, 682 del, 3310 sub ] exp/tri2b/decode_dev/wer_17_1.0
+%WER 30.98 [ 4683 / 15118, 1034 ins, 536 del, 3113 sub ] exp/tri3b/decode_dev/wer_17_1.0
+
+Croatian:
+%WER 66.30 [ 5657 / 8533, 380 ins, 1006 del, 4271 sub ] exp/mono/decode_eval/wer_11_0.0
+%WER 57.38 [ 4896 / 8533, 484 ins, 999 del, 3413 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 56.89 [ 4854 / 8533, 366 ins, 1294 del, 3194 sub ] exp/tri1/decode_eval/wer_17_0.5
+%WER 56.55 [ 4825 / 8533, 382 ins, 1306 del, 3137 sub ] exp/tri2b/decode_eval/wer_16_1.0
+%WER 53.65 [ 4578 / 8533, 558 ins, 725 del, 3295 sub ] exp/tri3b/decode_eval/wer_17_1.0
+
+Czech:
+%WER 72.32 [ 8565 / 11844, 404 ins, 1743 del, 6418 sub ] exp/mono/decode_eval/wer_11_1.0
+%WER 69.95 [ 6312 / 9024, 276 ins, 1516 del, 4520 sub ] exp/mono/decode_dev/wer_14_0.5
+%WER 69.30 [ 8208 / 11844, 1641 ins, 520 del, 6047 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 68.92 [ 6219 / 9024, 1344 ins, 541 del, 4334 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 68.10 [ 8066 / 11844, 761 ins, 2364 del, 4941 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 67.11 [ 7949 / 11844, 1658 ins, 767 del, 5524 sub ] exp/tri3b/decode_eval/wer_17_1.0
+%WER 66.77 [ 7908 / 11844, 956 ins, 1951 del, 5001 sub ] exp/tri2b/decode_eval/wer_17_1.0
+%WER 66.71 [ 6020 / 9024, 596 ins, 1774 del, 3650 sub ] exp/tri1/decode_dev/wer_17_1.0
+%WER 65.96 [ 5952 / 9024, 793 ins, 1593 del, 3566 sub ] exp/tri2b/decode_dev/wer_17_1.0
+%WER 65.60 [ 5920 / 9024, 1381 ins, 642 del, 3897 sub ] exp/tri3b/decode_dev/wer_17_1.0
+
+German:
+%WER 77.09 [ 9219 / 11959, 519 ins, 1990 del, 6710 sub ] exp/mono/decode_eval/wer_13_1.0
+%WER 68.19 [ 10492 / 15387, 799 ins, 2876 del, 6817 sub ] exp/mono/decode_dev/wer_14_0.5
+%WER 63.17 [ 7554 / 11959, 1142 ins, 1587 del, 4825 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 61.66 [ 7374 / 11959, 525 ins, 2845 del, 4004 sub ] exp/tri1/decode_eval/wer_16_1.0
+%WER 61.16 [ 7314 / 11959, 544 ins, 2704 del, 4066 sub ] exp/tri2b/decode_eval/wer_16_1.0
+%WER 60.28 [ 7209 / 11959, 1309 ins, 1127 del, 4773 sub ] exp/tri3b/decode_eval/wer_17_1.0
+%WER 57.64 [ 8869 / 15387, 693 ins, 4022 del, 4154 sub ] exp/tri1/decode_dev/wer_15_0.0
+%WER 56.59 [ 8707 / 15387, 824 ins, 3682 del, 4201 sub ] exp/tri2b/decode_dev/wer_15_0.0
+%WER 56.07 [ 8628 / 15387, 1150 ins, 2603 del, 4875 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 54.63 [ 8406 / 15387, 1852 ins, 1230 del, 5324 sub ] exp/tri3b/decode_dev/wer_17_1.0
+
+Hausa:
+%WER 49.81 [ 769 / 1544, 37 ins, 164 del, 568 sub ] exp/mono/decode_eval/wer_11_0.5
+%WER 44.17 [ 682 / 1544, 52 ins, 242 del, 388 sub ] exp/tri1/decode_eval/wer_13_0.0
+%WER 41.45 [ 640 / 1544, 55 ins, 225 del, 360 sub ] exp/tri2b/decode_eval/wer_15_0.0
+%WER 35.56 [ 549 / 1544, 85 ins, 77 del, 387 sub ] exp/tri3b/decode_eval.si/wer_17_0.5
+%WER 33.03 [ 510 / 1544, 53 ins, 130 del, 327 sub ] exp/tri3b/decode_eval/wer_17_1.0
+
+Japanese:
+%WER 41.73 [ 7476 / 17915, 961 ins, 1342 del, 5173 sub ] exp/mono/decode_eval/wer_10_0.0
+%WER 27.67 [ 4957 / 17915, 880 ins, 688 del, 3389 sub ] exp/tri3b/decode_eval.si/wer_17_0.5
+%WER 26.38 [ 4726 / 17915, 857 ins, 683 del, 3186 sub ] exp/tri1/decode_eval/wer_16_0.5
+%WER 25.17 [ 4509 / 17915, 864 ins, 612 del, 3033 sub ] exp/tri2b/decode_eval/wer_15_0.5
+%WER 23.01 [ 4123 / 17915, 829 ins, 588 del, 2706 sub ] exp/tri3b/decode_eval/wer_14_1.0
+
+- TODO Multilang: Run chain model training for all languages (this will help down the line).
+I am working on French.
+It looks like the problem is with the speed perturbed data.
+I think it requires matrices with more rows or columns that for some reason do not exist.
+Either I do not use sp data or I figure out how to get the larger matrices.
+I can get things to run without the sp data, but I do not think this is what I want.
+
+** Goals for Tuesday:
+- TODO Mandatory Training (NDA)
+- TODO Read chapter 4 of Thang disertation.
+-TODO Multilang: Expand tabs to white space in all dictionaries (start from tamil). 
+- TODO Multilang: convert tab to space in <UNK> entry.
+- TODO Multilang: make sure all files are in UTF8 (start from tamil).
+- TODO Multilang: Incorporate reference LMs.
+- TODO Multilang: Train CD GMM HMM systems for all languages.
+- TODO Multilang: Figure out why chain model training fails (speed perturbed data).
+
+* DAR <2017-11-03 Fri>
+**  Goals for Thursday set Wednesday:
+- DONE Workshop. (should take up the whole day)
+I thinkthe the workshop was very successful.
+
 * DAR <2017-11-01 Wed>
 **  Goals for Wednesday set Tuesday:
 - DONE Setup the gp_french and incorporate it into multilang.
