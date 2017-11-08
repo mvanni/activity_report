@@ -1,3 +1,122 @@
+* DAR <2017-11-08 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Mandatory Training (NDA)
+- TODO Read more of Thang disertation.
+- TODO Multilang: Figure out why chain model training fails (speed perturbed data).
+Feature vectors are extracted from the acoustic data in several ways:
+1. plp and pitch features to train and test the cd gmm hmm models.
+2.  low-resolution plp pitch features to get alignments to do chain models
+3. high resolution mfcc features to train and test the ivector extractor.
+4. ? for training testing the chain models.
+
+The feature vectors extracted in 2. are done in 3 ways by speed perturbing the data.
+
+- DONE Multilang: Incorporate reference LMs.
+LMs for Arabic and Turkish are missing.
+
+- Current WER scores:
+| language | mono | tri1 | tri2b | tri3b|
+| Arabic dev | 77.57 | 71.49       | 70.80 | 70.73 |
+| Bulgarian dev | 49.37 | 33.71 | 32.38 | 30.98 |
+| Croatian eval | 66.30 | 56.89 | 56.55 | 53.65 |
+| Czech dev | 69.95 | 66.71 | 65.96 | 65.60 |
+| French | | | | |
+| German dev | 68.19 | 57.64 | 56.59 | 54.63 |
+| Hausa eval | 49.81 | 44.17 | 41.45 | 33.03 |
+| Japanese eval | 41.73 | 26.38 | 25.17 | 23.01 |
+| Korean dev | 51.61 | 30.79 | 29.71 | 25.64 |
+| Mandarin dev | 48.84 | 33.99 | 32.55 | 28.35 |
+| Polish dev | 73.33 | 66.21 | 62.52 | 58.56 |
+| Portuguese | | | | |
+| Russian dev | 97.56 | | | |
+| Spanish dev | 69.30 | 57.16 | 55.50 | 53.56 |
+| Swedish dev | 80.77 | 66.17 | 64.39 | 62.07 |
+| Tamil eval | 100.00 | | | |
+| Thai dev | 101.40 | | | 
+| Turkish dev | 79.76 | 75.65 | 74.97 | 75.25 |
+| Vietnamese dev | 95.62 | 84.70 | 83.90 | 80.29 |
+
+- SOFTunisia: Zac gave me the new lexicon.
+He wants me to rerun the last stage with the new lexicon so we can compare results.
+I'm not sure where the latest batch starts.
+
+** Goals for Thursday:
+- TODO Multilang: Why do some languages not have dev sets?
+- TODO Multilang Portuguese: What is wrong with GP Portuguese?
+- TODO Multilang: Russian: What is wrong with Russian?
+- TODO Multilang: Tamil: What is wrong with GP Tamil?
+- TODO Multilang: Thai: What is wrong with GP Thai?
+- TODO SOFTunisia: Run the previous stage with the new lexicon.
+
+- TODO Multilang: Fix feature extraction for nnet3 alignment
+* DAR <2017-11-07 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Mandatory Training (NDA)
+- DONE Read chapter 4 of Thang disertation.
+-TODO Multilang: Expand tabs to white space in all dictionaries (start from tamil). 
+problems with thai.
+There is a bad character somewhere.
+
+- TODO Multilang: convert tab to space in <UNK> entry.
+- DONE Multilang: make sure all files are in UTF8 (start from tamil).
+- TODO Multilang: Incorporate reference LMs.
+- TODO Multilang: Train CD GMM HMM systems for all languages.
+Korean:
+%WER 51.61 [ 18946 / 36707, 488 ins, 2286 del, 16172 sub ] exp/mono/decode_dev/wer_8_0.0
+%WER 47.52 [ 18495 / 38920, 374 ins, 3631 del, 14490 sub ] exp/mono/decode_eval/wer_9_0.0
+%WER 30.79 [ 11303 / 36707, 543 ins, 1005 del, 9755 sub ] exp/tri1/decode_dev/wer_13_0.5
+%WER 29.71 [ 10907 / 36707, 511 ins, 1029 del, 9367 sub ] exp/tri2b/decode_dev/wer_13_0.5
+%WER 29.62 [ 10874 / 36707, 522 ins, 781 del, 9571 sub ] exp/tri3b/decode_dev.si/wer_10_1.0
+%WER 25.64 [ 9412 / 36707, 474 ins, 670 del, 8268 sub ] exp/tri3b/decode_dev/wer_13_0.5
+%WER 14.28 [ 5559 / 38920, 437 ins, 709 del, 4413 sub ] exp/tri3b/decode_eval.si/wer_10_0.0
+%WER 11.84 [ 4610 / 38920, 356 ins, 644 del, 3610 sub ] exp/tri2b/decode_eval/wer_12_0.0
+%WER 11.83 [ 4604 / 38920, 398 ins, 623 del, 3583 sub ] exp/tri1/decode_eval/wer_11_0.0
+%WER 10.96 [ 4265 / 38920, 391 ins, 569 del, 3305 sub ] exp/tri3b/decode_eval/wer_12_0.0
+
+Mandarin:
+%WER 52.13 [ 11209 / 21502, 686 ins, 2250 del, 8273 sub ] exp/mono/decode_eval/wer_12_1.0
+%WER 48.84 [ 8925 / 18274, 593 ins, 1547 del, 6785 sub ] exp/mono/decode_dev/wer_11_1.0
+%WER 38.76 [ 8334 / 21502, 894 ins, 1434 del, 6006 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 37.84 [ 8137 / 21502, 963 ins, 1262 del, 5912 sub ] exp/tri3b/decode_eval.si/wer_14_1.0
+%WER 36.84 [ 7921 / 21502, 826 ins, 1374 del, 5721 sub ] exp/tri2b/decode_eval/wer_16_1.0
+%WER 33.99 [ 6211 / 18274, 692 ins, 1053 del, 4466 sub ] exp/tri1/decode_dev/wer_17_1.0
+%WER 33.44 [ 6110 / 18274, 769 ins, 893 del, 4448 sub ] exp/tri3b/decode_dev.si/wer_14_1.0
+%WER 33.24 [ 7147 / 21502, 881 ins, 1197 del, 5069 sub ] exp/tri3b/decode_eval/wer_16_1.0
+%WER 32.55 [ 5949 / 18274, 707 ins, 945 del, 4297 sub ] exp/tri2b/decode_dev/wer_15_1.0
+%WER 28.35 [ 5180 / 18274, 821 ins, 723 del, 3636 sub ] exp/tri3b/decode_dev/wer_14_1.0
+
+Polish:
+%WER 73.89 [ 11214 / 15176, 706 ins, 2922 del, 7586 sub ] exp/mono/decode_eval/wer_11_0.0
+%WER 73.33 [ 13183 / 17977, 628 ins, 4142 del, 8413 sub ] exp/mono/decode_dev/wer_12_0.0
+%WER 66.83 [ 10142 / 15176, 713 ins, 3754 del, 5675 sub ] exp/tri1/decode_eval/wer_13_0.0
+%WER 66.21 [ 11903 / 17977, 981 ins, 3977 del, 6945 sub ] exp/tri1/decode_dev/wer_12_0.0
+%WER 63.62 [ 9655 / 15176, 833 ins, 2940 del, 5882 sub ] exp/tri2b/decode_eval/wer_13_0.5
+%WER 62.52 [ 11240 / 17977, 1032 ins, 3366 del, 6842 sub ] exp/tri2b/decode_dev/wer_13_0.0
+%WER 62.09 [ 9423 / 15176, 745 ins, 2771 del, 5907 sub ] exp/tri3b/decode_eval.si/wer_15_0.0
+%WER 61.56 [ 9342 / 15176, 878 ins, 2603 del, 5861 sub ] exp/tri3b/decode_eval/wer_16_0.5
+%WER 60.30 [ 10840 / 17977, 809 ins, 3170 del, 6861 sub ] exp/tri3b/decode_dev.si/wer_14_0.0
+%WER 58.56 [ 10527 / 17977, 940 ins, 2922 del, 6665 sub ] exp/tri3b/decode_dev/wer_17_0.5
+
+Spanish:
+%WER 69.30 [ 13237 / 19101, 753 ins, 2829 del, 9655 sub ] exp/mono/decode_dev/wer_10_0.0
+%WER 59.76 [ 7417 / 12411, 585 ins, 1444 del, 5388 sub ] exp/mono/decode_eval/wer_11_0.0
+%WER 57.16 [ 10918 / 19101, 949 ins, 2412 del, 7557 sub ] exp/tri1/decode_dev/wer_17_1.0
+%WER 56.72 [ 10835 / 19101, 1168 ins, 1812 del, 7855 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 55.50 [ 10601 / 19101, 1084 ins, 1998 del, 7519 sub ] exp/tri2b/decode_dev/wer_16_1.0
+%WER 53.56 [ 10231 / 19101, 1299 ins, 1500 del, 7432 sub ] exp/tri3b/decode_dev/wer_17_1.0
+%WER 49.49 [ 6142 / 12411, 1042 ins, 711 del, 4389 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 48.80 [ 6056 / 12411, 802 ins, 981 del, 4273 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 48.09 [ 5969 / 12411, 943 ins, 763 del, 4263 sub ] exp/tri2b/decode_eval/wer_16_1.0
+%WER 48.09 [ 5969 / 12411, 1148 ins, 584 del, 4237 sub ] exp/tri3b/decode_eval/wer_17_1.0
+
+- TODO Multilang: Figure out why chain model training fails (speed perturbed data).
+
+** Goals for Wednesday:
+- TODO Mandatory Training (NDA)
+- TODO Read more of Thang disertation.
+- TODO Multilang: Figure out why chain model training fails (speed perturbed data).
+- TODO Multilang: Incorporate reference LMs.
+
 * DAR <2017-11-06 Mon>
 **  Goals for Next Week:
 -TODO Multilang: Expand tabs to white space in all dictionaries.
