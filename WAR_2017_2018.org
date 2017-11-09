@@ -1,3 +1,25 @@
+* My WAR <2017-11-09 Thu>
+** Goals set Last Week:
+- DONE Multilang: Expand tabs to white space in all dictionaries.
+- TODO Multilang: make sure all files are in UTF8 (or ascii).
+- DONE Multilang: Incorporate reference LMs.
+Arabic and turkish were not provided in the GP package.
+Babel has lexicons for Tamil and Turkish.
+- DONE Multilang: Train CD GMM HMM systems for all languages.
+I've done this at least once so far for all but Portuguese and maybe one or two more.
+
+- TODO Multilang: Run chain model training for all languages (this will help down the line).
+
+- Babel:
+There is some 48000 hz data under Georgian.
+
+** Goals for Next Week:
+- TODO Multilang: build cd gmm hmm systems for all the GP languages (with reference lm).
+- TODO Multilang: Build  chain models for each GP language (baselines?)
+- TODO Multilang: Do multilang training?
+- TODO Incorporate Government-owned corpora into multilang setup. ( WestPoint, ARL Urdu Pashto, Transtac Babel)
+- TODO Babel: Search for data sampled at >= 16khz.
+
 * My WAR <2017-11-03 Fri>
 ** Goals set Last Week:
 - TODO Multilang: Finish dictionary work for all languages.
