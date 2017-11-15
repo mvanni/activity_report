@@ -1,3 +1,66 @@
+* DAR <2017-11-15 Wed>
+** Goals for Wednesday set Tuesday:
+- DONE Heroico: Run ende to end and adress Dan's comments
+I ran end2end once with the new data folds.
+There is now a devtext fold.
+I separated out the data in Heroico that was read from the same promps that were read at USMA.
+- DONE Heroico: Write README
+The README might need more work.
+- DONE Heroico: Get chain model info 
+I did this for the 1a run.
+- DONE Heroico: Get WERs
+Here are the 1a scores:
+%WER 75.78 [ 6983 / 9215, 1377 ins, 507 del, 5099 sub ] exp/tri3b/decode_nonnative.si/wer_17_1.0
+%WER 74.25 [ 5680 / 7650, 1187 ins, 431 del, 4062 sub ] exp/tri3b/decode_devtest.si/wer_16_1.0
+%WER 73.76 [ 12328 / 16713, 2541 ins, 804 del, 8983 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 71.86 [ 5497 / 7650, 530 ins, 959 del, 4008 sub ] exp/mono/decode_devtest/wer_7_1.0
+%WER 71.64 [ 6602 / 9215, 646 ins, 939 del, 5017 sub ] exp/mono/decode_nonnative/wer_7_1.0
+%WER 71.26 [ 5343 / 7498, 1159 ins, 293 del, 3891 sub ] exp/tri3b/decode_native.si/wer_17_1.0
+%WER 69.59 [ 11630 / 16713, 1153 ins, 1643 del, 8834 sub ] exp/mono/decode_test/wer_7_1.0
+%WER 67.09 [ 6182 / 9215, 907 ins, 626 del, 4649 sub ] exp/tri1/decode_nonnative/wer_14_1.0
+%WER 66.98 [ 5022 / 7498, 503 ins, 700 del, 3819 sub ] exp/mono/decode_native/wer_7_1.0
+%WER 66.78 [ 6154 / 9215, 1048 ins, 537 del, 4569 sub ] exp/tri2b/decode_nonnative/wer_15_1.0
+%WER 66.64 [ 6141 / 9215, 1226 ins, 425 del, 4490 sub ] exp/tri3b/decode_nonnative/wer_16_1.0
+%WER 66.33 [ 5074 / 7650, 921 ins, 481 del, 3672 sub ] exp/tri1/decode_devtest/wer_11_1.0
+%WER 66.30 [ 5072 / 7650, 1198 ins, 328 del, 3546 sub ] exp/tri3b/decode_devtest/wer_11_1.0
+%WER 65.88 [ 5040 / 7650, 985 ins, 450 del, 3605 sub ] exp/tri2b/decode_devtest/wer_13_1.0
+%WER 65.05 [ 10872 / 16713, 1725 ins, 959 del, 8188 sub ] exp/tri1/decode_test/wer_13_1.0
+%WER 64.45 [ 10772 / 16713, 2261 ins, 698 del, 7813 sub ] exp/tri3b/decode_test/wer_16_1.0
+%WER 64.33 [ 10751 / 16713, 1955 ins, 845 del, 7951 sub ] exp/tri2b/decode_test/wer_14_1.0
+%WER 62.54 [ 4689 / 7498, 781 ins, 379 del, 3529 sub ] exp/tri1/decode_native/wer_13_1.0
+%WER 61.66 [ 4623 / 7498, 1038 ins, 267 del, 3318 sub ] exp/tri3b/decode_native/wer_15_1.0
+%WER 61.28 [ 4595 / 7498, 899 ins, 309 del, 3387 sub ] exp/tri2b/decode_native/wer_13_1.0
+
+- DONE Heroico: symbolic link to chain model script under tuning with 1a affix.
+- DONE African French: Miniturize. Start with small LM.
+
+I trained the lm only on the transcripts used for training the acoustic models plus the bic corpus. 
+Here are the cd gmm hmm results:
+%WER 80.38 [ 2565 / 3191, 108 ins, 722 del, 1735 sub ] exp/mono/decode_ca16/wer_8_0.0
+%WER 62.93 [ 2008 / 3191, 117 ins, 556 del, 1335 sub ] exp/tri1/decode_ca16/wer_13_0.5
+%WER 62.36 [ 1990 / 3191, 188 ins, 413 del, 1389 sub ] exp/tri3b/decode_ca16.si/wer_10_0.5
+%WER 60.61 [ 1934 / 3191, 160 ins, 449 del, 1325 sub ] exp/tri2b/decode_ca16/wer_12_0.5
+%WER 58.26 [ 1859 / 3191, 138 ins, 435 del, 1286 sub ] exp/tri3b/decode_ca16/wer_13_1.0
+
+ls -sh exp/tri2b/graph/HCLG.fst 
+11M exp/tri2b/graph/HCLG.fst
+
+I am going to include the text from the test set in the training data for the lm.
+My hypothesis is that this will make the WER scores go down.
+I propose we make a "canned" demo that only works well on phrases from the CA16 test set.
+
+- TODO SOFTunisia: Contact Zac. Where are we?
+- TODO Multilang: Get global phone chain models running (latest version?)
+- TODO Writing
+
+** Goals for Thursday:
+- TODO African French: Miniturize. Build up the lm from a minimal working example.
+- TODO Heroico: Address Dan's comments.  remove proportional shrinking
+- TODO Heroico: L2 regularization? Does it work with my current version of kaldi?
+- TODO Heroico: Modify layers (from 6 to 8)
+- TODO Multilang: Take another pass on each language. Try to get comparable WERs to published scores.
+- TODO Writing.
+
 * DAR <2017-11-14 Tue>
 - Current WER scores:
 | language | mono | tri1 | tri2b | tri3b| chain | chain online |
@@ -14,7 +77,7 @@ Japanese dev | 10.40 | 6.54 | 6.25 | 6.15 |
 | Korean dev | 51.61 | 30.79 | 29.71 | 25.64 |
 | Mandarin dev | 36.63 | 23.51 | 22.54 | 19.07 |
 | Polish dev | 65.87 | 57.63 | 53.05 | 48.23 |
-| Portuguese | | | | |
+| Portuguese dev | 43.56 | 27.45 | | |
 | Russian dev | 97.56 | | | |
 | Spanish dev | 60.12 | 49.38 | 46.04 | 42.97 |
 | Swedish dev | 80.77 | 66.17 | 64.39 | 62.07 |
