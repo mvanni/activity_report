@@ -163,7 +163,7 @@ The change made in experiment 1b definitly made the chain models worse.
 - TODO Heroico: Address Dan's comments ( try to get l2 regularization working)
 - TODO Heroico: Modify layers (from 6 to 8)
 
-,- TODO Write paper.
+- TODO Write paper.
 - TODO African French: Work with Steve, Luis and Mike Li to get minimal Ultra example working.
 
 * DAR <2017-11-15 Wed>
