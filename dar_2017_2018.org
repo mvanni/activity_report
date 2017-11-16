@@ -3,9 +3,13 @@
 - TODO African French: Miniturize. Build up the lm from a minimal working example.
 I included the transcripts  for the ca16 test  set  in the lm training set and here are the WER scores:
 %WER 31.59 [ 1008 / 3191, 60 ins, 342 del, 606 sub ] exp/mono/decode_ca16/wer_11_0.0
+
 %WER 20.78 [ 663 / 3191, 79 ins, 163 del, 421 sub ] exp/tri3b/decode_ca16.si/wer_17_0.0
+
 %WER 19.24 [ 614 / 3191, 91 ins, 134 del, 389 sub ] exp/tri1/decode_ca16/wer_14_0.0
+
 %WER 17.80 [ 568 / 3191, 76 ins, 130 del, 362 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+
 %WER 16.14 [ 515 / 3191, 85 ins, 99 del, 331 sub ] exp/tri3b/decode_ca16/wer_17_0.0
 
 | model | lm train | lm train + test  |
@@ -17,9 +21,13 @@ I included the transcripts  for the ca16 test  set  in the lm training set and h
 I tried decoding without retraining.
 
 %WER 99.66 [ 3180 / 3191, 13 ins, 1621 del, 1546 sub ] exp/mono/decode_ca16/wer_16_0.5
+
 %WER 20.78 [ 663 / 3191, 79 ins, 163 del, 421 sub ] exp/tri3b/decode_ca16.si/wer_17_0.0
+
 %WER 16.14 [ 515 / 3191, 85 ins, 99 del, 331 sub ] exp/tri3b/decode_ca16/wer_17_0.0
+
 %WER 101.44 [ 3237 / 3191, 81 ins, 1166 del, 1990 sub ] exp/tri2b/decode_ca16/wer_17_1.0
+
 %WER 100.19 [ 3197 / 3191, 43 ins, 1506 del, 1648 sub ] exp/tri1/decode_ca16/wer_17_1.0
 
 This dos not look good so I'm retraining from the beginning.
@@ -34,11 +42,17 @@ I corrected them and I am going to run the system build again.
 I am including the dev and eval text in the lm training text.
 Just in case here are the WER scores before I start this:
 %WER 77.57 [ 7015 / 9043, 349 ins, 1201 del, 5465 sub ] exp/mono/decode_dev/wer_16_0.0
+
 %WER 71.79 [ 6492 / 9043, 685 ins, 580 del, 5227 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+
 %WER 71.49 [ 6465 / 9043, 530 ins, 773 del, 5162 sub ] exp/tri1/decode_dev/wer_17_1.0
+
 %WER 70.80 [ 6402 / 9043, 586 ins, 727 del, 5089 sub ] exp/tri2b/decode_dev/wer_17_1.0
+
 %WER 70.73 [ 6396 / 9043, 679 ins, 571 del, 5146 sub ] exp/tri3b/decode_dev/wer_17_1.0
+
 %WER 64.95 [ 5873 / 9043, 501 ins, 1325 del, 4047 sub ] exp/chain/tdnn1c_sp_online/decode_dev/wer_9_0.0
+
 %WER 64.57 [ 5839 / 9043, 501 ins, 1325 del, 4013 sub ] exp/chain/tdnn1c_sp/decode_dev/wer_9_0.0
 
 - Current WER scores:
@@ -149,7 +163,7 @@ The change made in experiment 1b definitly made the chain models worse.
 - TODO Heroico: Address Dan's comments ( try to get l2 regularization working)
 - TODO Heroico: Modify layers (from 6 to 8)
 
-- TODO Write paper.
+,- TODO Write paper.
 - TODO African French: Work with Steve, Luis and Mike Li to get minimal Ultra example working.
 
 * DAR <2017-11-15 Wed>
