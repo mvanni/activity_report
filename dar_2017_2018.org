@@ -1,3 +1,157 @@
+* DAR <2017-11-16 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO African French: Miniturize. Build up the lm from a minimal working example.
+I included the transcripts  for the ca16 test  set  in the lm training set and here are the WER scores:
+%WER 31.59 [ 1008 / 3191, 60 ins, 342 del, 606 sub ] exp/mono/decode_ca16/wer_11_0.0
+%WER 20.78 [ 663 / 3191, 79 ins, 163 del, 421 sub ] exp/tri3b/decode_ca16.si/wer_17_0.0
+%WER 19.24 [ 614 / 3191, 91 ins, 134 del, 389 sub ] exp/tri1/decode_ca16/wer_14_0.0
+%WER 17.80 [ 568 / 3191, 76 ins, 130 del, 362 sub ] exp/tri2b/decode_ca16/wer_17_0.0
+%WER 16.14 [ 515 / 3191, 85 ins, 99 del, 331 sub ] exp/tri3b/decode_ca16/wer_17_0.0
+
+| model | lm train | lm train + test  |
+| mono | 80.38 | 31.59 |
+| tri1 | 62.93 | 19.24 |
+| tri2b | 60.61 | 17.80 |
+| tri3b | 58.26 | 16.14 |
+
+I tried decoding without retraining.
+
+%WER 99.66 [ 3180 / 3191, 13 ins, 1621 del, 1546 sub ] exp/mono/decode_ca16/wer_16_0.5
+%WER 20.78 [ 663 / 3191, 79 ins, 163 del, 421 sub ] exp/tri3b/decode_ca16.si/wer_17_0.0
+%WER 16.14 [ 515 / 3191, 85 ins, 99 del, 331 sub ] exp/tri3b/decode_ca16/wer_17_0.0
+%WER 101.44 [ 3237 / 3191, 81 ins, 1166 del, 1990 sub ] exp/tri2b/decode_ca16/wer_17_1.0
+%WER 100.19 [ 3197 / 3191, 43 ins, 1506 del, 1648 sub ] exp/tri1/decode_ca16/wer_17_1.0
+
+This dos not look good so I'm retraining from the beginning.
+- TODO Heroico: Address Dan's comments.  remove proportional shrinking
+- TODO Heroico: L2 regularization? Does it work with my current version of kaldi?
+- TODO Heroico: Modify layers (from 6 to 8)
+- TODO Multilang: Take another pass on each language. Try to get comparable WERs to published scores.
+
+Arabic: 
+I found some encoding issues in the text files and dictionary.
+I corrected them and I am going to run the system build again.
+I am including the dev and eval text in the lm training text.
+Just in case here are the WER scores before I start this:
+%WER 77.57 [ 7015 / 9043, 349 ins, 1201 del, 5465 sub ] exp/mono/decode_dev/wer_16_0.0
+%WER 71.79 [ 6492 / 9043, 685 ins, 580 del, 5227 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 71.49 [ 6465 / 9043, 530 ins, 773 del, 5162 sub ] exp/tri1/decode_dev/wer_17_1.0
+%WER 70.80 [ 6402 / 9043, 586 ins, 727 del, 5089 sub ] exp/tri2b/decode_dev/wer_17_1.0
+%WER 70.73 [ 6396 / 9043, 679 ins, 571 del, 5146 sub ] exp/tri3b/decode_dev/wer_17_1.0
+%WER 64.95 [ 5873 / 9043, 501 ins, 1325 del, 4047 sub ] exp/chain/tdnn1c_sp_online/decode_dev/wer_9_0.0
+%WER 64.57 [ 5839 / 9043, 501 ins, 1325 del, 4013 sub ] exp/chain/tdnn1c_sp/decode_dev/wer_9_0.0
+
+- Current WER scores:
+| language | mono | tri1 | tri2b | tri3b| chain | chain online |
+| Arabic dev | 77.57 | 71.49       | 70.80 | 70.73 | 64.57 | 64.95 |
+| Bulgarian dev | 42.62      | 28.13      | 26.57      | 24.78      | 19.47 | 19.46 |
+| Croatian eval | 66.30 | 56.89 | 56.55 | 53.65 |
+| Croatian dev | 36.53 | 30.60 | 29.19 | 28.53 |
+| Czech dev | 57.44      | 53.88      | 50.83      | 43.72 |
+| French dev | 95.06 | 93.35 | 93.51 | 93.41 |
+| German dev | 49.52 | 47.35 | 45.08 | 38.04 |
+| Hausa dev | 36.48 | 36.84 | 32.30 | 24.64 |
+| Japanese eval | 15.18 | 9.01 | 8.73 | 7.77 |
+| Japanese dev | 10.40 | 6.54 | 6.25 | 6.15 |
+| Korean dev | 51.61 | 30.79 | 29.71 | 25.64 |
+| Mandarin dev | 36.63 | 23.51 | 22.54 | 19.07 |
+| Polish dev | 65.87 | 57.63 | 53.05 | 48.23 |
+| Portuguese dev | 43.56 | 27.45 | | |
+| Russian dev | 97.56 | | | |
+| Spanish dev | 60.12 | 49.38 | 46.04 | 42.97 |
+| Swedish dev | 80.77 | 66.17 | 64.39 | 62.07 |
+| Tamil eval | 100.00 | | | |
+| Thai dev | 101.40 | | | 
+| Turkish dev | 79.76 | 75.65 | 74.97 | 75.25 |
+| Vietnamese dev | 50.71 | 40.63 | 38.94 | 37.49 |
+
+- TODO Writing.
+
+- French: I just found out that the French lexicon is all lower case.
+My training text is uppercase.
+
+- Heroico 1b results:
+%WER 76.91 [ 7087 / 9215, 680 ins, 1165 del, 5242 sub ] exp/chain/tdnn1b_sp/decode_nonnative/wer_8_1.0
+
+%WER 76.22 [ 7024 / 9215, 811 ins, 1007 del, 5206 sub ] exp/chain/tdnn1b_sp_online/decode_nonnative/wer_7_1.0
+
+%WER 75.78 [ 6983 / 9215, 1377 ins, 507 del, 5099 sub ] exp/tri3b/decode_nonnative.si/wer_17_1.0
+
+%WER 74.25 [ 5680 / 7650, 1187 ins, 431 del, 4062 sub ] exp/tri3b/decode_devtest.si/wer_16_1.0
+
+%WER 73.76 [ 12328 / 16713, 2541 ins, 804 del, 8983 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+
+%WER 71.87 [ 12012 / 16713, 1342 ins, 1746 del, 8924 sub ] exp/chain/tdnn1b_sp/decode_test/wer_7_1.0
+
+%WER 71.86 [ 5497 / 7650, 530 ins, 959 del, 4008 sub ] exp/mono/decode_devtest/wer_7_1.0
+
+%WER 71.64 [ 6602 / 9215, 646 ins, 939 del, 5017 sub ] exp/mono/decode_nonnative/wer_7_1.0
+
+%WER 71.26 [ 5343 / 7498, 1159 ins, 293 del, 3891 sub ] exp/tri3b/decode_native.si/wer_17_1.0
+
+%WER 71.09 [ 11882 / 16713, 1162 ins, 1999 del, 8721 sub ] exp/chain/tdnn1b_sp_online/decode_test/wer_8_1.0
+
+%WER 69.59 [ 11630 / 16713, 1153 ins, 1643 del, 8834 sub ] exp/mono/decode_test/wer_7_1.0
+
+%WER 67.09 [ 6182 / 9215, 907 ins, 626 del, 4649 sub ] exp/tri1/decode_nonnative/wer_14_1.0
+
+%WER 66.98 [ 5022 / 7498, 503 ins, 700 del, 3819 sub ] exp/mono/decode_native/wer_7_1.0
+
+%WER 66.78 [ 6154 / 9215, 1048 ins, 537 del, 4569 sub ] exp/tri2b/decode_nonnative/wer_15_1.0
+
+%WER 66.64 [ 6141 / 9215, 1226 ins, 425 del, 4490 sub ] exp/tri3b/decode_nonnative/wer_16_1.0
+
+%WER 66.33 [ 5074 / 7650, 921 ins, 481 del, 3672 sub ] exp/tri1/decode_devtest/wer_11_1.0
+
+%WER 66.30 [ 5072 / 7650, 1198 ins, 328 del, 3546 sub ] exp/tri3b/decode_devtest/wer_11_1.0
+
+%WER 65.88 [ 5040 / 7650, 985 ins, 450 del, 3605 sub ] exp/tri2b/decode_devtest/wer_13_1.0
+
+%WER 65.63 [ 4921 / 7498, 551 ins, 741 del, 3629 sub ] exp/chain/tdnn1b_sp/decode_native/wer_7_1.0
+
+%WER 65.05 [ 10872 / 16713, 1725 ins, 959 del, 8188 sub ] exp/tri1/decode_test/wer_13_1.0
+
+%WER 64.90 [ 4866 / 7498, 543 ins, 739 del, 3584 sub ] exp/chain/tdnn1b_sp_online/decode_native/wer_7_1.0
+
+%WER 64.45 [ 10772 / 16713, 2261 ins, 698 del, 7813 sub ] exp/tri3b/decode_test/wer_16_1.0
+
+%WER 64.33 [ 10751 / 16713, 1955 ins, 845 del, 7951 sub ] exp/tri2b/decode_test/wer_14_1.0
+
+%WER 62.54 [ 4689 / 7498, 781 ins, 379 del, 3529 sub ] exp/tri1/decode_native/wer_13_1.0
+
+%WER 61.66 [ 4623 / 7498, 1038 ins, 267 del, 3318 sub ] exp/tri3b/decode_native/wer_15_1.0
+
+%WER 61.28 [ 4595 / 7498, 899 ins, 309 del, 3387 sub ] exp/tri2b/decode_native/wer_13_1.0
+
+%WER 54.00 [ 4131 / 7650, 731 ins, 389 del, 3011 sub ] exp/chain/tdnn1b_sp_online/decode_devtest/wer_7_1.0
+
+%WER 53.62 [ 4102 / 7650, 720 ins, 383 del, 2999 sub ] exp/chain/tdnn1b_sp/decode_devtest/wer_7_1.0
+
+1c:
+%WER 71.45 [ 6584 / 9215, 645 ins, 1079 del, 4860 sub ] exp/chain/tdnn1c_sp/decode_nonnative/wer_7_1.0
+
+%WER 62.26 [ 4668 / 7498, 515 ins, 667 del, 3486 sub ] exp/chain/tdnn1c_sp/decode_native/wer_7_1.0
+
+%WER 54.03 [ 4133 / 7650, 756 ins, 386 del, 2991 sub ] exp/chain/tdnn1c_sp/decode_devtest/wer_7_1.0
+
+| fold | 1a | 1b | 1c |
+| devtest | | 53.62 | 54.03 | 
+| native | 64.76 | 65.63 | 62.26 | 
+| nonnative | 73.85 | 76.91 | 71.45 |
+| test | 69.84 | 71.87 | 67.32 |
+
+The change made in experiment 1b definitly made the chain models worse.
+
+1c improved WER scores with the  exception of devtest.
+
+** Goals for After leave:
+- TODO GlobalPhone: Make a pass through each language to check if text encoding (including casing) matches between text to train acoustic models, text to train lm and text in dictionary.
+- TODO Heroico: Address Dan's comments ( try to get l2 regularization working)
+- TODO Heroico: Modify layers (from 6 to 8)
+
+- TODO Write paper.
+- TODO African French: Work with Steve, Luis and Mike Li to get minimal Ultra example working.
+
 * DAR <2017-11-15 Wed>
 ** Goals for Wednesday set Tuesday:
 - DONE Heroico: Run ende to end and adress Dan's comments
@@ -65,7 +219,7 @@ I propose we make a "canned" demo that only works well on phrases from the CA16 
 - Current WER scores:
 | language | mono | tri1 | tri2b | tri3b| chain | chain online |
 | Arabic dev | 77.57 | 71.49       | 70.80 | 70.73 | 64.57 | 64.95 |
-| Bulgarian dev | 42.62      | 28.13      | 26.57      | 24.78      |
+| Bulgarian dev | 42.62      | 28.13      | 26.57      | 24.78      | 19.47 |
 | Croatian eval | 66.30 | 56.89 | 56.55 | 53.65 |
 Croatian dev | 36.53 | 30.60 | 29.19 | 28.53 |
 | Czech dev | 57.44      | 53.88      | 50.83      | 43.72 |
