@@ -1,3 +1,53 @@
+* <2017-11-27 Mon>
+** Goals for After leave:
+- TODO GlobalPhone: Make a pass through each language to check if text encoding (including casing) matches between text to train acoustic models, text to train lm and text in dictionary.
+
+Bulgarian: I deleted control m characters. 
+Croatian: remove cr. LM is not clear . Possible OOV problem. Dictionary has words with upper case first letter.
+Czech: remove cr and down case
+Korean: The LM is for hangul characters in UTF8.
+Polish: Delete control MM and down case
+Russian: Remove cr
+Swedish: The 3 components are in different encodings!
+The GP dictionary is originally in ASCII.
+Thai: Weird line termiators.
+
+
+
+| language | am train text  | dict | lm |
+| Arabic | ascii | ascii | ascii |
+| Bulgarian | UTF8 | UTF8 | UTF8 |
+| Croatian | UTF8 | UTF8 | ? |
+| Czech | UTF8 | UTF8 | UTF8 |
+| French | UTF8 | UTF8 | UTF8 |
+| German | UTF8 | UTF8 | UTF8 |
+| Hausa | ASCII | ASCII | ASCII |
+| Japanese | UTF8 | UTF8 | UTF8 |
+| Korean | ASCII | ASCII | ASCII |
+| Mandarin | ASCII | ASCII | ASCII |
+| Polish | UTF8 | UTF8 | UTF8 |
+| Portuguese | UTF8 | UTF8 | UTF8 | 
+| Russian | UTF8 | UTF8 | UTF8 |
+| Spanish | UTF8 | UTF8 | UTF8 |
+| Swedish | ASCII | ASCII | UTF8 (ASCII with the exception of  —) |
+| Tamil | UTF8 | UTF8 | UTF8 |
+| Thai | UTF8 lf nel terminators | UTF8 | UTF8 |
+| Turkish | UTF8 | UTF8 |
+| Vietnamese | UTF8 | UTF8 (fortran) | UTF8 |
+
+- TODO Heroico: Address Dan's comments ( try to get l2 regularization working)
+- TODO Heroico: Modify layers (from 6 to 8)
+I am starting from the very beginning.
+- TODO Write paper.
+- TODO African French: Work with Steve, Luis and Mike Li to get minimal Ultra example working.
+
+
+** Goals for Tuesday:
+- TODO Write something!
+- TODO multilang: Get minimal example running.
+- TODO Multilang: Train all languages up through tri3b_ali. 
+- TODO Heroico: Tuning experiments.
+
 * DAR <2017-11-16 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO African French: Miniturize. Build up the lm from a minimal working example.
@@ -63,7 +113,7 @@ Just in case here are the WER scores before I start this:
 | Croatian dev | 36.53 | 30.60 | 29.19 | 28.53 |
 | Czech dev | 57.44      | 53.88      | 50.83      | 43.72 |
 | French dev | 95.06 | 93.35 | 93.51 | 93.41 |
-| German dev | 49.52 | 47.35 | 45.08 | 38.04 |
+| German dev | 49.25      | 47.12 | 44.62 | 38.04 |
 | Hausa dev | 36.48 | 36.84 | 32.30 | 24.64 |
 | Japanese eval | 15.18 | 9.01 | 8.73 | 7.77 |
 | Japanese dev | 10.40 | 6.54 | 6.25 | 6.15 |
