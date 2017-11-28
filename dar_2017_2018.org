@@ -1,3 +1,33 @@
+* DAR <2017-11-28 Tue>
+** Goals for Tuesday set Monday:
+- TODO Write something!
+I am writing about the Heroico corpus.
+I will probably make this into another TN like the one we wrote for the Yaounde Speech Corpus. 
+
+- TODO multilang: Get minimal example running.
+- TODO Multilang: Train all languages up through tri3b_ali. 
+- TODO Heroico: Tuning experiments.
+I finished the 1a run:
+1b is running. It uses a smaller (2000 instead of 3500) number of leaves.
+
+| fold | 1a |
+| devtest | 54.46 |
+| native |  62.14 |
+| nonnative | 70.58 |
+| test | 66.85 |
+
+SofTunisia: Zac called me. He reminded me that I owed him for stage 17 done with the new dictionary.
+I had run it a couple of weeks ago.
+I found some problems with the run. 
+I fixed the problems and I reran the old stage with the new dictionary.
+Hazrat emailed the results to Zac.
+
+** Goals for Wednesday:
+- TODO Write paper.
+- TODO Heroico: Next experiment (1c)
+- TODO GP: Train tri3b models for all languages.
+- TODO Multilang: Get minimal example running.
+
 * <2017-11-27 Mon>
 ** Goals for After leave:
 - TODO GlobalPhone: Make a pass through each language to check if text encoding (including casing) matches between text to train acoustic models, text to train lm and text in dictionary.
