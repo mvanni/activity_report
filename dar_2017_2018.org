@@ -1,3 +1,32 @@
+* DAR  <2017-11-29 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Write paper.
+I wrote some more on the Heroico project.
+- DONE Heroico: Next experiment (1c)
+1b lowered the number of leaves from 3500 to 200 and 3 out of 4 WERS went up.
+1c will set number of leaves to 2500.
+# | fold | 1a | 1b | 1c |
+| devtest | 54.46 | 54.20 | 54.16 |
+| native |  62.14 | 62.32 | 61.70 |
+| nonnative | 70.58 | 71.20 | 71.68 |
+| test | 66.85 | 67.21 | 67.25 |
+
+Inconclusive.
+I am resetting the number of leaves to 3500 and removing the proportional shrink in experiment 1d.
+- TODO GP: Train tri3b models for all languages.
+I started Korean today.
+- TODO Multilang: Get minimal example running.
+I am going to wait until I have the tri3b models for most of the languages.
+I am missing Korean and Portuguese and probably several more.
+Korean should be done soon.
+I'll finish Portuguese tomorrow.
+
+** Goals for Thursday:
+- TODO SofTunisia: Retrain with Zac's new dictionary.
+- TODO Heroico: 1d remove proportional shrinking.
+- TODO Multilang: Train tri3b models for Portuguese
+- TODO Write paper.
+
 * DAR <2017-11-28 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Write something!
