@@ -1,3 +1,90 @@
+* My WAR <2017-12-01 Fri>
+** Activity in past week:
+***  Multilang Project:
+I am working with 19 languages from the GlobalPhone speech corpus. 
+This number will probably get cut down to 17 or 18 since some of the languages lack all the required resources.
+The short term goal is to train Speaker Adapted Training (SAT) acoustic models for each of these languages . 
+The SAT models are only used to get good alignments between acoustic feature vectors and labels that later are used in training the chain models.
+I now have SAT models for all the languages except Russian and Thai.
+I probably will not use Thai, at least from GP.
+Russian should be ready soon.
+I had to work a lot on data preparation.
+This past week I especially worked a lot on making the text encoding match for the dictionary, lm and transcriptions.
+Notice in the table below that some WER scores a pretty bad.
+Some of these scores I know I can improve on, like French.
+
+- Current WER scores for GP:
+| language | mono | tri1 | tri2b | tri3b| chain | chain online |
+| Arabic dev | 77.57 | 71.49       | 70.80 | 70.73 | 64.57 | 64.95 |
+| Bulgarian dev | 42.62      | 28.13      | 26.57      | 24.78      | 19.47 | 19.46 |
+| Croatian dev | 36.53 | 30.60 | 29.19 | 28.53 |
+| Czech dev | 57.44      | 53.88      | 50.83      | 43.72 |
+| French dev | 95.06 | 93.35 | 93.51 | 93.41 |
+| German dev | 49.25      | 47.12 | 44.62 | 38.04 |
+| Hausa dev | 36.48 | 36.84 | 32.30 | 24.64 |
+| Japanese dev | 10.40 | 6.54 | 6.25 | 6.15 |
+| Korean dev | 51.61 | 30.79 | 29.71 | 25.64 |
+| Mandarin dev | 36.63 | 23.51 | 22.54 | 19.07 |
+| Polish dev | 65.87 | 57.63 | 53.05 | 48.23 |
+| Portuguese dev | 43.56 | 27.45 | 26.24 | 24.11 | | |
+| Russian dev |       | | | |
+| Spanish dev | 60.12 | 49.38 | 46.04 | 42.97 |
+| Swedish dev | 80.77 | 66.17 | 64.39 | 62.07 |
+| Tamil eval | 100.00 | | | |
+| Thai dev | 101.40 | | | 
+| Turkish dev | 79.76 | 75.65 | 74.97 | 75.25 |
+| Vietnamese dev | 50.71 | 40.63 | 38.94 | 37.49 |
+
+*** Heroico kaldi recipe:
+I am tuning the heroico chain models. 
+I got good improvements when I used the 8-layer l2 regularized network definition  starting in experiment 1d.
+
+- Heroico Chain model Word Error Rates on folds
+| fold | 1a | 1b | 1c | 1d | 1e |
+| devtest | 54.46 | 54.20 | 54.16 | 52.78 | 52.21 |
+| native |  62.14 | 62.32 | 61.70 | 55.32 | 53.43 |
+| nonnative | 70.58 | 71.20 | 71.68 | 64.35 | 61.03 |
+| test | 66.85 | 67.21 | 67.25 | 60.28 | 57.70 |
+
+- Heroico WERs for all models:
+It's good to see that the chain models are beating the gmm hmm models.
+The training set was  collected   at the Heroico in Mexico City.
+The test set was collected a USMA.
+The devset are recordings made at Heroico that were prompted by sentences that were in both the USMA and Heroico sets of prompt.
+By separating out the devtest set the evaluation is text and speaker independent.
+
+| model | nonnative |  test | native | devtest |
+| mono  |     71.50 | 69.74 |  67.70 |   72.52 |
+| tri1  |     67.28 | 65.13 |  62.36 |   66.39 |
+| tri2  |     67.49 | 64.82 |  61.62 |   66.58 |
+| tri3  |     66.81 | 64.13 |  60.87 |   66.31 |
+| chain |     61.03 | 57.70 |  53.43 |   52.21 |
+
+
+*** Softunisia:
+Zac made some improvements to the Arabic dictionary and they resulted in an improvement in WER.
+I retrained the system with a new batch of recordings transcribed by Zac.
+
+***  Writing:
+I am writing a report (tn?) on the Heroico corpus.
+I am also working with Steve on an abstract for AmTA.
+
+** WAR:
+Mr. Morgan finished building Automatic SpeechRecognition (ASR models for 17 of the 19 GlobalPhone (GP) languages this week. 
+Thiese models provide good alignments between acoustic feature vectores and model labels and these alignments will later be used to build a chain model ASR system for a target low-resource language. 
+A good neural network ASR system requires at least several hundred  hours of training data. 
+None of the GP languages have more than 30 hours of data, but when combined they add upt to over 200 hours of speech. 
+The goal of Mr Morgan's project is to build an ASR system for a very low-resource language (5 hours of speech) by combining the data from all of the GP languages. 
+This is done with a form of machine learning called  multi-task learning. 
+
+** Goals for Next Week:
+- TODO Multilang: Train SAT models for all gp languages.
+- TODO Multilang: USE alignments from SAT models to start multilang building process.
+- TODO Heroico: Contact Dan Povey and Yenda about next step (am I finished? Is the recipe ready?)
+- TODO Write TN.
+- TODO S2S: Minimal example using English mini_librispeech and Heroico Spanish.
+- TODO Softunisia: Retrain and get transcripts to Zac.
+
 * My WAR <2017-11-09 Thu>
 ** Goals set Last Week:
 - DONE Multilang: Expand tabs to white space in all dictionaries.
