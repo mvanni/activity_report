@@ -1,3 +1,70 @@
+* DAR <2017-11-30 Thu>
+** Goals for Thursday set Wednesday:
+- DONE SofTunisia: Retrain with Zac's new dictionary.
+The tri3b decoding finished.
+I have to get it to Zac.
+I tried to send him the file in an email.
+
+- DONE Heroico: 1d remove proportional shrinking.
+I  removed the proportional shrinking option but I also added the l2 regularization on the 8 layer setup.
+
+%WER 64.35 [ 5930 / 9215, 726 ins, 734 del, 4470 sub ] exp/chain/tdnn1d_sp/decode_nonnative/wer_7_1.0
+%WER 60.28 [ 10074 / 16713, 1324 ins, 1175 del, 7575 sub ] exp/chain/tdnn1d_sp/decode_test/wer_7_1.0
+%WER 55.32 [ 4148 / 7498, 600 ins, 435 del, 3113 sub ] exp/chain/tdnn1d_sp/decode_native/wer_7_1.0
+%WER 52.78 [ 4038 / 7650, 708 ins, 401 del, 2929 sub ] exp/chain/tdnn1d_sp/decode_devtest/wer_8_1.0
+
+# | fold | 1a | 1b | 1c | 1d | 1e |
+#| devtest | 54.46 | 54.20 | 54.16 | 52.78 |
+#| native |  62.14 | 62.32 | 61.70 | 55.32 |
+#| nonnative | 70.58 | 71.20 | 71.68 | 64.35 |
+#| test | 66.85 | 67.21 | 67.25 | 60.28 |
+
+The change made a big difference.
+There are now 8 layers that use l2 regularization.
+
+- DONE Multilang: Train tri3b models for Portuguese
+%WER 43.56 [ 2752 / 6318, 185 ins, 672 del, 1895 sub ] exp/mono/decode_dev/wer_11_0.0
+%WER 28.00 [ 1769 / 6318, 265 ins, 279 del, 1225 sub ] exp/tri3b/decode_dev.si/wer_17_0.0
+%WER 27.45 [ 1734 / 6318, 274 ins, 240 del, 1220 sub ] exp/tri1/decode_dev/wer_16_0.0
+%WER 26.24 [ 1658 / 6318, 244 ins, 252 del, 1162 sub ] exp/tri2b/decode_dev/wer_17_0.0
+%WER 24.11 [ 1523 / 6318, 249 ins, 225 del, 1049 sub ] exp/tri3b/decode_dev/wer_17_0.0
+
+
+- TODO Write paper.
+I wrote a little bit more on the tn and a very rough draft of the AMTA abstract.
+
+- Current WER scores for GP:
+| language | mono | tri1 | tri2b | tri3b| chain | chain online |
+| Arabic dev | 77.57 | 71.49       | 70.80 | 70.73 | 64.57 | 64.95 |
+| Bulgarian dev | 42.62      | 28.13      | 26.57      | 24.78      | 19.47 | 19.46 |
+| Croatian eval | 66.30 | 56.89 | 56.55 | 53.65 |
+| Croatian dev | 36.53 | 30.60 | 29.19 | 28.53 |
+| Czech dev | 57.44      | 53.88      | 50.83      | 43.72 |
+| French dev | 95.06 | 93.35 | 93.51 | 93.41 |
+| German dev | 49.25      | 47.12 | 44.62 | 38.04 |
+| Hausa dev | 36.48 | 36.84 | 32.30 | 24.64 |
+| Japanese eval | 15.18 | 9.01 | 8.73 | 7.77 |
+| Japanese dev | 10.40 | 6.54 | 6.25 | 6.15 |
+| Korean dev | 51.61 | 30.79 | 29.71 | 25.64 |
+| Mandarin dev | 36.63 | 23.51 | 22.54 | 19.07 |
+| Polish dev | 65.87 | 57.63 | 53.05 | 48.23 |
+| Portuguese dev | 43.56 | 27.45 | 26.24 | 24.11 | | |
+| Russian dev | 97.56 | | | |
+| Spanish dev | 60.12 | 49.38 | 46.04 | 42.97 |
+| Swedish dev | 80.77 | 66.17 | 64.39 | 62.07 |
+| Tamil eval | 100.00 | | | |
+| Thai dev | 101.40 | | | 
+| Turkish dev | 79.76 | 75.65 | 74.97 | 75.25 |
+| Vietnamese dev | 50.71 | 40.63 | 38.94 | 37.49 |
+
+
+** oals for Friday:
+- TODO Heroico: 1e experiment with 7 epochs instead of 10 to avoid overfitting.
+- TODO Heroico: Write tn .
+- TODO AMTA2018: Work on Minimal Example (English mini_librispeechSpanish GP/Heroico?)
+- TODO Multilang: Train up to Russian tri3b_ali.
+
+
 * DAR  <2017-11-29 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Write paper.
