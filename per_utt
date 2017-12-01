@@ -1,0 +1,1692 @@
+CTELLTWO_10_u_227 ref   ما   هو   إلا    بستان
+CTELLTWO_10_u_227 hyp  ليس  لدي  مشاكل  بالكبد
+CTELLTWO_10_u_227 op    S    S     S       S  
+CTELLTWO_10_u_227 #csid 0 4 0 0
+CTELLTWO_10_u_228 ref   من  حسن  إسلام  المرء  تَرْكُهُ   ما    لا  يعنيه
+CTELLTWO_10_u_228 hyp  ***  ***   ***    نعم      سبق    تونس  تخف  القدم
+CTELLTWO_10_u_228 op    D    D     D      S        S       S    S     S  
+CTELLTWO_10_u_228 #csid 0 5 0 3
+CTELLTWO_10_u_229 ref  ***   ***  ***   ***   معاتبة  الإخوان  خير    من   فقدهم
+CTELLTWO_10_u_229 hyp   لم  يحدث  وأن  فقدت  الإحساس     في    أحد  اعضاء   جسمي
+CTELLTWO_10_u_229 op    I     I    I     I      S        S      S     S      S  
+CTELLTWO_10_u_229 #csid 0 5 4 0
+CTELLTWO_10_u_230 ref  ***   ***  ***   من   تواضع  لله  رفعه
+CTELLTWO_10_u_230 hyp   لم  يحدث  وأن  اصبت   بشلل   من   قبل
+CTELLTWO_10_u_230 op    I     I    I     S     S     S     S 
+CTELLTWO_10_u_230 #csid 0 4 3 0
+CTELLTWO_10_u_231 ref  ***   ***  من   حسن   خُلُقُه  استراح  وأراح
+CTELLTWO_10_u_231 hyp   لم  يحدث  لي  مشاكل     في     حاسة    الشم
+CTELLTWO_10_u_231 op    I     I    S    S       S        S      S  
+CTELLTWO_10_u_231 #csid 0 5 2 0
+CTELLTWO_10_u_232 ref  من   حسن  خُلقُه   وجب     حقُّه 
+CTELLTWO_10_u_232 hyp  لم  تحدث    لي    مشاكل  المخاطبة
+CTELLTWO_10_u_232 op    S    S      S      S        S   
+CTELLTWO_10_u_232 #csid 0 5 0 0
+CTELLTWO_10_u_233 ref  ***   ***   من   شابه  أباه   فما  ظلم
+CTELLTWO_10_u_233 hyp   لا  أعاني  من  مشاكل   في   قدرة  بصر
+CTELLTWO_10_u_233 op    I     I     C    S      S     S    S 
+CTELLTWO_10_u_233 #csid 1 4 2 0
+CTELLTWO_10_u_234 ref  من  شَبَّ  على   شيء   شاب    عليه  
+CTELLTWO_10_u_234 hyp  لم   تحدث   لي  مشاكل   في  الابتلاع
+CTELLTWO_10_u_234 op    S    S     S     S     S       S   
+CTELLTWO_10_u_234 #csid 0 6 0 0
+CTELLTWO_10_u_235 ref  ***    من   عرف   نفسه  عرف    ربه  
+CTELLTWO_10_u_235 hyp   لا  أعاني   من  مشكلة   في  الاتزان
+CTELLTWO_10_u_235 op    I     S     S     S     S      S   
+CTELLTWO_10_u_235 #csid 0 5 1 0
+CTELLTWO_10_u_236 ref   من   لم  يقنع  باليسير  لم  يكتف   بالكثير
+CTELLTWO_10_u_236 hyp  ***  ***   ***    ***    لا  اصاب  بالهلوسة
+CTELLTWO_10_u_236 op    D    D     D      D      S    S       S   
+CTELLTWO_10_u_236 #csid 0 3 0 4
+CTELLTWO_10_u_237 ref  ***   نعم  الثوب  العافية     إذا      انسدل  على  الكفاف
+CTELLTWO_10_u_237 hyp   لم  يحدث   وأن     اصبت   بالانهيار  العصبي   من    قبل 
+CTELLTWO_10_u_237 op    I     S     S       S         S         S     S      S  
+CTELLTWO_10_u_237 #csid 0 7 1 0
+CTELLTWO_10_u_238 ref  نعم   العون   على   المروءة  المال
+CTELLTWO_10_u_238 hyp  ***  أحيانا  أعاني     من    مشاكل
+CTELLTWO_10_u_238 op    D      S      S       S       S  
+CTELLTWO_10_u_238 #csid 0 4 0 1
+CTELLTWO_10_u_239 ref  ***   نعم   المؤَدِّبُ    الدهر 
+CTELLTWO_10_u_239 hyp   لا  أعاني      من      الاكتئاب
+CTELLTWO_10_u_239 op    I     S         S          S   
+CTELLTWO_10_u_239 #csid 0 3 1 0
+CTELLTWO_10_u_240 ref  نعم  حاجب  الشهوات   غض   البصر
+CTELLTWO_10_u_240 hyp  ***   ليس    لدي    دوار  ودوخة
+CTELLTWO_10_u_240 op    D     S      S       S     S  
+CTELLTWO_10_u_240 #csid 0 4 0 1
+CTELLTWO_10_u_241 ref  هذا  الشبل   من   ذاك  الأسد
+CTELLTWO_10_u_241 hyp  ***   ***   لست  مصاب   وجه 
+CTELLTWO_10_u_241 op    D     D     S     S     S  
+CTELLTWO_10_u_241 #csid 0 3 0 2
+CTELLTWO_10_u_242 ref   هي  الأخلاق  تنبت  كالنبات   إذا    سقيت    بماء   المكرمات
+CTELLTWO_10_u_242 hyp  ***    ***     نعم    أكلت   خلال  الساعات  الثلاث   الماضية
+CTELLTWO_10_u_242 op    D      D       S      S       S      S        S        S   
+CTELLTWO_10_u_242 #csid 0 6 0 2
+CTELLTWO_10_u_243 ref  ***   ***  ***  هيهات   تكتم  في    ***   الظلام  مشاعل
+CTELLTWO_10_u_243 hyp   لم  يحدث  وأن   أصبت  بكسور  في  العظام    من     قبل 
+CTELLTWO_10_u_243 op    I     I    I     S      S     C     I       S      S  
+CTELLTWO_10_u_243 #csid 1 4 4 0
+CTELLTWO_10_u_244 ref  وأحسن  منك  لم   تر    قط   عيني   وأجمل  منك   لم    تلد  النساء
+CTELLTWO_10_u_244 hyp   ***   ***  لم  أصب  بكسور   في   العظام  حتى  تكون  هناك   مناطق
+CTELLTWO_10_u_244 op     D     D    C   S     S      S      S     S     S     S      S  
+CTELLTWO_10_u_244 #csid 1 8 0 2
+CTELLTWO_10_u_245 ref  وإنما  الأمم  الأخلاق   ما  بقيت  فإن   هم  ذهبت  أخلاقهم  ذهبوا
+CTELLTWO_10_u_245 hyp   ***    ***     ***    ***   ***  ***  ***  ليست    لدي    ديدان
+CTELLTWO_10_u_245 op     D      D       D      D     D    D    D     S      S       S  
+CTELLTWO_10_u_245 #csid 0 3 0 7
+CTELLTWO_10_u_246 ref  وإني  وإن  كنت  الأخير  زمانه  لآت  بما   لم  تستطعه   الأوائل 
+CTELLTWO_10_u_246 hyp   ***  ***  ***    ***    ***   ***  ***  لست   مصاب   بالملاريا
+CTELLTWO_10_u_246 op     D    D    D      D      D     D    D    S      S        S    
+CTELLTWO_10_u_246 #csid 0 3 0 7
+CTELLTWO_10_u_247 ref  وأي  الناس  ليس   به  عيوب
+CTELLTWO_10_u_247 hyp  ***   ***   ليس  لدي   درن
+CTELLTWO_10_u_247 op    D     D     C    S     S 
+CTELLTWO_10_u_247 #csid 1 2 0 2
+CTELLTWO_10_u_248 ref  وتأتي  على  قدر  الكرام  المكارم
+CTELLTWO_10_u_248 hyp   ***   ***  ***    ***     نعم  
+CTELLTWO_10_u_248 op     D     D    D      D       S   
+CTELLTWO_10_u_248 #csid 0 1 0 4
+CTELLTWO_10_u_249 ref  وتعظم   في  عين  الصغير  صغارها  وتصغر  في   عين   العظيم   العظائم
+CTELLTWO_10_u_249 hyp   ***   ***  ***    ***     لا     أعرف  ما  تقصد  بالمصطلح    ايدز 
+CTELLTWO_10_u_249 op     D     D    D      D       S      S     S    S       S        S   
+CTELLTWO_10_u_249 #csid 0 6 0 4
+CTELLTWO_10_u_250 ref  وَلَو  كُنتَ  فَظًّا  غَلِيظَ  القَلبِ  لاَنفَضُّواْ    مِن     حَولِكَ
+CTELLTWO_10_u_250 hyp   ***    ***     لست     مصاب    بفيروس       فقد      المناعة  المكتسبة
+CTELLTWO_10_u_250 op     D      D       S       S        S           S          S         S   
+CTELLTWO_10_u_250 #csid 0 6 0 2
+CTELLTWO_10_u_251 ref  ومهما  يكن  عند  امرئ   من  خَليقَةٍ  وإن  خالها  تَخْفَى  على  الناس  تُعْلَمِ
+CTELLTWO_10_u_251 hyp   ***   ***  ***   ***  ***     ***    ***   ***     ***    لست   مصاب   بالايدز
+CTELLTWO_10_u_251 op     D     D    D     D    D       D      D     D       D      S     S        S   
+CTELLTWO_10_u_251 #csid 0 3 0 9
+CTELLTWO_11_u_252 ref   يد  الحر  ميزان
+CTELLTWO_11_u_252 hyp  ***   ***    لا 
+CTELLTWO_11_u_252 op    D     D     S  
+CTELLTWO_11_u_252 #csid 0 1 0 2
+CTELLTWO_11_u_253 ref  يَغْرِفُ   من   بحر
+CTELLTWO_11_u_253 hyp     ***    لست  حامل
+CTELLTWO_11_u_253 op       D      S     S 
+CTELLTWO_11_u_253 #csid 0 2 0 1
+CTELLTWO_11_u_254 ref  ***  ***   ***  لكل  جديد  لذة
+CTELLTWO_11_u_254 hyp   لا   لم  يحدث   لي   أي   مرة
+CTELLTWO_11_u_254 op    I    I     I    S     S    S 
+CTELLTWO_11_u_254 #csid 0 3 3 0
+CTELLTWO_11_u_255 ref  الثروة  تأتي  كالسلحفاة  وتذهب  كالغزال
+CTELLTWO_11_u_255 hyp    ***    ***      لا      أشعر   بالألم
+CTELLTWO_11_u_255 op      D      D       S        S       S   
+CTELLTWO_11_u_255 #csid 0 3 0 2
+CTELLTWO_11_u_256 ref  ***  الدراهم   مراهم
+CTELLTWO_11_u_256 hyp   لا    أشعر   بالألم
+CTELLTWO_11_u_256 op    I      S        S  
+CTELLTWO_11_u_256 #csid 0 2 1 0
+CTELLTWO_11_u_257 ref  إن   غلا  اللحم  فالصبر  رخيص
+CTELLTWO_11_u_257 hyp  لا  أشعر   بألم    في    مكان
+CTELLTWO_11_u_257 op    S    S     S       S      S 
+CTELLTWO_11_u_257 #csid 0 5 0 0
+CTELLTWO_11_u_258 ref  ***    ***   ***   ***  إذا  تمنيت  فاستكثر
+CTELLTWO_11_u_258 hyp   لا  أستطيع   أن  أشير  إلى   مكان   الآلام
+CTELLTWO_11_u_258 op    I      I     I     I    S     S       S   
+CTELLTWO_11_u_258 #csid 0 3 4 0
+CTELLTWO_11_u_259 ref  ***  المال  يجلب   المال 
+CTELLTWO_11_u_259 hyp  ليس   هناك  مكان  الإصابة
+CTELLTWO_11_u_259 op    I     S      S      S   
+CTELLTWO_11_u_259 #csid 0 3 1 0
+CTELLTWO_11_u_260 ref  أغن   من  وليته    عن   السرقة
+CTELLTWO_11_u_260 hyp  ***  ***   ليست  اصابة   سكين 
+CTELLTWO_11_u_260 op    D    D     S      S       S  
+CTELLTWO_11_u_260 #csid 0 3 0 2
+CTELLTWO_11_u_261 ref  الأماني  رءوس   مال   المفاليس
+CTELLTWO_11_u_261 hyp    ***    ليست  إصابة    حجارة 
+CTELLTWO_11_u_261 op      D       S     S        S   
+CTELLTWO_11_u_261 #csid 0 3 0 1
+CTELLTWO_11_u_262 ref  التدبير  يثمر   اليسير  والتبذير   يبدد   الكثير
+CTELLTWO_11_u_262 hyp    ***    ليست  الاصابة     من     اصطدام   سيارة
+CTELLTWO_11_u_262 op      D       S      S         S        S       S  
+CTELLTWO_11_u_262 #csid 0 5 0 1
+CTELLTWO_11_u_263 ref  ***   ***    ***   ***  الرجال  بالأموال
+CTELLTWO_11_u_263 hyp   لا  أشعر  بالألم   في    هذا    المفصل 
+CTELLTWO_11_u_263 op    I     I      I     I      S        S   
+CTELLTWO_11_u_263 #csid 0 2 4 0
+CTELLTWO_11_u_264 ref  ***   ***   ***   ***  الشرط    نور 
+CTELLTWO_11_u_264 hyp  هذا  الشخص   لي  تسبب    في   إصابتي
+CTELLTWO_11_u_264 op    I     I     I     I     S       S  
+CTELLTWO_11_u_264 #csid 0 2 4 0
+CTELLTWO_11_u_265 ref  ***   ***  ***  الضامن  غارم
+CTELLTWO_11_u_265 hyp   لا  أعرف   من    فعل    هذا
+CTELLTWO_11_u_265 op    I     I    I      S      S 
+CTELLTWO_11_u_265 #csid 0 2 3 0
+CTELLTWO_11_u_266 ref  الغالي  ثمنه   فيه 
+CTELLTWO_11_u_266 hyp    لا    أفقد  الوعي
+CTELLTWO_11_u_266 op      S      S     S  
+CTELLTWO_11_u_266 #csid 0 3 0 0
+CTELLTWO_11_u_267 ref  ***   ***     ***     ***  الغنى  يورث  البطر
+CTELLTWO_11_u_267 hyp   لم  أتنفس  وأستنشق  هواء   ساخن   أو    دخان
+CTELLTWO_11_u_267 op    I     I       I       I     S      S     S  
+CTELLTWO_11_u_267 #csid 0 3 4 0
+CTELLTWO_11_u_268 ref  القرش  الأبيض   ينفع   في  اليوم  الأسود
+CTELLTWO_11_u_268 hyp    لم    أشعر   بالألم  في   هذا   المفصل
+CTELLTWO_11_u_268 op     S       S       S     C    S       S  
+CTELLTWO_11_u_268 #csid 1 5 0 0
+CTELLTWO_11_u_269 ref  ***   ***    ***   ***  القلة    ذلة 
+CTELLTWO_11_u_269 hyp   لم  أشعر  بالألم   في   هذه   العضلة
+CTELLTWO_11_u_269 op    I     I      I     I     S       S  
+CTELLTWO_11_u_269 #csid 0 2 4 0
+CTELLTWO_11_u_270 ref  المال  ينفد  حله  وحرامه  يوماً  ويبقى    بعد   ذلك  إثمه
+CTELLTWO_11_u_270 hyp   ***    ***  ***    ***     لا    أشعر  بالألم   في  عضلة
+CTELLTWO_11_u_270 op     D      D    D      D      S      S       S     S     S 
+CTELLTWO_11_u_270 #csid 0 5 0 4
+CTELLTWO_11_u_271 ref   إن  الغنى  والعز  في  القناعة  والذل  في  الحرص  وفي  الوضاعة
+CTELLTWO_11_u_271 hyp  ***   ***    ***   لا    أشعر    بشد   في   ***   هذه   العضلة
+CTELLTWO_11_u_271 op    D     D      D     S     S       S     C    D     S      S   
+CTELLTWO_11_u_271 #csid 1 5 0 4
+CTELLTWO_11_u_272 ref  خير   مالك     ما   نفعك
+CTELLTWO_11_u_272 hyp  ***  أستطيع  تحريك  ساقي
+CTELLTWO_11_u_272 op    D      S      S      S 
+CTELLTWO_11_u_272 #csid 0 3 0 1
+CTELLTWO_11_u_273 ref    خير   الأشياء  جديدها
+CTELLTWO_11_u_273 hyp  أستطيع   تحريك     يدي 
+CTELLTWO_11_u_273 op      S       S        S  
+CTELLTWO_11_u_273 #csid 0 3 0 0
+CTELLTWO_11_u_274 ref  رأيت  الناس   قد  مالوا  إلى    من     عنده   مال
+CTELLTWO_11_u_274 hyp   ***   ***   ***   ***   ***  أستطيع  تحريك  رأسي
+CTELLTWO_11_u_274 op     D     D     D     D     D      S      S      S 
+CTELLTWO_11_u_274 #csid 0 3 0 5
+CTELLTWO_11_u_275 ref  رِزْقُه   في   رجليه
+CTELLTWO_11_u_275 hyp    ***    أراك  بوضوح
+CTELLTWO_11_u_275 op      D       S     S  
+CTELLTWO_11_u_275 #csid 0 2 0 1
+CTELLTWO_12_u_1 ref  لا  أعيش  مع  عائلتي
+CTELLTWO_12_u_1 hyp  لا  أعيش  مع  عائلتي
+CTELLTWO_12_u_1 op    C    C    C     C  
+CTELLTWO_12_u_1 #csid 4 0 0 0
+CTELLTWO_12_u_10 ref  ديني  الإسلام
+CTELLTWO_12_u_10 hyp  ديني  الإسلام
+CTELLTWO_12_u_10 op     C      C   
+CTELLTWO_12_u_10 #csid 2 0 0 0
+CTELLTWO_12_u_11 ref  حالتي  الاجتماعية  متوسطة
+CTELLTWO_12_u_11 hyp  حالتي  الاجتماعية  متوسطة
+CTELLTWO_12_u_11 op     C         C         C  
+CTELLTWO_12_u_11 #csid 3 0 0 0
+CTELLTWO_12_u_12 ref  ما  زلت  عازبا
+CTELLTWO_12_u_12 hyp  ما  زلت  عالية
+CTELLTWO_12_u_12 op    C   C     S  
+CTELLTWO_12_u_12 #csid 2 1 0 0
+CTELLTWO_12_u_13 ref  ليست  لي  أبناء
+CTELLTWO_12_u_13 hyp  ليست  لي  أبناء
+CTELLTWO_12_u_13 op     C    C    C  
+CTELLTWO_12_u_13 #csid 3 0 0 0
+CTELLTWO_12_u_14 ref  نعم  تشعر  عائلتي   بأمان 
+CTELLTWO_12_u_14 hyp  نعم  تشعر  عائلتي  بالأمان
+CTELLTWO_12_u_14 op    C     C      C       S   
+CTELLTWO_12_u_14 #csid 3 1 0 0
+CTELLTWO_12_u_15 ref  نعم  أتحدث  بعض  اللغات
+CTELLTWO_12_u_15 hyp  نعم  أتحدث  بعد   بواد 
+CTELLTWO_12_u_15 op    C     C     S      S  
+CTELLTWO_12_u_15 #csid 2 2 0 0
+CTELLTWO_12_u_16 ref  أتحدث  باللغة   الفرنسية  واللغة  الألمانية  واللغة  العربية
+CTELLTWO_12_u_16 hyp  أتحدث   بالله  والفرنسية  واللغة  الألمانية  واللغة  العربية
+CTELLTWO_12_u_16 op     C       S        S         C        C         C       C   
+CTELLTWO_12_u_16 #csid 5 2 0 0
+CTELLTWO_12_u_17 ref  درجة  إتقاني  للغات  متوسطة
+CTELLTWO_12_u_17 hyp  درجة  إتقاني  للغات  متوسطة
+CTELLTWO_12_u_17 op     C      C      C       C  
+CTELLTWO_12_u_17 #csid 4 0 0 0
+CTELLTWO_12_u_18 ref  نعم  أنهيت  دراستي  الثانوية
+CTELLTWO_12_u_18 hyp  نعم  أنهيت  دراستي  الثانوية
+CTELLTWO_12_u_18 op    C     C       C        C   
+CTELLTWO_12_u_18 #csid 4 0 0 0
+CTELLTWO_12_u_19 ref  لم   ***  أدرس  بالجامعة
+CTELLTWO_12_u_19 hyp  لم  أدري   سر    الجامعة
+CTELLTWO_12_u_19 op    C    I     S       S   
+CTELLTWO_12_u_19 #csid 1 2 1 0
+CTELLTWO_12_u_2 ref  يعيش  معي  أبي  وأمي  وأخوتي
+CTELLTWO_12_u_2 hyp  يعيش  معي  أبي  وأمي  وإخوتي
+CTELLTWO_12_u_2 op     C    C    C     C      S  
+CTELLTWO_12_u_2 #csid 4 1 0 0
+CTELLTWO_12_u_20 ref  أعلى  شهادة  دراسية  حصلت  عليها  شهادة  ختم   ***   ***  المرحلة  التحضيرية  بالمدارس  التحضيرية  للأكاديمية  العسكرية
+CTELLTWO_12_u_20 hyp  أعلى  شهادة  دراسية  حصلت  عليها  شهادة  ختم  المرة  حتى    حذر        يد     بالمدرسة  التحضيرية  للأكاديمية  العسكرية
+CTELLTWO_12_u_20 op     C     C       C      C     C      C     C     I     I      S         S          S         C           C          C   
+CTELLTWO_12_u_20 #csid 10 3 2 0
+CTELLTWO_12_u_21 ref  أنتمي  إلى  ***  التجمع  الدستوري  الديمقراطي
+CTELLTWO_12_u_21 hyp  أنتمي  إلى  تجن    مع    الدستوري  الديمقراطي
+CTELLTWO_12_u_21 op     C     C    I      S        C          C    
+CTELLTWO_12_u_21 #csid 4 1 1 0
+CTELLTWO_12_u_22 ref  لا  انا  ليس  مدني  إنا  عسكري
+CTELLTWO_12_u_22 hyp  لا   ان  ليس  مدني  إنا  عسكري
+CTELLTWO_12_u_22 op    C   S    C     C    C     C  
+CTELLTWO_12_u_22 #csid 5 1 0 0
+CTELLTWO_12_u_23 ref   ما   زلت  اواصل  الدراسة  الجامعية
+CTELLTWO_12_u_23 hyp  نزل  تولى   صلة    دراستي   الجامعي
+CTELLTWO_12_u_23 op    S     S     S       S         S   
+CTELLTWO_12_u_23 #csid 0 5 0 0
+CTELLTWO_12_u_24 ref  خمسة  سنوات
+CTELLTWO_12_u_24 hyp  خمسة  سنوات
+CTELLTWO_12_u_24 op     C     C  
+CTELLTWO_12_u_24 #csid 2 0 0 0
+CTELLTWO_12_u_25 ref  لا  أشعر  بالجوع  والعطش
+CTELLTWO_12_u_25 hyp  لا  أشعر  بالجوع  والعطش
+CTELLTWO_12_u_25 op    C    C      C       C  
+CTELLTWO_12_u_25 #csid 4 0 0 0
+CTELLTWO_12_u_3 ref  معي  سبعة  أفراد
+CTELLTWO_12_u_3 hyp  معي  سبعة  أفراد
+CTELLTWO_12_u_3 op    C     C     C  
+CTELLTWO_12_u_3 #csid 3 0 0 0
+CTELLTWO_12_u_4 ref  عمري  واحد  وعشرون  سنة
+CTELLTWO_12_u_4 hyp  عمري  واحد  وعشرون  سنة
+CTELLTWO_12_u_4 op     C     C      C     C 
+CTELLTWO_12_u_4 #csid 4 0 0 0
+CTELLTWO_12_u_5 ref  تاريخ  ولادتي  خمسة  عشرة  سبتمبر  ألف  وتسعمئة  واثنان  وثمانون
+CTELLTWO_12_u_5 hyp  تاريخ  ولادتي  خمسة  عشرة   تنبت   ألف  وتسعمئة  واثنان  وثمانون
+CTELLTWO_12_u_5 op     C       C      C     C      S     C      C        C       C   
+CTELLTWO_12_u_5 #csid 8 1 0 0
+CTELLTWO_12_u_6 ref  السنة  التي  ولدت  بها  ***  ألف  وتسعمئة  واثنتي  وثمانين
+CTELLTWO_12_u_6 hyp  السنة  التي  ولدت  بها   هي  ألف  وتسعمئة  وثلاثة  وثمانين
+CTELLTWO_12_u_6 op     C      C     C    C    I    C      C        S       C   
+CTELLTWO_12_u_6 #csid 7 1 1 0
+CTELLTWO_12_u_7 ref  البلد  الذي  ولدت  ***  فيه  تونس
+CTELLTWO_12_u_7 hyp  البلد  الذي  ولدت  وفي   هي  تونس
+CTELLTWO_12_u_7 op     C      C     C    I    S     C 
+CTELLTWO_12_u_7 #csid 4 1 1 0
+CTELLTWO_12_u_8 ref  المدينة  التي  ولدت  بها  المهدية
+CTELLTWO_12_u_8 hyp  المدينة  التي  ولدت  بها  المدينة
+CTELLTWO_12_u_8 op      C       C     C    C      S   
+CTELLTWO_12_u_8 #csid 4 1 0 0
+CTELLTWO_12_u_9 ref  تونسية
+CTELLTWO_12_u_9 hyp  تونسية
+CTELLTWO_12_u_9 op      C  
+CTELLTWO_12_u_9 #csid 1 0 0 0
+CTELLTWO_13_u_26 ref   من  عَفَّ   عن  ظلم  العباد  تورعا  جاءته  ألطاف  الإله  تبرعا
+CTELLTWO_13_u_26 hyp  ***   ***   ***  ***    ***    نعم   أفهمك  عندما  أتحدث   إليك
+CTELLTWO_13_u_26 op    D     D     D    D      D      S      S      S      S      S  
+CTELLTWO_13_u_26 #csid 0 5 0 5
+CTELLTWO_13_u_27 ref  ***  ***  هذه   بتلك  والبادئ  أظلم
+CTELLTWO_13_u_27 hyp   لا   ان  غير  محتاج   لرعاية  صحية
+CTELLTWO_13_u_27 op    I    I    S     S       S       S 
+CTELLTWO_13_u_27 #csid 0 4 2 0
+CTELLTWO_13_u_28 ref   هي  النفس   ما   حَمَّلْتَها  تتحمل  وللدهر  أيام  تجور  وتَعْدِلُ
+CTELLTWO_13_u_28 hyp  ***    لا   أشعر    بالحاجة     إلى   الذهاب   إلى  دورة    المياه 
+CTELLTWO_13_u_28 op    D     S      S        S         S       S      S     S       S    
+CTELLTWO_13_u_28 #csid 0 8 0 1
+CTELLTWO_13_u_29 ref   من  يغرق  يتعلق  بعود     قش  
+CTELLTWO_13_u_29 hyp  ***   ***   نعم   أشعر  بالراحة
+CTELLTWO_13_u_29 op    D     D     S      S      S   
+CTELLTWO_13_u_29 #csid 0 3 0 2
+CTELLTWO_13_u_30 ref  أعزب  دهر  ولا  أرمل   شهر
+CTELLTWO_13_u_30 hyp   ***  ***  ليس   لدي  موعد
+CTELLTWO_13_u_30 op     D    D    S     S     S 
+CTELLTWO_13_u_30 #csid 0 3 0 2
+CTELLTWO_13_u_31 ref  اعطني  عمرا  وارميني  بالبحر
+CTELLTWO_13_u_31 hyp   ***    ليس    لدي     موعد 
+CTELLTWO_13_u_31 op     D      S      S        S  
+CTELLTWO_13_u_31 #csid 0 3 0 1
+CTELLTWO_13_u_32 ref  ألا   كل   ما   هو   آت  قريب  وللأرض   من   كل   حي    نصيب
+CTELLTWO_13_u_32 hyp  ***  ***  ***  ***  ***   ***    ***   ***  نعم  أكلت  اليوم
+CTELLTWO_13_u_32 op    D    D    D    D    D     D      D     D    S     S     S  
+CTELLTWO_13_u_32 #csid 0 3 0 8
+CTELLTWO_13_u_33 ref  الحصاة   من    الجبل 
+CTELLTWO_13_u_33 hyp    نعم   أكلت  البارحة
+CTELLTWO_13_u_33 op      S      S      S   
+CTELLTWO_13_u_33 #csid 0 3 0 0
+CTELLTWO_13_u_34 ref  ***  الصباح  رباح
+CTELLTWO_13_u_34 hyp  عشر   دقائق   من 
+CTELLTWO_13_u_34 op    I      S      S 
+CTELLTWO_13_u_34 #csid 0 2 1 0
+CTELLTWO_13_u_35 ref  ***  العمر   واحد   والرب    واحد  
+CTELLTWO_13_u_35 hyp  نعم   انا   مستعد  لإجراء  المقابلة
+CTELLTWO_13_u_35 op    I     S      S       S        S   
+CTELLTWO_13_u_35 #csid 0 4 1 0
+CTELLTWO_13_u_36 ref  ***  ***  المأمول  خير    من    المأكول
+CTELLTWO_13_u_36 hyp  ليس  معي   مخدرات   أو  أسلحة  بالسيارة
+CTELLTWO_13_u_36 op    I    I      S      S     S        S   
+CTELLTWO_13_u_36 #csid 0 4 2 0
+CTELLTWO_13_u_37 ref  ***   ***   ***    أول   الشجرة   بذرة
+CTELLTWO_13_u_37 hyp  نعم  أعرف  موقع  المكان   الذي   أقصده
+CTELLTWO_13_u_37 op    I     I     I      S       S      S  
+CTELLTWO_13_u_37 #csid 0 3 3 0
+CTELLTWO_13_u_38 ref    رب      بعيد     أنفع    من  قريب
+CTELLTWO_13_u_38 hyp  تونسية  المدينة  المتوجه  لها  الآن
+CTELLTWO_13_u_38 op      S       S        S      S     S 
+CTELLTWO_13_u_38 #csid 0 5 0 0
+CTELLTWO_13_u_39 ref  فيا  ليت  الشباب  يعود  يوما  فأخبره  بما    فعل    المشيب
+CTELLTWO_13_u_39 hyp  ***  ***    ***    ***   ***    ***   ***  تونسية  المدينة
+CTELLTWO_13_u_39 op    D    D      D      D     D      D     D      S       S   
+CTELLTWO_13_u_39 #csid 0 2 0 7
+CTELLTWO_13_u_40 ref  كلكم   طلب    صيد 
+CTELLTWO_13_u_40 hyp   ***  أربعة  أفراد
+CTELLTWO_13_u_40 op     D     S      S  
+CTELLTWO_13_u_40 #csid 0 2 0 1
+CTELLTWO_13_u_41 ref   ما  أبعد   ما   فات  وما   أقرب    ما    يأتي
+CTELLTWO_13_u_41 hyp  ***   ***  نعم  احمل  معي  أوراق  اثبات  شخصية
+CTELLTWO_13_u_41 op    D     D    S     S    S     S      S      S  
+CTELLTWO_13_u_41 #csid 0 6 0 2
+CTELLTWO_13_u_42 ref   ما   كل   ما  يتمنى  المرء   يدركه    تجرى   الرياح   بما     لا   تشتهي  السفن
+CTELLTWO_13_u_42 hyp  ***  ***  ***   ***    نعم   الأفراد  الذين  اصطحبهم  لديهم  أوراق  اثبات  شخصية
+CTELLTWO_13_u_42 op    D    D    D     D      S       S       S       S       S      S      S      S  
+CTELLTWO_13_u_42 #csid 0 8 0 4
+CTELLTWO_13_u_43 ref   كل  حبل    على    غاربه
+CTELLTWO_13_u_43 hyp  ***  ***  الخامسة   مساء
+CTELLTWO_13_u_43 op    D    D      S       S  
+CTELLTWO_13_u_43 #csid 0 2 0 2
+CTELLTWO_13_u_44 ref   ما  أشبه  الليلة  بالبارحة
+CTELLTWO_13_u_44 hyp  ***   نعم   احتاج   لمرافق 
+CTELLTWO_13_u_44 op    D     S      S        S   
+CTELLTWO_13_u_44 #csid 0 3 0 1
+CTELLTWO_13_u_45 ref  أثقل   من    جبل 
+CTELLTWO_13_u_45 hyp   لا   أحمل  سلاحا
+CTELLTWO_13_u_45 op     S     S     S  
+CTELLTWO_13_u_45 #csid 0 3 0 0
+CTELLTWO_13_u_46 ref  ***  ***   ***    أحذر    من      غراب 
+CTELLTWO_13_u_46 hyp  نعم  معي  أوراق  رسمية  لتسجيل  السيارة
+CTELLTWO_13_u_46 op    I    I     I      S       S       S   
+CTELLTWO_13_u_46 #csid 0 3 3 0
+CTELLTWO_13_u_47 ref   ***   أحرس  من   كلب 
+CTELLTWO_13_u_47 hyp  حوالي   فمه  أم  تمردا
+CTELLTWO_13_u_47 op     I      S    S    S  
+CTELLTWO_13_u_47 #csid 0 3 1 0
+CTELLTWO_13_u_48 ref  أدنى   من   حبل   الوريد
+CTELLTWO_13_u_48 hyp   ***  ***  حوالي   ساعة 
+CTELLTWO_13_u_48 op     D    D     S       S  
+CTELLTWO_13_u_48 #csid 0 2 0 2
+CTELLTWO_13_u_49 ref  أرخص   من  التمر    في   البصرة
+CTELLTWO_13_u_49 hyp   ***  ***   ***   حوالي   أسبوع
+CTELLTWO_13_u_49 op     D    D     D      S       S  
+CTELLTWO_13_u_49 #csid 0 2 0 3
+CTELLTWO_13_u_50 ref  ***  ***  أسرع    من    الريح
+CTELLTWO_13_u_50 hyp  نعم  لدي  مكان  للبقاء    به 
+CTELLTWO_13_u_50 op    I    I     S      S      S  
+CTELLTWO_13_u_50 #csid 0 3 2 0
+CTELLTWO_14_u_51 ref  أقرب   من  اللسان  للأسنان
+CTELLTWO_14_u_51 hyp   ***  نعم   سأقيم   بمفردي
+CTELLTWO_14_u_51 op     D    S      S       S   
+CTELLTWO_14_u_51 #csid 0 3 0 1
+CTELLTWO_14_u_52 ref  ***  البعد   جفاء 
+CTELLTWO_14_u_52 hyp   لا  سأقيم  بمفردي
+CTELLTWO_14_u_52 op    I     S       S  
+CTELLTWO_14_u_52 #csid 0 2 1 0
+CTELLTWO_14_u_53 ref  البياض   نصف   الحسن
+CTELLTWO_14_u_53 hyp    ***   سأقيم   وحدي
+CTELLTWO_14_u_53 op      D      S      S  
+CTELLTWO_14_u_53 #csid 0 2 0 1
+CTELLTWO_14_u_54 ref  الماء    أهون   موجود   وأعز  مفقود
+CTELLTWO_14_u_54 hyp   ***   استغرقت   أربع  ساعات  للسفر
+CTELLTWO_14_u_54 op     D       S       S      S      S  
+CTELLTWO_14_u_54 #csid 0 4 0 1
+CTELLTWO_14_u_55 ref  المتكبر  كالواقف  على  الجبل  يرى  الناس  صغاراً  ويرونه   صغيراً
+CTELLTWO_14_u_55 hyp    ***      ***    ***   وصلت  الى   هنا     بأن    طريق   الطائرة
+CTELLTWO_14_u_55 op      D        D      D     S     S     S       S       S       S   
+CTELLTWO_14_u_55 #csid 0 6 0 3
+CTELLTWO_14_u_56 ref   أتبع  من   الظل
+CTELLTWO_14_u_56 hyp  سأبقى  في  باريس
+CTELLTWO_14_u_56 op     S     S    S  
+CTELLTWO_14_u_56 #csid 0 3 0 0
+CTELLTWO_14_u_57 ref  إنه  لأشبه   به  من  التمرة  بالتمرة
+CTELLTWO_14_u_57 hyp  ***   ***   ***  في   اتجاه   الشرق 
+CTELLTWO_14_u_57 op    D     D     D    S     S       S   
+CTELLTWO_14_u_57 #csid 0 3 0 3
+CTELLTWO_14_u_58 ref  ***  ***   ***  ***    ***   سارت   به  الرُّكْبانُ
+CTELLTWO_14_u_58 hyp   لا   لا  يوجد  جسر  بالقرب   من   هذا     المكان  
+CTELLTWO_14_u_58 op    I    I     I    I      I      S    S        S     
+CTELLTWO_14_u_58 #csid 0 3 5 0
+CTELLTWO_14_u_59 ref  عاد  الأمر   إلى   نصابه
+CTELLTWO_14_u_59 hyp  جئت    من   مدينة   تونس
+CTELLTWO_14_u_59 op    S     S      S      S  
+CTELLTWO_14_u_59 #csid 0 4 0 0
+CTELLTWO_14_u_60 ref  فالوجه  مثل  الصبح  مبيض  والشعر  مثل  الليل  مسود
+CTELLTWO_14_u_60 hyp    ***   ***   ***    ***    ***   جئت    من   تونس
+CTELLTWO_14_u_60 op      D     D     D      D      D     S     S      S 
+CTELLTWO_14_u_60 #csid 0 3 0 5
+CTELLTWO_14_u_61 ref  فما  تحمد  العينان   كل  بشاشة  ولا   كل   وجه    عابس     بذميم 
+CTELLTWO_14_u_61 hyp  ***   ***    ***    ***   ***   ***  ***  أحمل  الجنسية  التونسية
+CTELLTWO_14_u_61 op    D     D      D      D     D     D    D     S      S         S   
+CTELLTWO_14_u_61 #csid 0 3 0 7
+CTELLTWO_14_u_62 ref  لسان  المرء   من    خدم   الفؤاد
+CTELLTWO_14_u_62 hyp   ***   ***   بدأت  السفر   صباح 
+CTELLTWO_14_u_62 op     D     D      S     S       S  
+CTELLTWO_14_u_62 #csid 0 3 0 2
+CTELLTWO_14_u_63 ref   ما  أشبه  الليلة  بالبارحة
+CTELLTWO_14_u_63 hyp  نعم   لدي   وسيلة   مواصلات
+CTELLTWO_14_u_63 op    S     S      S        S   
+CTELLTWO_14_u_63 #csid 0 4 0 0
+CTELLTWO_14_u_64 ref   من  يمدح  العروس   إلا   أهلها 
+CTELLTWO_14_u_64 hyp  ***   ***    كنت   هناك  البارحة
+CTELLTWO_14_u_64 op    D     D      S      S      S   
+CTELLTWO_14_u_64 #csid 0 3 0 2
+CTELLTWO_14_u_65 ref  ***  هو  يرقم   على  الماء
+CTELLTWO_14_u_65 hyp   لا  لا  توجد  حالة   وفاة
+CTELLTWO_14_u_65 op    I    S    S     S     S  
+CTELLTWO_14_u_65 #csid 0 4 1 0
+CTELLTWO_14_u_66 ref  ***  ***  ***  ***    يخلق      من     الشبه  أربعين
+CTELLTWO_14_u_66 hyp   لم  أرى   أي  شخص  الأشخاص  المتورطة    في   الحادث
+CTELLTWO_14_u_66 op    I    I    I    I      S         S       S       S  
+CTELLTWO_14_u_66 #csid 0 4 4 0
+CTELLTWO_14_u_67 ref  ***   إذا   لم   ينفعك     البازي   فانتف   ريشه 
+CTELLTWO_14_u_67 hyp   لا  أعرف  على  الأشخاص  المتورطين    في   الحادث
+CTELLTWO_14_u_67 op    I     S    S      S         S        S       S  
+CTELLTWO_14_u_67 #csid 0 6 1 0
+CTELLTWO_14_u_68 ref  ***  أظلم   من   أفعى
+CTELLTWO_14_u_68 hyp   لا  توجد  حالة  وفاة
+CTELLTWO_14_u_68 op    I     S     S     S 
+CTELLTWO_14_u_68 #csid 0 3 1 0
+CTELLTWO_14_u_69 ref  التسلُّطُ  على  المماليك  دناءة
+CTELLTWO_14_u_69 hyp     ***     عدد  المصابين  ثلاثة
+CTELLTWO_14_u_69 op       D       S       S       S  
+CTELLTWO_14_u_69 #csid 0 3 0 1
+CTELLTWO_14_u_70 ref  الظلم  أسرع  شيء  إلى  تعجيل  نقمة  وتبديل   نعمة 
+CTELLTWO_14_u_70 hyp   ***    ***  ***  ***   نعم    كان   هناك   مصابين
+CTELLTWO_14_u_70 op     D      D    D    D     S      S      S       S  
+CTELLTWO_14_u_70 #csid 0 4 0 4
+CTELLTWO_14_u_71 ref  الظلم  مرتعه  وخيم
+CTELLTWO_14_u_71 hyp   نعم    هناك  حتفه
+CTELLTWO_14_u_71 op     S      S      S 
+CTELLTWO_14_u_71 #csid 0 3 0 0
+CTELLTWO_14_u_72 ref  ***  إِنَّ  الإِنسَانَ  لَيَطغَى
+CTELLTWO_14_u_72 hyp  نعم   رأيت     الذي        حدث  
+CTELLTWO_14_u_72 op    I     S         S          S   
+CTELLTWO_14_u_72 #csid 0 3 1 0
+CTELLTWO_14_u_73 ref  ***  بيت   الظالم  خراب
+CTELLTWO_14_u_73 hyp  نعم  انا  المسؤول   هنا
+CTELLTWO_14_u_73 op    I    S      S       S 
+CTELLTWO_14_u_73 #csid 0 3 1 0
+CTELLTWO_14_u_74 ref  جزاء  مُجيرِ   أُمِّ   عامِرٍ
+CTELLTWO_14_u_74 hyp   ***    أنا   المسؤول    هنا 
+CTELLTWO_14_u_74 op     D      S       S        S  
+CTELLTWO_14_u_74 #csid 0 3 0 1
+CTELLTWO_14_u_75 ref  حرامي  بلا  بَيِّنةٍ  شريف
+CTELLTWO_14_u_75 hyp   حدث   هذا     منذ    ساعة
+CTELLTWO_14_u_75 op     S     S       S       S 
+CTELLTWO_14_u_75 #csid 0 4 0 0
+CTELLTWO_15_u_100 ref  إذا  رأيت  نيوب  الليث  بارزة  فلا   تظنن  أن   الليث   يبتسم 
+CTELLTWO_15_u_100 hyp  ***   ***   ***   لقد   انقطع  هذا  الشخص  عن  تعليمه  الجامعي
+CTELLTWO_15_u_100 op    D     D     D     S      S     S     S     S     S       S   
+CTELLTWO_15_u_100 #csid 0 7 0 3
+CTELLTWO_15_u_76 ref  ***  ***   ***   ***  ***  ***    ***   ***  ***   ***     ***    ***  ***  ***   ***   ***  ضربني  وبكى  وسبقني  واشتكى
+CTELLTWO_15_u_76 hyp  حدث  هذا  الشيء  منذ  مدة  منذ  أسبوعا   أو  على  الأقل  أسبوعين  لما  كنت   في  طريق  لمدة    ست    حدث    هذا    الشيء
+CTELLTWO_15_u_76 op    I    I     I     I    I    I      I     I    I     I       I      I    I    I     I     I     S      S      S       S  
+CTELLTWO_15_u_76 #csid 0 4 16 0
+CTELLTWO_15_u_77 ref  ***   ظلم  الأقارب  أشد  وقعا  من    ***    ***   ***     ***      ***    ***  ***   ***  ***    ***   ***    ***     ***     ***    ***   ***   ***   ***  ***  ***   ***   ***   ***  ***  السيف
+CTELLTWO_15_u_77 hyp   هل  تعرف     ان    كان   أي   من  أولياء  أمور  هؤلاء  الأطفال  مصاحبين  لهم  نعم  أعرف   هو  أولياء  أول  الأطفال  لمكان  مصطحبين  عمل  المدة  وأن  هناك  حدث  هذا  الشيء  ألم  أدري  كيف   حصل 
+CTELLTWO_15_u_77 op    I     S      S      S     S    C     I      I     I       I        I      I    I     I    I      I     I      I       I       I      I     I     I     I    I    I     I     I     I    I     S  
+CTELLTWO_15_u_77 #csid 1 5 25 0
+CTELLTWO_15_u_78 ref  ***   ***  ***  ***    ***    ***  ***   ***    ***   ***    ***   غيري  يأكل  الدجاج  وأنا  أقع  في    ***      ***     ***  السياج
+CTELLTWO_15_u_78 hyp  نعم  أعرف  أين  ولا  الأطفال  لقد   لا  أصطحب  عمره  صاحب  سيارتي   كاد   مثل    نعم    من   كلب  في  الحقيقة  الموضوع  الذي    جار 
+CTELLTWO_15_u_78 op    I     I    I    I      I      I    I     I      I     I      I      S     S      S      S    S    C     I        I       I      S  
+CTELLTWO_15_u_78 #csid 1 6 14 0
+CTELLTWO_15_u_79 ref  ***   ***   ***  ***    ***      ***    ***    ***   ***  ***  ***  ***    ***     ***  ***  كلما  طار   قص   جناحه
+CTELLTWO_15_u_79 hyp  نعم  <UNK>  انه  ولا  الأطفال  بمفردهم  بأن  الراحة  ذلك   لم  يكن   ما  مصطحبين  بولي  همه   بي   أحد  شابه   ذلك 
+CTELLTWO_15_u_79 op    I     I     I    I      I        I      I      I     I    I    I    I      I       I    I     S    S     S     S  
+CTELLTWO_15_u_79 #csid 0 4 15 0
+CTELLTWO_15_u_80 ref  ***   ***  ***   ***   ***   ***   ***  ***    ***   ***  ***   ***  ***  ***   ***  كمن  يربي  الذئب
+CTELLTWO_15_u_80 hyp  نعم  أعرف  هذا  الشخص  لقد  تعرفت  على   لم  الذهاب  إلى  مصر  هناك   في   في  حفلة   لي   حدث   مسود
+CTELLTWO_15_u_80 op    I     I    I     I     I     I     I    I      I     I    I     I    I    I     I    S     S     S  
+CTELLTWO_15_u_80 #csid 0 3 15 0
+CTELLTWO_15_u_81 ref  لا  ***   ***   ***  ***   ***   ***   ***   ***    ***   ***  ***    تجن   يمينك   على  شمالك
+CTELLTWO_15_u_81 hyp  لا  هذا  الشخص  ليس   ذو  بشرة  سوداء   بل  الأدب  الشرر  مثل  لون  القامة    أن   شعره   أسود
+CTELLTWO_15_u_81 op    C   I     I     I    I     I     I     I     I      I     I    I      S      S      S     S  
+CTELLTWO_15_u_81 #csid 1 4 11 0
+CTELLTWO_15_u_82 ref   لا  تسقني  ماء  الحياة  بذلة    بل   فاسقني  بالعز   كأس   الحنظل
+CTELLTWO_15_u_82 hyp  ***   ***   ***    نعم    هذا  الشخص    ذو     بشرة  بيضاء   مساء 
+CTELLTWO_15_u_82 op    D     D     D      S      S     S       S      S      S       S  
+CTELLTWO_15_u_82 #csid 0 7 0 3
+CTELLTWO_15_u_83 ref  ***  ***   ***   لمن  تشكو    إذا   كان   خصمك  القاضي
+CTELLTWO_15_u_83 hyp   لا  هذا  الشخص  ليس   بني  البشرة  بلا  بشرته   بيضاء
+CTELLTWO_15_u_83 op    I    I     I     S     S      S     S     S       S  
+CTELLTWO_15_u_83 #csid 0 6 3 0
+CTELLTWO_15_u_84 ref  ***  ***  ***   ***   لو  خُيِّرْتُ  لاخترت
+CTELLTWO_15_u_84 hyp  نعم   ما   لم  أسرق  هذا    الشخص     فاتح 
+CTELLTWO_15_u_84 op    I    I    I     I    S       S         S  
+CTELLTWO_15_u_84 #csid 0 3 4 0
+CTELLTWO_15_u_85 ref  ***  مُتْخَمٌ  يقسو   على    جائع
+CTELLTWO_15_u_85 hyp  لون    بشرة     هذا  الشخص  بيضاء
+CTELLTWO_15_u_85 op    I       S       S     S      S  
+CTELLTWO_15_u_85 #csid 0 4 1 0
+CTELLTWO_15_u_86 ref  ***   ***    من   ظَلَمَ   نفسه  فهو  لغيره  أظلم
+CTELLTWO_15_u_86 hyp  نعم  لهذا  الشخص    شعر   بوجهه  كفر   وأبي  السر
+CTELLTWO_15_u_86 op    I     I     S       S      S     S     S      S 
+CTELLTWO_15_u_86 #csid 0 6 2 0
+CTELLTWO_15_u_87 ref   ***   ***    ***   ***  نوم  الظالم  عبادة
+CTELLTWO_15_u_87 hyp  لهذا  الشبه  صلاح  هواء  ذقن   صغيرة   أسود
+CTELLTWO_15_u_87 op     I     I      I     I    S      S      S  
+CTELLTWO_15_u_87 #csid 0 3 4 0
+CTELLTWO_15_u_88 ref  هذه   بتلك  والبادئ   أظلم
+CTELLTWO_15_u_88 hyp  لون  لحيته  وشواربه  سوداء
+CTELLTWO_15_u_88 op    S     S       S       S  
+CTELLTWO_15_u_88 #csid 0 4 0 0
+CTELLTWO_15_u_89 ref  وَظُلْمُ  ذوي  القربى  أشد  مرارة  على  النفس   من  وقع  الحسام  المهند
+CTELLTWO_15_u_89 hyp     ***    ***    ***   ***   ***   ***   ***   ***  لون   لحيته   سوداء
+CTELLTWO_15_u_89 op       D      D      D     D     D     D     D     D    S      S       S  
+CTELLTWO_15_u_89 #csid 0 3 0 8
+CTELLTWO_15_u_90 ref   ما   من  ظالم  إلا  سيبلى    بظالم  
+CTELLTWO_15_u_90 hyp  ***  ***   ***  لون  عينيه  كستانيتان
+CTELLTWO_15_u_90 op    D    D     D    S     S        S    
+CTELLTWO_15_u_90 #csid 0 3 0 3
+CTELLTWO_15_u_91 ref  ومن  نكد  الدنيا  على  الحر   أن  يرى  عدوا   له   ما   من  صداقته   بد 
+CTELLTWO_15_u_91 hyp  ***  ***    ***   ***   ***  ***  ***   ***  ***  ***  لون   شعره   أسود
+CTELLTWO_15_u_91 op    D    D      D     D     D    D    D     D    D    D    S      S      S 
+CTELLTWO_15_u_91 #csid 0 3 0 10
+CTELLTWO_15_u_92 ref  ***  ***   ***   ***    ***   يا  ظالم   لك   يوم 
+CTELLTWO_15_u_92 hyp   لا  هذا  الشخص  ليس  تقريبا  في   نفس  طول  قامتي
+CTELLTWO_15_u_92 op    I    I     I     I      I     S    S    S     S  
+CTELLTWO_15_u_92 #csid 0 4 5 0
+CTELLTWO_15_u_93 ref   من  يخشى  البلل    لا   يصطاد  السمك
+CTELLTWO_15_u_93 hyp  ***   ***   هذا   الشخص   أطول   مني 
+CTELLTWO_15_u_93 op    D     D     S      S      S      S  
+CTELLTWO_15_u_93 #csid 0 4 0 2
+CTELLTWO_15_u_94 ref  ***  ***   ***   معظم  النار    من    مستصغر   الشرر 
+CTELLTWO_15_u_94 hyp  طول  هذا  الشخص   متر  وواحد  وتسعون    ما    سنتيمتر
+CTELLTWO_15_u_94 op    I    I     I      S     S       S       S       S   
+CTELLTWO_15_u_94 #csid 0 5 3 0
+CTELLTWO_15_u_95 ref  اترك   الشر  يتركك
+CTELLTWO_15_u_95 hyp   هذا  الشخص   شاب 
+CTELLTWO_15_u_95 op     S     S      S  
+CTELLTWO_15_u_95 #csid 0 3 0 0
+CTELLTWO_15_u_96 ref  احذر  الأحمق  واحذر  وُدَّهُ  إنما  الأحمق  كالثوب  الْخَلَق
+CTELLTWO_15_u_96 hyp   ***    ***    ***     ***     ***    هذا    الشخص    امرأة 
+CTELLTWO_15_u_96 op     D      D      D       D       D      S       S        S   
+CTELLTWO_15_u_96 #csid 0 3 0 5
+CTELLTWO_15_u_97 ref  ***   ***  ***   ***   ***  احذروا   من     لا    يرجى  خيره    ولا    يؤمن    شره 
+CTELLTWO_15_u_97 hyp  نعم  أعرف  رقم  تلفون  هذا   الشخص  سبعة  وسبعون   خمس   مئة  وتسعون  ستمئة  وأربعة
+CTELLTWO_15_u_97 op    I     I    I     I     I      S      S      S      S     S      S      S       S  
+CTELLTWO_15_u_97 #csid 0 8 5 0
+CTELLTWO_15_u_98 ref  إذا  جاء  الحين   حارت  العين
+CTELLTWO_15_u_98 hyp  ***  هذا  الشخص  بالسن   يوم 
+CTELLTWO_15_u_98 op    D    S     S      S      S  
+CTELLTWO_15_u_98 #csid 0 4 0 1
+CTELLTWO_15_u_99 ref  إذا  ذكرت  الذئب  فأعد    له     العصا
+CTELLTWO_15_u_99 hyp  ***   ***   ***    ***  ديانته  مسيحية
+CTELLTWO_15_u_99 op    D     D     D      D      S       S  
+CTELLTWO_15_u_99 #csid 0 2 0 4
+CTELLTWO_16_u_101 ref  إذا  كنتَ   ذا  رأيٍ  فكن   ذا  مشورة  فإن  فساد  الرأي   أن   تترددا
+CTELLTWO_16_u_101 hyp  ***   ***  ***   ***  ***  ***   ***   ***   ***   ***   ثلاث   سنوات
+CTELLTWO_16_u_101 op    D     D    D     D    D    D     D     D     D     D      S      S  
+CTELLTWO_16_u_101 #csid 0 2 0 10
+CTELLTWO_16_u_102 ref  أعدّوا   لكلب  السوء  كلبا    يعادله 
+CTELLTWO_16_u_102 hyp    ***   المرة   حله    أول  التحضيرية
+CTELLTWO_16_u_102 op      D      S      S      S       S    
+CTELLTWO_16_u_102 #csid 0 4 0 1
+CTELLTWO_16_u_103 ref  أقلل  طعامك   تجد  منامك
+CTELLTWO_16_u_103 hyp   انه   يعرف  ثلاث   لغات
+CTELLTWO_16_u_103 op     S     S      S     S  
+CTELLTWO_16_u_103 #csid 0 4 0 0
+CTELLTWO_16_u_104 ref  الدهر     يومان       حلو        ومر  
+CTELLTWO_16_u_104 hyp   ***   الإنجليزية  الإيطالية  الفرنسية
+CTELLTWO_16_u_104 op     D         S          S          S   
+CTELLTWO_16_u_104 #csid 0 3 0 1
+CTELLTWO_16_u_105 ref  اللي  يخاف   من  العفريت  يطلع    له  
+CTELLTWO_16_u_105 hyp   ***   ***  ***    ***    درجة  متوسطة
+CTELLTWO_16_u_105 op     D     D    D      D       S      S  
+CTELLTWO_16_u_105 #csid 0 2 0 4
+CTELLTWO_16_u_106 ref   إن  الجواد   قد    يعثر
+CTELLTWO_16_u_106 hyp  ***    نعم   لديه  أبناء
+CTELLTWO_16_u_106 op    D      S      S     S  
+CTELLTWO_16_u_106 #csid 0 3 0 1
+CTELLTWO_16_u_107 ref   إن  الشفيق  بسوء    ظن   مولع
+CTELLTWO_16_u_107 hyp  ***    ***    ***  حالته  طيبا
+CTELLTWO_16_u_107 op    D      D      D     S      S 
+CTELLTWO_16_u_107 #csid 0 2 0 3
+CTELLTWO_16_u_108 ref   إن  كنت  ريحا  فقد   لاقيت  إعصارا
+CTELLTWO_16_u_108 hyp  ***  ***   ***  تسع  وعشرون    سنة 
+CTELLTWO_16_u_108 op    D    D     D    S      S       S  
+CTELLTWO_16_u_108 #csid 0 3 0 3
+CTELLTWO_16_u_109 ref   إن  وراء  الأَكَمةِ    ما    وراءها
+CTELLTWO_16_u_109 hyp  ***   ألف   وتسعمئة   وإثنين  وسبعون
+CTELLTWO_16_u_109 op    D     S       S         S       S  
+CTELLTWO_16_u_109 #csid 0 4 0 1
+CTELLTWO_16_u_110 ref  ***  خُذْهُ  بالموت    حتى     يرضى   بالحُمَّى
+CTELLTWO_16_u_110 hyp   ست   تجرى     ألف   وتسعمئة  واثنان    وسبعون 
+CTELLTWO_16_u_110 op    I      S       S       S        S        S    
+CTELLTWO_16_u_110 #csid 0 5 1 0
+CTELLTWO_16_u_111 ref  راحت  السكرة  وجاءت  الفكرة
+CTELLTWO_16_u_111 hyp   ***    ***   مدينة   بنزرت
+CTELLTWO_16_u_111 op     D      D      S       S  
+CTELLTWO_16_u_111 #csid 0 2 0 2
+CTELLTWO_16_u_112 ref  ستبدي   لك  الأيام   ما  كنت  جاهلا
+CTELLTWO_16_u_112 hyp   ***   ***    ***   ولد   في   تونس
+CTELLTWO_16_u_112 op     D     D      D     S    S     S  
+CTELLTWO_16_u_112 #csid 0 3 0 3
+CTELLTWO_16_u_113 ref   قد  يخرج   من  الصدفة   غير  الدُّرَّة
+CTELLTWO_16_u_113 hyp  ***   ***  أنه    لا    يعمل     معي   
+CTELLTWO_16_u_113 op    D     D    S      S      S       S    
+CTELLTWO_16_u_113 #csid 0 4 0 2
+CTELLTWO_16_u_114 ref  قَدِّرْ  لِرِجْلِكَ  قبل  الخطو  موضعها
+CTELLTWO_16_u_114 hyp    ***        ***     ليس  رئيسي  بالعمل
+CTELLTWO_16_u_114 op      D          D       S     S       S  
+CTELLTWO_16_u_114 #csid 0 3 0 2
+CTELLTWO_16_u_115 ref  كُلُّ  نَفسٍ  ذَائِقَةُ  المَوتِ
+CTELLTWO_16_u_115 hyp   إنه    يعيش      في      بنزرت 
+CTELLTWO_16_u_115 op     S      S        S         S   
+CTELLTWO_16_u_115 #csid 0 4 0 0
+CTELLTWO_16_u_116 ref   لا  تقعن  البحر  إلا  سابحا
+CTELLTWO_16_u_116 hyp  ***   إنه   يقيم   في  بنزرت
+CTELLTWO_16_u_116 op    D     S     S     S     S  
+CTELLTWO_16_u_116 #csid 0 4 0 1
+CTELLTWO_16_u_117 ref   لا  حذر    من    قدر 
+CTELLTWO_16_u_117 hyp  ***  إنه  ممتلئ  الحجم
+CTELLTWO_16_u_117 op    D    S     S      S  
+CTELLTWO_16_u_117 #csid 0 3 0 1
+CTELLTWO_16_u_118 ref  لكل  عالِمٍ  هفوة  ولكل  جَوَادٍ   كبوة
+CTELLTWO_16_u_118 hyp  ***    ***    ***  نبرة    صوته   غليظة
+CTELLTWO_16_u_118 op    D      D      D     S      S       S  
+CTELLTWO_16_u_118 #csid 0 3 0 3
+CTELLTWO_16_u_119 ref   ما   كل  بارقة  تجود  بمائها
+CTELLTWO_16_u_119 hyp  ***  ***   نبرة  صوته   عالية
+CTELLTWO_16_u_119 op    D    D     S      S      S  
+CTELLTWO_16_u_119 #csid 0 3 0 2
+CTELLTWO_16_u_120 ref  ***   ما   كل    ما    يلمع  ذهباً
+CTELLTWO_16_u_120 hyp   لا  ليست  له  علامة  عصبية  مميزة
+CTELLTWO_16_u_120 op    I     S    S    S      S      S  
+CTELLTWO_16_u_120 #csid 0 5 1 0
+CTELLTWO_16_u_121 ref   من  أسرع   كثر  عثاره
+CTELLTWO_16_u_121 hyp  ليس   له   خدوش  مميزة
+CTELLTWO_16_u_121 op    S     S     S     S  
+CTELLTWO_16_u_121 #csid 0 4 0 0
+CTELLTWO_16_u_122 ref   من  الخواطئ   سهم   صائب
+CTELLTWO_16_u_122 hyp  ليس     له    خدوش  مميزة
+CTELLTWO_16_u_122 op    S      S       S     S  
+CTELLTWO_16_u_122 #csid 0 4 0 0
+CTELLTWO_16_u_123 ref   من  أَمِنَ  الزمان   خانه
+CTELLTWO_16_u_123 hyp  ***    لا     يمتلك  سيارة
+CTELLTWO_16_u_123 op    D      S       S      S  
+CTELLTWO_16_u_123 #csid 0 3 0 1
+CTELLTWO_16_u_124 ref   من  تَدَخَّلَ  فيما   لا   يعنيه   لقي   ما    لا   يرضيه
+CTELLTWO_16_u_124 hyp  ***     ***      ***  نعم  بإمكاني   أن  آخذك  لهذا  الشخص
+CTELLTWO_16_u_124 op    D       D        D    S      S      S     S     S     S  
+CTELLTWO_16_u_124 #csid 0 6 0 3
+CTELLTWO_16_u_125 ref   من  خشى  الذئب  أعد  كلبا
+CTELLTWO_16_u_125 hyp  ***  ***    لا    لا  أعرف
+CTELLTWO_16_u_125 op    D    D     S     S     S 
+CTELLTWO_16_u_125 #csid 0 3 0 2
+CTELLTWO_17_u_126 ref   من  سلك   الجدد   أمن  العثار
+CTELLTWO_17_u_126 hyp  ***  ***  البارحة   في   الليل
+CTELLTWO_17_u_126 op    D    D      S      S      S  
+CTELLTWO_17_u_126 #csid 0 3 0 2
+CTELLTWO_17_u_127 ref   وكيف  تنام   الطير  في  وكناتها
+CTELLTWO_17_u_127 hyp  رأيته   في   المقهى  من    جبل  
+CTELLTWO_17_u_127 op     S      S      S     S     S   
+CTELLTWO_17_u_127 #csid 0 5 0 0
+CTELLTWO_17_u_128 ref  ومن   لا  يصانع  في  أمور  كثيرة  يضرس  بأنياب  ويوطأ  بمنسم
+CTELLTWO_17_u_128 hyp  ***  ***  رأيته  في   ***   ***    ***    ***    ***    تونس
+CTELLTWO_17_u_128 op    D    D     S     C    D     D      D      D      D      S  
+CTELLTWO_17_u_128 #csid 1 2 0 7
+CTELLTWO_17_u_129 ref  ومن  يجعل  المعروف   في  غير  أهله  يكن  حمده   ذما  عليه  ويندم
+CTELLTWO_17_u_129 hyp  ***   ***    ***    ***  ***   ***  أنا   لا   أعرف   هذا  الشخص
+CTELLTWO_17_u_129 op    D     D      D      D    D     D    S     S     S     S     S  
+CTELLTWO_17_u_129 #csid 0 5 0 6
+CTELLTWO_17_u_130 ref  ***   يا  مستعجل  عطلك  الله
+CTELLTWO_17_u_130 hyp  أنا  لست   متأكد   أنه   هو 
+CTELLTWO_17_u_130 op    I    S      S      S     S 
+CTELLTWO_17_u_130 #csid 0 4 1 0
+CTELLTWO_17_u_131 ref  ***  يخاف   من  خياله
+CTELLTWO_17_u_131 hyp   في  حالة  جيد   شكرا
+CTELLTWO_17_u_131 op    I     S    S     S  
+CTELLTWO_17_u_131 #csid 0 3 1 0
+CTELLTWO_17_u_132 ref  إذا  أردت   أن  تطاع  فأمر    بما   يستطاع
+CTELLTWO_17_u_132 hyp  ***   ***  ***   ***   ***  وعليكم  السلام
+CTELLTWO_17_u_132 op    D     D    D     D     D      S       S  
+CTELLTWO_17_u_132 #csid 0 2 0 5
+CTELLTWO_17_u_133 ref  إذا  المرء   لم  يدنس   من  اللؤم  عرضه  فكل  رداء  يرتديه  جميل
+CTELLTWO_17_u_133 hyp  ***   ***   ***   ***  ***   ***    ***  ***  شكرا    لك     سبق
+CTELLTWO_17_u_133 op    D     D     D     D    D     D      D    D     S      S      S 
+CTELLTWO_17_u_133 #csid 0 3 0 8
+CTELLTWO_17_u_134 ref  إذا  أنت  أكرمت  الكريم  ملكته  وإن  أنت  أكرمت  اللئيم   تمردا
+CTELLTWO_17_u_134 hyp  ***  ***   ***     ***    ***   ***  نعم   انهم  المنزل  مُجيرِ
+CTELLTWO_17_u_134 op    D    D     D       D      D     D    S     S       S       S  
+CTELLTWO_17_u_134 #csid 0 4 0 6
+CTELLTWO_17_u_135 ref  كفى  المرء  فضلا    أن    تُعَدَّ  معايبه
+CTELLTWO_17_u_135 hyp  ***   ***    لقد  اشتريت    مصر      قص  
+CTELLTWO_17_u_135 op    D     D      S      S       S        S  
+CTELLTWO_17_u_135 #csid 0 4 0 2
+CTELLTWO_17_u_136 ref  إذا  حضر  الماء   بطل  التيمم
+CTELLTWO_17_u_136 hyp  ***  ***   اخي   يملك   مثله 
+CTELLTWO_17_u_136 op    D    D     S      S      S  
+CTELLTWO_17_u_136 #csid 0 3 0 2
+CTELLTWO_17_u_137 ref  اذا   لم  تستحي  فأفعل   ما  تشاء
+CTELLTWO_17_u_137 hyp  ***  ***   ***    نعم   سبق   حور
+CTELLTWO_17_u_137 op    D    D     D      S     S     S 
+CTELLTWO_17_u_137 #csid 0 3 0 3
+CTELLTWO_17_u_138 ref  أطهر  الناس  أعراقاً  أحسنهم  أخلاقاً
+CTELLTWO_17_u_138 hyp   لا     لم   أستخدمه    من      قبل  
+CTELLTWO_17_u_138 op     S     S       S        S       S   
+CTELLTWO_17_u_138 #csid 0 5 0 0
+CTELLTWO_17_u_139 ref  أعرف  الناس  بالله  أرضاهم   بما  قسم  الله   له 
+CTELLTWO_17_u_139 hyp   ***   ***    ***    عندي   فتلك  مضى   إلى  ثمنه
+CTELLTWO_17_u_139 op     D     D      D       S      S    S     S     S 
+CTELLTWO_17_u_139 #csid 0 5 0 3
+CTELLTWO_17_u_140 ref  اعف   عما   أغضبك   لما   أرضاك
+CTELLTWO_17_u_140 hyp  لقد  رأيته    في   مدينة   تونس
+CTELLTWO_17_u_140 op    S     S      S      S      S  
+CTELLTWO_17_u_140 #csid 0 5 0 0
+CTELLTWO_17_u_141 ref  أفضل  الجود   العطاء  قبل  الموعد
+CTELLTWO_17_u_141 hyp   ***   لقد   اشتريته  بحر    مال 
+CTELLTWO_17_u_141 op     D     S       S      S      S  
+CTELLTWO_17_u_141 #csid 0 4 0 1
+CTELLTWO_17_u_142 ref  الأقربون  أولى  بالمعروف
+CTELLTWO_17_u_142 hyp     إنه    أحمر    الله  
+CTELLTWO_17_u_142 op       S       S       S   
+CTELLTWO_17_u_142 #csid 0 3 0 0
+CTELLTWO_17_u_143 ref  ***  الْبِشْرَ  دال   على   الكرم
+CTELLTWO_17_u_143 hyp  لقد    اشتريت    من  مدينة   أجهل
+CTELLTWO_17_u_143 op    I       S       S     S      S  
+CTELLTWO_17_u_143 #csid 0 4 1 0
+CTELLTWO_17_u_144 ref  التكبر  على  المتكبر  تواضع
+CTELLTWO_17_u_144 hyp    ***   ***    منذ     شهر 
+CTELLTWO_17_u_144 op      D     D      S       S  
+CTELLTWO_17_u_144 #csid 0 2 0 2
+CTELLTWO_17_u_145 ref  ***  التواضع   من  مصائد   الشرف
+CTELLTWO_17_u_145 hyp  لقد  اشتريته  منذ  ثلاثة  أسابيع
+CTELLTWO_17_u_145 op    I      S      S     S       S  
+CTELLTWO_17_u_145 #csid 0 4 1 0
+CTELLTWO_17_u_146 ref  الجودة  من  الموجودة
+CTELLTWO_17_u_146 hyp    ***   من     جهل  
+CTELLTWO_17_u_146 op      D     C      S   
+CTELLTWO_17_u_146 #csid 1 1 0 1
+CTELLTWO_17_u_147 ref  الحر  تكفيه  الإشارة
+CTELLTWO_17_u_147 hyp   لقد   سرق   البارحة
+CTELLTWO_17_u_147 op     S     S       S   
+CTELLTWO_17_u_147 #csid 0 3 0 0
+CTELLTWO_17_u_148 ref  ***  ***  الحِلْمُ  سيد  الأخلاق
+CTELLTWO_17_u_148 hyp  لقد  مضى    يومين    عن   السرقة
+CTELLTWO_17_u_148 op    I    I       S      S      S   
+CTELLTWO_17_u_148 #csid 0 3 2 0
+CTELLTWO_17_u_149 ref  الدال  على  الخير   كفاعله
+CTELLTWO_17_u_149 hyp   ***   لقد   زرت   البارحة
+CTELLTWO_17_u_149 op     D     S     S       S   
+CTELLTWO_17_u_149 #csid 0 3 0 1
+CTELLTWO_17_u_150 ref  ***   ***  الرفق  بالجاني   عتاب
+CTELLTWO_17_u_150 hyp   ان  عندي   ألم      في    الصدر
+CTELLTWO_17_u_150 op    I     I     S       S       S  
+CTELLTWO_17_u_150 #csid 0 3 2 0
+CTELLTWO_18_u_151 ref  ***    ***       ***     ***    ***   ***   السر  أمانة
+CTELLTWO_18_u_151 hyp   ان  الأمراض  المتوارثة   في  عائلتي   هي  أمراض  السكر
+CTELLTWO_18_u_151 op    I      I         I       I      I     I     S      S  
+CTELLTWO_18_u_151 #csid 0 2 6 0
+CTELLTWO_18_u_152 ref  ***    ***     ***   ***   ***  الشريف  إذا  تَقَوَّى  تواضع  والوضيع  إذا  تَقَوَّى  تكبر
+CTELLTWO_18_u_152 hyp   ان  الأمراض  التي  تسببت   في    موت   أحد     من     اعضاء   عائلتي   هي    أمراض    قدر
+CTELLTWO_18_u_152 op    I      I       I     I     I      S     S       S       S       S      S       S       S 
+CTELLTWO_18_u_152 #csid 0 8 5 0
+CTELLTWO_18_u_153 ref  ***   ***  ***  ***    ***   ***  الصدق  دليل   التقوى
+CTELLTWO_18_u_153 hyp   لا  ليست  لدي  اية  حساسية  لأي   نوع    من   الأدوية
+CTELLTWO_18_u_153 op    I     I    I    I      I     I     S      S      S   
+CTELLTWO_18_u_153 #csid 0 3 6 0
+CTELLTWO_18_u_154 ref  ***   ***  الصدق  يحسن  بالفتى   والكذب  يحسب   من    عيوبه
+CTELLTWO_18_u_154 hyp   لا  يوجد    أي    نوع    من    الأدوية   لدي  منها  حساسية
+CTELLTWO_18_u_154 op    I     I     S      S      S       S       S     S      S  
+CTELLTWO_18_u_154 #csid 0 7 2 0
+CTELLTWO_18_u_155 ref  ***   ***  ***  الضحك  بلا  سبب   من  قلة   الأدب 
+CTELLTWO_18_u_155 hyp   لا  يكون   رد   فعل   سيء  لأي  نوع   من  الأدوية
+CTELLTWO_18_u_155 op    I     I    I     S     S    S    S    S      S   
+CTELLTWO_18_u_155 #csid 0 6 3 0
+CTELLTWO_18_u_156 ref  ***   ***  ***  ***    ***     ***   ***  العتاب  خير   من  الحقد
+CTELLTWO_18_u_156 hyp   لا  يوجد   أي  نوع  الدواء  يكونون   رد    فعل   سيء  كنت  جاهلا
+CTELLTWO_18_u_156 op    I     I    I    I      I       I     I      S     S    S     S  
+CTELLTWO_18_u_156 #csid 0 4 7 0
+CTELLTWO_18_u_157 ref  ***  ***    ***   العتاب  صابون   القلب 
+CTELLTWO_18_u_157 hyp   لا   لا  أتعاطى   دواء    هذه   الإيمان
+CTELLTWO_18_u_157 op    I    I      I       S      S       S   
+CTELLTWO_18_u_157 #csid 0 3 3 0
+CTELLTWO_18_u_159 ref  ***    ***   ***  ***  العفو    عند   المقدرة
+CTELLTWO_18_u_159 hyp   لا  أتعاطى   أي  نوع    من   الدواء   حاليا 
+CTELLTWO_18_u_159 op    I      I     I    I     S       S       S   
+CTELLTWO_18_u_159 #csid 0 3 4 0
+CTELLTWO_18_u_160 ref  ***  ***  العفو   يصلح   الكريم  ويفسد  اللئيم
+CTELLTWO_18_u_160 hyp   لا   لم   أحتج  لإجراء   عملية    في     ومن 
+CTELLTWO_18_u_160 op    I    I     S       S       S      S       S  
+CTELLTWO_18_u_160 #csid 0 5 2 0
+CTELLTWO_18_u_161 ref  ***  ***  ***  الغنى  في    يد   اللئيم  قبيح  قدر   قبح  الكريم    في   الإملاق
+CTELLTWO_18_u_161 hyp   كم  سبق  ولك   أنني  لا  أعاني    من     أي   مرض  وأدى    إلى   إجراء   عملية 
+CTELLTWO_18_u_161 op    I    I    I     S     S    S       S      S    S     S      S      S       S   
+CTELLTWO_18_u_161 #csid 0 10 3 0
+CTELLTWO_18_u_162 ref  ***  ***  الفضل     ما     شهدت   به  الأعداء
+CTELLTWO_18_u_162 hyp   لا   لم   أدخل  المستشفى   في   يوم    ماء  
+CTELLTWO_18_u_162 op    I    I     S        S       S    S      S   
+CTELLTWO_18_u_162 #csid 0 5 2 0
+CTELLTWO_18_u_163 ref  ***   ***   ***   ***   القدوة  الحسنة  خير   من  النصيحة
+CTELLTWO_18_u_163 hyp  نعم  أعاني   من  مشاكل    في    المعدة   في  بعض  الأحيان
+CTELLTWO_18_u_163 op    I     I     I     I       S       S     S    S      S   
+CTELLTWO_18_u_163 #csid 0 5 4 0
+CTELLTWO_18_u_164 ref  القدوة  الحسنة   خير     من    الوصية 
+CTELLTWO_18_u_164 hyp    ***     ***   ألدين  سبعين  كيلوغرام
+CTELLTWO_18_u_164 op      D       D      S      S        S   
+CTELLTWO_18_u_164 #csid 0 3 0 2
+CTELLTWO_18_u_165 ref  القناعة  كنز    لا     يفنى 
+CTELLTWO_18_u_165 hyp    طولي   متر  وثلاثة  وسبعون
+CTELLTWO_18_u_165 op      S      S      S       S  
+CTELLTWO_18_u_165 #csid 0 4 0 0
+CTELLTWO_18_u_166 ref  الكذب  داء  والصدق  دواء
+CTELLTWO_18_u_166 hyp   ***    لا    لا    أدخن
+CTELLTWO_18_u_166 op     D     S      S      S 
+CTELLTWO_18_u_166 #csid 0 3 0 1
+CTELLTWO_18_u_167 ref  الكريم   من   أكرم  الأحرار
+CTELLTWO_18_u_167 hyp    لا    أدخن   أي     شيء  
+CTELLTWO_18_u_167 op      S      S     S      S   
+CTELLTWO_18_u_167 #csid 0 4 0 0
+CTELLTWO_18_u_168 ref  الكريم  يظلم  من   فوقه   واللئيم  يظلم   من    تحته 
+CTELLTWO_18_u_168 hyp    ***    ***  لا  استهلك     أي    علبة  دخان  باليوم
+CTELLTWO_18_u_168 op      D      D    S     S       S       S     S      S  
+CTELLTWO_18_u_168 #csid 0 6 0 2
+CTELLTWO_18_u_169 ref  ***  المؤمن  كالنحلة  تأكل  طيبا  وتضع   طيبا
+CTELLTWO_18_u_169 hyp   لم   أدخن     ولو     يوم  واحد   في   حياتي
+CTELLTWO_18_u_169 op    I      S       S       S     S     S     S  
+CTELLTWO_18_u_169 #csid 0 6 1 0
+CTELLTWO_18_u_170 ref  ***   ***  المرء  بالأخلاق  يسمو   ذكره 
+CTELLTWO_18_u_170 hyp  نعم  يوجد    من     يدخن     في   عائلتي
+CTELLTWO_18_u_170 op    I     I     S        S       S      S  
+CTELLTWO_18_u_170 #csid 0 4 2 0
+CTELLTWO_18_u_171 ref  ***   ***   ***  ***  النظافة  من  الإيمان
+CTELLTWO_18_u_171 hyp   لم  أدخن  يوما   لك   أتوقف   عن  التدخين
+CTELLTWO_18_u_171 op    I     I     I    I      S      S     S   
+CTELLTWO_18_u_171 #csid 0 3 4 0
+CTELLTWO_18_u_172 ref  ***   ***   ***    ***     ***  النعمة  عروس  مهرها  الشكر
+CTELLTWO_18_u_172 hyp   لم  انقطع   عن  التدخين  بماء    من     لم    أدخن   يوم 
+CTELLTWO_18_u_172 op    I     I     I      I       I      S      S     S      S  
+CTELLTWO_18_u_172 #csid 0 4 5 0
+CTELLTWO_18_u_173 ref  ***   ***   ***    ***    الوعد  سحاب  والإنجاز  مطره
+CTELLTWO_18_u_173 hyp   لم  أتوقف   عن  التدخين   بما   أنني     لم     أدخن
+CTELLTWO_18_u_173 op    I     I     I      I       S      S       S       S 
+CTELLTWO_18_u_173 #csid 0 4 4 0
+CTELLTWO_18_u_174 ref  أملك  الناس  لنفسه   من     كتم      سره 
+CTELLTWO_18_u_174 hyp   ***   ***     لا   أشرب  مشروبات  الخمور
+CTELLTWO_18_u_174 op     D     D      S      S      S        S  
+CTELLTWO_18_u_174 #csid 0 4 0 2
+CTELLTWO_18_u_175 ref  إن  الله    يحب   معالي  الأمور    ويبغض    سفاسفها
+CTELLTWO_18_u_175 hyp  لا  أشرب  الخمور   بذلك  أستطيع  الاستغناء    عنه  
+CTELLTWO_18_u_175 op    S    S      S      S       S        S         S   
+CTELLTWO_18_u_175 #csid 0 7 0 0
+CTELLTWO_18_u_176 ref  ***  ***     ***        ***     ***  ***   ***   إن  المقْدِرة  تُذْهِبَ  الحفيظة
+CTELLTWO_18_u_176 hyp   لا   ان  المشروبات  الكحولية  ليست  جزء  أساسي  في     نظام      حياتي    اليومي
+CTELLTWO_18_u_176 op    I    I       I          I       I    I     I     S      S          S        S   
+CTELLTWO_18_u_176 #csid 0 4 7 0
+CTELLTWO_19_u_177 ref  المرء  بأصغريه   قلبه    ولسانه 
+CTELLTWO_19_u_177 hyp   ***     نعم    أتعاطى  المخدرات
+CTELLTWO_19_u_177 op     D       S        S        S   
+CTELLTWO_19_u_177 #csid 0 3 0 1
+CTELLTWO_19_u_178 ref  إنما  سُمِّيتَ  هانئاً   لتهنأ
+CTELLTWO_19_u_178 hyp   لا      لا     تصيبني  حساسية
+CTELLTWO_19_u_178 op     S       S        S       S  
+CTELLTWO_19_u_178 #csid 0 4 0 0
+CTELLTWO_19_u_179 ref  ***   إنه  نسيج  وحده
+CTELLTWO_19_u_179 hyp  نعم  حدثت   لي   كسور
+CTELLTWO_19_u_179 op    I     S     S     S 
+CTELLTWO_19_u_179 #csid 0 3 1 0
+CTELLTWO_19_u_180 ref  ***  أولى  الناس  بالعفو  أقدرهم  على  العقوبة
+CTELLTWO_19_u_180 hyp  نعم   انا  أعاني    من     أوجاع   في   عضلاتي
+CTELLTWO_19_u_180 op    I     S     S       S       S     S      S   
+CTELLTWO_19_u_180 #csid 0 6 1 0
+CTELLTWO_19_u_181 ref  ***   ***   إياك  وما  يعتذر    منه 
+CTELLTWO_19_u_181 hyp  نعم  أعاني   من   ضعف    في   عضلاتي
+CTELLTWO_19_u_181 op    I     I      S    S     S       S  
+CTELLTWO_19_u_181 #csid 0 4 2 0
+CTELLTWO_19_u_182 ref  ***   ***   بالأرض  ولدتك   أمك 
+CTELLTWO_19_u_182 hyp  نعم  أعاني    من     ألم   مضاعف
+CTELLTWO_19_u_182 op    I     I       S      S      S  
+CTELLTWO_19_u_182 #csid 0 3 2 0
+CTELLTWO_19_u_183 ref  بِشْرُ  الكريم  في  وجهه  يلوح
+CTELLTWO_19_u_183 hyp    نعم    أعاني  من   فقر  الدم
+CTELLTWO_19_u_183 op      S       S     S    S     S 
+CTELLTWO_19_u_183 #csid 0 5 0 0
+CTELLTWO_19_u_184 ref  ***  ***   بيت   المحسن  عمار
+CTELLTWO_19_u_184 hyp  نعم  لدي  مشاكل   نزيف    دم 
+CTELLTWO_19_u_184 op    I    I     S       S      S 
+CTELLTWO_19_u_184 #csid 0 3 2 0
+CTELLTWO_19_u_185 ref  ***   ***   تاج  المروءة  التواضع
+CTELLTWO_19_u_185 hyp  نعم  أعاني   من    مرض     السكر 
+CTELLTWO_19_u_185 op    I     I     S      S        S   
+CTELLTWO_19_u_185 #csid 0 3 2 0
+CTELLTWO_19_u_186 ref  ترك  الذنب   أيسر  من   ***    ***   الاعتذار
+CTELLTWO_19_u_186 hyp   لا    لا   أعاني  من  مشاكل  الغدة   الدرقية
+CTELLTWO_19_u_186 op    S     S      S     C    I      I        S   
+CTELLTWO_19_u_186 #csid 1 4 2 0
+CTELLTWO_19_u_187 ref  تمام  الصدق  الإخبار    بما   تحمله  العقول
+CTELLTWO_19_u_187 hyp   لا     لا    أتبول   بتكرار   غير    معتاد
+CTELLTWO_19_u_187 op     S     S       S        S      S       S  
+CTELLTWO_19_u_187 #csid 0 6 0 0
+CTELLTWO_19_u_188 ref  تناس  مساوئ  الإخوان   يدم  لك  وُدُّهُمْ
+CTELLTWO_19_u_188 hyp   ***   نعم     أشعر   بألم  في    كليتي  
+CTELLTWO_19_u_188 op     D     S       S       S    S      S    
+CTELLTWO_19_u_188 #csid 0 5 0 1
+CTELLTWO_19_u_189 ref  ***  حُسْنُ   الخلق   خير    قرين
+CTELLTWO_19_u_189 hyp  نعم   أشعر   بحرقان  عندما  أتبول
+CTELLTWO_19_u_189 op    I      S       S      S      S  
+CTELLTWO_19_u_189 #csid 0 4 1 0
+CTELLTWO_19_u_190 ref  حُسْنُ  الخلق  يذيب  الخطايا   كما  تذيب  الشمس  الجليد
+CTELLTWO_19_u_190 hyp    لا      لم   يحدث     أن    رأيت   دما    في    بولي 
+CTELLTWO_19_u_190 op      S      S      S      S       S     S     S       S  
+CTELLTWO_19_u_190 #csid 0 8 0 0
+CTELLTWO_19_u_191 ref  ***  ***   ***   حُسْنُ  الخلق  يوجب  المودة
+CTELLTWO_19_u_191 hyp   لا   لا  أعاني    من     حصوة   في    الكلى
+CTELLTWO_19_u_191 op    I    I     I       S      S      S      S  
+CTELLTWO_19_u_191 #csid 0 4 3 0
+CTELLTWO_19_u_192 ref   حق  من  كتب   بمسك  أن  يختم  بعنبر
+CTELLTWO_19_u_192 hyp  ***  لا   لا  أعاني  من  رعشة   حمى 
+CTELLTWO_19_u_192 op    D    S   S     S     S    S     S  
+CTELLTWO_19_u_192 #csid 0 6 0 1
+CTELLTWO_19_u_193 ref  خلقت  مُبَرَّأً   من   كل  عيب  كأنك   قد  خُلقْتَ  كما   تشاء 
+CTELLTWO_19_u_193 hyp   ***     ***     ***  ***  ***   ***  ***    نعم    لدي  حساسية
+CTELLTWO_19_u_193 op     D       D       D    D    D     D    D      S      S      S  
+CTELLTWO_19_u_193 #csid 0 3 0 7
+CTELLTWO_19_u_194 ref  خير  الناس  للناس  خيرهم   لنفسه
+CTELLTWO_19_u_194 hyp  ***   نعم   أعاني    من   الصداع
+CTELLTWO_19_u_194 op    D     S      S      S       S  
+CTELLTWO_19_u_194 #csid 0 4 0 1
+CTELLTWO_19_u_195 ref  خير  الناس   من  فرح  للناس  بالخير
+CTELLTWO_19_u_195 hyp  ***   ***   ***  نعم   لدي    دوار 
+CTELLTWO_19_u_195 op    D     D     D    S     S       S  
+CTELLTWO_19_u_195 #csid 0 3 0 3
+CTELLTWO_19_u_196 ref  خير  صِلاتِ  الكريم  أَعْوَدُها
+CTELLTWO_19_u_196 hyp  ***    نعم     لدي     تشنجات  
+CTELLTWO_19_u_196 op    D      S       S         S    
+CTELLTWO_19_u_196 #csid 0 3 0 1
+CTELLTWO_19_u_197 ref  ***  ***   ***   خيركم  خيركم  لأهله
+CTELLTWO_19_u_197 hyp   لا   لا  أعاني    من   فقدان  البصر
+CTELLTWO_19_u_197 op    I    I     I      S      S      S  
+CTELLTWO_19_u_197 #csid 0 3 3 0
+CTELLTWO_19_u_198 ref  ***  ***   ***   ذكر    الفتى   عمره  الثاني
+CTELLTWO_19_u_198 hyp   لا   لا  أعاني   من  ازدواجية   في    النظر
+CTELLTWO_19_u_198 op    I    I     I     S       S       S      S  
+CTELLTWO_19_u_198 #csid 0 4 3 0
+CTELLTWO_19_u_199 ref  ***  ***   ساقي  القوم  آخرهم  شراباً
+CTELLTWO_19_u_199 hyp   لا   لا  أعاني    من   فقدان   السمع
+CTELLTWO_19_u_199 op    I    I     S      S      S       S  
+CTELLTWO_19_u_199 #csid 0 4 2 0
+CTELLTWO_19_u_200 ref   سر  النجاح  على  الدوام  هو   أن  تسير  إلى  الأمام
+CTELLTWO_19_u_200 hyp  ***    ***   ***    ***   لا  ليس   لدي  ألم   بأذني
+CTELLTWO_19_u_200 op    D      D     D      D     S   S     S    S      S  
+CTELLTWO_19_u_200 #csid 0 5 0 4
+CTELLTWO_19_u_201 ref  ***  سيد  القوم  خادمهم
+CTELLTWO_19_u_201 hyp  نعم  لدي   رشح   بالأنف
+CTELLTWO_19_u_201 op    I    S     S       S  
+CTELLTWO_19_u_201 #csid 0 3 1 0
+CTELLTWO_20_u_202 ref  شكرت  جميل  صنعكم  بدمعي  ودمع  العين  مقياس  الشعور
+CTELLTWO_20_u_202 hyp   ***   ***   ***    ***    ليس   لدي    جيوب   أنفية
+CTELLTWO_20_u_202 op     D     D     D      D      S     S      S       S  
+CTELLTWO_20_u_202 #csid 0 4 0 4
+CTELLTWO_20_u_203 ref  صلاح  أمرك  بالأخلاق  مرجعه  فَقَوِّم  النفس  بالأخلاق   تستقم
+CTELLTWO_20_u_203 hyp   ***   ***     ***     نعم     يحدث      لي     نزيف    بالأنف
+CTELLTWO_20_u_203 op     D     D       D       S        S       S        S        S  
+CTELLTWO_20_u_203 #csid 0 5 0 3
+CTELLTWO_20_u_204 ref  عامل  الناس  برأي  رفيق   والق  من   تلقى  بوجه   طليق 
+CTELLTWO_20_u_204 hyp   ***   ***    ***   لا   أعاني  من  مشاكل   في   أسناني
+CTELLTWO_20_u_204 op     D     D      D     S     S     C    S      S      S  
+CTELLTWO_20_u_204 #csid 1 5 0 3
+CTELLTWO_20_u_205 ref  عامل  الناس    بما     تحب   أن  يعاملوك    به  
+CTELLTWO_20_u_205 hyp   ***   بعض   الأحيان  أعاني  من    ألم    بالحلق
+CTELLTWO_20_u_205 op     D     S       S       S     S     S        S  
+CTELLTWO_20_u_205 #csid 0 6 0 1
+CTELLTWO_20_u_206 ref  عصفور  في   اليد  خير   من  عشرة   على     الشجرة 
+CTELLTWO_20_u_206 hyp   ***   لا  أعاني   من  ألم   في   الغدة  اللمفاوية
+CTELLTWO_20_u_206 op     D     S    S     S    S     S     S        S    
+CTELLTWO_20_u_206 #csid 0 7 0 1
+CTELLTWO_20_u_207 ref  عندما  تكون    في   روما    تصرف   كما  يتصرف  الرومان
+CTELLTWO_20_u_207 hyp   ***    ***  أعاني   بعض  الأحيان   من   قصور  بالتنفس
+CTELLTWO_20_u_207 op     D      D     S      S      S      S     S       S   
+CTELLTWO_20_u_207 #csid 0 6 0 2
+CTELLTWO_20_u_208 ref  ***   فرط   الأنس  مكسبة  لقرناء   السوء 
+CTELLTWO_20_u_208 hyp  نعم  أشعر  بالكحة    في     بعض   الأحيان
+CTELLTWO_20_u_208 op    I     S      S      S       S       S   
+CTELLTWO_20_u_208 #csid 0 5 1 0
+CTELLTWO_20_u_209 ref   فلان  دُرَّةُ  التاج  وواسطة  العقد
+CTELLTWO_20_u_209 hyp  عندما   تصيبني  الكحة   أبصق    لعاب
+CTELLTWO_20_u_209 op     S       S       S       S      S  
+CTELLTWO_20_u_209 #csid 0 5 0 0
+CTELLTWO_20_u_210 ref  فَمَن  يَعمَل  مِثقَالَ  ذَرَّةٍ  خَيرًا  يَرَهُ
+CTELLTWO_20_u_210 hyp   نعم    هنالك     بعض       دم      في    اللعاب
+CTELLTWO_20_u_210 op     S       S        S        S        S       S  
+CTELLTWO_20_u_210 #csid 0 6 0 0
+CTELLTWO_20_u_211 ref   في   سعة  الأخلاق    كنوز   الأرزاق
+CTELLTWO_20_u_211 hyp  نعم  اصاب    بعض    الأحيان   بالبحة
+CTELLTWO_20_u_211 op    S     S      S        S        S   
+CTELLTWO_20_u_211 #csid 0 5 0 0
+CTELLTWO_20_u_212 ref  قُل  كُلٌّ  يَعمَلُ  عَلَى  شَاكِلَتِهِ
+CTELLTWO_20_u_212 hyp  نعم   لدي    مشكلة     في      التنفس  
+CTELLTWO_20_u_212 op    S     S       S       S         S     
+CTELLTWO_20_u_212 #csid 0 5 0 0
+CTELLTWO_20_u_213 ref  ***   ***    ***     ***      ***      قلب   المؤمن  دليله
+CTELLTWO_20_u_213 hyp  نعم  اصاب  بالتهاب  الشعب  الهوائية  والكذب  الرئوي  الحاد
+CTELLTWO_20_u_213 op    I     I      I       I        I        S       S      S  
+CTELLTWO_20_u_213 #csid 0 3 5 0
+CTELLTWO_20_u_214 ref  قليل   في  الجيب  خير   من   كثير   في    الغيب
+CTELLTWO_20_u_214 hyp   ***  ***    لا    لم  يحدث   وأن  اصبت  بالدرن
+CTELLTWO_20_u_214 op     D    D     S     S     S     S     S      S  
+CTELLTWO_20_u_214 #csid 0 6 0 2
+CTELLTWO_20_u_215 ref  قَولٌ  مَّعرُوفٌ  وَمَغفِرَةُ  خَيرٌ  مِّن  صَدَقَةٍ  يَتبَعُهَا  أَذًى
+CTELLTWO_20_u_215 hyp   ***      ***         ***        لم    أصب    بآلام       في      الصدر
+CTELLTWO_20_u_215 op     D        D           D         S      S       S          S        S  
+CTELLTWO_20_u_215 #csid 0 5 0 3
+CTELLTWO_20_u_216 ref  ***    ***     كل    امرئ  بما  يحسنه
+CTELLTWO_20_u_216 hyp  بعض  الأحيان  اصاب  بدقات  قلب  سريعة
+CTELLTWO_20_u_216 op    I      I       S     S     S     S  
+CTELLTWO_20_u_216 #csid 0 4 2 0
+CTELLTWO_20_u_217 ref  كما   أن  السؤال  يُذِلُّ    قوما   كذاك   يعز  قوم  بالعطاء
+CTELLTWO_20_u_217 hyp  ***  ***    نعم     بعض    الأحيان  أشعر  بضيق   في   الصدر 
+CTELLTWO_20_u_217 op    D    D      S       S        S       S     S    S      S   
+CTELLTWO_20_u_217 #csid 0 7 0 2
+CTELLTWO_20_u_218 ref  ***   ***  ***   لا  تشن  وجه  العفو  بالتأنيب
+CTELLTWO_20_u_218 hyp   لم  يسبق   ان  حدث   لي  ورم    في    الساقين
+CTELLTWO_20_u_218 op    I     I    I    S    S    S     S        S   
+CTELLTWO_20_u_218 #csid 0 5 3 0
+CTELLTWO_20_u_219 ref   لا  تكن  حلواً  فتؤكل  ولا  مراً  فترمى
+CTELLTWO_20_u_219 hyp  ***  ***   ***    ليس    لي   ضغط    دم 
+CTELLTWO_20_u_219 op    D    D     D      S     S     S     S  
+CTELLTWO_20_u_219 #csid 0 4 0 3
+CTELLTWO_20_u_220 ref   لا  تمازح  الشريف  فيحنق  عليك  ولا  الدنيء  فيتجرأ  عليك
+CTELLTWO_20_u_220 hyp  ***   ***     ***    ***    ***  ***    نعم    أفقد   وزني
+CTELLTWO_20_u_220 op    D     D       D      D      D    D      S       S      S 
+CTELLTWO_20_u_220 #csid 0 3 0 6
+CTELLTWO_20_u_221 ref   لا  تنه   عن  خلق  وتأتي  مثله   عار   عليك   إذا   فعلت    عظيم 
+CTELLTWO_20_u_221 hyp  ***  ***  ***  ***   نعم   أشعر  بدوخة    و   برغبة   في   استفرغت
+CTELLTWO_20_u_221 op    D    D    D    D     S      S     S      S     S      S      S   
+CTELLTWO_20_u_221 #csid 0 7 0 4
+CTELLTWO_20_u_222 ref   لا  خير  فيمن   لا  يَأْلَفُ  ولا   يؤلف
+CTELLTWO_20_u_222 hyp  ***  ***   ليس  لدي     ألم    غير  محتمل
+CTELLTWO_20_u_222 op    D    D     S    S       S      S     S  
+CTELLTWO_20_u_222 #csid 0 5 0 2
+CTELLTWO_20_u_223 ref  لكل  مقام  مقال  ولكل  زمان   رجال
+CTELLTWO_20_u_223 hyp  ***   ***   ***   ليس   لدي  اسهال
+CTELLTWO_20_u_223 op    D     D     D     S     S     S  
+CTELLTWO_20_u_223 #csid 0 3 0 3
+CTELLTWO_20_u_224 ref  للشدائد  تُدَّخَرُ  الرجال
+CTELLTWO_20_u_224 hyp     لا       أشعر    بحموضة
+CTELLTWO_20_u_224 op      S         S         S  
+CTELLTWO_20_u_224 #csid 0 3 0 0
+CTELLTWO_20_u_225 ref   لو  كان  الكذب  ينجي  فالصدق   أنجى 
+CTELLTWO_20_u_225 hyp  ***  ليس   لدي    دم     في    البراز
+CTELLTWO_20_u_225 op    D    S     S      S      S       S  
+CTELLTWO_20_u_225 #csid 0 5 0 1
+CTELLTWO_20_u_226 ref   ما   كل   من      قال    قولا  وفى
+CTELLTWO_20_u_226 hyp  ***  نعم  اصبت  بالصفراء   من   قبل
+CTELLTWO_20_u_226 op    D    S     S       S       S    S 
+CTELLTWO_20_u_226 #csid 0 5 0 1
+CTELLTWO_21_u_227 ref  ***   ما   هو   إلا    بستان
+CTELLTWO_21_u_227 hyp   لا  ليس  لدي  مشاكل  بالكبد
+CTELLTWO_21_u_227 op    I    S    S     S       S  
+CTELLTWO_21_u_227 #csid 0 4 1 0
+CTELLTWO_21_u_228 ref   من  حسن  إسلام  المرء  تَرْكُهُ  ما     لا    يعنيه
+CTELLTWO_21_u_228 hyp  ***  ***    لم    يسبق     لي     أن  استفرغت   دما 
+CTELLTWO_21_u_228 op    D    D     S      S        S      S     S       S  
+CTELLTWO_21_u_228 #csid 0 6 0 2
+CTELLTWO_21_u_229 ref  ***  ***   ***  ***   ***   معاتبة  الإخوان  خير    من   فقدهم
+CTELLTWO_21_u_229 hyp   لا   لم  يحدث   أن  فقدت  الإحساس     في    أحد  اعضاء   جسدي
+CTELLTWO_21_u_229 op    I    I     I    I     I      S        S      S     S      S  
+CTELLTWO_21_u_229 #csid 0 5 5 0
+CTELLTWO_21_u_230 ref  ***  من  تواضع   لله   رفعه
+CTELLTWO_21_u_230 hyp   لا  لم   يحدث  لهذا  المرض
+CTELLTWO_21_u_230 op    I    S    S      S     S  
+CTELLTWO_21_u_230 #csid 0 4 1 0
+CTELLTWO_21_u_231 ref  ***  ***   ***  من   حسن   خُلُقُه  استراح  وأراح
+CTELLTWO_21_u_231 hyp   لا   لم  يحدث  لي  مشاكل     في     حاسة    الشم
+CTELLTWO_21_u_231 op    I    I     I    S    S       S        S      S  
+CTELLTWO_21_u_231 #csid 0 5 3 0
+CTELLTWO_21_u_232 ref  ***  ***   من   حسن  خُلقُه  وجب    حقُّه 
+CTELLTWO_21_u_232 hyp   لا   لم  تحدث   لي   مشاكل   في  المخاطبة
+CTELLTWO_21_u_232 op    I    I     S    S      S     S       S   
+CTELLTWO_21_u_232 #csid 0 5 2 0
+CTELLTWO_21_u_233 ref  ***  ***    من    شابه  أباه   فما    ظلم 
+CTELLTWO_21_u_233 hyp   لا   لا  أعاني  مشاكل   في   قدرة  إبصاري
+CTELLTWO_21_u_233 op    I    I     S      S      S     S      S  
+CTELLTWO_21_u_233 #csid 0 5 2 0
+CTELLTWO_21_u_234 ref  ***  من  شَبَّ  على   شيء   شاب    عليه  
+CTELLTWO_21_u_234 hyp   لا  لم   يحدث   لي  مشاكل   في  الابتلاع
+CTELLTWO_21_u_234 op    I    S    S     S     S     S       S   
+CTELLTWO_21_u_234 #csid 0 6 1 0
+CTELLTWO_21_u_235 ref  ***    من   عرف   نفسه  عرف    ربه  
+CTELLTWO_21_u_235 hyp   لا  أعاني   من  مشكلة   في  الاتزان
+CTELLTWO_21_u_235 op    I     S     S     S     S      S   
+CTELLTWO_21_u_235 #csid 0 5 1 0
+CTELLTWO_21_u_236 ref   من   لم  يقنع  باليسير  لم  يكتف   بالكثير
+CTELLTWO_21_u_236 hyp  ***  ***   ***    ***    لا  اصاب  بالهلوسة
+CTELLTWO_21_u_236 op    D    D     D      D      S    S       S   
+CTELLTWO_21_u_236 #csid 0 3 0 4
+CTELLTWO_21_u_237 ref  نعم  الثوب  العافية     إذا      انسدل  على  الكفاف
+CTELLTWO_21_u_237 hyp  ***    لم     أصب    بالانهيار  العصبي   من    قبل 
+CTELLTWO_21_u_237 op    D     S       S         S         S     S      S  
+CTELLTWO_21_u_237 #csid 0 6 0 1
+CTELLTWO_21_u_238 ref  نعم  العون   على   المروءة  المال
+CTELLTWO_21_u_238 hyp   لا  أعاني  مشاكل     في    النوم
+CTELLTWO_21_u_238 op    S     S      S       S       S  
+CTELLTWO_21_u_238 #csid 0 5 0 0
+CTELLTWO_21_u_239 ref  ***   نعم   المؤَدِّبُ    الدهر 
+CTELLTWO_21_u_239 hyp   لا  أعاني      من      الاكتئاب
+CTELLTWO_21_u_239 op    I     S         S          S   
+CTELLTWO_21_u_239 #csid 0 3 1 0
+CTELLTWO_21_u_240 ref  نعم   حاجب  الشهوات   غض  البصر
+CTELLTWO_21_u_240 hyp   لا  أعاني     من    هذا  المرض
+CTELLTWO_21_u_240 op    S     S       S      S     S  
+CTELLTWO_21_u_240 #csid 0 5 0 0
+CTELLTWO_21_u_241 ref  هذا  الشبل  من  ذاك  الأسد
+CTELLTWO_21_u_241 hyp  ***   ***   لا  لست  مجروح
+CTELLTWO_21_u_241 op    D     D     S   S     S  
+CTELLTWO_21_u_241 #csid 0 3 0 2
+CTELLTWO_21_u_242 ref   هي  الأخلاق  تنبت  كالنبات   إذا    سقيت    بماء   المكرمات
+CTELLTWO_21_u_242 hyp  ***    نعم    أكلت     في    خلال  الساعات  الثلاث   الماضية
+CTELLTWO_21_u_242 op    D      S       S      S       S      S        S        S   
+CTELLTWO_21_u_242 #csid 0 7 0 1
+CTELLTWO_21_u_243 ref  هيهات  تكتم   في   الظلام  مشاعل
+CTELLTWO_21_u_243 hyp    لا    لم   يحدث   لهذا   المرض
+CTELLTWO_21_u_243 op     S      S     S      S      S  
+CTELLTWO_21_u_243 #csid 0 5 0 0
+CTELLTWO_21_u_244 ref  وأحسن  منك  لم   تر   قط  عيني  وأجمل  منك   لم    تلد  النساء
+CTELLTWO_21_u_244 hyp   ***    لا  لم  ***  ***   ***   ***   ***  يحدث  لهذا   المرض
+CTELLTWO_21_u_244 op     D     S    C   D    D     D     D     D     S     S      S  
+CTELLTWO_21_u_244 #csid 1 4 0 6
+CTELLTWO_21_u_245 ref  وإنما  الأمم  الأخلاق   ما  بقيت  فإن    هم   ذهبت  أخلاقهم  ذهبوا
+CTELLTWO_21_u_245 hyp   ***    ***     ***    ***   لا    لم  أعاني   من     هذا    المرض
+CTELLTWO_21_u_245 op     D      D       D      D     S    S     S      S      S       S  
+CTELLTWO_21_u_245 #csid 0 6 0 4
+CTELLTWO_21_u_246 ref  وإني  وإن  كنت  الأخير  زمانه  لآت  بما    لم   تستطعه  الأوائل
+CTELLTWO_21_u_246 hyp   ***  ***  ***    ***    ***    لا  لست  مصابا   بهذا    المرض 
+CTELLTWO_21_u_246 op     D    D    D      D      D     S    S     S       S       S   
+CTELLTWO_21_u_246 #csid 0 5 0 5
+CTELLTWO_21_u_247 ref  وأي  الناس  ليس   به  عيوب
+CTELLTWO_21_u_247 hyp  ***    لا   ليس  لدي   درن
+CTELLTWO_21_u_247 op    D     S     C    S     S 
+CTELLTWO_21_u_247 #csid 1 3 0 1
+CTELLTWO_21_u_248 ref  وتأتي  على  قدر  الكرام  المكارم
+CTELLTWO_21_u_248 hyp   ***   ***  ***    نعم    أفهمك 
+CTELLTWO_21_u_248 op     D     D    D      S       S   
+CTELLTWO_21_u_248 #csid 0 2 0 3
+CTELLTWO_21_u_249 ref  وتعظم   في  عين  الصغير  صغارها  وتصغر   في   عين  العظيم  العظائم
+CTELLTWO_21_u_249 hyp   ***   ***  ***    لا     أعرف     ما   تقصد   لب  المهند   مصطلح 
+CTELLTWO_21_u_249 op     D     D    D      S       S      S      S    S      S       S   
+CTELLTWO_21_u_249 #csid 0 7 0 3
+CTELLTWO_21_u_250 ref  وَلَو  كُنتَ  فَظًّا  غَلِيظَ  القَلبِ  لاَنفَضُّواْ   مِن  حَولِكَ
+CTELLTWO_21_u_250 hyp   ***    ***     ***      لا      لست        مصابا     بهذا   المرض 
+CTELLTWO_21_u_250 op     D      D       D       S        S           S         S      S   
+CTELLTWO_21_u_250 #csid 0 5 0 3
+CTELLTWO_21_u_251 ref  ومهما  يكن  عند  امرئ   من  خَليقَةٍ  وإن  خالها  تَخْفَى   على   الناس  تُعْلَمِ
+CTELLTWO_21_u_251 hyp   ***   ***  ***   ***  ***     ***    ***    لا     لست    مصابا   بهذا    المرض 
+CTELLTWO_21_u_251 op     D     D    D     D    D       D      D     S       S       S      S        S   
+CTELLTWO_21_u_251 #csid 0 5 0 7
+CTELLTWO_22_u_252 ref   يد  الحر  ميزان
+CTELLTWO_22_u_252 hyp  ***   لست   حامل
+CTELLTWO_22_u_252 op    D     S     S  
+CTELLTWO_22_u_252 #csid 0 2 0 1
+CTELLTWO_22_u_253 ref  ***  يَغْرِفُ   من   بحر 
+CTELLTWO_22_u_253 hyp  مضى   أسبوعان  على  الحمل
+CTELLTWO_22_u_253 op    I       S      S     S  
+CTELLTWO_22_u_253 #csid 0 3 1 0
+CTELLTWO_22_u_254 ref  لكل   جديد   لذة 
+CTELLTWO_22_u_254 hyp  حدث  الحمل  مرتين
+CTELLTWO_22_u_254 op    S     S      S  
+CTELLTWO_22_u_254 #csid 0 3 0 0
+CTELLTWO_22_u_255 ref  الثروة  تأتي  كالسلحفاة  وتذهب  كالغزال
+CTELLTWO_22_u_255 hyp    ***    ***     ***      أشعر   بالألم
+CTELLTWO_22_u_255 op      D      D       D        S       S   
+CTELLTWO_22_u_255 #csid 0 2 0 3
+CTELLTWO_22_u_256 ref  ***  ***  ***   ***  الدراهم   مراهم
+CTELLTWO_22_u_256 hyp  منذ  مدة   و   جزاء    أشعر   بالألم
+CTELLTWO_22_u_256 op    I    I    I     I      S        S  
+CTELLTWO_22_u_256 #csid 0 2 4 0
+CTELLTWO_22_u_257 ref   إن   غلا   اللحم  فالصبر  رخيص
+CTELLTWO_22_u_257 hyp  ***  أشعر  بالألم    في    رأسي
+CTELLTWO_22_u_257 op    D     S      S       S      S 
+CTELLTWO_22_u_257 #csid 0 4 0 1
+CTELLTWO_22_u_258 ref    ***    ***   ***  ***    إذا   تمنيت  فاستكثر
+CTELLTWO_22_u_258 hyp  المكان  الذي  أشعر   به  بالألم    هو     رأسي 
+CTELLTWO_22_u_258 op      I      I     I    I      S      S       S   
+CTELLTWO_22_u_258 #csid 0 3 4 0
+CTELLTWO_22_u_259 ref  المال    يجلب   المال
+CTELLTWO_22_u_259 hyp   مكان  الإصابة   رأسي
+CTELLTWO_22_u_259 op     S       S       S  
+CTELLTWO_22_u_259 #csid 0 3 0 0
+CTELLTWO_22_u_260 ref  أغن   من  وليته    عن   السرقة
+CTELLTWO_22_u_260 hyp  ***  نعم    لي   إصابة   سكين 
+CTELLTWO_22_u_260 op    D    S     S      S       S  
+CTELLTWO_22_u_260 #csid 0 4 0 1
+CTELLTWO_22_u_261 ref   ***  الأماني    رءوس   مال  المفاليس
+CTELLTWO_22_u_261 hyp  ليست    هذه    الإصابة   من    حجار  
+CTELLTWO_22_u_261 op     I      S        S      S       S   
+CTELLTWO_22_u_261 #csid 0 4 1 0
+CTELLTWO_22_u_262 ref  التدبير  يثمر   اليسير  والتبذير   يبدد   الكثير
+CTELLTWO_22_u_262 hyp    نعم     هذه  الاصابة     من     اصطدام   سيارة
+CTELLTWO_22_u_262 op      S       S      S         S        S       S  
+CTELLTWO_22_u_262 #csid 0 6 0 0
+CTELLTWO_22_u_263 ref  ***   ***    ***   ***  الرجال  بالأموال
+CTELLTWO_22_u_263 hyp  نعم  أشعر  بالألم   في    هذا    المفصل 
+CTELLTWO_22_u_263 op    I     I      I     I      S        S   
+CTELLTWO_22_u_263 #csid 0 2 4 0
+CTELLTWO_22_u_264 ref  ***  ***   ***   ***   ***   ***  الشرط    نور 
+CTELLTWO_22_u_264 hyp  ليس  هذا  الشخص   هو  الذي  تسبب    في   إصابتي
+CTELLTWO_22_u_264 op    I    I     I     I     I     I     S       S  
+CTELLTWO_22_u_264 #csid 0 2 6 0
+CTELLTWO_22_u_265 ref  ***   ***  ***  ***  ***  الضامن   غارم
+CTELLTWO_22_u_265 hyp  نعم  أعرف   من  فعل  هذا    هو    صديقي
+CTELLTWO_22_u_265 op    I     I    I    I    I      S      S  
+CTELLTWO_22_u_265 #csid 0 2 5 0
+CTELLTWO_22_u_266 ref  الغالي  ثمنه   فيه 
+CTELLTWO_22_u_266 hyp    نعم   فقدت  الوعي
+CTELLTWO_22_u_266 op      S      S     S  
+CTELLTWO_22_u_266 #csid 0 3 0 0
+CTELLTWO_22_u_267 ref  ***   ***      ***    الغنى   يورث  البطر
+CTELLTWO_22_u_267 hyp  نعم  تنفست  واستنشقت   هواء  ساخنا   أدخن
+CTELLTWO_22_u_267 op    I     I        I       S      S      S  
+CTELLTWO_22_u_267 #csid 0 3 3 0
+CTELLTWO_22_u_268 ref  القرش  الأبيض   ينفع   في  اليوم  الأسود
+CTELLTWO_22_u_268 hyp   نعم    أشعر   بالألم  في   هذا   المفصل
+CTELLTWO_22_u_268 op     S       S       S     C    S       S  
+CTELLTWO_22_u_268 #csid 1 5 0 0
+CTELLTWO_22_u_269 ref  ***   ***    ***   ***  القلة    ذلة 
+CTELLTWO_22_u_269 hyp  نعم  أشعر  بالألم   في   هذه   العضلة
+CTELLTWO_22_u_269 op    I     I      I     I     S       S  
+CTELLTWO_22_u_269 #csid 0 2 4 0
+CTELLTWO_22_u_270 ref  المال  ينفد  حله  وحرامه  يوماً  ويبقى    بعد   ذلك  إثمه
+CTELLTWO_22_u_270 hyp   ***    ***  ***    ***    ***    أشعر  بالألم   في  ساقي
+CTELLTWO_22_u_270 op     D      D    D      D      D      S       S     S     S 
+CTELLTWO_22_u_270 #csid 0 4 0 5
+CTELLTWO_22_u_271 ref   إن  الغنى  والعز   في  القناعة  والذل  في  الحرص  وفي  الوضاعة
+CTELLTWO_22_u_271 hyp  ***   ***    ***   نعم    أشعر    بشد   في   ***   هذه   العضلة
+CTELLTWO_22_u_271 op    D     D      D     S      S       S     C    D     S      S   
+CTELLTWO_22_u_271 #csid 1 5 0 4
+CTELLTWO_22_u_272 ref  خير   مالك     ما   نفعك
+CTELLTWO_22_u_272 hyp   لا  أستطيع  تحريك  ساقي
+CTELLTWO_22_u_272 op    S      S      S      S 
+CTELLTWO_22_u_272 #csid 0 4 0 0
+CTELLTWO_22_u_273 ref  ***    خير   الأشياء  جديدها
+CTELLTWO_22_u_273 hyp  نعم  أستطيع   تحريك     يدي 
+CTELLTWO_22_u_273 op    I      S       S        S  
+CTELLTWO_22_u_273 #csid 0 3 1 0
+CTELLTWO_22_u_274 ref  رأيت  الناس   قد  مالوا  إلى    من     عنده   مال
+CTELLTWO_22_u_274 hyp   ***   ***   ***    لا    لا  أستطيع  تحريك  رأسي
+CTELLTWO_22_u_274 op     D     D     D     S     S      S      S      S 
+CTELLTWO_22_u_274 #csid 0 5 0 3
+CTELLTWO_22_u_275 ref  رِزْقُه   في   رجليه
+CTELLTWO_22_u_275 hyp     لا    أراك  بوضوح
+CTELLTWO_22_u_275 op      S       S     S  
+CTELLTWO_22_u_275 #csid 0 3 0 0
+CTELLTWO_23_u_1 ref  البعيد   عن  العين  بعيد   عن    القلب
+CTELLTWO_23_u_1 hyp    ***   ***   ***    نعم  أعيش  بمفردي
+CTELLTWO_23_u_1 op      D     D     D      S     S      S  
+CTELLTWO_23_u_1 #csid 0 3 0 3
+CTELLTWO_23_u_10 ref   لا  تخف   ما  صنعت   بك  الأشواق  واشرح  هواك  فكلنا   عشاق
+CTELLTWO_23_u_10 hyp  ***  ***  ***   ***  ***    ***     ***    ***   أنا   مصيبة
+CTELLTWO_23_u_10 op    D    D    D     D    D      D       D      D     S      S  
+CTELLTWO_23_u_10 #csid 0 2 0 8
+CTELLTWO_23_u_11 ref  مرآة  الحب  عمياء
+CTELLTWO_23_u_11 hyp   ***   أنا  عزباء
+CTELLTWO_23_u_11 op     D     S     S  
+CTELLTWO_23_u_11 #csid 0 2 0 1
+CTELLTWO_23_u_12 ref   من  القلب  للقلب   رسول
+CTELLTWO_23_u_12 hyp  ***   ليس    لدي   أبناء
+CTELLTWO_23_u_12 op    D     S      S      S  
+CTELLTWO_23_u_12 #csid 0 3 0 1
+CTELLTWO_23_u_13 ref  إذا  أتاك  أحد  الخصمين  وقد  فُقِئَتْ  عينه  فلا  تقض   له  حتى  يأتيك  خصمه  فلعله   قد  فُقِئَتْ  عيناه
+CTELLTWO_23_u_13 hyp  ***   ***  ***    ***    ***     ***     ***  ***  ***  ***  ***   ***    ***   ***   ***     لدي    بنتان
+CTELLTWO_23_u_13 op    D     D    D      D      D       D       D    D    D    D    D     D      D     D     D       S       S  
+CTELLTWO_23_u_13 #csid 0 2 0 15
+CTELLTWO_23_u_14 ref  إذا  تولى   عقداً   أحكمه 
+CTELLTWO_23_u_14 hyp  نعم  تشعر  عائلتي  بالأمان
+CTELLTWO_23_u_14 op    S     S      S       S   
+CTELLTWO_23_u_14 #csid 0 4 0 0
+CTELLTWO_23_u_15 ref  الجزاء    من   جنس  العمل
+CTELLTWO_23_u_15 hyp    نعم   أتحدث  عدة   لغات
+CTELLTWO_23_u_15 op      S      S     S     S  
+CTELLTWO_23_u_15 #csid 0 4 0 0
+CTELLTWO_23_u_16 ref   الحق    دولة      والباطل      جولة  
+CTELLTWO_23_u_16 hyp  أتحدث  الفرنسية  الانجليزية  الإسبانية
+CTELLTWO_23_u_16 op     S        S          S          S    
+CTELLTWO_23_u_16 #csid 0 4 0 0
+CTELLTWO_23_u_17 ref  الرجوع  إلى  الحق  خير   من   التمادي   في  الباطل
+CTELLTWO_23_u_17 hyp    ***   ***   ***  هذا  ثلاث    حسبه   نوع   لغات 
+CTELLTWO_23_u_17 op      D     D     D    S     S      S      S      S  
+CTELLTWO_23_u_17 #csid 0 5 0 3
+CTELLTWO_23_u_18 ref  العاقل   لا  يبطل  حقا   ولا     يحق     باطلا 
+CTELLTWO_23_u_18 hyp    ***   ***   ***  نعم  أنهيت  دراستي  الثانوية
+CTELLTWO_23_u_18 op      D     D     D    S     S       S        S   
+CTELLTWO_23_u_18 #csid 0 4 0 3
+CTELLTWO_23_u_19 ref   ***   العدل   أساس  الْمُلْك
+CTELLTWO_23_u_19 hyp  أنهيت   أربع  سنوات  بالجامعة
+CTELLTWO_23_u_19 op     I      S      S        S   
+CTELLTWO_23_u_19 #csid 0 3 1 0
+CTELLTWO_23_u_2 ref   ***  الحب  أعمى
+CTELLTWO_23_u_2 hyp  اعيش   مع    عدة
+CTELLTWO_23_u_2 op     I     S     S 
+CTELLTWO_23_u_2 #csid 0 2 1 0
+CTELLTWO_23_u_20 ref   ***   العين  بالعين  والسن   بالسن
+CTELLTWO_23_u_20 hyp  شاهدت   ختم     درن   شمالك  الحقوق
+CTELLTWO_23_u_20 op     I      S       S      S       S  
+CTELLTWO_23_u_20 #csid 0 4 1 0
+CTELLTWO_23_u_21 ref  ***   صاحب  الحق  عينه   قوية
+CTELLTWO_23_u_21 hyp   لا  أنتمي   لأي   حزب  سياسي
+CTELLTWO_23_u_21 op    I     S      S     S     S  
+CTELLTWO_23_u_21 #csid 0 4 1 0
+CTELLTWO_23_u_22 ref  على  الباغي  تدور  الدوائر
+CTELLTWO_23_u_22 hyp  ***    ***    إنا   عسكري 
+CTELLTWO_23_u_22 op    D      D      S      S   
+CTELLTWO_23_u_22 #csid 0 2 0 2
+CTELLTWO_23_u_23 ref  قُضِيَ  الأَمرُ  الَّذِي  فِيهِ  تَستَفِتيَانِ
+CTELLTWO_23_u_23 hyp    ***     ***      ***    تلميذ       أضعت    
+CTELLTWO_23_u_23 op      D       D        D       S          S      
+CTELLTWO_23_u_23 #csid 0 2 0 3
+CTELLTWO_23_u_24 ref  كما  تدين   تدان
+CTELLTWO_23_u_24 hyp  ***  أربع  سنوات
+CTELLTWO_23_u_24 op    D     S     S  
+CTELLTWO_23_u_24 #csid 0 2 0 1
+CTELLTWO_23_u_25 ref   لا  يَفُلُّ  الحديد   إلا  الحديد
+CTELLTWO_23_u_25 hyp  ***    ***      نعم   أشعر  بالعطش
+CTELLTWO_23_u_25 op    D      D        S      S      S  
+CTELLTWO_23_u_25 #csid 0 3 0 2
+CTELLTWO_23_u_3 ref   من   أحب  ولده   رحم  الأيتام
+CTELLTWO_23_u_3 hyp  ***  يعيش   معي  خمسة   أفراد 
+CTELLTWO_23_u_3 op    D     S     S     S      S   
+CTELLTWO_23_u_3 #csid 0 4 0 1
+CTELLTWO_23_u_4 ref   ***  القلوب    عند   بعضها
+CTELLTWO_23_u_4 hyp  عمري   واحد   وعشرون   سنة 
+CTELLTWO_23_u_4 op     I      S       S      S  
+CTELLTWO_23_u_4 #csid 0 3 1 0
+CTELLTWO_23_u_5 ref   إن  العيون  التي   في  طرفها  حور  قتلننا    ثم    لم  يحيين  قتلانا  يَصرَعْنَ   ذا    اللب    حتى      لا  
+CTELLTWO_23_u_5 hyp  ***    ***    ***  ***   ***   ***   تاريخ  ميلادي  هو   واحد  وعشرون    ديسمبر   ألف  وتسعمئة  وواحد  وثمانون
+CTELLTWO_23_u_5 op    D      D      D    D     D     D      S       S     S    S       S        S       S      S       S       S   
+CTELLTWO_23_u_5 #csid 0 10 0 6
+CTELLTWO_23_u_6 ref  حراك   به  وهن  أضعف    خلق     الله   إنسانا
+CTELLTWO_23_u_6 hyp   ***  ***  ***   ألف  وتسعمئة  وواحد  وثمانون
+CTELLTWO_23_u_6 op     D    D    D     S      S       S       S   
+CTELLTWO_23_u_6 #csid 0 4 0 3
+CTELLTWO_23_u_7 ref  أول  الشجرة   بذرة
+CTELLTWO_23_u_7 hyp  لقد   ولدت   بتونس
+CTELLTWO_23_u_7 op    S      S      S  
+CTELLTWO_23_u_7 #csid 0 3 0 0
+CTELLTWO_23_u_8 ref  ***    ***     ربك  رب  قلوب
+CTELLTWO_23_u_8 hyp  اسم  المدينة  كذلك  هو  تونس
+CTELLTWO_23_u_8 op    I      I       S    S    S 
+CTELLTWO_23_u_8 #csid 0 3 2 0
+CTELLTWO_23_u_9 ref  فإن  قليل  الحب  بالعقل  صالح  وإن  كثير  الحب  بالجهل   فاسد 
+CTELLTWO_23_u_9 hyp  ***   ***   ***    ***    ***  ***   ***   ***  جنسيتي  تونسية
+CTELLTWO_23_u_9 op    D     D     D      D      D    D     D     D      S       S  
+CTELLTWO_23_u_9 #csid 0 2 0 8
+CTELLTWO_24_u_26 ref   من  عَفَّ   عن  ظلم  العباد  تورعا  جاءته  ألطاف  الإله  تبرعا
+CTELLTWO_24_u_26 hyp  ***   ***   ***  ***    ***    نعم   أفهمك  عندما  تتحدث   إلي 
+CTELLTWO_24_u_26 op    D     D     D    D      D      S      S      S      S      S  
+CTELLTWO_24_u_26 #csid 0 5 0 5
+CTELLTWO_24_u_27 ref  ***  هذه   بتلك  والبادئ  أظلم
+CTELLTWO_24_u_27 hyp   لا  لست  محتاج   لرعاية  صحية
+CTELLTWO_24_u_27 op    I    S     S       S       S 
+CTELLTWO_24_u_27 #csid 0 4 1 0
+CTELLTWO_24_u_28 ref   هي  النفس  ما  حَمَّلْتَها   تتحمل   وللدهر   أيام   تجور  وتَعْدِلُ
+CTELLTWO_24_u_28 hyp  ***   ***   لا      لست      بالحاجة    إلى   الذهاب  دورة    المياه 
+CTELLTWO_24_u_28 op    D     D     S       S          S        S       S      S       S    
+CTELLTWO_24_u_28 #csid 0 7 0 2
+CTELLTWO_24_u_29 ref   من  يغرق  يتعلق  بعود     قش  
+CTELLTWO_24_u_29 hyp  ***   ***   نعم   أشعر  بالراحة
+CTELLTWO_24_u_29 op    D     D     S      S      S   
+CTELLTWO_24_u_29 #csid 0 3 0 2
+CTELLTWO_24_u_30 ref  أعزب  دهر  ولا  أرمل   شهر
+CTELLTWO_24_u_30 hyp   ***   لا  ليس   لدي  موعد
+CTELLTWO_24_u_30 op     D    S    S     S     S 
+CTELLTWO_24_u_30 #csid 0 4 0 1
+CTELLTWO_24_u_31 ref  ***   اعطني    عمرا   وارميني  بالبحر
+CTELLTWO_24_u_31 hyp  على  الساعة  الثانية    بعد     الظهر
+CTELLTWO_24_u_31 op    I      S       S        S        S  
+CTELLTWO_24_u_31 #csid 0 4 1 0
+CTELLTWO_24_u_32 ref  ألا   كل   ما   هو   آت  قريب  وللأرض   من   كل   حي    نصيب
+CTELLTWO_24_u_32 hyp  ***  ***  ***  ***  ***   ***    ***   ***  نعم  أكلت  اليوم
+CTELLTWO_24_u_32 op    D    D    D    D    D     D      D     D    S     S     S  
+CTELLTWO_24_u_32 #csid 0 3 0 8
+CTELLTWO_24_u_33 ref  ***  الحصاة     من    الجبل
+CTELLTWO_24_u_33 hyp  نعم   أكلت   البارحة   أيضا
+CTELLTWO_24_u_33 op    I      S       S       S  
+CTELLTWO_24_u_33 #csid 0 3 1 0
+CTELLTWO_24_u_34 ref   ***  ***     ***     الصباح  رباح
+CTELLTWO_24_u_34 hyp  بقيت  هنا  بالانتظار    نصف   ساعة
+CTELLTWO_24_u_34 op     I    I       I         S      S 
+CTELLTWO_24_u_34 #csid 0 2 3 0
+CTELLTWO_24_u_35 ref  ***  العمر   واحد   والرب    واحد  
+CTELLTWO_24_u_35 hyp  نعم   انا   مستعد  لإجراء  المقابلة
+CTELLTWO_24_u_35 op    I     S      S       S        S   
+CTELLTWO_24_u_35 #csid 0 4 1 0
+CTELLTWO_24_u_36 ref  ***  ***  ***  المأمول  خير    من    المأكول
+CTELLTWO_24_u_36 hyp   لا  ليس  معي   مخدرات   أو  أسلحة  بالسيارة
+CTELLTWO_24_u_36 op    I    I    I      S      S     S        S   
+CTELLTWO_24_u_36 #csid 0 4 3 0
+CTELLTWO_24_u_37 ref  ***   ***   ***    أول   الشجرة   بذرة
+CTELLTWO_24_u_37 hyp  نعم  أعرف  موقع  المكان   الذي   أقصده
+CTELLTWO_24_u_37 op    I     I     I      S       S      S  
+CTELLTWO_24_u_37 #csid 0 3 3 0
+CTELLTWO_24_u_38 ref    ***       رب    بعيد  أنفع  من  قريب
+CTELLTWO_24_u_38 hyp  المنطقة  المتوجه   لها  الآن  هي   لب 
+CTELLTWO_24_u_38 op      I        S       S     S    S    S 
+CTELLTWO_24_u_38 #csid 0 5 1 0
+CTELLTWO_24_u_39 ref  فيا  ليت  الشباب  يعود    يوما   فأخبره  بما  فعل  المشيب
+CTELLTWO_24_u_39 hyp  ***  ***    ***    ***  المدينة  المتجه  لها   هي   السوء
+CTELLTWO_24_u_39 op    D    D      D      D      S        S     S    S      S  
+CTELLTWO_24_u_39 #csid 0 5 0 4
+CTELLTWO_24_u_40 ref  ***   ***   ***  ***  كلكم  طلب    صيد 
+CTELLTWO_24_u_40 hyp   لا  أصطحب  معي   أي   فرد   من  عائلتي
+CTELLTWO_24_u_40 op    I     I     I    I     S    S      S  
+CTELLTWO_24_u_40 #csid 0 3 4 0
+CTELLTWO_24_u_41 ref   ما  أبعد   ما  فات   وما   أقرب    ما    يأتي
+CTELLTWO_24_u_41 hyp  ***   ***  ***  نعم  احمل  أوراق  اثبات  شخصية
+CTELLTWO_24_u_41 op    D     D    D    S     S     S      S      S  
+CTELLTWO_24_u_41 #csid 0 5 0 3
+CTELLTWO_24_u_42 ref   ما   كل   ما  يتمنى  المرء   يدركه    تجرى   الرياح   بما     لا   تشتهي  السفن
+CTELLTWO_24_u_42 hyp  ***  ***  ***   ***    نعم   الأفراد  الذين  اصطحبهم  لديهم  أوراق  اثبات  شخصية
+CTELLTWO_24_u_42 op    D    D    D     D      S       S       S       S       S      S      S      S  
+CTELLTWO_24_u_42 #csid 0 8 0 4
+CTELLTWO_24_u_43 ref    ***    ***  ***  ***   ***  ***   كل  حبل    على    غاربه
+CTELLTWO_24_u_43 hyp  الموعد  الذي  يجب   أن  أكون  هنا  فيه   هو  السادسة  مساءا
+CTELLTWO_24_u_43 op      I      I    I    I     I    I    S    S      S       S  
+CTELLTWO_24_u_43 #csid 0 4 6 0
+CTELLTWO_24_u_44 ref   ما  أشبه  الليلة  بالبارحة
+CTELLTWO_24_u_44 hyp  ***   لا    احتاج   لمرافق 
+CTELLTWO_24_u_44 op    D     S      S        S   
+CTELLTWO_24_u_44 #csid 0 3 0 1
+CTELLTWO_24_u_45 ref  أثقل   من    جبل
+CTELLTWO_24_u_45 hyp   لا   أحمل  سلاح
+CTELLTWO_24_u_45 op     S     S     S 
+CTELLTWO_24_u_45 #csid 0 3 0 0
+CTELLTWO_24_u_46 ref  ***  ***   ***    أحذر    من      غراب 
+CTELLTWO_24_u_46 hyp  نعم  معي  أوراق  رسمية  لتسجيل  السيارة
+CTELLTWO_24_u_46 op    I    I     I      S       S       S   
+CTELLTWO_24_u_46 #csid 0 3 3 0
+CTELLTWO_24_u_47 ref  أحرس   من     كلب   
+CTELLTWO_24_u_47 hyp  تبعد  عشر  كيلومترات
+CTELLTWO_24_u_47 op     S    S       S    
+CTELLTWO_24_u_47 #csid 0 3 0 0
+CTELLTWO_24_u_48 ref    ***    ***   أدنى    من    حبل  الوريد
+CTELLTWO_24_u_48 hyp  استغرق  أربع  ساعات  للوصول  إلى   هناك 
+CTELLTWO_24_u_48 op      I      I     S       S     S      S  
+CTELLTWO_24_u_48 #csid 0 4 2 0
+CTELLTWO_24_u_49 ref   ***   أرخص   من   التمر   في  البصرة
+CTELLTWO_24_u_49 hyp  أتوقع   أن   اقيم   هناك  مدة   أسبوع
+CTELLTWO_24_u_49 op     I      S     S     S     S      S  
+CTELLTWO_24_u_49 #csid 0 5 1 0
+CTELLTWO_24_u_50 ref  ***  ***   ***  أسرع    من    الريح
+CTELLTWO_24_u_50 hyp  نعم  لدي  مكان  هناك  للبقاء   فيه 
+CTELLTWO_24_u_50 op    I    I     I     S      S      S  
+CTELLTWO_24_u_50 #csid 0 3 3 0
+CTELLTWO_25_u_51 ref  ***  ***   ***    ***   ***   أقرب    من   اللسان  للأسنان
+CTELLTWO_25_u_51 hyp   لا   لن  أقيم  بمفردي  أحد  أفراد  عائلة   بهذا    البلد 
+CTELLTWO_25_u_51 op    I    I     I      I     I     S      S       S       S   
+CTELLTWO_25_u_51 #csid 0 4 5 0
+CTELLTWO_25_u_52 ref  ***   ***   ***  ***  البعد   جفاء 
+CTELLTWO_25_u_52 hyp  نعم  سأقيم   مع  أحد  أفراد  عائلتي
+CTELLTWO_25_u_52 op    I     I     I    I     S       S  
+CTELLTWO_25_u_52 #csid 0 2 4 0
+CTELLTWO_25_u_53 ref  ***  ***  ***  ***  البياض   نصف   الحسن
+CTELLTWO_25_u_53 hyp   لي  اخي   في  هذا   البلد  سأقيم   معه 
+CTELLTWO_25_u_53 op    I    I    I    I      S      S      S  
+CTELLTWO_25_u_53 #csid 0 3 4 0
+CTELLTWO_25_u_54 ref    ***     ***  الماء  أهون  موجود  وأعز  مفقود
+CTELLTWO_25_u_54 hyp  استغرقت  أربع  ساعات   لك    أصب    الى   هنا 
+CTELLTWO_25_u_54 op      I       I     S      S     S      S     S  
+CTELLTWO_25_u_54 #csid 0 5 2 0
+CTELLTWO_25_u_55 ref  المتكبر  كالواقف  على  الجبل   يرى  الناس  صغاراً   ويرونه   صغيراً
+CTELLTWO_25_u_55 hyp    ***      ***    ***   لقد   وصلت   الى     هنا   بالسيارة  الخاصة
+CTELLTWO_25_u_55 op      D        D      D     S      S     S       S        S        S  
+CTELLTWO_25_u_55 #csid 0 6 0 3
+CTELLTWO_25_u_56 ref   أتبع  من  الظل
+CTELLTWO_25_u_56 hyp  سأبقى  بل  حمام
+CTELLTWO_25_u_56 op     S     S    S 
+CTELLTWO_25_u_56 #csid 0 3 0 0
+CTELLTWO_25_u_57 ref  إنه  لأشبه   به     من    التمرة  بالتمرة
+CTELLTWO_25_u_57 hyp  ***   ***   إنها  باتجاه  الشمال   الغربي
+CTELLTWO_25_u_57 op    D     D      S      S       S       S   
+CTELLTWO_25_u_57 #csid 0 4 0 2
+CTELLTWO_25_u_58 ref  ***  ***   ***  ***    ***   سارت   به  الرُّكْبانُ
+CTELLTWO_25_u_58 hyp   لا   لا  يوجد  جسر  بالقرب   من   هذا     المكان  
+CTELLTWO_25_u_58 op    I    I     I    I      I      S    S        S     
+CTELLTWO_25_u_58 #csid 0 3 5 0
+CTELLTWO_25_u_59 ref  ***  عاد  الأمر   إلى   نصابه
+CTELLTWO_25_u_59 hyp  لقد  جئت    من   مدينة  صفاقس
+CTELLTWO_25_u_59 op    I    S     S      S      S  
+CTELLTWO_25_u_59 #csid 0 4 1 0
+CTELLTWO_25_u_60 ref  فالوجه  مثل  الصبح   مبيض  والشعر  مثل  الليل   مسود
+CTELLTWO_25_u_60 hyp    ***   ***   ***   <UNK>    لقد   جئت    من   صفاقس
+CTELLTWO_25_u_60 op      D     D     D      S       S     S     S      S  
+CTELLTWO_25_u_60 #csid 0 5 0 3
+CTELLTWO_25_u_61 ref  فما  تحمد  العينان   كل  بشاشة  ولا  كل  وجه    عابس     بذميم 
+CTELLTWO_25_u_61 hyp  ***   ***    ***    ***   ***   ***  لي   أي  الجنسية  التونسية
+CTELLTWO_25_u_61 op    D     D      D      D     D     D    S   S      S         S   
+CTELLTWO_25_u_61 #csid 0 4 0 6
+CTELLTWO_25_u_62 ref  ***  لسان  المرء   من   خدم   الفؤاد
+CTELLTWO_25_u_62 hyp  لقد  بدأت  السفر  منذ  ليلة  البارحة
+CTELLTWO_25_u_62 op    I     S     S     S     S      S   
+CTELLTWO_25_u_62 #csid 0 5 1 0
+CTELLTWO_25_u_63 ref  ***  ما   أشبه  الليلة  بالبارحة
+CTELLTWO_25_u_63 hyp  نعم  لي  سيارة   خاصة      به   
+CTELLTWO_25_u_63 op    I    S    S       S        S   
+CTELLTWO_25_u_63 #csid 0 4 1 0
+CTELLTWO_25_u_64 ref   من  يمدح  العروس    إلا   أهلها
+CTELLTWO_25_u_64 hyp  كنت  هناك    على   الساعة   واحد
+CTELLTWO_25_u_64 op    S     S      S       S      S  
+CTELLTWO_25_u_64 #csid 0 5 0 0
+CTELLTWO_25_u_65 ref  ***  ***   ***   هو   يرقم    على   الماء
+CTELLTWO_25_u_65 hyp   لا   لا  يوجد  حالة  وفاة  والحمد   لله 
+CTELLTWO_25_u_65 op    I    I     I     S     S      S      S  
+CTELLTWO_25_u_65 #csid 0 4 3 0
+CTELLTWO_25_u_66 ref  ***  ***   ***  ***  يخلق  من    ***       ***    الشبه  أربعين
+CTELLTWO_25_u_66 hyp   لا   لم  أعمل   حظ   أي   من  الأشخاص  المتورطة    في   الحادث
+CTELLTWO_25_u_66 op    I    I     I    I     S    C     I         I       S       S  
+CTELLTWO_25_u_66 #csid 1 3 6 0
+CTELLTWO_25_u_67 ref  إذا   لم  ينفعك  البازي  فانتف  ريشه
+CTELLTWO_25_u_67 hyp  ***  ***   انه     شخص   واحدة   فقط
+CTELLTWO_25_u_67 op    D    D     S       S      S      S 
+CTELLTWO_25_u_67 #csid 0 4 0 2
+CTELLTWO_25_u_68 ref  ***  ***  أظلم    من    أفعى 
+CTELLTWO_25_u_68 hyp   من  جهل  خمسة  حالات  الوفاة
+CTELLTWO_25_u_68 op    I    I     S     S       S  
+CTELLTWO_25_u_68 #csid 0 3 2 0
+CTELLTWO_25_u_69 ref  التسلُّطُ  على  المماليك  دناءة
+CTELLTWO_25_u_69 hyp      ما     جدع     شلل    مصابا
+CTELLTWO_25_u_69 op       S       S       S       S  
+CTELLTWO_25_u_69 #csid 0 4 0 0
+CTELLTWO_25_u_70 ref  الظلم  أسرع  شيء  إلى   تعجيل   نقمة  وتبديل   نعمة 
+CTELLTWO_25_u_70 hyp   ***    ***  ***  نعم  بطبيعة  الحال   يوجد   مصابين
+CTELLTWO_25_u_70 op     D      D    D    S      S      S       S       S  
+CTELLTWO_25_u_70 #csid 0 5 0 3
+CTELLTWO_25_u_71 ref  الظلم  مرتعه   وخيم
+CTELLTWO_25_u_71 hyp   إنه    حادث  مرضيا
+CTELLTWO_25_u_71 op     S      S      S  
+CTELLTWO_25_u_71 #csid 0 3 0 0
+CTELLTWO_25_u_72 ref  ***  ***  إِنَّ  الإِنسَانَ  لَيَطغَى
+CTELLTWO_25_u_72 hyp  نعم  لقد  شاهدت     كلما        حدث  
+CTELLTWO_25_u_72 op    I    I     S         S          S   
+CTELLTWO_25_u_72 #csid 0 3 2 0
+CTELLTWO_25_u_73 ref  ***  بيت  الظالم    خراب 
+CTELLTWO_25_u_73 hyp   لا  لست    أنا   المسؤول
+CTELLTWO_25_u_73 op    I    S      S       S   
+CTELLTWO_25_u_73 #csid 0 3 1 0
+CTELLTWO_25_u_74 ref  ***  ***  جزاء  مُجيرِ   أُمِّ   عامِرٍ
+CTELLTWO_25_u_74 hyp   لا   لا  أعرف    من    المسؤول    هنا 
+CTELLTWO_25_u_74 op    I    I     S      S       S        S  
+CTELLTWO_25_u_74 #csid 0 4 2 0
+CTELLTWO_25_u_75 ref  ***  حرامي  بلا  بَيِّنةٍ  شريف
+CTELLTWO_25_u_75 hyp  لقد   حدث   هذا     منذ    ساعة
+CTELLTWO_25_u_75 op    I     S     S       S       S 
+CTELLTWO_25_u_75 #csid 0 4 1 0
+CTELLTWO_9_u_202 ref  لا  ليس  لدي  جيوب  أنفية
+CTELLTWO_9_u_202 hyp  لا  ليس  لدي  جيوب  أنفية
+CTELLTWO_9_u_202 op    C   C    C     C     C  
+CTELLTWO_9_u_202 #csid 5 0 0 0
+CTELLTWO_9_u_203 ref  لا  لا  يحدث  لي  نزيف  بالأنف
+CTELLTWO_9_u_203 hyp  لا  لا  يحدث  لي  نزيف  بالأنف
+CTELLTWO_9_u_203 op    C   C    C    C    C      C  
+CTELLTWO_9_u_203 #csid 6 0 0 0
+CTELLTWO_9_u_204 ref  نعم  أعاني  من  مشاكل  في  أسناني
+CTELLTWO_9_u_204 hyp  نعم  أعاني  من  مشاكل  في  أسناني
+CTELLTWO_9_u_204 op    C     C     C    C     C     C  
+CTELLTWO_9_u_204 #csid 6 0 0 0
+CTELLTWO_9_u_205 ref  لا  لا  أعاني  من  آلام  بالحلق
+CTELLTWO_9_u_205 hyp  لا  لا  أعاني  من   ألم  بالحلق
+CTELLTWO_9_u_205 op    C   C    C     C    S      C  
+CTELLTWO_9_u_205 #csid 5 1 0 0
+CTELLTWO_9_u_206 ref  أعاني  من  آلام  في  الغدد  اللمفاوية
+CTELLTWO_9_u_206 hyp  أعاني  من   ألم  في  الغدد  اللمفاوية
+CTELLTWO_9_u_206 op     C     C    S    C    C        C    
+CTELLTWO_9_u_206 #csid 5 1 0 0
+CTELLTWO_9_u_207 ref  لا  لا  أعاني  من  قصور  بالتنفس
+CTELLTWO_9_u_207 hyp  لا  لا  أعاني  من  قصور  بالتنفس
+CTELLTWO_9_u_207 op    C   C    C     C    C      C   
+CTELLTWO_9_u_207 #csid 6 0 0 0
+CTELLTWO_9_u_208 ref  نعم  أعاني  من  الكح
+CTELLTWO_9_u_208 hyp  نعم  أعاني  من  الكح
+CTELLTWO_9_u_208 op    C     C     C    C 
+CTELLTWO_9_u_208 #csid 4 0 0 0
+CTELLTWO_9_u_209 ref  عندما  اصيب  بالكحة  ابصق  بلغ  بلغم
+CTELLTWO_9_u_209 hyp  عندما  اصيب  بالكحة  ابصق  بلغ  بلغم
+CTELLTWO_9_u_209 op     C      C      C      C    C     C 
+CTELLTWO_9_u_209 #csid 6 0 0 0
+CTELLTWO_9_u_210 ref  لا  يوجد  دم  في  اللعاب
+CTELLTWO_9_u_210 hyp  لا  يوجد  دم  في  اللعاب
+CTELLTWO_9_u_210 op    C    C    C   C     C  
+CTELLTWO_9_u_210 #csid 5 0 0 0
+CTELLTWO_9_u_211 ref  نعم  أصاب  بالبح
+CTELLTWO_9_u_211 hyp  نعم  أصاب  بالبح
+CTELLTWO_9_u_211 op    C     C     C  
+CTELLTWO_9_u_211 #csid 3 0 0 0
+CTELLTWO_9_u_212 ref  لا  ليست  لي  مشكلة  في  التنفس
+CTELLTWO_9_u_212 hyp  لا  ليست  لي  مشكلة  في  التنفس
+CTELLTWO_9_u_212 op    C    C    C    C     C     C  
+CTELLTWO_9_u_212 #csid 6 0 0 0
+CTELLTWO_9_u_213 ref  لا  لا  اصاب  بالالتهابات  الرئوية  الحادة
+CTELLTWO_9_u_213 hyp  لا  لا  اصاب  بالالتهابات  الرئوية  الحادة
+CTELLTWO_9_u_213 op    C   C    C        C          C        C  
+CTELLTWO_9_u_213 #csid 6 0 0 0
+CTELLTWO_9_u_214 ref  نعم  لقد  أصبت  بالدرن
+CTELLTWO_9_u_214 hyp  نعم  لقد  أصبت  بالدرن
+CTELLTWO_9_u_214 op    C    C     C      C  
+CTELLTWO_9_u_214 #csid 4 0 0 0
+CTELLTWO_9_u_215 ref  نعم  لقد  أصبت  بآلام  في  الصدر
+CTELLTWO_9_u_215 hyp  نعم  لقد  أصبت  بآلام  في  الصدر
+CTELLTWO_9_u_215 op    C    C     C     C     C    C  
+CTELLTWO_9_u_215 #csid 6 0 0 0
+CTELLTWO_9_u_216 ref  نعم  لقد  أصبت  <UNK>  بدقات  قلب  سريعة
+CTELLTWO_9_u_216 hyp  نعم  لقد  أصبت  <UNK>  بدقات  قلب  سريعة
+CTELLTWO_9_u_216 op    C    C     C     C      C     C     C  
+CTELLTWO_9_u_216 #csid 7 0 0 0
+CTELLTWO_9_u_217 ref  لا  اشعر  بضيق  في  الصدر
+CTELLTWO_9_u_217 hyp  لا  أشعر  بضيق  في  الصدر
+CTELLTWO_9_u_217 op    C    S     C    C    C  
+CTELLTWO_9_u_217 #csid 4 1 0 0
+CTELLTWO_9_u_218 ref  لا  لم  يحدث  لي  ورم  في  الساقين
+CTELLTWO_9_u_218 hyp  لا  لم  يحدث  لي  ورم  في  الساقين
+CTELLTWO_9_u_218 op    C   C    C    C   C    C     C   
+CTELLTWO_9_u_218 #csid 7 0 0 0
+CTELLTWO_9_u_219 ref  لا  ليس  لي  ضغط  دم
+CTELLTWO_9_u_219 hyp  لا  ليس  لي  ضغط  دم
+CTELLTWO_9_u_219 op    C   C    C   C    C
+CTELLTWO_9_u_219 #csid 5 0 0 0
+CTELLTWO_9_u_220 ref  نعم  لقد  أفقد  وزني
+CTELLTWO_9_u_220 hyp  نعم  لقد  أفقد  وزني
+CTELLTWO_9_u_220 op    C    C     C     C 
+CTELLTWO_9_u_220 #csid 4 0 0 0
+CTELLTWO_9_u_221 ref  نعم  لقد  أشعر  بدوخة
+CTELLTWO_9_u_221 hyp  نعم  لقد  أشعر  بدوخة
+CTELLTWO_9_u_221 op    C    C     C     C  
+CTELLTWO_9_u_221 #csid 4 0 0 0
+CTELLTWO_9_u_222 ref  لا  ليس  لي  ألم  غير  محتمل
+CTELLTWO_9_u_222 hyp  لا  ليس  لي  ألم  غير  محتمل
+CTELLTWO_9_u_222 op    C   C    C   C    C     C  
+CTELLTWO_9_u_222 #csid 6 0 0 0
+CTELLTWO_9_u_223 ref  لا  ليس  لي  إسهال
+CTELLTWO_9_u_223 hyp  لا  ليس  لي  إسهال
+CTELLTWO_9_u_223 op    C   C    C    C  
+CTELLTWO_9_u_223 #csid 4 0 0 0
+CTELLTWO_9_u_224 ref  نعم  أشعر  بحموضة
+CTELLTWO_9_u_224 hyp  نعم  أشعر  بحموضة
+CTELLTWO_9_u_224 op    C     C      C  
+CTELLTWO_9_u_224 #csid 3 0 0 0
+CTELLTWO_9_u_225 ref  لا  ليس  لي  دم  في  البراز
+CTELLTWO_9_u_225 hyp  لا  ليس  لي  دم  في  البراز
+CTELLTWO_9_u_225 op    C   C    C   C   C     C  
+CTELLTWO_9_u_225 #csid 6 0 0 0
+CTELLTWO_9_u_226 ref  لا  لم  أصب  بالصفراء  من  قبل
+CTELLTWO_9_u_226 hyp  لا  لم  أصب  بالصفراء  من  قبل
+CTELLTWO_9_u_226 op    C   C   C       C      C   C 
+CTELLTWO_9_u_226 #csid 6 0 0 0
