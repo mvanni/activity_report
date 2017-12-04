@@ -1,3 +1,154 @@
+* DAR <2017-12-04 Mon>
+** Goals for Next Week:
+- TODO Multilang: Train SAT models for all gp languages.
+GP Russian is still a mystery.
+The dictionary and the transcriptions seem to come from different places.
+I think the problem is with the transcripts.
+Heer is what the GP documentation says:
+I. Dictionary Generation and Format
+The phone-based pronunciation dictionary for Russian contains the pronunciations of all word forms found in the transcription data of the GlobalPhone audio recordings of this language. 
+The word forms are given in original Russian Cyrillic script in UTF-8 encoding like it appears in the transcription of the GlobalPhone speech and  text corpus in the directory /trl. 
+
+No, they are not.
+
+The dictionary can also be provided in Romanized script using ASCII encoding as appearing in the directory “/rmn” in the speech & text corpus. 
+The conversion between the Roman and the Cyrillic script is given in the section “Romanization” below.
+
+
+Maybe I can convert from the romanization to utf8?
+Yes, I think this what I need to do.
+II. Romanization
+The following list describes the original Cyrillic characters used in Russian script, the corresponding UTF-8 code point, and the Romanized form as used in the Romanized transcription files. 
+The Romanization and Back-transformation can be achieved by simple one-to-one reversible substitution rules based on regular expressions, e.g. in case of tcl use the following line to convert
+“w” into “в”: regsub -all {w} $temp "\u0432" temp
+| Original Russian character | Romanized Character | Unicode code point | Description |
+а a U+0430 CYRILLIC SMALL LETTER A
+б b U+0431 CYRILLIC SMALL LETTER BE
+в w U+0432 CYRILLIC SMALL LETTER VE
+г g U+0433 CYRILLIC SMALL LETTER GHE
+д d U+0434 CYRILLIC SMALL LETTER DE
+е ye U+0435 CYRILLIC SMALL LETTER IE
+ж jscH U+0436 CYRILLIC SMALL LETTER ZHE
+з z U+0437 CYRILLIC SMALL LETTER ZE
+и i U+0438 CYRILLIC SMALL LETTER I
+й j U+0439 CYRILLIC SMALL LETTER SHORT I
+к k U+043A CYRILLIC SMALL LETTER KA
+л l U+043B CYRILLIC SMALL LETTER EL
+м m U+043C CYRILLIC SMALL LETTER EM
+н n U+043D CYRILLIC SMALL LETTER EN
+о o U+043E CYRILLIC SMALL LETTER O
+п p U+043F CYRILLIC SMALL LETTER PE
+р r U+0440 CYRILLIC SMALL LETTER ER
+с s U+0441 CYRILLIC SMALL LETTER ES
+т t U+0442 CYRILLIC SMALL LETTER TE
+у u U+0443 CYRILLIC SMALL LETTER U
+ф f U+0444 CYRILLIC SMALL LETTER EF
+х h U+0445 CYRILLIC SMALL LETTER HA
+ц tS U+0446 CYRILLIC SMALL LETTER TSE
+ч tscH U+0447 CYRILLIC SMALL LETTER CHE
+ш sch U+0448 CYRILLIC SMALL LETTER SHA
+щ schTsch U+0449 CYRILLIC SMALL LETTER SHCHA
+ъ Q U+044A CYRILLIC SMALL LETTER HARD SIGN
+ы i2 U+044B CYRILLIC SMALL LETTER YERU
+ь ~ U+044C CYRILLIC SMALL LETTER SOFT SIGN
+э e U+044D CYRILLIC SMALL LETTER E
+ю yu U+044E CYRILLIC SMALL LETTER YU
+я ya U+044F CYRILLIC SMALL LETTER YA
+А A U+0410 CYRILLIC CAPITAL LETTER A
+Б B U+0411 CYRILLIC CAPITAL LETTER BE
+В W U+0412 CYRILLIC CAPITAL LETTER VE
+Г G U+0413 CYRILLIC CAPITAL LETTER GHE
+Д D U+0414 CYRILLIC CAPITAL LETTER DE
+Е YE U+0415 CYRILLIC CAPITAL LETTER IE
+Ж JscH U+0416 CYRILLIC CAPITAL LETTER ZHE
+З Z U+0417 CYRILLIC CAPITAL LETTER ZE
+И I U+0418 CYRILLIC CAPITAL LETTER I
+Й J U+0419 CYRILLIC CAPITAL LETTER SHORT I
+К K U+041A CYRILLIC CAPITAL LETTER KA
+Л L U+041B CYRILLIC CAPITAL LETTER EL
+М M U+041C CYRILLIC CAPITAL LETTER EM
+Н N U+041D CYRILLIC CAPITAL LETTER EN
+О O U+041E CYRILLIC CAPITAL LETTER O
+П P U+041F CYRILLIC CAPITAL LETTER PE
+Р R U+0420 CYRILLIC CAPITAL LETTER ER
+С S U+0421 CYRILLIC CAPITAL LETTER ES
+Т T U+0422 CYRILLIC CAPITAL LETTER TE
+У U U+0423 CYRILLIC CAPITAL LETTER U
+Ф F U+0424 CYRILLIC CAPITAL LETTER EF
+Х H U+0425 CYRILLIC CAPITAL LETTER HA
+Ц TS U+0426 CYRILLIC CAPITAL LETTER TSE
+Ч TscH U+0427 CYRILLIC CAPITAL LETTER CHE
+Ш Sch U+0428 CYRILLIC CAPITAL LETTER SHA
+Щ SchTsch U+0429 CYRILLIC CAPITAL LETTER SHCHA
+Ъ Q U+042A CYRILLIC CAPITAL LETTER HARD SIGN
+Ы I2 U+042B CYRILLIC CAPITAL LETTER YERU
+Ь ~ U+042C CYRILLIC CAPITAL LETTER SOFT SIGN
+Э E U+042D CYRILLIC CAPITAL LETTER E
+Ю Yu U+042E CYRILLIC CAPITAL LETTER YU
+Я Ya U+042F CYRILLIC CAPITAL LETTER YA
+
+- TODO Multilang: USE alignments from SAT models to start multilang building process.
+I am starting with 14 gp languages.
+- TODO Heroico: Contact Dan Povey and Yenda about next step (am I finished? Is the recipe ready?)
+- TODO Write TN.
+- TODO S2S: Minimal example using English mini_librispeech and Heroico Spanish.
+I worked a little on this today.
+I have a script that invokes a recording program called rec.
+I can extract mfcc features and cmvn them.
+
+- TODO Softunisia: Retrain and get transcripts to Zac.
+Zac called me.
+He had problems with the transcripts  I sent him.
+He was able to retrieve them intact from my github webpage.
+
+
+** Goals for Tuesday:
+- TODO GP Russian: Convert Romanized Russian to UTF8 with charmap given in documentation.
+- TODO S2S Demo: Decode input with tri2b English models.
+- TODO S2S Demo: Repeat with tri2b Spanish models what was doen for English.
+- TODO Heroico: Contact Dan and Yenda about recipe.
+- TODO Multilang: Minimal Example with 14 GP languages.
+
+* DAR <2017-12-01 Fri>
+** oals for Friday set Thursday:
+- DONE Heroico: 1e experiment with 7 epochs instead of 10 to avoid overfitting.
+./local/chain/compare_wer.sh exp/chain/tdnn1d_sp exp/chain/tdnn1e_sp
+System                tdnn1d_sp tdnn1e_sp
+WER devtest       52.78     52.21
+WER native       55.32     53.43
+nonnative     64.35     61.03
+WER test       60.28     57.70
+ Final train prob        -0.0229   -0.0250
+ Final valid prob        -0.0683   -0.0678
+ Final train prob (xent)   -0.7525   -0.7887
+ Final valid prob (xent)   -1.0296   -1.0419
+
+-  info
+exp/chain/tdnn1e_sp:
+ num-iters=105
+ nj=1..1
+ num-params=6.6M
+ dim=40+100->1392
+ combine=-0.036->-0.033
+ xent:train/valid[69,104,final]=(-1.20,-0.917,-0.789/-1.35,-1.16,-1.04)
+ logprob:train/valid[69,104,final]=(-0.049,-0.030,-0.025/-0.082,-0.075,-0.068)
+
+- Word Error Rates on folds
+%WER 61.03 [ 5624 / 9215, 630 ins, 727 del, 4267 sub ] exp/chain/tdnn1e_sp/decode_nonnative/wer_8_1.0
+%WER 57.70 [ 9644 / 16713, 1249 ins, 1040 del, 7355 sub ] exp/chain/tdnn1e_sp/decode_test/wer_7_1.0
+%WER 53.43 [ 4006 / 7498, 558 ins, 408 del, 3040 sub ] exp/chain/tdnn1e_sp/decode_native/wer_7_1.0
+%WER 52.21 [ 3994 / 7650, 585 ins, 456 del, 2953 sub ] exp/chain/tdnn1e_sp/decode_devtest/wer_9_1.0
+
+| fold | 1a | 1b | 1c | 1d | 1e |
+| devtest | 54.46 | 54.20 | 54.16 | 52.78 | 52.21 |
+| native |  62.14 | 62.32 | 61.70 | 55.32 | 53.43 |
+| nonnative | 70.58 | 71.20 | 71.68 | 64.35 | 61.03 |
+| test | 66.85 | 67.21 | 67.25 | 60.28 | 57.70 |
+
+- TODO Heroico: Write tn .
+- TODO AMTA2018: Work on Minimal Example (English mini_librispeechSpanish GP/Heroico?)
+- TODO Multilang: Train up to Russian tri3b_ali.
+
 * DAR <2017-11-30 Thu>
 ** Goals for Thursday set Wednesday:
 - DONE SofTunisia: Retrain with Zac's new dictionary.
@@ -63,7 +214,6 @@ I wrote a little bit more on the tn and a very rough draft of the AMTA abstract.
 - TODO Heroico: Write tn .
 - TODO AMTA2018: Work on Minimal Example (English mini_librispeechSpanish GP/Heroico?)
 - TODO Multilang: Train up to Russian tri3b_ali.
-
 
 * DAR  <2017-11-29 Wed>
 **  Goals for Wednesday set Tuesday:
