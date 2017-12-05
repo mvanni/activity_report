@@ -1,0 +1,29 @@
+﻿ISD BI-WEEKLY REPORT
+
+NAME (e.g. Joe Smith)BRANCH (e.g. ACBB)PERIOD ENDING: (dd/mm/yyyy)PROJECT NAME (e.g. Learning and Decision Making)RESEARCH QUESTION FOCUS  (e.g. Autonomous Info-Based Adaption)MISSION ACTIVITIES SINCE LAST REPORT• TEXT
+• TEXT
+
+KEY CUSTOMER/STAKEHOLDER ENGAGEMENTSORG/POCOUTCOME/NEXT STEPS• TEXT
+• TEXT• TEXT
+• TEXT
+UPCOMING EVENTSDATEEVENTPOC/STAFF• TEXT
+• TEXT• TEXT
+• TEXT
+• TEXT
+• TEXT
+METRICS       PAPER         BOOK CHAPTER         SW               CONFERENCE             DEMO  ________________• Citation
+OUTREACH       OCOH         POST DOC                     STEM            SUMMER INTERN             USMA OTHER• Citation (include dates, recipient, focus of effort, impact, etc.)
+• Citation
+TRAVEL       YES                  NO• REMARKS (Date, Location, Purpose, Organization, Who Visited, Reason, Outcome)
+
+
+
+
+
+
+
+
+
+
+
+
