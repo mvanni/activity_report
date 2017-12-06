@@ -1,3 +1,56 @@
+* DAR <2017-12-05 Tuef>
+**  Goals for Tuesday set Monday:
+- DONE GP Russian: Convert Romanized Russian to UTF8 with charmap given in documentation.
+Here are the WERs I have so far:
+%WER 73.73 [ 13468 / 18266, 933 ins, 2027 del, 10508 sub ] exp/mono/decode_eval/wer_8_1.0
+%WER 69.25 [ 13131 / 18962, 644 ins, 2626 del, 9861 sub ] exp/mono/decode_dev/wer_9_1.0
+%WER 59.76 [ 10916 / 18266, 1053 ins, 1508 del, 8355 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 56.92 [ 10793 / 18962, 1085 ins, 1678 del, 8030 sub ] exp/tri1/decode_dev/wer_16_1.0
+%WER 56.58 [ 10729 / 18962, 1217 ins, 1557 del, 7955 sub ] exp/tri2b/decode_dev/wer_16_1.0
+
+- Current WER scores for GP:
+| language | mono | tri1 | tri2b | tri3b| chain | chain online |
+| Arabic dev | 77.57 | 71.49       | 70.80 | 70.73 | 64.57 | 64.95 |
+| Bulgarian dev | 42.62      | 28.13      | 26.57      | 24.78      | 19.47 | 19.46 |
+| Croatian eval | 66.30 | 56.89 | 56.55 | 53.65 |
+| Croatian dev | 36.53 | 30.60 | 29.19 | 28.53 |
+| Czech dev | 57.44      | 53.88      | 50.83      | 43.72 |
+| French dev | 95.06 | 93.35 | 93.51 | 93.41 |
+| German dev | 49.25      | 47.12 | 44.62 | 38.04 |
+| Hausa dev | 36.48 | 36.84 | 32.30 | 24.64 |
+| Japanese eval | 15.18 | 9.01 | 8.73 | 7.77 |
+| Japanese dev | 10.40 | 6.54 | 6.25 | 6.15 |
+| Korean dev | 51.61 | 30.79 | 29.71 | 25.64 |
+| Mandarin dev | 36.63 | 23.51 | 22.54 | 19.07 |
+| Polish dev | 65.87 | 57.63 | 53.05 | 48.23 |
+| Portuguese dev | 43.56 | 27.45 | 26.24 | 24.11 | | |
+| Russian dev | 69.25 | 56.92 | 56.58 | | | |
+| Spanish dev | 60.12 | 49.38 | 46.04 | 42.97 |
+| Swedish dev | 80.77 | 66.17 | 64.39 | 62.07 |
+| Tamil eval | 100.00 | | | |
+| Thai dev | 101.40 | | | 
+| Turkish dev | 79.76 | 75.65 | 74.97 | 75.25 |
+| Vietnamese dev | 50.71 | 40.63 | 38.94 | 37.49 |
+
+- TODO S2S Demo: Decode input with tri2b English models.
+Worked on this, but still have problems writing files to the correct place. 
+- TODO S2S Demo: Repeat with tri2b Spanish models what was done for English.
+- TODO Heroico: Contact Dan and Yenda about recipe.
+- TODO Multilang: Minimal Example with 14 GP languages.
+The scripts expect an alignment file under tri3b_ali_sp.
+The alignments are actually under tri3b_ali_train_sp.
+
+
+** Goals for Wednesday:
+- TODO Brief Reggie on Multilang project.
+- TODO GP Russian: Train through tri3b_ali.
+- TODO Multilang: Fix problem with alignment file location.
+- TODO Multilang: Minimal example.
+TODO Multilang: Train a global i-vecgor extractor on pooled data.
+- TODO S2S Demo: Write files to correct locations for decoding.
+- TODO Heroico: Contact Dan and Yenda ( I think I'm done).
+- TODO Softunisia: Get stage 19 hypotheses to Zac. (6 speakers)
+
 * DAR <2017-12-04 Mon>
 ** Goals for Next Week:
 - TODO Multilang: Train SAT models for all gp languages.
@@ -14,16 +67,15 @@ No, they are not.
 The dictionary can also be provided in Romanized script using ASCII encoding as appearing in the directory “/rmn” in the speech & text corpus. 
 The conversion between the Roman and the Cyrillic script is given in the section “Romanization” below.
 
-
 Maybe I can convert from the romanization to utf8?
-Yes, I think this what I need to do.
+Yes, I think this is what I need to do.
 II. Romanization
 The following list describes the original Cyrillic characters used in Russian script, the corresponding UTF-8 code point, and the Romanized form as used in the Romanized transcription files. 
 The Romanization and Back-transformation can be achieved by simple one-to-one reversible substitution rules based on regular expressions, e.g. in case of tcl use the following line to convert
 “w” into “в”: regsub -all {w} $temp "\u0432" temp
 | Original Russian character | Romanized Character | Unicode code point | Description |
-а a U+0430 CYRILLIC SMALL LETTER A
-б b U+0431 CYRILLIC SMALL LETTER BE
+| а | a | U+0430 | CYRILLIC SMALL LETTER A |
+|б \ b | U+0431 | CYRILLIC SMALL LETTER BE |
 в w U+0432 CYRILLIC SMALL LETTER VE
 г g U+0433 CYRILLIC SMALL LETTER GHE
 д d U+0434 CYRILLIC SMALL LETTER DE
