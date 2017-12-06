@@ -1,3 +1,74 @@
+* DAR <2017-12-06 Wed>
+** Goals for Wednesday: set Tuesday
+- DONE Brief Reggie on Multilang project.
+- DONE GP Russian: Train through tri3b_ali.
+
+%WER 73.73 [ 13468 / 18266, 933 ins, 2027 del, 10508 sub ] exp/mono/decode_eval/wer_8_1.0
+%WER 69.25 [ 13131 / 18962, 644 ins, 2626 del, 9861 sub ] exp/mono/decode_dev/wer_9_1.0
+%WER 60.97 [ 11137 / 18266, 1537 ins, 1140 del, 8460 sub ] exp/tri3b/decode_eval.si/wer_16_1.0
+%WER 59.76 [ 10916 / 18266, 1053 ins, 1508 del, 8355 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 59.58 [ 10883 / 18266, 1277 ins, 1282 del, 8324 sub ] exp/tri2b/decode_eval/wer_16_1.0
+%WER 58.33 [ 10655 / 18266, 1538 ins, 1059 del, 8058 sub ] exp/tri3b/decode_eval/wer_17_1.0
+%WER 57.71 [ 10943 / 18962, 1422 ins, 1346 del, 8175 sub ] exp/tri3b/decode_dev.si/wer_16_1.0
+%WER 56.92 [ 10793 / 18962, 1085 ins, 1678 del, 8030 sub ] exp/tri1/decode_dev/wer_16_1.0
+%WER 56.58 [ 10729 / 18962, 1217 ins, 1557 del, 7955 sub ] exp/tri2b/decode_dev/wer_16_1.0
+%WER 55.81 [ 10582 / 18962, 1479 ins, 1274 del, 7829 sub ] exp/tri3b/decode_dev/wer_17_1.0
+%WER 49.23 [ 8993 / 18266, 642 ins, 1329 del, 7022 sub ] exp/chain/tdnn1c_sp/decode_eval/wer_11_1.0
+%WER 49.21 [ 8988 / 18266, 787 ins, 1160 del, 7041 sub ] exp/chain/tdnn1c_sp_online/decode_eval/wer_10_1.0
+%WER 46.87 [ 8888 / 18962, 883 ins, 1214 del, 6791 sub ] exp/chain/tdnn1c_sp_online/decode_dev/wer_9_1.0
+%WER 46.78 [ 8870 / 18962, 855 ins, 1233 del, 6782 sub ] exp/chain/tdnn1c_sp/decode_dev/wer_9_1.0
+
+
+- Current WER scores for GP:
+| language | tri3b| chain |
+| Arabic dev | 70.73 | 64.57 |
+| Bulgarian dev | 24.78      | 19.47 |
+| Croatian dev | 28.53 | |
+| Czech dev | 43.72 | |
+| French dev | 93.41 | |
+| German dev | 38.04 | |
+| Hausa dev | 24.64 | |
+| Japanese dev | 6.15 | |
+| Korean dev | 25.64 | |
+| Mandarin dev | 19.07 | |
+| Polish dev | 48.23 | |
+| Portuguese dev | 24.11 | |
+| Russian dev | 55.81 | 49.23 |
+| Spanish dev | 42.97 | |
+| Swedish dev | 62.07 | |
+| tamil dev | | |
+| Thai dev | | |
+| Turkish dev | 75.25 | |
+| Vietnamese dev | 37.49 | |
+
+- TODO Multilang: Fix problem with alignment file location.
+I had to soft link the Russian directories.
+Here is the command I am running:
+
+steps/train_lda_mllt.sh --cmd run.pl --num-iters 3 --splice-opts "--left-context=3 --right-context=3" --boost-silence 1.5 6000 75000 data/gp_russian/train_sp_hires data/gp_russian/lang exp/gp_russian/tri3b_ali exp/gp_russian/nnet3_pitch/tri3b 
+
+That command ran, but when I go to run the master script it requires other arguments:
+This command seems to run:
+steps/train_lda_mllt.sh --cmd run.pl --num-iters 13 --splice-opts --left-context=3 --right-context=3 --boost-silence 1.5 6000 75000 data/gp_russian/train_sp_hires_pitch data/gp_russian/lang exp/gp_russian/tri3b_ali_sp exp/gp_russian/nnet3_pitch/tri3b
+Notice the _pitch suffix.
+I've got to fix these problems in the script.
+
+- TODO Multilang: Minimal example.
+- TODO Multilang: Train a global i-vecgor extractor on pooled data.
+I think the lda_mllt training above is a step towards training the i-vector extractor.
+
+- TODO S2S Demo: Write files to correct locations for decoding.
+- TODO Heroico: Contact Dan and Yenda ( I think I'm done).
+- DONE Softunisia: Get stage 19 hypotheses to Zac. (6 speakers)
+
+** Goals for Thursday:
+- TODO Multilang: Train the i-vector extractor.
+- TODO Softunisia: Train chain models.
+- TODO SofTunisia: Make an official kaldi recipe.
+- TODO Heroico: Contact Dan and Yenda.
+- TODO S2S: Minimal example.
+- TODO GP: Take another pass on each language to try to improve WER scores.
+  
 * DAR <2017-12-05 Tuef>
 **  Goals for Tuesday set Monday:
 - DONE GP Russian: Convert Romanized Russian to UTF8 with charmap given in documentation.
@@ -46,7 +117,7 @@ The alignments are actually under tri3b_ali_train_sp.
 - TODO GP Russian: Train through tri3b_ali.
 - TODO Multilang: Fix problem with alignment file location.
 - TODO Multilang: Minimal example.
-TODO Multilang: Train a global i-vecgor extractor on pooled data.
+- TODO Multilang: Train a global i-vecgor extractor on pooled data.
 - TODO S2S Demo: Write files to correct locations for decoding.
 - TODO Heroico: Contact Dan and Yenda ( I think I'm done).
 - TODO Softunisia: Get stage 19 hypotheses to Zac. (6 speakers)
