@@ -1,3 +1,31 @@
+* DAR <2017-12-07 Thu>
+** Goals for Thursday set Wednesday:
+- DONE Multilang: Train the i-vector extractor.
+I am going back to the beginning.
+I need to get the variables set correctly.
+Variables include the suffixes for directories.
+I am including pitch, speed perturbation and bottlenec features all of which makes suffixes get appended to directory names.
+The suffixes and affixes are a mess.
+I got pretty far with this today, but the directory names is too messed up.
+I am only working with 5 languages:
+gp_hausa gp_japanese gp_korean gp_mandarin  gp_portuguese            
+- TODO Softunisia: Train chain models.
+- TODO SofTunisia: Make an official kaldi recipe.
+I got started on this.
+- TODO Heroico: Contact Dan and Yenda.
+I sent a message.
+Have not heard back yet.
+
+- TODO S2S: Minimal example.
+- TODO GP: Take another pass on each language to try to improve WER scores.
+
+** Goals for Friday:
+- TODO Multilang: Simplify multilang recipe. Hard code sp, hires, pitch, bnf.
+- TODO Softunisia: Write official recipe with chain models (test set?).
+- TODO GP: take a pass on all the languages to try to improve WERs.
+- TODO S2S: minimal example.
+- TODO Write tn for Heroico.
+
 * DAR <2017-12-06 Wed>
 ** Goals for Wednesday: set Tuesday
 - DONE Brief Reggie on Multilang project.
