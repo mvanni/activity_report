@@ -1,3 +1,54 @@
+* My WAR <2017-12-08 Fri>
+** Goals set Last Week:
+- DONE Multilang: Train SAT models for all gp languages.
+I am considering this goal done.
+However, I'll have to revisit the training for each language.
+There are obviously problems with some of the languages.
+Russian was giving me a lot of trouble.
+I finally figured out that the files the GP corpus claimed were in utf8 were mangled and not useful.
+Fortunately, they provided a work around.
+They included romanized transcripts and a script to convert the romanization to utf8.
+I suspect that some of the other GlobalPhone corpora have the issues with mangled character encoding and that is why I get poor WER scores.
+
+- DONE Multilang: USE alignments from SAT models to start multilang building process.
+I  am very happy with the progress I made this week on multilang.
+I decided today, to focus on a minimal example.
+I am only using the globalphone Japanese and  Mandarin corpora as source languages and Russian as Spanish as the target languages. 
+I almost went end2end today with this setup.
+The only step missing is to decode the Russian and Spanish.
+- TODO Heroico: Contact Dan Povey and Yenda about next step (am I finished? Is the recipe ready?)
+I sent them a message, but have not heard back from them.
+
+- TODO Write TN.
+- TODO S2S: Minimal example using English mini_librispeech and Heroico Spanish.
+- DONE Softunisia: Retrain and get transcripts to Zac.
+We are done with this project.
+All the Answers have been transcribed.
+Zac computed the WER for the final stage and it is around 10.5.
+
+** WAR:
+Progress on Multilang Project:
+This week Mr. Morgan made good progress on the Multilang project. 
+The multilang project is an effort to apply multi-task learning to the problem of making an Automatic Speech Recognition (ASR) system for a very low resource language. 
+It involves transfering learning achieved on several source languages to the target low resource language. 
+The MCAB has access to speech resources in several languages that it can use as the source languages. 
+The Multilang approach considers each language  as a task. 
+This week Mr Morgan decided to concentrate on a minimal example.
+Instead of working with 20 languages he focused on only two source languages, namely, Japanese and Mandarin Chinese. 
+He also is leaving some high powered techniques such as bottleneck features, i-vectors and speed perturbation for later refinements after he gets the minimal example working smoothly.
+This strategy is paying off. 
+The minimal example is almost complete; only the final step of recognizing the target language is left.
+
+** Goals for Monday:
+- TODO Multilang: Decode the target Russian and Spanish with the new hybrid multilang system. 
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO Softunisia Recipe: Test set. (Zac's transcription of Libian data, Westpoint?)
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+
 * My WAR <2017-12-01 Fri>
 ** Activity in past week:
 ***  Multilang Project:
