@@ -1,3 +1,92 @@
+* DAR <2017-12-11 Mon>
+**  Goals for Monday set Friday:
+- DONE Multilang: Decode the target Russian and Spanish with the new hybrid multilang system. 
+I am marking this goal as DONE even though it was modified.
+I had a misunderstanding about how multilang works and I might still have a misunderstandig. 
+I thought the source and target languages were supposed to be different.
+My understanding now is that the input and output languages are the same.
+The process is meant to improve all(?) the input languages. 
+In particular it improves the low resource language.
+But the low resource language is one of the input languages.
+So I modified my minimal example (and now it is really minimal) to only work with japanese and mandarin.
+The idea is that the parameters from these two languages are shared. 
+One model set is output (is this right?).
+That model can be used to decode both Japanese and mandarin (really?).
+Anyway, I am not sure about all the steps in this multilang process. 
+I ran the multilang training scripts without any bells and whistles. 
+No i-vectors, no pitch and no bottleneck features; I don't even thik I did speed perturbation. 
+A neural network was trained. 
+Then, I think what happens is that the final layer is adjusted for each language.
+So  2 sllightly different models are written, one for Japanese and one for Mandarin?
+Then I decoded the Mandaring dev data with the new mandarin model.
+I had to do some of this by hand, the scripts did not make sense to me.
+Specifically, the scripts wanted to make the decoding graph in the old tri3b directory.
+This can't be right.
+Anyway, I copied the tree and the lang_test directories from the tri3b model set to the new nnet3/multi model directories.
+I ran mkgraph in the new mandarin directory.
+Then I decoded with this graph.
+The results:
+%WER 18.17 [ 3320 / 18274, 373 ins, 697 del, 2250 sub ] exp/nnet3/multi/gp_mandarin/decode_dev/wer_14_0.0
+
+I don't know yet if this is good or not, but at least it is better than the tri3b WER wich was 19.07.
+I would have to train the neural network models without the multilang than compare them.
+But this seems pretty good since I am not using pitch which was used in the tri3b results.
+Anyway, I am happy since I got a minimal example to run.
+I'll have to work on the script to make it run without any intervention. 
+
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+I made some progress on this today.
+I got the sarraj data from Zac.
+I am working on incorporating this into the test set.
+I worked a lot on getting the westpoint data incorporated as test data.
+I'd rather use data that we can put on openslr.org as test data.
+
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- DONE Softunisia Recipe: Test set. (Zac's transcription of Libian data, Westpoint?)
+I got a lot done on this today.
+In fact I am probably almost finished with this, so I'm going to mark it DONE.
+
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+
+
+** Goals for Tuesday:
+- TODO Multilang: Minimal example. Get scripts to do the right thing with the decoding graph.
+- TODO African French: Write  a recipe suitable for kaldi submission (Yaounde).
+- TODO Heroico: Write tn.
+- TODO Heroico: Get response from Dan and Yenda.
+- TODO African French: Write outline of paper.
+- TODO Softunisia: Chain models.
+- TODO Softunisia: Testing with chain models.
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+- TODO AMTA: Writing?
+
+* DAR <2017-12-08 Fri>
+**  Goals for Friday set Thursday:
+- TODO Multilang: Simplify multilang recipe. Hard code sp, hires, pitch, bnf.
+I did not do this.
+Instead I reverted back to the original script.
+I set bnf, speed perturb, ivector and ivector to false.
+I am trying to get a minimal system to run.
+I also restricted the source languages to only the  two languages Japanese and Mandarin.
+I made a lot of progress today with this strategy.
+In fact, I got passed the training stage and adjustment of priors.
+I am trying to get the decoding to run.
+I am decoding on Russian for now.
+
+- TODO Softunisia: Write official recipe with chain models (test set?).
+I also made a lot of progress on this goal today.
+I am working on a test set.
+For now I am working with the West Point test data.
+I trained up to tri1.
+- TODO GP: take a pass on all the languages to try to improve WERs.
+- TODO S2S: minimal example.
+- TODO Write tn for Heroico.
+
+
 * DAR <2017-12-07 Thu>
 ** Goals for Thursday set Wednesday:
 - DONE Multilang: Train the i-vector extractor.
@@ -25,7 +114,6 @@ Have not heard back yet.
 - TODO GP: take a pass on all the languages to try to improve WERs.
 - TODO S2S: minimal example.
 - TODO Write tn for Heroico.
-
 * DAR <2017-12-06 Wed>
 ** Goals for Wednesday: set Tuesday
 - DONE Brief Reggie on Multilang project.
