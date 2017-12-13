@@ -29,3 +29,6 @@ The GlobalPhone corpus has data for 17 languages.
 We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. 
 Most of the data in these corpora were collected in recitative mode through close mounted microphones. 
 We also plan on experimenting with incorporating speech from other sources, such as broadcast news; other speaking styles , such as prompted and spontaneous speech; and other recording conditions, such as noisy  telephone conversations. 
+We hypothesize that the MTL method achieves comparable WER scores to the statistical methods for low resource and other specialized conditions. 
+Additionally, we claim that the MTL models are more robust, i.e., they achieve comparable performance to the statistical methods for a special target linguistic environment while outperforming them on a broader range of linguistic environments. 
+The MTL and Statistical models will get similar WER scores on African Accented French, however, the MTL models will get better WER scores than the statistical models on European French.
