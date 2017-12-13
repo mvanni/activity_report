@@ -6,7 +6,7 @@ Reference ASR systems are now trained on tens of thousands of hours of speech da
 In situations where training data is scarce statistical methods sometimes outperform the best neural network  solutions. 
 The Army often finds itself in this situation. 
 It requires speech to speech devices that work well for populations of speakers who speak with very special phonological characteristics and it needs to engage with them in conversations  about very special topics. 
-In this paper we will investigate a way to leverage the benefits of the latest advances in Neural Networks despite a severe pocity of training data in the target linguistic environment . 
+In this paper we will investigate a way to leverage the benefits of the latest advances in Neural Networks despite a severe paucity of training data in the target linguistic environment . 
 We will compare a Multi-task Learning (MTL) neural network method with the best Single Task Learning (STL) statistical methods applied to ASR under conditions of severely restricted speech and text  resources. 
 
 We set as a goal to produce components of one side of an ASR   system of a speech to speech device for African Accented French and conversations about military issues. 
