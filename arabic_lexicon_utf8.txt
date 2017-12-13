@@ -14,7 +14,7 @@
 أبصق ʔ a b sˤ i q u
 أبطل ʔ u b a tˤ i l a
 أبعد ʔ u b ʕ i d u
-أبقى ʔ u b q a a
+أبقى ʔ u b q aː
 أبلغ ʔ u b l i ɣ u
 أبناء ʔ a b n A ʔ u n
 أبنائي ʔ a b n A ʔ i j
@@ -71,7 +71,7 @@
 أخذك ʔ a x ð u k i
 أخر ʔ A x i r u
 أخرس ʔ a x r a s a
-أخرى ʔ u x r a a
+أخرى ʔ u x r aː
 أخضر ʔ a x dˤ a r u
 أخلاقاً ʔ a x l A q a n
 أخلاقهم ʔ a x l A q u h u m
@@ -81,7 +81,7 @@
 أدخن ʔ u d x i n u
 أدرس ʔ a d r a s
 أدري ʔ u d r i j a
-أدنى ʔ a d n a a
+أدنى ʔ a d n aː
 أدوخة ʔ a d w a x a h
 أدوخني ʔ a d w a x a n i j
 أدوية ʔ a d w i j a t u n
@@ -100,7 +100,7 @@
 أرضاهم ʔ a r dˤ A h u m
 أرمل ʔ u r m i l u
 أره ʔ A r u h u
-أرى ʔ u r a a
+أرى ʔ u r aː
 أريد ʔ u r i j d u
 أزرق ʔ a z r a q a
 أزن ʔ a z u n u
@@ -187,7 +187,7 @@
 أغن ʔ u ɣ n i
 أفراد ʔ a f r A d u n
 أفضل ʔ u f dˤ i l u
-أفعى ʔ a f ʕ a a
+أفعى ʔ a f ʕ aː
 أفقد ʔ u f q i d u
 أفهمك ʔ u f h i m u k a
 أقدر ʔ u q a d i r u
@@ -235,14 +235,14 @@
 أمور ʔ u m u w r u n
 أمي ʔ u m i j u n
 أن ʔ a n a
-أنا ʔ a n a a
+أنا ʔ a n aː
 أنت ʔ a n t i
-أنتمي ʔ u n t a m a a
+أنتمي ʔ u n t a m aː
 أنجح ʔ a n dʒ a ħ u
-أنجى ʔ a n dʒ a a
+أنجى ʔ a n dʒ aː
 أنفع ʔ u n a f i ʕ u
 أنفه ʔ u n u f u h u
-أنفي ʔ u n f a a
+أنفي ʔ u n f aː
 أنفية ʔ a n f i j i h i
 أنني ʔ i n a n i j
 أنه ʔ i n a h u
@@ -285,7 +285,7 @@
 إجابة ʔ i dʒ A b a t u n
 إجازة ʔ i dʒ A z a t u n
 إجراء ʔ u dʒ a r A ʔ i
-إحدى ʔ i ħ d a a
+إحدى ʔ i ħ d aː
 إخوة ʔ u x u w a t u n
 إذا ʔ i ð a n
 إسعاف ʔ i s ʕ A f i n
@@ -316,7 +316,7 @@
 ابصق ʔ a b sˤ i q u
 ابن A i b n u n
 ابناء ʔ a b n A ʔ u
-ابني ʔ u b n a a
+ابني ʔ u b n aː
 اتجاه A i t i dʒ A h u n
 اتحصل ʔ a t a ħ a sˤ a l u
 اترك ʔ u t r a k a
@@ -343,9 +343,9 @@
 اذا ʔ i ð A 
 اذكر ʔ u ð k i r u
 اربعة ʔ a r b a ʕ a t i n
-ارمادا ʔ i r m a A d a A
-ارى ʔ u r a a
-اريانا ʔ i r j a A n a A
+ارمادا ʔ i r m a A d aː
+ارى ʔ u r aː
+اريانا ʔ i r j a A n aː
 اريد ʔ u r i j d u
 ازدواجية A i z d i w A dʒ i j u h u
 اسبانيا ʔ i s b A n i j a n
@@ -360,7 +360,7 @@
 استغرق ʔ a s t a ɣ r i q u
 استغرقت A i s t a ɣ r a q t u
 استغفرت A i s t a ɣ f a r t u
-استغنى ʔ u s t a ɣ n a a
+استغنى ʔ u s t a ɣ n aː
 استفرغت A s t a f r a ɣ t i
 استندت A i s t a n a d t u
 استنشق ʔ a s t a n ʃ i q u
@@ -412,7 +412,7 @@
 الأحمق A l ʔ a ħ m a q u
 الأحياء A l ʔ i ħ j A ʔ i
 الأحيان A l ʔ a ħ j A n u
-الأخرى A l ʔ u x r a a
+الأخرى A l ʔ u x r aː
 الأخلاق A l ʔ a x l A q u
 الأخير A l ʔ a x i j r u
 الأخيرة A l ʔ a x i j r a t
@@ -455,7 +455,7 @@
 الأوراق A l ʔ a w r A q u
 الأوقات A l ʔ a w q A t u
 الأولاد A l ʔ a w l A d u
-الأولى A l ʔ u w l a a
+الأولى A l ʔ u w l aː
 الأولياء A l ʔ a w l i j A ʔ u
 الأيام A l ʔ a j A m u
 الأيتام A l ʔ a j t A m u
@@ -542,7 +542,7 @@
 التعب A t a ʕ b u
 التعرف A t a ʕ a r u f u
 التقريب A t a q r i j b u
-التقوى A t a q w a a
+التقوى A t a q w aː
 التكبر A t a k a b u r u
 التمادي A t a m A d i j a
 التمر A t a m r u
@@ -621,7 +621,7 @@
 الحماقة A l ħ a m A q a t
 الحمد A l ħ a m d u
 الحمل A l ħ i m l u
-الحمى A l ħ u m a a
+الحمى A l ħ u m aː
 الحنجرة A l ħ a n dʒ a r a t
 الحنظل A l ħ a n ðˤ a l u
 الحوادث A l ħ a w A d i θ u
@@ -810,7 +810,7 @@
 العتاب A l ʕ i t A b u
 العثار A l ʕ i θ a r u
 العدل A l ʕ a d l u
-العدوى A l ʕ u d w a a
+العدوى A l ʕ u d w aː
 العربية A l ʕ a r a b i j a t
 العروس A l ʕ a r u w s u
 العسكرية A l ʕ a s k a r i j a t
@@ -852,7 +852,7 @@
 الغدد A l ɣ u w d a d
 الغربي A l ɣ a r b i j u
 الغريب A l ɣ u r a j b u
-الغنى A l ɣ i n a a
+الغنى A l ɣ i n aː
 الغيب A l ɣ u j a b u
 الفؤاد A l f u ʔ A d u
 الفارط A l f A r i tˤ u
@@ -879,7 +879,7 @@
 القاهرة A l q A h i r a t
 القدم A l q u d u m i
 القدوة A l q u d w a t
-القربى A l q u r b a a
+القربى A l q u r b aː
 القرحة A l q a r i ħ a t
 القرش A l q i r ʃ i
 القصور A l q u sˤ u w r u
@@ -967,7 +967,7 @@
 المسؤول A l m a s ʔ u w l u
 المساء A l m a s A ʔ u
 المسافرين A l m u s A f i r i j n a
-المستشفى A l m u s t a ʃ f a a
+المستشفى A l m u s t a ʃ f aː
 المستشير A l m u s t a ʃ i j r u
 المستقبل A l m u s t a q b i l i
 المستنير A l m u s t a n i j r u
@@ -988,7 +988,7 @@
 المفصل A l m i f a sˤ a l u
 المقابلة A l m u q A b i l a t
 المقدرة A l m u q a d i r a t
-المقهى A l m a q h a a
+المقهى A l m a q h aː
 المقْدِرة A l m a q d i r a p u
 المكارم A l m a k A r i m u
 المكان A l m a k A n u
@@ -1050,11 +1050,11 @@
 الى ʔ i l a j a
 اليد A l j a d u
 اليسار A l j a s A r u
-اليسرى A l j u s r a a
+اليسرى A l j u s r aː
 اليسير A l j a s i j r u
 اليقين A l j a q i j n u
 اليمن A l j u m n u
-اليمنى A l j u m n a a
+اليمنى A l j u m n aː
 اليمين A l j a m i j n u
 اليها ʔ i l a j h A
 اليوم A l j a w m u
@@ -1094,7 +1094,7 @@
 بآلام b i ʔ A l A m i n
 بأحد b i ʔ a ħ a d i n
 بأذني b i ʔ u ð u n i j i n
-بأريانا b i ʔ a r j a A n a A
+بأريانا b i ʔ a r j a A n aː
 بأصغريه b i ʔ a sˤ ɣ a r a j h i
 بألآم b i ʔ A l a m
 بألم b i ʔ a l a m i n
@@ -1158,7 +1158,7 @@
 بالحلق b i A l ħ a l q i
 بالحمامات b i A l ħ a m A m A t i
 بالحموضة b i A l ħ u m u w dˤ a t i
-بالحُمَّى b i A l ħ u m m a a
+بالحُمَّى b i A l ħ u m m aː
 بالخير b i A l x a j r i
 بالدراسة b i A l d i r A s a t
 بالدرن b i l d u r a n
@@ -1372,7 +1372,7 @@
 تتحدث t a t a ħ a d a θ u
 تتحمل t a t a ħ a m a l u
 تترددا t a t a r a d a d A
-تتعاطى t a t a ʕ A tˤ a a
+تتعاطى t a t a ʕ A tˤ aː
 تتكلم t a t a k a l a m u
 تتوقع t u t a w a q a ʕ u
 تثبت t u θ b i t u
@@ -1419,7 +1419,7 @@
 تسقني t u s q i n i j
 تسير t u s i j r u
 تشاء t a ʃ A ʔ u
-تشتهي t u ʃ t a h a a
+تشتهي t u ʃ t a h aː
 تشعر t u ʃ ʕ i r u
 تشكو t a ʃ k u w a
 تشن t u ʃ i n u
@@ -1503,12 +1503,12 @@
 تونس t u w n u s
 تونسي t u w n i s i j
 تونسية t u w n i s i j a t i n
-تَخْفَى t a x f a a
+تَخْفَى t a x f aː
 تَدَخَّلَ t a d a x x a l a
 تَرْكُهُ t a r k u h u
 تَستَفِتيَانِ t a s t a f i t j A n i
 تَصَيَّدَهُ t a sˤ a j j a d a h u
-تَقَوَّى t a q a w w a a
+تَقَوَّى t a q a w w aː
 تَنَالُواْ t a n A l u w
 تُحِبُّونَ t u ħ i b b u w n a
 تُدَّخَرُ t u d d a x a r u
@@ -1610,7 +1610,7 @@
 حاولت ħ A w a l t u
 حبل ħ u b i l a
 حتفه ħ a t f u h u
-حتى ħ a t a a
+حتى ħ a t aː
 حجار ħ i dʒ A r u n
 حجارة ħ i dʒ A r a t i n
 حدث ħ a d i θ
@@ -1657,7 +1657,7 @@
 حياتي ħ a j A t i j i n
 حيلة ħ i j l a t u n
 حين ħ i j n u
-حَتَّى ħ a t t a a
+حَتَّى ħ a t t aː
 حَمَّلْتَها ħ a m m a l t a h A
 حَولِكَ ħ a w l i k a
 حُسْنُ ħ u s n u
@@ -1990,7 +1990,7 @@
 صعوبة sˤ u ʕ u w b a t u n
 صغاراً sˤ i ɣ A r a n
 صغارها sˤ i ɣ A r u h A
-صغري sˤ u ɣ r a a
+صغري sˤ u ɣ r aː
 صغير sˤ a ɣ i j r u n
 صغيرا sˤ a ɣ i j r a n
 صغيراً sˤ a ɣ i j r a n
@@ -2163,7 +2163,7 @@
 عيوب ʕ u j u w b u n
 عيوبه ʕ u j u w b u h u
 عَفَّ ʕ a f f a
-عَلَى ʕ a l a a
+عَلَى ʕ a l aː
 غاب ɣ A b i
 غاربه ɣ A r i b u h u
 غارم ɣ A r i m
@@ -2209,8 +2209,8 @@
 فانخرق f a A i n x a r a q a
 فتؤكل f a t u ʔ k i l u
 فتاة f a t A t u n
-فتبتلى f a t u b t a l a a
-فترمى f a t u r m a a
+فتبتلى f a t u b t a l aː
+فترمى f a t u r m aː
 فتسألني f a t a s ʔ a l u n i j
 فتلك f i t a l u k i
 فخذي f a x i ð a i j a
@@ -2374,7 +2374,7 @@
 كفاعله k a f A ʕ i l i h i
 كفر k u f r u n
 كفراً k u f r a n
-كفى k a f a a
+كفى k a f aː
 كل k u l u n
 كلا k u l a n
 كلام k a l A m u n
@@ -2409,7 +2409,7 @@
 كُلُّ k u l l u n
 كُنتَ k u n t a
 لآت l i ʔ A t i n
-لأبقى l i ʔ a b q a a
+لأبقى l i ʔ a b q aː
 لأدوية l i ʔ a d w i j a t i n
 لأشبه l i ʔ u ʃ b i h a
 لأمر l a ʔ a m r u n
@@ -2532,7 +2532,7 @@
 ليكسرها l i j u k a s s i r a h A
 ليلة l a j l a t u n
 لَن l a n
-لَيَطغَى l a j a tˤ ɣ a a
+لَيَطغَى l a j a tˤ ɣ aː
 لِرِجْلِكَ l i r i dʒ l i k a
 مأمون m a ʔ m u w n
 مؤتمن m u ʔ t a m a n u n
@@ -2572,7 +2572,7 @@
 متورطين m u t a w a r i tˤ i j n a
 متوسط m u t a w a s i tˤ u n
 متوسطة m u t a w a s i tˤ a t u n
-متى m a t a a
+متى m a t aː
 مثل m u θ u l u
 مثله m u θ u l u h u
 مجروح m a dʒ r u w ħ u n
@@ -2673,7 +2673,7 @@
 معلما m u ʕ a l i m a n
 معه m a ʕ u h u
 معهم m a ʕ u h u m
-معي m i ʕ a a
+معي m i ʕ aː
 معين m u ʕ i j n i n
 معينة m u ʕ i j n a t u n
 مفتاح m i f t A ħ u
@@ -2719,7 +2719,7 @@
 مواصلات m u w A sˤ a l A t u n
 موت m a w t i n
 موجود m a w dʒ u w d u n
-موسى m u w s a a
+موسى m u w s aː
 موضعها m a w dˤ i ʕ u h A
 موعد m a w ʕ i d u n
 موعدك m a w ʕ i d u k i
@@ -2840,7 +2840,7 @@
 وإنما w a ʔ i n a m A
 وإني w a ʔ a n i j
 وابن w a ʔ u b i n u
-وابني w a ʔ u b n a a
+وابني w a ʔ u b n aː
 واثنان w a A i θ n A n i
 واثنتي w a θ n a t a j
 واثنين w a A i θ n a j n i
@@ -2853,8 +2853,8 @@
 واختناق w a A i x t i n A q u n
 وارميني w a ʔ i r m i j n i j
 واستنشقت w a A i s t a n ʃ a q t u
-واشترى w a A i ʃ t a r a a
-واشتكى w a ʔ u ʃ t a k a a
+واشترى w a A i ʃ t a r aː
+واشتكى w a ʔ u ʃ t a k aː
 واشرح w a ʔ u ʃ a r i ħ u
 والألمانية w a A l ʔ a l m A n i j a t
 والأهلون w a A l ʔ a h l u w n a
@@ -3041,7 +3041,7 @@
 ويبغض w a j u b ɣ i dˤ u
 ويبقى w a j u b q i j
 ويرونه w a j a r u w n a h u
-ويسعى w a j a s ʕ a a
+ويسعى w a j a s ʕ aː
 ويطلب w a j u tˤ l a b u
 ويفسد w a j u f s i d u
 ويفطر w a j u f tˤ i r u
@@ -3070,7 +3070,7 @@
 يبطل j a b tˤ u l u
 يبقى j u b q i j a
 يبلغ j u b l i ɣ u
-يبني j u b n a a
+يبني j u b n aː
 يتبرز j a t a b a r a z u
 يتبول j a t a b a w a l u
 يتجاوز j a t a dʒ A w a z u
@@ -3100,7 +3100,7 @@
 يحسنه j u ħ s i n u h u
 يحصل j u ħ sˤ a l u
 يحق j u ħ i q u
-يحكي j u ħ k a a
+يحكي j u ħ k aː
 يحيين j u ħ j I n a
 يخاف j u x A f u
 يختلف j a x t a l i f u
@@ -3127,11 +3127,11 @@
 يذيب j u ð i j b u
 يربي j u r b i j a
 يرتديه j a r t a d i j h i
-يرجى j u r dʒ a a
+يرجى j u r dʒ aː
 يرضى j u r dˤ i j
 يرضيه j u r dˤ i j h i
 يرقم j u r a q i m u
-يرى j u r a a
+يرى j u r aː
 يزيد j u z i j d u
 يزيدني j a z i j d a n i j
 يسبب j u s a b i b u
