@@ -1,3 +1,50 @@
+* DAR <2017-12-13 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Multilang: Write a script that runs end to end and uses the above setup commands:
+The commands were:
+mkdir -p data/gp_japanese data/gp_mandarin
+#  link source data/ train directories into building directory:
+ln -s ~/gp_japanese/s5/data/train data/gp_japanese
+ln -s ~/gp_mandarin/s5/data/train data/gp_mandarin
+# make experiment directories under multilang building directory:
+mkdir -p exp/gp_japanese exp/gp_mandarin
+# link source tri3b alignment directories into multilang building directory:
+ln -s ~/gp_japanese/s5/exp/tri3b_ali exp/gp_japanese
+ln -s ~/gp_mandarin/s5/exp/tri3b_ali exp/gp_mandarin
+
+Here are the WER scores I got after decoding:
+%WER 17.94 [ 3278 / 18274, 396 ins, 667 del, 2215 sub ] exp/nnet3/multi/gp_mandarin/decode_dev/wer_13_0.0
+
+I am going to work on building chain models for gp_mandarin.
+then I can compare the multilang results with a neural network model.
+
+- TODO African French: Write  a recipe suitable for kaldi submission (Yaounde).
+- TODO Heroico: Write tn.
+- TODO Heroico: Get response from Dan and Yenda.
+- DONE African French: Write outline of paper.
+- TODO Softunisia: Chain models.
+I worked on the lexicon.
+I restricted the words to only those appearing in the training set.
+I think I need to include the test data in the list of words.
+- TODO Softunisia: Testing with chain models.
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+- TODO AMTA: Writing?
+
+** Goals for Thursday:
+- TODO Softunisia: Incorporate test set words into lexicon.
+- TODO Softunisia:  Convert phones in  lexicon to IPA utf8.
+- TODO Softunisia: Test new lexicon with gmm hmms and chain models.
+- TODO Multilang: Get gp_mandarin chain model results.
+- TODO Multilang: Incorporate i-vectors and bottlenect layer into neural network model.
+- TODO Multilang: Refine paper outline ( focus on incorporating diverse genres: Broadcast News and Read Speech).
+- TODO African French: Write  a recipe suitable for kaldi submission (Yaounde).
+- TODO Heroico: Write tn.
+- TODO Heroico: Get response from Dan and Yenda.
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+- TODO AMTA: Writing?
+
 * DAR <2017-12-12 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Multilang: Minimal example. Get scripts to do the right thing with the decoding graph.
@@ -16,7 +63,7 @@ This is where we will build new multilang models.
 
 - move to the multilang building directory
 cd ~/multilang/s5
- 
+
 - make data directories in building directory:
 mkdir -p data/gp_japanese data/gp_mandarin
 
