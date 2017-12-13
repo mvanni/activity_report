@@ -1,3 +1,73 @@
+* DAR <2017-12-12 Tue>
+** Goals for Tuesday set Monday:
+- TODO Multilang: Minimal example. Get scripts to do the right thing with the decoding graph.
+I'm going to try to list the steps for a minimal exapmle:
+- Languages: 
+gp_japanese and gp_mandarin
+
+- Locations:
+~/gp_japanese/s5 and ~/gp_mandarin/s5
+
+These two directories are the locations where I built the tri3b models.
+
+- multilang Building directory:
+~/multilang/s5
+This is where we will build new multilang models.
+
+- move to the multilang building directory
+cd ~/multilang/s5
+ 
+- make data directories in building directory:
+mkdir -p data/gp_japanese data/gp_mandarin
+
+- link source data/ train directories into building directory:
+ln -s ~/gp_japanese/s5/data/train data/gp_japanese
+ln -s ~/gp_mandarin/s5/data/train data/gp_mandarin
+
+- make experiment directories under multilang building directory:
+mkdir -p exp/gp_japanese exp/gp_mandarin
+
+- link source tri3b alignment directories into multilang building directory:
+ln -s ~/gp_japanese/s5/exp/tri3b_ali exp/gp_japanese
+ln -s ~/gp_mandarin/s5/exp/tri3b_ali exp/gp_mandarin
+
+- feature extraction:
+I wanted to avoid plp features and speed perturbation, but it is happening automatically somehow.
+
+
+- link dev data:
+ln -s ~/gp_mandarin/s5/data/dev data/gp_mandarin/
+This and the following commands are  for linking the directory that is needed for decoding
+
+- link lang directory
+ln -s ~/gp_mandarin/s5/data/lang_test data/gp_mandarin/
+
+- link tree directory
+ln -s ~/gp_mandarin/s5/exp/tri3b/tree  exp/nnet3/multi/gp_mandarin/
+
+- TODO African French: Write  a recipe suitable for kaldi submission (Yaounde).
+- TODO Heroico: Write tn.
+- TODO Heroico: Get response from Dan and Yenda.
+- TODO African French: Write outline of paper.
+- TODO Softunisia: Chain models.
+- TODO Softunisia: Testing with chain models.
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+- TODO AMTA: Writing?
+
+** Goals for Wednesday:
+- TODO Multilang: Write a script that runs end to end and uses the above setup commands
+- TODO African French: Write  a recipe suitable for kaldi submission (Yaounde).
+- TODO Heroico: Write tn.
+- TODO Heroico: Get response from Dan and Yenda.
+- TODO African French: Write outline of paper.
+- TODO Softunisia: Chain models.
+- TODO Softunisia: Testing with chain models.
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+- TODO AMTA: Writing?
+
+
 * DAR <2017-12-11 Mon>
 **  Goals for Monday set Friday:
 - DONE Multilang: Decode the target Russian and Spanish with the new hybrid multilang system. 
@@ -85,7 +155,6 @@ I trained up to tri1.
 - TODO GP: take a pass on all the languages to try to improve WERs.
 - TODO S2S: minimal example.
 - TODO Write tn for Heroico.
-
 
 * DAR <2017-12-07 Thu>
 ** Goals for Thursday set Wednesday:
