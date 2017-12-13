@@ -7,13 +7,12 @@ In situations where training data is scarce statistical methods sometimes outper
 The Army often finds itself in this situation. 
 It requires speech to speech devices that work well for populations of speakers with very special phonological characteristics and it needs to engage with them in conversations  about very special topics. 
 In this paper we will investigate a way to leverage the benefits of the latest advances in Neural Networks despite a severe pocity of training data in the target linguistic environment . 
-We will compare a Multi-task Learning (MTL) neural network method with the best Single Task Learning (STL) statisical methods applied to ASR under conditions of severely restricted speech and text  resources. 
+We will compare a Multi-task Learning (MTL) neural network method with the best Single Task Learning (STL) statistical methods applied to ASR under conditions of severely restricted speech and text  resources. 
 
 We set as a goal to produce components of one side of an ASR   system of a speech to speech device for African Accented French and conversations about military issues. 
 Our neural network acoustic models will be trained with MTL on speech data from varying numbers of corpora in varying numbers of languages including varying amounts of data from African Accented French. 
 Our baseline systems will use the statistical methods including gaussian mixture model (GMM) hidden markov models (HMM) with speaker adaptive training (SAT) and subspace GMMs. 
 We will also compare the MTL trained models with other STM trained neural network models. 
-One question we seek to answer is: Given a fixed task and test set, is there a threshold beyond which more training data favors one method over the others?
 
 So far, I have demonstrated that I can build systems with the MTL method by producing a minimal example that uses only two languages. 
 I built SAT GMM HMM acoustic models for Japanese and Mandarin Chinese with the GlobalPhone speech corpus. 
@@ -32,3 +31,8 @@ We also plan on experimenting with incorporating speech from other sources, such
 We hypothesize that the MTL method achieves comparable WER scores to the statistical methods for low resource and other specialized conditions. 
 Additionally, we claim that the MTL models are more robust, i.e., they achieve comparable performance to the statistical methods for a special target linguistic environment while outperforming them on a broader range of linguistic environments. 
 The MTL and Statistical models will get similar WER scores on African Accented French, however, the MTL models will get better WER scores than the statistical models on European French.
+
+We want to answer the following research questions:
+- Given a fixed military relevant task and test set, is there a threshold beyond which more training data favors one method over the others?
+- Can military relevant ASR tasks under very low resource conditions benefit from the incorporation of speech data from diverse sources into the MTL method? 
+For example, can a corpus of broadcast news data be used to improve the ASR component of an African Accented French /English speech to speech device that was previously trained only on read and prompted speech? 
