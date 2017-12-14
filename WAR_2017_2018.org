@@ -1,3 +1,95 @@
+* My WAR <2017-12-14 Thu>
+** Goals set Last Week:
+- DONE Multilang: Decode the target Russian and Spanish with the new hybrid multilang system. 
+I have a better understanding this week of how  the multilang method works.
+Last week I had the Russian and Spanish set as the test sets.
+I did not include them in the input languages.
+The multilang method does not work that way.
+The languages you put into the method are the languages you get out of it.
+This week I used Japanese and Mandarin as both the input and output languages.
+I used these 2 languages because they get the best WERs scores for tri3b models.
+Here are the WER scores for gp_mandarin:
+
+%WER 36.63 [ 6694 / 18274, 351 ins, 1489 del, 4854 sub ] exp/mono/decode_dev/wer_15_0.0
+%WER 23.89 [ 4365 / 18274, 407 ins, 850 del, 3108 sub ] exp/tri3b/decode_dev.si/wer_17_0.5
+%WER 23.51 [ 4296 / 18274, 400 ins, 825 del, 3071 sub ] exp/tri1/decode_dev/wer_17_0.5
+%WER 22.54 [ 4119 / 18274, 475 ins, 724 del, 2920 sub ] exp/tri2b/decode_dev/wer_17_0.0
+%WER 19.07 [ 3484 / 18274, 435 ins, 644 del, 2405 sub ] exp/tri3b/decode_dev/wer_17_0.5
+%WER 15.52 [ 2836 / 18274, 359 ins, 585 del, 1892 sub ] exp/chain/tdnn1a_sp/decode_dev/wer_11_0.5
+
+Here are the WER scores for gp_mandarin after I ran multilang on gp_japanese and gp_mandarin:
+%WER 17.94 [ 3278 / 18274, 396 ins, 667 del, 2215 sub ] exp/nnet3/multi/gp_mandarin/decode_dev/wer_13_0.0
+
+Notice that the WER is not as good as the chain model WER.
+This could be due to the fact that I did not use i-vectors or bottleneck features in the multilang training.
+But MTL might not yield better WERs than chain models anyway. 
+They are supposed to be more robust.
+How do we test for this?
+
+Here are the current GP WER scores:
+| language | tri3b| chain |
+| Arabic dev | 70.73 | 64.57 |
+| Bulgarian dev | 24.78      | 19.47 |
+| Croatian dev | 28.53 | |
+| Czech dev | 43.72 | |
+| French dev | 93.41 | |
+| German dev | 38.04 | |
+| Hausa dev | 24.64 | |
+| Japanese dev | 6.15 | |
+| Korean dev | 25.64 | |
+| Mandarin dev | 19.07 | 15.52 |
+| Polish dev | 48.23 | |
+| Portuguese dev | 24.11 | |
+| Russian dev | 55.81 | 49.23 |
+| Spanish dev | 42.97 | |
+| Swedish dev | 62.07 | |
+| tamil dev | | |
+| Thai dev | | |
+| Turkish dev | 75.25 | |
+| Vietnamese dev | 37.49 | |
+
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- DONE Softunisia Recipe: Test set. (Zac's transcription of Libian data, Westpoint?)
+I incorporated the Westpoint and Sarraj corpora into the test set.
+I also restricted the lexicon to only the words in the training set.
+Here are the WER scores I get under these condigiotns:
+
+%WER 94.75 [ 54780 / 57818, 1894 ins, 8514 del, 44372 sub ] exp/mono/decode_test/wer_15_1.0
+%WER 89.52 [ 11262 / 12581, 681 ins, 1318 del, 9263 sub ] [PARTIAL] exp/tri3b/decode_test.si/wer_8_1.0
+%WER 88.52 [ 51181 / 57818, 2637 ins, 6287 del, 42257 sub ] exp/tri1/decode_test/wer_9_1.0
+%WER 88.50 [ 42730 / 48284, 2255 ins, 5310 del, 35165 sub ] [PARTIAL] exp/tri2b/decode_test/wer_8_1.0
+%WER 83.99 [ 48562 / 57818, 3626 ins, 4994 del, 39942 sub ] exp/chain/tdnn1c_sp/decode_test/wer_15_1.0
+%WER 83.95 [ 48537 / 57818, 3967 ins, 4427 del, 40143 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_15_1.0
+
+These WERs are bad.
+Why?
+Mismatch?
+Could it be OOVs?
+I have written another lexicon with the text from the test set.
+I also incorporated the test set text in the lm training data.
+I need to run the build and test again.
+  
+- TODO S2S: minimal example.
+- TODO AMTA: Data from endangered languages.
+
+
+** Goals for January:
+- TODO Setup work environment on b-team GPU workstation.
+- TODO Multilang: Flesh out paper idea. Search for publication venue.
+- TODO Multilang: Extend build script to use i-vectors and bottleneck features.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO Multilang: Add well behaving GP languages  to build.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- TODO Heroico: Contact Dan and Yenda about publishing the recipe.
+- TODO African French: Write outline of paper.
+
 * My WAR <2017-12-08 Fri>
 ** Goals set Last Week:
 - DONE Multilang: Train SAT models for all gp languages.
