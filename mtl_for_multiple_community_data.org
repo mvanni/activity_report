@@ -1,10 +1,17 @@
-Multi-Community Multi-Task Learning for ASRJohn J. Morgan, Michelle Vanni, Stephen A. La Rocca
-ABSTRACT
-1 INTRODUCTION
-VERY HIGH LEVEL:  AI, Machine Learning, Deep Learning and Neural Networks have surged in the past decade as a paradigm for modeling the processes of Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS). Reference ASR systems are now trained on tens of thousands of hours of speech data. Neural Network models perform well when these amounts of data are available. However, in situations where training data is scarce more sophisticated methods need to be employed in order to see benefits from neural network models. Multi-task Learning (MTL) is a framework that enables the advantages of Deep Learning to be applied in situations of data scarcity.
-2 BACKGROUND
-MICHELLE ADDED:  The term Low Resource Language (LRL) is used to refer to those human languages for which, from the perspective of computational processing, there exist very few digital resources and little to no automated technology [Cite? Cieri et al. 2016 LREC?; Beyerlein et al., ASRU1999].  The resources, which have included lexicons, parsers and morphological analyzers, among others, now most often consist almost entirely of training data, such that, references to LRLs in this paper equate to languages for which little to no training data is available.
-NICHE APPLICATIONS AND THIS PARTICULAR ARMY APPLICATION:  ASR has niche applications in medical and business domains [Cite?]  Military requirements often …   specifically ...  the US Army frequently finds itself in the situation where it needs help communicating with people who speak a low resource language. It often can benefit from speech to speech applications that work well for populations of speakers who speak with very special phonological inventories in conversations about very special topics. 
+#+TITLE: Multi-Community Multi-Task Learning for ASRJohn J. Morgan, Michelle Vanni, Stephen A. La Rocca
+* ABSTRACT
+* 1 INTRODUCTION
+AI, Machine Learning, Deep Learning and Neural Networks have surged in the past decade as a paradigm for modeling the processes of Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS). 
+Reference ASR systems are now trained on tens of thousands of hours of speech data. 
+Neural Network models perform well when these amounts of data are available. 
+However, in situations where training data is scarce more sophisticated methods need to be employed in order to see benefits from neural network models. 
+Multi-task Learning (MTL) is a framework that enables the advantages of Deep Learning to be applied in situations of data scarcity.
+
+
+* 2 BACKGROUND
+The term Low Resource Language (LRL) is used to refer to those human languages for which, from the perspective of computational processing, there exist very few digital resources and little to no automated technology [Cite? Cieri et al. 2016 LREC?; Beyerlein et al., ASRU1999]. 
+The resources, which have included lexicons, parsers and morphological analyzers, among others, now most often consist almost entirely of training data, such that, references to LRLs in this paper equate to languages for which little to no training data is available.
+NICHE APPLICATIONS AND THIS PARTICULAR ARMY APPLICATION: ASR has niche applications in medical and business domains [Cite?] Military requirements often …   specifically ... the US Army frequently finds itself in the situation where it needs help communicating with people who speak a low resource language. It often can benefit from speech to speech applications that work well for populations of speakers who speak with very special phonological inventories in conversations about very special topics. 
 TECHNIQUE FOR SOLVING ARMY PROBLEM:  In this paper we will investigate a way to leverage the benefits of the latest advances in Neural Networks despite a severe paucity of training data in the target linguistic environment.
 DATA AS RESOURCE FOR SOLVING ARMY PBM: Although, by definition, data volumes are sparse for LRLs, in many cases, the Army is interested in a LRL for which a modicum of speech resources does exist. This data may have been produced as a result of a small data collection project, conducted to capture the acoustic evidence of the speech of a small number of easily accessible members of a subpopulation. Or, recordings from a radio broadcast may have been made for language learning purposes.  Corpora of telephone conversations, recorded to support research program collection efforts, may also exist. Taken separately, these resources usually are not adequate for building an ASR system that can be used in the target speech to speech (S2S) application. In this paper, however, we incorporate resources from these diverse speech technology communities in a MTL approach to the building of ASR acoustic models to meet the needs of the Army’s niche S2S task for LRLs.
 3 DATAOur experiments 
@@ -21,9 +28,9 @@ Similarly, a new monolingual Japanese model was produced. These two models share
 Preliminary WER scores showed a slight improvement over the WER scores for the Mandarin SAT GMM HMMs. Although this is good news, we do not necessarily expect the new monolingual Mandarin acoustic models to yield better WER scores than models trained with the state-of-the-art chain model objective. We do expect the new MTL trained models to be more robust.
 Our minimal example did not include a prefinal layer of bottleneck (BN) features and it was not trained using i-vectors. BN features and i-vector training have been shown to lower WER scores. We are expecting our MTL trained models to yield lower WER scores once they use i-vectors and BN features.
 For our experiments we plan on applying MTL to up to 30 languages and up to 300 hours of speech. The GlobalPhone corpus has data for 17 languages. We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. Most of the data in these corpora were collected in recitative mode through close mounted microphones. For broadcast news data we plan on using the GALE Arabic and Mandarin Chinese corpora. For noisy telephone conversations we will use data from the Babel project.
-5 RESULTS6 RELATED WORK7 CONCLUSIONS AND FUTURE WORK8 REFERENCESBeyerlein, et al., 1999,  ASRUCieri, et al., 2016, LRECABBREVIATIONSASR Automatic Speech RecognitionMT Machine TranslationMTL Multi-Task LearningS2S Speech-to-SpeechTTS Text-to-Speech
-
-
-
-
-  
+* 5 RESULTS
+* 6 RELATED WORK
+* 7 CONCLUSIONS AND FUTURE WORK
+* 8 REFERENCES
+Beyerlein, et al., 1999, ASRU
+Cieri, et al., 2016, LRECABBREVIATIONSASR Automatic Speech RecognitionMT Machine TranslationMTL Multi-Task LearningS2S Speech-to-SpeechTTS Text-to-Speech
