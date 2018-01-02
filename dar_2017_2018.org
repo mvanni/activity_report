@@ -1,3 +1,46 @@
+* DAR <2018-01-02 Tue>
+** Goals for January:
+- TODO Setup work environment on b-team GPU workstation.
+- TODO Multilang: Flesh out paper idea. Search for publication venue.
+- TODO Multilang: Extend build script to use i-vectors and bottleneck features.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO Multilang: Add well behaving GP languages  to build.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- TODO Heroico: Contact Dan and Yenda about publishing the recipe.
+- TODO African French: Write outline of paper.
+
+- Current WER scores for GP:
+| language | tri3b| chain |
+| Arabic dev | 55.98 | 51.17 |
+| Bulgarian dev | 24.78      | 19.47 |
+| Croatian dev | 28.53 | |
+| Czech dev | 43.72 | |
+| French dev | 93.41 | |
+| German dev | 38.04 | |
+| Hausa dev | 24.64 | |
+| Japanese dev | 6.15 | |
+| Korean dev | 25.64 | |
+| Mandarin dev | 19.07 | |
+| Polish dev | 48.23 | |
+| Portuguese dev | 24.11 | |
+| Russian dev | 55.81 | 49.23 |
+| Spanish dev | 42.97 | |
+| Swedish dev | 62.07 | |
+| tamil dev | | |
+| Thai dev | | |
+| Turkish dev | 75.25 | |
+| Vietnamese dev | 37.49 | |
+
+
+** Goals for Wednesday
+- TODO Work with Michelle's draft of the MTL paper.
+- TODO Get results from multilang trilingual run.
+- TODO Investigate Paper publication venues.
+
 * DAR <2017-12-13 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Multilang: Write a script that runs end to end and uses the above setup commands:
