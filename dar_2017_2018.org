@@ -1,4 +1,43 @@
 * DAR <2018-01-02 Tue>
+** Goals for Wednesday set Tuesday:
+- TODO Work with Michelle's draft of the MTL paper.
+- TODO Get results from multilang trilingual run.
+%WER 18.19 [ 3324 / 18274, 367 ins, 695 del, 2262 sub ] exp/nnet3/multi_bnf/gp_mandarin/decode_dev/wer_13_0.0
+%WER 17.94 [ 3278 / 18274, 396 ins, 667 del, 2215 sub ] exp/nnet3/multi/gp_mandarin/decode_dev/wer_13_0.0
+
+So the WER went up aft adding the Bulgarian.
+Did I do anything else?
+18.19 is still better than the tri3b 19.07.
+
+Here are the gp_mandarin WERs:
+
+%WER 46.38 [ 9973 / 21502, 623 ins, 2029 del, 7321 sub ] exp/mono/decode_eval/wer_13_0.0
+%WER 36.63 [ 6694 / 18274, 351 ins, 1489 del, 4854 sub ] exp/mono/decode_dev/wer_15_0.0
+%WER 32.78 [ 7049 / 21502, 676 ins, 1358 del, 5015 sub ] exp/tri1/decode_eval/wer_17_0.5
+%WER 32.02 [ 6886 / 21502, 747 ins, 1223 del, 4916 sub ] exp/tri3b/decode_eval.si/wer_16_0.0
+%WER 31.17 [ 6703 / 21502, 725 ins, 1244 del, 4734 sub ] exp/tri2b/decode_eval/wer_17_0.0
+%WER 27.48 [ 5909 / 21502, 631 ins, 1170 del, 4108 sub ] exp/tri3b/decode_eval/wer_17_0.5
+%WER 23.89 [ 4365 / 18274, 407 ins, 850 del, 3108 sub ] exp/tri3b/decode_dev.si/wer_17_0.5
+%WER 23.51 [ 4296 / 18274, 400 ins, 825 del, 3071 sub ] exp/tri1/decode_dev/wer_17_0.5
+%WER 22.54 [ 4119 / 18274, 475 ins, 724 del, 2920 sub ] exp/tri2b/decode_dev/wer_17_0.0
+%WER 21.52 [ 4628 / 21502, 587 ins, 893 del, 3148 sub ] exp/chain/tdnn1a_sp/decode_eval/wer_11_0.0
+%WER 19.07 [ 3484 / 18274, 435 ins, 644 del, 2405 sub ] exp/tri3b/decode_dev/wer_17_0.5
+%WER 15.52 [ 2836 / 18274, 359 ins, 585 del, 1892 sub ] exp/chain/tdnn1a_sp/decode_dev/wer_11_0.5
+
+| model | dev WER |
+| mono | 36.63 |
+| tri1 | 23.51 |
+| tri2b | 22.54 |
+| tri3b | 19.07 |
+| chain | 15.52 |
+
+- TODO Investigate Paper publication venues.
+
+** Goals for Thursday:
+- TODO Multilang: Get results for run with i-vectors and 7 languages.
+- TODO MTL Paper: Write background.
+
+* DAR <2018-01-02 Tue>
 ** Goals for January:
 - TODO Setup work environment on b-team GPU workstation.
 - TODO Multilang: Flesh out paper idea. Search for publication venue.
@@ -34,7 +73,6 @@
 | Thai dev | | |
 | Turkish dev | 75.25 | |
 | Vietnamese dev | 37.49 | |
-
 
 ** Goals for Wednesday
 - TODO Work with Michelle's draft of the MTL paper.
