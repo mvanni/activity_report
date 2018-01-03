@@ -36,6 +36,7 @@ Here are the gp_mandarin WERs:
 ** Goals for Thursday:
 - TODO Multilang: Get results for run with i-vectors and 7 languages.
 - TODO MTL Paper: Write background.
+- TODO gp_french: Get results after running with lm trained on prompts.
 
 * DAR <2018-01-02 Tue>
 ** Goals for January:
