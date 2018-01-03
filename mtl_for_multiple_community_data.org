@@ -1,54 +1,75 @@
-Multi-Community Multi-Task Learning for ASR
+#+TITLE: Multi-Community Multi-Task Learning for ASR
+
 John J. Morgan, Michelle Vanni, Stephen A. La Rocca
 
-							{? Submit to ICASSP, ASRU, EMNLP?}
+{? Submit to ICASSP, ASRU, EMNLP?}
 
-ABSTRACT
+* ABSTRACT
 
-1 INTRODUCTION
+* 1 INTRODUCTION
+VERY HIGH LEVEL: Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL) and Neural Networks (NN) have surged in the past decade as a paradigm for modeling the processes of Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS). 
+Reference {? major, large, important?} ASR systems are now trained on tens of thousands of hours of speech data (Heigold, et al., 2013). 
+NN models perform well when these amounts of data are available. 
+However, in situations where training data is scarce, more sophisticated methods need to be employed in order to see benefits from NN models. 
+Multi-task Learning (MTL) is a framework that enables the advantages of DL to be applied in situations of data scarcity.
 
-VERY HIGH LEVEL:  Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL) and Neural Networks (NN) have surged in the past decade as a paradigm for modeling the processes of Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS). Reference {? major, large, important?} ASR systems are now trained on tens of thousands of hours of speech data (Heigold, et al., 2013). NN models perform well when these amounts of data are available. However, in situations where training data is scarce, more sophisticated methods need to be employed in order to see benefits from NN models. Multi-task Learning (MTL) is a framework that enables the advantages of DL to be applied in situations of data scarcity.
+Note as well that speech recognition researchers have tended toward a culture of silos, operating, not without reason, on speech data collected in a given manner (MV: Can we find a cite?). 
+For example, if a group develops acoustic models for read speech, they only ever work with read speech; and if a group works on attenuating the effects of noise in the speech signal, that lab experiments exclusively with noisy data. 
+Silos have developed around broadcast news, telephone conversations, and spontaneous speech data also. 
+Speech researchers’ convention, to work on a single data type, renders novel our approach of incorporating data from across diverse speech technology communities into the training.
 
-Note as well that speech recognition researchers have tended toward a culture of silos, operating, not without reason, on speech data collected in a given manner (MV: Can we find a cite?).  For example, if a group develops acoustic models for read speech, they only ever work with read speech; and if a group works on attenuating the effects of noise in the speech signal, that lab experiments exclusively with noisy data.  Silos have developed around broadcast news, telephone conversations, and spontaneous speech data also.  Speech researchers’ convention, to work on a single data type, renders novel our approach of incorporating data from across diverse speech technology communities into the training.
-
-We focus here on the sparse data condition arising when one wants to correct the specific problem of the failure of French ASR systems on accented, that is, Non-European-French (NEF) input.  The amount of data required to train a NN model on a given variety of NEF simply has yet to be developed.  So, to build acoustic models, we select an approach that can exploit the wider than usual range of data sources, which we incorporate.  We formulate our research questions as follows.
+We focus here on the sparse data condition arising when one wants to correct the specific problem of the failure of French ASR systems on accented, that is, Non-European-French (NEF) input. 
+The amount of data required to train a NN model on a given variety of NEF simply has yet to be developed. 
+So, to build acoustic models, we select an approach that can exploit the wider than usual range of data sources, which we incorporate. 
+We formulate our research questions as follows.
 
 A. Can NN acoustic models trained with MTL on data differing in type, volume and language, including varieties of NEF, improve performance of a French ASR system on NEF input?
 
-B. Can real-world ASR tasks in very low resource conditions, such as is the case for NEF, benefit from the incorporation diverse-speech-technology-community data--such as a corpus of broadcast news--into a MTL method model, already trained on, for example, only read and prompted speech? 
+B. Can real-world ASR tasks in very low resource conditions, such as is the case for NEF, benefit from the incorporation of diverse-speech-technology-community data--such as a corpus of broadcast news--into a MTL method model, already trained on, for example, only read and prompted speech? 
 
 C. If so, can the resulting robustness of the MTL-trained NN acoustic models serve to recognize two or more distinct NEF varieties to a degree sufficient for accomplishing a real-world task?
 
 {what else?}
 
-2 BACKGROUND
+* 2 BACKGROUND
+An ASR system requires components such as an acoustic model, a lexicon and a language model. 
+To support our testing, we produce and design these components in a manner to permit embedding in the source language ASR side of a S2S system, with the language model trained on conversations in a single pre-specified domain. 
+The focus of our innovation, however, lies squarely with the acoustic modeling, which we seek to improve for the purposes of ASR of NEF speech with MTF-trained NN models and data from diverse speech technology communities.
 
-RE-WORK OF JJM’s PARA, AFTER DISCUSSION: An ASR system requires components such as an acoustic model, a lexicon and a language model.  To support our testing, we produce and design these components in a manner to permit embedding in the source language ASR side of a S2S system, with the language model trained on conversations in a single pre-specified domain. The focus of our innovation, however, lies squarely with the acoustic modeling, which we seek to improve for the purposes of ASR of NEF speech with MTF-trained NN models and data from diverse speech technology communities.
+The data from these communities differ in three important respects, source genre, speaking style, and recording condition. 
+Our experiments incorporate models trained on (1) data in genres such as broadcast news, scripted interaction, and recitation; (2) data exhibiting styles such as prompted and spontaneous speech; and (3) data collected over a noisy telephone and in a controlled environment.
 
-RE-WORK OF JJM’s PARA AFTER 20180102 DISCUSSION : The data from these communities differ in three important respects, source genre, speaking style, and recording condition.  Our experiments incorporate models trained on (1) data in genres such as broadcast news, scripted interaction, and recitation; (2) data exhibiting styles such as prompted and spontaneous speech; and (3) data collected over a noisy telephone and in a controlled environment.
+The term Low Resource Language (LRL) is used to refer to those human languages for which, from the perspective of computational processing, there exist very few digital resources and little to no automated technology [Cite? Cieri et al. 2016 LREC?; Beyerlein et al., ASRU1999]. 
+The resources, which have included lexicons, parsers and morphological analyzers, among others, now most often consist almost entirely of training data, such that references to LRLs in this paper equate to languages for which little to no training data is available.
 
-MICHELLE ADDED:  The term Low Resource Language (LRL) is used to refer to those human languages for which, from the perspective of computational processing, there exist very few digital resources and little to no automated technology [Cite? Cieri et al. 2016 LREC?; Beyerlein et al., ASRU1999].  The resources, which have included lexicons, parsers and morphological analyzers, among others, now most often consist almost entirely of training data, such that references to LRLs in this paper equate to languages for which little to no training data is available.
+NICHE APPLICATIONS AND THIS PARTICULAR ARMY APPLICATION: 
+ASR has niche applications in medical and business domains [Cite?] The military as well often has requirements for communicating with people who speak a low resource language and can benefit from S2S applications that work well for populations of speakers who speak with very special phonological inventories in conversations about very specific topics. 
 
-MODIFIED AFTER 20180102 DISCUSSION: NICHE APPLICATIONS AND THIS PARTICULAR ARMY APPLICATION:  ASR has niche applications in medical and business domains [Cite?]  The military as well often has requirements for communicating with people who speak a low resource language and can benefit from S2S applications that work well for populations of speakers who speak with very special phonological inventories in conversations about very specific topics. 
+TECHNIQUE FOR SOLVING ARMY PROBLEM: 
+In this paper we will investigate a way to leverage the benefits of the latest advances in NN despite a severe paucity of training data in the target linguistic environment.
 
-TECHNIQUE FOR SOLVING ARMY PROBLEM:  In this paper we will investigate a way to leverage the benefits of the latest advances in NN despite a severe paucity of training data in the target linguistic environment.
+DATA AS RESOURCE FOR SOLVING Real-World PBM: 
+Although, by definition, data volumes are sparse for LRLs, in many cases, the Army is interested in a LRL for which a modicum of speech resources does exist. 
+This data may have been produced as a result of a small data collection project, conducted to capture the acoustic evidence of the speech of a small number of easily accessible members of a subpopulation. 
+Or, recordings from a radio broadcast may have been made for language learning purposes. 
+Corpora of telephone conversations, recorded to support research program collection efforts, may also exist. 
+Taken separately, these resources usually are not adequate for building an ASR system that can be used in the target S2S application. 
+In this paper, however, we incorporate resources from these diverse speech technology communities in a MTL approach to the building of ASR acoustic models to meet the needs of the niche S2S task for LRLs.
 
-DATA AS RESOURCE FOR SOLVING Real-World PBM: Although, by definition, data volumes are sparse for LRLs, in many cases, the Army is interested in a LRL for which a modicum of speech resources does exist. This data may have been produced as a result of a small data collection project, conducted to capture the acoustic evidence of the speech of a small number of easily accessible members of a subpopulation. Or, recordings from a radio broadcast may have been made for language learning purposes.  Corpora of telephone conversations, recorded to support research program collection efforts, may also exist. Taken separately, these resources usually are not adequate for building an ASR system that can be used in the target S2S application. In this paper, however, we incorporate resources from these diverse speech technology communities in a MTL approach to the building of ASR acoustic models to meet the needs of the niche S2S task for LRLs.
-
-
-3 DATA
+* 3 DATA
 Our experiments 
 
-4 EXPERIMENTS
-	4.1 Preliminary testing
-	4.2
-	4.3
-[[[So far, we have demonstrated that we can build systems with the MTL method by producing a minimal example that uses only two languages. We built baseline SAT GMM HMM acoustic models for Japanese and Mandarin Chinese with data from the GlobalPhone speech corpus. We implemented MTL as follows:
+* 4 EXPERIMENTS
+** 4.1 Preliminary testing
+** 4.2
+** 4.3
+[[[So far, we have demonstrated that we can build systems with the MTL method by producing a minimal example that uses only two languages. 
+We built baseline SAT GMM HMM acoustic models for Japanese and Mandarin Chinese with data from the GlobalPhone speech corpus. We implemented MTL as follows:
 .Alignments generated by the Japanese and Mandarin SAT GMM HMMs were used to train a 7-layer bilingual neural network acoustic model on the combined set of training examples from the Japanese and Mandarin corpora.
 
 Note that instead of considering this as a bilingual model it can be viewed as a Mandarin model whose parameters are shared with a Japanese model. 
 
-.The data from the Mandarin corpus was used to readjust the parameters in the last two layers of the bilingual neural network model to produce a new monolingual Mandarin acoustic model.  
+.The data from the Mandarin corpus was used to readjust the parameters in the last two layers of the bilingual neural network model to produce a new monolingual Mandarin acoustic model. 
 
 Similarly, a new monolingual Japanese model was produced. These two models share the parameters in their first five layers, only their final 2 layers are different.
 
@@ -60,14 +81,36 @@ Our minimal example did not include a prefinal layer of bottleneck (BN) features
 
 For our experiments we plan on applying MTL to up to 30 languages and up to 300 hours of speech. The GlobalPhone corpus has data for 17 languages. We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. Most of the data in these corpora were collected in recitative mode through close mounted microphones. For broadcast news data we plan on using the GALE Arabic and Mandarin Chinese corpora. For noisy telephone conversations we will use data from the Babel project. ]]]
 
-5 RESULTS
-6 RELATED WORK
-7 CONCLUSIONS AND FUTURE WORK
-8 REFERENCES
-Beyerlein, et al., 1999,  ASRU
+* 5 RESULTS
+
+| language | tri3b WER | chain WER | MTL |
+| Arabic dev | 55.98 | 51.17 | |
+| Bulgarian dev | 24.78      | 19.47 | |
+| Croatian dev | 28.53 | | |
+| Czech dev | 43.72 | | |
+| French dev | 93.41 | | |
+| German dev | 38.04 | | |
+| Hausa dev | 24.64 | | |
+| Japanese dev | 6.15 | | |
+| Korean dev | 25.64 | | |
+| Mandarin dev | 19.07 | 15.52 | 17.94 |
+| Polish dev | 48.23 | | |
+| Portuguese dev | 24.11 | ||
+| Russian dev | 55.81 | 49.23 | |
+| Spanish dev | 42.97 | | |
+| Swedish dev | 62.07 | | | |
+| tamil dev | | | |
+| Thai dev | | | |
+| Turkish dev | 75.25 | | |
+| Vietnamese dev | 37.49 | | |
+
+* 6 RELATED WORK
+* 7 CONCLUSIONS AND FUTURE WORK
+* 8 REFERENCES
+Beyerlein, et al., 1999, ASRU
 Cieri, et al., 2016, LREC
-Heigold, G., V. Vanhoucke, A. Senior, P. Nguyen, M. Ranzato, M. Devin, J. Dean. 2013.  Multilingual acoustic models using distributed deep neural networks. In Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), IEEE, Vancouver, CA.
-ABBREVIATIONS
+Heigold, G., V. Vanhoucke, A. Senior, P. Nguyen, M. Ranzato, M. Devin, J. Dean. 2013. Multilingual acoustic models using distributed deep neural networks. In Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), IEEE, Vancouver, CA.
+* ABBREVIATIONS
 ASR	Automatic Speech Recognition
 DL	Deep Learning
 ML	Machine Learning
@@ -75,41 +118,5 @@ MT	Machine Translation
 MTL	Multi-Task Learning
 NEF	Non-European French
 NN	Neural Network
-      S2S	Speech-to-Speech
+ S2S	Speech-to-Speech
 TTS	Text-to-Speech
-#+TITLE: Multi-Community Multi-Task Learning for ASRJohn J. Morgan, Michelle Vanni, Stephen A. La Rocca
-* ABSTRACT
-* 1 INTRODUCTION
-AI, Machine Learning, Deep Learning and Neural Networks have surged in the past decade as a paradigm for modeling the processes of Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS). 
-Reference ASR systems are now trained on tens of thousands of hours of speech data. 
-Neural Network models perform well when these amounts of data are available. 
-However, in situations where training data is scarce more sophisticated methods need to be employed in order to see benefits from neural network models. 
-Multi-task Learning (MTL) is a framework that enables the advantages of Deep Learning to be applied in situations of data scarcity.
-
-
-* 2 BACKGROUND
-The term Low Resource Language (LRL) is used to refer to those human languages for which, from the perspective of computational processing, there exist very few digital resources and little to no automated technology [Cite? Cieri et al. 2016 LREC?; Beyerlein et al., ASRU1999]. 
-The resources, which have included lexicons, parsers and morphological analyzers, among others, now most often consist almost entirely of training data, such that, references to LRLs in this paper equate to languages for which little to no training data is available.
-NICHE APPLICATIONS AND THIS PARTICULAR ARMY APPLICATION: ASR has niche applications in medical and business domains [Cite?] Military requirements often …   specifically ... the US Army frequently finds itself in the situation where it needs help communicating with people who speak a low resource language. It often can benefit from speech to speech applications that work well for populations of speakers who speak with very special phonological inventories in conversations about very special topics. 
-TECHNIQUE FOR SOLVING ARMY PROBLEM:  In this paper we will investigate a way to leverage the benefits of the latest advances in Neural Networks despite a severe paucity of training data in the target linguistic environment.
-DATA AS RESOURCE FOR SOLVING ARMY PBM: Although, by definition, data volumes are sparse for LRLs, in many cases, the Army is interested in a LRL for which a modicum of speech resources does exist. This data may have been produced as a result of a small data collection project, conducted to capture the acoustic evidence of the speech of a small number of easily accessible members of a subpopulation. Or, recordings from a radio broadcast may have been made for language learning purposes.  Corpora of telephone conversations, recorded to support research program collection efforts, may also exist. Taken separately, these resources usually are not adequate for building an ASR system that can be used in the target speech to speech (S2S) application. In this paper, however, we incorporate resources from these diverse speech technology communities in a MTL approach to the building of ASR acoustic models to meet the needs of the Army’s niche S2S task for LRLs.
-3 DATAOur experiments 
-4 EXPERIMENTS 4.1 4.2 4.3
-We set as a goal to produce components of an ASR system for African Accented French. These components include acoustic models, a lexicon and a language model. They will be designed to be embedded in one side of a speech to speech device. The language model will be trained on conversations about military issues.
-Our neural network acoustic models will be trained with MTL on speech data from varying numbers of corpora in varying numbers of languages including varying amounts of data from African Accented French.
-We will experiment with incorporating speech from other sources, such as broadcast news; other speaking styles, such as prompted and spontaneous speech; and other recording conditions, such as noisy telephone conversations.
-We will address the following research question that we believe has not been answered in the literature. Can military relevant ASR tasks in very low resource conditions benefit from the incorporation of speech data from diverse speech technology communities into the MTL training method? Forexample, can a corpus of broadcast news data be used to improve the ASR component of an African Accented French /English speech to speech device that was previously trained only on read and prompted speech?
-So far, we have demonstrated that we can build systems with the MTL method by producing a minimal example that uses only two languages. We built baseline SAT GMM HMM acoustic models for Japanese and Mandarin Chinese with data from the GlobalPhone speech corpus. We implemented MTL as follows:.Alignments generated by the Japanese and Mandarin SAT GMM HMMs were used to train a 7-layer bilingual neural network acoustic model on the combined set of training examples from the Japanese and Mandarin corpora.
-Note that instead of considering this as a bilingual model it can be viewed as a Mandarin model whose parameters are shared with a Japanese model. 
-.The data from the Mandarin corpus was used to readjust the parameters in the last two layers of the bilingual neural network model to produce a new monolingual Mandarin acoustic model.  
-Similarly, a new monolingual Japanese model was produced. These two models share the parameters in their first five layers, only their final 2 layers are different.
-.The monolingual Mandarin acoustic model was used to decode a test set.
-Preliminary WER scores showed a slight improvement over the WER scores for the Mandarin SAT GMM HMMs. Although this is good news, we do not necessarily expect the new monolingual Mandarin acoustic models to yield better WER scores than models trained with the state-of-the-art chain model objective. We do expect the new MTL trained models to be more robust.
-Our minimal example did not include a prefinal layer of bottleneck (BN) features and it was not trained using i-vectors. BN features and i-vector training have been shown to lower WER scores. We are expecting our MTL trained models to yield lower WER scores once they use i-vectors and BN features.
-For our experiments we plan on applying MTL to up to 30 languages and up to 300 hours of speech. The GlobalPhone corpus has data for 17 languages. We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. Most of the data in these corpora were collected in recitative mode through close mounted microphones. For broadcast news data we plan on using the GALE Arabic and Mandarin Chinese corpora. For noisy telephone conversations we will use data from the Babel project.
-* 5 RESULTS
-* 6 RELATED WORK
-* 7 CONCLUSIONS AND FUTURE WORK
-* 8 REFERENCES
-Beyerlein, et al., 1999, ASRU
-Cieri, et al., 2016, LRECABBREVIATIONSASR Automatic Speech RecognitionMT Machine TranslationMTL Multi-Task LearningS2S Speech-to-SpeechTTS Text-to-Speech
