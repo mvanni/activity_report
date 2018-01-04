@@ -1,3 +1,24 @@
+* DAR <2018-01-04 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Multilang: Get results for run with i-vectors and 7 languages.
+The training finished, but decoding failed.
+I had this problem before.
+The decoding graph is not built.
+The tree file is missing.
+Where is the tree file?
+When does it get built?
+What is it for?
+
+- TODO MTL Paper: Write background.
+- TODO gp_french: Get results after running with lm trained on prompts.
+The results are still horrible.
+I'm ready to give up on this.
+
+** Goals for Friday:
+- TODO MTL Paper: Write background.
+- TODO Multilang: Investigate tree file.
+- TODO Multilang: Decode with new system trained on 7 languages.
+
 * DAR <2018-01-02 Tue>
 ** Goals for Wednesday set Tuesday:
 - TODO Work with Michelle's draft of the MTL paper.
