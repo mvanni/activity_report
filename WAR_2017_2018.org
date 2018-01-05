@@ -1,3 +1,81 @@
+* My WAR <2018-01-05 Fri>
+** Goals for January:
+- TODO Setup work environment on b-team GPU workstation.
+I am waiting on Justin to install kaldi.
+For now I can build kaldi systems that do not require the GPU.
+
+- TODO Multilang: Flesh out paper idea. Search for publication venue.
+Interspeech looks like a possible candidate, but it is happening too soon.
+The abstracts are due in February. 
+- TODO Multilang: Extend build script to use i-vectors and bottleneck features.
+- TODO GP: Take a pass through languages that are not performing well yet.
+French is really giving me a problem.
+I am ready to give up on French.
+
+- TODO Multilang: Add well behaving GP languages  to build.
+I am working with 7 languages:
+Bulgarian
+Croatian
+Hausa
+Japanese
+Korean
+Mandarin
+Portuguese
+
+I got through the training stage with these languages.
+I am working on the decoding stage.
+Decoding seems to easy to be true right now.
+I use the same decoding graph (HCLG.fst) as used for the tri3b system.
+The only difference is that the file containing the neural network parameters is passed to the decoding script.
+
+The training stage consists of training a raw   neural network on data from all the  languages. 
+After that is done the raw neural network is converted to a language specific acoustic model. 
+
+Currently my understanding is that the raw neural network has many output layers. 
+There is at least 2 output layers  for each language. 
+This means at least 14 output layers in our case.
+One of those  layers is a softmax layer and the other is an affine layer.
+
+I think (really not sure) that the language specific layers are trained only on the language specific data.
+After training the raw neural network we end up with a multilingual network.
+Some minor adjustments to prior and posterior probabilities are made and a language specific acoustic model is written out.
+
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+I am waiting on Zac to get me a good test set. 
+
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- TODO Heroico: Contact Dan and Yenda about publishing the recipe.
+- TODO African French: Write outline of paper.
+
+** WAR:
+Multitask Learning for Speech Recognition Project:
+John Morgan is working on a project that uses the Machine Learning method called Multi-Task Learning (MTL) to build Automatic Speech Recognition (ASR) systems. 
+The hope is that the MTL method will enable ASR systems to be developed for Low Resource Languages (LRL) that are of special interest to the US Army. 
+The idea behind MTL is to share knowledge across tasks that have common characteristics. 
+MTL has been used successfully to share knowledge across languages in ASR. 
+Morgan's project is to extend these successes by considering    language data sources as tasks. 
+Usually, ASR systems are built with data from 1 kind of data source, e.g. broadcast news. 
+Morgan is working on experiments that will use the MTL method for building an ASR system for a LRL using data from several data sources. 
+Before the break Morgan had built a bilingual MTL ASR system as a minimal example prototype system. 
+This week he built  an MTL ASR system with seven languages. 
+
+** Goals for Next Week:
+- TODO Multilang: Write ideas for Paper. 
+- TODO Multilang: Look for data from different sources in our languages. (gale arabic)
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- TODO Heroico: Contact Dan and Yenda about publishing the recipe.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO Multilang: Extend build script to use i-vectors and bottleneck features.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO Multilang: Add well behaving GP languages  to build.
+
 * My WAR <2017-12-14 Thu>
 ** Goals set Last Week:
 - DONE Multilang: Decode the target Russian and Spanish with the new hybrid multilang system. 
@@ -74,7 +152,6 @@ I need to run the build and test again.
   
 - TODO S2S: minimal example.
 - TODO AMTA: Data from endangered languages.
-
 
 ** Goals for January:
 - TODO Setup work environment on b-team GPU workstation.
