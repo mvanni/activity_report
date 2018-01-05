@@ -7,7 +7,7 @@ John J. Morgan, Michelle Vanni, Stephen A. La Rocca
 * ABSTRACT
 
 * 1 INTRODUCTION
-VERY HIGH LEVEL: Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL) and Neural Networks (NN) have surged in the past decade as a paradigm for modeling the processes of Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS). 
+Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL) and Neural Networks (NN) have surged in the past decade as a paradigm for modeling the processes of Automatic Speech Recognition (ASR), Machine Translation (MT) and Text to Speech (TTS). 
 Reference {? major, large, important?} ASR systems are now trained on tens of thousands of hours of speech data (Heigold, et al., 2013). 
 NN models perform well when these amounts of data are available. 
 However, in situations where training data is scarce, more sophisticated methods need to be employed in order to see benefits from NN models. 
@@ -21,6 +21,10 @@ Speech researchers’ convention, to work on a single data type, renders novel o
 We focus here on the sparse data condition arising when one wants to correct the specific problem of the failure of French ASR systems on accented, that is, Non-European-French (NEF) input. 
 The amount of data required to train a NN model on a given variety of NEF simply has yet to be developed. 
 So, to build acoustic models, we select an approach that can exploit the wider than usual range of data sources, which we incorporate. 
+
+We build an NN that shares layers. 
+We assume that the shared layers extract the important features that are common across the range of data sources. 
+
 We formulate our research questions as follows.
 
 A. Can NN acoustic models trained with MTL on data differing in type, volume and language, including varieties of NEF, improve performance of a French ASR system on NEF input?
@@ -56,6 +60,20 @@ Corpora of telephone conversations, recorded to support research program collect
 Taken separately, these resources usually are not adequate for building an ASR system that can be used in the target S2S application. 
 In this paper, however, we incorporate resources from these diverse speech technology communities in a MTL approach to the building of ASR acoustic models to meet the needs of the niche S2S task for LRLs.
 
+** Multilang Method
+
+What are the tasks?
+
+- Languages: Each language is a task.
+- Speaking Style: Each speaking style is a task.
+- Genre: Each genre is a task. 
+- Recording Condition: Each recording condition is a task.
+
+We train one NN.
+The layers of the NN are feature extractors.
+We assume the layers will extract linguistic features we are interested in and ignore irrelevant features. 
+
+Affine and Soft Max Layer?
 * 3 DATA
 Our experiments 
 
@@ -80,22 +98,21 @@ Preliminary WER scores showed a slight improvement over the WER scores for the M
 Our minimal example did not include a prefinal layer of bottleneck (BN) features and it was not trained using i-vectors. BN features and i-vector training have been shown to lower WER scores. We are expecting our MTL trained models to yield lower WER scores once they use i-vectors and BN features.
 
 For our experiments we plan on applying MTL to up to 30 languages and up to 300 hours of speech. The GlobalPhone corpus has data for 17 languages. We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. Most of the data in these corpora were collected in recitative mode through close mounted microphones. For broadcast news data we plan on using the GALE Arabic and Mandarin Chinese corpora. For noisy telephone conversations we will use data from the Babel project. ]]]
-
 * 5 RESULTS
 
-| language | tri3b WER | chain WER | MTL |
+| language | tri3b WER | chain WER | MTL WER |
 | Arabic dev | 55.98 | 51.17 | |
 | Bulgarian dev | 24.78      | 19.47 | |
-| Croatian dev | 28.53 | | |
+| Croatian dev | 28.53 | | 28.77 |
 | Czech dev | 43.72 | | |
 | French dev | 93.41 | | |
 | German dev | 38.04 | | |
-| Hausa dev | 24.64 | | |
-| Japanese dev | 6.15 | | |
+| Hausa dev | 24.64 | | 21.77 |
+| Japanese dev | 6.15 | | 4.97 |
 | Korean dev | 25.64 | | |
 | Mandarin dev | 19.07 | 15.52 | 17.94 |
 | Polish dev | 48.23 | | |
-| Portuguese dev | 24.11 | ||
+| Portuguese dev | 24.11 | | 21.30 |
 | Russian dev | 55.81 | 49.23 | |
 | Spanish dev | 42.97 | | |
 | Swedish dev | 62.07 | | | |
@@ -103,7 +120,6 @@ For our experiments we plan on applying MTL to up to 30 languages and up to 300 
 | Thai dev | | | |
 | Turkish dev | 75.25 | | |
 | Vietnamese dev | 37.49 | | |
-
 * 6 RELATED WORK
 * 7 CONCLUSIONS AND FUTURE WORK
 * 8 REFERENCES
