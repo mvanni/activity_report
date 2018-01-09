@@ -102,14 +102,14 @@ For our experiments we plan on applying MTL to up to 30 languages and up to 300 
 
 | language | tri3b WER | chain WER | MTL WER |
 | Arabic dev | 55.98 | 51.17 | |
-| Bulgarian dev | 24.78      | 19.47 | |
-| Croatian dev | 28.53 | | 28.77 |
-| Czech dev | 43.72 | | |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 |
+| Croatian dev | 28.53 | 27.57 | 28.77 |
+| Czech dev | 43.72 | 50.14 | |
 | French dev | 93.41 | | |
 | German dev | 38.04 | | |
 | Hausa dev | 24.64 | | 21.77 |
 | Japanese dev | 6.15 | | 4.97 |
-| Korean dev | 25.64 | | |
+| Korean dev | 25.64 | | 24.28 |
 | Mandarin dev | 19.07 | 15.52 | 17.94 |
 | Polish dev | 48.23 | | |
 | Portuguese dev | 24.11 | | 21.30 |
