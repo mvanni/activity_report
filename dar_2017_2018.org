@@ -1,3 +1,92 @@
+* DAR <2018-01-10 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Multilang: Get MTL WER results  after training on 17 languages.
+The training is not done yet as of Wednesday morning.
+The training iterations are done after a total of 479.
+Model combination is being performed.
+Training is done.
+Decoding is a problem.
+I am skipping i-vectors again.
+I-vectors will have  to be left for later.
+I can run decoding with hard-wired values passed as arguments to the decoder command line.
+I should have WER scores tmorrow.
+- TODO GALE Arabic: Get tri3b WER results.
+
+%WER 39.43 [ 27471 / 69668, 2105 ins, 5890 del, 19476 sub ] exp/tri1/decode/wer_15_0.5
+%WER 38.35 [ 26718 / 69668, 2177 ins, 5703 del, 18838 sub ] exp/tri2a/decode/wer_15_0.5
+%WER 35.91 [ 25018 / 69668, 2221 ins, 5338 del, 17459 sub ] exp/tri2b/decode/wer_15_0.5
+%WER 35.65 [ 24838 / 69668, 2368 ins, 5141 del, 17329 sub ] exp/tri3b/decode.si/wer_15_0.5
+%WER 33.81 [ 23558 / 69668, 2664 ins, 4635 del, 16259 sub ] exp/tri3b/decode/wer_17_0.5
+
+| model | WER |
+| tri1 | 39.43 |
+| tri2a | 38.35 |
+| tri2b | 35.91 |
+| tri3b | 33.81 |
+
+- TODO GALE Arabic: Get chain model WER results.
+- TODO GP: Get WERs for chain models (Hausa first)
+Here are Hausa WER scores:
+%WER 36.84 [ 616 / 1672, 48 ins, 148 del, 420 sub ] exp/tri1/decode_dev/wer_11_0.0
+%WER 36.48 [ 610 / 1672, 26 ins, 136 del, 448 sub ] exp/mono/decode_dev/wer_13_0.0
+%WER 32.30 [ 540 / 1672, 53 ins, 96 del, 391 sub ] exp/tri2b/decode_dev/wer_10_0.0
+%WER 27.39 [ 458 / 1672, 33 ins, 90 del, 335 sub ] exp/tri3b/decode_dev.si/wer_13_0.0
+%WER 24.64 [ 412 / 1672, 30 ins, 76 del, 306 sub ] exp/tri3b/decode_dev/wer_17_0.0
+%WER 23.56 [ 394 / 1672, 21 ins, 58 del, 315 sub ] exp/chain/tdnn1c_sp/decode_dev/wer_13_0.5
+%WER 23.50 [ 393 / 1672, 21 ins, 58 del, 314 sub ] exp/chain/tdnn1c_sp_online/decode_dev/wer_13_0.5
+
+- TODO GP: Improve tri3b baselines (How?)
+
+- Baseline WER scores: 
+These are the best scores achieved so far: 
+
+| language | tri3b WER | chain WER | MTL WER on 17 languages |
+| Arabic dev | 55.98 | 51.17 | |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 |
+| Croatian dev | 28.53 | 27.57 | 28.77 |
+| Czech dev | 43.72 | 50.14 | |
+| French dev | 93.41 | | |
+| German dev | 38.04 | | |
+| Hausa dev | 24.64 | 23.56 | 21.77 |
+| Japanese dev | 6.15 | | 4.97 |
+| Korean dev | 25.64 | | 24.28 |
+| Mandarin dev | 19.07 | 15.52 | 17.94 |
+| Polish dev | 32.62      | | |
+| Portuguese dev | 24.11 | | 21.30 |
+| Russian dev | 55.81 | 49.23 | |
+| Spanish dev | 33.36 | | |
+| Swedish dev | 62.07 | | | |
+| tamil dev | | | |
+| Thai dev | | | |
+| Turkish dev | 75.25 | | |
+| Vietnamese dev | 37.49 | | |
+
+gp_portuguese is failing on the b-team workstation.
+this is the only language (other than tamil and thai) that is failing to build.
+
+- Softunisia: 
+There was a problem with the latest run of the Softunisia system.
+I ran it on the b-team workstation.
+I get much better WER scores:
+%WER 49.78 [ 28782 / 57818, 1651 ins, 4719 del, 22412 sub ] exp/mono/decode_test/wer_17_1.0
+%WER 37.52 [ 4186 / 11156, 252 ins, 620 del, 3314 sub ] [PARTIAL] exp/tri3b/decode_test.si/wer_10_1.0
+%WER 35.11 [ 18826 / 53624, 1021 ins, 2989 del, 14816 sub ] [PARTIAL] exp/tri2b/decode_test/wer_9_1.0
+%WER 33.81 [ 19546 / 57818, 1120 ins, 2959 del, 15467 sub ] exp/tri1/decode_test/wer_11_1.0
+
+
+There are still problems.
+The tri3b system failed.
+These scores could be better.
+
+* Goals for Thursday:
+- TODO Softunisia: Fix problems with new test set. Why is tri3b failing?
+- TODO Multilang: Get WER scores for 17 languages.
+- TODO Multilang: I-vectors (should I incorporate this now or wait?)
+- TODO Multilang: ditto for bottleneck layer.
+- TODO GP: Get Portuguese working. I should be able to do this since I've done it before. (copy build on a-team workstation?
+- TODO GP: Get chain model WER scores for Japanese and German.
+- TODO AMPTA: LRL data.
+
 * DAR <2018-01-09 Tue>
 **  Goals for Tuesday set Monday:
 - TODO AMPTA: Investigate Data availability.
@@ -27,7 +116,6 @@
 | Turkish dev | 75.25 | | |
 | Vietnamese dev | 37.49 | | |
 
-
 - Multilang:
 I started a new run with 17 languages: 
 gp_arabic gp_bulgarian gp_croatian gp_czech gp_french gp_german gp_hausa gp_japanese gp_korean gp_mandarin gp_polish gp_portuguese gp_russian gp_spanish gp_swedish gp_turkish gp_vietnamese 
@@ -54,7 +142,7 @@ Does it beat chain models?
 - TODO GALE Arabic: Get tri3b WER results.
 - TODO GALE Arabic: Get chain model WER results.
 - TODO GP: Get WERs for chain models (Hausa first)
- - TODO GP: Improve tri3b baselines (How?)
+- TODO GP: Improve tri3b baselines (How?)
 
 * DAR <2018-01-08 Mon>
 ** Goals for Next Week:
