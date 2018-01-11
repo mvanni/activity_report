@@ -1,3 +1,62 @@
+* DAR <2018-01-11 Thu>
+**  Goals for Thursday set Wednesday:
+- DONE Softunisia: Fix problems with new test set. Why is tri3b failing?
+This was just a bug in the run.sh script.
+- TODO Multilang: Get WER scores for 17 languages.
+
+- Baseline WER scores: 
+These are the best scores achieved so far: 
+
+| language | tri3b WER | chain WER | MTL WER 7 languages   | | mtl 17 languages |
+| Arabic dev | 55.98 | 51.17 | | 53.18 |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 | 23.81 |
+| Croatian dev | 28.53 | 27.57 | 28.77 | 33.02 |
+| Czech dev | 43.72 | 50.14 | |
+| French dev | 93.41 | | |
+| German dev | 38.04 | | |
+| Hausa dev | 24.64 | 23.56 | 21.77 | 27.99 |
+| Japanese dev | 6.15 | | 4.97 | 5.13 |
+| Korean dev | 25.64 | | 24.28 |
+| Mandarin dev | 19.07 | 15.52 | 17.94 |
+| Polish dev | 32.62      | | |
+| Portuguese dev | 24.11 | | 21.30 | 23.47 |
+| Russian dev | 55.81 | 49.23 | |
+| Spanish dev | 33.36 | | |
+| Swedish dev | 62.07 | | | |
+| tamil dev | | | |
+| Thai dev | | | |
+| Turkish dev | 75.25 | | |
+| Vietnamese dev | 37.49 | | |
+
+- TODO Multilang: I-vectors (should I incorporate this now or wait?)
+- TODO Multilang: ditto for bottleneck layer.
+- TODO GP: Get Portuguese working. I should be able to do this since I've done it before. (copy build on a-team workstation?
+I worked on gp_french instead.
+I found a major problem. I think it is the reason the WER are so low.
+I had copied a script to make list from my African Accented French recipe.
+I had to be modified to work with gp_french.
+Basically, the alignments were randomly assigned to labels.
+ 
+Here are the cd gmm hmm WER scores:
+%WER 48.54 [ 10824 / 22297, 442 ins, 2641 del, 7741 sub ] exp/mono/decode_dev/wer_10_0.0
+%WER 26.88 [ 5994 / 22297, 639 ins, 885 del, 4470 sub ] exp/tri1/decode_dev/wer_16_0.0
+%WER 26.11 [ 5822 / 22297, 642 ins, 878 del, 4302 sub ] exp/tri2b/decode_dev/wer_17_0.0
+%WER 11.65 [ 2598 / 22297, 226 ins, 694 del, 1678 sub ] exp/tri3b/decode_dev.si/wer_17_0.0
+john@I3916:~/gp_french/s5$ 
+- TODO GP: Get chain model WER scores for Japanese and German.
+The GPU was down today because of a security patch.
+
+- TODO AMPTA: LRL data.
+
+
+** Goals for Friday:
+- TODO Multilang: Compile results after training on 17 languages
+- TODO Incorporate i-vectors.
+- TODO Multilang: Incorporate Bottlenecks.
+- TODO GP: Get chain model baseline WER scores for all languages (German and Japanese first)
+- TODO AMPTA: Meet with Judith (data?)
+- TODO GP: Fix Portuguese.
+
 * DAR <2018-01-10 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Multilang: Get MTL WER results  after training on 17 languages.
@@ -78,7 +137,7 @@ There are still problems.
 The tri3b system failed.
 These scores could be better.
 
-* Goals for Thursday:
+** Goals for Thursday:
 - TODO Softunisia: Fix problems with new test set. Why is tri3b failing?
 - TODO Multilang: Get WER scores for 17 languages.
 - TODO Multilang: I-vectors (should I incorporate this now or wait?)
