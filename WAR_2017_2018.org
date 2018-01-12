@@ -1,3 +1,62 @@
+* My WAR <2018-01-12 Fri>
+**  Goals for Next Week set Last Week:
+- TODO Multilang: Write ideas for Paper. 
+Does MTL work when the tasks are defined to be data from different sources, i.e. broadcast news, telephone conversations, read speech?
+There is a paper that does MTL on Audio and Video data.
+This seems like a harder problem.
+
+- DONE Multilang: Look for data from different sources in our languages. (gale arabic)
+I trained tri3b models on GALE Arabic. 
+I don't have kaldi compile with THE GPU on the B-team workstation yet, so I cannot train chain models or mtl models.
+
+- TODO Softunisia: Write an end 2 end recipe suitable for submission to the kaldi repository.
+I am making progress on this.
+I am almost ready to propose it to DAn and Yenda.
+
+- TODO African French ditto for African French (Yaounde)
+- TODO Heroico: Write tn.
+- DONE Heroico: Contact Dan and Yenda about publishing the recipe.
+Dan finally merged my heroico recipe into the kaldi repository!
+
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO Multilang: Extend build script to use i-vectors and bottleneck features.
+- TODO GP: Take a pass through languages that are not performing well yet.
+I found the problem in the GP French recipe.
+I copied a script from another recipe that associated file names with labels.
+It did not work for this corpus.
+The labels were randomly associated with the acoustic  data.
+I am now getting reasonable WER scores for  GP French. 
+- DONE Multilang: Add well behaving GP languages  to build.
+I ran a build with 17 languages.
+I did this mostly to prove that I could do it.
+The results were not spectacular.
+The 17 languages included the random French data which might explain the poor results.
+
+- TODO GP: GEt chain model results for all languages in gp. 
+Making slow progress on this.
+Waiting on Justin to enable kaldi with GPUs on the B-team workstation. 
+
+** WAR:
+Heroico Recipe Merged into Kaldi Repository.
+This week Dan Povey, the team lead of the Kaldi ASR Toolkit project, merged Mr. John Morgan's  package of scripts  to build a Spanish ASR system from the Heroico corpus into the Kaldi repository of ASR recipes. 
+Over a period of four months, Dan Povey and his Kaldi teammate Jan Trmal reviewed and  recommended  improvements to the Heroico recipe and Morgan successfully addressed their recommendations. 
+
+** Goals for Next Week:
+- TODO Multilang: Incorporate Bottlenecks.
+- TODO Multilang: Incorporate I-vectors.
+- TODO Multilang: Run with GALE Arabic.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+
 * My WAR <2018-01-05 Fri>
 ** Goals for January:
 - TODO Setup work environment on b-team GPU workstation.
@@ -75,6 +134,7 @@ This week he built  an MTL ASR system with seven languages.
 - TODO Multilang: Extend build script to use i-vectors and bottleneck features.
 - TODO GP: Take a pass through languages that are not performing well yet.
 - TODO Multilang: Add well behaving GP languages  to build.
+- TODO GP: GEt chain model results for all languages in gp. 
 
 * My WAR <2017-12-14 Thu>
 ** Goals set Last Week:
