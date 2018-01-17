@@ -1,3 +1,112 @@
+* DAR <2018-01-16 Tue>
+** Goals for Next Week set Last Friday:
+- TODO Multilang: Incorporate Bottlenecks.
+I started working on this today.
+I only added a couple of lines to the run_multilingual.sh script referring to bnf.
+I added a line indicating the bottleneck layer dimension.
+I added a line to the neural network config file indicating information about the bottleneck layer.
+This line also creates the bottleneck  layer which is the 7th layer.
+I also had to indicate that the next layer -- the prefinal affine layer -- should take as input the bottleneck layer instead of layer 6.
+Other than that I did not do anyting.
+The rest seems to be taken care of by other scripts and c++ programs (I hope ). 
+
+- TODO Multilang: Incorporate I-vectors.
+- TODO Multilang: Run with GALE Arabic.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+Here are the WER scores for the Sarraj test data:
+
+%WER 94.28 [ 626 / 664, 3 ins, 99 del, 524 sub ] exp/mono/decode_test/wer_7_0.0
+%WER 89.91 [ 597 / 664, 11 ins, 89 del, 497 sub ] exp/tri3b/decode_test.si/wer_15_0.5
+%WER 88.10 [ 585 / 664, 12 ins, 98 del, 475 sub ] exp/tri1/decode_test/wer_15_0.0
+%WER 87.95 [ 584 / 664, 13 ins, 75 del, 496 sub ] exp/tri2b/decode_test/wer_12_0.0
+%WER 86.14 [ 572 / 664, 11 ins, 79 del, 482 sub ] exp/tri3b/decode_test/wer_16_0.5
+
+Since these scores look really bad, I decided to check how the models do on the training data:
+
+%WER 5.50 [ 3444 / 62668, 252 ins, 1155 del, 2037 sub ] exp/mono/decode_train/wer_17_0.0
+%WER 2.14 [ 1341 / 62668, 239 ins, 271 del, 831 sub ] exp/tri1/decode_train/wer_16_0.0
+%WER 1.79 [ 1124 / 62668, 216 ins, 240 del, 668 sub ] exp/tri2b/decode_train/wer_17_0.0
+%WER 1.77 [ 1112 / 62668, 201 ins, 212 del, 699 sub ] exp/tri3b/decode_train.si/wer_17_0.0
+%WER 1.52 [ 955 / 62668, 185 ins, 172 del, 598 sub ] exp/tri3b/decode_train/wer_17_0.0
+
+| model | test WER | train WER | |
+| mono  | 94.28 | 5.50 |
+| tri1 | 88.10 | 2.14 |
+| tri2b | 87.95 | 1.79 |
+| tri3b | 86.14 | 1.52 |
+
+From these results it looks like the problem is overfitting.
+
+- TODO African French ditto for African French (Yaounde)
+I worked a little on the yaounde recipe today.
+There was a non breaking white space  aka hard space in the test data transcription.
+This now make the validation fail.
+It insists only on the simpl space  for white space.
+
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+
+
+* DAR <2018-01-12 Fri>
+**  Goals for Friday set Thursday:
+- TODO Multilang: Compile results after training on 17 languages
+
+| language | tri3b WER | chain WER | MTL WER 7 languages   | | mtl 17 languages |
+| Arabic dev | 55.98 | 51.17 | | 53.18 |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 | 23.81 |
+| Croatian dev | 28.53 | 27.57 | 28.77 | 33.02 |
+| Czech dev | 43.72 | 50.14 | | 46.70 |
+| French dev | 24.21       | | | 91.36 |
+| German dev | 38.04 | | | 39.24 |
+| Hausa dev | 24.64 | 23.56 | 21.77 | 27.99 |
+| Japanese dev | 6.15 | | 4.97 | 5.13 |
+| Korean dev | 25.64 | | 24.28 | 27.81 |
+| Mandarin dev | 19.07 | 15.52 | 17.94 | |
+| Polish dev | 32.62 | | | 50.41 |
+| Portuguese dev | 24.11 | | 21.30 | 23.47 |
+| Russian dev | 55.81 | 49.23 | | 54.83 |
+| Spanish dev | 33.36 | | | 43.95 |
+| Swedish dev | 62.07 | | | 65.53 |
+| tamil dev | | | |
+| Thai dev | | | |
+| Turkish dev | 75.25 | | | 73.51 |
+| Vietnamese dev | 37.49 | | | 38.67 |
+
+- TODO Incorporate i-vectors.
+- TODO Multilang: Incorporate Bottlenecks.
+- TODO GP: Get chain model baseline WER scores for all languages (German and Japanese first)
+- TODO AMPTA: Meet with Judith (data?)
+- TODO GP: Fix Portuguese.
+
+- Baseline WER scores: 
+These are the best scores achieved so far: 
+
+| language | tri3b WER | chain WER | MTL WER 7 languages   | | mtl 17 languages |
+| Arabic dev | 55.98 | 51.17 | | 53.18 |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 | 23.81 |
+| Croatian dev | 28.53 | 27.57 | 28.77 | 33.02 |
+| Czech dev | 43.72 | 50.14 | | 46.70 |
+| French dev | 24.21| | | 91.36 |
+| German dev | 38.04 | | | 39.24 |
+| Hausa dev | 24.64 | 23.56 | 21.77 | 27.99 |
+| Japanese dev | 6.15 | | 4.97 | 5.13 |
+| Korean dev | 25.64 | | 24.28 | 27.81 |
+| Mandarin dev | 19.07 | 15.52 | 17.94 | |
+| Polish dev | 32.62 | | | 50.41 |
+| Portuguese dev | 24.11 | | 21.30 | 23.47 |
+| Russian dev | 55.81 | 49.23 | | 54.83 |
+| Spanish dev | 33.36 | | | 43.95 |
+| Swedish dev | 62.07 | | | 65.53 |
+| tamil dev | | | |
+| Thai dev | | | |
+| Turkish dev | 75.25 | | | 73.51 |
+| Vietnamese dev | 37.49 | | | 38.67 |
+
 * DAR <2018-01-11 Thu>
 **  Goals for Thursday set Wednesday:
 - DONE Softunisia: Fix problems with new test set. Why is tri3b failing?
@@ -11,22 +120,24 @@ These are the best scores achieved so far:
 | Arabic dev | 55.98 | 51.17 | | 53.18 |
 | Bulgarian dev | 24.78      | 19.47 | 22.33 | 23.81 |
 | Croatian dev | 28.53 | 27.57 | 28.77 | 33.02 |
-| Czech dev | 43.72 | 50.14 | |
-| French dev | 93.41 | | |
-| German dev | 38.04 | | |
+| Czech dev | 43.72 | 50.14 | | 46.70 |
+| French dev | 93.41 | | | 91.36 |
+| German dev | 38.04 | | | 39.24 |
 | Hausa dev | 24.64 | 23.56 | 21.77 | 27.99 |
 | Japanese dev | 6.15 | | 4.97 | 5.13 |
-| Korean dev | 25.64 | | 24.28 |
-| Mandarin dev | 19.07 | 15.52 | 17.94 |
-| Polish dev | 32.62      | | |
+| Korean dev | 25.64 | | 24.28 | 27.81 |
+| Mandarin dev | 19.07 | 15.52 | 17.94 | |
+| Polish dev | 32.62 | | | 50.41 |
 | Portuguese dev | 24.11 | | 21.30 | 23.47 |
-| Russian dev | 55.81 | 49.23 | |
-| Spanish dev | 33.36 | | |
-| Swedish dev | 62.07 | | | |
+| Russian dev | 55.81 | 49.23 | | 54.83 |
+| Spanish dev | 33.36 | | | 43.95 |
+| Swedish dev | 62.07 | | | 65.53 |
 | tamil dev | | | |
 | Thai dev | | | |
-| Turkish dev | 75.25 | | |
-| Vietnamese dev | 37.49 | | |
+| Turkish dev | 75.25 | | | 73.51 |
+| Vietnamese dev | 37.49 | | | 38.67 |
+
+The French results should be ignored. The alignments were radom.
 
 - TODO Multilang: I-vectors (should I incorporate this now or wait?)
 - TODO Multilang: ditto for bottleneck layer.
@@ -47,7 +158,6 @@ john@I3916:~/gp_french/s5$
 The GPU was down today because of a security patch.
 
 - TODO AMPTA: LRL data.
-
 
 ** Goals for Friday:
 - TODO Multilang: Compile results after training on 17 languages
