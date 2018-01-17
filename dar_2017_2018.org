@@ -1,3 +1,40 @@
+* DAR <2018-01-17 Wed>
+**  Goals for Next Week set Friday:
+I forgot to set goals yesterday.
+- TODO Multilang: Incorporate Bottlenecks.
+I started a multilang run yesterday and it it still running this morning.
+It is on iteration 270 of the neural network training.
+It will run for 480 iterations.
+- TODO Multilang: Incorporate I-vectors.
+- TODO Multilang: Run with GALE Arabic.
+I started building the GALE Arabic on the A-team workstation yesterday since we do not have kaldi compiled with GPUs on theB-team workstation yet. 
+It is still running this morning.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+
+** Goals for Thursday:
+- TODO Multilang: Incorporate Bottlenecks.
+- TODO Multilang: Incorporate I-vectors.
+- GALE Arabic: Run chain models on GPU workstation.
+- TODO Multilang: Run with GALE Arabic.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- Yaounde: Investigate why WERs are so low.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+
 * DAR <2018-01-16 Tue>
 ** Goals for Next Week set Last Friday:
 - TODO Multilang: Incorporate Bottlenecks.
@@ -50,8 +87,6 @@ It insists only on the simpl space  for white space.
 - TODO AMTA: Get data from endangered languages.
 - TODO GP: Take a pass through languages that are not performing well yet.
 - TODO GP: GEt chain model results for all languages in gp. 
-
-
 * DAR <2018-01-12 Fri>
 **  Goals for Friday set Thursday:
 - TODO Multilang: Compile results after training on 17 languages
