@@ -24,6 +24,7 @@ It is still running this morning.
 - TODO Multilang: Incorporate I-vectors.
 - GALE Arabic: Run chain models on GPU workstation.
 - TODO Multilang: Run with GALE Arabic.
+- TODO Softunisia: Work with Zac on dictionary.
 - TODO Softunisia: Prepare recipe for kaldi repo.
 - TODO African French ditto for African French (Yaounde)
 - TODO Multilang: Write some paragraphs for paper.
