@@ -70,13 +70,31 @@ What are the tasks?
 - Recording Condition: Each recording condition is a task.
 
 We train one NN.
-The layers of the NN are feature extractors.
+The first hidden layers of the NN are feature extractors.
 We assume the layers will extract linguistic features we are interested in and ignore irrelevant features. 
 
-Affine and Soft Max Layer?
+
+Each language has a bottleneck layer.
+
+Each language has a prefinal affine layer.
+
+Each language has a output soft max layer for classification. 
 * 3 DATA
 Our experiments 
 
+Each language has 8 layers?
+
+1. One input layer,
+2. 6 hidden layers,
+3. One Bottleneck layer,
+4. One affine layer, and
+5. One soft max layer.
+
+The dimension of the hidden layers is 1024.
+The dimension of the Bottleneck layer is 512.
+
+The soft max layer outputs a probability distribution over the clustered triphones.
+  
 * 4 EXPERIMENTS
 ** 4.1 Preliminary testing
 ** 4.2
