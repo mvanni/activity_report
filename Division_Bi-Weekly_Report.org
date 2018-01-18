@@ -1,19 +1,18 @@
-* ISD BI-WEEKLY REPORT
+* ISD BI-WEEKLY REPORT <2018-01-18 Thu>
 
 - NAME: John Morgan
 - BRANCH : MCAB
-- ERIOD ENDING: <2017-12-05 Tue>
-- PROJECT NAME: Multilang
-- RESEARCH QUESTION FOCUS: How can AI, machine learning and data from well-resourced languages be leveraged to build Automatic Speech Recognition systems for Low Resource Languages. 
+- PERIOD ENDING: <2018-01-18 Thu>
+- PROJECT NAME: Heroico
+- RESEARCH QUESTION FOCUS: How can learning be transfered from one ressources to another.
 * MISSION ACTIVITIES SINCE LAST REPORT:
-- Trained ASR systems for most of the 19 GlobalPhone languages and used these systems to align speech vectors with model labels.
-- Contributed writing an abstract for a presentation and paper at a Machine Translation Conference. 
-- Produced a set of hypothesis translations for unlabeled Arabic speech corpus and passed it to the Human Expert for corrections.
+- Recipe for the Heroico corpus was merged into the Kaldi repository. 
+
 * KEY CUSTOMER/STAKEHOLDER ENGAGEMENTS:
 - ORG/POC
-
+Dr. Daniel Povey
 * OUTCOME/NEXT STEPS:
-Train a global i-vector extractor on the data from the GlobalPhone languages.
+Use Heroico corpus in Multilang research project.
 * UPCOMING EVENTS:
 - DATE:
 - EVENT:
@@ -21,8 +20,9 @@ Train a global i-vector extractor on the data from the GlobalPhone languages.
 
 * METRICS:
 PAPER         BOOK CHAPTER         SW               CONFERENCE             DEMO  
- Citation
-
+Recipe is publically available at:
+https://github.com/kaldi-asr/kaldi.git
+Citation
 * OUTREACH:
 - OCOH         POST DOC                     STEM            SUMMER INTERN             USMA OTHER
 Citation (include dates, recipient, focus of effort, impact, etc.)
