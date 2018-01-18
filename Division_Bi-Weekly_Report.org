@@ -4,7 +4,7 @@
 - BRANCH : MCAB
 - PERIOD ENDING: <2018-01-18 Thu>
 - PROJECT NAME: Heroico
-- RESEARCH QUESTION FOCUS: How can learning be transfered from one ressources to another.
+- RESEARCH QUESTION FOCUS: How can learning be transfered from one ressource to another.
 * MISSION ACTIVITIES SINCE LAST REPORT:
 - Recipe for the Heroico corpus was merged into the Kaldi repository. 
 
