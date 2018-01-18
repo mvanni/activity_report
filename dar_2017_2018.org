@@ -1,3 +1,35 @@
+* DAR <2018-01-18 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Multilang: Incorporate Bottlenecks.
+- TODO Multilang: Incorporate I-vectors.
+The main script is still running this morning. 
+It it currently adjusting the priors on the Korean network.
+Raw Neural Network training  is done.
+
+- GALE Arabic: Run chain models on GPU workstation.
+The main script is still running.
+It is training SAT tri3b models.
+
+- TODO Multilang: Run with GALE Arabic.
+- TODO Softunisia: Work with Zac on dictionary.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- Yaounde: Investigate why WERs are so low.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+
+
+** Goals for Friday:
+- TODO GALE Mandarin: Copy data from DVDs to workstation.
+- TODO GALE Mandarin: Ask Justin to put data on /mnt/corpora
+- TODO GALE Mandarin: Run kaldi script (modify if needed).
+- TODO MTL Paper: Write some paragraphs on data section.
+
 * DAR <2018-01-17 Wed>
 **  Goals for Next Week set Friday:
 I forgot to set goals yesterday.
