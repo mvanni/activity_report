@@ -1,3 +1,51 @@
+* My WAR <2018-01-19 Fri>
+** Goals for Next Week:
+- DONE Multilang: Incorporate Bottlenecks.
+I think I accomplished this.
+I run nnet3-am-info and I see a bottleneck layer.
+
+- TODO Multilang: Incorporate I-vectors.
+- TODO Multilang: Run with GALE Arabic.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+
+- GALE Mandarin:
+I spent a lot of time Thursday and Friday setting up the GALE Mandarin recipe.
+I got the corpora, text and Speech, and I got Justin to install missing python modules and he placed the corpora on /mnt/corpora.
+
+** WAR:
+Multilang Project:
+Mr. John Morgan is taking incremental steps in his project to use Multi-task learning to build ASR systems for Low Resourced Languages (LRL)s.
+This week he incorporated bottleneck layers into the Neural Network Acoustic Model that he is training on several languages at once. 
+The Neural Network shares its first 5 hidden layers among several layers. 
+The Bottleneck layers are classification layers that are added for each language including the LRL. 
+
+** Goals for Next Week:
+- TODO GALE Mandarin: Set up recipe.
+- TODO Multilang: Incorporate i-vectors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 * My WAR <2018-01-12 Fri>
 **  Goals for Next Week set Last Week:
 - TODO Multilang: Write ideas for Paper. 
