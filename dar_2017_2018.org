@@ -1,3 +1,16 @@
+* dar <2018-01-19 Fri>
+**  Goals for Friday set Thursday:
+- DONE GALE Mandarin: Copy data from DVDs to workstation.
+Justin moved all the LDC GALE Mandarin corpora to /mnt/corpora
+- DONE GALE Mandarin: Ask Justin to put data on /mnt/corpora
+- TODO GALE Mandarin: Run kaldi script (modify if needed).
+I am setting up the script on my laptop.
+A python 2 module is required that was not on anyt of our machines.
+It is called mmseg.
+I'm not sure what this module does.
+ 
+- TODO MTL Paper: Write some paragraphs on data section.
+
 * DAR <2018-01-18 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Multilang: Incorporate Bottlenecks.
@@ -124,11 +137,11 @@ It insists only on the simpl space  for white space.
 **  Goals for Friday set Thursday:
 - TODO Multilang: Compile results after training on 17 languages
 
-| language | tri3b WER | chain WER | MTL WER 7 languages   | | mtl 17 languages |
-| Arabic dev | 55.98 | 51.17 | | 53.18 |
-| Bulgarian dev | 24.78      | 19.47 | 22.33 | 23.81 |
-| Croatian dev | 28.53 | 27.57 | 28.77 | 33.02 |
-| Czech dev | 43.72 | 50.14 | | 46.70 |
+| language | tri3b WER | chain WER | MTL WER 7 languages   | mtl 17 languages  | 17 languages second try |
+| Arabic dev | 55.98 | 51.17 | | 53.18 | 52.50 |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 | 23.81 | 22.28 |
+| Croatian dev | 28.53 | 27.57 | 28.77 | 33.02 | 27.68 |
+| Czech dev | 43.72 | 50.14 | | 46.70 | 43.33 |
 | French dev | 24.21       | | | 91.36 |
 | German dev | 38.04 | | | 39.24 |
 | Hausa dev | 24.64 | 23.56 | 21.77 | 27.99 |
