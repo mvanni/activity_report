@@ -19,6 +19,7 @@ Silos have developed around broadcast news, telephone conversations, and spontan
 Speech researchers’ convention, to work on a single data type, renders novel our approach of incorporating data from across diverse speech technology communities into the training.
 
 We focus here on the sparse data condition arising when one wants to correct the specific problem of the failure of French ASR systems on accented, that is, Non-European-French (NEF) input. 
+In a sparse data condition, we cannot afford to ignore data from other sources if we want to build robust ASR systems. 
 The amount of data required to train a NN model on a given variety of NEF simply has yet to be developed. 
 So, to build acoustic models, we select an approach that can exploit the wider than usual range of data sources, which we incorporate. 
 
@@ -94,7 +95,10 @@ The dimension of the hidden layers is 1024.
 The dimension of the Bottleneck layer is 512.
 
 The soft max layer outputs a probability distribution over the clustered triphones.
-  
+
+Context:
+16 frames to the left, 12 frames to the right.
+ 
 * 4 EXPERIMENTS
 ** 4.1 Preliminary testing
 ** 4.2
@@ -115,7 +119,26 @@ Preliminary WER scores showed a slight improvement over the WER scores for the M
 
 Our minimal example did not include a prefinal layer of bottleneck (BN) features and it was not trained using i-vectors. BN features and i-vector training have been shown to lower WER scores. We are expecting our MTL trained models to yield lower WER scores once they use i-vectors and BN features.
 
-For our experiments we plan on applying MTL to up to 30 languages and up to 300 hours of speech. The GlobalPhone corpus has data for 17 languages. We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. Most of the data in these corpora were collected in recitative mode through close mounted microphones. For broadcast news data we plan on using the GALE Arabic and Mandarin Chinese corpora. For noisy telephone conversations we will use data from the Babel project. ]]]
+For our experiments we plan on applying MTL to up to 30 languages and up to 300 hours of speech. 
+The GlobalPhone corpus has data for 17 languages. 
+We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. 
+Most of the data in these corpora were collected in recitative mode through close mounted microphones. 
+For broadcast news data we plan on using the GALE Arabic and Mandarin Chinese corpora. 
+For noisy telephone conversations we will use data from the Babel project. ]]]
+
+** MTL VS. Concatenate Data:
+un an experiment with the following two conditions:
+1. Concatenate three corpora:
+a. GALE Arabic (Broadcast News).
+b. Globalphone Arabic ( Read Speech)
+c. SOF Tunisia (Read and Prompted speech)
+
+2. Run MTL using the same three corpora.
+
+Train chain models on the data set from part 1. and test on data from each corpus a., b. and c..
+Run MTL training on corpora a., b. and c. separately and test on data from each one. 
+
+
 * 5 RESULTS
 
 | language | tri3b WER | chain WER | MTL WER |
