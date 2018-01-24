@@ -1,3 +1,78 @@
+* DAR <2018-01-24 Wed>
+** Tuesday:
+- DONE TARP training.
+
+Nothing else was accomplished.
+All the mandatory training pages are not accessible to JAWS. 
+The standown was a total waste of time for me.
+
+** Goals for This Week:
+- TODO GALE Mandarin: Set up recipe.
+I have it running on my laptop and the B-team workstation.
+Still no kaldi on the B-team workstation.
+- TODO Multilang: Incorporate i-vectors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+I spent most of the afternoon working on this goal.
+It is starting to look good.
+Once Zac is done with the dictionary, I think we should contact Yenda about submitting it.
+We'll want to submit the dictionary to the openslr.org webpage.
+openslr.org is basically a data repo for kaldi.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+I wrote some words.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+** Goals for Thursday:
+- TODO GALE Mandarin: Watch the run.
+- TODO Multilang: Incorporate i-vectors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO SOFTUNISIA: Contact Zac about dictionary.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+* DAR <2018-01-23 Tue>
+** Goals for This Week:
+- TODO GALE Mandarin: Set up recipe.
+- TODO Multilang: Incorporate i-vectors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 * dar <2018-01-19 Fri>
 **  Goals for Friday set Thursday:
 - DONE GALE Mandarin: Copy data from DVDs to workstation.
