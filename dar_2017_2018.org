@@ -1,3 +1,70 @@
+* DAR <2018-01-25 Thu>
+** Goals for Thursday set Wednesday:
+- TODO GALE Mandarin: Watch the run.
+- TODO Multilang: Incorporate i-vecbtors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+I ran the chain models for Softunisia.
+Good results.
+
+Here are all the results:
+%WER 42.92 [ 285 / 664, 7 ins, 120 del, 158 sub ] exp/tri3b/decode_test.si/wer_11_0.0
+%WER 34.34 [ 228 / 664, 8 ins, 83 del, 137 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 33.13 [ 220 / 664, 9 ins, 91 del, 120 sub ] exp/tri2b/decode_test/wer_10_0.0
+%WER 30.72 [ 204 / 664, 7 ins, 62 del, 135 sub ] exp/tri1/decode_test/wer_11_0.0
+%WER 26.20 [ 174 / 664, 8 ins, 62 del, 104 sub ] exp/tri3b/decode_test/wer_15_0.0
+%WER 15.81 [ 105 / 664, 2 ins, 31 del, 72 sub ] exp/chain/tdnn1c_sp/decode_test/wer_12_0.0
+
+| model | WER |
+| mono | 34.34 |
+| tri2b tri mllt lda | 33.13 |
+| tri1 | 30.72 |
+| tri3b mllt lda sat | 26.20 |
+| tdnn chain | 15.81 |
+| tdnn chain online | 13.40 |
+
+Why are the tri1 models better than the tri2b models?
+What happened to the monophones?
+
+- TODO African French ditto for African French (Yaounde)
+- DONE SOFTUNISIA: Contact Zac about dictionary.
+Zac is going to work on the sarraj test data first.
+He will get me more test data Monday.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+** Goals for Friday:
+- TODO Softunisia: Get results of chain model decoding on train data to Zac.
+- TODO Softunisia: Tune system.
+- SOFTunisia: Get Recordings data to Zac.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Watch the run.
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Incorporate i-vecbtors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 * DAR <2018-01-24 Wed>
 ** Tuesday:
 - DONE TARP training.
