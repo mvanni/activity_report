@@ -1,3 +1,79 @@
+* <2018-01-29 Mon>
+I took sick leave last Friday because I cut my index finger.
+**  Goals for Friday set Thursday:
+- TODO Softunisia: Get results of chain model decoding on train data to Zac.
+The results using the chain models were not as good as the results using the tri3b (sat mllt lda) models.
+%WER 7.14 [ 13430 / 188004, 49 ins, 251 del, 13130 sub ] exp/chain/tdnn1c_sp/decode_train/wer_8_0.0
+Zac is going to use the transcripts obtained with the tri3b models.
+- TODO Softunisia: Tune system.
+- DONE SOFTunisia: Get Recordings data to Zac.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Watch the run.
+I have not been able to build the GALE Mandarin tri3b models yet.
+The B-team workstation is the right place to do this work.
+
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Incorporate i-vecbtors.
+- TODO Multilang: Incorporate GALE Arabic.
+I'll do this when I finish decoding the latest multilang build.
+Probably tomorrow.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+| language | tri3b WER | chain WER | MTL WER 7 languages   | mtl 17 languages  | 17 languages second try |
+| Arabic dev | 55.98 | 51.17 | | 53.18 | 52.50 |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 | 23.81 | 22.28 |
+| Croatian dev | 28.53 | 27.57 | 28.77 | 33.02 | 27.68 |
+| Czech dev | 43.72 | 50.14 | | 46.70 | 43.33 |
+| French dev | 24.21       | | | 91.36 | 24.68
+| German dev | 38.04 | | | 39.24 | 36.30 |
+| Hausa dev | 24.64 | 23.56 | 21.77 | 27.99 | 22.31 |
+| Japanese dev | 6.15 | | 4.97 | 5.13 | 5.01 |
+| Korean dev | 25.64 | | 24.28 | 27.81 |
+| Mandarin dev | 19.07 | 15.52 | 17.94 | | 19.02 |
+| Polish dev | 32.62 | | | 50.41 |
+| Portuguese dev | 24.11 | | 21.30 | 23.47 | 22.11 |
+| Russian dev | 55.81 | 49.23 | | 54.83 | 53.04 |
+| Spanish dev | 33.36 | | | 43.95 | 41.10 |
+| Swedish dev | 62.07 | | | 65.53 |
+| tamil dev | | | |
+| Thai dev | | | |
+| Turkish dev | 75.25 | | | 73.51 | 71.09 |
+| Vietnamese dev | 37.49 | | | 38.67 | 35.20 |
+
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+** Goals for Tuesday:
+- TODO ARL Colloquium: Decide on February 13 or 27.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Incorporate i-vecbtors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 * DAR <2018-01-25 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO GALE Mandarin: Watch the run.
@@ -46,7 +122,8 @@ He will get me more test data Monday.
 ** Goals for Friday:
 - TODO Softunisia: Get results of chain model decoding on train data to Zac.
 - TODO Softunisia: Tune system.
-- SOFTunisia: Get Recordings data to Zac.
+- TODO SOFTunisia: Get Recordings data to Zac.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.p
 - TODO Softunisia: Prepare recipe for kaldi repo.
 - TODO African French ditto for African French (Yaounde)
 - TODO GALE Mandarin: Watch the run.
@@ -64,6 +141,14 @@ He will get me more test data Monday.
 - TODO GP: Take a pass through languages that are not performing well yet.
 - TODO GP: GEt chain model results for all languages in gp. 
 - TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Watch the run.
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Incorporate i-vecbtors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
 
 * DAR <2018-01-24 Wed>
 ** Tuesday:
