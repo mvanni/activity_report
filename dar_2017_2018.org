@@ -1,14 +1,20 @@
 * DAR <2018-01-30 Tue>
 ** Goals for Tuesday set Monday:
-- TODO ARL Colloquium: Decide on February 13 or 27.
+- DONE ARL Colloquium: Decide on February 13 or 27.
+I will present on March 6.
+Mary will present on February 27.
 - TODO ARL Colloquium: Prepare slides.
 - TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+This is turning out to be a lot of work.
 - TODO SOFTunisia: Ask Zac if he can run the recipe.
 - TODO Softunisia: Prepare recipe for kaldi repo.
 - TODO African French ditto for African French (Yaounde)
 - TODO GALE Mandarin: Build tri3b models. 
 - TODO Mandarin: Search for CASS corpus.
 - TODO Multilang: Incorporate i-vecbtors.
+I am working on this.
+It looks promising. 
+I think it is done.
 - TODO Multilang: Incorporate GALE Arabic.
 - TODO Multilang: Incorporate GALE Mandarin.
 - TODO Multilang: Write some paragraphs for paper.
@@ -17,6 +23,27 @@
 - TODO African French: Write outline of paper.
 - TODO S2S: minimal example.
 - TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+** Goals for Wednesday:
+- TODO AMTA: Meeting with Judith to discuss paper ideas.
+- TODO AMTA: Get data from endangered languages.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
 - TODO GP: Take a pass through languages that are not performing well yet.
 - TODO GP: GEt chain model results for all languages in gp. 
 - TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
