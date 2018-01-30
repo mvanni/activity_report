@@ -1,3 +1,26 @@
+* DAR <2018-01-30 Tue>
+** Goals for Tuesday set Monday:
+- TODO ARL Colloquium: Decide on February 13 or 27.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Incorporate i-vecbtors.
+- TODO Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO AMTA: Get data from endangered languages.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 * <2018-01-29 Mon>
 I took sick leave last Friday because I cut my index finger.
 **  Goals for Friday set Thursday:
@@ -30,13 +53,13 @@ Probably tomorrow.
 | German dev | 38.04 | | | 39.24 | 36.30 |
 | Hausa dev | 24.64 | 23.56 | 21.77 | 27.99 | 22.31 |
 | Japanese dev | 6.15 | | 4.97 | 5.13 | 5.01 |
-| Korean dev | 25.64 | | 24.28 | 27.81 |
+| Korean dev | 25.64 | | 24.28 | 27.81 | 24.92 |
 | Mandarin dev | 19.07 | 15.52 | 17.94 | | 19.02 |
-| Polish dev | 32.62 | | | 50.41 |
+| Polish dev | 32.62 | | | 50.41 | 47.96 |
 | Portuguese dev | 24.11 | | 21.30 | 23.47 | 22.11 |
 | Russian dev | 55.81 | 49.23 | | 54.83 | 53.04 |
 | Spanish dev | 33.36 | | | 43.95 | 41.10 |
-| Swedish dev | 62.07 | | | 65.53 |
+| Swedish dev | 62.07 | | | 65.53 | 62.43 |
 | tamil dev | | | |
 | Thai dev | | | |
 | Turkish dev | 75.25 | | | 73.51 | 71.09 |
