@@ -1,3 +1,44 @@
+* ISD BI-WEEKLY REPORT <2018-01-31 Wed>
+
+- NAME: John Morgan
+- BRANCH : MCAB
+- PERIOD ENDING: <2018-01-31 Wed>
+
+- PROJECT NAME: Multi-Task Learning for Automatic Speech Recognition  of Low Resource Languages 
+- RESEARCH QUESTION FOCUS: How can learning be transfered from one resource to another.
+** MISSION ACTIVITIES SINCE LAST REPORT:
+Positive results were obtained on a small experiment.
+MTL was run on 3 corpora: Global Phone Arabic, Tuniseen and GALE Arabic.
+The first 2 corpora are read speech  and the third is broadcast news.
+
+** KEY CUSTOMER/STAKEHOLDER ENGAGEMENTS:
+- ORG/POC
+
+** OUTCOME/NEXT STEPS:
+Word error rate was lowered on the GP Arabic dev set to a better score than that achieved with chain models.
+Next, we should try this on a different set of corpora and multiple languages (Mandarin?). 
+** UPCOMING EVENTS:
+- DATE:
+- EVENT:
+- POC/STAFF:
+
+** METRICS:
+
+| language   | tri3b WER | chain WER | MTL gp_arabic softunisia | gp_arabic softunisia GALE Arabic|
+| GP Arabic dev |     55.98 |     51.17 | 51.73 | 50.95 |
+
+- PAPER         BOOK CHAPTER         SW               CONFERENCE             DEMO  
+
+- Citation
+** OUTREACH:
+- OCOH         POST DOC                     STEM            SUMMER INTERN             USMA OTHER
+Citation (include dates, recipient, focus of effort, impact, etc.)
+Citation
+
+** TRAVEL
+NO
+-  REMARKS (Date, Location, Purpose, Organization, Who Visited, Reason, Outcome)
+
 * ISD BI-WEEKLY REPORT <2018-01-18 Thu>
 
 - NAME: John Morgan
@@ -5,29 +46,29 @@
 - PERIOD ENDING: <2018-01-18 Thu>
 - PROJECT NAME: Heroico
 - RESEARCH QUESTION FOCUS: How can learning be transfered from one resource to another.
-* MISSION ACTIVITIES SINCE LAST REPORT:
+** MISSION ACTIVITIES SINCE LAST REPORT:
 - Recipe for the Heroico corpus was merged into the Kaldi repository. 
 
-* KEY CUSTOMER/STAKEHOLDER ENGAGEMENTS:
+** KEY CUSTOMER/STAKEHOLDER ENGAGEMENTS:
 - ORG/POC
 Dr. Daniel Povey
-* OUTCOME/NEXT STEPS:
+** OUTCOME/NEXT STEPS:
 Use Heroico corpus in Multilang research project.
-* UPCOMING EVENTS:
+** UPCOMING EVENTS:
 - DATE:
 - EVENT:
 - POC/STAFF:
 
-* METRICS:
+** METRICS:
 PAPER         BOOK CHAPTER         SW               CONFERENCE             DEMO  
 Recipe is publically available at:
 https://github.com/kaldi-asr/kaldi.git
 Citation
-* OUTREACH:
+** OUTREACH:
 - OCOH         POST DOC                     STEM            SUMMER INTERN             USMA OTHER
 Citation (include dates, recipient, focus of effort, impact, etc.)
 Citation
 
-* TRAVEL
+** TRAVEL
 NO
 -  REMARKS (Date, Location, Purpose, Organization, Who Visited, Reason, Outcome)

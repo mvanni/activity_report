@@ -1,3 +1,46 @@
+* DAR <2018-01-31 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO AMTA: Meeting with Judith to discuss paper ideas.
+- TODO AMTA: Get data from endangered languages.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- DONE Multilang: Incorporate GALE Arabic.
+I ran a small multilang experiment.
+I ran it using gp_arabic, softunisia and GALE Arabic.
+Here is the result on gp_arabic dev:
+%WER 50.95 [ 4607 / 9043, 338 ins, 787 del, 3482 sub ] exp/nnet3/multi_bnf/gp_arabic/decode_dev/wer_16_0.0 
+This is really good news!.
+This is the first time the multilang method beats chain models and we are using data from different sources.
+We are combining read speech with Broadcast News.
+
+| language   | tri3b WER | chain WER | MTL gp_arabic softunisia | gp_arabic softunisia GALE Arabic|
+| GP Arabic dev |     55.98 |     51.17 | 51.73 | 50.95 |
+
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+
+- Multilang Mini Experiment:
+I ran the multilang recipe on gp_arabic and softunisia.
+Here are the results on the gp_arabic dev data:
+%WER 51.73 [ 4678 / 9043, 370 ins, 856 del, 3452 sub ] exp/nnet3/multi_bnf/gp_arabic/decode_dev/wer_15_0.0
+
+
+| language   | tri3b WER | chain WER | MTL gp_arabic softunisia |
+| GP Arabic dev |     55.98 |     51.17 | 51.73 |
+
 * DAR <2018-01-30 Tue>
 ** Goals for Tuesday set Monday:
 - DONE ARL Colloquium: Decide on February 13 or 27.
