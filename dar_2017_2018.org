@@ -1,6 +1,6 @@
 * DAR <2018-01-31 Wed>
 ** Goals for Wednesday set Tuesday:
-- TODO AMTA: Meeting with Judith to discuss paper ideas.
+- DONE AMTA: Meeting with Judith to discuss paper ideas.
 - TODO AMTA: Get data from endangered languages.
 - TODO Inuktitut: Investigate pronunciation.
 - TODO ARL Colloquium: Prepare slides.
@@ -40,6 +40,25 @@ Here are the results on the gp_arabic dev data:
 
 | language   | tri3b WER | chain WER | MTL gp_arabic softunisia |
 | GP Arabic dev |     55.98 |     51.17 | 51.73 |
+
+** Goals for Thursday:
+- TODO AMTA: Get data from endangered languages.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+- TODO SOFTunisia: Ask Zac if he can run the recipe.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
 
 * DAR <2018-01-30 Tue>
 ** Goals for Tuesday set Monday:
