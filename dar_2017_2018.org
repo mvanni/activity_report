@@ -1,3 +1,87 @@
+* DAR <2018-02-01 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Multilang: Setup experiment for training chain models on GP Arabic, Softunisia and GALE Arabic.
+This turns out to be much more involved than expected.
+I will use the GALE Arabic grapheme to grapheme dictionary for all the languages.
+
+- DONE AMTA: Get data from endangered languages.
+Steve and Judith took care of this.
+Zac will take it from here to extract data from the youtube pages.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+I prepared  recording data for Adel, Anwar, Bubaker and Hisham.
+
+- DONE SOFTunisia: Ask Zac if he can run the recipe.
+He says he is willing to try it on linux.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+I downloaded the ashell corpus instead.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+- Multilang: 
+%WER 9.34 [ 62 / 664, 2 ins, 15 del, 45 sub ] exp/nnet3/multi_bnf/softunisia/decode_test/wer_11_0.0
+
+| language   | tri3b WER | chain WER | MTL gp_arabic softunisia | gp_arabic softunisia GALE Arabic|
+| GP Arabic dev |     55.98 |     51.17 | 51.73 | 50.95 |
+| softunisia sarraj test | 26.20 | 13.40 | 9.34 |
+
+This is really good news!
+
+Yesterday I went to tell Michelle the good news that the MTL method had beaten the chain model method on the gp_arabic dev set. 
+I was excited because this was the first time I got the MTL method to give the best results.
+Michelle threw a big bucket of ice water over my head by reminding me that critics will say "you just added more data" and you got better results.
+So the experiment we need to run is to combine all the data and train a monolingual chain model system. 
+I ran the experiment with threee corpora: Globalphone Arabic, Tuniseen and GALE Arabic. 
+This morning I started working on reconciling the three corpora so that we can train one chain model on all the data.
+Meanwhile,  I ran the MTL trained  models on the softunisia sarraj test set and the results are even more impressive: 13.40 versus 9.34.
+Reconciling the three corpora is much easier said than done.
+Each corpora uses a different dictionary.
+Globalphone Arabic uses a vocalized romanization for the words and an ascii encoded IPA labeling for the phone.
+The Globalphone documentation provides a mapping for most but not all the Arabic Characters. 
+The vowels are not mapped and it is not clear how to map to tah mar buta alif maqsura, etc.
+I do not have access to the mapping between IPA and the ascii encoding used by Globalphone for the phones.
+The GALE Arabic system uses a grapheme to grapheme dictionary.
+In other words, the model labels are graphemes instead of phones.
+The graphemes use the buckwalter encoding. 
+Our tuniseen corpus uses utf8 encoded Arabic characters written by Zac. 
+The phone set was borrowed from the QCRI dictionary.
+I do not know if there is a mapping between our phone set and IPA.
+All this points out how difficult it is to reconcile corpora. 
+None of this was an obstacle for MTL. 
+I guess an experiment we should run is train GALE Arabic chain models and test on the Globalphone  Arabic dev set and softuniseen test set.
+Also train a Globalphone arabic monolingual chain model system and test on softuniseen and vice versa.
+
+** Goals for Friday:
+- TODO Multilang: Setup experiment for training chain models on GP Arabic and testing on SOFTunis and GP_Arabic.
+- TODO Inuktitut: Investigate pronunciation.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Write recipe scripts to prepare Libyan MSA data.
+- TODO SOFTunisia: Send instructions to Zac for installing kaldi.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Mandarin: Run ashell kaldi recipe.  
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Incorporate ashell mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 * DAR <2018-01-31 Wed>
 ** Goals for Wednesday set Tuesday:
 - DONE AMTA: Meeting with Judith to discuss paper ideas.
@@ -42,6 +126,7 @@ Here are the results on the gp_arabic dev data:
 | GP Arabic dev |     55.98 |     51.17 | 51.73 |
 
 ** Goals for Thursday:
+- TODO Multilang: Setup experiment for training chain models on GP Arabic, Softunisia and GALE Arabic.
 - TODO AMTA: Get data from endangered languages.
 - TODO Inuktitut: Investigate pronunciation.
 - TODO ARL Colloquium: Prepare slides.
