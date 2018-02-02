@@ -1,3 +1,86 @@
+* My WAR <2018-02-01 Thu>
+** Goals set Last Week:
+- TODO GALE Mandarin: Set up recipe.
+- DONE Multilang: Incorporate i-vectors.
+- DONE Multilang: Incorporate GALE Arabic.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Mandarin: Search for CASS corpus.
+I downloaded the ashell corpus and kaldi recipe instead.
+- DONE Multilang: Finish decoding languages with latest build that incorporated bottlenecks.
+- TODO Inuktitut: Investigate pronunciation.
+I started work on this.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- DONE AMTA: Get data from endangered languages.
+Judith and Steve found some data on youtube.
+Zac will prepare this data.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
+- Tunisian:
+I am preparing Libyan speech data as a test for our Tunisian recipe.
+Hazrat gave me transcripts from 7 speakers.
+I've prepared 4 so far:
+adel
+anwar
+bubaker
+hisham
+We already had prepared sarraj.
+
+When I run the Tunisian recipe on all this test data I get:
+
+%WER 67.37 [ 1745 / 2590, 75 ins, 653 del, 1017 sub ] exp/tri3b/decode_test.si/wer_13_0.0
+%WER 62.74 [ 1625 / 2590, 80 ins, 594 del, 951 sub ] exp/tri2b/decode_test/wer_11_0.0
+%WER 62.32 [ 1614 / 2590, 66 ins, 371 del, 1177 sub ] exp/mono/decode_test/wer_14_0.0
+%WER 59.50 [ 1541 / 2590, 81 ins, 437 del, 1023 sub ] exp/tri1/decode_test/wer_13_0.0
+%WER 56.56 [ 1465 / 2590, 89 ins, 355 del, 1021 sub ] exp/tri3b/decode_test/wer_17_0.0
+%WER 54.67 [ 1416 / 2590, 57 ins, 309 del, 1050 sub ] exp/chain/tdnn1c_sp/decode_test/wer_9_0.5
+%WER 53.01 [ 1373 / 2590, 37 ins, 345 del, 991 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_11_1.0
+
+| model | WER     |
+| mono  | 62.32 |
+| tri1 | 59.50 |
+| tri2b | 62.74 |
+| tri3b | 56.56 |
+| online chain | 53.01 |
+
+I don't know why the tri2b models are so bad compare to the others.
+
+** WAR:
+Multitask Learning for Low Resource Languages:
+This week Mr. John Morgan achieved a break through in his project to use Multitask Learning (MTL) to build robust Autommatic Speech Recognition (ASR) systems for Low Resource Languages (LRLs). 
+For the first time he was able to obtain MLT results that were better than his baseline results achieved with the state-of-the-art chain model based ASR systems. 
+The experiment he ran was restricted to Arabic, but it involved threee speech corpora from two different data sources. 
+He used the GlobalPhone and West Point Tunisian Arabic corpora as reprsentatives of the read speech data source and the GALE Arabic corpus as the brodcast News representative. 
+On a Libyan speech test set he got a word error rate of 9.34, significantly lower than the previous best chain model score of 13.40.
+ASR on LRLs is of interest to the U.S. Army because it does not attract commercial interest and it would be used by Soldiers to communicate on their missions in places like Libya.
+
+** Goals for Next Week:
+- TODO Multilang: Setup experiment for training chain models on GP Arabic and testing on SOFTunis and GP_Arabic.
+- TODO Inuktitut: Make pronouncing dictionary.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Give Libyan data to Zac for transcription.
+- TODO SOFTunisia: Help  Zac with installing kaldi.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Mandarin: Run ashell kaldi recipe.  
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Incorporate ashell mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 * My WAR <2018-01-19 Fri>
 ** Goals for Next Week:
 - DONE Multilang: Incorporate Bottlenecks.
