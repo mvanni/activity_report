@@ -1,3 +1,19 @@
+* DAR <2018-02-07 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Inuktitut: Train prototype acoustic models.
+I spent all day on this.
+The main problem was cleaning the transcripts in the 3 sub corpora.
+1. Jeffrey's word to morphemes list.
+2. Tusaalanga' dialogues.
+3. Tusaalanga's dialect transcripts.
+
+The transcripts are now at the word level.
+If we want to recognize at the morpheme level, we need to analyze  the words into morphemes.
+
+** Goals for Thursday:
+- TODO Inuktitut: Get phone 2 word system recipe running.
+- TODO Colloquium: Write slides.
+
 * DAR <2018-02-06 Tue>
 ** Goals for Wednesday:
 - TODO Inuktitut: Train prototype acoustic models.
