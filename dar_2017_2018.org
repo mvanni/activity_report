@@ -1,3 +1,9 @@
+* DAR <2018-02-06 Tue>
+** Goals for Wednesday:
+- TODO Inuktitut: Train prototype acoustic models.
+
+
+* DAR <2018-02-05 Mon>
 * DAR <2018-02-01 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Multilang: Setup experiment for training chain models on GP Arabic, Softunisia and GALE Arabic.
