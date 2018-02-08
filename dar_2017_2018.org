@@ -1,3 +1,64 @@
+* DAR <2018-02-08 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Inuktitut: Get phone 2 word system recipe running.
+I am going to leave this for now.
+- TODO Colloquium: Write slides.
+
+** Old Goals:
+- TODO Multilang: Setup experiment for training chain models on GALE Arabic and testing on SOFTunis and GP_Arabic.
+I tested the GALE Arabic on the Sarraj data:
+%WER 39.43 [ 27471 / 69668, 2105 ins, 5890 del, 19476 sub ] exp/tri1/decode/wer_15_0.5
+%WER 38.35 [ 26718 / 69668, 2177 ins, 5703 del, 18838 sub ] exp/tri2a/decode/wer_15_0.5
+%WER 35.91 [ 25018 / 69668, 2221 ins, 5338 del, 17459 sub ] exp/tri2b/decode/wer_15_0.5
+%WER 35.65 [ 24838 / 69668, 2368 ins, 5141 del, 17329 sub ] exp/tri3b/decode.si/wer_15_0.5
+%WER 33.81 [ 23557 / 69668, 2664 ins, 4636 del, 16257 sub ] exp/tri3b/decode/wer_17_0.5
+
+
+DETAILED OVERALL REPORT FOR THE SYSTEM: ./sarraj_hyps.txt
+
+SENTENCE RECOGNITION PERFORMANCE
+
+ sentences                                          38
+ with errors                            100.0%   (  38)
+
+   with substitions                     100.0%   (  38)
+   with deletions                        39.5%   (  15)
+   with insertions                      100.0%   (  38)
+
+
+WORD RECOGNITION PERFORMANCE
+
+Percent Total Error       =   51.2%   ( 340)
+
+Percent Correct           =   59.2%   ( 393)
+
+Percent Substitution      =   36.4%   ( 242)
+Percent Deletions         =    4.4%   (  29)
+Percent Insertions        =   10.4%   (  69)
+Percent Word Accuracy     =   48.8%
+
+
+Ref. words                =           ( 664)
+Hyp. words                =           ( 704)
+Aligned words             =           ( 733)
+
+CONFUSION PAIRS                  Total                 (227)
+                                 With >=  1 occurances (227)
+
+NOTE: The 'Substitution' words are those reference words
+        for which the recognizer supplied an incorrect word.
+
+
+FALSELY RECOGNIZED               Total                 (212)
+                                 With >=  1 occurances (212)
+
+** Goals for Friday:
+- TODO SOFTunisia: Incorporate Libyan data into test set.
+- TODO Multilang: Run aishell kaldi recipe.
+- TODO GALE Arabic: run s5b recipe to include chain models.
+- TODO GALE Mandarin: Run recipe.
+- TODO ARL Colloquium: Write slides.
+
 * DAR <2018-02-07 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Inuktitut: Train prototype acoustic models.
@@ -17,7 +78,6 @@ If we want to recognize at the morpheme level, we need to analyze  the words int
 * DAR <2018-02-06 Tue>
 ** Goals for Wednesday:
 - TODO Inuktitut: Train prototype acoustic models.
-
 
 * DAR <2018-02-05 Mon>
 * DAR <2018-02-01 Thu>
