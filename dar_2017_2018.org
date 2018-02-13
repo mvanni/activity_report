@@ -1,3 +1,73 @@
+* DAR <2018-02-12 Mon>
+** Previous Goals:
+- TODO SOFTunisia: Incorporate Libyan data into test set.
+Zac wanted me to try volume augmented data.
+%WER 67.66 [ 228 / 337, 20 ins, 15 del, 193 sub ] exp/tri3b/decode_adel_augmented_volume/wer_17_0.5
+%WER 67.06 [ 226 / 337, 21 ins, 13 del, 192 sub ] exp/tri3b/decode_adel_vol/wer_15_0.5
+
+
+%WER 69.73 [ 235 / 337, 13 ins, 21 del, 201 sub ] exp/tri3b/decode_adel_vol.si/wer_17_0.5
+%WER 68.84 [ 232 / 337, 12 ins, 22 del, 198 sub ] exp/tri3b/decode_adel.si/wer_17_0.5
+%WER 68.84 [ 232 / 337, 12 ins, 22 del, 198 sub ] exp/tri3b/decode_adel_augmented_volume.si/wer_17_0.5
+%WER 67.66 [ 228 / 337, 20 ins, 15 del, 193 sub ] exp/tri3b/decode_adel/wer_17_0.5
+%WER 67.66 [ 228 / 337, 20 ins, 15 del, 193 sub ] exp/tri3b/decode_adel_augmented_volume/wer_17_0.5
+%WER 67.06 [ 226 / 337, 21 ins, 13 del, 192 sub ] exp/tri3b/decode_adel_vol/wer_15_0.5
+%WER 64.57 [ 2665 / 4127, 168 ins, 461 del, 2036 sub ] exp/tri3b/decode_test.si/wer_16_0.0
+%WER 63.63 [ 2626 / 4127, 95 ins, 463 del, 2068 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 59.83 [ 2469 / 4127, 121 ins, 459 del, 1889 sub ] exp/tri2b/decode_test/wer_16_0.0
+%WER 59.80 [ 2468 / 4127, 129 ins, 416 del, 1923 sub ] exp/tri1/decode_test/wer_17_0.5
+%WER 59.07 [ 2438 / 4127, 113 ins, 498 del, 1827 sub ] exp/chain/tdnn1c_sp/decode_test/wer_9_0.5
+%WER 58.44 [ 2412 / 4127, 176 ins, 371 del, 1865 sub ] exp/tri3b/decode_test/wer_17_0.5
+%WER 57.62 [ 2378 / 4127, 131 ins, 411 del, 1836 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_10_0.0
+
+We figured out that there were a decent amount of OOVs.
+178 words in training that were not in our smaller lexicon.
+These probably came from the sarraj data.
+407 words in the new Libyan test set that were not in our smaller lexicon.
+There were another 66 words that were neither in the bigger qcri dictionary nor our smaller lexicon.
+Zac is going to work on the 66 words.
+
+- TODO Multilang: Run aishell kaldi recipe.
+%WER 47.16 [ 30384 / 64428, 1905 ins, 4888 del, 23591 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 42.41 [ 54161 / 127698, 3394 ins, 8668 del, 42099 sub ] exp/mono/decode_dev/wer_11_0.0
+%WER 31.23 [ 20118 / 64428, 1617 ins, 3165 del, 15336 sub ] exp/tri1/decode_test/wer_13_0.5
+%WER 31.07 [ 20020 / 64428, 1659 ins, 3097 del, 15264 sub ] exp/tri2/decode_test/wer_14_0.5
+%WER 30.95 [ 19942 / 64428, 1640 ins, 2896 del, 15406 sub ] exp/tri4a/decode_test.si/wer_17_0.5
+%WER 28.28 [ 18220 / 64428, 1530 ins, 2761 del, 13929 sub ] exp/tri3a/decode_test/wer_15_0.5
+%WER 27.94 [ 18002 / 64428, 1772 ins, 2336 del, 13894 sub ] exp/tri5a/decode_test.si/wer_14_0.5
+%WER 27.26 [ 34811 / 127698, 3101 ins, 5101 del, 26609 sub ] exp/tri1/decode_dev/wer_13_0.0
+%WER 27.07 [ 34562 / 127698, 3231 ins, 4869 del, 26462 sub ] exp/tri2/decode_dev/wer_13_0.0
+%WER 26.73 [ 34129 / 127698, 3406 ins, 4259 del, 26464 sub ] exp/tri4a/decode_dev.si/wer_13_0.0
+%WER 24.75 [ 31605 / 127698, 2940 ins, 4270 del, 24395 sub ] exp/tri3a/decode_dev/wer_14_0.0
+%WER 23.92 [ 15413 / 64428, 1530 ins, 2137 del, 11746 sub ] exp/tri4a/decode_test/wer_15_0.5
+%WER 23.85 [ 30462 / 127698, 3072 ins, 3678 del, 23712 sub ] exp/tri5a/decode_dev.si/wer_13_0.0
+%WER 22.04 [ 14203 / 64428, 1408 ins, 1998 del, 10797 sub ] exp/tri5a/decode_test/wer_15_0.5
+%WER 21.48 [ 27432 / 127698, 2821 ins, 3507 del, 21104 sub ] exp/tri4a/decode_dev/wer_14_0.0
+%WER 19.53 [ 24940 / 127698, 2591 ins, 3183 del, 19166 sub ] exp/tri5a/decode_dev/wer_14_0.0
+
+| model | WER|
+
+- TODO GALE Arabic: run s5b recipe to include chain models.
+- TODO GALE Mandarin: Run recipe.
+- TODO ARL Colloquium: Write slides.
+
+** Goals for Tuesday:
+- TODO SOFTunisia: Get pronunciations for 66 qcri-OOVs from Zac and incorporate into lexicon.
+- TODO SOFTunisia Consolidate Results of latest  run.
+- TODO SOFTunisia: Set up eesen end to end character system.
+- TODO EESEN: Install on b-team workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+
+* DAR <2018-02-09 Fri>
+** Goals for Friday set Thursday:
+- TODO SOFTunisia: Incorporate Libyan data into test set.
+- TODO Multilang: Run aishell kaldi recipe.
+- TODO GALE Arabic: run s5b recipe to include chain models.
+- TODO GALE Mandarin: Run recipe.
+- TODO ARL Colloquium: Write slides.
+
 * DAR <2018-02-08 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Inuktitut: Get phone 2 word system recipe running.
