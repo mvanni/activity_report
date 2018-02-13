@@ -101,7 +101,13 @@ Context:
  
 * 4 EXPERIMENTS
 ** 4.1 Preliminary testing
-** 4.2
+** 4.2 Cross Data Source Experiment:
+We ran an experiment where we fixed the language and varied the type of data source. 
+We used our Tuniseen corpus and the Globalphone Arabic Corpus as representatives of the read speech source. 
+We used the GALE Arabic corpus as a representative of the Broadcast News data source.
+ 
+
+
 ** 4.3
 [[[So far, we have demonstrated that we can build systems with the MTL method by producing a minimal example that uses only two languages. 
 We built baseline SAT GMM HMM acoustic models for Japanese and Mandarin Chinese with data from the GlobalPhone speech corpus. We implemented MTL as follows:
