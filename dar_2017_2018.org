@@ -1,3 +1,63 @@
+* DAR <2018-02-13 Tue>
+** Goals for Tuesday set Monday:
+- TODO SOFTunisia: Get pronunciations for 66 qcri-OOVs from Zac and incorporate into lexicon.
+After fixing attached arabic commas and dos newlines there are only 18 OOVS.
+- TODO SOFTunisia Consolidate Results of latest  run.
+Here are the results from the morning:
+
+%WER 9.02 [ 372 / 4125, 15 ins, 99 del, 258 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_14_0.0
+%WER 24.00 [ 990 / 4125, 47 ins, 283 del, 660 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 15.42 [ 636 / 4125, 19 ins, 218 del, 399 sub ] exp/mono/decode_test/wer_17_0.0
+%WER 15.30 [ 631 / 4125, 19 ins, 202 del, 410 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 15.08 [ 622 / 4125, 31 ins, 171 del, 420 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 12.95 [ 534 / 4125, 37 ins, 138 del, 359 sub ] exp/tri3b/decode_test/wer_17_0.0
+%WER 10.52 [ 434 / 4125, 16 ins, 115 del, 303 sub ] exp/chain/tdnn1c_sp/decode_test/wer_11_0.0
+
+| model | WER |
+| mono | 15.42 |
+| tri1 | 15.08 |
+| tri2b | 15.30 |
+| tri3b | 12.95 |
+| chain | 10.52 |
+| chain online | 9.02 |
+
+Here are the results from the afternoon:
+%WER 9.36 [ 386 / 4125, 8 ins, 145 del, 233 sub ] exp/chain/tdnn1c_sp/decode_test/wer_16_0.0
+%WER 8.22 [ 339 / 4125, 7 ins, 106 del, 226 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_17_0.0
+%WER 24.00 [ 990 / 4125, 47 ins, 283 del, 660 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 15.42 [ 636 / 4125, 19 ins, 218 del, 399 sub ] exp/mono/decode_test/wer_17_0.0
+%WER 15.30 [ 631 / 4125, 19 ins, 202 del, 410 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 15.08 [ 622 / 4125, 31 ins, 171 del, 420 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 12.95 [ 534 / 4125, 37 ins, 138 del, 359 sub ] exp/tri3b/decode_test/wer_17_0.0
+
+| model | morning WER | afternoon WER |
+| mono | 15.42 | 15.42 |
+| tri1 | 15.08 | 15.08 |
+| tri2b | 15.30 | 15.30 |
+| tri3b | 12.95 | 12.95 |
+| chain | 10.52 | 9.36 |
+| chain online | 9.02 | 8.22 |
+
+- TODO SOFTunisia: Set up eesen end to end character system.
+I worked all day on this.
+The analyze-counts probram requires the text file to have the utterance id and text separated by a white space not a tab.
+The training step is running on the GPU.
+
+- TODO EESEN: Install on b-team workstation.
+I let Justin know about the compile problems I had with eesen on the B-Team workstation.
+
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+
+** Goals for Wednesday:
+- TODO SOFTunisia: Consolidate scores for eesen run.
+- TODO SOFTunisia: get pronunciations for 18 OOVs from Zac and incorporate into lexicon.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+
 * DAR <2018-02-12 Mon>
 ** Previous Goals:
 - TODO SOFTunisia: Incorporate Libyan data into test set.
