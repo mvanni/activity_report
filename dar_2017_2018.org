@@ -1,3 +1,52 @@
+* DAR <2018-02-15 Thu>
+** Goals for Thursday set Wednesday:
+- TODO SOFTunisia: get pronunciations for 18 OOVs from Zac and incorporate into lexicon.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+Michelle and I had a good look at the slides.
+- TODO Multilang: Run cross task (GALE Arabic, SOFTunisia and GP Arabic) build again with new SOFTunisia test set.
+
+
+** Goals for Friday:
+- TODO Libyan: Write and run kaldi recipe.
+- TODO Libyan: Incorporate into multilang setup.
+- TODO SOFTunisia: get pronunciations for 18 OOVs from Zac and incorporate into lexicon.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+- TODO Multilang: Run cross task (GALE Arabic, SOFTunisia and GP Arabic) build again with new SOFTunisia test set.
+- TODO GALE Arabic: Get recipe running on B-Team workstation.
+
+* DAR <2018-02-14 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO SOFTunisia: Consolidate scores for eesen run.
+The training is still running this morning.
+Training finished.
+I fixed the decoding  scripts.
+A lot of scripts were missing.
+I guess I had them from the kaldi directories.
+Here is the WER score for the eesen run:
+%WER 27.90 [ 1151 / 4125, 63 ins, 266 del, 822 sub ] exp/train_char_l4_c320/decode/wer_7_0.0 
+
+size of the fst tlg.fst: 7107678 
+size of the acousti model: 34197673 
+- TODO SOFTunisia: get pronunciations for 18 OOVs from Zac and incorporate into lexicon.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+
+** Goals for Thursday:
+- TODO SOFTunisia: get pronunciations for 18 OOVs from Zac and incorporate into lexicon.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+- TODO Multilang: Run cross task (GALE Arabic, SOFTunisia and GP Arabic) build again with new SOFTunisia test set.
+
 * DAR <2018-02-13 Tue>
 ** Goals for Tuesday set Monday:
 - TODO SOFTunisia: Get pronunciations for 66 qcri-OOVs from Zac and incorporate into lexicon.
@@ -3402,3 +3451,4 @@ The chain models are training as I am getting ready to leave.
 - TODO SOFTunisia: Build cd gmm hmm system and chain models
 - TODO: Get rough draft hypotheses for stage 16?
 - TODO SOFTunisia: Compare WER scores for old and new lexicons(Zac will do this)
+
