@@ -1,4 +1,83 @@
+* My WAR <2018-02-16 Fri>
+** Goals set Last Week:
+- TODO Multilang: Setup experiment for training chain models on GP Arabic and testing on SOFTunis and GP_Arabic.
+- TODO Inuktitut: Make pronouncing dictionary.
+No longer a goal.
+- TODO ARL Colloquium: Prepare slides.
+I did a lot of work on this.
+- DONE Softunisia: Give Libyan data to Zac for transcription.
+Zac did QC on the Recordings data.
+We updated the lexicon by finding OOVs.
+We retrieved most of the pronunciations from the big QCRI lexion.
+We convert the QCRI words from Buckwalter to UTF8.
+- TODO SOFTunisia: Help  Zac with installing kaldi.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+We are getting close.
+We are still missing transcriptions for the Libyan answers.
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Mandarin: Run ashell kaldi recipe.  
+I am working on getting the nnet3 and chain models steps to run.
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Incorporate ashell mandarin.
+I have tri5a models done, so this should be possible now.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- DONE GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+I am running the s5b recipe.
+I think this mostly incorporates chain models.
+
+
+** Goals for Next Week:
+- TODO ARL-Colloquium: Write slides on AI in ASR.
+- TODO AIShell: Incorporate into multilang.
+- TODO AISHELL: Build chain models.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+
 * My WAR <2018-02-01 Thu>
+** Goals set Last Week:
+- TODO Multilang: Setup experiment for training chain models on GP Arabic and testing on SOFTunis and GP_Arabic.
+- DONE Inuktitut: Make pronouncing dictionary.
+- TODO ARL Colloquium: Prepare slides.
+- TODO Softunisia: Give Libyan data to Zac for transcription.
+- TODO SOFTunisia: Help  Zac with installing kaldi.
+- TODO Softunisia: Prepare recipe for kaldi repo.
+Here are the most current WER scores. This should get better after Zac incorporates the OOVs in the dictionary.
+%WER 71.77 [ 2962 / 4127, 109 ins, 1195 del, 1658 sub ] exp/tri3b/decode_test.si/wer_11_0.0
+%WER 68.86 [ 2842 / 4127, 122 ins, 1101 del, 1619 sub ] exp/tri2b/decode_test/wer_10_0.0
+%WER 65.25 [ 2693 / 4127, 97 ins, 579 del, 2017 sub ] exp/mono/decode_test/wer_13_0.0
+%WER 65.18 [ 2690 / 4127, 122 ins, 902 del, 1666 sub ] exp/tri1/decode_test/wer_12_0.0
+%WER 61.52 [ 2539 / 4127, 116 ins, 800 del, 1623 sub ] exp/tri3b/decode_test/wer_16_0.5
+%WER 56.29 [ 2323 / 4127, 60 ins, 532 del, 1731 sub ] exp/chain/tdnn1c_sp/decode_test/wer_12_0.5
+%WER 55.34 [ 2284 / 4127, 46 ins, 539 del, 1699 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_12_1.0
+
+| model | WER on Libyan |
+| mono | 65.25 |
+| tri1 | 65.18|
+| tri2b | 68.86 |
+| tri3b | 61.52 |
+| chain | 56.29 |
+| chain online | 55.34 |
+
+- TODO African French ditto for African French (Yaounde)
+- TODO GALE Mandarin: Build tri3b models. 
+- TODO Mandarin: Search for CASS corpus.
+- TODO Mandarin: Run ashell kaldi recipe.  
+- TODO Multilang: Incorporate GALE Mandarin.
+- TODO Multilang: Incorporate ashell mandarin.
+- TODO Multilang: Write some paragraphs for paper.
+- TODO Heroico: Write tn.
+- TODO African French: Write outline of paper.
+- TODO S2S: minimal example.
+- TODO GP: Take a pass through languages that are not performing well yet.
+- TODO GP: GEt chain model results for all languages in gp. 
+- TODO GALE Arabic: Run s5b recipe with possibly more corpora instead of s5 recipe.
+
 ** Goals set Last Week:
 - TODO GALE Mandarin: Set up recipe.
 - DONE Multilang: Incorporate i-vectors.
