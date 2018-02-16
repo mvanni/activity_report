@@ -1,3 +1,40 @@
+* DAR <2018-02-16 Fri>
+**  Goals for Friday set Thursday:
+- TODO Libyan: Write and run kaldi recipe.
+I am working on the ivector training step.
+I had to lower the number of jobs from 10 to 4 in ivector extractor training.
+Training goes all the way through chain models.
+I am now tuning the number of gaussians and leaves.
+The WERs are very sensitive to these parameters.
+
+Here are the WER results so far:
+
+%WER 43.34 [ 1146 / 2644, 89 ins, 236 del, 821 sub ] exp/chain/tdnn1a_sp/decode_test/wer_8_0.0
+%WER 42.59 [ 1126 / 2644, 82 ins, 243 del, 801 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_9_0.0
+%WER 35.78 [ 946 / 2644, 50 ins, 275 del, 621 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 33.55 [ 887 / 2644, 32 ins, 314 del, 541 sub ] exp/mono/decode_test/wer_15_0.0
+%WER 33.09 [ 875 / 2644, 46 ins, 254 del, 575 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 32.03 [ 847 / 2644, 32 ins, 280 del, 535 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 22.50 [ 595 / 2644, 27 ins, 172 del, 396 sub ] exp/tri3b/decode_test/wer_17_0.0
+
+Works needs to be done on the chain models.
+
+- TODO Libyan: Incorporate into multilang setup.
+- TODO SOFTunisia: get pronunciations for 18 OOVs from Zac and incorporate into lexicon.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+- TODO ARL Colloquium: Write about Neural Networks.
+- TODO Multilang: Run cross task (GALE Arabic, SOFTunisia and GP Arabic) build again with new SOFTunisia test set.
+- TODO GALE Arabic: Get recipe running on B-Team workstation.
+This is running.
+
+** Goals for Next Week:
+- TODO ARL-Colloquium: Write slides on AI for ASR.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+- TODO AISHELL: Build chain models.
+- TODO AISHELL: Incorporate into multilang.
+
 * DAR <2018-02-15 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO SOFTunisia: get pronunciations for 18 OOVs from Zac and incorporate into lexicon.
@@ -19,7 +56,7 @@ Michelle and I had a good look at the slides.
 - TODO ARL Colloquium: Write about Neural Networks.
 - TODO Multilang: Run cross task (GALE Arabic, SOFTunisia and GP Arabic) build again with new SOFTunisia test set.
 - TODO GALE Arabic: Get recipe running on B-Team workstation.
-
+- TODO 
 * DAR <2018-02-14 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO SOFTunisia: Consolidate scores for eesen run.
