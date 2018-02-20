@@ -1,3 +1,69 @@
+* DAR <2018-02-20 Tue>
+** Goals for Next Week:
+- TODO ARL-Colloquium: Write slides on AI in ASR.
+- TODO AIShell: Incorporate into multilang.
+- TODO AISHELL: Build chain models.
+I am trying to get the kaldi scripts to run.
+I am trying to add _hires to the online ivector directory path.
+It looks like the nnet3 tdnn script is running.
+Later, I have to get the chain model script running.
+- TODO  EESEN: Get it installed on the b-team  workstation.
+
+- Multilan Softunisia:
+%WER 51.30 [ 4639 / 9043, 341 ins, 796 del, 3502 sub ] exp/nnet3/multi_bnf/gp_arabic/decode_dev/wer_16_0.0
+%WER 4.61 [ 190 / 4125, 21 ins, 48 del, 121 sub ] exp/nnet3/multi_bnf/softunisia/decode_test/wer_17_0.0
+
+I ran multilang again on the following 3 corpora:
+1. GALE Arabic
+2. Global Phone Arabic
+3. Sof Tunisia
+
+Do I have chain model results for these 3 recipes separately?
+
+Here are the results for Softunisia:
+
+Single Task Learning stl:
+
+%WER 9.36 [ 386 / 4125, 8 ins, 145 del, 233 sub ] exp/chain/tdnn1c_sp/decode_test/wer_16_0.0
+%WER 8.22 [ 339 / 4125, 7 ins, 106 del, 226 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_17_0.0
+%WER 24.00 [ 990 / 4125, 47 ins, 283 del, 660 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 15.42 [ 636 / 4125, 19 ins, 218 del, 399 sub ] exp/mono/decode_test/wer_17_0.0
+%WER 15.30 [ 631 / 4125, 19 ins, 202 del, 410 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 15.08 [ 622 / 4125, 31 ins, 171 del, 420 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 12.95 [ 534 / 4125, 37 ins, 138 del, 359 sub ] exp/tri3b/decode_test/wer_17_0.0
+
+mtl:
+%WER 4.61 [ 190 / 4125, 21 ins, 48 del, 121 sub ] exp/nnet3/multi_bnf/softunisia/decode_test/wer_17_0.0
+
+| model | WER |
+| mono | 15.42 |
+| tri1 | 15.08 |
+| tri2b | 15.30 |
+| tri3b | 12.95 |
+| chain online | 8.22 |
+| mtl | 4.61 |
+
+I think I can get better scores by tuning the tri2b models.
+
+I did some triphone tuning and  got the following results:
+
+%WER 8.70 [ 359 / 4125, 29 ins, 84 del, 246 sub ] exp/tri3b/decode_test/wer_16_0.0
+%WER 8.34 [ 344 / 4125, 10 ins, 105 del, 229 sub ] exp/chain/tdnn1c_sp/decode_test/wer_14_0.0
+%WER 7.30 [ 301 / 4125, 15 ins, 69 del, 217 sub ] exp/chain/tdnn1c_sp_online/decode_test/wer_11_0.0
+%WER 16.63 [ 686 / 4125, 27 ins, 174 del, 485 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 15.42 [ 636 / 4125, 19 ins, 218 del, 399 sub ] exp/mono/decode_test/wer_17_0.0
+%WER 12.78 [ 527 / 4125, 29 ins, 162 del, 336 sub ] exp/tri1/decode_test/wer_16_0.0
+%WER 12.22 [ 504 / 4125, 23 ins, 148 del, 333 sub ] exp/tri2b/decode_test/wer_16_0.0
+
+| model | WER |
+| mono |  15.42 |
+| tri1 | 12.78 |
+| tri2b | 12.22 |
+| tri3b | 8.70      |
+| chain | 8.34 |
+| chain online |  7.30 |
+| mtl |  |
+
 * DAR <2018-02-16 Fri>
 **  Goals for Friday set Thursday:
 - TODO Libyan: Write and run kaldi recipe.
