@@ -1,3 +1,71 @@
+* DAR <2018-02-22 Thu>
+** Goals for Thursday set Wednesday:
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Write recipe without Government test set.
+Here are the WER scores:
+%WER 79.38 [ 4123 / 5194, 175 ins, 689 del, 3259 sub ] exp/mono/decode_test/wer_14_0.5
+%WER 74.99 [ 3895 / 5194, 297 ins, 428 del, 3170 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 73.64 [ 3825 / 5194, 250 ins, 493 del, 3082 sub ] exp/tri1/decode_test/wer_17_1.0
+%WER 73.22 [ 3803 / 5194, 243 ins, 510 del, 3050 sub ] exp/tri2b/decode_test/wer_17_0.5
+%WER 71.64 [ 3721 / 5194, 351 ins, 357 del, 3013 sub ] exp/tri3b/decode_test/wer_17_1.0
+%WER 71.33 [ 3705 / 5194, 117 ins, 753 del, 2835 sub ] exp/chain/tdnn1a_sp/decode_test/wer_10_1.0
+%WER 70.10 [ 3641 / 5194, 122 ins, 662 del, 2857 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_10_1.0
+
+| model | WER |
+| mono | 79.38 |
+| tri1 | 73.64 |
+| tri2b | 73.22 |
+| tri3b | 71.64 |
+| chain | 71.33 |
+| chain online | 70.10 |
+
+I was not using the Tunisian Female test speaker.
+I incorporated her into the test set today.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
+- TODO AIShell: Chain models. Did they finish training?
+Yes.
+I only got dev scores for some models so far.
+It was set up to test hires data.
+Here are the WER scores.
+%WER 47.16 [ 30384 / 64428, 1905 ins, 4888 del, 23591 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 42.41 [ 54161 / 127698, 3394 ins, 8668 del, 42099 sub ] exp/mono/decode_dev/wer_11_0.0
+%WER 31.23 [ 20118 / 64428, 1617 ins, 3165 del, 15336 sub ] exp/tri1/decode_test/wer_13_0.5
+%WER 31.07 [ 20020 / 64428, 1659 ins, 3097 del, 15264 sub ] exp/tri2/decode_test/wer_14_0.5
+%WER 30.95 [ 19942 / 64428, 1640 ins, 2896 del, 15406 sub ] exp/tri4a/decode_test.si/wer_17_0.5
+%WER 28.28 [ 18220 / 64428, 1530 ins, 2761 del, 13929 sub ] exp/tri3a/decode_test/wer_15_0.5
+%WER 27.94 [ 18002 / 64428, 1772 ins, 2336 del, 13894 sub ] exp/tri5a/decode_test.si/wer_14_0.5
+%WER 27.26 [ 34811 / 127698, 3101 ins, 5101 del, 26609 sub ] exp/tri1/decode_dev/wer_13_0.0
+%WER 27.07 [ 34562 / 127698, 3231 ins, 4869 del, 26462 sub ] exp/tri2/decode_dev/wer_13_0.0
+%WER 26.73 [ 34129 / 127698, 3406 ins, 4259 del, 26464 sub ] exp/tri4a/decode_dev.si/wer_13_0.0
+%WER 24.75 [ 31605 / 127698, 2940 ins, 4270 del, 24395 sub ] exp/tri3a/decode_dev/wer_14_0.0
+%WER 23.92 [ 15413 / 64428, 1530 ins, 2137 del, 11746 sub ] exp/tri4a/decode_test/wer_15_0.5
+%WER 23.85 [ 30462 / 127698, 3072 ins, 3678 del, 23712 sub ] exp/tri5a/decode_dev.si/wer_13_0.0
+%WER 22.04 [ 14203 / 64428, 1408 ins, 1998 del, 10797 sub ] exp/tri5a/decode_test/wer_15_0.5
+%WER 21.48 [ 27432 / 127698, 2821 ins, 3507 del, 21104 sub ] exp/tri4a/decode_dev/wer_14_0.0
+%WER 19.53 [ 24940 / 127698, 2591 ins, 3183 del, 19166 sub ] exp/tri5a/decode_dev/wer_14_0.0
+%WER 16.78 [ 10814 / 64428, 1157 ins, 1438 del, 8219 sub ] exp/chain/tdnn_1a_sp/decode_test_hires/wer_13_0.0
+
+| Model | fold | WER |
+| mono | dev | 42.41 |
+| mono | test | 47.16 |
+
+- TODO GALE Arabic: What is going on with the feature extraction?
+- TODO Multilang: Did the build finish?
+Yes,.
+** Goals for Friday:
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- TODO GALE Arabic: What is going on with the feature extraction?
+- TODO Multilang: Simplify scripts.
+- TODO Tunisian_MSA: Run recipe and get results to Zac.
+- TODO Tunisian_MSA: Check for OOVs and get them to ZAc.
+
 * DAR <2018-02-21 Wed>
 ** Goals for Wednesday set Tuesday:
 -TODO ARL Colloquium: Write slides on MTL.
