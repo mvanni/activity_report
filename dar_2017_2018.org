@@ -1,3 +1,39 @@
+* DAR <2018-02-21 Wed>
+** Goals for Wednesday set Tuesday:
+-TODO ARL Colloquium: Write slides on MTL.
+- TODO AIShell: Run chain models.
+This is running.
+The following settings were problematic:
+num_jobs_initial=2
+num_jobs_final=12
+I reset them to:
+num_jobs_initial=1
+num_jobs_final=1
+
+Before resetting, the GPU would throw an out of memory error.
+
+
+- TODO Multilang: Run with only Gale Arabic and SOFTunisia.
+It looks like this is currently running on the GPU.
+- DONE: SOFTunisia: Incorporate Zac's corrections to the lexicon.
+
+- DONE SOFTunisia: Incorporate Zac's corrections to the reference transcripts.
+
+- Multilang On GALE Arabic test:
+%WER 24.39 [ 16991 / 69668, 1853 ins, 3378 del, 11760 sub ] exp/nnet3/multi_bnf/my_gale_arabic/decode_test/wer_11_0.5
+
+I need to get the chain model WER for GALE Arabic.
+
+** Goals for Thursday:
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Write recipe without Government test set.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- TODO AIShell: Chain models. Did they finish training?
+- TODO GALE Arabic: What is going on with the feature extraction?
+- TODO Multilang: Did the build finish?
+
 * DAR <2018-02-20 Tue>
 ** Goals for Next Week:
 - TODO ARL-Colloquium: Write slides on AI in ASR.
@@ -7,6 +43,8 @@ I am trying to get the kaldi scripts to run.
 I am trying to add _hires to the online ivector directory path.
 It looks like the nnet3 tdnn script is running.
 Later, I have to get the chain model script running.
+I have this running for chain models.
+
 - TODO  EESEN: Get it installed on the b-team  workstation.
 
 - Multilan Softunisia:
@@ -63,6 +101,13 @@ I did some triphone tuning and  got the following results:
 | chain | 8.34 |
 | chain online |  7.30 |
 | mtl |  |
+
+** Goals for Wednesday:
+-TODO ARL Colloquium: Write slides on MTL.
+- TODO AIShell: Run chain models.
+- TODO Multilang: Run with only Gale Arabic and SOFTunisia.
+- TODO: SOFTunisia: Incorporate Zac's corrections to the lexicon.
+- TODO SOFTunisia: Incorporate Zac's corrections to the reference transcripts.
 
 * DAR <2018-02-16 Fri>
 **  Goals for Friday set Thursday:
