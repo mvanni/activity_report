@@ -1,3 +1,26 @@
+* My WAR <2018-02-23 Fri>
+** Previous Goals:
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- TODO GALE Arabic: What is going on with the feature extraction?
+- TODO Multilang: Simplify scripts.
+- TODO Tunisian_MSA: Run recipe and get results to Zac.
+- TODO Tunisian_MSA: Check for OOVs and get them to ZAc.
+
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
+
+** Goals for Next Week:
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- TODO Multilang: Work on a minimal example with Tunisian_MSA and Libyan_MSA.
+
 * My WAR <2018-02-16 Fri>
 ** Goals set Last Week:
 - TODO Multilang: Setup experiment for training chain models on GP Arabic and testing on SOFTunis and GP_Arabic.
