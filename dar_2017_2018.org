@@ -1,3 +1,52 @@
+* DAR <2018-02-23 Fri>
+**  Goals for Friday set Thursday:
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO Computer: Get JAWS installed.
+I contacted the help desk.
+
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- DONE GALE Arabic: What is going on with the feature extraction?
+I think the only problem was that /mnt/corpora had gone stale on the B-team GPU machine.
+Justin refreshed it and things seem to be working now.
+
+- TODO Multilang: Simplify scripts.
+This is moving forward.
+- TODO Multilang: Run with only Gale Arabic and SOFTunisia.
+%WER 4.90 [ 202 / 4125, 18 ins, 57 del, 127 sub ] exp/nnet3/multi_bnf/softunisia/decode_test/wer_17_0.0
+Recall that when I ran this with  the 3 corpora: Gp Arabic, Gale Arabic and Softunisia I got: 
+%WER 4.61 [ 190 / 4125, 21 ins, 48 del, 121 sub ] exp/nnet3/multi_bnf/softunisia/decode_test/wer_17_0.0
+
+So GP Arabic actually helped slightly.
+
+- TODO Tunisian_MSA: Run recipe and get results to Zac.
+%WER 76.26 [ 5021 / 6584, 197 ins, 928 del, 3896 sub ] exp/mono/decode_test/wer_12_1.0
+%WER 72.45 [ 4770 / 6584, 343 ins, 556 del, 3871 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 70.44 [ 4638 / 6584, 285 ins, 664 del, 3689 sub ] exp/tri1/decode_test/wer_17_1.0
+%WER 69.11 [ 4550 / 6584, 306 ins, 592 del, 3652 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 67.33 [ 4433 / 6584, 378 ins, 472 del, 3583 sub ] exp/tri3b/decode_test/wer_17_1.0
+%WER 66.78 [ 4397 / 6584, 164 ins, 799 del, 3434 sub ] exp/chain/tdnn1a_sp/decode_test/wer_9_1.0
+%WER 65.90 [ 4339 / 6584, 144 ins, 841 del, 3354 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_10_1.0
+
+| model | WER |
+| mono | 76.26 |
+| tri1 | 70.44 |
+| tri2b | 69.11 |
+| tri3b | 67.33 |
+| chain tdnn | 66.78 |
+| chain tdnn online | 65.90 |
+
+- TODO Tunisian_MSA: Check for OOVs and get them to ZAc.
+
+** Goals for Next Week:
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- TODO Multilang: Work on a minimal example with Tunisian_MSA and Libyan_MSA.
+
 * DAR <2018-02-22 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO ARL Colloquium: Write slides on MTL.
