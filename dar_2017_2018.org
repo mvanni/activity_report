@@ -1,3 +1,28 @@
+* DAR <2018-02-26 Mon>
+**  Goals for Next Week set last Friday:
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+Hazrat and Steve are helping me with this.
+- TODO ARL Colloquium: Write slides on MTL.
+I worked on understanding the spectogram patterns that are going to be modeled.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- TODO Multilang: Work on a minimal example with Tunisian_MSA and Libyan_MSA.
+Libyan MSA is unfortunately too small for the current set up.
+I am going back to work with Gale Arabic and Tunisian MSA.
+
+
+** Goals for Tuesday:
+- TODO Multilang: Fix the command that prepares the multilingual examples.
+-TODO Tunisian MSA: Get this running end to end all the way to chain models.
+- TODO GALE Arabic: Get this working well.
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL Colloquium: Write sllides explaining invarints.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
 * DAR <2018-02-23 Fri>
 **  Goals for Friday set Thursday:
 - TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
