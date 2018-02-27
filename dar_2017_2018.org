@@ -1,3 +1,48 @@
+* DAR <2018-02-27 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Multilang: Fix the command that prepares the multilingual examples.
+-TODO Tunisian MSA: Get this running end to end all the way to chain models.
+%WER 76.09 [ 5010 / 6584, 169 ins, 996 del, 3845 sub ] exp/mono/decode_test/wer_13_1.0
+%WER 72.08 [ 4746 / 6584, 341 ins, 558 del, 3847 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 70.03 [ 4611 / 6584, 284 ins, 661 del, 3666 sub ] exp/tri1/decode_test/wer_17_1.0
+%WER 68.67 [ 4521 / 6584, 304 ins, 589 del, 3628 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 66.89 [ 4404 / 6584, 376 ins, 471 del, 3557 sub ] exp/tri3b/decode_test/wer_17_1.0
+%WER 66.30 [ 4365 / 6584, 125 ins, 910 del, 3330 sub ] exp/chain/tdnn1a_sp/decode_test/wer_10_1.0
+%WER 65.64 [ 4322 / 6584, 212 ins, 657 del, 3453 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_9_0.5
+
+
+| model | WER |
+| mono | 76.09 |
+| tri1 | 70.03 |
+| tri2b | 68.67 |
+| tri3b | 66.89 |
+| chain tdnn | 66.30 |
+| chain tdnn online | 65.64 |
+
+- TODO GALE Arabic: Get this working well.
+%WER 58.17 [ 40523 / 69668, 1791 ins, 9294 del, 29438 sub ] exp/mono/decode/wer_12_0.0
+%WER 39.58 [ 27578 / 69668, 2040 ins, 6382 del, 19156 sub ] exp/tri1/decode/wer_15_0.5
+%WER 38.25 [ 26645 / 69668, 2102 ins, 6090 del, 18453 sub ] exp/tri2a/decode/wer_15_0.5
+%WER 35.83 [ 24962 / 69668, 2339 ins, 5303 del, 17320 sub ] exp/tri2b/decode/wer_14_0.5
+%WER 35.53 [ 24756 / 69668, 2399 ins, 5009 del, 17348 sub ] exp/tri3b/decode.si/wer_14_0.5
+%WER 33.66 [ 23451 / 69668, 2503 ins, 4815 del, 16133 sub ] exp/tri3b/decode/wer_15_1.0
+
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL Colloquium: Write slides explaining invariants.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
+** Goals for Wednesday:
+- TODO ARL Colloquium: Meet with Judith and Michelle to practice.
+- TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL Colloquium: Write slides explaining invariants.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
 * DAR <2018-02-26 Mon>
 **  Goals for Next Week set last Friday:
 - TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
