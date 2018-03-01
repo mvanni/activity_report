@@ -1,3 +1,25 @@
+* DAR <2018-02-28 Wed>
+**  Goals for Wednesday set Tuesday:
+- DONE ARL Colloquium: Meet with Judith and Michelle to practice.
+Got good feedback from both.
+- DONE ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
+Hazrat says he  sent them to me.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL Colloquium: Write slides explaining invariants.
+- TODO Computer: Get JAWS installed.
+Reggie is working on get this done.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
+** Goals for Thursday:
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL Colloquium: Write slides explaining invariants.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+- TODO Meet with candidate at 9 am.
+- TODO GXM phone meeting 11 am.
+
 * DAR <2018-02-27 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Multilang: Fix the command that prepares the multilingual examples.
