@@ -1,3 +1,22 @@
+* DAR <2018-03-05 Mon>
+**  Goals for Friday set Monday:
+No work Friday because of weather.
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL Colloquium: Write slides explaining invariants.
+- TODO ARL-Colloquium: Post slides.
+- DONE ARL-Colloquium: Meet with Phil David to discuss slides.
+I had a good meeting with Phil.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
+** Goals for Tuesday:
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL-Colloquium: Post slides.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
 * DAR <2018-03-01 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO ARL Colloquium: Write slides on MTL.
