@@ -1,3 +1,47 @@
+* DAR <2018-03-07 Wed>
+Goals for Tuesday set Monday:
+- DONE ARL Colloquium: Write slides on MTL.
+- DONE ARL-Colloquium: Post slides.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
+- GP Arabic:
+Here are the current results:
+%WER 61.00 [ 5516 / 9043, 318 ins, 1086 del, 4112 sub ] exp/mono/decode_dev/wer_17_0.0
+%WER 57.33 [ 5184 / 9043, 615 ins, 486 del, 4083 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 57.09 [ 5163 / 9043, 486 ins, 662 del, 4015 sub ] exp/tri1/decode_dev/wer_17_1.0
+%WER 56.23 [ 5085 / 9043, 614 ins, 459 del, 4012 sub ] exp/tri3b/decode_dev/wer_17_1.0
+%WER 55.89 [ 5054 / 9043, 518 ins, 576 del, 3960 sub ] exp/tri2b/decode_dev/wer_17_1.0
+%WER 45.84 [ 7559 / 16489, 503 ins, 1206 del, 5850 sub ] exp/mono/decode_eval/wer_16_0.0
+%WER 42.87 [ 7069 / 16489, 912 ins, 540 del, 5617 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 42.21 [ 6960 / 16489, 694 ins, 703 del, 5563 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 41.45 [ 6835 / 16489, 902 ins, 437 del, 5496 sub ] exp/tri3b/decode_eval/wer_17_1.0
+%WER 41.19 [ 6792 / 16489, 732 ins, 606 del, 5454 sub ] exp/tri2b/decode_eval/wer_17_1.0
+
+I am going to try to improve these scores.
+I am experimenting with removing the word position dependence in the phone modeling.
+
+- Babel: 
+I looked at the Babel Guarani corpus.
+It looks like it's all 8k and alaw?
+Should I work with this?
+
+** Goals for Thursday:
+- TODO CRADA Meeting at 10 am.
+- TODO Listen to Steve's practice talk.
+- TODO gp_arabic: Tune tri3b.
+- TODO Multilang: Go end to end with single run.sh script.
+- TODO Babel: Investigate Guarani
+
+* DAR <2018-03-06 Tue>
+** Goals for Tuesday set Monday:
+- TODO ARL Colloquium: Write slides on MTL.
+- TODO ARL-Colloquium: Post slides.
+- TODO Computer: Get JAWS installed.
+- TODO Tunisian_MSA: Prepare data for transfer to openslr.org.
+- TODO Tunisian_MSA: Contact Yenda about submitting recipe to kaldi repo.
+
 * DAR <2018-03-05 Mon>
 **  Goals for Friday set Monday:
 No work Friday because of weather.
