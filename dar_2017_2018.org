@@ -1,3 +1,71 @@
+* DAR <2018-03-08 Thu>
+** Goals for Thursday set Tuesday:
+- DONE CRADA Meeting at 10 am.
+- TODO Listen to Steve's practice talk.
+- TODO gp_arabic: Tune tri3b.
+
+I succeeded at making tri3b better than tri2b.
+
+Here are all the dev WERs:
+%WER 61.09 [ 5524 / 9043, 351 ins, 1134 del, 4039 sub ] exp/mono/decode_dev/wer_17_0.0
+%WER 57.67 [ 5215 / 9043, 482 ins, 756 del, 3977 sub ] exp/tri1/decode_dev/wer_17_0.5
+%WER 56.78 [ 5135 / 9043, 537 ins, 614 del, 3984 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 56.24 [ 5086 / 9043, 519 ins, 653 del, 3914 sub ] exp/tri2b/decode_dev/wer_17_1.0
+%WER 55.69 [ 5036 / 9043, 536 ins, 595 del, 3905 sub ] exp/tri3b/decode_dev/wer_17_1.0
+
+Here are the eval WERs:
+
+%WER 40.58 [ 6692 / 16489, 604 ins, 1216 del, 4872 sub ] exp/mono/decode_eval/wer_17_0.0s
+%WER 37.50 [ 6183 / 16489, 766 ins, 828 del, 4589 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 37.11 [ 6119 / 16489, 920 ins, 662 del, 4537 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 36.01 [ 5938 / 16489, 863 ins, 704 del, 4371 sub ] exp/tri2b/decode_eval/wer_17_1.0
+%WER 35.53 [ 5859 / 16489, 923 ins, 542 del, 4394 sub ] exp/tri3b/decode_eval/wer_17_1.0
+
+| model | fold | WER |
+| mono | dev | 61.09 |
+| mono | eval | 40.58 |
+| tri1 | dev | 57.67 |
+| tri1 | eval | 37.50 |
+| tri2b | dev | 56.24 |
+| tri2b | eval | 36.01 |
+| tri3b | dev | 55.69 |
+| tri3b | eval | 35.53 |
+| chain tdnn | 34.86 |
+| chain tdnn online | 34.70 |
+
+Slightly better WER with chain models:
+%WER 61.09 [ 5524 / 9043, 351 ins, 1134 del, 4039 sub ] exp/mono/decode_dev/wer_17_0.0
+%WER 57.67 [ 5215 / 9043, 482 ins, 756 del, 3977 sub ] exp/tri1/decode_dev/wer_17_0.5
+%WER 56.78 [ 5135 / 9043, 537 ins, 614 del, 3984 sub ] exp/tri3b/decode_dev.si/wer_17_1.0
+%WER 56.24 [ 5086 / 9043, 519 ins, 653 del, 3914 sub ] exp/tri2b/decode_dev/wer_17_1.0
+%WER 55.69 [ 5036 / 9043, 536 ins, 595 del, 3905 sub ] exp/tri3b/decode_dev/wer_17_1.0
+%WER 51.64 [ 4670 / 9043, 201 ins, 2073 del, 2396 sub ] exp/chain/tdnn1c_sp/decode_dev/wer_17_0.0
+%WER 51.50 [ 4657 / 9043, 234 ins, 1917 del, 2506 sub ] exp/chain/tdnn1c_sp_online/decode_dev/wer_15_0.0
+%WER 40.58 [ 6692 / 16489, 604 ins, 1216 del, 4872 sub ] exp/mono/decode_eval/wer_17_0.0
+%WER 37.50 [ 6183 / 16489, 766 ins, 828 del, 4589 sub ] exp/tri1/decode_eval/wer_17_1.0
+%WER 37.11 [ 6119 / 16489, 920 ins, 662 del, 4537 sub ] exp/tri3b/decode_eval.si/wer_17_1.0
+%WER 36.01 [ 5938 / 16489, 863 ins, 704 del, 4371 sub ] exp/tri2b/decode_eval/wer_17_1.0
+%WER 35.53 [ 5859 / 16489, 923 ins, 542 del, 4394 sub ] exp/tri3b/decode_eval/wer_17_1.0
+%WER 34.86 [ 5748 / 16489, 437 ins, 1183 del, 4128 sub ] exp/chain/tdnn1c_sp/decode_eval/wer_16_0.5
+%WER 34.70 [ 5722 / 16489, 516 ins, 1028 del, 4178 sub ] exp/chain/tdnn1c_sp_online/decode_eval/wer_17_0.0
+
+- TODO Multilang: Go end to end with single run.sh script.
+I worked a lot on this today.
+I am making slow progress.
+Ivectors were  missing
+Ivector dimension was a problem.
+At the end of the day I am at the raw nnet training stage.
+The dimension of the data and the dimension specification in the config file are different.
+I need to fix this.
+
+- TODO Babel: Investigate Guarani
+
+** Goals for Friday:
+- TODO Multilang: Figure out why there is a dimension mismatch between the egs and the confi file.
+- TODO Multilang: Go end to end with my new run.sh script.
+- TODO GP Arabic: Incorporate GP Arabic back into the multilang build.
+- TODO Babel: Investigate Guarani (upsampling?).
+
 * DAR <2018-03-07 Wed>
 Goals for Tuesday set Monday:
 - DONE ARL Colloquium: Write slides on MTL.
