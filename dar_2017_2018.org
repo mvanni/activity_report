@@ -1,3 +1,19 @@
+* DAR <2018-03-15 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Multilang: Get minimal example running end 2 end.
+I am at the ivector extraction stage.
+
+- DONE CQL Student: Interview Karl.
+
+* Goals for Friday:
+- TODO Multilang: Go end to end with minimal example.
+- TODO Multilang: Incorporate gp_arabic into minimal example.
+
+* DAR <2018-03-14 Wed>
+Goals for Thursday:
+- TODO Multilang: Get minimal example running end 2 end.
+- TODO CQL Student: Interview Karl.
+
 * DAR <2018-03-08 Thu>
 ** Goals for Thursday set Tuesday:
 - DONE CRADA Meeting at 10 am.
