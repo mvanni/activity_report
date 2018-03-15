@@ -1,3 +1,41 @@
+* ISD BI-WEEKLY REPORT <2018-03-15 Wed>
+
+- NAME: John Morgan
+- BRANCH : MCAB
+- PERIOD ENDING: <2018-03-15 Wed>
+
+- PROJECT NAME: Multi-Task Learning for Automatic Speech Recognition  of Low Resource Languages 
+- RESEARCH QUESTION FOCUS: How can learning be transfered from one resource to another.
+** MISSION ACTIVITIES SINCE LAST REPORT:
+A Colloquium presentation was made.
+Several people provided feedback and expressed possible future collaborations.
+
+** KEY CUSTOMER/STAKEHOLDER ENGAGEMENTS:
+- ORG/POC
+
+** OUTCOME/NEXT STEPS:
+
+** UPCOMING EVENTS:
+- DATE:
+- EVENT:
+- POC/STAFF:
+
+** METRICS:
+
+- PAPER         BOOK CHAPTER         SW               CONFERENCE             DEMO  
+
+- Citation
+** OUTREACH:
+- OCOH         POST DOC                     STEM            SUMMER INTERN             USMA OTHER
+Citation (include dates, recipient, focus of effort, impact, etc.)
+Citation
+
+** TRAVEL
+NO
+-  REMARKS (Date, Location, Purpose, Organization, Who Visited, Reason, Outcome)
+		DTK_PROGRAM=espeak
+		export DTK_PROGRAM
+
 * ISD BI-WEEKLY REPORT <2018-01-31 Wed>
 
 - NAME: John Morgan
@@ -38,6 +76,8 @@ Citation
 ** TRAVEL
 NO
 -  REMARKS (Date, Location, Purpose, Organization, Who Visited, Reason, Outcome)
+		DTK_PROGRAM=espeak
+		export DTK_PROGRAM
 
 * ISD BI-WEEKLY REPORT <2018-01-18 Thu>
 
