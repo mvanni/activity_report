@@ -5,10 +5,13 @@
 آخرهم G A x i r u h u m
 آخرون G A x i r u w n a
 آخرين G A x i r i y n a
+آسف G A s i f u n
 آكل G u k i l u
 آكله G A k u l u h u
 آلاف G A l A f u n
 آلام A l G u m u
+آلة G A l a t u n
+آمل G A m i l u n
 آملين G A m i l i y n a
 أؤكد G u G a k i d u
 أباه G a b A h u
@@ -25,6 +28,7 @@
 أبي G a b i y u n
 أبيض G a b y a D u
 أتاك G a t A k i
+أتبع G u t b i E u
 أتبول G a t a b a w a l u
 أتجه G a t a j i h u
 أتحدث G a t a H a d a v u
@@ -41,25 +45,31 @@
 أتوجه G u t a w i j u h u
 أتوقف G a t a w a q a f u
 أثراً G a v r a n
+أثقل G u v q i l u
 أثناء G a v n A G u
 أجد G u j i d u
 أجر G u j r i
 أجرب G u j a r i b u
+أجرة G u j r a t u n
 أجري G u j r i y a
 أجريت G u j r i y a t
 أجل G a j l i n
 أجهل G u j a h i l u
 أحافظ G u H A f i Z u
+أحاول G u H A w i l u
 أحب G u H i b u
 أحتاج G a H t A j u
 أحتج G a H t a j u
 أحد G a H a d u n
 أحدثكم G u H d i v u k u m
+أحذر G u H a V i r u
+أحرس G a H r u s u
 أحرك G u H r i k i
 أحس G u H s a
 أحسن G a H s a n u
 أحسنهم G u H s i n u h u m
 أحكمه G u H k i m u h u
+أحمد G a H m a d u
 أحمر G a H m a r u
 أحمل G u H a m i l u
 أحيانا G a H y A n a n
@@ -83,6 +93,7 @@
 أدري G u d r i y a
 أدعوك G a d E u w k i
 أدفع G u d f a E u
+أدنى G a d n a a
 أدوخة G a d w a x a h
 أدوخني G a d w a x a n i y
 أدوية G a d w i y a t u n
@@ -97,6 +108,7 @@
 أربعة G a r b a E a t u n
 أربعين G a r b a E i y n a
 أرجو G a r j u w a
+أرخص G a r x a S a
 أردت G a r a d t u
 أرضاك G a r D A k i
 أرضاهم G a r D A h u m
@@ -109,6 +121,7 @@
 أريدها G u r i y d u h A
 أزرق G a z r a q a
 أسأل G u s G a l u
+أساء G u s A G u
 أسابيع G a s A b i y E u
 أساس G i s A s i
 أساسي G a s A s i y u n
@@ -131,6 +144,7 @@
 أسكن G u s u k u n a
 أسلحة G a s l i H a t u n
 أسلم G u s l i m u
+أسمع G u s m i E u
 أسمعك G u s m i E u k i
 أسنان G a s n A n i
 أسنانك G a s n A n u k i
@@ -143,6 +157,7 @@
 أشتريه G a $ t a r i y h i
 أشتغل G a $ t a g i l u
 أشتغلها G a $ t a g i l u h A
+أشخاص G a $ x A S u n
 أشد G u $ i d
 أشرب G u $ r i b u
 أشربها G u $ r i b u h A
@@ -168,9 +183,13 @@
 أضرب G u D r i b u
 أضطر G u D T u r a
 أضع G a D i E
+أضعت G a D a E t u
 أضعف G a D E a f u
+أطرح G u T r a H u
 أطفئ G u T f i G u
 أطفالهم G a T f A l u h u m
+أطلب G u T l a b a
+أطهر G u T a h i r u
 أطول G a T w a l u
 أظلم G a Z l a m u
 أظن G a Z u n u
@@ -180,48 +199,61 @@
 أعتقد G u E t a q a d u
 أعد G u E i d u
 أعدو G a E d u w a
+أعدّوا G a E a d d u w
 أعراقاً G a E r A q a n
 أعرف G u E r a f u
 أعرفه G u E a r i f u h u
 أعزب G a E z a b u
 أعضاء G a E D A G u n
+أعطني G u E T i n i y
 أعظم G a E Z a m u
 أعلم G u E l i m u
 أعمل G u E m i l u
 أعمى G u E m i y a
 أعود G u E a w i d u
 أعيت G a E y a t
+أعيد G u E i y d u
 أعيش G u E i y $ u
 أغضبك G u g D i b u k a
 أغلى G a g l a a
+أغن G u g n i
 أفراد G a f r A d u n
+أفضل G u f D i l u
 أفعى G a f E a a
 أفقد G u f q i d u
 أفهمك G u f h i m u k a
 أقاربي G a q A r i b i y
+أقترح G u q t u r i H a
 أقدر G u q a d i r u
 أقدرهم G u q a d i r u h u m
+أقر G u q i r u
 أقرب G a q r a b u
 أقصد G u q S i d u
 أقصده G u q S i d u h u
 أقصر G a q S a r u
+أقطن G u q a T i n u
 أقع G u q E i
 أقل G u q i l u
+أقلل G u q l i l
 أقود G a q w a d u
 أقول G a q u w l u
 أقيم G u q i y m u
 أكتوبر G u k t u w b a r
+أكثر G a k v a r u
 أكحل G a k H a l i
+أكدنا G u k d i n A
 أكرم G a k r a m a
 أكرمت G a k r a m t u
 أكل G u k u l u
 أكلت G u k i l t i
 أكلك G u k u l i k i
 أكون G u k a w i n u
+ألا G i l A
 ألتقي G u l t a q a a
 ألطاف G i l T A f u
 ألف G a l i f u n
 ألفين G a l i f a y n i
+ألقاب G a l q A b i n
 ألم G a l u m u
 أم G u m u n
 أما G u m a n
@@ -231,6 +263,7 @@
 أمانة G a m A n a t u n
 أمتار G a m t A r i n
 أمر G u m i r u
+أمرا G a m r a n
 أمراض G a m r A D u
 أمرك G a m r u k i
 أمس G a m s u
@@ -289,6 +322,8 @@
 أيضا G a y D a n
 أين G a y n a
 أيها G a y u h A
+أَتَأمُرُونَ G a t a G m u r u w n a
+أَخْفَقَ G a x f a q a
 أَذًى G a V a n
 أَعْوَدُها G a E w a d u h A
 أَمِنَ G a m i n a
@@ -301,11 +336,14 @@
 إتقاني G i t q A n i y
 إثبات G i v b A t u
 إثمه G i v m u h u
+إجاباتك G i j A b A t u k i
 إجابة G i j A b a t u n
+إجابتك G i j A b a t u k i
 إجازة G i j A z a t u n
 إجراء G u j a r A G i
 إحدى G i H d a a
 إخوة G u x u w a t u n
+إذ G i V
 إذا G i V a n
 إذن G u V u n i n
 إذهب G u V h i b u
@@ -316,9 +354,13 @@
 إسمك G u s a m i k u
 إسمي G a s m a a
 إسهال G i s h A l u n
+إشارة G i $ A r a t u n
+إشارتكم G i $ A r a t u k u m
 إصابة G i S A b a t u n
 إصابتي G i S A b a t i y
 إصعد G u S E i d u
+إضافية G i D A f i y a t u n
+إعداد G i E d A d u n
 إعصارا G i E S A r a n
 إعلام G i E l A m u n
 إلا G i l A
@@ -326,6 +368,7 @@
 إلي G i l a y a
 إليك G i l a y k i
 إليكم G i l a y k u m
+إليه G i l a y h i
 إليها G i l a y h A
 إمرأة A i m r a G a t u n
 إمش G u m $ i
@@ -341,35 +384,53 @@
 إنها G i n a h A
 إنهم G i n a h u m
 إني G i n i y
+إياك G i y A k i
 إيدز G a y d z u n
 إيطاليا G i y T A l i y a n
+إِنَّ G i n n a
 ابتلالي A i b t i l A l i y a
+ابحث G u b H a v u
 ابصق G a b S i q u
 ابن A i b n u n
 ابناء G a b n A G u
 ابنائنا G a b n A G i n A
 ابني G u b n a a
+ابيض G a b y a D u
 اتجاه A i t i j A h u n
 اتحصل G a t a H a S a l u
+اتحملها	G a t a H a m a l a h a A
 اترحم G a t a r a H a m u
+اترك G u t r a k a
+اتصل A i t a S i l
 اتعرف G a t a E a r a f u
 اتفاق A i t i f A q u n
+اتق G a t u q
 اتكلم G a t a k a l a m u
+اتى G A t a a
+اتيت G A t a y t u
+اتَّكَلْنا G i t t a k a l n A
 اثبات G i v b A t u
 اثنا A i v n a n
 اثنان A i v n A n i
 اثنتي A i v n a t a y a
 اثنين A i v n a y n i
+اجدد	G u j a d i d
 احتاج G a H t A j u
 احتجت A i H t a j t u
 احتقان A i H t i q A n i n
+احد G a H a d u n
 احدا G a H a d a n
+احذر G u H a V i r u
+احذروا A i H V a r u w A
 احمل G u H a m i l u
 احيانا G a H y A n a n
+اخبار G i x b A r i
+اخبارا G i x b A r a n
 اخر G A x i r u
 اخي G a x i y
 ادى G a d i y
 اذ G i V
+اذا G i V A 
 اذكر G u V k i r u
 ارتضيت A i r t a D a y t u
 ارهاب G i r h A b u n
@@ -382,6 +443,7 @@
 اسبوعا G i s b u w E a n
 اسبوعين G u s b u w E a y n i
 استتيست A i s t a t y a s a t i
+استخدام A i s t i x d A m u n
 استخدامها A i s t i x d A m u h A
 استخدمتها A i s t a x d a m t u h A
 استخدمها G a s t a x d i m u h A
@@ -393,14 +455,18 @@
 استغفرت A i s t a g f a r t u
 استغنى G u s t a g n a a
 استفرغت A s t a f r a g t i
+استندت A i s t a n a d t u
 استنزاف A i s t i n z A f i n
 استنشق G a s t a n $ i q u
 استنشقت A i s t a n $ a q t u
+استنوق A i s t a n w i q
 استهلك G a s t a h l i k u
 اسم A i s m u n
 اسمه A i s m u h u
 اسمها A i s m u h A
+اسمي G a s m a a
 اسهال G i s h A l
+اسوق G u s a w i q u
 اشتريت A i $ t a r a y t u
 اشتريته A i $ t a r a y t u h u
 اشتريتها A i $ t a r a y t u h A
@@ -423,22 +489,29 @@
 اعتقد G u E t a q a d u
 اعرفه G u E a r i f u h u
 اعضاء G a E D A G u n
+اعطني G u E T i n i y
+اعف G a E a f a
 اعلم G u E l i m u
 اعمل G u E m i l u
 اعيش G u E i y $ u
 افراد G i f r A d u n
+افريقيا G i f r i y q i y A
 افهم G u f h i m u
 افيرالكون A f i r A l k u w n
+اقتراحك A i q t i r A H u k i
 اقرأ G u q r a G u
 اقيم G u q i y m u
+اكبر G a k b a r u
 اكتئاب A i k t i G A b u n
 اكتوبر G u k t u w b a r
 اكثر G a k v a r u
+الآخر A l G A x i r u
 الآلام A l G A l A m u
 الآم A l G u m u
 الآن G A l A n
 الأبيض A l G a b y a D u
 الأثر A l G a v r u
+الأجرة A l G u j r a t
 الأحرار A l G a H r A r u
 الأحمر A l G a H m a r u
 الأحمق A l G a H m a q u
@@ -451,6 +524,7 @@
 الأخيرة A l G a x i y r a t
 الأدب A l G a d b i
 الأدوية A l G a d w i y a t
+الأرجح A l G a r j a H u
 الأرزاق A l G a r z A q u
 الأرض A l G a r D u
 الأزرق A l G a z r a q u
@@ -464,6 +538,8 @@
 الأسرار A l G a s r A r u
 الأسف A l G A s i f i
 الأسود A l G u s u w d u
+الأشاوس	A l G a $ a A w i s
+الأشجار A l G a $ j A r u
 الأشخاص A l G a $ x A S u
 الأشواق A l G a $ w A q u
 الأشياء A l G a $ y A G u
@@ -479,18 +555,22 @@
 الأعوام A l G a E w A m u
 الأعياد A l G a E y A d u
 الأفراد A l G a f r A d u
+الأفضل A l G a f D a l u
 الأقارب A l G a q A r i b u
 الأقدام A l G i q d A m i
+الأقربون A l G a q r a b u w n a
 الأقل A l G a q a l u
 الأكبر A l G a k b a r u
 الأكل A l G u k u l i
 الألم A l G a l a m u
 الألمانية A l G a l m A n i y a t
 الأمام A l G i m A m u
+الأماني A l G a m A n i y a
 الأمر A l G a m r u
 الأمراض A l G a m r A D u
 الأمريكي A l G a m r i y k i y u
 الأمريكية A l G a m r i y k i y a t
+الأمل A l G a m a l u
 الأمم A l G u m a m u
 الأمور A l G u m u w r u
 الأناس A l G u n A s u
@@ -516,6 +596,7 @@
 الإخوان A l G i x w A n u
 الإرهاب A l G i r h A b u
 الإسبانية A l G i s b A n i y a t
+الإسعاف A l G i s E A f u
 الإسلام A l G i s l A m u
 الإسلامي A l G i s l A m i y u
 الإسلامية A l G i s l A m i y a t
@@ -523,6 +604,7 @@
 الإصابة A l G i S A b a t
 الإطلاق A l G i T l A q u
 الإعلامية A l G i E l A m i y a t
+الإقليمي A l G i q l i y m i y u
 الإله A l G i l A h i
 الإملاق A l G a m l A q u
 الإنجليزية A l G i n j l i y z i y a t
@@ -531,18 +613,26 @@
 الإيطالية A l G i y T A l i y a t
 الإيمان A l G i y m A n u
 الإِنسَانَ A l G i n s A n a
+الا G i l A
 الابتلاع A l G i b t i l A E a
+الاتجاه A l A i t i j A h u
 الاتزان A l A i t i z A n u
+الاتصال A l A i t i S A l u
 الاتفاق A l A i t i f A q u
 الاثنين A l A i v n a y n i
 الاجتماعية A l A i j t i m A E i y a t
+الاحظ	G u l a A H i T
+الاسئلة A l G a s G i l a t
 الاسبيجيك A l A s b i y j i y k
 الاستغناء A l G i s t i g n A G
 الاستفراغ A a l G i s t i f r a A g
 الاسلامي A l G i s l A m i y u
 الاصابة A l G i S A b a t
+الاطفاء A l G i T f A G u
 الاعتذار A l A i E t i V A r u
 الاعلامي A l G i E l A m i y u
+الاقرب A l G a q r a b u
+الاقسام A l G a q s A m i
 الاكتئاب A l A i k t i G A b u
 الالتهاب A l A i l t i h A b u
 الامس A l G a m s u
@@ -554,6 +644,7 @@
 البارحة A l b A r i H a t
 البازي A l b A z i y a
 الباطل A l b A T i l u
+الباغي	A l b A g i y
 الباغي A l b A g i y
 الباكر A l b A k i r u
 البتة A l b a t a t
@@ -568,7 +659,10 @@
 البصرة A l b a S r a t
 البطر A l b a T i r u
 البطن A l b a T n u
+البعد A l b u E d u
 البعض A l b a E D u
+البعيد A l b u E a y d i
+البقاء A l b a q A G u
 البكالوريا A l b A k A l u w r i y A
 البلاء A l b a l A G u
 البلاد A l b i l A d u
@@ -582,6 +676,7 @@
 البنفسجي A l b a n a f s a j i y u
 البنيان A l b u n y A n u
 البوابة A l b i w A b a t
+البياض A l b a y A D u
 البيت A l b a y t u
 البيضاء A l b a y D A G u
 البِرَّ A l b i r r u
@@ -591,6 +686,8 @@
 التاسعة A t A s i E a t
 التالية A t A l i y a t
 التام A t A m u
+التبغ A t i b g u
+التجاري A t i j A r i y u
 التجمع G t a j a m u E
 التحالف A t a H A l u f u
 التحالفان A t a H A l u f A n i
@@ -598,13 +695,19 @@
 التحرك A t a H a r u k u
 التحضيرية A t a H D i y r i y a t
 التحية A t a H i y a t
+التدبير A t a d b i y r u
 التدخل A t a d a x u l u
 التدخين A t a d x i y n u
+التدريب A t a d r i y b u
 التراب A t u r A b u
+التسريع A t a s r i y E u
+التسلُّطُ A t t a S a l l u T u
 التعب A t a E b u
 التعرف A t a E a r u f u
 التقريب A t a q r i y b u
+التقرير A t a q r i y r u
 التقوى A t a q w a a
+التكبر A t a k a b u r u
 التمادي A t a m A d i y a
 التمر A t a m r u
 التمرة A t a m r a t
@@ -615,6 +718,7 @@
 التواضع A t a w A D u E u
 التونسية A t u w n i s i y a t
 التي A l a t i y
+التيار A t a y A r u
 التيس A t a y s u
 التيمم A l t a y a m u m
 الثالث A v A l i v u
@@ -622,9 +726,11 @@
 الثانوية A v A n a w i y a t
 الثاني A v A n i y a
 الثانية A v A n i y a t
+الثروة A v a r w a t
 الثلاث A v a l A v u
 الثلاثة A v a l A v a t
 الثوب A v a w b u
+الجاري A l j A r i y
 الجامع A l j A m i E i
 الجامعة A l j A m i E a t
 الجامعي A l j A m i E i y u
@@ -632,15 +738,18 @@
 الجانب A l j A n i b u
 الجاهل A l j A h i l u
 الجبل A l j a b a l u
+الجدار A l j i d A r u
 الجدد A l j u d u d u
 الجريحة A l j a r i y H a t
 الجريدة A l j a r i y d a t
+الجزاء A l j i z A G i
 الجزائر A l j a z A G i r u
 الجسم A l j i s m u
 الجليد A l j a l i y d i
 الجمعة A l j u m E a t
 الجمل A l j u m a l i
 الجمهورية A l j u m h u w r i y a t
+الجميع A l j a m i y E u
 الجميلة A l j a m i y l a t
 الجنة A l j u n a t
 الجنسية A l j i n s i y a t
@@ -651,6 +760,7 @@
 الجوار A l j i w A r u
 الجوال A l j a w A l u
 الجود A l j u w d u
+الجودة A l j u w d a t
 الجوي A l j a w i y u
 الجيب A l j I b u
 الجيش A l j a y $ u
@@ -658,18 +768,22 @@
 الحاد A l H A d u
 الحادة A l H A d a t
 الحادث A l H A d i v u
+الحادية G i l H A d i y a t i n
 الحال A l H A l u
 الحالات A l H A l A t u
 الحالة A l H A l a t
 الحالي A l H A l i y u
+الحاويات A l H A w i y A t u
 الحب A l H u b u
 الحبيب A l H a b i y b u
 الحجم A l H a j m u
 الحديد A l H a d i y d u
+الحديدية A l H a d i y d i y a t
 الحديقة A l H a d i y q a t
 الحر A l H u r u
 الحرب A l H a r b u
 الحرص A l H i r S u
+الحرم A l H u r a m i
 الحروب A l H u r u w b u
 الحريص A l H a r i y S u
 الحزب A l H i z b u
@@ -680,8 +794,10 @@
 الحسام A l H u s A m u
 الحسن A l H u s n
 الحسنة A l H a s a n a t
+الحصاة A l H a S A t
 الحصول A l H u S u w l u
 الحظ A l H a Z u
+الحفرة A l H u f r a t
 الحفيظة A l H a f i y Z a t
 الحق G u l H i q u
 الحقد A l H i q d u
@@ -703,7 +819,10 @@
 الحوادث A l H a w A d i v u
 الحياة A l H a y A t
 الحين A l H i y n u
+الحُمْقُ A l H u m q u
+الحِلْمُ A l H i l m u
 الخارج A l x A r i j u
+الخاص A l x A S u
 الخاصة A l x A S a t
 الخامسة A l x A m i s a t
 الخبر A l x u b a r u
@@ -711,6 +830,7 @@
 الختام A l x i t A m u
 الخدش A l x a d $ u
 الخصمين A l x a S m a y n i
+الخصوص A l x u S u w S u
 الخضراء A l x a D r A G u
 الخطايا A l x a T A y A
 الخطو A l x a T w u
@@ -726,14 +846,20 @@
 الخير A l x a y r u
 الخيل A l x i y l i
 الخيمة A l x a y m a t
+الداء A d A G u
+الدال A d A l u
 الدجاج A d a j A j u
 الدخيل A d a x i y l i
+الدراج A d u r A j u
 الدراسة A d i r A s a t
+الدراسية A d i r A s i y a t
+الدراهم A d a r A h i m u
 الدرقية A d i r q i y a t
 الدروس A d u r u w s u
 الدستوري G a d i s t u w r i y
 الدعم A d i E a m u
 الدعوة A d a E w a t
+الدفاع A d i f A E u
 الدكتوراه A d u k t u w r A t
 الدم A d a m u
 الدنيء A d a n i y G
@@ -741,6 +867,7 @@
 الدهر A d a h r u
 الدواء A d i w A G u
 الدوائر A d a w A G i r u
+الدوار A d u w A r u
 الدوام A d a w A m i
 الدول A d u w a l u
 الدولة A d a w l a t
@@ -760,18 +887,24 @@
 الرئاسي A r i G A s i y u
 الرئوي A r i G a w i y u
 الرئوية A r i G a w i y a t
+الرئيسي A r a G i y s i y u
 الرابعة A r A b i E a t
 الراحة A r A H a t
+الراديو A r A d i y u w
 الرجال A r i j A l u
 الرجل A r i j l u
+الرجوع A r u j u w E u
 الرحمن A r a H m A n
 الرحيل A r a H i y l u
 الرحيم A r a H i y m i
 الرد A r a d u
 الرسمية A r a s m i y a t
 الرضا A r i D A
+الرفق A r i f q u
+الرقم A r a q m u
 الركبة A r u k b a t
 الرمضاء A r a m D A G u
+الرواق A r i w A q u
 الرومان A r u w m A n u
 الرياح A r i y A H u
 الرياضة A r i y A D a t
@@ -779,13 +912,16 @@
 الريح A r i y H u
 الرُّكْبانُ A r r u k b A n u
 الزائدة A z A G i d a t
+الزقاق A z u q A q u
 الزكام A z u k A m u
 الزمان A z a m A n u
 الزمن A z a m i n u
 الزوال A z a w A l u
 الزوجية A z a w j i y a t
+الزيارة A z i y A r a t
 الزَّفَّة A z z a f f a p u
 السؤال A s u G A l u
+السائق A s A G i q u
 السابعة A s A b i E a t
 السادسة A s A d i s a t
 الساعات A s A E A t i
@@ -793,15 +929,23 @@
 الساعة A s A E a t
 الساق A s A q u
 الساقين A s A q a y n i
+الساكت A s A k i t u
 السحاب A s a H A b u
+السحب A s u H u b i
+السر A s u r i
 السرطان A s a r a T A n u
+السرعة A s u r E a t
 السرقة A s a r i q a t
+السريع A s a r i y E u
+السعر A s u E u r u
+السفارة A s i f A r a t
 السفر A s u f a r u
 السفلى A s u f l i y u
 السفن A s u f u n i
 السكر A s u k r i
 السكرة A s a k r a t
 السكري A s u k a r i y i
+السكوت A s u k u w t u
 السلام A s a l A m u
 السماع A s a m A E u
 السمع A s a m E u
@@ -817,10 +961,14 @@
 السيادة A s i y A d a t
 السيارة A s a y A r a t
 السياسي A s i y A s i y u
+السيد A s a y i d u
 السيدا A s i y d A
 السيطرة A s a y T a r a t
 السيف A s i y f i
+السَّرْج A s s a r j u
 الشاحنة A $ A H i n a t
+الشارع A $ A r i E u
+الشاشة A $ A $ a t
 الشام A $ A m
 الشباب A $ a b A b u
 الشبل A $ i b l u
@@ -831,7 +979,9 @@
 الشديد A $ a d i y d u
 الشر A $ a r u
 الشرر A $ a r a r u
+الشرط A $ a r T u
 الشرطة A $ u r T a t
+الشرطي A $ u r T i y u
 الشرعية A $ a r E i y a t
 الشرف A $ a r a f u
 الشرق A $ a r q u
@@ -862,36 +1012,54 @@
 الصراع A S i r A E u
 الصغير A S a g i y r u
 الصقر A S a q r u
+الصلب A S u l b u
 الصمت A S a m t u
+الصور A S u w r u
 الصيد A S a y d u
 الصيف A S a y f u
+الضامن A D A m i n i
+الضحك A D a H k u
+الضخمة A D a x m a t
+الضرب A D a r b u
 الضربات A D a r a b A t u
 الضرر A D a r a r u
 الضرغام A D i r g A m u
+الضرورة A D a r u w r a t
+الضوء A D a w G u
 الضيق A D i y q u
 الطائرة A T A G i r a t
 الطاووس A T A w u w s u
 الطبيب A T a b i y b u
+الطبية A T i b i y a t
+الطبيعي A T a b i y E i y u
+الطرف A T a r a f u
 الطريق A T a r i y q u
 الطعام A T a E A m u
 الطفل A T i f l u
 الطفولة A T u f u w l a t
+الطلاب A T u l A b u
+الطوارئ A T a w A r i G u
 الطول A T u w l i
 الطير A T a y r u
 الظالم A Z A l i m u
 الظل A Z i l u
 الظلام A Z u l A m i
+الظلم A Z u l m u
 الظهر A Z u h r u
 العائلة A l E A G i l a t
 العاجز A l E A j i z u
 العاجل A l E A j i l u
 العادات A l E A d A t u
+العاشرة A l E A $ i r a t
 العاصمة A l E A S i m a t
 العافية A l E A f i y a t
+العاقل A l E A q i l u
 العالم A l E A l i m u
 العام A l E A m u
 العباد A l E i b A d
+العتاب A l E i t A b u
 العثار A l E i v a r u
+العدل A l E a d l u
 العدو A l E a d w u
 العدوى A l E u d w a a
 العديد A l E a d i y d u
@@ -913,12 +1081,14 @@
 العظائم A l E a Z A G i m u
 العظام A l E i Z A m u
 العظيم A l E a Z i y m u
+العفة A l E i f a t
 العفريت A l E i f r i y t u
 العفو A l E a f w u
 العقد A l E u q a d i
 العقوبة A l E u q u w b a t
 العقول A l E u q u w l u
 العكس A l E a k s u
+العلاج A l E i l A j u
 العلاقة A l E a l A q a t
 العلامة A l E a l A m a t
 العلم A l E i l m u
@@ -928,6 +1098,7 @@
 العمليات A l E a m a l i y A t u
 العملية A l E a m a l i y a t
 العمود A l E a m u w d u
+العنزة A l E a n z a t
 العنكبوت A l E a n k a b u w t u
 العواد A l E u w A d u
 العون A l E a w n u
@@ -936,12 +1107,16 @@
 العينان A l E a y n A n i
 العينين A l E a y n a y n i
 العيون A l E u y u w n u
+الغابات A l g A b A t u
+الغابون A l g A b u w n
+الغالي A l g A l i y i
 الغد A l g a d u
 الغداء A l g a d A G u
 الغدة A a l g u d d a p
 الغدد A l g u w d a d
 الغرب A l g a r b u
 الغربي A l g a r b i y u
+الغرفة A l g u r f a t
 الغريب A l g u r a y b u
 الغريبة A l g a r i y b a t
 الغنى A l g i n a a
@@ -956,9 +1131,13 @@
 الفرس A l f u r s u
 الفرصة A l f u r S a t
 الفرنسية A l f i r a n s i y a
+الفريق A l f a r i y q u
 الفساد A l f a s A d u
 الفشل A l f a $ a l u
 الفصح A l f i S H u
+الفصل A l f a S l u
+الفصول A l f u S u w l u
+الفضل A l f a D l u
 الفطور A l f u T u w r i
 الفعل A l f i E l u
 الفقر A l f a q r u
@@ -975,11 +1154,13 @@
 القائد A l q A G i d u
 القادم A l q A d i m u
 القاضي A l q A D i y a
+القاعة A l q A E a t
 القامة A l q A m a t
 القانون A l q A n u w n u
 القانونية A l q A n u w n i y a t
 القاهرة A l q A h i r a t
 القدم A l q u d u m i
+القدوة A l q u d w a t
 القديم A l q a d i y m u
 القرار A l q a r A r u
 القربى A l q u r b a a
@@ -987,6 +1168,7 @@
 القرش A l q i r $ i
 القريب A l q a r i y b u
 القرية A l q a r y a t
+القسمين A l q i s m a y n i
 القصور A l q u S u w r u
 القصيدة A l q a S i y d a t
 القصيرة A l q a S i y r a t
@@ -994,10 +1176,13 @@
 القطار A l q i T A r u
 القفل A l q u f l i
 القلب A l q a l b i
+القلة A l q u l a t
+القلوب A l q u l u w b u
 القليلة A l q a l i y l a t
 القمح A l q a m H u
 القناعة A l q a n A E a t
 القهوة A l q a h w a t
+القواعد A l q a w A E i d u
 القول A l q a w l u
 القوم A l q a w m u
 القومي A l q a w m i y u
@@ -1017,6 +1202,7 @@
 الكحولية A l k u H u w l i y a t
 الكذب A l k i V b u
 الكذوب A l k a V u w b u
+الكراسي A l k a r A s i y i
 الكرام A l k i r A m u
 الكرسي A l k u r s i y u
 الكرم A l k a r m u
@@ -1024,6 +1210,13 @@
 الكفاف A l k i f A f u
 الكلام A l k a l A m u
 الكلى A l k u l i y u
+الكهرباء A l k a h r a b A G u
+الكهربائي A l k a h r a b A G i y u
+الكهربي	A l k a h r a b a y
+الكهربي	A l k a h r a b i y
+الكهربي	A l k a h r a b i y a
+الكهربي	A l k a h r a b i y i
+الكهربي	A l k a h r a b i y u
 الكيس A l k i y s u
 الكيمياء A l k i y m i y A G u
 اللؤم A l u G m u
@@ -1031,6 +1224,8 @@
 اللب A l u b u
 اللحظات A l a H a Z A t u
 اللحم A l a H m u
+اللذان	A l a V A n
+اللذان	A l a V A n i
 اللسان A l i s A n u
 اللصان A l i S A n i
 اللعاب A l u E A b u
@@ -1039,6 +1234,7 @@
 اللمفاوية A l a m f A w i y a t
 الله A l A h u
 اللون A l a w n u
+اللي A l a y
 الليبي A l i y b i y u
 الليبيين A l i y b i y i y n a
 الليث A l a y v u
@@ -1046,6 +1242,8 @@
 الليلة A l a y l a t
 المآل A l m A l u
 المأكول A l m a G k u w l u
+المأمول A l m a G m u w l u
+المؤدي A l m u G a d i y a
 المؤمن A l m u G m i n u
 المؤَدِّبُ  A l m u G a d d i b u
 الماء A l m A G u
@@ -1053,10 +1251,12 @@
 الماضية A l m A D i y a t
 المال A l m A l u
 المباشر A l m u b A $ i r u
+المبنى A l m a b n i y i
 المتجه A l m u t a j i h u
 المتجهة A l m u t a j i h a t
 المتحدة A l m u t a H i d a t
 المتر A l m i t r u
+المتعلقة A l m u t a E a l i q a t
 المتكبر A l m u t a k a b i r u
 المتمثل A l m u t a m a v i l u
 المتوارثة A l m u t a w A r a v a t
@@ -1070,48 +1270,63 @@
 المجاورة A l m u j A w i r a t
 المجتمع A l m u j t a m i E u
 المجلس A l m a j l i s u
+المحدد A l m u H a d a d u
 المحسن A l m u H s i n
 المحطة A l m a H a T a t
+المحنة A l m i H n a t
 المخاطبة A l m u x A T i b a t
 المخدرات A l m u x a d i r A t u
+المخصصة A l m u x a S a S a t
 المدة A l m u d a t
 المدخل A l m u d x a l u
 المدرسة A l m u d a r i s a t
 المدنيين A l m a d a n i y i y n a
+المدير A l m u d i y r u
 المدينة A l m u d i y n a t
 المرء A l m a r G u
 المرات A l m a r A t i
+المرافق A l m u r A f i q u
 المرة A l m u r a t
 المرحلة A l m u r a H a l a t
 المرصوص A l m a r S u w S u
 المرض A l m a r a D u
 المروءة A l m u r u w G a t
+المرور A l m u r u w r i
+المزيد A l m a z i y d u
 المسؤول A l m a s G u w l u
 المسؤولية A l m a s G u w l i y a t
 المساء A l m a s A G u
+المساحة A l m i s A H a t
 المسافرين A l m u s A f i r i y n a
 المستشفى A l m u s t a $ f a a
+المستشير A l m u s t a $ i y r u
 المستقبل A l m u s t a q b i l i
+المستنير A l m u s t a n i y r u
 المسرح A l m a s r a H u
 المسروق A l m a s r u w q u
 المشاكل A l m a $ A k i l u
 المشروب A l m a $ r u w b u
 المشروبات A l m a $ r u w b A t u
+المشكلة A l m u $ k i l a t
 المشهورين A l m a $ h u w r i y n a
 المشورة A l m a $ w a r a t
 المشيب A l m a $ i y b u
 المصابين A l m u S A b i y n a
 المصباح A l m i S b A H u
 المصطلح A l m u S T a l a H u
+المطار A l m a T A r u
 المطالعة A l m u T A l i E a t
 المطبخ A l m a T b a x u
+المطر A l m a T i r u
 المطعم A l m u T a E a m i
+المعاصر A l m u E A S i r u
 المعدة A l m u E a d a t
 المعروف A l m a E r u w f u
 المعلومات A l m a E l u w m A t u
 المغازل A l m u g A z i l u
 المفاليس A l m a f A l i y s u
 المفتاح A l m i f t A H u
+المفترض A l m u f t a r a D u
 المفصل A l m i f a S a l u
 المقابلة A l m u q A b i l a t
 المقدرة A l m u q a d i r a t
@@ -1126,6 +1341,7 @@
 الملعقة A l m i l E a q a t
 الملفاوية A l m a l f A w i y a
 المماليك A l m a m A l i y k u
+الممثل A l m u m a v i l u
 الممكن A l m u m k i n u
 الممنوحة A l m a m n u w H a t
 المناسبات A l m u n A s i b A t i
@@ -1136,6 +1352,7 @@
 المنصب A l m i n S a b i
 المنطقة A l m i n T a q a t
 المنطلق A l m u n T a l i q i
+المنفذ A l m u n a f i V u
 المهدية A l m u h d i y a t
 المهم A l m u h i m u
 المهند A l m u h a n a d u
@@ -1153,28 +1370,36 @@
 المَوتِ A l m a w t i
 المُذهَّب A l m u V a h h a b
 الناحية A n A H i y a t
+النادر A n A d i r u
 النار A n A r u
 الناس A n A s u
 النجاح A n a j A H u
 النجار A n a j A r i
 النركيلة A n a r k i y l a t
 النساء A n i s A G u
+النسخة A n u s x a t
 النصيحة A n a S i y H a t
+النظافة A n a Z A f a t
 النظر A n a Z a r u
+النعمة A n i E m a t
 النفس A n a f s u
 النهار A n a h A r u
 النوم A n u w a m i
+النيجر A n a y j a r
 النَّاسَ A n n A s a
 الهاتف A l h A t i f u
 الهدايا A l h a d A y A
 الهداية A l h i d A y a t
 الهدية A l h i d y a t
+الهليكوبتر A l h i l i y k u w b t a r i
 الهوائية A l h a w A G i y a t
 الهوارية A l h a w a A r r i y a p
+الواحد A l w A H i d u
 الواحدة A l w A H i d a t
 الوافد A l w A f i d u
 الواقفة A l w A q i f a t
 الوجبة A l w a j b a t
+الوحل A l w a H l i
 الوحيد A l w a H i y d u
 الوحيدة A l w a H i y d a t
 الودائع A l w a d A G i E u
@@ -1186,11 +1411,13 @@
 الوطن A l w a T a n u
 الوطني A l w a T a n i y u
 الوطنية A l w a T a n i y a t
+الوعد A l w a E d u
 الوعل A l w a E l u
 الوعي A l w a E y u
 الوفاة A l w a f A t
 الوفاق A l w i f A q u
 الوقت A l w a q t u
+الوقوف A l w u q u w f u
 الولايات A l w i l A y A t u
 الولاية A l w i l A y a t
 الى G i l a y a
@@ -1207,8 +1434,11 @@
 اليومي A l y a w m i y u
 اليومية A l y a w m i y a t
 الَّذِي A l l a V i y
+الْبِشْرَ A l b i $ r a
 الْخَلَق A l x a l q u
 الْمُلْك A l m u l k u
+اما G i m A
+امام G i m A m i
 امتنا G u m a t i n A
 امثال G a m v A l i
 امرأة A i m r a G a t u n
@@ -1217,23 +1447,29 @@
 ان G i n a
 انا G u n G a
 انالكون A n A l k u w n
+انت G a n t i
 انتظر G u n t a Z a r u
 انتظرت A i n t a Z a r t u
 انتفاخا A i n t i f A x a n
+انتم G a n t u m
 انتهاك A i n t i h A k u n
 انحاء G a n H A G i n
+انخرط G a n x a r i T u
 انسانية G i n s A n i y a t u n
 انسدل A i n s a d a l a
+انشاء G i n $ A G u
 انف G A n i f i
 انقطع G a n q a T i E u
 انقطعت A i n q a T a E t u
 انما G i n a m A
+اننا G i n a n A
 انني G i n a n i y
 انه G i n a h u
 انها G i n a h A
 انهم G i n a h u m
 انهيار A i n h i y A r u n
 اني G a n i y
+اهدؤوا G a h d a G u w A
 او G a w
 اواصل G u w A s i l u
 اود G a w a d u
@@ -1256,6 +1492,8 @@
 بألم b i G a l a m i n
 بأمان b i G a m A n
 بأن b i G A n i n
+بأننا b i G a n a n A
+بأنني b i G a n a n i y
 بأنه b i G a n a h u
 بأني b i G a n i y
 بأنياب b i G a n y A b i n
@@ -1275,11 +1513,16 @@
 باريس b A r i y s
 بازا b A z a n
 باسات b A s A t
+باستخدام b i A i s t i x d A m i n
+باستغلال b i A i s t i g l A l i n
+باستمرار b i A i s t i m r A r i n
 باطلا b A T i l a n
+باع b A E a
 باكرا b A k i r a n
 باكستاني b A k i s t A n i y u n
 بالآلام b i A l G A l A m i
 بالأخلاق b i A l G a x l A q i
+بالأرض b i A l G a r D i
 بالأساس b i A l G i s A s i
 بالأكاديمية b i A l G a k A d i y m i y a t
 بالألم b i A l G a l a m i
@@ -1335,6 +1578,7 @@
 بالشلل b i l $ i l a l i
 بالصدر b i A l S a d r i
 بالصفراء b i A l S a f r A G i
+بالضبط b i A l D u b T i
 بالطائرة b i A l T A G i r a t
 بالطبع b i A l T a b E i
 بالعائلة b i A l E A G i l a t
@@ -1375,11 +1619,13 @@
 باليرمو b A l i y r m u w
 باليسير b i A l y a s i y r i
 باليوم b i A l y a w m i
+بان b i G A n i n
 بباريس b i b A r i y s
 ببعض b i b a E D i n
 ببلد b i b a l a d i n
 ببيت b i b a y t i n
 بتاتا b a t A t A
+بتحت b i t a H t i n
 بتشنجات b i t a $ a n u j A t i n
 بتفاصيل b i t a f A S i y l i
 بتكرار b i t a k r A r i n
@@ -1389,7 +1635,9 @@
 بتونس b i t u w n u s
 بجانب b i j A n i b i
 بجروح b i j u r u w H i n
+بجريمة b i j a r i y m a t i n
 بجمع b i j a m E i n
+بجمعها b i j a m E i h A
 بحاجة b i H A j a t i n
 بحامل b i H A m i l i
 بحر b i H u r i n
@@ -1399,16 +1647,19 @@
 بحضر b i H a D a r i n
 بحموض b i H u m u w D
 بحموضة b i H u m u w D a p i n
+بخصوص b i x u S u w S i n
 بخطى b i x u T a a n
 بخنجر b i x a n j a r i n
 بخير b i x a y r i n
 بد b u d u n
 بدأت b a d a G t u
+بداية b i d A y a t u n
 بدرجة b i d a r a j a t i n
 بدقات b i d a q A t i
 بدمعي b i d a m E i y
 بدوخة b i d u w x a h
 بدين b i d i y n i n
+بذات b i V A t i n
 بذرة b i V u r a t i n
 بذلة b i V u l i h i
 بذلك b i V u l i k i
@@ -1419,6 +1670,7 @@
 براقش b a r A q i $ u
 برد b u r d i n
 برغبة b i r a g b a t i n
+برفقة b i r i f q a t
 برقة b i r i q i h i
 بزائد b i z A G i d i n
 بزكام b i z u k A m i n
@@ -1426,6 +1678,7 @@
 بسبب b i s a b a b i n
 بستان b u s t A n i n
 بسرعة b i s u r E a t i n
+بسعة b i s a E a t i n
 بسم b i s m i
 بسهولة b i s u h u w l a t i n
 بسوء b i s u w G i n
@@ -1457,6 +1710,7 @@
 بطني b i T u n i y
 بظالم b i Z A l i m i n
 بعائلتي b i E A G i l a t i y
+بعثه b i E v a t i n
 بعد b u E d u n
 بعشرين b i E i $ r i y n a
 بعض b a E D u n
@@ -1464,6 +1718,7 @@
 بعنبر b i E a n b a r i n
 بعود b i E u w d i n
 بعيد b u E a y d u n
+بعيدا b u E a y d a n
 بعير b i E a y r i n
 بفايروس b i f i y r w s
 بفتاة b i f a t A t i n
@@ -1471,6 +1726,8 @@
 بفيروس b i f A y r u w s i n
 بقدر b i q i d r i n
 بقليل b i q a l i y l
+بقى b i q i y i n
+بقي b i q i y i n
 بقيت b a q i y t u
 بقيتها b a q i y t a h A
 بك b a k u n
@@ -1478,6 +1735,7 @@
 بكسر b i k a s r i n
 بكسور b i k u s u w r i n
 بكل b i k u l i n
+بكم b i k u m
 بل b a l
 بلا b i l a n
 بلدنا b a l a d u n A
@@ -1487,6 +1745,7 @@
 بما b i m A
 بماء b i m A G i n
 بمائها b i m A G i h A
+بمتهم b i m u t a h i m i n
 بمدينة b i m u d i y n i h i
 بمرض b i m u r D i n
 بمرعاها b i m a r E A h A
@@ -1500,6 +1759,7 @@
 بمفردي b i m u f r a d i y
 بممارسة b i m u m A r i s a t
 بمنسم b i m a n s i m i n
+بموافاتكم	b i m u w a A f a A t i k u m
 بن b u n
 بناء b i n A G u n
 بناعل b i n A E i l i n
@@ -1532,15 +1792,19 @@
 بيض b i y D u n
 بيضاء b a y D A G u
 بين b i y n
+بينما b a y n a m A
 بَيِّنةٍ b a y i n a p i n
 بِالبِرِّ b i A l b i r r i
 بِخُفَّيْ b i x u f f a y
+بِشْرُ b i $ r u
 تأتي t a G t i y a
 تأخذين t a G x u V i y n a
 تأكل t a G k u l u
 تؤلمني t u G l i m u n i y
+تاج t A j i n
 تاجر t A j i r u
 تاريخ t A r i y x u n
+تاسعا t A s i E a n
 تبالغين t u b A l i g i y n a
 تبرز t u b r i z u
 تبرعا t a b r u E A
@@ -1548,13 +1812,19 @@
 تبع t u b i E
 تبعد t u b E i d u
 تبول t a b u w l
+تتباطأ t a t a b A T a G u
 تتجاوز t a t a j A w a z u
+تتجه t a t a j i h u
 تتحدث t a t a H a d a v u
 تتحمل t a t a H a m a l u
+تتذكر t a t a V a k u r u n
 تترددا t a t a r a d a d A
 تتعاطى t a t a E A T a a
+تتفاوض t a t a f A w u D u n
 تتكلم t a t a k a l a m u
+تتهمني t a t a h i m u n i y
 تتوقع t u t a w a q a E u
+تتوقف t a t a w a q a f u
 تثبت t u v b i t u
 تجاهه t u j A h u h u
 تجد t u j i d u
@@ -1568,6 +1838,7 @@
 تحتاج t a H t A j u
 تحته t a H t u h u
 تحدث t u H d i v u
+تحدثت t a H a d a v t u
 تحريك t a H r i y k u
 تحريكها t a H r i y k u h A
 تحصل t u H S a l u
@@ -1576,6 +1847,7 @@
 تحمد t u H a m i d u
 تحمل t u H a m i l u
 تحمله t u H a m i l u h u
+تحية t a H i y a t u n
 تخاصم t u x A S i m u
 تخف t u x i f
 تدان t u d A n u
@@ -1591,6 +1863,7 @@
 تر t a r i
 ترجمانه t a r j u m A n a h u
 ترعى t u r E i y
+ترغب t a r g a b u
 ترغبون t a r g a b u w n a
 ترك t u r k u n
 ترهبون t u r h i b u w n a
@@ -1610,6 +1883,7 @@
 تسقط t u s q i T u
 تسقني t u s q i n i y
 تسكن t u s k i n u
+تسليم t a s l i y m u n
 تسمح t u s m a H u
 تسير t u s i y r u
 تشاء t a $ A G u
@@ -1621,18 +1895,23 @@
 تشكو t a $ k u w a
 تشن t u $ i n u
 تشنجات t a $ a n u j A t u n
+تشير t u $ i y r u
 تصبح t u S b i H u
 تصبني t u S i b n i y
 تصحبه t u S H i b u h u
 تصرف t a S a r u f u n
 تصطحبه t a S T a H i b u h u
 تصطحبهم t a S T a H i b u h u m
+تصل t u S l i
 تصلحه t u S l i H u h u
+تصوروا t u S a w i r u w A
 تصيبني t u S i y b n i y
 تصيدا t a S i y d A
 تطاع t u T A E u
+تطلب t u T l a b u
 تطلقن t u T l i q n a
 تظلمون t u Z l i m u w n a
+تظن t a Z u n u
 تظنن t a Z n u n a
 تعالى t u E A l i y
 تعالي t u E A l i y
@@ -1651,17 +1930,25 @@
 تعليمه t a E l i y m u h u
 تعمل t u E m i l u
 تعملين t u E m i l i y n a
+تعود t u E a w i d u
 تعيش t u E i y $ u
+تغيير t a g y i y r u n
+تفاجأنا t a f A j a G n A
 تفاصيل t a f A S i y l u
+تفعل t a f E a l u
 تفعيل t a f E i y l u
+تفقد t u f q i d u
 تفهمني t u f h i m u n i y
+تقدمت t a q a d i m a t
 تقريبا t a q r i y b a n
+تقريرك t a q r i y r u k i
 تقصد t u q S i d
 تقصده t u q S i d u h u
 تقض t u q i D u
 تقع t u q E i
 تقعن t a q a E n a
 تقل t u q i l u
+تقلب t u q a l i b u
 تقنيات t a q n i y A t u n
 تقول t a q u w l u
 تقوم t u q a w i m u
@@ -1670,6 +1957,7 @@
 تكتم t u k a t i m u
 تكسي t u k s i y
 تكفيه t a k u f i y h i
+تكلم t u k a l i m u
 تكلمت t a k a l a m t u
 تكن t u k i n u
 تكون t u k a w i n u
@@ -1681,23 +1969,29 @@
 تلك t i l k a
 تلميذا t i l m i y V a n
 تلميذة t i l m i y V a t u n
+تم t a m a
 تمازح t u m A z i H u
+تمام t a m A m u
 تماما t a m A m a n
 تمثل t u m a v i l u
 تمردا t a m u r d a n
 تمزق t u m a z i q u
 تملك t u m l i k u
 تمنيت t a m u n i y a t
+تناس t a n A s
 تنام t u n A m u
 تناول t u n A w i l u
 تناولت t a n A w a l t u
 تنبت t u n b i t u
 تنتابني t a n t A b u n i y
+تنتظر t u n t a Z a r u
 تنسي t u n s a a
 تنظيم t a n Z i y m u n
 تنفست t a n a f a s t u
 تنفقوا t u n f i q u w A
 تنه t u n h i
+تنوون t a n w u w n a
+تنوي t u n w a a
 تهرف t u h r a f u
 تواجد t a w A j u d u
 تواجه t u w A j i h u
@@ -1705,8 +1999,10 @@
 توت t u w t i n
 توتر t a w a t u r i n
 توجد t u w j i d u
+توجهنا t u w a j i h u n A
 تورطوا t u w r i T u w A
 تورعا t a w a r a E A
+توسيع t a w s i y E u
 توقفت t a w a q a f t u
 تولى t u w l i y
 تونس t u w n u s
@@ -1726,6 +2022,8 @@
 تُعْلَمِ t u E l a m i
 تُنفِقُواْ t u n f i q u w
 ثابتة v A b i t a t u n
+ثالثا v A l i v a n
+ثامنا v A m i n a n
 ثانوي v A n a w i y u n
 ثانيا v A n i y a n
 ثانية v A n i y a t u n
@@ -1746,11 +2044,14 @@
 جارنا j A r u n A
 جالس j A l i s u n
 جالسة j A l i s a t u n
+جانب j A n i b u
 جانبا j A n i b a n
 جانتي j a A n t i y
 جانفي j A n f i y
 جاهلا j A h i l a n
 جاوز j A w a z a
+جاون	j a A w n
+جاون	j a u w n
 جبل j a b a l u n
 جبينه j a b i y n u h u
 جدا j i d a n
@@ -1763,12 +2064,14 @@
 جرى j a r y i
 جزء j u z G u n
 جزءا j u z G a n
+جزاء j i z A G i n
 جزيلا j a z i y l a n
 جسد j a s a d u n
 جسدا j a s a d a n
 جسدي j a s a d i y
 جسديا j a s a d i y a n
 جسر j i s r u n
+جسم j i s m u
 جسمي j i s m i y
 جعجعة j a E j a E a t u n
 جعلت j a E a l t u
@@ -1779,14 +2082,17 @@
 جمعه j a m a E a h u
 جميع j a m i y E u
 جميعا j a m i y E a n
+جميعهم j a m i y E u h u m
 جميل j a m i y l u n
 جميلة j a m i y l a t u n
 جناحه j u n A H u h u
+جنت j a n a t
 جنس j i n s u n
 جنسي j i n s i y u n
 جنسية j i n s i y a t u n
 جنسيته j i n s i y a t u h u
 جهامة j a h A m a t u n
+جهة j i h a t u n
 جهل j u h a l i n
 جهينة j u h a y n a t u n
 جوعان j a w E A n u n
@@ -1815,6 +2121,7 @@
 حاصد H A S i d u n
 حاضر H A D i r u n
 حاضنة H A D i n a t u n
+حافٍ H A f i n
 حال H A l u n
 حالات H A l A t u n
 حالب H A l i b u n
@@ -1823,11 +2130,15 @@
 حاليا H A l i y a n
 حامل H A m i l u n
 حان H A n a
+حاول H A w i l
+حاويات H A w i y A t u n
+حاويتين H A w i y a t a y n i
 حبل H u b i l a
 حتفه H a t f u h u
 حتى H a t a a
 حجار H i j A r u n
 حجارة H i j A r a t i n
+حجم H a j m u n
 حدث H a d i v
 حدثت H a d a v t u
 حدوث H i d u w v
@@ -1835,6 +2146,7 @@
 حديقة H a d i y q a t u n
 حذر H u V i r a
 حراس H u r A s i n
+حراك H u r A k i
 حرام H a r A m u n
 حرامي H a r A m i y u n
 حروق H u r u w q i n
@@ -1842,13 +2154,17 @@
 حزين H a z i y n u n
 حساسية H a s A s i y a t i n
 حسب H a s b i n
+حسبه H a s i b a h u
 حسن H u s n u n
+حسنا H a s a n a n
 حصاناً H i S A n a n
 حصانك H i S A n u k i
 حصل H a S a l a
 حصلت H a S a l t u
 حصوة H a S w a t u n
 حضر H u D i r a
+حظ H a Z i n
+حفرة H u f r a t u n
 حفظ H i f Z u
 حفلة H a f l a t u n
 حق H a q u n
@@ -1858,6 +2174,7 @@
 حقُّه H a q q i h i
 حك H a k u
 حكومة H u k u w m a t u n
+حل H u l a
 حلاوة H a l A w a t u n
 حلم H u l u m u n
 حله H i l i h i
@@ -1865,30 +2182,36 @@
 حلواً H u l w a n
 حمام H a m A m i n
 حمده H a m d u h u
+حمراء H a m r A G u
 حمى H u m a a n
 حنين H a n i y n u n
 حوالي H i w A l i y
 حور H u w r u n
+حول H u w i l a
 حولين H w l y n
 حي H a y u n
 حياتك H a y A t u k i
 حياته H a y A t i h i
 حياتي H a y A t i y i n
 حيث H a y v u
+حيلة H i y l a t u n
 حين H i y n u
 حيوية H a y a w i y a t u n
 حَتَّى H a t t a a
 حَمَّلْتَها H a m m a l t a h A
 حَولِكَ H a w l i k a
+حُسْنُ H u s n u
 خادمهم x A d i m u h u m
 خارجة x A r i j a t i n
 خاصة x A S a t u n
+خاطر x A T i r u n
 خافتة x A f i t a t u n
 خالة x A l u h u
 خالتك x A l a t u k i
 خالتي x A l a t i y
 خالها x A l u h A
 خالي x A l i y a
+خامسا x A m i s a n
 خانه x A n u h u
 ختم x a t m u n
 خدش x a d $ u n
@@ -1905,17 +2228,21 @@
 خصٍ x a S S i n
 خضر x u D r
 خضراوين x a D r a A w a y n
+خطأ x u T A
 خطانا x u T A n A
 خطير x a T i y r u n
 خطيرا x a T i y r a n
 خطيرة x a T i y r a t u n
+خفضت x a f u D a t
 خفيفة x a f i y f a t u n
 خلال x i l A l u
 خلفا x u l f a n
 خلق x u l q u n
+خلقت x a l u q a t
 خمرية x a m r i y i h i
 خمس x u m u s i
 خمسة x a m s a t u n
+خمسين x u m u s a y n i
 خمور x u m u w r u n
 خياله x a y A l i h i
 خير x a y r u n
@@ -1925,6 +2252,7 @@
 خَليقَةٍ x a l i y q a p i n
 خَيرًا x a y r a n
 خَيرٌ x a y r u n
+خُذْهُ x u V h u
 خُصٍّ x u S S i n
 خُلقُه x u l u q u h u
 خُلقْتَ x u l i q t a
@@ -1934,6 +2262,7 @@
 دائم d A G i m u n
 دائما d A G i m a n
 دار d A r u n
+داعش	d a A E i $
 دال d A l i n
 دخان d u x A n i
 دخلت d a x a l t u
@@ -1947,6 +2276,7 @@
 درست d a r a s t i
 درستها d a r a s t u h A
 درن d a r n u n
+دعت d a E a t
 دعم d i E a m u n
 دعني d a E n i y
 دغري d u g r i y u n
@@ -1955,6 +2285,7 @@
 دفعه d a f E i h i
 دقائق d a q A G i q u
 دقيقة d a q i y q a t u n
+دكتور d u k t u w r u n
 دليل d a l i y l u n
 دليله d a l i y l u h u
 دم d a m u n
@@ -1980,6 +2311,7 @@
 ذا V A
 ذاك V A k a
 ذقن V a q n u n
+ذكر V i k r u n
 ذكرت V a k a r t u
 ذكره V i k r u h u
 ذكي V a k i y u n
@@ -2008,19 +2340,30 @@
 رئيس r a G i y s u n
 رئيسا r a G i y s a n
 رئيسي r a G i y s i y u n
+رابعا r A b i E a n
 راحة r A H a t
+راحت r A H a t
 رادس r A d i s a
+راكبا r A k i b a n
 رب r u b u
 رباح r u b A H u n
 رباط r i b A T u n
 ربع r u b u E u
+ربك r u b u k i
+ربما r u b a m A
+ربنا r u b u n A
 ربه r u b a h u
 رجا r a j A u n
 رجال r i j A l u n
 رجل r i j l u n
+رجلا	r a j u l A
+رجلا	r a j u l a n
+رجلا	r i j l A
+رجلا	r i j l a n
 رجلا r i j l a n
 رجلي r i j l a y
 رجليه r i j l a y h i
+رحلتنا r i H l a t i n A
 رحم r a H i m i n
 رخيص r a x i y S u n
 رخيصة r a x i y S u h u
@@ -2028,6 +2371,7 @@
 رداء r i d A G i n
 ردائه r i d A G i h i
 رزقه r i z q u h u
+رسالته r i s A l a t i h i
 رسمية r a s m i y a t u n
 رسول r a s u w l u
 رسوم r i s u w m
@@ -2035,6 +2379,7 @@
 رعاية r i E A y a t u n
 رعشة r a E $ a t u n
 رغبت r a g i b t u
+رغم r a g m u
 رفضنا r u f i D n A
 رفعه r a f E i h i
 رفيق r a f i y q u n
@@ -2043,10 +2388,14 @@
 رقعت r a q a E t u
 رقم r a q m u n
 رقيقة r a q i y q a t u n
+ركاب r u k A b u n
+ركابا r u k A b a n
 ركب r u k u b i
 ركوب r u k u w b i
+رمادي r a m A d i y u n
 رمضان r a m a D A n u
 رنوكليو r i n u w k l i y u w
+رهن r a h n u n
 روما r u w m a n
 رياضة r i y A D a t
 رياضيا r i y A D i y a n
@@ -2055,10 +2404,12 @@
 ريحا r i y H a n
 ريشه r i y $ u h u
 ريما r i y m a n
+رِزْقُه r i z q u h
 زائدة z A G i d a t u n
 زائغة z A G i g a t u n
 زارع z A r i E u n
 زال z A l a
+زد z i d
 زرت z u r t u
 زرته z u r t u h u
 زرع z a r E u
@@ -2067,8 +2418,10 @@
 زلت z u l t u
 زمان z a m A n u n
 زمانه z a m A n u h u
+زملائي z u m a l A G i y
 زمني z a m n a a
 زميلتي z a m i y l a t i y
+زميلي z a m i y l i y
 زواج z a w A j u
 زوج z a w j u n
 زوجة z a w j a t
@@ -2081,20 +2434,31 @@
 سأدفع s a G u d f a E u
 سأذهب s a G a V h a b u
 سأصاب s a G u S A b u
+سأعود s a G u E a w i d u
 سأقبل s a G u q b i l u
 سأقوم s a G a q u w m u
 سأقيم s a G u q i y m u
+سأمنحك	s a G a m n a H a k
+سأمنحك	s a G a m n a H a k a
+سأمنحك	s a G a m n a H k
+سأمنحك	s a G a m n a H k a
+سأمنحك	s a G a m n a H u k
+سأمنحك	s a G a m n a H u k a
 سائق s A G i q u n
 سابحا s A b i H a n
+سابعا s A b i E a n
 سابقا s A b i q a n
 ساخن s A x i n u n
 ساخنا s A x i n a n
+سادسا s A d i s a n
+سارت s A r a t
 ساعات s A E A t i n
 ساعة s A E a t i n
 ساعتان s A E a t A n i
 ساعتين s A E a t a y n i
 ساقي s A q i y a
 ساك s A k a
+ساكون s a G u k a w i n a
 سامحني s A m a H a n i y
 سباسفون s b a s f u w n
 سبب s a b a b u n
@@ -2108,60 +2472,79 @@
 سبيل s a b i y l u n
 سبيلها s a b i y l u h A
 ست s i t u n
+ستبدي s a t u b d i y a
 ستة s i t a t u n
 ستر s u t u r u
+ستصل s a t u S a l i
 ستمئة s i t a m i G a t i n
 ستون s i t u w n a
 سحاب s a H A b i n
+سحب s u H u b u
 سر s u r u n
 سرت s u r a t
 سرطان s a r a T A n u
 سرق s a r a q a
 سرقته s a r i q a t u h u
+سرك s u r i k i
 سره s u r i h i
+سرور s u r u w r i n
 سريعا s a r i y E a n
 سريعة s a r i y E a t u n
 سطحي s a T H i y u n
 سعة s a E a t
 سعيد s a E i y d u n
 سفاسفها s a f A s i f a h A
+سقط s u q T i
+سقطت s a q a T t u
 سقوط s u q u w T u
 سقيت s a q a y t u
 سكوت s u k u w t u n
 سكين s i k i y n u n
 سلاح s i l A H i n
 سلاحا s i l A H a n
+سلامة s a l A m a t u n
 سلبت s a l i b t u
 سلك s i l k i n
 سليم s a l i y m u n
 سمحت s a m a H t i
 سمعاً s a m E a n
+سمعت s u m i E t u
 سن s i n u n
 سنة s u n a t u n
 سنتمتر s a n t i m i t r u n
 سنتيمتر s u n t i y m i t r
 سنتيمترا s a n t i y m i t r a n
 سنتين s a n t a y n
+سنستخدم s a n u s t a x d a m u
 سنوات s a n a w A t u n
 سهم s a h m u n
+سواء s a w A G u n
 سواحل s a w A H i l i
 سواه s i w A h u
 سود s u w d i n
 سوداء s a w d A G u
 سوسة s u w s a p
+سوف s a w f a
+سوى s i w a a
 سي s i y
 سيء s a y i G
+سيادة s i y A d a t u n
 سيارة s a y A r a t u n
 سيارتك s a y A r a t u k i
 سيارتي s i y A r a t i y
 سياسي s i y A s i y u n
 سياسية s i y A s i y a t u n
 سيبلى s a y u b l i y a
+سيتم s a y u t i m u
 سيجارة s i y j A r u h u
 سيجارتين s i y j A r a t a y n i
 سيد s a y i d u n
 سيدا s a y i d a n
 سيدة s a y i d a t u n
+سيدي s a y i d i y
+سيصلح s a y a S l u H u
+سيكون s a y u k a w i n u
+سيوجد s a y u w j i d u
 سُمِّيتَ s u m m i y t a
 شاء $ A G a
 شائع $ A G i E u n
@@ -2172,6 +2555,7 @@
 شاع $ A E a
 شاق $ A q u n
 شاهدت $ A h a d t u
+شاور $ A w a r a
 شاي $ A y
 شباب $ a b A b u n
 شبيهة $ a b i y h a t u n
@@ -2181,6 +2565,7 @@
 شخصياتهم $ a x S i y A t u h u m
 شخصية $ a x S i y a t u n
 شخصيتي $ a x S i y a t a y
+شر $ a r u n
 شراء $ i r A G u n
 شراءه $ i r A G u h u
 شراءها $ i r A G u h A
@@ -2199,14 +2584,17 @@
 شعر $ i E r u n
 شعرت $ a E a r t u
 شعره $ a E r u h u
+شفيت $ u f i y a t
 شقة $ u q a t u n
 شقتي $ u q a t i y
 شقيقتي $ a q i y q a t i y
 شكرا $ u k r a n
+شكرت $ a k a r t u
 شلل $ i l a l i
 شمالا $ i m A l a n
 شمالك $ i m A l i k i
 شهادة $ a h A d a t u n
+شهادتك $ a h A d a t u k i
 شهدائنا $ u h a d A G i n A
 شهدت $ a h i d t u
 شهر $ a h r u n
@@ -2222,6 +2610,7 @@
 صائب S A G i b i n
 صابون S A b u w n u n
 صاحب S A H i b u
+صادر S A d i r u n
 صالح S A l i H u
 صانك S A n a k i
 صباح S u b A H u n
@@ -2234,9 +2623,12 @@
 صدأ S a d a n
 صداع S u d A E i n
 صداقته S a d A q a t u h u
+صدر S a d r u
 صدرت S a d a r t i
+صدرك S a d r u k i
 صدري S a d r i y u n
 صدق S i d q u
+صدور S u d u w r u
 صديقتي S a d i y q a t i y
 صديقي S i d i y q i y
 صعبة S a E b a t u n
@@ -2255,6 +2647,7 @@
 صفقته S a f q a t u h u
 صفوف S u f u w f u
 صقلية S i q i l i y a t u n
+صلاح S u l A H
 صلب S u l b u n
 صلة S i l a t u n
 صنته S i n a t u h u
@@ -2276,17 +2669,23 @@
 ضبط D u b T u n
 ضد D i d u
 ضربات D a r a b A t u n
+ضربني D a r a b a n i y
 ضع D a E
 ضعف D u E f u n
 ضغط D a g T u n
 ضوؤها D a w G u h A
 ضيعتي D a y E a t i y
+ضيق D u y i q a
 ضيقة D a y i q a t u n
+طائرات T A G i r A t u n
 طابق T A b i q u n
 طابقين T A b i q a y n i
 طار T A r a
 طال T A l a
 طالب T A l i b u n
+طالبا T A l i b a n
+طالما T A l a m A
+طاولات T A w i l A t u n
 طبعا T a b E a n
 طبعت T u b i E a t
 طبق T u b i q a
@@ -2295,6 +2694,7 @@
 طبيبة T a b i y b u h u
 طحنا T u H n A
 طرابلس T a r A b l u s
+طرح T u r i H a
 طرف T a r a f u n
 طرفها T a r a f u h A
 طرفي T a r a f a y
@@ -2307,10 +2707,12 @@
 طفلا T i f l a n
 طفلي T i f l i y u n
 طفولتي T u f u w l a t i y
+طلاب T u l A b u n
 طلب T u l i b a
 طلبت T u l i b t u
 طلبنا T u l i b n A
 طليق T a l i y q u n
+طمع T a m u E a
 طول T u w l u
 طولي T u w l i y
 طويل T a w i y l u n
@@ -2328,15 +2730,20 @@
 عائلتنا E A G i l a t u n A
 عائلتي E A G i l a t i y
 عابس E A b i s u n
+عاد E A d a
 عادة E A d a t i n
 عادية E A d i y a t i n
 عار E A r u n
+عارضت E A r a D t u
 عازبا E A z i b a n
+عاشرا E A $ i r a n
+عاشور E A $ u w r
 عاصمة E A S i m a t u n
 عالية E A l i y a t u n
 عالِمٍ E A l i m i n
 عام E A m u n
 عاما E A m a n
+عامل E A m i l u n
 عامين E A m i y n a
 عامِرٍ E A m i r i n
 عانيت E A n a y t u
@@ -2356,6 +2763,7 @@
 عدوا E a d w a n
 عديد E a d i y d u
 عربية E a r a b i y a t u n
+عرض E u r i D a
 عرضه E i r D u h u
 عرف E u r i f a
 عرفت E u r i f t i
@@ -2371,6 +2779,7 @@
 عشرين E i $ r i y n a
 عصبي E u S a b i y
 عصبية E a S a b i y a t u n
+عصفور E u S f u w r u n
 عضلاتي E a D a l A t i y
 عضلة E a D l i h i
 عضلي E a D l i y
@@ -2379,6 +2788,7 @@
 عظام E i Z A m u n
 عظيم E a Z i y m u n
 عقداً E u q a d a n
+عقدنا E u q i d n A
 عقل E u q u l i n
 عقله E u q u l a h u
 عل E a l a
@@ -2387,9 +2797,11 @@
 علاقتك E a l A q a t u k i
 علامات E a l A m A t u n
 علامة E a l A m a t i n
+علاوة E i l A w a t i n
 علبة E u l b a t u n
 علبتين E i l b a t a y n i
 علة E i l a t i n
+علقنا E u l i q n A
 علمت E u l i m t u
 علمتم E u l i m t u m
 على E a l i y u n
@@ -2409,6 +2821,7 @@
 عمرك E u m r u k a
 عمره E u m r u h u
 عمل E u m i l a
+عمليا E a m a l i y a n
 عمليات E a m a l i y A t u n
 عملية E a m a l i y a t u n
 عمودي E a m u w d i y u n
@@ -2421,6 +2834,7 @@
 عندما E i n d a m A
 عنده E i n d u h u
 عندي E i n d i y
+عنز E a n z u n
 عنقك E u n q u k i
 عنه E a n h u
 عنها E a n h A
@@ -2440,6 +2854,7 @@
 عيوبه E u y u w b u h u
 عَفَّ E a f f a
 عَلَى E a l a a
+غاب g A b i
 غاربه g A r i b u h u
 غارم g A r i m
 غالبا g A l i b a n
@@ -2454,6 +2869,7 @@
 غرفة g u r f a t u n
 غض g a D u
 غضبانا g a D i b A n A
+غضبه g a D i b a h u
 غلا g u l a n
 غليظة g a l i y Z u h u
 غنى g i n a a n
@@ -2461,6 +2877,7 @@
 غير g a y r u n
 غيره g a y r u h u
 غيرها g a y r u h A
+غيري g a y r i y u n
 غَلِيظَ g a l i y Z a
 فأخبره f a G u x b i r u h u
 فأساء f a G u s A G u
@@ -2469,6 +2886,7 @@
 فأمر f a G u m i r u
 فأنا f a G a n A
 فإن f A n i n
+فإننا f a G i n a n A
 فات f A t a
 فاتح f A t i H u n
 فاتحا f A t i H a n
@@ -2482,12 +2900,15 @@
 فاصل f A S i l i n
 فاضطررت f a A i D T a r a r t u
 فالبقاء f a A l b a q A G u
+فالسؤال f a A l s u G A l u
 فالسرقة f a l s a r i q a p u
 فالصبر f a A l S a b r u
 فالصدق f a A l S i d q u
 فالمصيبة f a A l m u S i y b a t
+فالوجه f a A l w a j h u
 فانتف f a A i n t a f
 فانخرق f a A i n x a r a q a
+فانزلقت f a A i n z a l a q t i
 فتؤكل f a t u G k i l u
 فتاة f a t A t u n
 فتاكة f a t A k a t u n
@@ -2495,21 +2916,27 @@
 فترمى f a t u r m a a
 فتسألني f a t a s G a l u n i y
 فتشاهد f a t u $ A h i d u
+فتكلمنا f a t u k a l i m u n A
 فتلك f i t a l u k i
 فتهدد f a t u h a d i d u
+فحل f a H u l a
 فخذي f a x i V a i y a
 فرح f a r i H i n
 فرد f a r d u n
 فردا f a r d a n
 فردين f a r d a y n i
+فرط f a r T u n
 فرنسا f a r a n s A
 فرنسي f a r a n s i y u n
 فرنسية f a r a n s i y a t u n
+فريقي f a r i y q a y
 فساد f a s A d i n
 فصل f a S l i n
 فضرك f a D a r u k i
 فضلا f a D l a n
 فضلك f a D l u k i
+فضلكم f a D l u k u m
+فطالما f a T A l a m A
 فظيع f a Z i y E u n
 فعل f i E l u n
 فعلا f i E l a n
@@ -2529,6 +2956,7 @@
 فكن f a k u n a
 فكيه f a k a y i h i
 فلا f a l A
+فلان f u l A n u n
 فلعله f a l i E i l a t i n
 فلم f a l i m a
 فلوس f u l u w s u n
@@ -2538,14 +2966,18 @@
 فنحن f a n a H n u
 فندق f u n d u q u n
 فهذا f a h A V A
+فهمتك f a h i m t u k i
 فهو f a h u w a
 فهي f a h i y a
+فوافقنا f a w A f a q n A
 فورد f a w i r d
 فوقه f a w q u h u
 في f i y a
+فيا f a y A
 فيبقى f i y b a q i y
 فيتامين f i y t A m i y n u n
 فيتجرأ f a y a t a j a r a G u
+فيجب f a y u j i b
 فيحنق f a y a H n a q u
 فيما f i y m A
 فيمن f i y m a n i n
@@ -2555,10 +2987,14 @@
 فيينا f i y y i n A
 فَظًّا f a Z Z a n
 فَقَوِّم f a q a w w i m
+فَمَن f a m a n
 فُقِئَتْ f u q i G a t
+فِيهِ 2	f i y h i
+قائد q A G i d u n
 قابلت q A b a l t u
 قاتمة q A t i m a t u n
 قارورة q A r u w r a t i n
+قاعة q A E a t u n
 قال q A l a
 قالت q A l a t
 قامت q A m a t
@@ -2574,12 +3010,14 @@
 قد q a d
 قدر q u d i r a
 قدرة q u d r a t u n
+قدمت q u d i m t u
 قرب q u r u b i n
 قرر q a r a r a
 قررنا q a r i r n A
 قرنه q u r a n i h i
 قريب q a r i y b u n
 قريبا q a r i y b a n
+قريبون q a r i y b u w n a
 قرين q a r i y n u n
 قسط q i s T u
 قسطا q i s T a n
@@ -2594,12 +3032,15 @@
 قضى q u D i y a
 قضيت q a D a y t u
 قط q i T u n
+قطع q u T a E u n
 قف q a f a
 قل q u l
 قلب q a l b u n
+قلبت q a l a b t u
 قلبه q a l b u h u
 قلة q u l a t u n
 قلت q u l t u
+قلنا q u l n A
 قلوب q u l u w b u
 قليبية q l i y b i y A
 قليل q a l i y l u n
@@ -2620,13 +3061,25 @@
 قيادة q i y A d a t u n
 قيامي q i y A m i y a
 قيدا q a y d a n
+قيل q i y l a
+قَدِّرْ q a d d i r
+قَولٌ q a w l u n
+قُضِيَ q u D i y a
+قُل q u l
 كأس k A s i
+كأن k A n a
 كأنك k a G A n u k i n
 كاحلي k A H i l i y
 كاد k a G a d a
+كافية k A f i y a t u n
+كالأطرش k a A l G a T r a $ i
+كالإبرة k a A l G i b r a p i
 كالثوب k a A l v a w b i
+كالحادي k a A l H A d i y
 كالسلحفاة k a A l s u l a H f A t
 كالغزال k a A l g a z A l
+كالمحتمي k a A l m u H t a m i y
+كالمستجير k a A l m u s t a j i y r i
 كالنبات k a A l n a b A t i
 كالنحلة k a A l n i H l a p
 كالهر k a A l h i r i
@@ -2640,6 +3093,7 @@
 كبوة k a b w a t u n
 كبير k a b i y r u n
 كتاب k u t A b u n
+كتابة k i t A b a t
 كتب k u t u b u n
 كتم k a t m i n
 كتوما k a t u w m A i n
@@ -2651,22 +3105,27 @@
 كذاك k a V A k a
 كذبت k a V a b t u
 كذلك k a V u l i k i
+كرة k u r a t u n
 كرمه k a r u m a t i n
 كرومبيليار k r u w m b a y l y a A r
 كستانيتان k i s t A n i y a t A n
 كستنائي k a s t a n A G i y u n
 كسر k a s r i n
 كسور k u s u w r i n
+كشاهد k a $ A h i d i n
 كشفه k a $ f i h i
+كطالب k a T A l i b i n
 كفاعله k a f A E i l i h i
 كفانا k a f A n A
 كفر k u f r u n
 كفراً k u f r a n
+كفى k a f a a
 كل k u l u n
 كلام k a l A m u n
 كلاموكسيل k l A m u w k s i y l
 كلب k a l u b i n
 كلبا k a l i b a n
+كلكم k u l u k u m
 كلم k l m
 كلما k u l a m A
 كلمة k a l i m a t u n
@@ -2675,11 +3134,22 @@
 كم k a m u n
 كما k a m a n
 كمبوديا k a m b u w d i y a n
+كمبيوتر k a m b i y u w t i r u n
+كمدخل k a m u d x a l i n
+كمستشفى k a m u s t a $ f a a n
+كمن k a m i n a
+كمنطقة k a m i n T a q i h i
+كنا k u n A
+كناطح k a n A T i H i
 كنت k u n t u
 كنتَ k u n t a
+كندا k a n a d A
 كنز k a n z u n
 كنوز k u n u w z i n
 كهذا k a h A V A
+كي k a y i n
+كيبيك	k i y b i k
+كيبيك	k i y b i y k
 كيف k a y f a
 كيفية k a y f i y a t i n
 كيلو k i y l u w
@@ -2690,13 +3160,16 @@
 كيلومترات k i y l u w m i t r A t
 كَجُرْحِ k a j u r H i
 كُلٌّ k u l l u n
+كُلُّ k u l l u n
 كُنتَ k u n t a
 لآت l i G A t i n
 لأبقى l i G a b q a a
 لأدوية l i G a d w i y a t i n
 لأشبه l i G u $ b i h a
 لأكتشف l i G u k t a $ a f a
+لأمر l a G a m r u n
 لأن l i G a n a h
+لأننا l i G a n a n A
 لأنني l i G a n a n i y
 لأنه l i G a n a h u
 لأنها l i G a n a h A
@@ -2704,17 +3177,28 @@
 لأهله l i G u h i l a h u
 لأي l i G a y i n
 لإجراء l i G u j a r A G i
+لإخراج l i G i x r A j i n
 لإسهال l i G i s h A l i n
 لإيماننا l i G i y m A n i n A
 لا l A
 لاء l A G
+لابد l A b u d a
 لاحد l i G a H a d i n
 لاحظت l A H a Z t u
+لاحق l A H i q u n
 لاخترت l a A i x t a r t u
+لازلت l a G a z a l t u
+لاستعمال	l i A i s t i E m A l
+لاستعمال	l i A i s t i E m A l i
+لاستعمال	l i G i s t i E m A l
+لاستعمال	l i G i s t i E m A l i
 لاقيت l i G u q i y t a
 لامعة l i G i m a E i h i
 لاميتريز l a A m i t r i y z
+لانتظار l i A i n t i Z A r i n
+لانشاء l i G i n $ A G i
 لانلكو l A n i l k u w
+لايهزم l A y a h z i m u
 لاَنفَضُّواْ l a n f a D D u w
 لب l u b u
 لبس l u b s u
@@ -2728,11 +3212,22 @@
 لتخليص l i t a x l i y S i n
 لتدخل l i t u d x i l a
 لتسجيل l i t a s j i y l i n
+لتعاونك	l i t a E A w u n i k
+لتعاونك	l i t a E A w u n i k a
+لتعزيز l i t a E z i y z i
+لتناول l i t u n A w i l a
 لتهنأ l a t u h n A
 لتوجيه l i t a w j i y h i n
 لجرحانا l i j a r H A n A
 لجمال l i j i m A l i n
+لجميع l i j a m i y E i n
 لجهات l i j i h A t i n
+لجهاز l i j i h A z i
+لحظات	l a H a Z A t
+لحظات	l a H a Z A t i
+لحظات	l a H a Z A t i n
+لحظات	l a H a Z A t u
+لحظات	l a H a Z A t u n
 لحظات l a H a Z A t u n
 لحظة l a H Z a t u n
 لحياتك l i H a y A t u k a
@@ -2746,18 +3241,25 @@
 لديك l i d i y k i n
 لدينا l i d i y n A
 لديه l i d i y h i
+لديها l i d i y h A
 لديهم l i d i y h i m
 لذة l u V u h u
 لذلك l i V A l i k a
 لذيذة l a V i y V u h u
 لرعاية l i r i E A y a t i n
 لركب l i r u k u b i n
+لزوجتي l u z u w j a t i y
 لزيارة l i z i y A r a t
+لسان l i s A n u n
 لسانك l i s A n u k i
 لسانه l i s A n u h u
 لست l u s t u
 لسرك l i s i r r a k i
 لسره l i s i r r a h u
+لسوء l i s u w G i n
+لسيارات l i s a y A r A t i n
+لشخصين l i $ a x S a y n i
+لصا l i S a n
 لصاحبها l i S A H i b i h A
 لصيده l i S a y d i h i
 لطبق l i T a b a q i n
@@ -2774,27 +3276,43 @@
 لقرناء l i q u r a n A G i n
 لقي l a q i y a
 لك l a k i
+لكرة l i k u r a t i n
 لكل l i k u l i n
 لكلب l i k a l i b i
 لكن l a k u n a
 لكني l A k i n i y
 لكي l i k a y
+للأسف l i l G A s i f i
 للأسنان l i l G a s n A n i
 للأكاديمية l i l G a k A d i y m i y a t
 للإصابة l i l G i S A b a t
 للإقامة l i l G i q A m a t
 للارهاب l i l G i r h A b i
 للاستغناء l i l G i s t i g n A G
+للاسف l i l G A s i f i
+للانتظار l i l A i n t i Z A r i
 للبغل l i l b a g l i
 للبقاء l i l b a q A G i
 للتحالف l i l t a H A l u f i
+للتحقق l i l t a H a q u q i
 للتصدي l i l t a S a d i y
+للتوزيع l i l t a w z i y E i
 للجيش l i l j a y $ i
+للحظة l i l a H Z a t i n
+للدراج l i l d u r A j i
 للذهاب l i l V a h A b i
+للرياضة l i l r i y A D a t
 للسفر l i l s u f a r i
+للسكة l i l s i k a t
+للسكك l i l s i k a k i
+للسيارة l i l s a y A r a t
+للشحن l i l $ a H n i
+للشدائد l i l $ a d A G i d i
+للشرطة l i l $ u r T a t
 للشعب l i l $ u E a b i
 للشك l i l $ i k i
 للطبيب l i l T a b i y b i
+للطلاب l i l T u l A b i
 للغات l i l u g A t i n
 للغيّ l i l g a y i
 للقلب l i l q a l b i
@@ -2812,7 +3330,10 @@
 لمحاربة l i m u H A r i b a t
 لمدة l i m u d a t i n
 لمرافق l i m u r A f i q i n
+لمركز l i m u r a k a z i
+لمساحة l i m i s A H a t
 لمعاقل l i m a E A q i l i
+لمعاينة l i m u E A y i n a t
 لمكان l i m a k A n i n
 لمن l i m a n
 لن l a n
@@ -2835,8 +3356,10 @@
 لونك l i w a n i k i
 لونه l i w a n i h i
 لي l i y a
+ليبرفيل l y b r f y l
 ليبيا l i y b i y a n
 ليت l a y t a
+ليخرج l i y u x r i j a
 ليخفي l i y u x f i y a
 ليس l i y s u n
 ليست l a y s a t
@@ -2845,14 +3368,19 @@
 ليفيرلكو l i y f i y r a l k u w
 ليقطع l i y u q T i E a
 ليكسرها l i y u k a s s i r a h A
+ليكون l i y u k a w i n a
+ليلا l a y l a n
 ليلة l a y l a t u n
 ليلى l a y l i y u n
+لَن l a n
 لَيَطغَى l a y a T g a a
 لِرِجْلِكَ l i r i j l i k a
 مأمون m a G m u w n
 مؤتمن m u G t a m a n u n
+مؤسسات m u G a s i s A t u n
 مؤلمة m u G l i m a t u n
 مئة m i G a t u n
+مئتين m i G a t a y n i
 ما m A
 ماء m A G u n
 مائلٍ m A G i l i n
@@ -2860,10 +3388,12 @@
 ماذا m A V A
 مارس m A r i s
 مازال m A z A l a
+ماضون m A D u w n a
 مال m A l u
 مالك m A l i k u n
 مالوا m A l u w A
 مالي m A l i y u n
+ماهو m A h u w a
 ماهي m A h i y u n
 ماي m A y
 مباريات m u b A r a y A t u n
@@ -2873,9 +3403,12 @@
 مت m u t u
 متأكد m u t a G a k i d u n
 متأكدا m u t a G a k i d a n
+متاحة m u t A H a t u n
 متجه m u t a j i h u n
+متجهة m u t a j i h a t u n
 متجول m u t a j a w i l u n
 متخدرات m u t a x a d i r A t i
+متخصصة m u t a x a S i S a t u n
 متر m i t r i n
 متران m i t r A n i
 مترجلا m u t a r a j i l a n
@@ -2886,6 +3419,7 @@
 متفاوتة m u t a f A w i t a t u n
 متقدمين m u t a q a d i m i y n a
 متقطع m u t a q a T i E u n
+متن m a t n i n
 متهورة m u t a h a w i r u h u
 متوارثة m u t a w A r a v u h u
 متوجه m u t a w a j u h u
@@ -2894,10 +3428,13 @@
 متوسطة m u t a w a s i T a t u n
 متى m a t a a
 مثل m u v u l u
+مثلما m i v l a m A
 مثله m u v u l u h u
 مجروح m a j r u w H u n
 مجروحا m a j r u w H a n
 مجروحة m a j r u w H u h u
+مجمل m u j m i l i
+مجموعة m a j m u w E a t u n
 محافظ m u H A f i Z u
 محاولة m u H A w i l a t u n
 محتاج m u H t A j u n
@@ -2910,7 +3447,11 @@
 محطة m a H a T a t u n
 محل m a H l u n
 محمد m u H a m a d u n
+محول m u H a w i l i n
+مختصة m u x t a S a t i n
 مخدرات m u x a d i r A t u n
+مخرج m u x r i j u n
+مخصص m u x a S a S u n
 مخَلَّع m u x a l l a E u n
 مدة m u d a t u n
 مدرسا m u d a r i s a n
@@ -2922,6 +3463,7 @@
 مدنين m i d n i y n
 مدينة m u d i y n a t u n
 مر m u r u n
+مرآة m u r A h u
 مرات m a r A t i n
 مرارة m a r A r a t i n
 مرافق m u r A f i q u n
@@ -2938,17 +3480,26 @@
 مرض m u r D i n
 مرضيا m u r D i y a n
 مرعبا m u r E i b a n
+مركز m u r a k a z u n
+مروع m u r a w i E u n
+مروعا m u r a w i E a n
 مريحة m u r i y H a t i n
 مريض m a r i y D u n
 مريع m u r i y E u n
 مريم m a r y a m
 مساء m a s A G u
 مساءا m a s A G A
+مساحات m i s A H A t u n
+مساحة m i s A H a t u n
+مسار m a s A r u n
 مساعدا m u s A E i d a n
+مساعدة m u s A E i d a t u n
+مساعدتك m u s A E i d a t u k i
 مسافر m u s A f i r u n
 مسافرا m u s A f i r a n
 مساوئ m a s A w i G u
 مستبعد m u s t a b E a d u n
+مستخدمة m u s t a x d i m a t a n
 مستشفى m u s t a $ f a a n
 مستصغر m u s t a S g i r
 مستعجل m u s t a E j i l u n
@@ -2963,6 +3514,7 @@
 مسمى m u s a m a a n
 مسود m u s w a d u n
 مسيحية m a s i y H i y a t u n
+مسيرة m u s a y i r a t i n
 مشاركتنا m u $ A r i k a t u n A
 مشاعل m a $ A E i l u
 مشاكل m a $ A k i l u
@@ -2993,7 +3545,9 @@
 مضاعف m u D A E i f u n
 مضى m u D i y i n
 مطره m a T i r i h i
+مطعم m u T a E a m i n
 مع m a E u
+معاتبة m u E A t a b a t i n
 معالم m a E A l i m u
 معالي m a E A l i y a
 معان m u E A n i n
@@ -3008,18 +3562,22 @@
 معك m a E u k i
 معلم m u E a l i m i n
 معلما m u E a l i m a n
+معنا m a E u n A
 معنى m a E n i y u n
 معه m a E u h u
 معهم m a E u h u m
 معي m i E a a
 معين m u E i y n i n
 معينة m u E i y n a t u n
+مغادرة m u g A d i r a t
 مفتاح m i f t A H u
 مفقود m a f q u w d i n
+مفيدة m u f i y d a t u n
 مقاتلينا m u q A t i l i y n A
 مقال m u q A l u n
 مقام m u q A m u n
 مقتبل m u q t a b a l u
+مقتل m a q t a l u
 مقدم m u q a d i m u n
 مقلي m u q i l i y
 مقياس m i q y A s u
@@ -3027,11 +3585,19 @@
 مكان m a k A n u n
 مكتب m a k t a b u n
 مكسبة m u k s i b a t u n
+مكعب m u k a E a b u n
+ملاحظات m u l A H i Z A t u n
+ملاحم	m a l a A H i m
+ملاحم	m a l a A H i m a
+ملاحم	m a l a A H i m u
 ملح m u l i H u n
+ملعب m a l E a b u n
+ملك m u l k u n
 ملكت m a l a k t u
 ملكتك m a l i k a t u k a
 ملكته m a l i k a t u h u
 ملكتها m a l i k a t u h A
+مما m i m A
 ممتاز m u m t A z u n
 ممتع m u m t i E u n
 ممتلئ m u m t a l i G u n
@@ -3051,12 +3617,15 @@
 منحصر m u n H a S i r u n
 منذ m u n V u u n
 منزلنا m u n z a l u n A
+منزلهم m u n z a l u h u m
 منزلي m u n z a l i y
 منصب m u n S a b i n
+منطقة m i n T a q a t u n
 منطقي m i n T a q i y u n
 منعطفا m u n E a t i f a n
 منقطع m u n q a T i E u n
 منك m i n k i
+منكم m i n k u m
 منه m u n h i n
 منها m i n h A
 منهم m i n h u m
@@ -3081,6 +3650,7 @@
 موقع m u w a q i E u n
 موكل m u w a k i l u n
 مولع m u w l a E u n
+ميتين m a y i t a y n i
 ميزان m i y z A n u
 ميل m i y l i n
 ميلا m i y l a n
@@ -3090,6 +3660,7 @@
 ميلادي m i y l A d i y
 ميلان m y l A n
 مُبَرَّأً m u b a r r a G a n
+مُتْخَمٌ m u t x a m u n
 مُجيرِ m u j i y r i
 مِثقَالَ m i v q A l a
 مِمَّا m i m m A
@@ -3099,18 +3670,32 @@
 نابض n A b i D u n
 ناتج n A t i j u n
 نارا n A r a n
+نازلا n A z i l a n
 ناصح n A S i H u n
 ناصعة n A S i E u h u
+نام n A m i n
 نبرة n a b r a t
 نبعد n u b E i d u
+نبقى n u b q i y
 نتبادل n a t a b A d a l u
+نتوقع n u t a w a q a E u
+نتوقف n a t a w a q a f u
 نتيجة n a t i y j a t u n
+نحتاج n a H t A j u
+نحترم n a H t a r i m u
+نحصل n u H S a l u
+نحن n a H n u
+نحو n a H w u n
 نخن n u x n i
 نديما n a d i y m a n
 نرغب n a r g a b u
+نرى n u r a a
+نزل n a z i l a
 نزلة n a z l a t
 نزور n u z a w i r u
 نزيف n a z i y f i n
+نستخدم n u s t a x d a m u
+نسخة n u s x a t u n
 نسمح n u s m a H u
 نسيج n a s i y j i
 نشعر n u $ E i r u
@@ -3119,27 +3704,35 @@
 نصف n i S f u n
 نصيب n a S i y b u n
 نصيحة n a S i y H a t i n
+نضيف n u D i y f u
 نطح n u T i H
+نطمئن n u T a m G i n u
 نظام n i Z A m u n
 نظرا n a Z a r a n
 نظيفة n a Z i y f a t u n
+نعرض n u E r i D u
 نعم n u E m i
 نعمة n i E m a t u n
+نفاجأ n u f A j a G u
 نفس n a f s u
 نفسه n a f s u h u
 نفسها n a f s u h A
 نفسي n a f s i y
 نفعك n a f E u k i
+نفعل n a f E a l u
 نقداً n a q d a n
 نقمة n i q m a t u n
 نكد n u k d i
 نلتقي n u l t a q a a
+ننتهز n a n t a h i z u
 ننجح n u n j i H u
 ننوي n u n w a a
 نواجه n u w A j i h u
+نود n u w d i
 نور n u w r i n
 نوع n a w E u n
 نوعا n a w E a n
+نوعية n a w E i y a t u n
 نوفمبر n u w f i m b i r
 نوم n a w m i n
 نيس n i y s
@@ -3147,9 +3740,13 @@
 نَفسٍ n a f s i n
 هؤلاء h A G u l A G i
 هاتف h A t i f i n
+هاتفك h A t i f u k i
+هاتفيا h A t i f i y a n
 هان h A n a
 هانئاً h A n i G a n
 هانك h A n a k i
+هبوط h u b u w T u
+هدد h a d a d a
 هدفنا h a d a f u n A
 هذا h A V A
 هذان h A V A n i
@@ -3158,6 +3755,7 @@
 هل h a l
 هم h u m
 هما h u m A
+همه h a m u h u
 هنا h u n A
 هناك h u n A k a
 هنالك h u n A l i k a
@@ -3167,17 +3765,22 @@
 هواك h u w A k i
 هواياتي h i w A y A t i y
 هي h i y a
+هيهات h a y h A t
 و w a
 وآخر w a G A x i r u
 وآخرين w a G A x i r i y n a
+وآلياته w a G A l i y A t u h u
 وأبدا w a G A b i d a n
 وأبناؤها w a G a b n A G u h A
 وأبي w a G A b i y
 وأتصور w a G a t a S a w a r u
 وأجمل w a G u j m i l u
 وأحب w a G u H i b u
+وأحسن w a G u H s i n u
+وأحيانا w a G a H y A n a n
 وأخبار w a G a x b A r u
 وأخوتي w a G u x u w a t i y
+وأخيرا w a G a x i y r a n
 وأخيها w a G a x i y h A
 وأدوخه w a G a d w u x a p
 وأدى w a G a d i y
@@ -3185,15 +3788,21 @@
 وأربعة w a G a r b a E a t u n
 وأربعون w a G a r b a E u w n a
 وأربعين w a G a r b a E i y n a
+وأرتفع w a G a r t a f i E u
+وأرجو w a G a r j u w a
 وأريد w a G u r i y d u
 وأستنشق w a G a s t a n $ i q
 وأسلحة w a G a s l i H a t u n
 وأشعر w a G u $ E i r u
+وأشهد w a G u $ h i d u
 وأصدقائي w a G a S d i q A G i y
 وأظن w a G a Z u n u
+وأعتقد w a G u E t a q a d u
 وأعدوا w a G u E i d u w A
 وأعز w a G u E z a
+وأعضاء w a G a E D A G u n
 وأعوام w a G a E w A m u n
+وأقرينا w a G a q r i y n A
 وألف w a G a l i f u n
 وأمام w a G i m A m a
 وأمنية w a G a m n i y a t u n
@@ -3202,35 +3811,51 @@
 وأنا w a G a n A
 وأنت w a G a n t i
 وأهلي w a G a h l i y u n
+وأو w A w u n
 وأوهى w a G u w h A
+وأي w a G a y u n
 وإثنين w a v n i y n
 وإخوتي w a G i x w a t i y
 وإذا w a G i V A
 وإن w a G i n a
 وإنما w a G i n a m A
+وإنها w a G i n a h A
+وإني w a G a n i y
+وإيمانا w a G i y m A n a n
 وابن w a G u b i n u
 وابني w a G u b n a a
 واتمنى w a G a t a m a n a a
 واثنان w a A i v n A n i
 واثنتي w a v n a t a y
 واثنين w a A i v n a y n i
+واجتثاثه w a A i j t i v A v u h u
+واجتماع w a A i j t i m A E u n
+واجنبية w a G a j n a b i y a t u n
 واحتقان w a A i H t i q A n u n
 واحد w A H i d u n
 واحدا w A H i d a n
 واحدة w A H i d a t u n
 واحذر w a G u H a V i r u
+واحفظ w a G u H f i Z u
 واختناق w a A i x t i n A q u n
+واذا w a G i V A
 وارميني w a G i r m i y n i y
 واستجابة w a A i s t i j A b a t i n
 واستراتيجية w a G i s t r A t i y j i y a t i n
+واستشعارا w a A i s t i $ E A r a n
+واستغرب w a A i s t a g r a b a
 واستنشقت w a A i s t a n $ a q t u
 واسلامية w a G i s l A m i y a t u n
 واشترى w a A i $ t a r a a
 واشتكى w a G u $ t a k a a
 واشرح w a G u $ a r i H u
+واصلي w a G u S l i y
+واعتبار w a A i E t i b A r u
 واقتصادية w a A i q t i S A d i y a t u n
 واقعي w A q i E i y u n
 واقف w A q i f u n
+والآن w a A l G A n u
+والأحذية w a A l G a H V i y a t
 والأخلاقية w a A l G a x l A q i y a t
 والألمانية w a A l G a l m A n i y a t
 والأهلون w a A l G a h l u w n a
@@ -3241,8 +3866,11 @@
 والإيطالية w a A l G i y T A l i y a t
 والاجتماعية w a A l A i j t i m A E i y a t
 والاسبانية w a A l G i s b A n i y a t
+والاسلامية w a A l G i s l A m i y a t
+والاعضاء w a A l G a E D A G u
 والاقتتال w a A l A i q t i t A l u
 والالتهاب w a A l G i l t i h A b u
+والامتثال w a A l A i m t i v A l u
 والانتصار w a A l A i n t i S A r u
 والانجليزية w a A l G i n j l i y z i y a t
 والانضمام w a A l A i n D i m A m u
@@ -3259,6 +3887,7 @@
 والتي w a A l a t i y
 والثالث w a A l v A l i v u
 والثمانين w a A l v a m A n i y n a
+والثوار w a A l v u w A r u
 والجوع w a A l j u w E u
 والحفاظ w a A l H u f A Z u
 والحمد w a A l H a m d u
@@ -3269,17 +3898,22 @@
 والدي w A l i d i y
 والذل w a A l V u l u
 والذي w a A l a V i y
+والذين w a A l a V i y n a
 والرب w a A l r u b u
 والربع w a A l r u b u E u
 والروسية w a l r u w s i y a t
 والسلام w a A l s a l A m u
 والسن w a A l s i n u
 والسياسية w a A l s i y A s i y a t
+والشعب w a A l $ u E a b u
 والشعر w a A l $ i E r u
 والصدق w a A l S i d q u
+والصعوبات w a A l S u E u w b A t u
 والصلاة w a A l S a l A t
 والصلاحيات w a A l S a l A H i y A t u
 والصينية w a l S i y n i y a t
+والطاولات w a A l T A w i l A t u
+والعالم w a A l E A l i m u
 والعربية w a A l E a r a b i y a t
 والعز w a A l E i z u
 والعشاء w a A l E i $ A G u
@@ -3288,10 +3922,12 @@
 والعطش w a A l E a T i $ u
 والعمل w a A l E a m a l u
 والفرنسية w a A l f a r a n s i y a t
+والفصول w a A l f u S u w l u
 والفضة w a A l f i D a t
 والفقر w a A l f a q r u
 والفلافل w a A l f a l A f i l u
 والق w a G a l a q u
+والقاضية w a A l q A D i y a t
 والكذب w a A l k i V b u
 والكلام w a A l k a l A m u
 والكنيسة w a A l k a n i y s a t
@@ -3299,39 +3935,56 @@
 واللغة w a A l l u g a t
 والله w a A l l A h u
 واللوجستي w a A l l u w j i s t i y u
+والمادة w a A l m A d a t
 والمال w a A l m A l u
 والمدرسة w a A l m u d a r i s a t
+والمرسلين w a A l m u r s i l i y n a
 والمستشار w a A l m u s t a $ A r u
 والمسلسلات w a A l m u s a l s a l A t u
 والمشاكل w a A l m a $ A k i l u
 والمشي w a A l m a $ y u
 والممرضة w a A l m u m a r i D a t
 والموسيقى w a A l m u w s i y q i y
+والنخب w a A l n u x a b u
 والنصف w a A l n i S f u
+والنظارات w a A l n a Z A r A t u
 والوضيع w a A l w a D i y E u
 والوطن w a A l w a T a n u
 وان w a G i n a
 وانا w a G a n A
 وانتم w a G a n t u m
+وانطلاقا w a A i n T i l A q a n
+وانها w a G i n a h A
+واي w a G a y u n
 وبالآمال w a b i A l G A m A l i
 وبالأخص w a b i A l G a x a S i
 وبالتحديد w a b i A l t a H d i y d i
 وبالتشاور w a b i A l t a $ A w u r i
+وبالتوازي w a b i A l t a w A z i y
 وبالعربية w a b i A l E a r a b i y a t
 وبالفعل w a b i A l f i E l i
+وبالنسبة w a b i A l n i s b a t
 وبداية w a b i d A y a t
 وبذلك w a b i V A l i k a
 وبرغبة w a b i r a g b a t i n
 وبركاته w a b a r a k A t u h u
+وبعدها w a b u E d a h A
 وبعض w a b a E D u n
+وبعلم w a b i E i l m i n
+وبقول w a b u q u w l u n
 وبكى w a b i k a y i n
+وبناء w a b i n A G u n
 وبنت w a b i n t u n
 وبهار w a b i h A r i n
 وبيتي w a b a y t i y u n
 وتأتي w a t a G t i y a
+وتأكيدا w a t a G k i y d a n
 وتبديل w a t a b d i y l u n
+وتحاوروا w a t u H A w i r u w A
+وتدخل w a t u d x i l u
 وتدخين w a t a d x i y n u n
 وتذهب w a t u V h i b u
+وترحما w a t u r a H i m A
 وتستمتع w a t a s t a m t i E u
 وتسعا w a t u s u E a n
 وتسعمئة w a t i s E u m i G a p
@@ -3342,8 +3995,16 @@
 وتصيبني w a t u S i y b u n i y
 وتضع w a t u D i E
 وتعب w a t a E b u
+وتعظم w a t u E Z i m u
+وتفعيل w a t a f E i y l u
+وتم w a t a m a
+وتمترسه	w a t a m a t r i s i h i
+وتمترسه	w a t a m a t r u s i h i
+وتمكين w a t a m k i y n u
 وتوقفت w a t a w a q a f t i
+وتيسير w a t a y s i y r i
 وتَعْدِلُ w a t a E d i l u
+وثق w u v u q u n
 وثلاث w a v a l A v u
 وثلاثة w a v a l A v a t u n
 وثلاثون w a v a l A v u w n a
@@ -3356,7 +4017,9 @@
 وجاءت w a j A G a t
 وجب w a j u b u
 وجدتني w a j u d t i n i y
+وجنوبا w a j a n u w b a n
 وجه w u j i h a
+وجهاز w a j i h A z i
 وجهه w a j h i h i
 وجيزة w a j i y z a t u n
 وحتى w a H a t a a
@@ -3376,6 +4039,7 @@
 وخيم w a x i y m u
 ودخانا w a d u x A n a n
 ودل w a d a l u n
+ودليل w a d a l i y l u n
 ودماء w a d i m A G u
 ودمع w a d a m E u n
 ودواء w a d i w A G u n
@@ -3384,8 +4048,12 @@
 وذقن w a V a q n u n
 وذكرت w a V a k a r t i
 وذلك w a V A l i k a
+وذى w a V i y
+ورأوا w a r a G a w A
+ورأيته w a r A y a t u h u
 وراء w a r A G u
 وراءها w a r A G u h A
+وربما w a r u b a m A
 ورحمة w a r a H m a t u n
 ورد w i r d i n
 ورفيق w a r a f i y q i n
@@ -3395,6 +4063,7 @@
 وزوجها w a z a w j u h A
 وزوجي w a z a w j i y
 وزير w a z i y r u n
+وسأحاول w a s a G u H A w i l u
 وساقي w a s A q i y a
 وسبعة w a s a b E a t u n
 وسبعون w a s a b E u w n a
@@ -3411,19 +4080,27 @@
 وسمك w a s u m k u n
 وسمي w a s u m i y a
 وسهر w a s u h a r u
+وسيادتك w a s i y A d a t u k i
 وسيقتصر w a s a y a q t a S i r u
 وسيقوم w a s a y a q u w m u
 وسيلة w a s i y l a t u n
+وشارك w a $ A r i k
 وشاي w a $ A y
 وشرب w a $ u r b u
+وشرف w a $ a r u f a
+وشكرا w a $ u k r a n
 وشوارب w a $ a w A r i b u
 وشواربه w a $ a w A r i b u h u
 وصلت w a S a l t u
+وضعها w a D E u h A
+وضواحيها w a D a w A H i y h A
+وطلبنا w a T u l i b n A
 وطننا w a T a n u n A
 وطنهم w a T a n u h u m
 وظهري w a Z u h r i y u n
 وظيفة w a Z i y f a t u n
 وعادة w a E A d a t i n
+وعبر w a E i b a r u
 وعتادها w a E a t A d u h A
 وعدوكم w a E a d w u k u m
 وعسكرية w a E a s k a r i y a t u n
@@ -3432,13 +4109,17 @@
 وعقل w a E u q u l i n
 وعلى w a E a l i y u n
 وعن w a E a n
+وعند w a E i n d u
+وعندما w a E i n d a m A
 وعيد w a E i y d u n
 وغرابة w a g a r A b a t u n
 وغربا w a g a r b a n
 وغزير w a g a z i y r u n
 وفاة w a f A t
+وفترة w a f a t r a t
 وفقك w i f q u k i
 وفقنا w u f i q n A
+وفك w a f a k u n
 وفهمت w a f u h i m a t
 وفوق w a f a w q u
 وفى w a f i y a
@@ -3447,16 +4128,25 @@
 وقت w a q t u n
 وقد w a q a d
 وقراءة w a q u r A G u h u
+وقصفت w a q u S i f t u
 وقع w u q i E a
 وقعا w u q i E A
 وقليلا w a q a l i y l a n
+وقوع w u q u w E u
 وقيادة w a q i y A d a t
+وكأن w a k A n a
+وكان w a k A n a
+وكانت w a k A n a t
+وكذلك w a k a V A l i k a
+وكل w a k u l u n
 وكلنا w a k u l u n A
 وكناتها w a k n a t i h A
 وكيف w a k a y f a
 ولا w a l A
+ولابد w a l A b u d a
 ولادتي w i l A d a t i y
 ولاية w i l A y a t u n
+ولترسيخ w a l i t a r s i y x i n
 ولحما w a l i H u m A
 ولد w u l i d a
 ولدت w u l i d t i
@@ -3468,23 +4158,34 @@
 ولست w a l u s t u
 ولشواربها w a l i $ a w A r i b i h A
 ولعب w a l u E a b u n
+ولعلني w a l i E a l i n i y
+ولفظة w a l i f a Z i h i
 ولكل w a l i k u l i n
 ولكن w a l a k u n a
+ولكنها w a l A k i n a h A
+ولكنهم w a l A k i n a h u m
 وللأرض w a l i l G a r D i
+وللأمم w a l i l G u m a m i
 وللدهر w a l i l d a h r i
 ولم w a l a m
+ولمراعاة w a l i m u r A E A t i n
+ولمعرفة w a l i m a E r i f a t i n
 ولمن w a l i m a n
 ولن w a l a n
 وله w a l a h u
 ولو w a l a w
 ولوقف w a l i w a q f i n
 ولي w a l i y u n
+وليبيا w a l i y b i y a n
 وليته w a l i y a t h u
 وليس w a l i y s u
 وليست w a l a y s a t
+ومؤسسات w a m u G a s i s A t u n
 وما w a m A
 وماذا w a m A V A
 ومتطورة w a m u t a T a w i r a t u n
+ومتينة w a m a t i y n a t u n
+ومجالس w a m a j A l i s i
 ومدارسهم w a m a d A r i s u h u m
 ومر w a m u r u n
 ومرض w a m a r a D u
@@ -3494,16 +4195,22 @@
 ومعدات w a m u E a d A t u n
 وملعقة w a m i l E a q a t u n
 ومن w a m i n
+ومنذ w a m u n V u u n
+ومهما w a m u h i m a n
+ونتائجها w a n a t A G i j u h A
 ونتحد w a n a t a H i d u
 ونحن w a n a H n u
 ونريد w a n u r i y d u
 ونزيف w u n a z i y f
+ونسأل w a n u s G a l u
 ونصف w a n i S f u n
+ونطمئن w a n u T a m G i n u
 ونظيفة w a n a Z i y f u h u
 ونقول w a n a q u w l u
 ونكرر w a n u k a r i r u
 ونهاية w a n i h A y a t
 ونيابة w a n i y A b a t i n
+ونيس w a n i y s
 وهذا w a h A V A
 وهذه w a h A V i h i
 وهل w a h a l
@@ -3514,23 +4221,35 @@
 وهي w a h i y a
 وواحد w a w A H i d u n
 وواسطة w a w A s i T a t u n
+ووافقوا w a w A f a q u w A
+ووصل w a w a S a l a
+ووضع w a w u D i E a
 ووعر w a w a E r u n
 وولد w a w u l i d a
+ويأتون w a y a G t u w n a
 ويأكل w a y a G k u l u
 ويبغض w a y u b g i D u
 ويبقى w a y u b q i y
+ويتم w a y u t i m u
 ويتمدد w a y a t a m a d a d u
 ويجمعنا w a y u j m i E u n A
+ويحرص w a y a H r i S u
 ويرونه w a y a r u w n a h u
 ويسعى w a y a s E a a
 ويطلب w a y u T l a b u
+ويعبر w a y u E a b i r u
+ويعرج w a y u E r i j u
 ويفسد w a y u f s i d u
 ويفطر w a y u f T i r u
 ويفقده w a y u f q i d u h u
+ويمكن w a y u m k i n u
 ويندم w a y a n d a m u
 ويهدم w a y u h a d i m u
 ويوطأ w a y a u w T a G u
 وَتَنسَونَ w a t a n s a w n a
+وَجُرْحُ w a j u r H u
+وَظُلْمُ w a Z u l m u
+وَلَو w a l a u w
 وَمَغفِرَةُ w a m a g f i r a t u
 وُدَّهُ w u d d a h u
 وُدُّهُمْ w u d d u h u m
@@ -3550,17 +4269,20 @@
 يبطل y a b T u l u
 يبقى y u b q i y a
 يبلغ y u b l i g u
+يبني y u b n a a
 يتبرز y a t a b a r a z u
 يتبول y a t a b a w a l u
 يتجاوز y a t a j A w a z u
 يتحدث y a t a H a d a v u
 يتحدثها y a t a H a d d a v u h a A 
+يترجم y u t a r j i m u
 يتركك y u t a r i k u k a
 يتسبب y a t a s a b a b u
 يتصرف y a t a S a r a f u
 يتعلق y a t a E a l a q u
 يتقن y u t q i n u
 يتكلما y a t a k a l a m A
+يتم y u t i m u
 يتمنى y u t i m u n i y
 يتناول y a t a n A w a l u
 يتوغل y a t a w a g a l u
@@ -3575,7 +4297,10 @@
 يجهلك y u j a h i l u k a
 يجيء y a j i y G u
 يحب y u H i b u
+يحتاج y a H t A j u
+يحترم y a H t a r i m u
 يحدث y u H d i v u
+يحزم y u H a z i m u
 يحسب y u H s a b u
 يحسن y u H s i n u
 يحسنه y u H s i n u h u
@@ -3590,6 +4315,7 @@
 يخرج y u x r i j u
 يخشون y u x a $ u w n a
 يخشى y u x a $ i y
+يخلق y u x l a q u
 يد y a d u n
 يداوي y u d A w i y a
 يداويها y u d A w i y h A
@@ -3598,10 +4324,13 @@
 يدخنون y u d x i n u w n a
 يدرس y u d r a s u
 يدركه y u d r i k u h u
+يدع y u d E a
 يدعو y a d E u w a
 يدم y u d i m
 يدنس y u d a n i s u
+يدهن y u d a h i n u
 يدي y a d i y
+يذبح y u V b a H u
 يذكره y u V k i r u h u
 يذهب y u V h i b u
 يذهبون y u V h i b u w n a
@@ -3626,9 +4355,11 @@
 يسخر y u s a x i r u
 يسرق y u s a r i q u
 يسطرون y u s a T i r u w n a
+يسعني y a s E a n i y
 يسمو y a s m u w a
 يسمى y u s m i y
 يسوق y u s a w i q u
+يشتكي y u $ t a k a a
 يشهد y u $ h i d u
 يشويه y a $ w i y h i
 يصاب y u S A b u
@@ -3667,6 +4398,7 @@
 يعيش y u E i y $ u
 يغرق y u g r i q a
 يفتضح y a f t a D i H u
+يفعل y a f E a l u
 يفعلون y a f E a l u w n a
 يفقد y u f q i d u
 يفنى y u f n i y
@@ -3675,10 +4407,13 @@
 يقصد y u q S a d a
 يقع y a q a E u
 يقنع y u q n i E u
+يقود y a q u w d u
+يقول y a q u w l u
 يقولها y a q u w l u h A
 يقيم y u q i y m u
 يكتسب y a k t a s i b u
 يكتف y u k a t i f
+يكفي y a k f i y a
 يكن y u k i n u
 يكون y u k a w i n u
 يكونون y u k a w i n u w n a
@@ -3689,9 +4424,11 @@
 يمتلك y a m t a l u k i
 يمتلكها y a m t a l i k u h A
 يمدح y u m a d i H u
+يمر y u m i r u
 يمضي y u m D i y a
 يمكن y u m k i n u
 يمكنك y u m k i n u k a
+يمكننا y u m k i n u n A
 يمكنني y u m k i n u n i y
 يملك y u m l i k u
 يمينا y a m i y n a n
@@ -3715,6 +4452,7 @@
 يوم y a w m u n
 يوما y a w m a n
 يومان y u w m a G n a
+يوماً y a w m a n
 يوميا y a w m i y a n
 يومين y a w m a y n i
 يَأْلَفُ y a G l a f u
@@ -3724,6 +4462,8 @@
 يَصرَعْنَ y a S r a E n a
 يَعمَل y a E m a l u
 يَعمَلُ y a E m a l u
+يَغْرِفُ y a g r i f u
 يَفُلُّ y a f u l l u
+يَهُبُّ y a h u b b u
+يُدْخِلُ y u d x i l u
 يُذِلُّ y u V i l l u
-
