@@ -1,3 +1,23 @@
+* <2018-03-19 Mon>
+** Goals for this Week:
+- TODO Multilang: Go end to end with minimal example.
+I am incorporating more data, but I still consider this a minimal example.
+The recipe is a minimal example.
+I am trying to incorporate as much as possible into the run.sh script file.
+I am not going to use  iVectors for this minimal example.
+Eventually, I want to use only corpora that available from openslr.org.
+- TODO Multilang: Incorporate gp_arabic into minimal example.
+
+** Goals for Tuesday:
+- TODO Librispeech: Run the kaldi recipe.
+- TODO Librispeech: Incorporate into multilang.
+- TODO Multilang: Go end to end with the added corpora.
+
+* DAR <2018-03-16 Fri>
+** Goals for Friday set Thursday:
+- TODO Multilang: Go end to end with minimal example.
+- TODO Multilang: Incorporate gp_arabic into minimal example.
+
 * DAR <2018-03-15 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Multilang: Get minimal example running end 2 end.
@@ -5,7 +25,7 @@ I am at the ivector extraction stage.
 
 - DONE CQL Student: Interview Karl.
 
-* Goals for Friday:
+** Goals for Friday:
 - TODO Multilang: Go end to end with minimal example.
 - TODO Multilang: Incorporate gp_arabic into minimal example.
 
