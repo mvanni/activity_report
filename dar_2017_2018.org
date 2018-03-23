@@ -1,3 +1,28 @@
+* <2018-03-23 Fri>
+** Goals for Friday:
+- TODO Multilang: Setup training run with many languages so it runs while I'm gone.
+
+** Goals for April:
+- TODO Tunisian_MSA: Incorporate Zac's work into the current recipe.
+- TODO Multilang: Write a report.
+
+* 
+* <2018-03-22 Thu>
+** Goals for Wednesday set Tuesday:
+- TODO Multilang: Setup training run with many languages so it runs while I'm gone.
+
+** Goals for Friday:
+- TODO Multilang: Setup training run with many languages so it runs while I'm gone.
+
+* <2018-03-20 Tue>
+** Goals for Tuesday set Monday:
+- TODO Librispeech: Run the kaldi recipe.
+- TODO Librispeech: Incorporate into multilang.
+- TODO Multilang: Go end to end with the added corpora.
+
+** Goals for Wednesday:
+- TODO Multilang: Setup training run with many languages so it runs while I'm gone.
+
 * <2018-03-19 Mon>
 ** Goals for this Week:
 - TODO Multilang: Go end to end with minimal example.
