@@ -1,3 +1,8 @@
+* <2018-03-23 Fri>
+** WAR:
+This week Mr. John Morgan wrote a script  which enables him to quickly run the  Multi-Task Learning (MTL) method for Automatic Speech Recognition (ASR) on several speech corpora. 
+He also coached  Arabic linguist   Zac through the process of building an ASR system with a kaldi recipe. 
+
 * My WAR <2018-02-23 Fri>
 ** Previous Goals:
 - TODO ARL-Colloquium: Get spectogram for some phonemes from Hazrat.
