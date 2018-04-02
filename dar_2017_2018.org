@@ -1,3 +1,17 @@
+* <2018-04-02 Mon>
+** Goals for April:
+- TODO Multilang: Write a paper or a report.
+- TODO Tunisian_MSA: Publish recipe on kaldi repo.
+- TODO Tunisian_MSA: Incorporate Zac's work into the current recipe.
+Zac wrote a script for the Answers Test.
+I need to incorporate this into the run.sh script.
+
+** Goals for Tuesday:
+- TODO Tunisian MSA: Run recipe with Zac's changes through chain models.
+- TODO multilang: Decode with latest models.
+- TODO Paper: Meet with Michelle at 9 am.
+- TODO Mac Enterprise Machine: Meet in the afternoon with Andrew and Justin to install Mac Mini.
+
 * <2018-03-23 Fri>
 ** Goals for Friday:
 - TODO Multilang: Setup training run with many languages so it runs while I'm gone.
