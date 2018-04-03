@@ -1,3 +1,38 @@
+* <2018-04-03 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Tunisian MSA: Run recipe with Zac's changes through chain models.
+Here are the results:
+%WER 20.96 [ 1380 / 6584, 144 ins, 360 del, 876 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 20.03 [ 1319 / 6584, 213 ins, 206 del, 900 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 16.02 [ 1055 / 6584, 253 ins, 186 del, 616 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 14.82 [ 976 / 6584, 183 ins, 184 del, 609 sub ] exp/tri2b/decode_test/wer_16_0.0
+%WER 13.68 [ 901 / 6584, 106 ins, 272 del, 523 sub ] exp/chain/tdnn1a_sp/decode_test/wer_12_0.0
+%WER 12.83 [ 845 / 6584, 109 ins, 239 del, 497 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_12_0.0
+%WER 11.95 [ 787 / 6584, 189 ins, 131 del, 467 sub ] exp/tri3b/decode_test/wer_17_0.0
+
+| model | WER     |
+| mono  | 20.96 |
+| tri1 | 16.02 |
+| tri2b | 14.82 |
+| tri3b | 11.95 |
+| chain | 13.68 |
+| chain online | 12.83 |
+
+
+I nned to tune the chain models.
+
+- TODO multilang: Decode with latest models.
+- DONE Paper: Meet with Michelle at 9 am.
+- TODO Mac Enterprise Machine: Meet in the afternoon with Andrew and Justin to install Mac Mini.
+Looks like this won't happen today.
+
+
+** Goals for Wednesday:
+- TODO Tunisian MSA: Package data for openslr.org.
+- TODO Tunisian MSA: Tune chain models.
+- TODO SofTunisia: Tune tri2b models.
+- TODO Multilang: Back off to fewer languages  and get them to work well before moving on.
+
 * <2018-04-02 Mon>
 ** Goals for April:
 - TODO Multilang: Write a paper or a report.
