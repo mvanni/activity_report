@@ -36,14 +36,27 @@ I set leaves and gaussians to 700 and 4000 and I got  the following for tri2b:
 | 550 | 16.10 |
 | 600 | 15.36 |
 | 700  | 16.86 |
- 
 
-I set the number of gaussians to 10000 and I got the following for tri3b:
+I set the number of gaussians to 10000 and I got the following for tri2b:
 %WER 13.90 [ 915 / 6584, 175 ins, 184 del, 556 sub ] exp/tri2b/decode_test/wer_17_0.0
-I set the number of gaussians to 20000 and I got the following for tri3b:
+I set the number of gaussians to 20000 and I got the following for tri2b:
 %WER 13.82 [ 910 / 6584, 174 ins, 192 del, 544 sub ] exp/tri2b/decode_test/wer_17_0.0
-I set the number of gaussians to 25000 and I got the following for tri3b:
+I set the number of gaussians to 25000 and I got the following for tri2b:
 %WER 14.52 [ 956 / 6584, 191 ins, 193 del, 572 sub ] exp/tri2b/decode_test/wer_16_0.0
+I set the number of gaussians to 15000 and I got the following for tri2b:
+%WER 14.47 [ 953 / 6584, 180 ins, 197 del, 576 sub ] exp/tri2b/decode_test/wer_17_0.0
+
+Here are all the results so far:
+%WER 20.96 [ 1380 / 6584, 144 ins, 360 del, 876 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 20.41 [ 1344 / 6584, 208 ins, 213 del, 923 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 16.02 [ 1055 / 6584, 253 ins, 186 del, 616 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 14.06 [ 926 / 6584, 169 ins, 197 del, 560 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 13.47 [ 887 / 6584, 91 ins, 264 del, 532 sub ] exp/chain/tdnn1a_sp/decode_test/wer_11_0.0
+%WER 12.36 [ 814 / 6584, 91 ins, 237 del, 486 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_11_0.0
+%WER 11.62 [ 765 / 6584, 177 ins, 138 del, 450 sub ] exp/tri3b/decode_test/wer_17_0.0
+
+The tri3b got better.
+
 
 - TODO SofTunisia: Tune tri2b models.
 Here are the results:
@@ -64,6 +77,10 @@ Here are the results:
 | chain online | 8.27 |
 
 - TODO Multilang: Back off to fewer languages  and get them to work well before moving on.
+
+** Goals for Thursday:
+- TODO Multilang: Run small build on A-Team GPU machine.
+- TODO Tunisian MSA: Package data for openslr.org.
 
 * <2018-04-03 Tue>
 **  Goals for Tuesday set Monday:
