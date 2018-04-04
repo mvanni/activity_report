@@ -1,3 +1,70 @@
+* <2018-04-04 Wed>
+**  Goals for Wednesday set Tuesday:
+- TODO Tunisian MSA: Package data for openslr.org.
+- TODO Tunisian MSA: Tune chain models.
+Here are the results after lowering epochs from 10 to 6.
+%WER 20.96 [ 1380 / 6584, 144 ins, 360 del, 876 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 20.03 [ 1319 / 6584, 213 ins, 206 del, 900 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 16.02 [ 1055 / 6584, 253 ins, 186 del, 616 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 14.82 [ 976 / 6584, 183 ins, 184 del, 609 sub ] exp/tri2b/decode_test/wer_16_0.0
+%WER 13.47 [ 887 / 6584, 91 ins, 264 del, 532 sub ] exp/chain/tdnn1a_sp/decode_test/wer_11_0.0
+%WER 12.36 [ 814 / 6584, 91 ins, 237 del, 486 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_11_0.0
+%WER 11.95 [ 787 / 6584, 189 ins, 131 del, 467 sub ] exp/tri3b/decode_test/wer_17_0.0
+
+| model | WER     |
+| mono  | 20.96 |
+| tri1 | 16.02 |
+| tri2b | 14.82 |
+| tri3b | 11.95 |
+| chain | 13.47 |
+| chain online | 12.36 |
+
+so there was a slight improvement, but we still  do not beat the tri3b models.
+
+I lowered leaves and gaussians to 400 and 4000 and I got  the following for tri2b:
+%WER 16.02 [ 1055 / 6584, 251 ins, 225 del, 579 sub ] exp/tri2b/decode_test/wer_17_0.0
+I lowered leaves and gaussians to 500 and 4000 and I got  the following for tri2b:
+%WER 15.51 [ 1021 / 6584, 168 ins, 225 del, 628 sub ] exp/tri2b/decode_test/wer_17_0.0
+I set leaves and gaussians to 600 and 4000 and I got  the following for tri2b:
+%WER 15.36 [ 1011 / 6584, 188 ins, 189 del, 634 sub ] exp/tri2b/decode_test/wer_16_0.0
+I set leaves and gaussians to 700 and 4000 and I got  the following for tri2b:
+%WER 16.86 [ 1110 / 6584, 272 ins, 198 del, 640 sub ] exp/tri2b/decode_test/wer_17_0.0
+
+| leaves | tri2b WER |
+| 400 | 16.02 |
+| 500 | 15.51 |
+| 550 | 16.10 |
+| 600 | 15.36 |
+| 700  | 16.86 |
+ 
+
+I set the number of gaussians to 10000 and I got the following for tri3b:
+%WER 13.90 [ 915 / 6584, 175 ins, 184 del, 556 sub ] exp/tri2b/decode_test/wer_17_0.0
+I set the number of gaussians to 20000 and I got the following for tri3b:
+%WER 13.82 [ 910 / 6584, 174 ins, 192 del, 544 sub ] exp/tri2b/decode_test/wer_17_0.0
+I set the number of gaussians to 25000 and I got the following for tri3b:
+%WER 14.52 [ 956 / 6584, 191 ins, 193 del, 572 sub ] exp/tri2b/decode_test/wer_16_0.0
+
+- TODO SofTunisia: Tune tri2b models.
+Here are the results:
+%WER 9.81 [ 915 / 9323, 178 ins, 159 del, 578 sub ] exp/tri3b/decode_test/wer_17_0.0
+%WER 8.71 [ 812 / 9323, 87 ins, 243 del, 482 sub ] exp/chain/tdnn1a_sp/decode_test/wer_11_0.0
+%WER 8.27 [ 771 / 9323, 94 ins, 221 del, 456 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_11_0.0
+%WER 18.31 [ 1707 / 9323, 219 ins, 320 del, 1168 sub ] exp/tri3b/decode_test.si/wer_17_0.0
+%WER 15.95 [ 1487 / 9323, 134 ins, 397 del, 956 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 13.19 [ 1230 / 9323, 240 ins, 225 del, 765 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 12.77 [ 1191 / 9323, 178 ins, 259 del, 754 sub ] exp/tri2b/decode_test/wer_17_0.0
+
+| model | WER |
+| mono | 15.95 |
+| tri1 | 13.19 |
+| tri2b | 12.77 |
+| tri3b | 9.81 |
+| chain | 8.71 |
+| chain online | 8.27 |
+
+- TODO Multilang: Back off to fewer languages  and get them to work well before moving on.
+
 * <2018-04-03 Tue>
 **  Goals for Tuesday set Monday:
 - TODO Tunisian MSA: Run recipe with Zac's changes through chain models.
