@@ -1,3 +1,27 @@
+* <2018-04-05 Thu>
+**  Goals for Thursday set Wednesday:
+- TODO Multilang: Run small build on A-Team GPU machine.
+- TODO Tunisian MSA: Package data for openslr.org.
+
+- Multilang: Minimal example:
+
+Source Languages:
+1. Librispeech English Read  (960 hours)
+2. Heroico Spanish (10 hours)
+
+Results on USMA test set :
+%WER 58.50 [ 4475 / 7650, 779 ins, 485 del, 3211 sub ] exp/multi/heroico/decode_devtest/wer_7_1.0
+%WER 57.67 [ 5314 / 9215, 896 ins, 486 del, 3932 sub ] exp/multi/heroico/decode_nonnative/wer_7_1.0
+%WER 55.41 [ 9261 / 16713, 1614 ins, 817 del, 6830 sub ] exp/multi/heroico/decode_test/wer_7_1.0
+%WER 52.81 [ 3960 / 7498, 634 ins, 385 del, 2941 sub ] exp/multi/heroico/decode_native/wer_8_1.0
+
+
+| fold | heroico Chain  WER | librispeech heroico  MTL WER |
+| devtest | 52.21 | 58.50 |
+| native | 53.43 | 52.81 |
+| nonnative | 61.03 | 57.67 |
+| test | 57.70 | 55.41 |
+
 * <2018-04-04 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Tunisian MSA: Package data for openslr.org.
@@ -4152,4 +4176,3 @@ The chain models are training as I am getting ready to leave.
 - TODO SOFTunisia: Build cd gmm hmm system and chain models
 - TODO: Get rough draft hypotheses for stage 16?
 - TODO SOFTunisia: Compare WER scores for old and new lexicons(Zac will do this)
-
