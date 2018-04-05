@@ -22,6 +22,12 @@ Results on USMA test set :
 | nonnative | 61.03 | 57.67 |
 | test | 57.70 | 55.41 |
 
+** Goals for Friday:
+- TODO Multilang: Tune, Evaluate and analyze latest system trained on librispeech, heroico and Tunisian MSA.
+- TODO Heroico: Modify scripts to incorporate into mtl training.
+- TODO Heroico: Modify scripts to handle downloading corpus from openslr.org.
+- TODO Tunisian MSA: Package corpus for submitting to openslr.org.
+
 * <2018-04-04 Wed>
 **  Goals for Wednesday set Tuesday:
 - TODO Tunisian MSA: Package data for openslr.org.
