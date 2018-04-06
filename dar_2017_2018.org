@@ -1,3 +1,49 @@
+* <2018-04-06 Fri>
+** Goals for Friday set Thursday:
+- TODO Multilang: Tune, Evaluate and analyze latest system trained on librispeech, heroico and Tunisian MSA.
+here are the results I get for Tunisian MSA:
+%WER 7.87 [ 518 / 6584, 109 ins, 131 del, 278 sub ] exp/multi/Tunisian_MSA/decode_test/wer_13_0.0
+This is tested on 444 utterances from 4 speakers.
+cls, lfi, mbt, and srj.
+
+Here are the results for the Tunisian MSA system alone:
+%WER 20.96 [ 1380 / 6584, 144 ins, 360 del, 876 sub ] exp/mono/decode_test/wer_12_0.0
+%WER 19.14 [ 1260 / 6584, 208 ins, 207 del, 845 sub ] exp/tri3b/decode_test.si/wer_16_0.0
+%WER 16.02 [ 1055 / 6584, 253 ins, 186 del, 616 sub ] exp/tri1/decode_test/wer_17_0.0
+%WER 13.82 [ 910 / 6584, 174 ins, 192 del, 544 sub ] exp/tri2b/decode_test/wer_17_0.0
+%WER 12.11 [ 797 / 6584, 62 ins, 274 del, 461 sub ] exp/chain/tdnn1a_sp/decode_test/wer_13_0.0
+%WER 11.13 [ 733 / 6584, 177 ins, 132 del, 424 sub ] exp/tri3b/decode_test/wer_17_0.0
+%WER 11.03 [ 726 / 6584, 61 ins, 237 del, 428 sub ] exp/chain/tdnn1a_sp_online/decode_test/wer_13_0.0
+
+| model | WER |
+| mono | 20.96 |
+| tri1 | 16.02 |
+| tri2b | 13.82 |
+| tri3b | 11.13 |
+| chain | 12.11 |
+| chain online | 11.03 |
+| MTL librispeech heroico Tunisian MSA | 7.87 |
+
+- High Resolution Features.
+I have to take a step back because I found that I am not using high resolution features in training and testing the neural network.
+I have been extracting the hires features, but I have not been using them. 
+I spent the afternoon trying to fix this problem.
+The low resolution features are only used to extract alignments.
+I have  moved to plp pitch features for the low resolution feature extraction because the babel scripts were doing this.
+But now I'm not sure it is worth the trouble.
+
+- TODO Heroico: Modify scripts to incorporate into mtl training.
+- DONE Heroico: Modify scripts to handle downloading corpus from openslr.org.
+I put this on my fork of kaldi.
+https://github.com/johnjosephmorgan/kaldi.git
+- DONE Heroico: Update scripts in my kaldi fork.
+- TODO Tunisian MSA: Package corpus for submitting to openslr.org.
+- TODO Multilang: Get builds to run on a-team GPU workstation.
+- TODO Kaldi: Install new version on B-Team and A-team GPU workstations and on my laptop.
+
+** Goals for Next Week:
+- TODO Multilang: Use hires features in training and testing.
+ 
 * <2018-04-05 Thu>
 **  Goals for Thursday set Wednesday:
 - TODO Multilang: Run small build on A-Team GPU machine.
@@ -26,7 +72,10 @@ Results on USMA test set :
 - TODO Multilang: Tune, Evaluate and analyze latest system trained on librispeech, heroico and Tunisian MSA.
 - TODO Heroico: Modify scripts to incorporate into mtl training.
 - TODO Heroico: Modify scripts to handle downloading corpus from openslr.org.
+- TODO Heroico: Update scripts in my kaldi fork.
 - TODO Tunisian MSA: Package corpus for submitting to openslr.org.
+- TODO Multilang: Get builds to run on a-team GPU workstation.
+- TODO Kaldi: Install new version on B-Team and A-team GPU workstations and on my laptop.
 
 * <2018-04-04 Wed>
 **  Goals for Wednesday set Tuesday:
