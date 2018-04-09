@@ -1,3 +1,19 @@
+* <2018-04-09 Mon>
+** Goals for Next Week:
+- TODO Multilang: Use hires features in training and testing.
+This gave really bad results.
+I am going to try to completely remove hires from the builds.
+
+- TODO Tunisian MSA: Package corpus for openslr.org.
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+
+** Goals for Tuesday:
+- TODO Multilang: Build without hires features.
+- TODO Tunisian MSA: Package corpus for openslr.org.
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+
 * <2018-04-06 Fri>
 ** Goals for Friday set Thursday:
 - TODO Multilang: Tune, Evaluate and analyze latest system trained on librispeech, heroico and Tunisian MSA.
