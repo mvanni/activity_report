@@ -1,3 +1,32 @@
+* <2018-04-10 Tue>
+**  Goals for Tuesday set Monday:
+- TODO Multilang: Build without hires features.
+I am running the mtl build with 4 languages:
+1. Librispeech English
+2. Tunisian MSA
+3. Heroico Spanish
+4. Yaounde African Accented French.
+
+This setup fails miserably.
+
+
+I started a new build with only:
+1. librispeech
+2. Tunisian MSA
+
+The build should be done tomorrow morning.
+
+- TODO Tunisian MSA: Package corpus for openslr.org.
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+
+** Goals for Wednesday:
+- TODO Multilang: Get a minimal example working.
+- TODO Tunisian MSA: Package corpus for openslr.org.
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+- TODO A-Team GPU workstation: Install my fork of kaldi on this machine.
+
 * <2018-04-09 Mon>
 ** Goals for Next Week:
 - TODO Multilang: Use hires features in training and testing.
