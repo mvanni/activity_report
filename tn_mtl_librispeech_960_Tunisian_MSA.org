@@ -1,0 +1,170 @@
+#+TITLE: Tech Note: A Minimal Example of Multi-Task Learning Using Librispeech 960 and Tunisian MSA Corpora
+
+John J. Morgan
+
+* ABSTRACT
+Multi-Task Learning was applied to a Large corpus of English and a small corpus of Modern Standard Arabic  read speech. 
+An improvement in Word Error Rate over the best Single-Task Learning method was observed. 
+* 1 INTRODUCTION
+Neural Networks (NN)  are a framework for modeling the processes of Automatic Speech Recognition (ASR). 
+large ASR systems are trained on tens of thousands of hours of speech data (Heigold, et al., 2013). 
+NN models perform well when these amounts of data are available. 
+However, in situations where training data is scarce, more sophisticated methods need to be employed in order to see benefits from NN models. 
+Multi-task Learning (MTL) is a framework that enables the advantages of Deep Learning to be applied in situations of data scarcity.
+
+We focus here on the sparse data condition arising when one wants to correct the specific problem of the failure of Arabic ASR systems on accented, that is, Non-Standard-Arabic (NSA) input. 
+
+We build an NN that shares layers. 
+We assume that the shared layers extract the important features that are common across two languages. 
+
+We formulate our research question as follows.
+
+Can NN acoustic models trained with MTL on data  from  two different languages, including varieties of NSA, improve performance of a Arabic ASR system on NSA input?
+
+* 2 BACKGROUND
+An ASR system requires components such as an acoustic model, a lexicon and a language model. 
+To support our testing, we produce and design these components in a manner to permit embedding in the source language ASR side of a S2S system, with the language model trained on conversations in a single pre-specified domain. 
+The focus of our innovation, however, lies squarely with the acoustic modeling, which we seek to improve for the purposes of ASR of NEF speech with MTF-trained NN models and data from diverse speech technology communities.
+
+The data from these communities differ in three important respects, source genre, speaking style, and recording condition. 
+Our experiments incorporate models trained on (1) data in genres such as broadcast news, scripted interaction, and recitation; (2) data exhibiting styles such as prompted and spontaneous speech; and (3) data collected over a noisy telephone and in a controlled environment.
+
+The term Low Resource Language (LRL) is used to refer to those human languages for which, from the perspective of computational processing, there exist very few digital resources and little to no automated technology [Cite? Cieri et al. 2016 LREC?; Beyerlein et al., ASRU1999]. 
+The resources, which have included lexicons, parsers and morphological analyzers, among others, now most often consist almost entirely of training data, such that references to LRLs in this paper equate to languages for which little to no training data is available.
+
+NICHE APPLICATIONS AND THIS PARTICULAR ARMY APPLICATION: 
+ASR has niche applications in medical and business domains [Cite?] The military as well often has requirements for communicating with people who speak a low resource language and can benefit from S2S applications that work well for populations of speakers who speak with very special phonological inventories in conversations about very specific topics. 
+
+TECHNIQUE FOR SOLVING ARMY PROBLEM: 
+In this paper we will investigate a way to leverage the benefits of the latest advances in NN despite a severe paucity of training data in the target linguistic environment.
+
+DATA AS RESOURCE FOR SOLVING Real-World PBM: 
+Although, by definition, data volumes are sparse for LRLs, in many cases, the Army is interested in a LRL for which a modicum of speech resources does exist. 
+This data may have been produced as a result of a small data collection project, conducted to capture the acoustic evidence of the speech of a small number of easily accessible members of a subpopulation. 
+Or, recordings from a radio broadcast may have been made for language learning purposes. 
+Corpora of telephone conversations, recorded to support research program collection efforts, may also exist. 
+Taken separately, these resources usually are not adequate for building an ASR system that can be used in the target S2S application. 
+In this paper, however, we incorporate resources from these diverse speech technology communities in a MTL approach to the building of ASR acoustic models to meet the needs of the niche S2S task for LRLs.
+
+** Multilang Method
+
+What are the tasks?
+
+- Languages: Each language is a task.
+- Speaking Style: Each speaking style is a task.
+- Genre: Each genre is a task. 
+- Recording Condition: Each recording condition is a task.
+
+We train one NN.
+The first hidden layers of the NN are feature extractors.
+We assume the layers will extract linguistic features we are interested in and ignore irrelevant features. 
+
+
+Each language has a bottleneck layer.
+
+Each language has a prefinal affine layer.
+
+Each language has a output soft max layer for classification. 
+* 3 DATA
+Our experiments 
+
+Each language has 8 layers?
+
+1. One input layer,
+2. 6 hidden layers,
+3. One Bottleneck layer,
+4. One affine layer, and
+5. One soft max layer.
+
+The dimension of the hidden layers is 1024.
+The dimension of the Bottleneck layer is 512.
+
+The soft max layer outputs a probability distribution over the clustered triphones.
+
+Context:
+16 frames to the left, 12 frames to the right.
+ 
+* 4 EXPERIMENTS
+** 4.1 Preliminary testing
+** 4.2 Cross Data Source Experiment:
+We ran an experiment where we fixed the language and varied the type of data source. 
+We used our Tuniseen corpus and the Globalphone Arabic Corpus as representatives of the read speech source. 
+We used the GALE Arabic corpus as a representative of the Broadcast News data source.
+ 
+
+
+** 4.3
+[[[So far, we have demonstrated that we can build systems with the MTL method by producing a minimal example that uses only two languages. 
+We built baseline SAT GMM HMM acoustic models for Japanese and Mandarin Chinese with data from the GlobalPhone speech corpus. We implemented MTL as follows:
+.Alignments generated by the Japanese and Mandarin SAT GMM HMMs were used to train a 7-layer bilingual neural network acoustic model on the combined set of training examples from the Japanese and Mandarin corpora.
+
+Note that instead of considering this as a bilingual model it can be viewed as a Mandarin model whose parameters are shared with a Japanese model. 
+
+.The data from the Mandarin corpus was used to readjust the parameters in the last two layers of the bilingual neural network model to produce a new monolingual Mandarin acoustic model. 
+
+Similarly, a new monolingual Japanese model was produced. These two models share the parameters in their first five layers, only their final 2 layers are different.
+
+.The monolingual Mandarin acoustic model was used to decode a test set.
+
+Preliminary WER scores showed a slight improvement over the WER scores for the Mandarin SAT GMM HMMs. Although this is good news, we do not necessarily expect the new monolingual Mandarin acoustic models to yield better WER scores than models trained with the state-of-the-art chain model objective. We do expect the new MTL trained models to be more robust.
+
+Our minimal example did not include a prefinal layer of bottleneck (BN) features and it was not trained using i-vectors. BN features and i-vector training have been shown to lower WER scores. We are expecting our MTL trained models to yield lower WER scores once they use i-vectors and BN features.
+
+For our experiments we plan on applying MTL to up to 30 languages and up to 300 hours of speech. 
+The GlobalPhone corpus has data for 17 languages. 
+We also have 9 government-owned speech corpora that we plan on incorporating into the MTL training project. 
+Most of the data in these corpora were collected in recitative mode through close mounted microphones. 
+For broadcast news data we plan on using the GALE Arabic and Mandarin Chinese corpora. 
+For noisy telephone conversations we will use data from the Babel project. ]]]
+
+** MTL VS. Concatenate Data:
+un an experiment with the following two conditions:
+1. Concatenate three corpora:
+a. GALE Arabic (Broadcast News).
+b. Globalphone Arabic ( Read Speech)
+c. SOF Tunisia (Read and Prompted speech)
+
+2. Run MTL using the same three corpora.
+
+Train chain models on the data set from part 1. and test on data from each corpus a., b. and c..
+Run MTL training on corpora a., b. and c. separately and test on data from each one. 
+
+
+* 5 RESULTS
+
+| language | tri3b WER | chain WER | MTL WER |
+| Arabic dev | 55.98 | 51.17 | |
+| Bulgarian dev | 24.78      | 19.47 | 22.33 |
+| Croatian dev | 28.53 | 27.57 | 28.77 |
+| Czech dev | 43.72 | 50.14 | |
+| French dev | 93.41 | | |
+| German dev | 38.04 | | |
+| Hausa dev | 24.64 | | 21.77 |
+| Japanese dev | 6.15 | | 4.97 |
+| Korean dev | 25.64 | | 24.28 |
+| Mandarin dev | 19.07 | 15.52 | 17.94 |
+| Polish dev | 48.23 | | |
+| Portuguese dev | 24.11 | | 21.30 |
+| Russian dev | 55.81 | 49.23 | |
+| Spanish dev | 42.97 | | |
+| Swedish dev | 62.07 | | | |
+| tamil dev | | | |
+| Thai dev | | | |
+| Turkish dev | 75.25 | | |
+| Vietnamese dev | 37.49 | | |
+* 6 RELATED WORK
+* 7 CONCLUSIONS AND FUTURE WORK
+* 8 REFERENCES
+Beyerlein, et al., 1999, ASRU
+Cieri, et al., 2016, LREC
+Heigold, G., V. Vanhoucke, A. Senior, P. Nguyen, M. Ranzato, M. Devin, J. Dean. 2013. Multilingual acoustic models using distributed deep neural networks. In Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), IEEE, Vancouver, CA.
+* ABBREVIATIONS
+ASR	Automatic Speech Recognition
+DL	Deep Learning
+ML	Machine Learning
+MT	Machine Translation
+MTL	Multi-Task Learning
+NEF	Non-European French
+NN	Neural Network
+ S2S	Speech-to-Speech
+TTS	Text-to-Speech
