@@ -1,3 +1,30 @@
+* <2018-04-12 Thu>
+** Goals for Thursday set Wednesday:
+- TODO Multilang: Get Minimal example working on Librispeech and Yaounde. Look at file: local/nnet3/combine_egs.sh
+There were updates in  the 2 scripts udner steps/nnet3/multilingual
+babel_multilang uses them.
+I made a  copy of combine_egs.sh under local/nnet3 so that I could use it with modifications that I needed.
+combine_egs.sh calls the other script allocate_egs.py under steps/nnet3/multilingual
+There were recent updates to allocate_egs.py.
+My copy of combine_egs.sh calls the allocate_egs.sh that was updated under steps/nnet3/multilingual.
+I should have made a copy of allocate_egs.py to avoid problems.
+Anyway, I seem to have solved the problem by just using the combine_egs.sh under steps/nnet3/multilingual instead of my copy under local/nnet3.
+I had to remove options and add the --num-archives option.
+It is now running on the GPU.
+
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+- TODO A-Team GPU workstation: Install my fork of kaldi on this machine.
+- TODO Tunisian_MSA: Follow up with Yenda on openslr.org posting request.
+
+** Goals for Friday:
+- TODO Multilang: Write Tech Note on librispeech  Tunisian MSA experiment.
+- TODO Multilang: Finish librispeech yaounde experiment.
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+- TODO A-Team GPU workstation: Install my fork of kaldi on this machine.
+- TODO Tunisian_MSA: Follow up with Yenda on openslr.org posting request.
+
 * <2018-04-11 Wed>
 ** Goals for Wednesday set Tuesday:
 - DONE Multilang: Get a minimal example working.
@@ -20,7 +47,7 @@ Test Results:
 - TODO A-Team GPU workstation: Install my fork of kaldi on this machine.
 
 ** Goals for Thursday:
-- TODO Multilang: Get Minimal example working on Librispeech and Yaounde.
+- TODO Multilang: Get Minimal example working on Librispeech and Yaounde. Look at file: local/nnet3/combine_egs.sh
 - TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
 - TODO Multilang: Do some writing with Michelle.
 - TODO A-Team GPU workstation: Install my fork of kaldi on this machine.
