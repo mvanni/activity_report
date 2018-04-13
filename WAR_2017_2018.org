@@ -1,3 +1,30 @@
+* <2018-04-13 Fri>
+** Goals for Next Week:
+- TODO Multilang: Write tn in LaTeX.
+- TODO Tunisian_MSA: Write kaldi recipe.
+- TODO Multilang: librispeech yaounde: write tn for this experiment.
+- TODO Multilang: librispeech heroico: Fix this experiment.
+
+* <2018-04-09 Mon>
+**  Goals for Next Week:
+- TODO Multilang: Use high resolution features in training and testing of neural networks.
+- TODO Tunisian MSA: Package corpus for openslr.org.
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+
+* <2018-04-06 Fri>
+** Goals for April:
+- TODO Multilang: Write a paper or a report.
+- DONE Tunisian_MSA: Incorporate Zac's work into recipe.
+- TODO Tunisian_MSA: Publish recipe on kaldi repo.
+
+** Goals for Next Week:
+- TODO Multilang: Use high resolution features in training and testing of neural networks.
+- TODO Tunisian MSA: Package corpus for openslr.org.
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+
+* <2018-04-02 Mon>
 * <2018-03-23 Fri>
 ** WAR:
 This week Mr. John Morgan wrote a script  which enables him to quickly run the  Multi-Task Learning (MTL) method for Automatic Speech Recognition (ASR) on several speech corpora. 
@@ -5,6 +32,10 @@ He also coached  Arabic linguist   Zac through the process of building an ASR sy
 
 
 ** Goals for April:
+- TODO Multilang: Write a paper or a report.
+- TODO Tunisian_MSA: Incorporate Zac's work into recipe.
+- TODO Tunisian_MSA: Publish recipe on kaldi repo.
+ Goals for April:
 - TODO Multilang: Write a paper or a report.
 - TODO Tunisian_MSA: Incorporate Zac's work into recipe.
 - TODO Tunisian_MSA: Publish recipe on kaldi repo.
