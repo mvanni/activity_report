@@ -1,3 +1,38 @@
+* <2018-04-13 Fri>
+** Goals for Friday set Thursday:
+- TODO Multilang: Write Tech Note on librispeech  Tunisian MSA experiment.
+I should get results for GALE Arabic run on the Tunisian MSA test set:
+Right now I only have tri2b models available:
+%WER 36.74 [ 2419 / 6584, 263 ins, 228 del, 1928 sub ] exp/tri2b/decode_Tunisian_MSA_test/wer_14_0.5
+
+- TODO Multilang: Finish librispeech yaounde experiment.
+The training and decoding finished last night.
+Here is the result:
+
+%WER 45.10 [ 1016 / 2253, 200 ins, 114 del, 702 sub ] exp/multi/yaounde/decode_test/wer_16_0.0
+
+Here are the yaounde results by themselves:
+%WER 90.68 [ 2043 / 2253, 80 ins, 728 del, 1235 sub ] exp/tri2b/decode_test/wer_17_1.0
+%WER 89.53 [ 2017 / 2253, 139 ins, 439 del, 1439 sub ] exp/tri3b/decode_test.si/wer_17_1.0
+%WER 88.37 [ 1991 / 2253, 96 ins, 689 del, 1206 sub ] exp/tri1/decode_test/wer_17_0.5
+%WER 87.35 [ 1968 / 2253, 59 ins, 569 del, 1340 sub ] exp/mono/decode_test/wer_14_1.0
+%WER 77.76 [ 1752 / 2253, 192 ins, 290 del, 1270 sub ] exp/tri3b/decode_test/wer_17_1.0
+
+These are really bad WERs.
+
+- TODO Heroico: Make a pull request  to incorporate openslr.org changes into kaldi master repo
+- TODO Multilang: Do some writing with Michelle.
+- TODO A-Team GPU workstation: Install my fork of kaldi on this machine.
+- DONE Tunisian_MSA: Follow up with Yenda on openslr.org posting request.
+It has the identifier slr46.
+https://www.openslr.org/resources/46/about.html
+
+** Goals for Next Week:
+- TODO Multilang: Write tn in LaTeX.
+- TODO Tunisian_MSA: Write kaldi recipe.
+- TODO Multilang: librispeech yaounde: write tn for this experiment.
+- TODO Multilang: librispeech heroico: write tn for this experiment.
+
 * <2018-04-12 Thu>
 ** Goals for Thursday set Wednesday:
 - TODO Multilang: Get Minimal example working on Librispeech and Yaounde. Look at file: local/nnet3/combine_egs.sh
