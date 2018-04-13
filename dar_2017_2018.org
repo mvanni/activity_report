@@ -27,11 +27,14 @@ These are really bad WERs.
 It has the identifier slr46.
 https://www.openslr.org/resources/46/about.html
 
+- Multilang Librispeech heroico:
+I started this experiment today.
+
 ** Goals for Next Week:
 - TODO Multilang: Write tn in LaTeX.
 - TODO Tunisian_MSA: Write kaldi recipe.
 - TODO Multilang: librispeech yaounde: write tn for this experiment.
-- TODO Multilang: librispeech heroico: write tn for this experiment.
+- TODO Multilang: librispeech heroico: Fix this experiment.
 
 * <2018-04-12 Thu>
 ** Goals for Thursday set Wednesday:
