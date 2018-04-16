@@ -1,3 +1,24 @@
+* <2018-04-16 Mon>
+** Goals set Last Week:
+- TODO Multilang: Write tn in LaTeX.
+- TODO Tunisian_MSA: Write kaldi recipe.
+- TODO Multilang: librispeech yaounde: write tn for this experiment.
+- TODO Multilang: librispeech heroico: Fix this experiment.
+The problem was happening at decoding time.
+I did not want to overwrite the exp/multi directory.
+This is the directory where the  new models are stored.
+I used multi_librispeech_heroico instead of just multi.
+I made this change for training, but not for decoding.
+Here is the WER:
+%WER 55.16 [ 9219 / 16713, 1508 ins, 898 del, 6813 sub ] exp/multi_librispeech_heroico/heroico/decode_heroico_test/wer_8_1.0
+
+
+** Goals for Tuesday:
+- TODO Write TNs for experiments:
+1. Librispeech Tunisian_MSA
+2. Librispeech Yaounde
+3. Librispeech Heroico.
+
 * <2018-04-13 Fri>
 ** Goals for Friday set Thursday:
 - TODO Multilang: Write Tech Note on librispeech  Tunisian MSA experiment.
