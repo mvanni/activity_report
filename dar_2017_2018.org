@@ -18,6 +18,8 @@ Here is the WER:
 1. Librispeech Tunisian_MSA
 2. Librispeech Yaounde
 3. Librispeech Heroico.
+- TODO Multilang: Setup experiment with 3 tasks Gale Arabic Librispeech and Yaounde.
+- TODO Mandatory Training: Standdown day.
 
 * <2018-04-13 Fri>
 ** Goals for Friday set Thursday:
