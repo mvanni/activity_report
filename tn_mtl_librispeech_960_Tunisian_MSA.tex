@@ -1,4 +1,3 @@
-% Created 2018-04-13 Fri 15:14
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,20 +14,45 @@
 \usepackage{wasysym}
 \usepackage{amssymb}
 \usepackage{hyperref}
+\usepackage{cite}
+\usepackage[acronym,toc,xindy]{glossaries}
+\makeglossaries
 \tolerance=1000
 \author{John Morgan \and Michelle Vanni \and Stephen LaRocca }
 \date{\today}
-\title{A Minimal Example of Multi-Task Learning Using Librispeech 960 and Tunisian MSA Corpora}
+\title{A Minimal Example of Multi-Task Learning Using The Librispeech 960 and Tunisian MSA Corpora}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={},
   pdfcreator={Emacs 25.3.2 (Org mode 8.2.10)}}
+%ABBREVIATIONS
+\newacronym{ASR}{asr}{Automatic Speech Recognition}
+\newacronym{DL}{dl}{Deep Learning}
+\newacronym{ML}{ml}{Machine Learning}
+\newacronym{MT}{mt}{Machine Translation}
+\newacronym{MTL}{mtl}{Multi-Task Learning}
+\newacronym{NN}{nn}{Neural Network}
+\newacronym{BL}{bl}{Background Language}
+\newacronym{TL}{tl}{Target Language}
+\newacronym{MSA}{msa}{Modern Standard Arabic}
+\newacronym{LR}{lr}{Low Resource}
+\newacronym{SAT}{sat}{Speaker Adaptive Training}
+\newacronym{GMM}{gmm}{Gaussian Mixture Model}
+\newacronym{HMM}{hmm}{Hidden Markov Model}
+\newacronym{OOV}{oov}{Out Of Vocabulary}
+\newacronym{SRILM}{srilm}{Stanfor Research Institute Language Model}
+\newacronym{WER}{wer}{Word Error Rate}
+\newacronym{MFCC}{mfcc}{MMel Frequency Cepstral Coefficients}
+\newacronym{PLP}{plp}{Perceptual Linear Prediction}
+\newacronym{DNN}{dnn}{Deep Neural Network}
+\newacronym{AM}{am}{Acoustic Model}
+\newacronym{QCRI}{qcri}{Qatar Computing Research Institute }
+
 \begin{document}
 
 \maketitle
 \tableofcontents
 
-John J. Morgan
 
 \section{ABSTRACT}
 \label{sec-1}
@@ -36,17 +60,16 @@ Multi-Task Learning was applied to a Large corpus of English and a small corpus 
 An improvement in Word Error Rate over the best Single-Task Learning method was observed. 
 \section{INTRODUCTION}
 \label{sec-2}
-We are using neural networks as a framework for acoustic modeling in Automatic Speech Recognition. 
-large ASR systems are trained on tens of thousands of hours of speech data (Heigold, et al., 2013). 
-NN models perform well when these amounts of data are available. 
-We assume we are under conditions of severe training data sparcity in the target language.
+We are using \gls{NN}s as a framework for acoustic modeling in \gls{ASR}. 
+large \gls{ASR} systems are trained on tens of thousands of hours of speech data \cite{Heigold13multilingualacoustic}. 
+\gls{NN} models perform well when these amounts of data are available. 
+We assume we are under conditions of severe training data sparcity in the \gls{TL}.
 We also assume that we have access to a large corpus of speech in another language. 
-We will refer to this other language as the background language.
-In these situations where training data is scarce for the target language, more sophisticated methods need to be employed in order to see benefits from NN models. 
-Multi-task Learning (MTL) is a framework that enables the advantages of Deep Learning to be applied in the situation where we have access to large amounts of data in background tasks and scarce   resources in the target task.  
+We will refer to this other language as the \gls{BL}.
+In these situations where training data is scarce for the \gls{TL}, more sophisticated methods need to be employed in order to see benefits from \gls{NN} models. 
+\gls{MTL}\cite{Caruana93multitasklearning:} is a framework that enables the advantages of \gls{DL} to be applied in the situation where we have access to large amounts of data in the \gls{TL} and scarce   resources in the \gls{TL}.  
 
-Here our tasks are languages.
-In MTL We build an NN that has two kinds of layers.
+In \gls{MTL} We build an \gls{NN} that has two kinds of layers.
 \begin{enumerate}
 \item Shared Layers.
 \item Language Specific Layers.
@@ -55,13 +78,13 @@ In MTL We build an NN that has two kinds of layers.
 The shared layers are trained on all the training data from all the languages.
 We assume that the shared layers extract the important features that are common across languages. 
 
-The language specific layers are trained only on data from the target language.
+The language specific layers are trained only on data from the \gls{TL}.
 
-For this note we present an experiment to test the MTL method on two specific publically available corpora: the large Librispeech English corpus and a small corpus of Tunisian Accented Modern Standard Arabic. 
+For this note we present an experiment to test the \gls{MTL} method on two specific publically available corpora: the large Librispeech English corpus and a small corpus of Tunisian Accented \gls{MSA}. 
 
 We formulate our research question as follows.
 
-Can NN acoustic models trained with MTL on data  from  two different languages improve performance of an  ASR system for a Low Resource target language?
+Can \gls{NN} acoustic models trained with \gls{MTL} on data  from  two different languages improve performance of an  \gls{ASR} system for a \gls{LR} \gls{TL}?
 
 \section{DATA}
 \label{sec-3}
@@ -70,14 +93,13 @@ Can NN acoustic models trained with MTL on data  from  two different languages i
 LibriSpeech is a corpus of read speech, based on LibriVox's public domain audio books. 
 We used the cleaned training fold of 960 hours of speech. 
 
-\subsection{Tunisian MSA:}
+\subsection{Tunisian \gls{MSA}:}
 \label{sec-3-2}
-This is a corpus of ten hours of Modern Standard Arabic as spoken by 120 male and female Tunisians in 2003. 
+This is a corpus of ten hours of \gls{MSA} as spoken by 120 male and female Tunisians in 2003. 
 The informants provided recitations and answers to questions. 
 
 
-
-Each language has 8 layers?
+The \gls{NN} for Each language has 8 layers.
 
 \begin{enumerate}
 \item One input layer,
@@ -90,63 +112,52 @@ Each language has 8 layers?
 The dimension of the hidden layers is 1024.
 The dimension of the Bottleneck layer is 512.
 
-The soft max layer outputs a probability distribution over the clustered triphones.
+The soft max layer outputs a probability density function over the clustered triphones.
 
 Context:
 16 frames to the left, 12 frames to the right.
 
 \section{EXPERIMENT}
 \label{sec-4}
-We used the kaldi toolkit to build our ASR systems. 
+We used the kaldi toolkit\cite{Povey11thekaldi} to build our ASR systems. 
 We derived our setup from the kaldi babel$_{\text{multilang}}$ recipe. 
-We tried to implement our setup to contain only methods that are required to run the MTL method. 
+We tried to implement our setup to contain only methods that are required to run the \gls{MTL} method. 
 Thus, We did not use i-vectors which are standard in many kaldi recipes. 
 We did include however a bottleneck layer. 
 
-We built baseline SAT GMM HMM acoustic models for both the Librispeech and Tunisian MSA corpora.
-For the Tunisian MSA baseline system we derived our pronouncing dictionary from the 2 million entries from the QCRI vowelized dictionary available at:
+We built baseline \gls{SAT} \gls{GMM} \gls{HMM} \gls{AM}s for both the Librispeech and Tunisian \gls{MSA} corpora.
+For the Tunisian \gls{MSA} baseline system we derived our pronouncing dictionary from the 2 million entries from the \gls{QCRI} vowelized dictionary\cite{aaliArabicKaldi} available at:
 \url{http://alt.qcri.org/resources/speech/dictionary/ar-ar_lexicon_2014-03-17.txt.bz2}
-We added the out of vocabulary words from the Tunisian MSA training set and the test set. 
-We trained our 3-gram language model with srilm on the transcripts from the training and test data. 
-Our best WER results for Tunisian MSA were obtained with online chain models.
+We added the \gls{OOV} words from the Tunisian \gls{MSA} training set and the test set. 
+We trained our $3$-gram language model with the \gls{SRILM} toolkit on the transcripts from the training and test data. 
+Our best \gls{WER} results for Tunisian \gls{MSA} were obtained with online chain models.
 
 We followed the kaldi standard recipe for the librispeech cleaned 960 hours of speech task with one exception. 
-We extracted and trained with plp$_{\text{pitch}}$ features instead of mfcc features. 
+We extracted and trained with \gls{PLP}$_{\text{pitch}}$ features instead of \gls{MFCC} features. 
 We followed this path since we derived our scripts from the kaldi babel$_{\text{multilang}}$ recipe. 
 
-Alignments generated by the  SAT GMM HMMs were used to train a 7-layer bilingual raw deep neural network  on the combined set of training examples from the English and Tunisian MSA Librispeech  corpora.
+Alignments generated by the  \gls{SAT} \gls{GMM} \gls{HMM}s were used to train a 7-layer bilingual raw deep \gls{NN}  on the combined set of training examples from the English Librispeech and Tunisian \gls{MSA}  corpora.
 
-Note that instead of considering this as a bilingual model it can be viewed as a Tunisian MSA model whose parameters are shared with a English model. 
+%Note that instead of considering this as a bilingual model it can be viewed as a Tunisian \gls{MSA} model whose parameters are shared with a English model. 
 
-The data from the Tunisian MSA corpus was used to readjust the parameters in the last two layers of the bilingual DNN model to produce a new monolingual Tunisian MSA  acoustic model. 
+The data from the Tunisian \gls{MSA} corpus was used to readjust the parameters in the last two layers of the bilingual \gls{DNN} model to produce a new monolingual Tunisian \gls{MSA}  acoustic model. 
 
-Similarly, a new monolingual English model was produced. These two models share the parameters in their first five layers, only their final 2 layers are different.
+Similarly, a new monolingual English model was produced.
+These two models share the parameters in their first five layers, only their final 2 layers are different.
 
-The monolingual Tunisian MSA acoustic model was used to decode a test set of speech from four speakers, 3 Libyan males and one Tunisian female.
+The monolingual Tunisian \gls{MSA} \gls{AM} was used to decode a test set of speech from four speakers, 3 Libyan males and one Tunisian female.
 
 \section{RESULTS}
 \label{sec-5}
 
-Tunisian$_{\text{MSA}}$ Baseline:
-\%WER 11.03 [ 726 / 6584, 61 ins, 237 del, 428 sub ] exp/chain/tdnn1a$_{\text{sp}}$$_{\text{online}}$/decode$_{\text{test}}$/wer$_{\text{13}}$$_{\text{0}}$.0
+Tunisian \gls{MSA} Baseline: \gls{WER} 11.03 %[ 726 / 6584, 61 ins, 237 del, 428 sub ] exp/chain/tdnn1a$_{\text{sp}}$$_{\text{online}}$/decode$_{\text{test}}$/wer$_{\text{13}}$$_{\text{0}}$.0
 
-WER after MTL:
-\%WER 7.12 [ 469 / 6584, 100 ins, 124 del, 245 sub ] exp/multi/Tunisian$_{\text{MSA}}$/decode$_{\text{test}}$/wer$_{\text{13}}$$_{\text{0}}$.0
+WER after MTL: \gls{WER} 7.12 %[ 469 / 6584, 100 ins, 124 del, 245 sub ] exp/multi/Tunisian$_{\text{MSA}}$/decode$_{\text{test}}$/wer$_{\text{13}}$$_{\text{0}}$.0
 
 
-\section{7 CONCLUSIONS AND FUTURE WORK}
-\label{sec-6}
-\section{8 REFERENCES}
-\label{sec-7}
+\bibliographystyle{plain}
+\bibliography{jjm}
+\printglossaries
 
-Heigold, G., V. Vanhoucke, A. Senior, P. Nguyen, M. Ranzato, M. Devin, J. Dean. 2013. Multilingual acoustic models using distributed deep neural networks. In Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), IEEE, Vancouver, CA.
-\section{ABBREVIATIONS}
-\label{sec-8}
-ASR        Automatic Speech Recognition
-DL        Deep Learning
-ML        Machine Learning
-MT        Machine Translation
-MTL        Multi-Task Learning
-NN        Neural Network
 % Emacs 25.3.2 (Org mode 8.2.10)
 \end{document}
