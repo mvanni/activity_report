@@ -1,3 +1,26 @@
+* <2018-04-17 Tue>
+** Goals for Tuesday set Monday:
+- TODO Write TNs for experiments:
+1. Librispeech Tunisian_MSA
+2. Librispeech Yaounde
+3. Librispeech Heroico.
+- TODO Multilang: Setup experiment with 3 tasks Gale Arabic Librispeech and Yaounde.
+This is working really well.
+Tasks/languages:
+1. GALE Arabic: 
+Training data: 318 hourrs of Arabic Broadcast News.
+2. Librispeech:
+Training data: 960 hours of English read speech.
+3. Yaounde:
+Training data: 6 hours of African Accented French.
+
+WER Results on ARTI Cameroon  Test set:
+%WER 44.12 [ 994 / 2253, 178 ins, 120 del, 696 sub ] exp/multi_gale_arabic_librispeech_yaounde/yaounde/decode_test/wer_13_0.5
+This is slightly better than the results for training on librispeech and yaounde:
+%WER 45.10 [ 1016 / 2253, 200 ins, 114 del, 702 sub ] exp/multi/yaounde/decode_test/wer_16_0.0
+
+- TODO Mandatory Training: Standdown day.
+
 * <2018-04-16 Mon>
 ** Goals set Last Week:
 - TODO Multilang: Write tn in LaTeX.
