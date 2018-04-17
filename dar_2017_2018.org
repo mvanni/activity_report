@@ -21,6 +21,13 @@ This is slightly better than the results for training on librispeech and yaounde
 
 - TODO Mandatory Training: Standdown day.
 
+** Goals for Wednesday:
+- TODO Write TNs for experiments:
+1. Librispeech Tunisian_MSA
+2. Librispeech Yaounde
+3. Librispeech Heroico.
+- TODO Multilang: Setup experiment with 3 tasks Gale Arabic Librispeech and Heroico.
+
 * <2018-04-16 Mon>
 ** Goals set Last Week:
 - TODO Multilang: Write tn in LaTeX.
