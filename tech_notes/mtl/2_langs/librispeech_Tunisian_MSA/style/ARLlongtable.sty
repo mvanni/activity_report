@@ -1,0 +1,28 @@
+\ProvidesPackage{ARLlongtable}
+[2015/03/21 v1.00]
+
+% V1.00-Initial release; package corrects caption style to match ARL
+%       style.
+%      -Introduces ARLlongtable environment to set longtables in
+%       \footntoesize.
+
+\usepackage{longtable}
+
+\def\LT@makecaption#1#2#3{%
+  \LT@mcol\LT@cols c{\hbox to\z@{\hss\parbox[t]\LTcapwidth{%
+    \sbox\@tempboxa{\footnotesize\bfseries#1{#2 \ }#3}%
+    \ifdim\wd\@tempboxa>\hsize
+      \footnotesize\bfseries#1{#2 \ }#3%
+    \else
+      \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+    \fi
+    \endgraf\vskip\baselineskip}%
+  \hss}}}
+
+\setlength\LTcapwidth{\textwidth}
+
+\newenvironment{ARLlongtable}[1]{\footnotesize\begin{longtable}{#1}}
+{\end{longtable}}
+
+\endinput
+

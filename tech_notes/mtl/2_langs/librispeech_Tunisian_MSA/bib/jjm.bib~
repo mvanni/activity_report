@@ -1,0 +1,483 @@
+@book{gaiba98,
+title={The Origins of Simultaneous Interpretation: The Nuremberg Trial},
+author={Gaiba, Francesca},
+year={1998},
+publisher={University of Ottawa Press},
+}
+@inproceedings{gesmundo2014,
+author={Gesmundo, Andrea and Henderson, James},
+title={Undirected Machine Translation with Discriminative Reinforcement Learning},
+year={2014},
+booktitle = eacl
+}
+@phdthesis{galron2013,
+author={Galron, Daniel},
+school={New York University},
+title={Optimizing Machine Translation by Learning to Search},
+type={{Ph.D.} dissertation},
+year={2013}
+}
+@Inproceedings{Tillmann:1997,
+author = "Christoph Tillmann and Stephan Vogel and Hermann Ney and Alex Zubiaga",
+title = "A DP-based Search Using Monotone Alignments in Statistical Translation",
+booktitle = coling,
+year = 1997
+}
+@InProceedings{banerjee-lavie:2005:MTSumm,
+  author    = {Banerjee, Satanjeev  and  Lavie, Alon},
+  title     = {{METEOR}: An Automatic Metric for {MT} Evaluation with Improved Correlation with Human Judgments},
+  booktitle = acl,
+  year      = {2005},
+  publisher = {Association for Computational Linguistics},
+  url       = {http://www.aclweb.org/anthology/W/W05/W05-0909}
+}
+@Article{Brown:1993,
+title = {The Mathematics of Statistical Machine Translation},
+author = {Peter F. Brown and Stephen A. Della-Pietra and Vincent J. Della-Pietra and Robert L. Mercer},
+year = 1993,
+volume = 19,
+number = 2,
+pages = {263--313},
+journal = {Computational Linguistics}
+}
+@InProceedings{Vogel:1996,
+author = "Stephan Vogel and Hermann Ney and Christoph Tillmann",
+title = "{HMM}-Based Word Alignment in Statistical Translation",
+booktitle = coling,
+year = 1996
+}
+@inproceedings{Toutanova:2002,
+  author    = {Toutanova, Kristina  and  Ilhan, H. Tolga  and  Manning, Christopher D.},
+  title     = {Extentions to {HMM}-based Statistical Word Alignment Models},
+  booktitle = emnlp,
+  year      = 2002
+}
+@InProceedings{he:2007:WMT,
+  author    = {He, Xiaodong},
+  title     = {Using Word-Dependent Transition Models in {HMM}-Based Word Alignment for Statistical Machine Translation},
+  booktitle = acl,
+  year      = {2007},
+  publisher = acl,
+  url       = {http://www.aclweb.org/anthology/W/W07/W07-0211}
+}
+@inproceedings{Heafield-estimate,
+  author = {Kenneth Heafield and Ivan Pouzyrevsky and Jonathan H. Clark and Philipp Koehn},
+  title = {Scalable Modified {Kneser-Ney} Language Model Estimation},
+  year = {2013},
+  booktitle = acl,
+  url = {http://kheafield.com/professional/edinburgh/estimate\_paper.pdf},
+}
+@article{Daume:2009:SSP:1541660.1541689,
+ author = {Daum{\'e III}, Hal and Langford, John and Marcu, Daniel},
+ title = {Search-based Structured Prediction},
+ journal = {Mach. Learn.},
+ issue_date = {June      2009},
+ volume = {75},
+ number = {3},
+ month = jun,
+ year = {2009},
+ issn = {0885-6125},
+ pages = {297--325},
+ numpages = {29},
+ url = {http://dx.doi.org/10.1007/s10994-009-5106-x},
+ doi = {10.1007/s10994-009-5106-x},
+ acmid = {1541689},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+ keywords = {Reductions, Search, Structured prediction},
+} 
+@InProceedings{Pytlik:2006:AMTA,
+  author    = {Brock Pytlik and David Yarowsky},
+  title     = {Machine Translation for Languages Lacking Bitext via Multilingual Gloss Transduction},
+  booktitle = {5th Conference of the Association for Machine Translation in the Americas (AMTA)},
+  month     = {August},
+  year      = {2006},
+
+}
+@inproceedings{le2014distributed,
+  title={Distributed Representations of Sentences and Documents},
+  author={Le, Quoc V and Mikolov, Tomas},
+  booktitle=icml,
+  year={2014}
+}
+
+@inproceedings{mikolovphrase,
+  author    = {Tomas Mikolov and
+               Ilya Sutskever and
+               Kai Chen and
+               Gregory S. Corrado and
+               Jeffrey Dean},
+  title     = {Distributed Representations of Words and Phrases and their Compositionality},
+  year=2013,
+  booktitle = nips
+}
+@INPROCEEDINGS{Mikolov2010,
+   author = {Tom{\'{a}}{\v{s}} Mikolov and Martin Karafi{\'{a}}t and
+	Luk{\'{a}}{\v{s}} Burget and Jan {\v{C}}ernock{\'{y}} and
+	Sanjeev Khudanpur},
+   title = {Recurrent neural network based language model},
+   pages = {1045--1048},
+   booktitle = {Proceedings of the 11th Annual Conference of the
+	International Speech Communication Association (INTERSPEECH
+	2010)},
+   journal = {Proceedings of Interspeech},
+   volume = {2010, 9},
+   year = {2010},
+   location = {Makuhari, Chiba, JP},
+   publisher = {International Speech Communication Association},
+   ISBN = {978-1-61782-123-3},
+   ISSN = {1990-9772},
+   language = {english},
+   url = {http://www.fit.vutbr.cz/research/view_pub.php?id=9362}
+}
+@article{DBLP:journals/corr/Graves13,
+  author    = {Alex Graves},
+  title     = {Generating Sequences With Recurrent Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/1308.0850},
+  year      = {2013},
+  url       = {http://arxiv.org/abs/1308.0850},
+  timestamp = {Tue, 10 Dec 2013 12:03:02 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/Graves13},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+@INPROCEEDINGS{Motlicek_ICASSP2013-2_2013,
+         author = {Motlicek, Petr and Garner, Philip N. and Kim, Namhoon and Cho, Jeongmi},
+       projects = {Idiap, SAMSUNG},
+          month = may,
+          title = {ACCENT ADAPTATION USING SUBSPACE GAUSSIAN MIXTURE MODELS},
+      booktitle = {The 38th International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+           year = {2013},
+          pages = {7170-7174},
+       location = {Vancouver, BC, Canada},
+       venue={Vancouver, BC, Canada},
+   organization = {IEEE},
+           issn = {1520-6149},
+            doi = {10.1109/ICASSP.2013.6639054},
+       crossref = {Motlicek_Idiap-RR-38-2013},
+       abstract = {This paper investigates employment of Subspace Gaussian Mixture Models (SGMMs) for acoustic model adaptation towards different accents for English speech recognition. The SGMMs comprise globally-shared and state-specific parameters which can efficiently be employed for various kinds of acoustic parameter tying. Research results indicate that well-defined sharing of acoustic model parameters in SGMMs can significantly outperform adapted systems based on conventional HMM/GMMs. Furthermore, SGMMs rapidly achieve target acoustic models with small amounts of data. Experiments performed with US and UK English versions of the
+Wall Street Journal (WSJ) corpora indicate that SGMMs lead to approximately 20\% and 8\% relative improvements with respect to speaker-independent and speaker-adapted acoustic models respectively over conventional HMM/GMMs. Finally, we demonstrate that SGMMs adapted only with 1.5 hours can reach performance of HMM/GMMs trained with 18 hours.},
+            pdf = {http://publications.idiap.ch/downloads/papers/2013/Motlicek_ICASSP2013-2_2013.pdf}
+}
+
+
+@TECHREPORT{Motlicek_Idiap-RR-38-2013,
+         author = {Motlicek, Petr and Garner, Philip N. and Kim, Namhoon and Cho, Jeongmi},
+       keywords = {Accented speech, Acoustic model adaptation, Automatic Speech Recognition, Under-resourced data},
+       projects = {Idiap, SAMSUNG},
+          month = {11},
+          title = {ACCENT ADAPTATION USING SUBSPACE GAUSSIAN MIXTURE MODELS},
+           type = {Idiap-RR},
+         number = {Idiap-RR-38-2013},
+	 series = {38},
+           year = {2013},
+    institution = {Idiap},
+        address = {Rue Marconi 19, Martigny, Switzerland},
+       abstract = {This paper investigates employment of Subspace Gaussian Mixture Models (SGMMs) for acoustic model adaptation towards different accents for English speech recognition. The SGMMs comprise globally-shared and state-specific parameters which can efficiently be employed for various kinds of acoustic parameter tying. Research results indicate that well-defined sharing of acoustic model parameters in SGMMs can significantly outperform adapted systems based on conventional HMM/GMMs. Furthermore, SGMMs rapidly achieve target acoustic models with small amounts of data. Experiments performed with US and UK English versions of the
+Wall Street Journal (WSJ) corpora indicate that SGMMs lead to approximately 20\% and 8\% relative improvements with respect to speaker-independent and speaker-adapted acoustic models respectively over conventional HMM/GMMs. Finally, we demonstrate that SGMMs adapted only with 1.5 hours can reach performance of HMM/GMMs trained with 18 hours.},
+            pdf = {http://publications.idiap.ch/downloads/reports/2013/Motlicek_Idiap-RR-38-2013.pdf}
+}
+@INPROCEEDINGS{Povey_ASRU2011_2011,
+         author = {Povey, Daniel and Ghoshal, Arnab and Boulianne, Gilles and Burget, Lukas and Glembek, Ondrej and Goel, Nagendra and Hannemann, Mirko and Motlicek, Petr and Qian, Yanmin and Schwarz, Petr and Silovsky, Jan and Stemmer, Georg and Vesely, Karel},
+       keywords = {ASR, Automatic Speech Recognition, GMM, HTK, SGMM},
+       projects = {Idiap, IM2},
+          month = dec,
+          title = {The Kaldi Speech Recognition Toolkit},
+      booktitle = {IEEE 2011 Workshop on Automatic Speech Recognition and Understanding},
+           year = {2011},
+      publisher = {IEEE Signal Processing Society},
+       location = {Hilton Waikoloa Village, Big Island, Hawaii, US},
+              venue = {Hilton Waikoloa Village, Big Island, Hawaii, US},
+           note = {IEEE Catalog No.: CFP11SRW-USB},
+           isbn = {978-1-4673-0366-8},
+       crossref = {Povey_Idiap-RR-04-2012},
+       abstract = {We describe the design of Kaldi, a free, open-source
+toolkit for speech recognition research. Kaldi provides a speech
+recognition system based on finite-state transducers (using the
+freely available OpenFst), together with detailed documentation
+and scripts for building complete recognition systems. Kaldi
+is written is C++, and the core library supports modeling of
+arbitrary phonetic-context sizes, acoustic modeling with subspace
+Gaussian mixture models (SGMM) as well as standard Gaussian
+mixture models, together with all commonly used linear and
+affine transforms. Kaldi is released under the Apache License
+v2.0, which is highly nonrestrictive, making it suitable for a wide
+community of users.},
+            pdf = {http://publications.idiap.ch/downloads/papers/2012/Povey_ASRU2011_2011.pdf}
+}
+crossreferenced publications: 
+@TECHREPORT{Povey_Idiap-RR-04-2012,
+         author = {Povey, Daniel and Ghoshal, Arnab and Boulianne, Gilles and Burget, Lukas and Glembek, Ondrej and Goel, Nagendra and Hannemann, Mirko and Motlicek, Petr and Qian, Yanmin and Schwarz, Petr and Silovsky, Jan and Stemmer, Georg and Vesely, Karel},
+       keywords = {ASR, Automatic Speech Recognition, GMM, HTK, SGMM},
+       projects = {Idiap},
+          month = {1},
+          title = {The Kaldi Speech Recognition Toolkit},
+           type = {Idiap-RR},
+         number = {Idiap-RR-04-2012},
+	          series = {Idiap-RR-04-2012},
+           year = {2012},
+    institution = {Idiap},
+        address = {Rue Marconi 19, Martigny},
+       abstract = {We describe the design of Kaldi, a free, open-source
+toolkit for speech recognition research. Kaldi provides a speech
+recognition system based on finite-state automata (using the freely
+available OpenFst), together with detailed documentation and a
+comprehensive set of scripts for building complete recognition
+systems. Kaldi is written is C++, and the core library supports
+modeling of arbitrary phonetic-context sizes, acoustic modeling
+with subspace Gaussian mixture models (SGMM) as well as
+standard Gaussian mixture models, together with all commonly
+used linear and affine transforms. Kaldi is released under the
+Apache License v2.0, which is highly nonrestrictive, making it
+suitable for a wide community of users.},
+            pdf = {http://publications.idiap.ch/downloads/reports/2011/Povey_Idiap-RR-04-2012.pdf}
+}
+@techreport{subspace-gaussian-mixture-models-for-speech-recognition,
+author = {Daniel Povey},
+title = {Subspace Gaussian Mixture Models for Speech Recognition},
+booktitle = {},
+year = {2009},
+month = {May},
+institution = {Microsoft},
+abstract = {This technical report contains the details of an acoustic modeling approach based on subspace adaptation of a shared Gaussian Mixture Model.  This refers to adaptation to a particular speech state; it is not a speaker adaptation technique, although we do later introduce a speaker adaptation technique that it tied to this particular framework.  Our model is a large shared GMM whose parameters vary in a subspace of relatively low dimension (e.g. 50), thus each state is described by a vector of low dimension which controls the GMM's means and mixture weights in a manner determined by globally shared parameters.  In addition we generalize to having each speech state be a mixture of substates, each with a different vector.  Only the mathematical details are provided here; experimental results are being published separately.
+},
+publisher = {Microsoft},
+url = {https://www.microsoft.com/en-us/research/publication/subspace-gaussian-mixture-models-for-speech-recognition/},
+address = {},
+pages = {},
+journal = {},
+volume = {},
+number = {},
+chapter = {},
+isbn = {},
+}
+@INPROCEEDINGS{Rabiner89atutorial,
+    author = {Lawrence R. Rabiner},
+    title = {A tutorial on hidden Markov models and selected applications in speech recognition},
+    booktitle = {PROCEEDINGS OF THE IEEE},
+    year = {1989},
+        venue = {PROCEEDINGS OF THE IEEE},
+    pages = {257--286},
+    publisher = {}
+}
+@INPROCEEDINGS{bbn,
+author= {R. Schwartz and Y.L. Chow and O. Kimbal and S. Roucos and M. Krasner and J. Makhoul},
+title={Context-dependent modeling for acoustic--phonetic recognition of continuous speech},
+venue={\it Proceedings of IEEE\ International Conference on Acoustics, Speech, and Signal Processing, },
+pages={ 1205 -- 1208},
+location={Tampa},
+month={March},
+year={1985}
+}
+@article{lee1990context,
+  title={Context-dependent phonetic hidden Markov models for speaker-independent continuous speech recognition},
+  author={Lee, K-F},
+  journal={IEEE Transactions on Acoustics, Speech, and Signal Processing},
+  volume={38},
+  number={4},
+  pages={599--609},
+  year={1990},
+  publisher={IEEE}
+  }
+@article{young1994state,
+  title={State clustering in hidden Markov model-based continuous speech recognition},
+  author={Young, Steve J and Woodland, Philip C},
+  journal={Computer Speech \& Language},
+  volume=8,
+  number=4,
+  pages={369--383},
+  year=1994,
+  publisher={Elsevier}
+}
+@inproceedings{DBLP:conf/interspeech/ManoharPK15,
+  author    = {Vimal Manohar and
+               Daniel Povey and
+               Sanjeev Khudanpur},
+  title     = {Semi-supervised maximum mutual information training of deep neural
+               network acoustic models},
+  booktitle = {{INTERSPEECH} 2015, 16th Annual Conference of the International Speech
+               Communication Association, Dresden, Germany, September 6-10, 2015},
+  pages     = {2630--2634},
+  year      = {2015},
+  crossref  = {DBLP:conf/interspeech/2015},
+  url       = {http://www.isca-speech.org/archive/interspeech_2015/i15_2630.html},
+  timestamp = {Mon, 04 Jan 2016 19:12:52 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/interspeech/ManoharPK15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/interspeech/2015,
+  title     = {{INTERSPEECH} 2015, 16th Annual Conference of the International Speech
+               Communication Association, Dresden, Germany, September 6-10, 2015},
+  venue     = {{INTERSPEECH} 2015, 16th Annual Conference of the International Speech
+               Communication Association, Dresden, Germany, September 6-10, 2015},
+  publisher = {{ISCA}},
+  year      = {2015},
+  url       = {http://www.isca-speech.org/archive/interspeech_2015},
+  timestamp = {Mon, 04 Jan 2016 17:11:58 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/interspeech/2015},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@INPROCEEDINGS{Schultz02globalphone:a,
+author = {Tanja Schultz},
+title = {GlobalPhone: A Multilingual Speech and Text Database Developed at Karlsruhe University},
+booktitle = {Proceedings of the ICSLP},
+venue={ICSLP 2002}, 
+year = {2002},
+pages = {345--348}, 
+abstract={This paper describes the design, collection, and current status 
+of the multilingual database GlobalPhone, an ongoing project since 1995 at
+ Karlsruhe University. GlobalPhone is a highquality read speech and text
+ database in a large variety of languages which is suitable for the development 
+of large vocabulary speech recognition systems in many languages. It has already 
+been successfully applied to language independent and language adaptive speech 
+recognition. GlobalPhone currently covers 15 languages Arabic, Chinese (Mandarin 
+and Shanghai), Croatian, Czech, French, German, Japanese, Korean, Portuguese, 
+Russian, Spanish, Swedish, Tamil, and Turkish. The corpus contains more than 300
+ hours of transcribed speech spoken by more than 1500 native, adult speakers and 
+will soon be available from ELRA. }
+}
+@inproceedings{DBLP:conf/icassp/PoveyKKRSV08,
+  author    = {Daniel Povey and
+               Dimitri Kanevsky and
+               Brian Kingsbury and
+               Bhuvana Ramabhadran and
+               George Saon and
+               Karthik Visweswariah},
+  title     = {Boosted {MMI} for model and feature-space discriminative training},
+  booktitle = {Proceedings of the {IEEE} International Conference on Acoustics, Speech,
+               and Signal Processing, {ICASSP} 2008, March 30 - April 4, 2008, Caesars
+               Palace, Las Vegas, Nevada, {USA}},
+	       venue={The {IEEE} International Conference on Acoustics, Speech, and Signal Processing, {ICASSP} 2008}, 
+  pages     = {4057--4060},
+  year      = {2008},
+  crossref  = {DBLP:conf/icassp/2008},
+  url       = {http://dx.doi.org/10.1109/ICASSP.2008.4518545},
+  doi       = {10.1109/ICASSP.2008.4518545},
+  timestamp = {Wed, 10 Feb 2010 13:22:26 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/icassp/PoveyKKRSV08},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/icassp/2008,
+  title     = {Proceedings of the {IEEE} International Conference on Acoustics, Speech,
+               and Signal Processing, {ICASSP} 2008, March 30 - April 4, 2008, Caesars
+               Palace, Las Vegas, Nevada, {USA}},
+  publisher = {{IEEE}},
+  year      = {2008},
+  isbn      = {1-4244-1484-9},
+  timestamp = {Fri, 05 Feb 2010 14:47:17 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/icassp/2008},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{SkadinsEA:LREC14,
+  author =       {Raivis Skadi\c{n}\v{s} and J{\"o}rg Tiedemann and Roberts Rozis and Daiga Deksne},
+  title =        {Billions of Parallel Words for Free: Building and Using the EU Bookshop Corpus},
+  booktitle =    {Proceedings of the 9th International Conference
+                  on Language Resources and Evaluation (LREC-2014)},
+		  venue={Proceedings of the 9th International Conference on Language Resources and Evaluation (LREC-2014)},
+  year =         2014,
+  month =        {May},
+  address =      {Reykjavik, Iceland},
+  publisher =    {European Language Resources Association (ELRA)},
+}
+@INPROCEEDINGS{Stolcke02srilm-,
+    author = {Andreas Stolcke},
+    title = {SRILM - An Extensible Language Modeling Toolkit},
+    booktitle = {},
+    venue={Interspeech},
+    year = {2002},
+    pages = {901--904}
+}
+@inproceedings{liaphon,
+	author={Fr{\'e}d{\'e}ric Bechet},
+title={"LIA\_PHON - Un systeme complet de phonetisation de textes"},
+year=2001,
+booktitle={revue Traitement Automatique des Langues (T.A.L.)},
+venue={T.A.L.},
+volume={    volume 42},
+    number={1/2001},
+publisher={    edition Hermes}
+}
+
+@InProceedings{10.1007/978-3-319-25789-1_24,
+author="Juan, Sarah Samson
+and Besacier, Laurent
+and Lecouteux, Benjamin
+and Tan, Tien-Ping",
+editor="Dediu, Adrian-Horia
+and Mart{\'i}n-Vide, Carlos
+and Vicsi, Kl{\'a}ra",
+title="Merging of Native and Non-native Speech for Low-resource Accented ASR",
+booktitle="Statistical Language and Speech Processing",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="255--266",
+abstract="This paper presents our recent study on low-resource automatic speech recognition (ASR) system with accented speech. We propose multi-accent Subspace Gaussian Mixture Models (SGMM) and accent-specific Deep Neural Networks (DNN) for improving non-native ASR performance. In the SGMM framework, we present an original language weighting strategy to merge the globally shared parameters of two models based on native and non-native speech respectively. In the DNN framework, a native deep neural net is fine-tuned to non-native speech. Over the non-native baseline, we achieved relative improvement of 15 {\%} for multi-accent SGMM and 34 {\%} for accent-specific DNN with speaker adaptation.",
+isbn="978-3-319-25789-1"
+}
+@InProceedings{10.1007/978-3-319-66429-3_47,
+author="M{\"u}ller, Markus
+and St{\"u}ker, Sebastian
+and Waibel, Alex",
+editor="Karpov, Alexey
+and Potapova, Rodmonga
+and Mporas, Iosif",
+title="Language Adaptive Multilingual CTC Speech Recognition",
+booktitle="Speech and Computer",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="473--482",
+abstract="Recently, it has been demonstrated that speech recognition systems are able to achieve human parity. While much research is done for resource-rich languages like English, there exists a long tail of languages for which no speech recognition systems do yet exist. The major obstacle in building systems for new languages is the lack of available resources. In the past, several methods have been proposed to build systems in low-resource conditions by using data from additional source languages during training. While it has been shown that DNN/HMM hybrid setups trained in low-resource conditions benefit from additional data, we are proposing a similar technique using sequence based neural network acoustic models with Connectionist Temporal Classification (CTC) loss function. We demonstrate that setups with multilingual phone sets benefit from the addition of Language Feature Vectors (LFVs).",
+isbn="978-3-319-66429-3"
+}
+@MISC{Heigold13multilingualacoustic,
+author = {G. Heigold and V. Vanhoucke and A. Senior and P. Nguyen and M. Ranzato
+and M. Devin and J. Dean},
+title = {Multilingual acoustic models using distributed deep neural networks,”
+ICASSP},
+year = {2013}
+}
+@INPROCEEDINGS{Caruana93multitasklearning:,
+author = {Richard Caruana},
+title = {Multitask Learning: A Knowledge-Based Source of Inductive Bias},
+booktitle = {Proceedings of the Tenth International Conference on Machine
+Learning},
+year = {1993},
+pages = {41--48},
+publisher = {Morgan Kaufmann}
+}
+@INPROCEEDINGS{Povey11thekaldi,
+author = {Daniel Povey and Arnab Ghoshal and Gilles Boulianne and Nagendra Goel
+and Mirko Hannemann and Yanmin Qian and Petr Schwarz and Georg Stemmer},
+title = {The kaldi speech recognition toolkit},
+booktitle = {In IEEE 2011 workshop},
+year = {2011}
+}
+@MISC{Mamou_developingkeyword,
+author = {Jonathan Mamou and Jia Cui and Xiaodong Cui and Mark J. F. Gales and
+Brian Kingsbury and Kate Knill and Lidia Mangu and David Nolden and Michael
+Picheny and Bhuvana Ramabhadran and Murat Saraclar and Abhinav Sethy and Philip C.
+Woodl},
+title = {DEVELOPING KEYWORD SEARCH UNDER THE IARPA BABEL PROGRAM},
+year = {}
+}
+ @INPROCEEDINGS{aaliArabicKaldi, author={Ali, A. and Yifan Zhang and Cardinal,
+ P. and Dahak, N. and Vogel, S. and Glass, J.}, booktitle={Spoken Language
+ Technology Workshop (SLT), 2014 IEEE}, title={A complete KALDI recipe for
+ building Arabic speech recognition systems}, year={2014}, month={Dec}, pages=
+ {525-529}, doi={10.1109/SLT.2014.7078629} } 
+
+@INPROCEEDINGS{Stolcke02srilm--,
+author = {Andreas Stolcke},
+title = {SRILM -- An extensible language modeling toolkit},
+booktitle = {IN PROCEEDINGS OF THE 7TH INTERNATIONAL CONFERENCE ON SPOKEN
+LANGUAGE PROCESSING (ICSLP 2002},
+year = {2002},
+pages = {901--904},
+publisher = {}
+}

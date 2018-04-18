@@ -1,0 +1,121 @@
+% DISTRIBUTION LIST MAKER DOCUMENT
+% V1.01
+%
+% V1.00 - Initial release
+% V1.01 - Uses \FOUOPageStamp, instead of \PageStamp
+% V2.00 - Readied for New Report Cover, sans serif fonts (JAN 2015)
+%
+% This document will be \input, with the following data already preset:
+%\documentclass {arlticle}
+%\makeatletter 
+%\def \@arltitle {}
+%\def \@allauthors {}
+%\def \@arlrptno {}
+%\def \@pubdate {}
+%\def \MandatoryDL {}
+%\def \LocalMandatoryDL {}
+%\def \UserDL {}
+%\def \ecwarningtext {}
+%\def \downgradetext {}
+%\def \@distribution {}
+%\input {DLprint.tex}
+%\makeatother 
+
+\usepackage{xcolor,stackengine}
+
+\renewcommand\dlem[2][]{%
+  \ifthenelse{\equal{}{#1}}{}{~\\~}%
+  $\bigcirc$\textcolor{red}{\textbf{ #2}}%
+  \ifthenelse{\equal{}{#1}}{\\}{}%
+}
+
+\begin{document}
+
+\definecolor{brightgreen}{rgb}{0,.9,0}
+
+\newsavebox{\doublestamp}
+\savebox{\doublestamp}[6.in]
+{\parbox{6.in}{\color{white}\bfseries\sffamily%
+\begin{center}\huge For Official Use Only\end{center}}}%
+\FOUOPageStamp[\usebox{\doublestamp}]
+ 
+ \normalsize
+
+ \makeatletter
+ \def\@ecwarningtext{%
+ {\large This document is %
+ \textcolor{brightgreen}{\textsc{For Official Use Only}}\\~\\%
+ The full report referenced above has the following distribution:}\\%
+ \ecwarningtext~}%
+ \def\@disclaimerpage{%
+ \let\savethePageStamp\thePageStamp%
+ \caseupper[e]{\thePageStamp}%
+ \findwords[q]{\thestring}{CONFIDENTIAL}%
+ \ifthenelse{\equal{\theresult}{0}}%
+   {}{\def\thePageStamp{UNCLASSIFIED}}%
+ \caseupper[e]{\thePageStamp}%
+ \findwords[q]{\thestring}{SECRET}%
+ \ifthenelse{\equal{\theresult}{0}}%
+   {}{\def\thePageStamp{UNCLASSIFIED}}%
+ }
+ \makeatother
+
+\let\svclearpage\clearpage
+\def\clearpage{\let\clearpage\svclearpage}
+
+ {\makebox[6.5in]{\Huge\color{white}\bfseries\sffamily%
+  \smash{\raisebox{5pt}{\stackon{\large(with email addresses included)}%
+  {Distribution List for ARL Report}}}}%
+ }
+
+\ARLcover{G}
+\FOUOPageStamp
+
+\underline{Files Used to Make This Distribution List:}
+
+Mandatory Distribution: \MandatoryDL
+
+Local Mandatory Distribution%
+\makeatletter
+\@ifundefined{LocalMandatoryDL}{ List is Undefined}{: \LocalMandatoryDL}
+\makeatother
+
+%% X-TENDED VERSION OF \dlitem, 3 ARGUMENTS, #3 CAN CONTAIN LINEBREAKS
+%% AND APPEARS BELOW TOTAL COPY COUNT (WHICH IS ARGUMENT #2)
+\renewcommand\xdlitem[3][\addressdefaultlines]{
+  \setcounter{Lines}{#2}
+  \addtocounter{Lines}{#2}
+  \addtocounter{Lines}{#1}
+  \setlength{\labelwidth}{0.61in}\setlength{\labelsep}{0.05in}%
+  \item[\hfill%
+    \tabcolsep=0pt\smash{\begin{tabular}[t]{c}#2\\#3\end{tabular}}%
+  \hfill]
+%% RESTORE ORIGINAL VALUES
+  \setlength{\labelwidth}{0.31in}\setlength{\labelsep}{0.295in}%
+  \needlines{\arabic{Lines}}
+}
+
+%% (PDF) VERSION OF \dlitem
+\renewcommand\pdlitem[2][\addressdefaultlines]{
+  \setcounter{Lines}{#2}
+  \addtocounter{Lines}{#2}
+  \addtocounter{Lines}{#1}
+  \setlength{\labelwidth}{0.61in}\setlength{\labelsep}{0.05in}%
+  \item[\hfill%
+    \tabcolsep=0pt\smash{\begin{tabular}[t]{c}#2\\(PDF)\end{tabular}}%
+  \hfill]
+%% RESTORE ORIGINAL VALUES
+  \setlength{\labelwidth}{0.31in}\setlength{\labelsep}{0.295in}%
+  \needlines{\arabic{Lines}}
+}
+
+User Distribution: \UserDL
+
+\distlistsetup[x]%         Set up page parameters for DL printing.
+\begin{distributionlist}
+  \input{\MandatoryDL}% Mandatory DL, Ensure you have current version
+  \input{\UserDL}%          Your DL for this report.
+\end{distributionlist}
+\distlistcleanup%       Cleans up and restores pre-DL settings
+
+\end{document}

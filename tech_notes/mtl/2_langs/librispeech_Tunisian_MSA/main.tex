@@ -1,0 +1,288 @@
+\documentclass{arlticle}% ARL REPORT CLASS FILE, 12pt IS ARL STYLE
+\usepackage{ARLboxhandler}% OPTIONAL PACKAGE FOR ARL FIG/TBL CAPTIONS & PLACEMENT
+\usepackage{notoccite}% PREVENTS CITES IN CAPTIONS FROM MISNUMBERING YOUR REFERENCES
+% THANKS TO ADAM SOKOLOW FOR THESE CONVENIENT USES OF totpages AND changepage PACKAGES
+\usepackage{totpages}% FOR ITEM 18 OF THE SF298
+\usepackage{changepage}% TO MAKE SURE CERTAIN THINGS START ON ODD PAGE #
+% MACRO TO GO TO ODD PAGE, INSERTING "INTENTIONALLY LEFT BLANK" IF NEEDED
+\newcommand\gotooddpage{\clearpage%
+  \checkoddpage\ifoddpage\else\blankpage\fi\clearpage}
+% MACRO TO FINISH ON EVEN PAGE, INSERTING "INTENTIONALLY LEFT BLANK" IF NEEDED
+\newcommand\finishonevenpage{%
+  \clearpage\checkoddpage\ifoddpage\else\blankpage\fi}
+% ARL FOOTNOTE STYLE:
+\usepackage[symbol,perpage]{footmisc}
+%%%%%
+% CHECK WITH ORGANIZATION TO SEE IF WHAT FOLLOWS IS LATEST MANDATORY DISTRIBUTION LIST
+  \def\MandatoryDL{distribution-lists/ARL-07-27-16(Unlimited).dls}% MANDATORY DISTRIBUTION LIST FILE
+  \def\LocalMandatoryDL{distribution-lists/blank.dls}% USED FOR DIRECTORATE LEVEL MANDATORY DISTRIBUTIONS
+  \def\UserDL{distribution-lists/jjm.dls}%      USER DISTRIBUTION LIST FILE
+  \addtolength{\cftfignumwidth}{0.0ex}%  EXTEND WIDTH OF LOF LABEL IF USING
+%                                        APPENDIX FIGURES .OR. > 99 FIGURES
+  \addtolength{\cfttabnumwidth}{0.0ex}%  EXTEND WIDTH OF LOT LABEL IF USING
+%                                        APPENDIX TABLES .OR. > 99 TABLES
+%% IN ADDITION TO THE DEFAULT (COMPUTER-MODERN) MATH FONT, THE FOLLOWING
+%% ALTERNATIVES ARE APPROVED FOR USE IN ARL REPORTS (OPTIONALLY CHOOSE ONE LINE)
+%  \usepackage{eulervm,eufrak}
+%  \usepackage{newtxmath}
+%  \usepackage{mathptmx}
+%%
+%\nosectspace% THE DEFAULT, TURNS OFF \spaceout{} FOR SPREADING OUT SECTION HEAD TEXT
+\sectspace% MAY NEED TO TURN THIS SETTING OFF IF YOU HAVE STUFF OTHER THAN 
+%           TEXT, \color, OR \label IN YOUR SECTION TITLES
+
+%%%%% USER'S OWN MACRO DEFINITIONS ARE INSERTED IN THE PREAMBLE %%%%%%%%%%%%%%%
+\usepackage{fgcite}\FgTypeJ % PACKAGE FOR REFERENCING FIGURES
+\usepackage{tbcite}\TbTypeB % PACKAGE FOR REFERENCING TABLES
+\usepackage{eqcite}\EqTypeH % PACKAGE FOR REFERENCING EQUATIONS
+\usepackage{enumitem, lipsum, stackengine, verbatim}
+\def\Ccj{C_\mathrm{CJ}}
+\def\Pcj{P_\mathrm{CJ}}
+\def\rhohe{\rho_\mathrm{HE}}
+\def\rhoheo{\rho_\mathrm{HE0}}
+\def\armo{\mathcal{I}}
+\def\Vbar{\bar{V}}
+\def\Vbarhe{\Vbar_\mathrm{H}}
+\def\Aex{A_\mathrm{bl}}
+\def\dAex{dA_\mathrm{bl}}
+\def\Mhe{M_\mathrm{H}}
+\def\DelCG{\Delta_\mathrm{CG}}
+\def\Rdbare{\dot{R}_\mathrm{b}}
+\newcommand\vfilescript[1]{\vspace{-1em}\scriptsize\verbatiminput{#1}
+                     \normalsize\vspace{-1em}}
+\def\smallsf#1{\textsf{\small#1}}
+\let\svlipsum\lipsum
+\renewcommand\lipsum[1][]{\color{black!40}\svlipsum[#1]\color{black}}
+\makeatletter
+\newcommand\singlelipsum[1]{\color{black!40}%
+  \begingroup\let\lips@par\relax\csname lipsum@\@roman{#1}\endcsname
+\endgroup \color{black}}
+\makeatother
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em\TeX}}
+% IN LIEU OF \usepackage{url}, THE FOLLOWING DEFINITION HANDLES URL LINEBREAKING BETTER.
+% THIS WILL LINEBREAK IN URL'S AT SLASHES AND DOTS.
+\newcommand{\url}[1]{%
+  \begingroup
+  \begingroup\lccode`~=`/\lowercase{\endgroup\def~}{/\penalty0 }%
+  \begingroup\lccode`~=`.\lowercase{\endgroup\def~}{.\penalty0 }%
+  \catcode`/=\active\catcode`.=\active
+  \scantokens{#1\noexpand}%
+  \endgroup
+}
+% OR THIS WILL LINEBREAK AT ANY CHARACTER AS AN ALTERNATIVE TO PRIOR DEFINITION
+\renewcommand\url[1]{\urlhelp#1\relax\relax\relax}
+\def\urlhelp#1#2\relax{%
+  {#1}\penalty0\ifx\relax#2\else\urlhelp#2\relax\fi}
+%
+
+%       BEGIN EQUATION MODE
+\newcommand{\beq}{\begin{equation}}
+%       BEGIN EQUATION MODE WITH LABEL
+\newcommand{\beql}[1]{\begin{equation}\label{#1}}
+%       END EQUATION MODE
+\newcommand{\eeq}{\end{equation}}
+%       END EQUATION MODE WITH A PERIOD
+\newcommand{\eeqp}{\;\;\;.\end{equation}}
+%       END EQUATION MODE WITH A COMMA
+\newcommand{\eeqc}{\;\;\;,\end{equation}}
+%       COMPOSE ARGUMENT AS IT'S OWN IN-LINE EQUATION
+\newcommand{\ds}[1]{\displaystyle{#1}}
+%       ITALICIZED i.e.,
+\newcommand{\ie}{\textit{i.e.},~}
+%       ITALICIZED e.g.,
+\newcommand{\eg}{\textit{e.g.},~}
+
+%%%%% END OF USER DEFINED MACROS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{roman}
+
+% If desired, can use the following command to put a
+% "DRAFT" stamp on each page; Can also use optional argument for
+% page classification markings, as in \PageStamp[UNCLASSIFIED].  Can
+% turn off with \StopPageStamp.  See arlticle documentation for 
+% further details.
+% One can make the page stamp in color with, for example, 
+%   \PageStamp[\textcolor{red}{EYES ONLY}]
+%
+% Default PageStamp is "DRAFT".  Can be used for class. markings
+\def\PageStampColor{red}% THIS LINE IS ONLY NEEDED TO CHANGE THE PAGE STAMP COLOR
+%\PageStamp[ARL (\today)]%  <---COMMENT THIS LINE IF NO PAGE STAMP DESIRED
+
+% COVER & TITLE PAGE INPUTS SPECIFIED IN THE FOLLOWING COMMANDS:
+%\arlzipcode	{}%		For use, if other than 21005-5066, i.e., 5069
+\arlrptno  {ARL-IR-0000}%		Uncomment and use, when needed
+\pubdate   {April 2018}%	Uncomment and use, when needed
+\arltitle  {A Minimal Example of MTL for ASR }
+\allauthors{John  Morgan, Stephen  LaRocca and Michelle Vanni}
+\authorsA  {John J Morgan}
+\organizationA	{Computational and Information Sciences Directorate, ARL}
+%% NOTE THAT FOR CONTRACT REPORTS, THE ADDRESS IS INCLUDED IN \organizationA, etc.,
+%% AS IN THE FOLLOWING LINE
+% \organizationA{SURVICE Engineering Company\\4695 Millenium Dr.\\Belcamp, MD 21017-7722}
+\authorsB	 {Stephen A LaRocca and Michelle Vanni}%		Uncomment and use, if needed
+\organizationB	{Computational and Information Sciences Directorate, ARL}%		Uncomment and use, 
+\distcodes[RDRL-CII-T]{A}{}{}    % DISTRIBUTION STATEMENT A
+%\distcodes[RDRL-CII-T]{C}{3}{X} %	FOR DISTRIBUTION C3, WITH EXPORT CONTROL
+%\UnderContract{W91CRB-09-D-0027}% FOR CONTRACT REPORTS, ARL-CR SERIES
+%\FOUOPageStamp                  % FOR FOUO DOCUMENTS
+%\FOIAexemptions{3}              % FOR ADDING FOIA EXEMPTIONS
+%\AddDistributionReason{4}       % FOR ADDING REASON TO DISTRIBUTION STATEMENT 
+%\AddDistributionReason{X}       % FOR ADDING EXPORT CONTROLLED TO DISTRIBUTION STATEMENT
+
+%%%%%% HERE IS AN ALTERNATE WAY TO DO FIGS, IF YOU USE boxhandler TO DEFINE FIGS.
+%% ISSUE \holdFigures AND THEN DEFINE ALL THE FIGURES IN THE PREAMBLE
+%% TO USE THE FIGURES IN THE DOCUMENT, ISSUE \nextFigure[ht]
+%\holdFigures
+
+%\bxfigure{Geometry of conical shape with respect to a wave emanating from
+%   $O$\label{fg:consh}}
+%  {\includegraphics[scale=1.1]{arlstencilFig2}}
+
+%\bxfigure{Normalized output (a) as a function of $\phi_x$, with
+%the base angle $\beta$ as a parameter, and (b) as a function 
+%of the base angle $\beta$, with $\phi_x$ as a parameter%
+%\label{fg:phibeta}}
+%              {\makebox[5.5in]{\parbox{6.5in}{\centering
+%              \includegraphics[scale=0.74]{arlstencilFig3a}
+%              \includegraphics[scale=0.74]{arlstencilFig3b}\\
+%              \small\rule{0.4in}{0in}(a)\rule{3in}{0in}(b)
+%              }}}
+
+%\bxfigure{Knowledge of Latin, $V$, as a function of time, $r$, before
+%and after meteor impact\label{fg:Vdist_he}}
+%{\includegraphics[scale=1.1]{arlstencilFig4}}
+%%%%%%%%
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage[acronym,toc,xindy]{glossaries}
+\makeglossaries
+%ABBREVIATIONS
+\newacronym{ASR}{asr}{Automatic Speech Recognition}
+\newacronym{DL}{dl}{Deep Learning}
+\newacronym{ML}{ml}{Machine Learning}
+\newacronym{MT}{mt}{Machine Translation}
+\newacronym{MTL}{mtl}{Multitask Learning}
+\newacronym{NN}{nn}{Neural Network}
+\newacronym{BL}{bl}{Background Language}
+\newacronym{TL}{tl}{Target Language}
+\newacronym{MSA}{msa}{Modern Standard Arabic}
+\newacronym{LR}{lr}{Low Resource}
+\newacronym{SAT}{sat}{Speaker Adaptive Training}
+\newacronym{GMM}{gmm}{Gaussian Mixture Model}
+\newacronym{HMM}{hmm}{Hidden Markov Model}
+\newacronym{OOV}{oov}{Out Of Vocabulary}
+\newacronym{SRILM}{srilm}{Stanfor Research Institute Language Model}
+\newacronym{WER}{wer}{Word Error Rate}
+\newacronym{MFCC}{mfcc}{Mel Frequency Cepstral Coefficients}
+\newacronym{PLP}{plp}{Perceptual Linear Prediction}
+\newacronym{DNN}{dnn}{Deep Neural Network}
+\newacronym{AM}{am}{Acoustic Model}
+\newacronym{QCRI}{qcri}{Qatar Computing Research Institute }
+\newacronym{FST}{fst}{Finite State Transducer}
+\newacronym{RELU}{relu}{Rectified Linear Unit}
+
+
+\begin {document}
+\ARLcover{}% MANDATORY ARGUMENT IS IGNORED WITH NEW STYLE, SINCE ALL COVERS ARE GOLD
+
+\arltitlepage%			[p. i]
+
+%% OPTION I: CREATE YOUR OWN SF298 in LaTeX:
+\begin{createSFtwoNINEeight}
+% SFitemONE AUTOMATICALLY FILLED IN (\pubdate)
+% SFitemTWO AUTOMATICALLY FILLED IN (Final)
+  \SFitemTHREE{October 2016-November 2016}
+% SFitemFOUR AUTO-FILLED WITH \arltitle DATA
+% SFitemFIVEa AUTO-FILLED WITH \UnderContract DATA
+% \SFitemFIVEb{[Grant Number here]}
+% \SFitemFIVEc{[PE Number here]}
+%  \SFitemFIVEd{AH80}
+% \SFitemFIVEe{[Task No. here]}
+% \SFitemFIVEf{[WU Number here]}
+% SFitemSIX{} AUTO-FILLED WITH \allauthors DATA
+  \SFitemSEVEN{US Army Research Laboratory\\ATTN: 
+               RDRL-CII-T\\Adelphi Laboratory Center, MD 20783-1138}
+% SFitemEIGHT AUTOMATICALLY FILLED IN (\arlrptno)
+% \SFitemNINE{[Sponsor here]}
+% \SFitemTEN{[Sponsor Acronym]}
+% \SFitemELEVEN{[Sponsor Rpt. No.]}
+% SFitemTWELVE AUTOMATICALLY FILLED IN WITH \distcodes DATA
+  \SFitemTHIRTEEN{primary author's email:
+$<$john.j.morgan50.civ$@$mail.mil$>$.}
+  \SFitemFOURTEEN{
+Multitask Learning was applied to a Large corpus of English and a small corpus of Modern Standard Arabic  read speech for the purpose of improving the performance of an Automatic Speech Recognition system. 
+An improvement in Word Error Rate over the best Singletask Learning method was observed. 
+  }
+  \SFitemFIFTEEN{Automatic Speech Recognition of Accented Speech, Multitask Learning}
+% \SFitemSIXTEENa defaults to UNCLASSIFIED
+% \SFitemSIXTEENb defaults to UNCLASSIFIED
+% \SFitemSIXTEENc defaults to UNCLASSIFIED
+% SFitemSEVENTEEN AUTOMATICALLY FILLED IN WITH "SAR" or "UU"
+% ITEM 18 CAN BE AUTOMATICALLY OBTAINED WITH \ref{TotPages}, USING THE totpages PACKAGE
+  \SFitemEIGHTEEN{\ref{TotPages}}%	= FRONT MATTER PP. + REPORT PP. + 2
+  \SFitemNINETEENa{John J Morgan}
+  \SFitemNINETEENb{301-394-1902}
+\end{createSFtwoNINEeight}
+%
+
+\tableofcontents%		p. iii
+%\listoffigures%			Comment out, if not needed
+\listoftables%			Comment out, if not needed
+\acknowledgments
+
+John Morgan wishes to sincerely thank his co-author, Dr. Stephen LaRocca. 
+
+\gotooddpage
+
+\pagenumbering{arabic}%		p. 1
+
+
+
+\input{sections/introduction}
+
+\input{sections/data}
+
+\input{sections/experiments}
+
+\input{sections/results}
+
+%\input{sections/discussion}
+
+\def\TECHREPORT{\textsf{\small @\kern-.4pt TECHREPORT}}
+\def\INPROCEEDINGS{\textsf{\small @INPROCEEDINGS}}
+\def\PROCEEDINGS{\textsf{\small @PROCEEDINGS}}
+\def\INTERNET{\textsf{\small @INTERNET}}
+\def\PRESENTATION{\textsf{\small @PRESENTATION}}
+\def\BOOK{\textsf{\small @BOOK}}
+\def\ARTICLE{\textsf{\small @ARTICLE}}
+\def\MILSTD{\textsf{\small @MILSTD}}
+\def\MANUAL{\textsf{\small @MANUAL}}
+\def\THESIS{\textsf{\small @\kern-.4ptTHESIS}}
+\def\PHDTHESIS{\textsf{\small @PHDTHESIS}}
+\def\MASTERSTHESIS{\textsf{\small @MASTERSTHESIS}}
+\def\MISC{\textsf{\small @MISC}}
+\def\ie{\textit{i.e.},~}
+
+\arlbibliography{bib/jjm}%	Provide name of .bib file as argument
+\printglossaries
+
+\gotooddpage
+
+\distlistsetup%         Set up page parameters for DL printing.
+\begin{distributionlist}
+  \input{\MandatoryDL}%     Mandatory DL, Ensure you have current version
+  \input{\UserDL}%          Your DL for this report.
+\end{distributionlist}
+\distlistcleanup%	Cleans up and restores pre-DL settings
+
+\finishonevenpage
+
+%%%%%%% USE BACK COVER IF DOCUMENT HAS OVERALL MARKING
+%\PageStamp%   Turn on if Page Stamp is inactive currently
+%\backcover%   Report's back cover, showing overall marking, as appropriate
+\end {document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
