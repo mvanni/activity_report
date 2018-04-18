@@ -1,0 +1,59 @@
+\section{EXPERIMENT}
+\label{sec-4}
+
+We used the kaldi toolkit\cite{Povey11thekaldi} to build our ASR systems. 
+We derived our setup from the kaldi babel multilang recipe. 
+We  wrote our recipe so that  it only contain  steps that are required to implement the \gls{MTL} method. 
+Thus, We did not use i-vectors which are standard in many kaldi recipes. 
+We did include however a bottleneck layer. 
+
+We built baseline \gls{SAT} \gls{GMM} \gls{HMM} \gls{AM}s for both the Librispeech and Tunisian \gls{MSA} corpora.
+For the Spanish baseline system we  used  the Santiago  pronouncing dictionary publically available at:
+
+\url{http://www.openslr.org/resources/34
+
+We trained our $3$-gram language model with the \gls{SRILM} toolkit\cite{Stolcke02srilm-} on the transcripts from the training and test data. 
+Our best \gls{WER} results for  Spanish were obtained with online chain models.
+
+We followed the kaldi standard recipe for the librispeech cleaned 960 hours of speech task with one exception. 
+We extracted and trained with \gls{PLP}$_{\text{pitch}}$ features instead of \gls{MFCC} features. 
+We followed this path since we derived our scripts from the kaldi babel multilang recipe. 
+
+\subsection{Neural Network Configuration}
+\label{sec:nnconfig}
+
+
+The \gls{NN} for both languages had ten layers.
+
+\begin{enumerate}
+\item One input layer,
+\item 6 hidden layers,
+\item One Bottleneck layer,
+\item One affine layer, and
+\item One soft max layer.
+\end{enumerate}
+
+
+The \gls{RELU} function was used to compute activations.
+The dimension of the hidden layers was 1024.
+The dimension of the Bottleneck layer was 512.
+
+The final layer implemented  a soft max function that output a probability density function over the clustered triphones.
+
+The frame Context was set to: 16 frames to the left and 12 frames to the right.
+
+\subsection{Training}
+\label{sec:train}
+
+
+A bilingual raw deep \gls{NN}  was trained on the combined set of training examples from the English Librispeech and Tunisian \gls{MSA}  corpora.
+The data from the Tunisian \gls{MSA} corpus was used to readjust the parameters in the last two layers of the bilingual \gls{DNN} model to produce a new monolingual Tunisian \gls{MSA}  acoustic model. 
+Similarly, a new monolingual English model was produced.
+These two models shared the parameters in their first eight layers, only their final 2 layers were different.
+
+\subsection{Decoding}
+\label{sec:decode}
+
+
+The monolingual system with the Tunisian \gls{MSA} \gls{AM} was used to decode a test set of speech from four speakers, 3 Libyan males and one Tunisian female.
+The same \gls{FST} decoding graph that was built for the Tunisian \gls{MSA} \gls{SAT} \gls{GMM} \gls{HMM} system was used for decoding with the \gls{MTL} \gls{AM} set.

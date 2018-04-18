@@ -1,0 +1,24 @@
+\section{INTRODUCTION}
+\label{sec-2}
+
+For the experiments described here, we used the \gls{NN} as a framework for acoustic modeling in \gls{ASR}. 
+Recently, large \gls{ASR} systems have been trained on tens of thousands of hours of speech data \cite{Heigold13multilingualacoustic}. 
+\gls{NN} models have performed well when these amounts of data are available. 
+We assumed we are under conditions of severe training data paucity in the \gls{TL}.
+We also assumed that we have access to a large corpus of speech in another language. 
+We refer to this other language as the \gls{BL}.
+
+\gls{MTL}\cite{Caruana93multitasklearning:} is a framework that enables the advantages of \gls{DL} to be applied in the situation where we have access to large amounts of data in the \gls{BL} and scarce   resources in the \gls{TL}.  
+
+an \gls{NN} was built with two kinds of layers.
+\begin{enumerate}
+\item Shared Layers.
+\item Language Specific Layers.
+\end{enumerate}
+
+The shared layers were trained on all the training data from all the languages.
+The language specific layers were trained only on data from the \gls{TL}.
+
+Our research question was formulated as follows.
+
+Can \gls{NN} acoustic models trained with \gls{MTL} on data  from  two different languages improve performance of an  \gls{ASR} system for a \gls{LR} \gls{TL}?
