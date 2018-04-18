@@ -1,3 +1,36 @@
+* <2018-04-18 Wed>
+** Goals for Wednesday set Tuesday:
+- TODO Write TNs for experiments:
+1. Librispeech Tunisian_MSA
+2. Librispeech Yaounde
+3. Librispeech Heroico.
+%WER 57.50 [ 4399 / 7650, 808 ins, 449 del, 3142 sub ] exp/multi_librispeech_heroico/heroico/decode_heroico_devtest/wer_7_1.0
+%WER 57.23 [ 5274 / 9215, 821 ins, 528 del, 3925 sub ] exp/multi_librispeech_heroico/heroico/decode_heroico_nonnative/wer_8_1.0
+%WER 55.16 [ 9219 / 16713, 1508 ins, 898 del, 6813 sub ] exp/multi_librispeech_heroico/heroico/decode_heroico_test/wer_8_1.0
+%WER 52.60 [ 3944 / 7498, 687 ins, 370 del, 2887 sub ] exp/multi_librispeech_heroico/heroico/decode_heroico_native/wer_8_1.0
+
+
+| fold | MTL librispeech heroico WER | chain online |
+| devtest | 57.50 |  52.10 |
+| native | 52.60 | 52.83 |
+| nonnative | 57.23 | 61.03 |
+| test | 55.16 | 57.70 |
+
+- TODO Multilang: Setup experiment with 3 tasks Gale Arabic Librispeech and Heroico.
+This is running currently.
+
+- Multilang: 
+Training set: Librispeech GALE ArabicTunisian MSA
+Tested on: Tunisian_MSA:
+Result:
+%WER 6.58 [ 433 / 6584, 108 ins, 91 del, 234 sub ] exp/multi_gale_arabic_librispeech_Tunisian_MSA/Tunisian_MSA/decode_test/wer_12_0.0
+
+
+** Goals for Thursday:
+- TODO Mandatory Training: Standdown:  Sharp training
+- TODO Multilang: Write TNs.
+- TODO Run 3-way MTL experiments.
+
 * <2018-04-17 Tue>
 ** Goals for Tuesday set Monday:
 - TODO Write TNs for experiments:
