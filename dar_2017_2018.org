@@ -1,3 +1,20 @@
+* <2018-04-19 Thu>
+** Goals for Thursday set Wednesday:
+- DONE Mandatory Training: Standdown:  Sharp training
+I finished SHARP 1 and 2.
+- TODO Multilang: Write TNs.
+- TODO Run 3-way MTL experiments.
+- Multilang 3-langs: gp_mandarin Librispeech Tunisian MSA
+The WER went up when we added gp_mandarin.
+%WER 7.15 [ 471 / 6584, 112 ins, 105 del, 254 sub ] exp/multi_gp_mandarin_librispeech_Tunisian_MSA/Tunisian_MSA/decode_test/wer_11_0.0
+
+librispeech and Tunisian MSA:
+%WER 7.12 [ 469 / 6584, 100 ins, 124 del, 245 sub ] exp/multi/Tunisian_MSA/decode_test/wer_13_0.0
+
+** Goals for Friday:
+- TODO Multilang: Take another pass on TN for librispeech and Tunisian MSA.
+- TODO Car Talk: Investigate resources for English Car Talk ASR.
+
 * <2018-04-18 Wed>
 ** Goals for Wednesday set Tuesday:
 - TODO Write TNs for experiments:
@@ -30,6 +47,8 @@ Result:
 - TODO Mandatory Training: Standdown:  Sharp training
 - TODO Multilang: Write TNs.
 - TODO Run 3-way MTL experiments.
+
+
 
 * <2018-04-17 Tue>
 ** Goals for Tuesday set Monday:
