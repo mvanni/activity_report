@@ -1,3 +1,38 @@
+* <2018-04-20 Fri>
+** Goals for Friday set Thursday:
+- TODO Multilang: Take another pass on TN for librispeech and Tunisian MSA.
+- TODO Car Talk: Investigate resources for English Car Talk ASR.
+I spent the day setting up English recipes.
+1. vystadial_en
+2. voxforge.
+3. wsj
+
+- Multilang: Librispeech gp_hausa:
+MTL Training:
+Librispeech: 960 hours English read.
+Gp Hausa:  4.8 hours of read GlobalPhone Hausa
+gp_hausa dev: 0.3 hours
+gp_hausa test: 0.3 hours of hausa
+
+test results:
+%WER 15.16 [ 234 / 1544, 4 ins, 53 del, 177 sub ] exp/multi_gp_hausa_librispeech/gp_hausa/decode_test/wer_15_0.0
+
+Dev results:
+%WER 21.83 [ 365 / 1672, 17 ins, 57 del, 291 sub ] exp/multi_gp_hausa_librispeech/gp_hausa/decode_dev/wer_10_0.0
+Previous Best:
+A system was trained on 17 languages and the WER was 21.77.
+
+** Goals for Next Week:
+- TODO Car Talk Project: Get English recipes up and running.
+- TODO WSJ: Setup recipe.
+- TODO TIMIT: Setup recipe.
+- TODO AMI: Setup recipe.
+- TODO BN_Music_Speech: Setup Recipe
+- TODO HUB4: Setup recipe.
+- TODO Speaker Recognition Recipes: Set these up.
+- TODO West Point English: Setup recipe.
+- TODO Multilang TN: Take another pass on writing.
+
 * <2018-04-19 Thu>
 ** Goals for Thursday set Wednesday:
 - DONE Mandatory Training: Standdown:  Sharp training
@@ -47,8 +82,6 @@ Result:
 - TODO Mandatory Training: Standdown:  Sharp training
 - TODO Multilang: Write TNs.
 - TODO Run 3-way MTL experiments.
-
-
 
 * <2018-04-17 Tue>
 ** Goals for Tuesday set Monday:
