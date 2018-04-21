@@ -53,11 +53,11 @@ The dimension of the Bottleneck layer was 512.
 The final layer implemented  a soft max function that output a probability density function over the clustered triphones.
 The frame Context was set to 16 frames to the left and 12 frames to the right.
 
-\subsection{Training}
+\subsection{\gls{am} Training}
 \label{sec:train}
 
 
-A bilingual raw deep \gls{nn}  was trained on the combined set of training examples from the English Librispeech and Tunisian \gls{msa}  corpora.
+A bilingual raw feedforward deep \gls{ann}  was trained on the combined set of training examples from the English Librispeech and Tunisian \gls{msa}  corpora using a frame-level cross-entropy objective function.
 The data from the Tunisian \gls{msa} corpus was used to readjust the parameters in the last two layers of the bilingual \gls{dnn} model to produce a new monolingual Tunisian \gls{msa}  acoustic model. 
 Similarly, a new monolingual English model was produced.
 These two models shared the parameters in their first eight layers, only their final 2 layers were different.
