@@ -1,28 +1,42 @@
 \section{EXPERIMENT}
 \label{sec-4}
 
-We used the kaldi toolkit\cite{Povey11thekaldi} to build our ASR systems. 
+We used the kaldi toolkit\cite{Povey11thekaldi} to build our \gls{asr} systems. 
 We derived our setup from the kaldi babel multilang recipe. 
-We  wrote our recipe so that  it only contain  steps that are required to implement the \gls{MTL} method. 
-Thus, We did not use i-vectors which are standard in many kaldi recipes. 
-We did include however a bottleneck layer. 
 
-We built baseline \gls{SAT} \gls{GMM} \gls{HMM} \gls{AM}s for both the Librispeech and Tunisian \gls{MSA} corpora.
-For the Tunisian \gls{MSA} baseline system we derived our pronouncing dictionary from the 2 million entries from the \gls{QCRI} vowelized dictionary\cite{aaliArabicKaldi} available at:
+a \gls{ann} was built with two kinds of layers.
+\begin{enumerate}
+\item Shared Layers.
+\item Language Specific Layers.
+\end{enumerate}
+
+The shared layers were trained on all the training data from both the \gls{tl} and \gls{bl} languages.
+
+The language specific layers were trained only on data from the \gls{tl}.
+
+We  tried to write our recipe so that  it only contain  steps that are required to implement the \gls{mtl} method. 
+Thus, We did not use i-vectors which are standard in many kaldi recipes. 
+however, we did include  a bottleneck layer. 
+
+We built baseline \gls{sat} \gls{gmm} \gls{hmm} \glspl{am} for both the Librispeech and Tunisian \gls{msa} corpora.
+For the Tunisian \gls{msa} baseline system we derived our pronouncing dictionary from the 2 million entries from the \gls{qcri} vowelized dictionary\cite{aaliArabicKaldi} available at:
+
 \url{http://alt.qcri.org/resources/speech/dictionary/ar-ar_lexicon_2014-03-17.txt.bz2}
-We added the \gls{OOV} words from the Tunisian \gls{MSA} training set and the test set. 
-We trained our $3$-gram language model with the \gls{SRILM} toolkit\cite{Stolcke02srilm-} on the transcripts from the training and test data. 
-Our best \gls{WER} results for Tunisian \gls{MSA} were obtained with online chain models.
+
+We added the \gls{oov} words from the Tunisian \gls{msa} training set and the test set. 
+We trained our $3$-gram language model with the \gls{srilm} toolkit\cite{Stolcke02srilm-} on the transcripts from the training and test data. 
+Our best \gls{wer} results for Tunisian \gls{msa} were obtained with online chain models.
 
 We followed the kaldi standard recipe for the librispeech cleaned 960 hours of speech task with one exception. 
-We extracted and trained with \gls{PLP}$_{\text{pitch}}$ features instead of \gls{MFCC} features. 
+We extracted and trained with \gls{plp} pitch features instead of \gls{mfcc} features. 
 We followed this path since we derived our scripts from the kaldi babel multilang recipe. 
+In the future We plan on incorporating tonal \glspl{bl} and we expect better results using \gls{plp} pitch instead of \gls{mfcc} features. 
 
-\subsection{Neural Network Configuration}
+\subsection{\gls{ann} Configuration}
 \label{sec:nnconfig}
 
 
-The \gls{NN} for both languages had ten layers.
+The \gls{ann} had ten layers.
 
 \begin{enumerate}
 \item One input layer,
@@ -33,20 +47,18 @@ The \gls{NN} for both languages had ten layers.
 \end{enumerate}
 
 
-The \gls{RELU} function was used to compute activations.
+The \gls{relu} function was used to compute activations.
 The dimension of the hidden layers was 1024.
 The dimension of the Bottleneck layer was 512.
-
 The final layer implemented  a soft max function that output a probability density function over the clustered triphones.
-
-The frame Context was set to: 16 frames to the left and 12 frames to the right.
+The frame Context was set to 16 frames to the left and 12 frames to the right.
 
 \subsection{Training}
 \label{sec:train}
 
 
-A bilingual raw deep \gls{NN}  was trained on the combined set of training examples from the English Librispeech and Tunisian \gls{MSA}  corpora.
-The data from the Tunisian \gls{MSA} corpus was used to readjust the parameters in the last two layers of the bilingual \gls{DNN} model to produce a new monolingual Tunisian \gls{MSA}  acoustic model. 
+A bilingual raw deep \gls{nn}  was trained on the combined set of training examples from the English Librispeech and Tunisian \gls{msa}  corpora.
+The data from the Tunisian \gls{msa} corpus was used to readjust the parameters in the last two layers of the bilingual \gls{dnn} model to produce a new monolingual Tunisian \gls{msa}  acoustic model. 
 Similarly, a new monolingual English model was produced.
 These two models shared the parameters in their first eight layers, only their final 2 layers were different.
 
@@ -54,5 +66,5 @@ These two models shared the parameters in their first eight layers, only their f
 \label{sec:decode}
 
 
-The monolingual system with the Tunisian \gls{MSA} \gls{AM} was used to decode a test set of speech from four speakers, 3 Libyan males and one Tunisian female.
-The same \gls{FST} decoding graph that was built for the Tunisian \gls{MSA} \gls{SAT} \gls{GMM} \gls{HMM} system was used for decoding with the \gls{MTL} \gls{AM} set.
+The monolingual system with the Tunisian \gls{msa} \gls{am} was used to decode a test set of speech from four speakers, 3 Libyan males and one Tunisian female.
+The same \gls{fst} decoding graph that was built for the Tunisian \gls{msa} \gls{sat} \gls{gmm} \gls{hmm} system was used for decoding with the \gls{mtl} \gls{am} set.

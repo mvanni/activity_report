@@ -156,31 +156,8 @@
 \usepackage{cite}
 \usepackage[acronym,toc,xindy]{glossaries}
 \makeglossaries
-%ABBREVIATIONS
-\newacronym{ASR}{asr}{Automatic Speech Recognition}
-\newacronym{DL}{dl}{Deep Learning}
-\newacronym{ML}{ml}{Machine Learning}
-\newacronym{MT}{mt}{Machine Translation}
-\newacronym{MTL}{mtl}{Multitask Learning}
-\newacronym{NN}{nn}{Neural Network}
-\newacronym{BL}{bl}{Background Language}
-\newacronym{TL}{tl}{Target Language}
-\newacronym{MSA}{msa}{Modern Standard Arabic}
-\newacronym{LR}{lr}{Low Resource}
-\newacronym{SAT}{sat}{Speaker Adaptive Training}
-\newacronym{GMM}{gmm}{Gaussian Mixture Model}
-\newacronym{HMM}{hmm}{Hidden Markov Model}
-\newacronym{OOV}{oov}{Out Of Vocabulary}
-\newacronym{SRILM}{srilm}{Stanfor Research Institute Language Model}
-\newacronym{WER}{wer}{Word Error Rate}
-\newacronym{MFCC}{mfcc}{Mel Frequency Cepstral Coefficients}
-\newacronym{PLP}{plp}{Perceptual Linear Prediction}
-\newacronym{DNN}{dnn}{Deep Neural Network}
-\newacronym{AM}{am}{Acoustic Model}
-\newacronym{QCRI}{qcri}{Qatar Computing Research Institute }
-\newacronym{FST}{fst}{Finite State Transducer}
-\newacronym{RELU}{relu}{Rectified Linear Unit}
-
+% ABBREVIATIONS
+\include{my_acronyms}
 
 \begin {document}
 \ARLcover{}% MANDATORY ARGUMENT IS IGNORED WITH NEW STYLE, SINCE ALL COVERS ARE GOLD
@@ -246,6 +223,7 @@ John Morgan wishes to sincerely thank his co-author, Dr. Stephen LaRocca.
 
 \input{sections/results}
 
+\input{sections/discussion}
 %\input{sections/discussion}
 
 \def\TECHREPORT{\textsf{\small @\kern-.4pt TECHREPORT}}
