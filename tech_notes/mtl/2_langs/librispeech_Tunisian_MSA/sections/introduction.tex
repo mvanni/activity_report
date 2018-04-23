@@ -6,16 +6,19 @@ Recently, large \gls{asr} systems have been trained on tens of thousands of hour
 \glspl{ann} have performed well when these amounts of data are available. 
 We assumed we are under conditions of severe training data sparcity
 % paucity
-in the \gls{tl}.
+in the
+% language to be recognized, or the 
+\gls{tl}.
 We also assumed that we have access to a large corpus of speech in another language. 
-We refer to this other language as the \gls{bl}.
-
-\gls{mtl}\cite{Caruana93multitasklearning:} is a framework that enables the advantages of \gls{dl} to be applied in the situation where
-% we have access to
-there exists
-% large amounts of data
-plentiful resources
+% Any other language or a related language?
+We refer to this other language 
+% a non-TL
+as the \gls{bl}. \gls{mtl}\cite{Caruana93multitasklearning:} is a framework that enables the advantages of \gls{dl} to be applied 
+% when there exist plentiful available resources
 in the \gls{bl} and scarce resources in the \gls{tl}.  
+
+An \gls{ann} was built with two kinds of layers.\begin{enumerate}\item Shared Layers.\item Language Specific Layers.\end{enumerate}
+The shared layers were trained on the available data from both the \gls{tl} and \gls{bl} languages, while the language specific layers were trained only on data from the \gls{tl}.
 
 Our research question was formulated as follows.
 Can a \gls{ann} \gls{am} trained with \gls{mtl} on data  from  two different languages improve performance of an  \gls{asr} system for a  \gls{tl} that is a \gls{lrl}?
