@@ -1,0 +1,8 @@
+The arlticle document class has been created to format LaTeX documents
+according to the ARL tech report standard.  It was written by Steven
+Segletes, based on an earlier arltr class file obtained from Brian
+Krzewinski by way of Stephen Schraml.
+
+To get started using this class, it is recommended that you use the
+"arlstencil" file that was constructed as a template for use with the
+arlticle document class.

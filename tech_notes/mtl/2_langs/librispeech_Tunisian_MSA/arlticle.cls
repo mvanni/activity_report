@@ -23,22 +23,22 @@
  % \iffalse
 %%
 %% This is the file `arlticle.cls',
-%% composed by Steven Segletes.
+%% composed by Steven B Segletes.
 %%
 %% Based on LaTeX's standard article.cls and an arltr class file obtained
 %% from Brian Krzewinski via Stephen Schraml...
 %% this class file was modified quite a bit by Steven Segletes (March 2006).
 %% It creates a LaTeX document class for the ARL-TR technical report series.
 %% Documentation in the form of a dtx file was added April-May 2006.
-%% Changes have been ongoing since its inception, at least through DEC
-%% 2014.
+%% Changes have been ongoing since its inception, at least through
+%% NOV 2016.
 %%
 %% Please treat this document as limited distribution.
 %%
-%% Steven may be reached at 3-6010 for questions comments and updates.
+%% Steven may be reached at 278-6010 for questions comments and updates.
 %%
 \ProvidesClass{arlticle}
-[2016/08/11 v2.31
+[2018/02/05 v2.43
        ARL Technical Report Document Class File]
 \NeedsTeXFormat{LaTeX2e}
 
@@ -352,7 +352,7 @@
   \par
   \vskip 1.5em}
 \fi
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{4}
 \newcounter {part}
 \newcounter {section}
 \newcounter {subsection}[section]
@@ -369,10 +369,12 @@
 \def\sectionkern      {1em}
 \def\subsectionkern   {1em}
 \def\subsubsectionkern{1em}
+\def\paragraphkern    {1em}
 %% SUFFIX ADDED TO \the SECTIONING MACROS
 \def\sectionsuffix      {.}
 \def\subsectionsuffix   {}
 \def\subsubsectionsuffix{}
+\def\paragraphsuffix    {}
 %% SECTIONING LABEL: \the[section]\[section]suffix\hskip\[section]kern
 \renewcommand\@seccntformat[1]{\csname the#1\endcsname%
   \csname#1suffix\endcsname\hskip\csname#1kern\endcsname\relax}
@@ -492,10 +494,11 @@
                                      {0.0ex\@plus -1ex \@minus -.2ex}%
                                      {0.01ex \@plus .2ex}%
                                      {\sffamily\Level@threesize\bfseries\sloppypar}}
-\newcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-                                    {3.25ex \@plus1ex \@minus.2ex}%
-                                    {-1em}%
-                                    {\sffamily\normalsize\bfseries}}
+%%MODIFY PARAGRAPH TO OBTAIN DIFFERENT LOOK ALTOGETHER
+\newcommand\origparagraph{\@startsection{paragraph}{4}{0pt}% xtra horizontal indent header
+                       {0pt \@plus-1ex \@minus.2ex}% additional vertical space before
+                       {.01ex \@plus .2ex \@minus .2ex}% negative keeps text on same line
+                       {\sffamily\Level@foursize}}% header font size same as subsubsec
 \newcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
                                        {3.25ex \@plus1ex \@minus .2ex}%
                                        {-1em}%
@@ -681,7 +684,7 @@
 \newcommand\@tocrmarg{2.55em plus1fil}
 %% Change \@dotsep from 4.5 to 1.0
 \newcommand\@dotsep{1.0}
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{3}% TOC INCLUDES HEADINGS DOWN TO LEVEL 3 (SUBSUBSECTIONS)
 \newcommand*\l@part[2]{%
   \ifnum \c@tocdepth >-2\relax
     \addpenalty\@secpenalty
@@ -976,42 +979,48 @@
     {\tmp@cmd{#1\unskip; public release\ }}%
     {%
   \ifthenelse{\the@distreason=1}%
-    {\tmp@cmd{#1\unskip; foreign government information\ }}%
+    {\tmp@cmd{#1\unskip; administrative or operational use\ }}%
     {%
   \ifthenelse{\the@distreason=2}%
-    {\tmp@cmd{#1\unskip; proprietary information\ }}%
+    {\tmp@cmd{#1\unskip; contractor performance evaluation\ }}%
     {%
   \ifthenelse{\the@distreason=3}%
     {\tmp@cmd{#1\unskip; critical technology\ }}%
     {%
   \ifthenelse{\the@distreason=4}%
-    {\tmp@cmd{#1\unskip; test and evaluation\ }}%
-    {%
-  \ifthenelse{\the@distreason=5}%
-    {\tmp@cmd{#1\unskip; contractor performance evaluation\ }}%
-    {%
-  \ifthenelse{\the@distreason=6}%
-    {\tmp@cmd{#1\unskip; premature dissemination\ }}%
-    {%
-  \ifthenelse{\the@distreason=7}%
-    {\tmp@cmd{#1\unskip; administrative/operational use\ }}%
-    {%
-  \ifthenelse{\the@distreason=8}%
-    {\tmp@cmd{#1\unskip; software documentation\ }}%
-    {%
-  \ifthenelse{\the@distreason=9}%
-    {\tmp@cmd{#1\unskip; specific authority\ }}%
-    {%
-  \ifthenelse{\the@distreason=10}%
-    {\tmp@cmd{#1\unskip; export limitations\ }}%
-    {%
-  \ifthenelse{\the@distreason=11}%
     {\tmp@cmd{#1\unskip; direct military support\ }}%
     {%
-  \ifthenelse{\the@distreason=999}%
-    {\tmp@cmd{#1\unskip; export limitations\ }}%
+  \ifthenelse{\the@distreason=5}%
+    {\tmp@cmd{#1\unskip; export controlled\ }}%
     {%
-  }}}}}}}}}}}}}
+  \ifthenelse{\the@distreason=6}%
+    {\tmp@cmd{#1\unskip; foreign government information\ }}%
+    {%
+  \ifthenelse{\the@distreason=7}%
+    {\tmp@cmd{#1\unskip; operations security\ }}%
+    {%
+  \ifthenelse{\the@distreason=8}%
+    {\tmp@cmd{#1\unskip; premature dissemination\ }}%
+    {%
+  \ifthenelse{\the@distreason=9}%
+    {\tmp@cmd{#1\unskip; proprietary information\ }}%
+    {%
+  \ifthenelse{\the@distreason=10}%
+    {\tmp@cmd{#1\unskip; test and evaluation\ }}%
+    {%
+  \ifthenelse{\the@distreason=11}%
+    {\tmp@cmd{#1\unskip; software documentation\ }}%
+    {%
+  \ifthenelse{\the@distreason=12}%
+    {\tmp@cmd{#1\unskip; specific authority\ }}%
+    {%
+  \ifthenelse{\the@distreason=13}%
+    {\tmp@cmd{#1\unskip; vulnerability information\ }}%
+    {%
+  \ifthenelse{\the@distreason=999}%
+    {\tmp@cmd{#1\unskip; export controlled\ }}%
+    {%
+  }}}}}}}}}}}}}}}%
 }
 
 \newcounter{@distreason}
@@ -1096,17 +1105,38 @@
    \textbf{CLASSIFIED BY:} & #1, #2\\%
    \textbf{DERIVED FROM:}  & #3, dated #4\\%
    \textbf{DECLASSIFY ON:} & #5\\%
-  \end{tabular}\\%
-  \rule{.0in}{0.4in}%
- }
+  \end{tabular}%
+ }%
   \def\downgradeARGa{#1}%
   \def\downgradeARGb{#2}%
   \def\downgradeARGc{#3}%
   \def\downgradeARGd{#4}%
   \def\downgradeARGe{#5}%
+  \renewcommand\abbrevdistribution[1]{}%
+  \def\@abbrevdistribution{}%
 }
 
 \definecolor{ReportColor}{cmyk}{0.0132,0.0821,0.7278,.2}%
+\definecolor{LoInkReportColor}{rgb}{1,1,1}%
+
+\newcommand\theboilerplate{%
+    \def\blank@entry{}%
+    \boilerplatesize
+    \vspace{\baselineskip}\par
+    \ifx\blank@entry\FOIA@exemption\else
+      \FOIA@exemption\par
+      \vspace{10pt}\par
+    \fi
+    \ifx\blank@entry\downgradetext\else
+      \downgradetext\par
+      \vspace{10pt}\par
+    \fi
+    \ifx\blank@entry\@ecwarningtext\else
+      \@ecwarningtext\par
+      \vspace{10pt}\par
+    \fi
+    \@distribution
+}
 
 \newcommand\ARLcover[2][]%
 {%
@@ -1162,14 +1192,7 @@
   \fi
     #1\par
     \vfill
-    \boilerplatesize
-      \vspace{\baselineskip}\par
-      \FOIA@exemption\par
-      \vspace{\baselineskip}\par
-      \@ecwarningtext\par
-      \vspace{\baselineskip}\par
-      \downgradetext
-      \@distribution
+    \theboilerplate
   \end{singlespace}
   \@disclaimerpage
   \let\PageStampColor\sv@PageStampColor
@@ -1191,23 +1214,6 @@
   \newgeometry{hoffset=0pt,textwidth=5.5in,left=1.5in,right=1.5in,
                top=1in,bottom=1in}
   \let\savethePageStamp\thePageStamp%
-  \caseupper[e]{\thePageStamp}%
-  \findwords[q]{\thestring}{FOR~OFFICIAL~USE~ONLY}%
-  \ifthenelse{\equal{\theresult}{0}}%
-    {}{%
-%%%%% THE FOLLOWING COMMENTS FORCE DISCLAIMER PAGE TO
-%%     NOT SHOW "FOUO" ON AN FOUO DOCUMENT
-          \def\thePageStamp{}%
-%%%%%
-      }%
-  \caseupper[e]{\thePageStamp}%
-  \findwords[q]{\thestring}{CONFIDENTIAL}%
-  \ifthenelse{\equal{\theresult}{0}}%
-    {}{\def\thePageStamp{UNCLASSIFIED}}%
-  \caseupper[e]{\thePageStamp}%
-  \findwords[q]{\thestring}{SECRET}%
-  \ifthenelse{\equal{\theresult}{0}}%
-    {}{\def\thePageStamp{UNCLASSIFIED}}%
   \thispagestyle{\EmptyStyle}%
   \begin{normalsize}%
     \vspace*{2.8in}%
@@ -1294,16 +1300,45 @@
     \vspace{\baselineskip}
     {\semi@normalsize\@titlepagenote\par}% Title Page Note (e.g. under contract ...)
     \vfill
-    \boilerplatesize
-      \vspace{\baselineskip}\par
-      \FOIA@exemption\par
-      \vspace{\baselineskip}\par
-      \@ecwarningtext\par
-      \vspace{\baselineskip}\par
-      \downgradetext
-      \@distribution
+    \theboilerplate
   \end{singlespace}
   \clearpage
+}
+
+\newenvironment{MultipleSourcesMemo}[1]% PAGE iii IN CLASSIFIED REPORTS WITH MULT. SRCS.
+{%
+  \clearpage%
+  \singlespacing%
+  \parskip 1em\relax%
+  \atxy{0in}{11in}{\includegraphics[width=8.5in,height=11in]{LH-ARL-APGa(NoFooter)}}%
+  \vspace*{.4in}
+  RDRL-WMP-D\hfill #1 \@pubdate
+
+  MEMORANDUM FOR RECORD
+
+  SUBJECT: Classification sources for \@arlrptno,
+  {``\def\\{}\@arltitle,'' by \@allauthors}
+
+  \begin{enumerate}[topsep=8pt,itemsep=8pt]
+  \item (U) The subject report has been marked with the following regrading
+  instructions:\vspace{6pt}
+
+  {\let\textbf\relax\downgradetext}
+
+  \item (U) The classification sources used are as follows:
+
+  \begin{enumerate}[label=\alph*.,topsep=4pt,itemsep=10pt]
+}
+{\end{enumerate}\end{enumerate}\vspace{.5in}}
+
+\newcommand\signMultipleSourcesMemo[3][\blankpage]{%
+  \begin{center}%
+    \leavevmode\rlap{%
+    \stackengine{14.5pt}% THE \singlespacing BASELINE SKIP
+      {#2}{#3}{U}{l}{F}{F}{L}}%
+   \end{center}
+  \clearpage%
+  #1%
 }
 
 \newenvironment{createSFtwoNINEeight}{
@@ -1359,10 +1394,10 @@
 \newcommand\@SFitemTWELVE[1]{%
   \setbox0=\hbox{\parbox[b]{7.15in}{\setstretch{0.8}#1}}%
   \ifdim\ht0>1.8\baselineskip%
-    \put(-564.5,355){\parbox[c]{7.15in}{\setstretch{0.8}\hspace{160pt}#1}}%
+    \put(-564.5,356){\scriptsize\parbox[c]{7.15in}{\setstretch{1.0}\hspace{160pt}#1}}%
   \else
     \ifdim\ht0>1.2\baselineskip%
-      \put(-564.5,346){\parbox[b]{7.15in}{\setstretch{0.8}#1}}%
+      \put(-564.5,346){\scriptsize\parbox[b]{7.15in}{\setstretch{1.0}#1}}%
     \else%
       \put(-564.5,353){\parbox[c]{7.15in}{\setstretch{0.8}#1}}%
     \fi%
@@ -1465,6 +1500,7 @@
 \newcommand\section{\@ifstar{\ruledheading}{\ruledsection}}
 \newcommand\subsection{\@ifstar{\ruledsubheading}{\ruledsubsection}}
 \newcommand\subsubsection{\@ifstar{\ARLsubsubheading}{\ARLsubsubsection}}
+\newcommand\paragraph{\@ifstar{\ARLparaheading}{\ARLparagraph}}
 
 %%\ruledsection is called by \section
 
@@ -1480,6 +1516,10 @@
 
 \newcommand\ARLsubsubsection[1]{%
   \origsubsubsection{#1}\par\subsubsectionpostlude\par%
+}
+
+\newcommand\ARLparagraph[1]{%
+  \origparagraph{#1}\par\paragraphpostlude\par%
 }
 
 %% \ruledheading is called by \section*
@@ -1498,6 +1538,10 @@
 
 \newcommand\ARLsubsubheading[1]{%
   \origsubsubsection*{#1}\par\subsubsectionpostlude\par%
+}
+
+\newcommand\ARLparaheading[1]{%
+  \origparagraph*{#1}\par\paragraphpostlude\par%
 }
 
 %%%%%
@@ -1528,6 +1572,8 @@
 }
 
 \newcommand\subsubsectionpostlude{\vspace{-3mm}}
+
+\newcommand\paragraphpostlude{\vspace{-2mm}}
 
 %% \baresection is like \section*, but is placed in the toc
 \newcommand\baresection[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
@@ -1844,11 +1890,14 @@
 %% backcover
 \newcommand\backcover{
   \clearpage
-  \pagecolor{ReportColor}
+  \let\@abbrevdistribution\relax
+%%  \pagecolor{\file@prefix ReportColor}% IF ONE WANTED COLORED BACK COVER
+  \def\PageStampColor{black}% SINCE \@coverwhite TOO PALE
   \def\thePageStamp{}%
   \thispagestyle{\EmptyStyle}
   \textrm{}
   \clearpage
+  \PageStamp[]
   \let\thePageStamp\savethePageStamp
   \thispagestyle{\EmptyStyle}
   \textrm{}
@@ -1892,14 +1941,17 @@
 \renewcommand\cftsecfont{\bfseries\sffamily\Level@twosize}
 \renewcommand\cftsubsecfont{\sffamily\Level@foursize}
 \renewcommand\cftsubsubsecfont{\sffamily\Level@foursize}
+\renewcommand\cftparafont{\sffamily\Level@foursize}
 \renewcommand\cftsecpagefont{\bfseries\sffamily}
 \renewcommand\cftsubsecpagefont{\sffamily\small}
 \renewcommand\cftsubsubsecpagefont{\sffamily\footnotesize}
+\renewcommand\cftparapagefont{\sffamily\footnotesize}
 \renewcommand\cftsecaftersnum{.}
 
 \setlength{\cftbeforesecskip}{0.5em \@plus\p@}
 \setlength{\cftbeforesubsecskip}{-.5em \@plus\p@}
 \setlength{\cftbeforesubsubsecskip}{-.5em \@plus\p@}
+\setlength{\cftbeforeparaskip}{-.5em \@plus\p@}
 \setlength{\cftbeforefigskip}{-.5em \@plus\p@}
 \setlength{\cftbeforetabskip}{-.5em \@plus\p@}
 
@@ -1954,14 +2006,9 @@
        \renewcommand\cftdotsep{10000}%
        \@starttoc{toc}%
     \end{singlespace}%
-    \clearpage%
   }
   %%MODIFY \listoffigures" TO ADD TO TABLE OF CONTENTS & DRAW RULER LINES
-  \renewcommand\listoffigures{
-    \clearpage
-    \addcontentsline{toc}{section}{\listfigurename}
-      \thelistoffigures%
-  }
+  \renewcommand\listoffigures{\@ifstar{\@listoffigures[]}{\@listoffigures}}
   \newcommand\thelistoffigures{
     \section*{\listfigurename}\vspace{4pt}%
     \renewcommand{\@pnumwidth}{1.55em}
@@ -1977,11 +2024,7 @@
     \end{singlespace}
   }
   %%MODIFY \listoftables" TO ADD TO TABLE OF CONTENTS & DRAW RULER LINES
-  \renewcommand\listoftables{
-    \clearpage
-    \addcontentsline{toc}{section}{\listtablename}
-    \thelistoftables
-  }
+  \renewcommand\listoftables{\@ifstar{\@listoftables[]}{\@listoftables}}
   \newcommand\thelistoftables{
     \section*{\listtablename}\vspace{4pt}%
     \renewcommand{\@pnumwidth}{1.55em}
@@ -1995,6 +2038,16 @@
       \@starttoc{lot}%
     \end{singlespace}
   }
+}
+\newcommand\@listoffigures[1][\clearpage]{%
+  #1%
+  \addcontentsline{toc}{section}{\listfigurename}%
+  \thelistoffigures%
+}
+\newcommand\@listoftables[1][\clearpage]{%
+  #1%
+  \addcontentsline{toc}{section}{\listtablename}%
+  \thelistoftables%
 }
 
 \onehalfspacing
